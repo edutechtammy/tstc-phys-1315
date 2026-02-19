@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M8L1 The Atmosphere - PHYS-1315</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #87CEEB, #4682B4, #1E90FF, #6495ED, #B0C4DE, #F0F8FF);
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><g opacity="0.4"><circle cx="150" cy="100" r="15" fill="white"><animate attributeName="cx" values="150;250;350;450;550" dur="20s" repeatCount="indefinite"/><animate attributeName="cy" values="100;120;80;150;100" dur="15s" repeatCount="indefinite"/></circle><circle cx="300" cy="200" r="20" fill="white"><animate attributeName="cx" values="300;200;100;50;150" dur="25s" repeatCount="indefinite"/><animate attributeName="cy" values="200;180;220;250;200" dur="18s" repeatCount="indefinite"/></circle><circle cx="700" cy="150" r="12" fill="white"><animate attributeName="cx" values="700;800;900;950;850" dur="30s" repeatCount="indefinite"/><animate attributeName="cy" values="150;100;180;120;150" dur="22s" repeatCount="indefinite"/></circle><circle cx="500" cy="300" r="18" fill="white"><animate attributeName="cx" values="500;400;300;200;350" dur="35s" repeatCount="indefinite"/><animate attributeName="cy" values="300;280;320;340;300" dur="28s" repeatCount="indefinite"/></circle></g><g stroke="rgba(255,255,255,0.6)" stroke-width="2" fill="none"><ellipse cx="400" cy="150" rx="80" ry="30"><animate attributeName="rx" values="80;120;100;80" dur="12s" repeatCount="indefinite"/><animate attributeName="ry" values="30;40;50;30" dur="12s" repeatCount="indefinite"/></ellipse><ellipse cx="600" cy="250" rx="100" ry="40"><animate attributeName="rx" values="100;140;120;100" dur="15s" repeatCount="indefinite"/><animate attributeName="ry" values="40;50;60;40" dur="15s" repeatCount="indefinite"/></ellipse></g><g opacity="0.3"><path d="M0,400 Q200,350 400,400 T800,400 L800,450 Q600,480 400,450 T0,450 Z" fill="white"><animate attributeName="d" values="M0,400 Q200,350 400,400 T800,400 L800,450 Q600,480 400,450 T0,450 Z;M0,420 Q200,370 400,420 T800,420 L800,470 Q600,500 400,470 T0,470 Z;M0,400 Q200,350 400,400 T800,400 L800,450 Q600,480 400,450 T0,450 Z" dur="8s" repeatCount="indefinite"/></path></g></svg>') center/cover;
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.95);
+            min-height: 100vh;
+            box-shadow: 0 0 30px rgba(0,0,0,0.3);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #4682B4, #1E90FF);
+            color: white;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><g opacity="0.4"><circle cx="200" cy="100" r="10" fill="white"><animate attributeName="r" values="10;20;10" dur="3s" repeatCount="indefinite"/></circle><circle cx="800" cy="150" r="15" fill="white"><animate attributeName="r" values="15;25;15" dur="4s" repeatCount="indefinite"/></circle><circle cx="500" cy="80" r="8" fill="white"><animate attributeName="r" values="8;16;8" dur="3.5s" repeatCount="indefinite"/></circle></g><g stroke="rgba(255,255,255,0.3)" stroke-width="2" fill="none"><ellipse cx="400" cy="200" rx="60" ry="20"><animate attributeName="rx" values="60;80;60" dur="5s" repeatCount="indefinite"/></ellipse></g></svg>');
+            pointer-events: none;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .header .subtitle {
+            font-size: 1.2em;
+            font-weight: 300;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .quote-section {
+            background: linear-gradient(135deg, #E0F6FF, #B0E0E6);
+            border-left: 5px solid #4682B4;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 0 15px 15px 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .quote-section blockquote {
+            font-style: italic;
+            font-size: 1.1em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .quote-section .author {
+            text-align: right;
+            font-weight: bold;
+            color: #4682B4;
+        }
+        
+        .section {
+            margin: 40px 0;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-top: 4px solid #4682B4;
+        }
+        
+        .section h2 {
+            color: #4682B4;
+            border-bottom: 3px solid #87CEEB;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+            font-size: 1.8em;
+        }
+        
+        .section h3 {
+            color: #2c3e50;
+            margin: 25px 0 15px 0;
+            font-size: 1.4em;
+        }
+        
+        .objectives-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .objective-card {
+            background: linear-gradient(135deg, #87CEEB, #6495ED);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .objective-card h4 {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        
+        .media-container {
+            margin: 25px 0;
+            text-align: center;
+        }
+        
+        .media-container iframe {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        .reading-list {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #28a745;
+        }
+        
+        .reading-list ul {
+            list-style-type: none;
+        }
+        
+        .reading-list li {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 5px;
+            border-left: 3px solid #28a745;
+        }
+        
+        .reading-list a {
+            color: #4682B4;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .reading-list a:hover {
+            text-decoration: underline;
+            color: #87CEEB;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #E0F6FF, #B0E0E6);
+            border: 1px solid #4682B4;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .highlight-box h4 {
+            color: #1E90FF;
+            margin-bottom: 10px;
+        }
+        
+        /* Atmospheric Theme styling */
+        .atmosphere-concept-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .concept-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+            border-top: 4px solid #87CEEB;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .concept-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        .concept-card h4 {
+            color: #4682B4;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .atmosphere-type {
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: bold;
+            margin: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .troposphere {
+            background: linear-gradient(135deg, #228B22, #32CD32);
+            color: white;
+        }
+        
+        .stratosphere {
+            background: linear-gradient(135deg, #FF6347, #FF4500);
+            color: white;
+        }
+        
+        .mesosphere {
+            background: linear-gradient(135deg, #4169E1, #0000FF);
+            color: white;
+        }
+        
+        .thermosphere {
+            background: linear-gradient(135deg, #DC143C, #B22222);
+            color: white;
+        }
+        
+        .composition {
+            background: linear-gradient(135deg, #9370DB, #8A2BE2);
+            color: white;
+        }
+        
+        /* Atmospheric Layers Grid */
+        .layers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        
+        .layer-card {
+            background: linear-gradient(135deg, #87CEEB, #6495ED);
+            color: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 8px 25px rgba(70, 130, 180, 0.3);
+            transition: transform 0.3s ease;
+        }
+        
+        .layer-card:hover {
+            transform: translateY(-8px);
+        }
+        
+        .layer-card h4 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .layer-properties {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            font-size: 0.9em;
+        }
+        
+        /* CidiLabs Activity Styles */
+        .cidilabs-activity {
+            margin: 30px 0;
+            padding: 25px;
+            background: linear-gradient(135deg, #f8f9fa, #ffffff);
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+            border: 2px solid #e9ecef;
+        }
+        
+        .cidilabs-activity h3 {
+            color: #4682B4;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            text-align: center;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #87CEEB;
+        }
+        
+        .activity-instruction {
+            background: #E0F6FF;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid #4682B4;
+        }
+        
+        /* Atmospheric Composition Box */
+        .composition-box {
+            background: linear-gradient(135deg, #4682B4, #1E90FF);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .composition-stat {
+            font-size: 1.8em;
+            font-weight: bold;
+            margin: 20px 0;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+        }
+        
+        /* NOAA highlight */
+        .noaa-highlight {
+            background: linear-gradient(135deg, #E6F3FF, #CCE7FF);
+            border: 3px solid #0066CC;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 30px 0;
+            color: #003366;
+        }
+        
+        .noaa-highlight h4 {
+            color: #0066CC;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+        
+        /* Ozone section styling */
+        .ozone-section {
+            background: linear-gradient(135deg, #F0F8FF, #E0E6FF);
+            border: 2px solid #6495ED;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 25px 0;
+        }
+        
+        /* Humidity chart styling */
+        .humidity-chart {
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .humidity-chart img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            margin: 15px 0;
+        }
+        
+        .image-caption {
+            font-size: 0.9em;
+            color: #666;
+            font-style: italic;
+            margin: 10px 0;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .section {
+                padding: 20px;
+            }
+            
+            .objectives-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .atmosphere-concept-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .layers-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .composition-stat {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <h1><i class="fas fa-cloud"></i> The Atmosphere</h1>
+            <div class="subtitle">Module 8, Lesson 1 | PHYS-1315 Physical Science I</div>
+        </div>
+
+        <!-- Motivational Quote Section -->
+        <div class="quote-section">
+            <blockquote>
+                "The atmosphere is composed primarily of nitrogen and oxygen gases that envelope the Earth, creating the protective shell that makes life possible."
+            </blockquote>
+            <div class="author">— Atmospheric Science</div>
+        </div>
+
+        <!-- Introduction Section -->
+        <div class="section">
+            <h2><i class="fas fa-globe-americas"></i> Understanding Earth's Atmosphere</h2>
+            <p>Earth's atmosphere is a complex system of gases that surrounds our planet, providing the air we breathe and protecting us from harmful solar radiation. This dynamic envelope consists of distinct layers, each with unique characteristics determined by temperature changes with altitude.</p>
+            
+            <p>From the weather patterns we experience daily to the ozone layer that shields us from ultraviolet radiation, the atmosphere affects every aspect of life on Earth. Understanding atmospheric composition, structure, and dynamics helps us comprehend weather systems, climate change, and the delicate balance that sustains life.</p>
+            
+            <div class="highlight-box">
+                <h4><i class="fas fa-wind"></i> Atmospheric Pressure</h4>
+                <p>Air pressure results from the weight of the entire atmosphere pressing down on Earth's surface. This pressure decreases with altitude, affecting everything from breathing at high elevations to weather patterns and aircraft flight.</p>
+            </div>
+        </div>
+
+        <!-- Learning Objectives Section -->
+        <div class="section">
+            <h2><i class="fas fa-target"></i> Learning Objectives</h2>
+            <div class="highlight-box">
+                <h4><i class="fas fa-star"></i> Course Competency CC8.1</h4>
+                <p><strong>Identify the composition of and factors that affect the Earth's atmosphere</strong></p>
+            </div>
+            
+            <div class="objectives-grid">
+                <div class="objective-card">
+                    <h4><i class="fas fa-layer-group"></i> LO8.1.1</h4>
+                    <p>Analyze the composition, structure, and pressure of the atmosphere</p>
+                </div>
+                <div class="objective-card">
+                    <h4><i class="fas fa-calculator"></i> LO8.1.2</h4>
+                    <p>Solve problems using the pressure-volume equation</p>
+                </div>
+                <div class="objective-card">
+                    <h4><i class="fas fa-wind"></i> LO8.1.3</h4>
+                    <p>Correlate the role of wind and water in the atmosphere</p>
+                </div>
+                <div class="objective-card">
+                    <h4><i class="fas fa-sun"></i> LO8.1.4</h4>
+                    <p>Solve the change in temperature of soil caused by the sun shining</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Atmospheric Composition Highlight -->
+        <div class="composition-box">
+            <h3><i class="fas fa-chart-pie"></i> Atmospheric Composition</h3>
+            <div class="composition-stat">
+                78% Nitrogen (N₂)
+            </div>
+            <div class="composition-stat">
+                21% Oxygen (O₂)
+            </div>
+            <div class="composition-stat">
+                1% Other Gases (Ar, CO₂, H₂O, etc.)
+            </div>
+            <p>Carbon dioxide (CO₂) makes up about 0.035% - a small percentage with big climate impacts!</p>
+        </div>
+
+        <!-- Required Readings Section -->
+        <div class="section">
+            <h2><i class="fas fa-book-open"></i> Required Readings</h2>
+            <div class="reading-list">
+                <h3>Primary Reading</h3>
+                <ul>
+                    <li><i class="fas fa-book"></i> <a href="https://bookshelf.vitalsource.com/reader/books/9781264450817/epubcfi/6/62%5B%3Bvnd.vst.idref%3Dchapter22%5D!/4/4" target="_blank">Physical Science, 13th Edition</a> - Chapter 22 by Bill Tillery</li>
+                </ul>
+                
+                <h3>NOAA Resources</h3>
+                <ul>
+                    <li><i class="fas fa-external-link-alt"></i> <a href="https://www.noaa.gov/jetstream/atmosphere" target="_blank">The Atmosphere</a></li>
+                    <li><i class="fas fa-external-link-alt"></i> <a href="https://www.noaa.gov/jetstream/atmosphere/air-pressure" target="_blank">Air Pressure</a></li>
+                    <li><i class="fas fa-external-link-alt"></i> <a href="https://www.noaa.gov/jetstream/atmosphere/layers-of-atmosphere" target="_blank">Layers of the Atmosphere</a></li>
+                    <li><i class="fas fa-external-link-alt"></i> <a href="https://www.noaa.gov/jetstream/clouds/four-core-types-of-clouds" target="_blank">The Four Core Types of Clouds</a></li>
+                    <li><i class="fas fa-external-link-alt"></i> <a href="https://www.noaa.gov/jetstream/clouds/ten-basic-clouds" target="_blank">Ten Basic Clouds</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- NOAA Authority Section -->
+        <div class="noaa-highlight">
+            <h4><i class="fas fa-certificate"></i> NOAA - National Oceanic and Atmospheric Administration</h4>
+            <p>The National Oceanic and Atmospheric Administration is the authoritative source for atmospheric science information. NOAA scientists study weather patterns, climate change, and atmospheric physics to help us understand and predict atmospheric behavior.</p>
+            <p>The NOAA resources linked above provide current, scientifically accurate information about atmospheric structure, pressure systems, and cloud formation processes.</p>
+        </div>
+
+        <!-- CidiLabs Interactive Activity 1: Order/Sequence -->
+        <div class="cidilabs-activity">
+            <h3><i class="fas fa-sort-numeric-down"></i> Interactive Activity 1: Atmospheric Layers from Ground Up</h3>
+            <div class="activity-instruction">
+                <p><strong>Instructions:</strong> Arrange the atmospheric layers in the correct order from Earth's surface to space. Understanding this sequence helps explain temperature changes, weather patterns, and atmospheric phenomena.</p>
+            </div>
+            
+            <div class="dp-order-wrapper">
+                <div class="dp-order-container">
+                    <div class="dp-order-item" data-value="1">
+                        <i class="fas fa-mountain"></i>
+                        <strong>Troposphere (0-12 km)</strong>
+                        <p>Weather layer - temperature decreases with altitude, contains most atmospheric mass</p>
+                    </div>
+                    <div class="dp-order-item" data-value="2">
+                        <i class="fas fa-shield-alt"></i>
+                        <strong>Stratosphere (12-50 km)</strong>
+                        <p>Ozone layer location - temperature increases with altitude due to UV absorption</p>
+                    </div>
+                    <div class="dp-order-item" data-value="3">
+                        <i class="fas fa-meteor"></i>
+                        <strong>Mesosphere (50-85 km)</strong>
+                        <p>Coldest layer - meteors burn up here, temperature decreases with altitude</p>
+                    </div>
+                    <div class="dp-order-item" data-value="4">
+                        <i class="fas fa-fire"></i>
+                        <strong>Thermosphere (85-600 km)</strong>
+                        <p>Hottest layer - temperature increases due to solar X-ray and UV absorption</p>
+                    </div>
+                    <div class="dp-order-item" data-value="5">
+                        <i class="fas fa-rocket"></i>
+                        <strong>Exosphere (600+ km)</strong>
+                        <p>Outermost layer - gradually transitions to space, very thin atmosphere</p>
+                    </div>
+                </div>
+                <div class="dp-order-feedback">
+                    <p><strong>Atmospheric Structure Key:</strong> Each layer is defined by its temperature profile. Remember "T-S-M-T-E" from ground up: Troposphere (weather), Stratosphere (ozone), Mesosphere (meteors), Thermosphere (heat), Exosphere (space transition). Temperature alternately decreases and increases between layers.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CidiLabs Interactive Activity 2: Sort Items -->
+        <div class="cidilabs-activity">
+            <h3><i class="fas fa-cloud-sun"></i> Interactive Activity 2: Atmospheric Components and Phenomena Classification</h3>
+            <div class="activity-instruction">
+                <p><strong>Instructions:</strong> Sort the following atmospheric components and phenomena into their correct categories. Understanding these classifications helps in analyzing atmospheric processes and weather systems.</p>
+            </div>
+            
+            <div class="dp-si-sort-pool">
+                <div class="dp-si-sort-categories">
+                    <div class="dp-si-sort-category" data-category="gas-composition">
+                        <h4><span class="atmosphere-type composition">Gas Composition</span></h4>
+                        <p>Major atmospheric gases and percentages</p>
+                        <div class="dp-si-sort-drop-zone" data-accept="gas-composition"></div>
+                    </div>
+                    <div class="dp-si-sort-category" data-category="troposphere-phenomena">
+                        <h4><span class="atmosphere-type troposphere">Troposphere Phenomena</span></h4>
+                        <p>Weather and processes in lowest layer</p>
+                        <div class="dp-si-sort-drop-zone" data-accept="troposphere-phenomena"></div>
+                    </div>
+                    <div class="dp-si-sort-category" data-category="stratosphere-features">
+                        <h4><span class="atmosphere-type stratosphere">Stratosphere Features</span></h4>
+                        <p>Characteristics of the ozone layer</p>
+                        <div class="dp-si-sort-drop-zone" data-accept="stratosphere-features"></div>
+                    </div>
+                    <div class="dp-si-sort-category" data-category="atmospheric-physics">
+                        <h4><span class="atmosphere-type mesosphere">Atmospheric Physics</span></h4>
+                        <p>Pressure, temperature, and physical processes</p>
+                        <div class="dp-si-sort-drop-zone" data-accept="atmospheric-physics"></div>
+                    </div>
+                </div>
+                
+                <div class="dp-si-sort-items">
+                    <div class="dp-si-sort-item" data-category="gas-composition">Nitrogen (N₂) - 78%</div>
+                    <div class="dp-si-sort-item" data-category="gas-composition">Oxygen (O₂) - 21%</div>
+                    <div class="dp-si-sort-item" data-category="gas-composition">Carbon dioxide (CO₂) - 0.035%</div>
+                    <div class="dp-si-sort-item" data-category="gas-composition">Argon and trace gases - 0.97%</div>
+                    <div class="dp-si-sort-item" data-category="troposphere-phenomena">Weather systems and storms</div>
+                    <div class="dp-si-sort-item" data-category="troposphere-phenomena">Cloud formation and precipitation</div>
+                    <div class="dp-si-sort-item" data-category="troposphere-phenomena">Temperature decreases with altitude</div>
+                    <div class="dp-si-sort-item" data-category="troposphere-phenomena">Contains 80% of atmospheric mass</div>
+                    <div class="dp-si-sort-item" data-category="stratosphere-features">Ozone (O₃) concentration maximum</div>
+                    <div class="dp-si-sort-item" data-category="stratosphere-features">UV radiation absorption</div>
+                    <div class="dp-si-sort-item" data-category="stratosphere-features">Temperature increases with altitude</div>
+                    <div class="dp-si-sort-item" data-category="stratosphere-features">Jet aircraft flight altitude</div>
+                    <div class="dp-si-sort-item" data-category="atmospheric-physics">Pressure decreases with altitude</div>
+                    <div class="dp-si-sort-item" data-category="atmospheric-physics">Air density decreases upward</div>
+                    <div class="dp-si-sort-item" data-category="atmospheric-physics">Humidity and evaporation processes</div>
+                    <div class="dp-si-sort-item" data-category="atmospheric-physics">Atmospheric pressure at sea level ≈ 14.7 psi</div>
+                </div>
+                
+                <div class="dp-si-sort-feedback">
+                    <p><strong>Atmospheric Analysis:</strong> The atmosphere is 99% nitrogen and oxygen, with trace gases having major impacts (like CO₂ in climate). The troposphere contains weather and decreasing temperature. The stratosphere contains protective ozone and increasing temperature. Pressure and density always decrease with altitude, while humidity affects weather and human comfort.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CidiLabs Interactive Activity 3: Flip Cards -->
+        <div class="cidilabs-activity">
+            <h3><i class="fas fa-clone"></i> Interactive Activity 3: Atmospheric Science Principles</h3>
+            <div class="activity-instruction">
+                <p><strong>Instructions:</strong> Click each card to reveal detailed information about atmospheric layers, composition, and processes. These concepts explain how our atmosphere functions and supports life on Earth.</p>
+            </div>
+            
+            <div class="dp-flip-card-container">
+                <div class="dp-flip-card">
+                    <div class="dp-flip-card-front">
+                        <h4>Troposphere</h4>
+                        <p class="atmosphere-type troposphere">Weather Layer</p>
+                    </div>
+                    <div class="dp-flip-card-back">
+                        <h4>Lowest Atmospheric Layer</h4>
+                        <ul>
+                            <li>• Extends 0-12 km above surface</li>
+                            <li>• Contains 80% of atmospheric mass</li>
+                            <li>• Temperature decreases with altitude</li>
+                            <li>• All weather occurs in this layer</li>
+                            <li>• Cloud formation and precipitation</li>
+                            <li>• Commercial aircraft cruise here</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="dp-flip-card">
+                    <div class="dp-flip-card-front">
+                        <h4>Stratosphere</h4>
+                        <p class="atmosphere-type stratosphere">Ozone Shield</p>
+                    </div>
+                    <div class="dp-flip-card-back">
+                        <h4>Protective UV Filter</h4>
+                        <ul>
+                            <li>• Extends 12-50 km altitude</li>
+                            <li>• Contains the ozone layer</li>
+                            <li>• Temperature increases with altitude</li>
+                            <li>• Absorbs harmful UV radiation</li>
+                            <li>• Very stable, little mixing</li>
+                            <li>• Jets cruise in lower stratosphere</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="dp-flip-card">
+                    <div class="dp-flip-card-front">
+                        <h4>Mesosphere</h4>
+                        <p class="atmosphere-type mesosphere">Meteor Shield</p>
+                    </div>
+                    <div class="dp-flip-card-back">
+                        <h4>Coldest Atmospheric Layer</h4>
+                        <ul>
+                            <li>• Extends 50-85 km altitude</li>
+                            <li>• Coldest part of atmosphere (-90°C)</li>
+                            <li>• Temperature decreases with altitude</li>
+                            <li>• Meteors burn up in this layer</li>
+                            <li>• Creates "shooting stars"</li>
+                            <li>• Protects surface from space debris</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="dp-flip-card">
+                    <div class="dp-flip-card-front">
+                        <h4>Atmospheric Pressure</h4>
+                        <p class="atmosphere-type composition">Weight of Air</p>
+                    </div>
+                    <div class="dp-flip-card-back">
+                        <h4>Air Pressure Fundamentals</h4>
+                        <ul>
+                            <li>• Weight of entire atmosphere above</li>
+                            <li>• Sea level: ~14.7 psi or 1013.25 mbar</li>
+                            <li>• Decreases exponentially with altitude</li>
+                            <li>• Affects weather patterns</li>
+                            <li>• High pressure = clear weather</li>
+                            <li>• Low pressure = stormy weather</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="dp-flip-card">
+                    <div class="dp-flip-card-front">
+                        <h4>Ozone Layer</h4>
+                        <p class="atmosphere-type stratosphere">UV Protection</p>
+                    </div>
+                    <div class="dp-flip-card-back">
+                        <h4>Earth's Sunscreen</h4>
+                        <ul>
+                            <li>• Ozone (O₃) molecules absorb UV-B radiation</li>
+                            <li>• Located in stratosphere (15-35 km)</li>
+                            <li>• Prevents harmful radiation reaching surface</li>
+                            <li>• CFCs once depleted ozone layer</li>
+                            <li>• Montreal Protocol helped recovery</li>
+                            <li>• Essential for life on Earth</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="dp-flip-card">
+                    <div class="dp-flip-card-front">
+                        <h4>Humidity</h4>
+                        <p class="atmosphere-type troposphere">Water in Air</p>
+                    </div>
+                    <div class="dp-flip-card-back">
+                        <h4>Atmospheric Moisture</h4>
+                        <ul>
+                            <li>• Amount of water vapor in air</li>
+                            <li>• Relative humidity = (actual/maximum) × 100%</li>
+                            <li>• Affects human comfort and sweating</li>
+                            <li>• Higher humidity reduces evaporation</li>
+                            <li>• Important for weather formation</li>
+                            <li>• Varies with temperature and location</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="dp-flip-card">
+                    <div class="dp-flip-card-front">
+                        <h4>Carbon Dioxide</h4>
+                        <p class="atmosphere-type composition">Greenhouse Gas</p>
+                    </div>
+                    <div class="dp-flip-card-back">
+                        <h4>Climate Impact Gas</h4>
+                        <ul>
+                            <li>• Only 0.035% of atmosphere by volume</li>
+                            <li>• Produced by respiration and combustion</li>
+                            <li>• Consumed by photosynthesis</li>
+                            <li>• Strong greenhouse gas</li>
+                            <li>• Increasing due to human activities</li>
+                            <li>• Major factor in climate change</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="dp-flip-card">
+                    <div class="dp-flip-card-front">
+                        <h4>Temperature Profile</h4>
+                        <p class="atmosphere-type mesosphere">Altitude Changes</p>
+                    </div>
+                    <div class="dp-flip-card-back">
+                        <h4>Why Temperature Varies</h4>
+                        <ul>
+                            <li>• <strong>Troposphere:</strong> Cools with altitude</li>
+                            <li>• <strong>Stratosphere:</strong> Warms (ozone absorption)</li>
+                            <li>• <strong>Mesosphere:</strong> Cools again</li>
+                            <li>• <strong>Thermosphere:</strong> Very hot (solar radiation)</li>
+                            <li>• Energy source determines temperature</li>
+                            <li>• Creates distinct atmospheric layers</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content: Atmospheric Layers -->
+        <div class="section">
+            <h2><i class="fas fa-layer-group"></i> Layers of the Atmosphere</h2>
+            
+            <div class="layers-grid">
+                <div class="layer-card">
+                    <h4><i class="fas fa-mountain"></i> Troposphere</h4>
+                    <div class="layer-properties">
+                        <strong>Altitude:</strong> 0-12 km<br>
+                        <strong>Temperature:</strong> Decreases with altitude<br>
+                        <strong>Characteristics:</strong> Weather layer<br>
+                        <strong>Mass:</strong> 80% of atmosphere
+                    </div>
+                    <p>The troposphere is where we live and breathe. All weather phenomena occur here, including clouds, rain, snow, and storms. Temperature decreases by about 6.5°C per kilometer of altitude.</p>
+                    <p><strong>Key Features:</strong> Mt. Everest peak, commercial aviation, all life on Earth</p>
+                </div>
+                
+                <div class="layer-card">
+                    <h4><i class="fas fa-shield-alt"></i> Stratosphere</h4>
+                    <div class="layer-properties">
+                        <strong>Altitude:</strong> 12-50 km<br>
+                        <strong>Temperature:</strong> Increases with altitude<br>
+                        <strong>Characteristics:</strong> Ozone layer<br>
+                        <strong>Stability:</strong> Very stable, little mixing
+                    </div>
+                    <p>The stratosphere contains the ozone layer that protects Earth from harmful ultraviolet radiation. Temperature increases with altitude due to ozone absorbing UV energy.</p>
+                    <p><strong>Key Features:</strong> Ozone protection, jet aircraft cruising altitude, temperature inversion</p>
+                </div>
+                
+                <div class="layer-card">
+                    <h4><i class="fas fa-meteor"></i> Mesosphere</h4>
+                    <div class="layer-properties">
+                        <strong>Altitude:</strong> 50-85 km<br>
+                        <strong>Temperature:</strong> Decreases with altitude<br>
+                        <strong>Characteristics:</strong> Coldest layer<br>
+                        <strong>Function:</strong> Meteor protection
+                    </div>
+                    <p>The mesosphere is the coldest part of Earth's atmosphere, reaching temperatures as low as -90°C. Most meteors burn up in this layer, creating the "shooting stars" we see.</p>
+                    <p><strong>Key Features:</strong> Meteor burnup, coldest temperatures, noctilucent clouds</p>
+                </div>
+                
+                <div class="layer-card">
+                    <h4><i class="fas fa-fire"></i> Thermosphere</h4>
+                    <div class="layer-properties">
+                        <strong>Altitude:</strong> 85-600 km<br>
+                        <strong>Temperature:</strong> Very hot (up to 2000°C)<br>
+                        <strong>Characteristics:</strong> Aurora formation<br>
+                        <strong>Density:</strong> Extremely thin
+                    </div>
+                    <p>Despite extremely high temperatures, the thermosphere would feel cold due to its very low density. The International Space Station orbits in this layer.</p>
+                    <p><strong>Key Features:</strong> Aurora borealis/australis, satellite orbits, ionosphere</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- NOAA Temperature Profile Image -->
+        <div class="section">
+            <h2><i class="fas fa-chart-line"></i> Atmospheric Temperature Profile</h2>
+            <div class="humidity-chart">
+                <p>The following diagram from NOAA shows how temperature varies with altitude through the atmospheric layers:</p>
+                <img src="https://tstc.instructure.com/courses/2647/files/9383367/preview" alt="Average temperature profile for the lower layers of the atmosphere" data-api-endpoint="https://tstc.instructure.com/api/v1/courses/2647/files/9383367" data-api-returntype="File">
+                <div class="image-caption">Average temperature profile for the lower layers of the atmosphere. Image credit: NOAA, National Oceanic and Atmospheric Administration</div>
+            </div>
+        </div>
+
+        <!-- Ozone Layer Section -->
+        <div class="section">
+            <h2><i class="fas fa-shield-alt"></i> The Ozone Layer Story</h2>
+            
+            <div class="ozone-section">
+                <h4>Why You Don't Hear About the Ozone Layer Anymore</h4>
+                <p>In the 1980s, scientists discovered that chlorofluorocarbons (CFCs) were depleting the ozone layer, creating dangerous "ozone holes." The international community responded with the Montreal Protocol, successfully phasing out ozone-depleting substances.</p>
+                
+                <div class="media-container">
+                    <iframe title="YouTube video player" src="https://www.youtube.com/embed/CaLOiGEDPJQ?si=zKI3TAm6yId7AMBz" width="560" height="315" loading="lazy" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                    <p><em>Duration: 8:34 | Channel: Vox</em></p>
+                    <p><a href="https://tstc.yuja.com/V/Video?v=13092991&node=56803402&a=129108024" target="_blank">ASL Version available</a></p>
+                </div>
+                
+                <p>This video explains how international cooperation successfully addressed the ozone depletion crisis - one of environmental science's greatest success stories.</p>
+            </div>
+        </div>
+
+        <!-- Water and Humidity Section -->
+        <div class="section">
+            <h2><i class="fas fa-tint"></i> Water in the Atmosphere</h2>
+            
+            <div class="atmosphere-concept-grid">
+                <div class="concept-card">
+                    <h4><span class="atmosphere-type composition">Relative Humidity</span></h4>
+                    <p>Relative humidity measures how much water vapor is in the air compared to the maximum amount the air can hold at that temperature.</p>
+                    <p><strong>Formula:</strong> RH = (Actual water vapor / Maximum possible) × 100%</p>
+                    <p>Warm air can hold more water vapor than cold air, which is why humidity feels more oppressive on hot days.</p>
+                </div>
+                
+                <div class="concept-card">
+                    <h4><span class="atmosphere-type troposphere">Human Comfort</span></h4>
+                    <p>Humidity affects how hot we feel because it influences our body's ability to cool through sweating.</p>
+                    <ul>
+                        <li><strong>Low humidity (&lt;30%):</strong> Feels dry, evaporation is efficient</li>
+                        <li><strong>Moderate humidity (30-60%):</strong> Comfortable</li>
+                        <li><strong>High humidity (&gt;60%):</strong> Feels muggy, poor evaporation</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="humidity-chart">
+                <h3>Humidity and Temperature Relationship</h3>
+                <img src="https://tstc.instructure.com/courses/2647/files/9383355/preview" alt="Relative Humidity Chart" data-api-endpoint="https://tstc.instructure.com/api/v1/courses/2647/files/9383355" data-api-returntype="File">
+                <div class="image-caption">Relative Humidity Chart. Image credit: Tammy Moore CC-BY-NC</div>
+                
+                <h3>Evaporation and Cooling</h3>
+                <img src="https://tstc.instructure.com/courses/2647/files/9383356/preview" alt="Heat of Evaporation" data-api-endpoint="https://tstc.instructure.com/api/v1/courses/2647/files/9383356" data-api-returntype="File">
+                <div class="image-caption">Heat of Evaporation. Image credit: Tammy Moore CC-BY-NC</div>
+                
+                <p>When we sweat, water evaporation removes heat from our body. High humidity reduces evaporation efficiency, making hot days feel even hotter and more uncomfortable.</p>
+            </div>
+        </div>
+
+        <!-- Practice Question Section -->
+        <div class="section">
+            <h2><i class="fas fa-question-circle"></i> Practice Question</h2>
+            
+            <div class="highlight-box">
+                <h4><i class="fas fa-layer-group"></i> Practice: Atmospheric Layers</h4>
+                <p><strong>Question:</strong> What are the layers of the atmosphere?</p>
+                
+                <details>
+                    <summary style="cursor: pointer; font-weight: bold; color: #4682B4;">Click to reveal answer</summary>
+                    <div style="padding: 15px; background: #f8f9fa; border-radius: 8px; margin-top: 10px;">
+                        <p><strong>Answer:</strong> The five layers of the atmosphere are:</p>
+                        <ol>
+                            <li><strong>Troposphere</strong> - Weather layer (0-12 km)</li>
+                            <li><strong>Stratosphere</strong> - Ozone layer (12-50 km)</li>
+                            <li><strong>Mesosphere</strong> - Meteor layer (50-85 km)</li>
+                            <li><strong>Thermosphere</strong> - Hot, thin layer (85-600 km)</li>
+                            <li><strong>Exosphere</strong> - Transition to space (600+ km)</li>
+                        </ol>
+                        <p>Remember: Each layer is defined by its temperature profile with altitude!</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div style="text-align: center; padding: 30px; color: #666; border-top: 2px solid #eee; margin-top: 40px;">
+            <p><strong>PHYS-1315 Physical Science I</strong> | Module 8, Lesson 1</p>
+            <p>Enhanced with CidiLabs Interactive Activities</p>
+            <p><i class="fas fa-cloud-rain"></i> Next: Module 9 - Weather and Climate Systems!</p>
+        </div>
+    </div>
+
+    <!-- CidiLabs JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Flip cards functionality
+            const flipCards = document.querySelectorAll('.dp-flip-card');
+            flipCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    this.classList.toggle('flipped');
+                });
+            });
+            
+            // Order activity setup
+            const orderItems = document.querySelectorAll('.dp-order-item');
+            orderItems.forEach((item, index) => {
+                item.style.order = Math.random() * 10;
+                item.setAttribute('draggable', true);
+            });
+            
+            // Sort activity setup  
+            const sortItems = document.querySelectorAll('.dp-si-sort-item');
+            sortItems.forEach(item => {
+                item.setAttribute('draggable', true);
+            });
+            
+            console.log('CidiLabs activities initialized for M8L1 The Atmosphere');
+        });
+    </script>
+
+    <!-- Enhanced CidiLabs Activity Styles -->
+    <style>
+        /* Flip Cards Enhanced Styling for Atmospheric Theme */
+        .dp-flip-card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            margin: 25px 0;
+        }
+        
+        .dp-flip-card {
+            background: linear-gradient(135deg, #fff, #f8f9fa);
+            border: 2px solid #e9ecef;
+            border-radius: 15px;
+            height: 250px;
+            perspective: 1000px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .dp-flip-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 12px 30px rgba(70, 130, 180, 0.2);
+        }
+        
+        .dp-flip-card-front,
+        .dp-flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            padding: 25px;
+            backface-visibility: hidden;
+            transition: transform 0.6s;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .dp-flip-card-back {
+            transform: rotateY(180deg);
+            background: linear-gradient(135deg, #4682B4, #1E90FF);
+            color: white;
+        }
+        
+        .dp-flip-card.flipped .dp-flip-card-front {
+            transform: rotateY(180deg);
+        }
+        
+        .dp-flip-card.flipped .dp-flip-card-back {
+            transform: rotateY(0deg);
+        }
+        
+        .dp-flip-card-back ul {
+            text-align: left;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            font-size: 0.85em;
+        }
+        
+        .dp-flip-card-back li {
+            margin: 3px 0;
+        }
+        
+        /* Order Activity Enhanced for Atmospheric Layers */
+        .dp-order-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin: 25px 0;
+        }
+        
+        .dp-order-item {
+            background: linear-gradient(135deg, #4682B4, #1E90FF);
+            color: white;
+            padding: 18px;
+            border-radius: 12px;
+            cursor: grab;
+            user-select: none;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            font-weight: 500;
+            box-shadow: 0 4px 15px rgba(70, 130, 180, 0.3);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .dp-order-item i {
+            font-size: 1.2em;
+            flex-shrink: 0;
+        }
+        
+        .dp-order-item:hover {
+            transform: translateX(15px);
+            box-shadow: 0 6px 20px rgba(70, 130, 180, 0.4);
+            border-color: rgba(135, 206, 235, 0.5);
+        }
+        
+        .dp-order-item:active {
+            cursor: grabbing;
+            transform: scale(1.02);
+        }
+        
+        .dp-order-item p {
+            margin: 5px 0 0 0;
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+        
+        .dp-order-feedback {
+            background: linear-gradient(135deg, #d4edda, #c3e6cb);
+            border: 2px solid #28a745;
+            color: #155724;
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 25px;
+            font-weight: 500;
+            box-shadow: 0 4px 15px rgba(40, 167, 69, 0.2);
+        }
+        
+        /* Sort Activity Enhanced for Atmospheric Components */
+        .dp-si-sort-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .dp-si-sort-category {
+            background: linear-gradient(135deg, #f8f9fa, #ffffff);
+            border: 3px dashed #dee2e6;
+            border-radius: 15px;
+            padding: 20px;
+            min-height: 200px;
+            transition: all 0.3s ease;
+        }
+        
+        .dp-si-sort-category:hover {
+            border-color: #4682B4;
+            box-shadow: 0 6px 20px rgba(70, 130, 180, 0.2);
+            transform: translateY(-2px);
+        }
+        
+        .dp-si-sort-category h4 {
+            margin-bottom: 12px;
+            text-align: center;
+        }
+        
+        .dp-si-sort-drop-zone {
+            min-height: 140px;
+            border: 2px dashed #adb5bd;
+            border-radius: 10px;
+            margin-top: 12px;
+            padding: 12px;
+            background: white;
+            transition: all 0.3s ease;
+        }
+        
+        .dp-si-sort-drop-zone:hover {
+            border-color: #28a745;
+            background: #f8fff8;
+        }
+        
+        .dp-si-sort-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+            margin: 25px 0;
+            padding: 25px;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border-radius: 15px;
+            border: 2px solid #dee2e6;
+        }
+        
+        .dp-si-sort-item {
+            background: linear-gradient(135deg, #87CEEB, #6495ED);
+            color: white;
+            padding: 10px 16px;
+            border-radius: 20px;
+            cursor: grab;
+            user-select: none;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            font-size: 0.9em;
+            box-shadow: 0 2px 8px rgba(135, 206, 235, 0.3);
+        }
+        
+        .dp-si-sort-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(135, 206, 235, 0.4);
+        }
+        
+        .dp-si-sort-item:active {
+            cursor: grabbing;
+        }
+        
+        .dp-si-sort-feedback {
+            background: linear-gradient(135deg, #e8f4fd, #cce7ff);
+            border: 2px solid #007bff;
+            color: #004085;
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 25px;
+            font-weight: 500;
+            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2);
+        }
+    </style>
+</body>
+</html>

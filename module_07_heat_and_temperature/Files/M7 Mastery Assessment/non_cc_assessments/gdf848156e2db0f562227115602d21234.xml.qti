@@ -1,0 +1,416 @@
+<?xml version="1.0"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/xsd/ims_qtiasiv1p2p1.xsd">
+  <objectbank ident="gdf848156e2db0f562227115602d21234" canvas_item_bank="true">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>bank_title</fieldlabel>
+        <fieldentry>Machines</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>bank_type</fieldlabel>
+        <fieldentry>Course</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <item ident="11ceb2f5f77b2aca7f8b7b4cbb76d6dc" title="Machines (vi)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>3687324f-60fd-47b7-8dde-21c9eea94bdc,8bba19b0-ffea-4053-ac08-5dbb05d26c4c,da694c6e-cfc7-43d1-a445-3515da46a039,4557d78b-bcaa-4896-bda2-c9fc00377d40</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>44635e65fac50c3b18bfbd1d66000914</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Which of the following statements about machines is correct?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="3687324f-60fd-47b7-8dde-21c9eea94bdc">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;a.&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;A refrigerator is a device that pumps heat from a hot reservoir into a cold reservoir using the energy from an input of work.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="8bba19b0-ffea-4053-ac08-5dbb05d26c4c">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span class="mctfyn__choice-txt font-txt"&gt;If a machine is 25% efficient, and does 1600 joules of work, it will need an input of 400 joules of energy.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="da694c6e-cfc7-43d1-a445-3515da46a039">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in;  "&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;  "&gt;&lt;span&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;span class="mctfynchoice-txt"&gt;Because machines operate in a cycle, their initial and final states are the same, and so the change in their internal energy over the course of a cycle is zero.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="4557d78b-bcaa-4896-bda2-c9fc00377d40">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;A heat engine is a device that will dump waste heat from an input of both heat and work.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">da694c6e-cfc7-43d1-a445-3515da46a039</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="3daa4d10b506fb13d10bbd4de0c5a480" title="Machines (v)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>0942cf40-10d8-442b-8de9-3ff69f6cb7c0,3687324f-60fd-47b7-8dde-21c9eea94bdc,8bba19b0-ffea-4053-ac08-5dbb05d26c4c,da694c6e-cfc7-43d1-a445-3515da46a039</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>46de9ac26e95ee712cb5ca7392a707b0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Which of the following statements about machines is correct?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="0942cf40-10d8-442b-8de9-3ff69f6cb7c0">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in;  "&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;  "&gt;&lt;span&gt;a.&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;A heat engine is a device that will dump waste heat from an input of both heat and work.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="3687324f-60fd-47b7-8dde-21c9eea94bdc">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;A refrigerator is a device that pumps heat from a cold reservoir into a hot reservoir using the energy from an input of work.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="8bba19b0-ffea-4053-ac08-5dbb05d26c4c">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span class="mctfyn__choice-txt font-txt"&gt;If a machine is 25% efficient, and does 1600 joules of work, it will need an input of 400 joules of energy.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="da694c6e-cfc7-43d1-a445-3515da46a039">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span class="mctfyn__choice-txt font-txt"&gt;Machines operate in a cycle where the internal energy of the device continuously increases.&lt;br&gt;&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">3687324f-60fd-47b7-8dde-21c9eea94bdc</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="1676647382e3ddc8b9abb72bb5a880d5" title="Machines (iv)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>0942cf40-10d8-442b-8de9-3ff69f6cb7c0,3687324f-60fd-47b7-8dde-21c9eea94bdc,8bba19b0-ffea-4053-ac08-5dbb05d26c4c,da694c6e-cfc7-43d1-a445-3515da46a039</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>6fb5c5c2e0a7f49e7ffd3676f90be96d</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Which of the following statements about machines is correct?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="0942cf40-10d8-442b-8de9-3ff69f6cb7c0">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;  "&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;  "&gt;&lt;span&gt;a.&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;A heat engine is a device that will dump waste heat from an input of heat and an output of work.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="3687324f-60fd-47b7-8dde-21c9eea94bdc">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;  "&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;  "&gt;&lt;span&gt;a.&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;A refrigerator is a device that pumps heat from a hot reservoir into a cold reservoir using the energy from an input of work.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="8bba19b0-ffea-4053-ac08-5dbb05d26c4c">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span class="mctfyn__choice-txt font-txt"&gt;If a machine is 25% efficient, and does 1600 joules of work, it will need an input of 400 joules of energy.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="da694c6e-cfc7-43d1-a445-3515da46a039">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span class="mctfyn__choice-txt font-txt"&gt;Machines operate in a cycle where the internal energy of the device continuously increases.&lt;br&gt;&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">0942cf40-10d8-442b-8de9-3ff69f6cb7c0</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="194822d8d2c757bf1317643c6d6d69f6" title="Machines (iii)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>0942cf40-10d8-442b-8de9-3ff69f6cb7c0,3687324f-60fd-47b7-8dde-21c9eea94bdc,8bba19b0-ffea-4053-ac08-5dbb05d26c4c,da694c6e-cfc7-43d1-a445-3515da46a039</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>8f346e032a0b3f3a825966ca03f18af7</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Which of the following statements about machines is incorrect?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="0942cf40-10d8-442b-8de9-3ff69f6cb7c0">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;  "&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;  "&gt;&lt;span&gt;a.&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;A heat engine is a device that will dump waste heat from an input of heat and an output of work.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="3687324f-60fd-47b7-8dde-21c9eea94bdc">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;A refrigerator is a device that pumps heat from a cold reservoir into a hot reservoir using the energy from an input of work.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="8bba19b0-ffea-4053-ac08-5dbb05d26c4c">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span class="mctfyn__choice-txt font-txt"&gt;If a machine is 25% efficient, and does 1600 joules of work, it will need an input of 400 joules of energy.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="da694c6e-cfc7-43d1-a445-3515da46a039">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span class="mctfyn__choice-txt font-txt"&gt;Because machines operate in a cycle, their initial and final states are the same, and so the change in their internal energy over the course of a cycle is zero.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">8bba19b0-ffea-4053-ac08-5dbb05d26c4c</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="882e3f82913fe8f9b637651dab689e7a" title="Machines (ii)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>0942cf40-10d8-442b-8de9-3ff69f6cb7c0,3687324f-60fd-47b7-8dde-21c9eea94bdc,8bba19b0-ffea-4053-ac08-5dbb05d26c4c,da694c6e-cfc7-43d1-a445-3515da46a039</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>fb816cd5d413a0bc62618b393af0405d</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Which of the following statements about machines is incorrect?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="0942cf40-10d8-442b-8de9-3ff69f6cb7c0">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span class="mctfyn__choice-txt font-txt"&gt;A heat engine is a device that will dump waste heat from an input of heat and an output of work.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="3687324f-60fd-47b7-8dde-21c9eea94bdc">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;A refrigerator is a device that pumps heat from a hot reservoir into a cold reservoir using the energy from an input of work.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="8bba19b0-ffea-4053-ac08-5dbb05d26c4c">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span class="mctfyn__choice-txt font-txt"&gt;If a machine is 25% efficient, and does 400 joules of work, it will need an input of 1600 joules of energy.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="da694c6e-cfc7-43d1-a445-3515da46a039">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span class="mctfyn__choice-txt font-txt"&gt;Because machines operate in a cycle, their initial and final states are the same, and so the change in their internal energy over the course of a cycle is zero.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">3687324f-60fd-47b7-8dde-21c9eea94bdc</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="e48d4963a05ce28f4ef36d4101d15268" title="Machines (i)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>0942cf40-10d8-442b-8de9-3ff69f6cb7c0,3687324f-60fd-47b7-8dde-21c9eea94bdc,8bba19b0-ffea-4053-ac08-5dbb05d26c4c,da694c6e-cfc7-43d1-a445-3515da46a039</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>db0c5198f1b3f5b3a5f5606685be54dd</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Which of the following statements about machines is incorrect?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="0942cf40-10d8-442b-8de9-3ff69f6cb7c0">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span class="mctfyn__choice-txt font-txt"&gt;A heat engine is a device that will dump waste heat from an input of both heat and work.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="3687324f-60fd-47b7-8dde-21c9eea94bdc">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;A refrigerator is a device that pumps heat from a cold reservoir into a hot reservoir using the energy from an input of work.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="8bba19b0-ffea-4053-ac08-5dbb05d26c4c">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span class="mctfyn__choice-txt font-txt"&gt;If a machine is 25% efficient, and does 400 joules of work, it will need an input of 1600 joules of energy.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="da694c6e-cfc7-43d1-a445-3515da46a039">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span class="mctfyn__choice-txt font-txt"&gt;Because machines operate in a cycle, their initial and final states are the same, and so the change in their internal energy over the course of a cycle is zero.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">0942cf40-10d8-442b-8de9-3ff69f6cb7c0</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+  </objectbank>
+</questestinterop>

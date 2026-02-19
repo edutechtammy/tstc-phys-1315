@@ -1,0 +1,740 @@
+<?xml version="1.0"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/xsd/ims_qtiasiv1p2p1.xsd">
+  <objectbank ident="g9864c228b83f98953e25e5ff13b65a11" canvas_item_bank="true">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>bank_title</fieldlabel>
+        <fieldentry>PHYS 1315 M4 Ideal Gas</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>bank_type</fieldlabel>
+        <fieldentry>Course</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <item ident="a8b957b52583dc97c91385f9376b154c" title="Ideal Gas (x)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>2482d257-7e90-4c0d-ac70-34b80ac58985,125fe002-b384-405b-b97c-c30f5d09a789,706a5d72-5217-4642-8928-046bcfb00cab,30a82bf3-c9e1-4ba7-9574-65ed8ac87627,c6cc93dd-b015-4318-9a41-9085b5de307d</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>42a7595fe8529f07cf0609cbb4b897ae</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Which of the following statements about ideal gases and ideal gas processes is &lt;span style="text-decoration: underline;"&gt;incorrect&lt;/span&gt;?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="2482d257-7e90-4c0d-ac70-34b80ac58985">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Ideal gases collide elastically with the walls of the container.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="125fe002-b384-405b-b97c-c30f5d09a789">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Pressure comes from the gas atoms&#x2019; change in momentum after colliding with the container walls.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="706a5d72-5217-4642-8928-046bcfb00cab">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Doubling the absolute temperature of an ideal gas will double its pressure if its amount and volume are kept constant.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="30a82bf3-c9e1-4ba7-9574-65ed8ac87627">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;If half of the gas atoms are removed from a container, the pressure of the gas will be half.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="c6cc93dd-b015-4318-9a41-9085b5de307d">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;If a fixed amount of gas undergoes a process where its pressure doubles, and its volume also doubles, then its absolute temperature will also double.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">c6cc93dd-b015-4318-9a41-9085b5de307d</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="64a1442b8d404dd3a7f115e0d2a263bf" title="Ideal Gas (ix)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>2482d257-7e90-4c0d-ac70-34b80ac58985,125fe002-b384-405b-b97c-c30f5d09a789,706a5d72-5217-4642-8928-046bcfb00cab,30a82bf3-c9e1-4ba7-9574-65ed8ac87627,c6cc93dd-b015-4318-9a41-9085b5de307d</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>6eb6cf62db45dbcd4471a5e8050b1c90</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Which of the following statements about ideal gases and ideal gas processes is &lt;span style="text-decoration: underline;"&gt;incorrect&lt;/span&gt;?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="2482d257-7e90-4c0d-ac70-34b80ac58985">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Ideal gases collide elastically with the walls of the container.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="125fe002-b384-405b-b97c-c30f5d09a789">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Pressure comes from the gas atoms&#x2019; change in momentum after colliding with the container walls.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="706a5d72-5217-4642-8928-046bcfb00cab">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Doubling the absolute temperature of an ideal gas will double its pressure if its amount and volume are kept constant.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="30a82bf3-c9e1-4ba7-9574-65ed8ac87627">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;If half of the gas atoms are removed from a container, the pressure of the gas will double.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="c6cc93dd-b015-4318-9a41-9085b5de307d">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;If a fixed amount of gas undergoes a process where its pressure doubles, but its volume shrinks by half, then its temperature will remain constant.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">30a82bf3-c9e1-4ba7-9574-65ed8ac87627</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="da588aee388015b126fdb42cbc9485ab" title="Ideal Gas (viii)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>2482d257-7e90-4c0d-ac70-34b80ac58985,125fe002-b384-405b-b97c-c30f5d09a789,706a5d72-5217-4642-8928-046bcfb00cab,30a82bf3-c9e1-4ba7-9574-65ed8ac87627,c6cc93dd-b015-4318-9a41-9085b5de307d</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>6c6ce820fb9af938fc216dfca4603090</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Which of the following statements about ideal gases and ideal gas processes is &lt;span style="text-decoration: underline;"&gt;incorrect&lt;/span&gt;?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="2482d257-7e90-4c0d-ac70-34b80ac58985">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Ideal gases collide elastically with the walls of the container.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="125fe002-b384-405b-b97c-c30f5d09a789">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Pressure comes from the gas atoms&#x2019; change in momentum after colliding with the container walls.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="706a5d72-5217-4642-8928-046bcfb00cab">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Doubling the absolute temperature of an ideal gas will halve its pressure if its amount and volume are kept constant.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="30a82bf3-c9e1-4ba7-9574-65ed8ac87627">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;If half of the gas atoms are removed from a container, the pressure of the gas will be half.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="c6cc93dd-b015-4318-9a41-9085b5de307d">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;If a fixed amount of gas undergoes a process where its pressure doubles, but its volume shrinks by half, then its temperature will remain constant.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">706a5d72-5217-4642-8928-046bcfb00cab</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="3d4cffbcf7106e97169ddc7ed48400cc" title="Ideal Gas (vii)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>2482d257-7e90-4c0d-ac70-34b80ac58985,125fe002-b384-405b-b97c-c30f5d09a789,706a5d72-5217-4642-8928-046bcfb00cab,30a82bf3-c9e1-4ba7-9574-65ed8ac87627,c6cc93dd-b015-4318-9a41-9085b5de307d</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>e2505787880d0906c8dcede82d58fac1</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Which of the following statements about ideal gases and ideal gas processes is &lt;span style="text-decoration: underline;"&gt;incorrect&lt;/span&gt;?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="2482d257-7e90-4c0d-ac70-34b80ac58985">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Ideal gases collide elastically with the walls of the container.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="125fe002-b384-405b-b97c-c30f5d09a789">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Pressure comes from the gas atoms&#x2019; change in mass after colliding with the container walls.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="706a5d72-5217-4642-8928-046bcfb00cab">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Doubling the absolute temperature of an ideal gas will double its pressure if its amount and volume are kept constant.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="30a82bf3-c9e1-4ba7-9574-65ed8ac87627">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;If half of the gas atoms are removed from a container, the pressure of the gas will be half.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="c6cc93dd-b015-4318-9a41-9085b5de307d">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;If a fixed amount of gas undergoes a process where its pressure doubles, but its volume shrinks by half, then its temperature will remain constant.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">125fe002-b384-405b-b97c-c30f5d09a789</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="da6e3b9315fb50764052cd33c016ec9f" title="Ideal Gas (vi)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>2482d257-7e90-4c0d-ac70-34b80ac58985,125fe002-b384-405b-b97c-c30f5d09a789,706a5d72-5217-4642-8928-046bcfb00cab,30a82bf3-c9e1-4ba7-9574-65ed8ac87627,c6cc93dd-b015-4318-9a41-9085b5de307d</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>3f0f166b1cbe7ccba60f4733b3b07646</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Which of the following statements about ideal gases and ideal gas processes is &lt;span style="text-decoration: underline;"&gt;incorrect&lt;/span&gt;?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="2482d257-7e90-4c0d-ac70-34b80ac58985">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Ideal gases collide inelastically with the walls of the container and other gas atoms.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="125fe002-b384-405b-b97c-c30f5d09a789">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Pressure comes from the gas atoms&#x2019; change in momentum after colliding with the container walls.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="706a5d72-5217-4642-8928-046bcfb00cab">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Doubling the absolute temperature of an ideal gas will double its pressure if its amount and volume are kept constant.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="30a82bf3-c9e1-4ba7-9574-65ed8ac87627">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;If half of the gas atoms are removed from a container, the pressure of the gas will be half.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="c6cc93dd-b015-4318-9a41-9085b5de307d">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;If a fixed amount of gas undergoes a process where its pressure doubles, but its volume shrinks by half, then its temperature will remain constant.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">2482d257-7e90-4c0d-ac70-34b80ac58985</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="0e0d98ec875b5cd9713a03115869a414" title="Ideal Gas (v)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>00874c87-df1b-4ac0-81ad-32bae746d8a1,8e6fc095-dd9e-42a3-95be-26b775011e5c,94c062e4-93b2-4e45-ab97-806e98d1bc31,ff6be955-8f6f-4f48-bdac-0d4ee740fe69,35101ab3-c0ae-485a-b7ac-dfb8ac75501c</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>9bd82c8c46c601640fe834b25ca4442d</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p class="MsoNormal"&gt;Which of the following statements about ideal gases and ideal gas processes is &lt;span style="text-decoration: underline;"&gt;correct&lt;/span&gt;?&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="00874c87-df1b-4ac0-81ad-32bae746d8a1">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;&lt;/p&gt;
+&lt;p class="MsoNormal"&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;Ideal gases collide inelastically with the walls of the container and other gas atoms.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="8e6fc095-dd9e-42a3-95be-26b775011e5c">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;Pressure comes from the gas atoms&#x2019; change in mass after colliding with the container walls.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="94c062e4-93b2-4e45-ab97-806e98d1bc31">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Doubling the absolute temperature of an ideal gas will halve its pressure if its amount and volume are kept constant.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="ff6be955-8f6f-4f48-bdac-0d4ee740fe69">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;If half of the gas atoms are removed from a container, then the pressure of the gas will remain constant.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="35101ab3-c0ae-485a-b7ac-dfb8ac75501c">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;If a fixed amount of gas undergoes a process where its pressure doubles, but its volume shrinks by half, then its temperature will remain constant.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">35101ab3-c0ae-485a-b7ac-dfb8ac75501c</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="ce100951b7b425e1e6b2944f12db91cb" title="Ideal Gas (iv)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>00874c87-df1b-4ac0-81ad-32bae746d8a1,8e6fc095-dd9e-42a3-95be-26b775011e5c,94c062e4-93b2-4e45-ab97-806e98d1bc31,ff6be955-8f6f-4f48-bdac-0d4ee740fe69,35101ab3-c0ae-485a-b7ac-dfb8ac75501c</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>5eef4b694e8a22c6ffa351b00722913e</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p class="MsoNormal"&gt;Which of the following statements about ideal gases and ideal gas processes is &lt;span style="text-decoration: underline;"&gt;correct&lt;/span&gt;?&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="00874c87-df1b-4ac0-81ad-32bae746d8a1">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;Ideal gases collide inelastically with the walls of the container and other gas atoms.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="8e6fc095-dd9e-42a3-95be-26b775011e5c">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;Pressure comes from the gas atoms&#x2019; change in mass after colliding with the container walls.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="94c062e4-93b2-4e45-ab97-806e98d1bc31">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Doubling the absolute temperature of an ideal gas will halve its pressure if its amount and volume are kept constant.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="ff6be955-8f6f-4f48-bdac-0d4ee740fe69">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;If half of the gas atoms are removed from a container, the pressure of the gas will be half.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="35101ab3-c0ae-485a-b7ac-dfb8ac75501c">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;If a fixed amount of gas undergoes a process where its pressure doubles, and its volume also doubles, then its absolute temperature will also double.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">ff6be955-8f6f-4f48-bdac-0d4ee740fe69</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="685f67db9a044fdfc4f085c69c0e1dd2" title="Ideal Gas (iii)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>00874c87-df1b-4ac0-81ad-32bae746d8a1,8e6fc095-dd9e-42a3-95be-26b775011e5c,94c062e4-93b2-4e45-ab97-806e98d1bc31,ff6be955-8f6f-4f48-bdac-0d4ee740fe69,35101ab3-c0ae-485a-b7ac-dfb8ac75501c</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>d9b6bb32742cffcf4c9906fff5b30637</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p class="MsoNormal"&gt;Which of the following statements about ideal gases and ideal gas processes is &lt;span style="text-decoration: underline;"&gt;correct&lt;/span&gt;?&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="00874c87-df1b-4ac0-81ad-32bae746d8a1">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;Ideal gases collide inelastically with the walls of the container and other gas atoms.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="8e6fc095-dd9e-42a3-95be-26b775011e5c">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;Pressure comes from the gas atoms&#x2019; change in mass after colliding with the container walls.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="94c062e4-93b2-4e45-ab97-806e98d1bc31">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Doubling the absolute temperature of an ideal gas will double its pressure if its amount and volume are kept constant.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="ff6be955-8f6f-4f48-bdac-0d4ee740fe69">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;If half of the gas atoms are removed from a container, the pressure of the gas will double.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="35101ab3-c0ae-485a-b7ac-dfb8ac75501c">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;If a fixed amount of gas undergoes a process where its pressure doubles, and its volume also doubles, then its absolute temperature will also double.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">94c062e4-93b2-4e45-ab97-806e98d1bc31</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="69d9068a3c6b95cf935b96607aa9095e" title="Ideal Gas (ii)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>00874c87-df1b-4ac0-81ad-32bae746d8a1,8e6fc095-dd9e-42a3-95be-26b775011e5c,94c062e4-93b2-4e45-ab97-806e98d1bc31,ff6be955-8f6f-4f48-bdac-0d4ee740fe69,35101ab3-c0ae-485a-b7ac-dfb8ac75501c</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>d6b6ff6a1857c220346d643c78b2213c</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p class="MsoNormal"&gt;Which of the following statements about ideal gases and ideal gas processes is &lt;span style="text-decoration: underline;"&gt;correct&lt;/span&gt;?&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="00874c87-df1b-4ac0-81ad-32bae746d8a1">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;Ideal gases collide inelastically with the walls of the container and other gas atoms.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="8e6fc095-dd9e-42a3-95be-26b775011e5c">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Pressure comes from the gas atoms&#x2019; change in momentum after colliding with the container's walls.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="94c062e4-93b2-4e45-ab97-806e98d1bc31">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Doubling the absolute temperature of an ideal gas will halve its pressure if its amount and volume are kept constant.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="ff6be955-8f6f-4f48-bdac-0d4ee740fe69">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;If half of the gas atoms are removed from a container, the pressure of the gas will double.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="35101ab3-c0ae-485a-b7ac-dfb8ac75501c">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;If a fixed amount of gas undergoes a process where its pressure doubles, and its volume also doubles, then its absolute temperature will also double.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">8e6fc095-dd9e-42a3-95be-26b775011e5c</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="53aaf7f3518a3aaf943b3cf00b51bc2e" title="Ideal Gas (i)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>00874c87-df1b-4ac0-81ad-32bae746d8a1,8e6fc095-dd9e-42a3-95be-26b775011e5c,94c062e4-93b2-4e45-ab97-806e98d1bc31,ff6be955-8f6f-4f48-bdac-0d4ee740fe69,35101ab3-c0ae-485a-b7ac-dfb8ac75501c</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>fb974ba03209acd50b226ef16b079b4a</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p class="MsoNormal"&gt;Which of the following statements about ideal gases and ideal gas processes is &lt;span style="text-decoration: underline;"&gt;correct&lt;/span&gt;?&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="00874c87-df1b-4ac0-81ad-32bae746d8a1">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;Ideal gases collide elastically with the walls of the container.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="8e6fc095-dd9e-42a3-95be-26b775011e5c">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;Pressure comes from the gas atoms&#x2019; change in mass after colliding with the container walls.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="94c062e4-93b2-4e45-ab97-806e98d1bc31">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Doubling the absolute temperature of an ideal gas will halve its pressure if its amount and volume are kept constant.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="ff6be955-8f6f-4f48-bdac-0d4ee740fe69">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;If half of the gas atoms are removed from a container, the pressure of the gas will double.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="35101ab3-c0ae-485a-b7ac-dfb8ac75501c">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;If a fixed amount of gas undergoes a process where its pressure doubles, and its volume also doubles, then its absolute temperature will also double.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">00874c87-df1b-4ac0-81ad-32bae746d8a1</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+  </objectbank>
+</questestinterop>

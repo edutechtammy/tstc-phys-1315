@@ -1,0 +1,89 @@
+{
+    "lesson": "M2L1 Stars",
+    "enrichment_links": [
+        {
+            "title": "Star Lifecycle (NASA)",
+            "url": "https://science.nasa.gov/mission/webb/star-lifecycle",
+            "description": "Visualizing the full life span of stars, especially how a star’s mass determines its ultimate fate."
+        },
+        {
+            "title": "Exploring the Birth of Stars (NASA)",
+            "url": "https://science.nasa.gov/mission/hubble/science/science-highlights/exploring-the-birth-of-stars",
+            "description": "See incredible images and learn about the high-precision instruments and remote sensing equipment scientists use to observe the formation of new stars in nebulae."
+        },
+        {
+            "title": "Star Color & Temperature Interactive",
+            "url": "https://edutechtammy.github.io/star-color-and-temperature/",
+            "description": "Interactive tool to explore the relationship between a star's surface temperature and its color."
+        },
+        {
+            "title": "Hertzsprung-Russell Diagram Interactive",
+            "url": "https://edutechtammy.github.io/hr-diagram/",
+            "description": "Interactive tool to classify stars using the H-R diagram."
+        },
+        {
+            "title": "Sun vs Brightest Known Star (YouTube Short)",
+            "url": "https://www.youtube.com/shorts/z3cOEGKgEwg",
+            "description": "Compares the size and brightness of Sirius and the most luminous known star."
+        }
+    ],
+    "practice_questions": [
+        {
+            "question": "When does the 'stable' life of a star begin?",
+            "answer": "When the outward pressure from the fusion reaction balances the inward force of gravity."
+        },
+        {
+            "question": "Based upon the apparent magnitude scale established by Hipparchus, a Level 1 star is ____ times brighter than a Level 3 star.",
+            "answer": "6.3"
+        },
+        {
+            "question": "What is the name of the graph that relates the absolute magnitude of a star to its temperature-luminosity?",
+            "answer": "Hertzsprung-Russell diagram"
+        },
+        {
+            "question": "What is the class of stars that regularly changes brightness and is very useful for determining distances in space?",
+            "answer": "Cepheid variable"
+        },
+        {
+            "question": "What processes in a massive star lead up to a supernova?",
+            "answer": "1. It contracts, builds up heat, goes through many fusion stages to the formation of iron. 2. After iron is produced, energy is no longer released; the star collapses and rebounds into a catastrophic explosion."
+        },
+        {
+            "question": "The apparent magnitude of a star is defined as how bright a star appears as viewed from Earth. What does this depend upon?",
+            "answer": "It depends on the distance of the star from Earth."
+        },
+        {
+            "question": "What is the method used by astronomers to calculate the brightness of a star which compensates for the different distances from Earth?",
+            "answer": "absolute magnitude"
+        },
+        {
+            "question": "What is the property of a main sequence star that determines its brightness, temperature and location on the H-R diagram?",
+            "answer": "mass"
+        },
+        {
+            "question": "What type of star has the same temperature as a main sequence star but is much brighter?",
+            "answer": "red giant"
+        },
+        {
+            "question": "If the remaining core of a supernova has a mass of at least three solar masses, what might it collapse into being?",
+            "answer": "A black hole"
+        }
+    ],
+    "career_connections": [
+        {
+            "title": "Industrial Control & Advanced Manufacturing",
+            "description": "Skills in data processing, sensor calibration, and computational analysis used in astronomy are directly transferable to technical careers in industrial control, advanced manufacturing, and power generation."
+        },
+        {
+            "title": "Technical Diagnostics",
+            "description": "Techniques for analyzing star data mirror those used in diagnostics for HVAC, electrical systems, and non-destructive testing in aviation."
+        },
+        {
+            "title": "Job Interview Talking Points",
+            "description": "Analyzing the H-R diagram is like reading technical specifications and troubleshooting complex system graphs. The lesson reinforces logical problem-solving and computational fluency, which are essential for technical roles."
+        }
+    ],
+    "branding_guidelines": {},
+    "quote": "The cosmos is within us. We are made of star-stuff. We are a way for the universe to know itself.",
+    "quote_credit": "Carl Sagan"
+}

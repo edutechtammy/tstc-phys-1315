@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M6L1 Work & Energy - PHYS-1315</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea, #764ba2, #f093fb, #f5576c, #4facfe, #00f2fe);
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><g opacity="0.4"><circle cx="200" cy="300" r="8" fill="white"><animate attributeName="r" values="8;16;8" dur="3s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0,0; 100,0; 200,0; 300,0" dur="4s" repeatCount="indefinite"/></circle><circle cx="700" cy="200" r="6" fill="white"><animate attributeName="r" values="6;12;6" dur="2.5s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0,0; -50,50; -100,100; -150,150" dur="5s" repeatCount="indefinite"/></circle><circle cx="400" cy="600" r="10" fill="white"><animate attributeName="r" values="10;20;10" dur="3.5s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="translate" values="0,0; 0,-80; 0,-160; 0,-240" dur="6s" repeatCount="indefinite"/></circle></g><g stroke="rgba(255,255,255,0.5)" stroke-width="3" fill="none"><path d="M100,400 Q300,300 500,400 T900,400"><animate attributeName="d" values="M100,400 Q300,300 500,400 T900,400;M100,400 Q300,350 500,400 T900,400;M100,400 Q300,300 500,400 T900,400" dur="4s" repeatCount="indefinite"/></path><path d="M200,600 Q400,500 600,600 T1000,600"><animate attributeName="d" values="M200,600 Q400,500 600,600 T1000,600;M200,600 Q400,550 600,600 T1000,600;M200,600 Q400,500 600,600 T1000,600" dur="5s" repeatCount="indefinite"/></path></g><g opacity="0.3"><polygon points="300,200 320,220 300,240 280,220" fill="white"><animateTransform attributeName="transform" type="translate" values="0,0; 60,30; 120,60; 180,90" dur="4s" repeatCount="indefinite"/></polygon><polygon points="600,500 620,520 600,540 580,520" fill="white"><animateTransform attributeName="transform" type="translate" values="0,0; -40,40; -80,80; -120,120" dur="3s" repeatCount="indefinite"/></polygon></g></svg>') center/cover;
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.95);
+            min-height: 100vh;
+            box-shadow: 0 0 30px rgba(0,0,0,0.3);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><g opacity="0.4"><circle cx="250" cy="250" r="5" fill="white"><animate attributeName="r" values="5;10;5" dur="3s" repeatCount="indefinite"/></circle><circle cx="750" cy="350" r="7" fill="white"><animate attributeName="r" values="7;14;7" dur="4s" repeatCount="indefinite"/></circle><circle cx="500" cy="150" r="6" fill="white"><animate attributeName="r" values="6;12;6" dur="3.5s" repeatCount="indefinite"/></circle></g><g stroke="rgba(255,255,255,0.3)" stroke-width="2" fill="none"><path d="M300,400 C400,300 600,300 700,400"><animate attributeName="d" values="M300,400 C400,300 600,300 700,400;M300,400 C400,350 600,350 700,400;M300,400 C400,300 600,300 700,400" dur="4s" repeatCount="indefinite"/></path><circle cx="500" cy="500" r="40"><animate attributeName="r" values="40;60;40" dur="5s" repeatCount="indefinite"/></circle></g><g stroke="white" stroke-width="2" opacity="0.2"><line x1="200" y1="700" x2="250" y2="650"><animate attributeName="x2" values="250;280;250" dur="2s" repeatCount="indefinite"/><animate attributeName="y2" values="650;620;650" dur="2s" repeatCount="indefinite"/></line><line x1="800" y1="600" x2="750" y2="550"><animate attributeName="x2" values="750;720;750" dur="2.5s" repeatCount="indefinite"/><animate attributeName="y2" values="550;520;550" dur="2.5s" repeatCount="indefinite"/></line></g></svg>');
+            pointer-events: none;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .header .subtitle {
+            font-size: 1.2em;
+            font-weight: 300;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .quote-section {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border-left: 5px solid #667eea;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 0 15px 15px 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .quote-section blockquote {
+            font-style: italic;
+            font-size: 1.1em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .quote-section .author {
+            text-align: right;
+            font-weight: bold;
+            color: #667eea;
+        }
+        
+        .section {
+            margin: 40px 0;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-top: 4px solid #667eea;
+        }
+        
+        .section h2 {
+            color: #667eea;
+            border-bottom: 3px solid #f093fb;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+            font-size: 1.8em;
+        }
+        
+        .section h3 {
+            color: #2c3e50;
+            margin: 25px 0 15px 0;
+            font-size: 1.4em;
+        }
+        
+        .objectives-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .objective-card {
+            background: linear-gradient(135deg, #f093fb, #f5576c);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .objective-card h4 {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        
+        .media-container {
+            margin: 25px 0;
+            text-align: center;
+        }
+        
+        .media-container iframe {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        .reading-list {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #28a745;
+        }
+        
+        .reading-list ul {
+            list-style-type: none;
+        }
+        
+        .reading-list li {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 5px;
+            border-left: 3px solid #28a745;
+        }
+        
+        .reading-list a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .reading-list a:hover {
+            text-decoration: underline;
+            color: #f093fb;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #fff3cd, #ffeaa7);
+            border: 1px solid #ffc107;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .highlight-box h4 {
+            color: #856404;
+            margin-bottom: 10px;
+        }
+        
+        .energy-concept-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .concept-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+            border-top: 4px solid #f093fb;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .concept-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        .concept-card h4 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .energy-type {
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: bold;
+            margin: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .kinetic-energy {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+            color: white;
+        }
+        
+        .potential-energy {
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            color: white;
+        }
+        
+        .work-concept {
+            background: linear-gradient(135deg, #2ecc71, #27ae60);
+            color: white;
+        }
+        
+        .conservation-law {
+            background: linear-gradient(135deg, #9b59b6, #8e44ad);
+            color: white;
+        }
+        
+        .energy-transfer {
+            background: linear-gradient(135deg, #f39c12, #e67e22);
+            color: white;
+        }
+        
+        /* Energy Conservation styling */
+        .energy-laws-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        
+        .law-card {
+            background: linear-gradient(135deg, #f093fb, #667eea);
+            color: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+            transition: transform 0.3s ease;
+        }
+        
+        .law-card:hover {
+            transform: translateY(-8px);
+        }
+        
+        .law-card h4 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .law-equation {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        
+        /* CidiLabs Activity Styles */
+        .cidilabs-activity {
+            margin: 30px 0;
+            padding: 25px;
+            background: linear-gradient(135deg, #f8f9fa, #ffffff);
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+            border: 2px solid #e9ecef;
+        }
+        
+        .cidilabs-activity h3 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            text-align: center;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f093fb;
+        }
+        
+        .activity-instruction {
+            background: #e8f4fd;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid #3498db;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .section {
+                padding: 20px;
+            }
+            
+            .objectives-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .energy-concept-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .energy-laws-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <h1><i class="fas fa-bolt"></i> Work & Energy</h1>
+            <div class="subtitle">Module 6, Lesson 1 | PHYS-1315 Physical Science I</div>
+        </div>
+
+        <!-- Motivational Quote Section -->
+        <div class="quote-section">
+            <blockquote>
+                "Energy cannot be created or destroyed, only transformed from one form to another."
+            </blockquote>
+            <div class="author">— First Law of Thermodynamics</div>
+        </div>
+
+        <!-- Introduction Section -->
+        <div class="section">
+            <h2><i class="fas fa-cogs"></i> Understanding Work & Energy</h2>
+            <p>Energy is one of the most fundamental concepts in all of physics. It provides an alternative way to analyze motion that doesn't require vectors and offers powerful insights into the behavior of physical systems. Work and energy concepts allow us to solve complex problems with elegant simplicity and understand the deep conservation principles that govern our universe.</p>
+            
+            <p>This lesson builds upon your knowledge of forces to discover how work changes a system's energy. We'll explore the work-energy theorem, different forms of energy storage, and the principle of energy conservation that underlies everything from roller coasters to power plants.</p>
+            
+            <div class="highlight-box">
+                <h4><i class="fas fa-lightbulb"></i> Energy Analysis Advantage</h4>
+                <p>Unlike force analysis which requires vector calculations, energy analysis uses scalar quantities. This often makes complex problems much simpler to solve, especially when dealing with curved paths or changing forces.</p>
+            </div>
+        </div>
+
+        <!-- Learning Objectives Section -->
+        <div class="section">
+            <h2><i class="fas fa-target"></i> Learning Objectives</h2>
+            <div class="highlight-box">
+                <h4><i class="fas fa-star"></i> Course Competency CC6.1</h4>
+                <p><strong>Solve problems related to the work done by forces and changes in energy</strong></p>
+            </div>
+            
+            <div class="objectives-grid">
+                <div class="objective-card">
+                    <h4><i class="fas fa-calculator"></i> LO6.1.1</h4>
+                    <p>Calculate work from displacement and net force using W = F·d = Fd cos θ</p>
+                </div>
+                <div class="objective-card">
+                    <h4><i class="fas fa-arrows-alt"></i> LO6.1.2</h4>
+                    <p>Distinguish between conservative and non-conservative forces and their effects</p>
+                </div>
+                <div class="objective-card">
+                    <h4><i class="fas fa-mountain"></i> LO6.1.3</h4>
+                    <p>Compute kinetic energy (½mv²) and gravitational potential energy (mgh)</p>
+                </div>
+                <div class="objective-card">
+                    <h4><i class="fas fa-battery-three-quarters"></i> LO6.1.4</h4>
+                    <p>Identify different ways in which energy is stored in physical systems</p>
+                </div>
+                <div class="objective-card">
+                    <h4><i class="fas fa-balance-scale"></i> LO6.1.5</h4>
+                    <p>Compute the total energy and changes in energy of a system using conservation principles</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Required Readings Section -->
+        <div class="section">
+            <h2><i class="fas fa-book-open"></i> Required Readings</h2>
+            <div class="reading-list">
+                <h3>Primary Reading</h3>
+                <ul>
+                    <li><i class="fas fa-book"></i> <a href="https://bookshelf.vitalsource.com/reader/books/9781264450817/epubcfi/6/24%5B%3Bvnd.vst.idref%3Dchapter03%5D!/4/4" target="_blank">Physical Science, 13th Edition</a> - Chapter 3 by Bill Tillery</li>
+                </ul>
+                
+                <h3>Equation Sheet</h3>
+                <ul>
+                    <li><i class="fas fa-file-pdf"></i> <a href="#" target="_blank">Equation Sheet - Module 3</a></li>
+                </ul>
+                
+                <h3>Supplementary Resources</h3>
+                <ul>
+                    <li><i class="fas fa-external-link-alt"></i> <a href="https://www.khanacademy.org/science/physics/work-and-energy" target="_blank">Khan Academy: Work and Energy</a></li>
+                    <li><i class="fas fa-external-link-alt"></i> <a href="https://phet.colorado.edu/en/simulation/energy-skate-park" target="_blank">PhET Simulation: Energy Skate Park</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- CidiLabs Interactive Activity 1: Order/Sequence -->
+        <div class="cidilabs-activity">
+            <h3><i class="fas fa-sort-numeric-down"></i> Interactive Activity 1: Energy Problem-Solving Sequence</h3>
+            <div class="activity-instruction">
+                <p><strong>Instructions:</strong> Arrange the following steps in the correct order for solving work and energy problems. This systematic approach ensures you apply conservation principles correctly and avoid common pitfalls.</p>
+            </div>
+            
+            <div class="dp-order-wrapper">
+                <div class="dp-order-container">
+                    <div class="dp-order-item" data-value="1">
+                        <i class="fas fa-crosshairs"></i>
+                        <strong>Identify the system and states</strong>
+                        <p>Define what objects are included and the initial/final states to analyze</p>
+                    </div>
+                    <div class="dp-order-item" data-value="2">
+                        <i class="fas fa-hand-rock"></i>
+                        <strong>Identify all forces acting</strong>
+                        <p>List conservative forces (gravity, springs) and non-conservative forces (friction, air resistance)</p>
+                    </div>
+                    <div class="dp-order-item" data-value="3">
+                        <i class="fas fa-route"></i>
+                        <strong>Choose reference points</strong>
+                        <p>Set zero potential energy level and establish coordinate system</p>
+                    </div>
+                    <div class="dp-order-item" data-value="4">
+                        <i class="fas fa-calculator"></i>
+                        <strong>Calculate initial energy</strong>
+                        <p>Find KE₁ + PE₁ for the initial state of the system</p>
+                    </div>
+                    <div class="dp-order-item" data-value="5">
+                        <i class="fas fa-cogs"></i>
+                        <strong>Calculate work by non-conservative forces</strong>
+                        <p>Find work done by friction, air resistance, or other dissipative forces</p>
+                    </div>
+                    <div class="dp-order-item" data-value="6">
+                        <i class="fas fa-balance-scale"></i>
+                        <strong>Apply work-energy theorem</strong>
+                        <p>Use E₁ + W_nc = E₂ or ΔKE = W_net to find final state</p>
+                    </div>
+                    <div class="dp-order-item" data-value="7">
+                        <i class="fas fa-check-double"></i>
+                        <strong>Verify solution makes physical sense</strong>
+                        <p>Check units, signs, and whether answer is reasonable for the scenario</p>
+                    </div>
+                </div>
+                <div class="dp-order-feedback">
+                    <p><strong>Energy Analysis Key:</strong> Always distinguish between conservative and non-conservative forces. Conservative forces (gravity, springs) store energy as potential energy, while non-conservative forces (friction) dissipate energy. The work-energy theorem connects force analysis to energy conservation.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CidiLabs Interactive Activity 2: Sort Items -->
+        <div class="cidilabs-activity">
+            <h3><i class="fas fa-layer-group"></i> Interactive Activity 2: Work and Energy Concepts Classification</h3>
+            <div class="activity-instruction">
+                <p><strong>Instructions:</strong> Sort the following concepts related to work and energy into their correct categories. Understanding these classifications is essential for choosing the right approach to energy problems.</p>
+            </div>
+            
+            <div class="dp-si-sort-pool">
+                <div class="dp-si-sort-categories">
+                    <div class="dp-si-sort-category" data-category="kinetic-energy">
+                        <h4><span class="energy-type kinetic-energy">Kinetic Energy</span></h4>
+                        <p>Energy of motion and movement</p>
+                        <div class="dp-si-sort-drop-zone" data-accept="kinetic-energy"></div>
+                    </div>
+                    <div class="dp-si-sort-category" data-category="potential-energy">
+                        <h4><span class="energy-type potential-energy">Potential Energy</span></h4>
+                        <p>Stored energy due to position or configuration</p>
+                        <div class="dp-si-sort-drop-zone" data-accept="potential-energy"></div>
+                    </div>
+                    <div class="dp-si-sort-category" data-category="work-forces">
+                        <h4><span class="energy-type work-concept">Work & Forces</span></h4>
+                        <p>Force applications and work calculations</p>
+                        <div class="dp-si-sort-drop-zone" data-accept="work-forces"></div>
+                    </div>
+                    <div class="dp-si-sort-category" data-category="conservation">
+                        <h4><span class="energy-type conservation-law">Conservation Laws</span></h4>
+                        <p>Fundamental conservation principles</p>
+                        <div class="dp-si-sort-drop-zone" data-accept="conservation"></div>
+                    </div>
+                </div>
+                
+                <div class="dp-si-sort-items">
+                    <div class="dp-si-sort-item" data-category="kinetic-energy">KE = ½mv²</div>
+                    <div class="dp-si-sort-item" data-category="kinetic-energy">Translational motion energy</div>
+                    <div class="dp-si-sort-item" data-category="kinetic-energy">Rotational motion energy</div>
+                    <div class="dp-si-sort-item" data-category="kinetic-energy">Energy increases with speed squared</div>
+                    <div class="dp-si-sort-item" data-category="potential-energy">PE = mgh (gravitational)</div>
+                    <div class="dp-si-sort-item" data-category="potential-energy">PE = ½kx² (elastic/spring)</div>
+                    <div class="dp-si-sort-item" data-category="potential-energy">Energy stored at height</div>
+                    <div class="dp-si-sort-item" data-category="potential-energy">Energy in compressed/stretched spring</div>
+                    <div class="dp-si-sort-item" data-category="work-forces">W = F·d = Fd cos θ</div>
+                    <div class="dp-si-sort-item" data-category="work-forces">Conservative forces (gravity, springs)</div>
+                    <div class="dp-si-sort-item" data-category="work-forces">Non-conservative forces (friction, air resistance)</div>
+                    <div class="dp-si-sort-item" data-category="work-forces">Work-energy theorem: W_net = ΔKE</div>
+                    <div class="dp-si-sort-item" data-category="conservation">Total mechanical energy conserved</div>
+                    <div class="dp-si-sort-item" data-category="conservation">E_initial = E_final (no friction)</div>
+                    <div class="dp-si-sort-item" data-category="conservation">Energy transformed, never destroyed</div>
+                    <div class="dp-si-sort-item" data-category="conservation">KE + PE = constant (conservative systems)</div>
+                </div>
+                
+                <div class="dp-si-sort-feedback">
+                    <p><strong>Energy Classification:</strong> Kinetic energy depends on motion (speed), potential energy depends on position (height, compression). Conservative forces allow energy conversion between KE and PE, while non-conservative forces dissipate mechanical energy. Conservation laws are fundamental - energy is always conserved, though it may change forms.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CidiLabs Interactive Activity 3: Flip Cards -->
+        <div class="cidilabs-activity">
+            <h3><i class="fas fa-clone"></i> Interactive Activity 3: Work and Energy Principles</h3>
+            <div class="activity-instruction">
+                <p><strong>Instructions:</strong> Click each card to reveal detailed information about fundamental work and energy concepts, conservation laws, and problem-solving strategies. These principles form the foundation of energy analysis.</p>
+            </div>
+            
+            <div class="dp-flip-card-container">
+                <div class="dp-flip-card">
+                    <div class="dp-flip-card-front">
+                        <h4>Work Definition</h4>
+                        <p class="energy-type work-concept">W = F·d cos θ</p>
+                    </div>
+                    <div class="dp-flip-card-back">
+                        <h4>Force Applied Through Distance</h4>
+                        <ul>
+                            <li>• Work = force × displacement × cos(angle)</li>
+                            <li>• Only force component parallel to motion does work</li>
+                            <li>• <strong>Units:</strong> Joules (J) = N⋅m</li>
+                            <li>• Positive work: force helps motion</li>
+                            <li>• Negative work: force opposes motion</li>
+                            <li>• Zero work: force perpendicular to motion</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="dp-flip-card">
+                    <div class="dp-flip-card-front">
+                        <h4>Kinetic Energy</h4>
+                        <p class="energy-type kinetic-energy">KE = ½mv²</p>
+                    </div>
+                    <div class="dp-flip-card-back">
+                        <h4>Energy of Motion</h4>
+                        <ul>
+                            <li>• Energy possessed by moving objects</li>
+                            <li>• Depends on mass and speed squared</li>
+                            <li>• Always positive (speed squared)</li>
+                            <li>• <strong>Units:</strong> Joules (J)</li>
+                            <li>• Doubling speed quadruples kinetic energy</li>
+                            <li>• Related to momentum: KE = p²/(2m)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="dp-flip-card">
+                    <div class="dp-flip-card-front">
+                        <h4>Gravitational PE</h4>
+                        <p class="energy-type potential-energy">PE = mgh</p>
+                    </div>
+                    <div class="dp-flip-card-back">
+                        <h4>Energy Stored by Height</h4>
+                        <ul>
+                            <li>• Energy stored due to position in gravity field</li>
+                            <li>• Depends on mass, gravity, and height</li>
+                            <li>• Reference level can be chosen arbitrarily</li>
+                            <li>• <strong>g = 9.8 m/s²</strong> on Earth's surface</li>
+                            <li>• Converts to kinetic energy when falling</li>
+                            <li>• Conservative force - path independent</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="dp-flip-card">
+                    <div class="dp-flip-card-front">
+                        <h4>Elastic PE</h4>
+                        <p class="energy-type potential-energy">PE = ½kx²</p>
+                    </div>
+                    <div class="dp-flip-card-back">
+                        <h4>Energy Stored in Springs</h4>
+                        <ul>
+                            <li>• Energy stored in compressed or stretched springs</li>
+                            <li>• <strong>k:</strong> spring constant (N/m)</li>
+                            <li>• <strong>x:</strong> displacement from equilibrium</li>
+                            <li>• Quadratic relationship with displacement</li>
+                            <li>• Applies to any elastic deformation</li>
+                            <li>• Conservative force - energy recoverable</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="dp-flip-card">
+                    <div class="dp-flip-card-front">
+                        <h4>Work-Energy Theorem</h4>
+                        <p class="energy-type work-concept">W_net = ΔKE</p>
+                    </div>
+                    <div class="dp-flip-card-back">
+                        <h4>Net Work Equals Change in Kinetic Energy</h4>
+                        <ul>
+                            <li>• Total work done equals change in kinetic energy</li>
+                            <li>• W_net = KE_final - KE_initial</li>
+                            <li>• Alternative to Newton's 2nd Law</li>
+                            <li>• Useful for variable forces</li>
+                            <li>• Links force analysis to energy analysis</li>
+                            <li>• Works for curved paths and complex motions</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="dp-flip-card">
+                    <div class="dp-flip-card-front">
+                        <h4>Conservative Forces</h4>
+                        <p class="energy-type conservation-law">Path Independent</p>
+                    </div>
+                    <div class="dp-flip-card-back">
+                        <h4>Forces That Store Energy</h4>
+                        <ul>
+                            <li>• Work depends only on start and end points</li>
+                            <li>• Work around closed loop = zero</li>
+                            <li>• Examples: gravity, spring force, electric force</li>
+                            <li>• Can convert KE ↔ PE reversibly</li>
+                            <li>• Allow mechanical energy conservation</li>
+                            <li>• Have associated potential energy functions</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="dp-flip-card">
+                    <div class="dp-flip-card-front">
+                        <h4>Non-Conservative Forces</h4>
+                        <p class="energy-type energy-transfer">Path Dependent</p>
+                    </div>
+                    <div class="dp-flip-card-back">
+                        <h4>Forces That Dissipate Energy</h4>
+                        <ul>
+                            <li>• Work depends on path taken</li>
+                            <li>• Examples: friction, air resistance, tension</li>
+                            <li>• Convert mechanical energy to heat</li>
+                            <li>• Mechanical energy not conserved</li>
+                            <li>• Usually oppose motion (negative work)</li>
+                            <li>• Cause energy "losses" from mechanical system</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="dp-flip-card">
+                    <div class="dp-flip-card-front">
+                        <h4>Energy Conservation</h4>
+                        <p class="energy-type conservation-law">E_total = constant</p>
+                    </div>
+                    <div class="dp-flip-card-back">
+                        <h4>Fundamental Conservation Principle</h4>
+                        <ul>
+                            <li>• Energy cannot be created or destroyed</li>
+                            <li>• Energy can be transformed between forms</li>
+                            <li>• <strong>Mechanical energy:</strong> E = KE + PE</li>
+                            <li>• E₁ + W_nc = E₂ (general form)</li>
+                            <li>• E₁ = E₂ (conservative forces only)</li>
+                            <li>• Basis for analyzing complex systems</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content: Energy Laws -->
+        <div class="section">
+            <h2><i class="fas fa-gavel"></i> Energy Conservation and Work Laws</h2>
+            
+            <div class="energy-laws-grid">
+                <div class="law-card">
+                    <h4><i class="fas fa-calculator"></i> Work Definition</h4>
+                    <h5>Force Applied Through Distance</h5>
+                    <div class="law-equation">
+                        W = F⋅d = Fd cos θ
+                    </div>
+                    <p>Work is the energy transfer that occurs when a force is applied through a distance. Only the component of force parallel to the displacement contributes to work.</p>
+                    <p><strong>Key Insight:</strong> Work is a scalar quantity measured in Joules (J).</p>
+                    <p><strong>Applications:</strong> Lifting objects, pushing boxes, climbing stairs</p>
+                </div>
+                
+                <div class="law-card">
+                    <h4><i class="fas fa-bolt"></i> Work-Energy Theorem</h4>
+                    <h5>Net Work Changes Kinetic Energy</h5>
+                    <div class="law-equation">
+                        W_net = ΔKE = ½mv₂² - ½mv₁²
+                    </div>
+                    <p>The net work done on an object equals its change in kinetic energy. This powerful theorem connects force analysis with energy analysis.</p>
+                    <p><strong>Key Insight:</strong> Alternative approach to Newton's 2nd Law for complex problems.</p>
+                    <p><strong>Applications:</strong> Variable forces, curved paths, collision analysis</p>
+                </div>
+                
+                <div class="law-card">
+                    <h4><i class="fas fa-balance-scale"></i> Energy Conservation</h4>
+                    <h5>Mechanical Energy Conservation</h5>
+                    <div class="law-equation">
+                        KE₁ + PE₁ = KE₂ + PE₂
+                    </div>
+                    <p>In the absence of non-conservative forces, the total mechanical energy (kinetic + potential) remains constant. Energy converts between forms but total amount is preserved.</p>
+                    <p><strong>Key Insight:</strong> Most powerful tool for solving energy problems efficiently.</p>
+                    <p><strong>Applications:</strong> Roller coasters, pendulums, planetary motion</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Energy Types Section -->
+        <div class="section">
+            <h2><i class="fas fa-battery-three-quarters"></i> Forms of Energy</h2>
+            
+            <div class="energy-concept-grid">
+                <div class="concept-card">
+                    <h4><span class="energy-type kinetic-energy">Kinetic Energy</span></h4>
+                    <p><strong>Translational KE (½mv²):</strong> Energy of linear motion; depends on mass and speed squared.</p>
+                    <p><strong>Rotational KE:</strong> Energy of spinning objects; depends on moment of inertia and angular velocity.</p>
+                    <p><strong>Key Features:</strong></p>
+                    <ul>
+                        <li>Always positive (speed squared)</li>
+                        <li>Increases rapidly with speed</li>
+                        <li>Converts to potential energy and back</li>
+                        <li>Related to momentum and temperature</li>
+                    </ul>
+                </div>
+                
+                <div class="concept-card">
+                    <h4><span class="energy-type potential-energy">Potential Energy</span></h4>
+                    <p><strong>Gravitational PE (mgh):</strong> Energy stored due to position in a gravitational field; increases with height.</p>
+                    <p><strong>Elastic PE (½kx²):</strong> Energy stored in springs, rubber bands, and deformed materials.</p>
+                    <p><strong>Key Features:</strong></p>
+                    <ul>
+                        <li>Depends on position or configuration</li>
+                        <li>Can be negative (below reference level)</li>
+                        <li>Converts to kinetic energy when released</li>
+                        <li>Associated with conservative forces</li>
+                    </ul>
+                </div>
+                
+                <div class="concept-card">
+                    <h4><span class="energy-type work-concept">Work & Power</span></h4>
+                    <p><strong>Work (W = F⋅d):</strong> Energy transfer when force acts through distance; can be positive or negative.</p>
+                    <p><strong>Power (P = W/t):</strong> Rate of energy transfer or work done; measured in Watts.</p>
+                    <p><strong>Key Features:</strong></p>
+                    <ul>
+                        <li>Work changes energy of system</li>
+                        <li>Power indicates how quickly work is done</li>
+                        <li>Positive work increases energy</li>
+                        <li>Negative work decreases energy</li>
+                    </ul>
+                </div>
+                
+                <div class="concept-card">
+                    <h4><span class="energy-type energy-transfer">Energy Storage & Transfer</span></h4>
+                    <p><strong>Chemical Energy:</strong> Stored in molecular bonds; released in reactions (food, fuel, batteries).</p>
+                    <p><strong>Thermal Energy:</strong> Random kinetic energy of molecules; related to temperature.</p>
+                    <p><strong>Other Forms:</strong> Nuclear, electromagnetic, sound, electrical energy.</p>
+                    <p><strong>Key Features:</strong></p>
+                    <ul>
+                        <li>Energy can be stored in many forms</li>
+                        <li>Conversions between forms are common</li>
+                        <li>Total energy always conserved</li>
+                        <li>Efficiency measures useful energy transfer</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video Lectures Section -->
+        <div class="section">
+            <h2><i class="fas fa-play-circle"></i> Video Lectures</h2>
+            
+            <div class="media-container">
+                <h3>Work and Energy Introduction</h3>
+                <iframe src="https://tstc.yuja.com/V/Video?v=4934962&node=16178256&a=968374230&preload=false" width="560" height="315" loading="lazy" allowfullscreen></iframe>
+                <p><em>Duration: 6:29 | Topic: Work definition, force-displacement relationship</em></p>
+                <p><a href="https://tstc.yuja.com/V/Video?v=13037588&node=56443428&a=56986291" target="_blank">ASL Version available</a></p>
+            </div>
+            
+            <div class="media-container">
+                <h3>Work-Energy Theorem, Potential Energy, and Non-Conservative Forces</h3>
+                <iframe src="https://tstc.yuja.com/V/Video?v=4934963&node=16178257&a=39379407&preload=false" width="560" height="315" loading="lazy" allowfullscreen></iframe>
+                <p><em>Duration: 9:36 | Topic: W-KE theorem, conservative vs non-conservative forces, energy diagrams</em></p>
+                <p><a href="https://tstc.yuja.com/V/Video?v=13033962&node=56431817&a=189157957" target="_blank">ASL Version available</a></p>
+            </div>
+            
+            <div class="media-container">
+                <h3>Total Energy & Energy Conservation</h3>
+                <iframe src="https://tstc.yuja.com/V/Video?v=4934964&node=16178258&a=1250122409&preload=false" width="560" height="315" loading="lazy" allowfullscreen></iframe>
+                <p><em>Duration: 8:56 | Topic: Energy conservation, total mechanical energy, bonus problems</em></p>
+            </div>
+            
+            <div class="media-container">
+                <h3>Key Lessons and Appendix</h3>
+                <iframe src="https://tstc.yuja.com/V/Video?v=4934965&node=16178259&a=1238229567&preload=false" width="560" height="315" loading="lazy" allowfullscreen></iframe>
+                <p><em>Duration: 9:00 | Topic: Module summary and key concepts review</em></p>
+                <p><a href="https://tstc.yuja.com/V/Video?v=13024563&node=56399797&a=190406222" target="_blank">ASL Version available</a></p>
+            </div>
+        </div>
+
+        <!-- Problem Examples Section -->
+        <div class="section">
+            <h2><i class="fas fa-clipboard-check"></i> Problem Solving Examples</h2>
+            
+            <div class="highlight-box">
+                <h4><i class="fas fa-lightbulb"></i> Energy Problem-Solving Strategy</h4>
+                <ol style="margin-left: 20px;">
+                    <li><strong>Identify system:</strong> What objects and energy forms are involved?</li>
+                    <li><strong>Choose reference levels:</strong> Set PE = 0 level conveniently</li>
+                    <li><strong>List initial and final states:</strong> Identify speeds, heights, compressions</li>
+                    <li><strong>Identify forces:</strong> Conservative vs non-conservative forces</li>
+                    <li><strong>Apply energy conservation:</strong> E₁ + W_nc = E₂</li>
+                    <li><strong>Solve and check:</strong> Units, signs, reasonable magnitude</li>
+                </ol>
+            </div>
+            
+            <div class="concept-card">
+                <h4><i class="fas fa-mountain"></i> Example: Roller Coaster Energy</h4>
+                <p><strong>Problem:</strong> A 500 kg roller coaster car starts from rest at a height of 30 m. What is its speed when it reaches a height of 10 m? (Ignore friction)</p>
+                
+                <details>
+                    <summary style="cursor: pointer; font-weight: bold; color: #667eea;">Click to reveal solution</summary>
+                    <div style="padding: 15px; background: #f8f9fa; border-radius: 8px; margin-top: 10px;">
+                        <p><strong>Given:</strong> m = 500 kg, h₁ = 30 m, v₁ = 0 m/s, h₂ = 10 m</p>
+                        <p><strong>Initial energy:</strong> E₁ = KE₁ + PE₁ = 0 + mgh₁ = 500 × 9.8 × 30 = 147,000 J</p>
+                        <p><strong>Final energy:</strong> E₂ = ½mv₂² + mgh₂ = ½(500)v₂² + 500 × 9.8 × 10</p>
+                        <p><strong>Energy conservation:</strong> E₁ = E₂ → 147,000 = 250v₂² + 49,000</p>
+                        <p><strong>Solve:</strong> 250v₂² = 98,000 → v₂² = 392 → v₂ = 19.8 m/s</p>
+                    </div>
+                </details>
+            </div>
+            
+            <div class="concept-card">
+                <h4><i class="fas fa-weight"></i> Example: Work Against Friction</h4>
+                <p><strong>Problem:</strong> A 2 kg block slides 4 m up a 30° incline with friction coefficient μ = 0.3. If it starts with speed 8 m/s, what is its final speed?</p>
+                
+                <details>
+                    <summary style="cursor: pointer; font-weight: bold; color: #667eea;">Click to reveal solution</summary>
+                    <div style="padding: 15px; background: #f8f9fa; border-radius: 8px; margin-top: 10px;">
+                        <p><strong>Given:</strong> m = 2 kg, d = 4 m, θ = 30°, μ = 0.3, v₁ = 8 m/s</p>
+                        <p><strong>Initial energy:</strong> E₁ = ½mv₁² = ½(2)(8²) = 64 J</p>
+                        <p><strong>Final energy:</strong> E₂ = ½mv₂² + mgh = ½(2)v₂² + 2 × 9.8 × 4 sin(30°) = v₂² + 39.2 J</p>
+                        <p><strong>Work by friction:</strong> W_f = -μmg cos(30°) × d = -0.3 × 2 × 9.8 × cos(30°) × 4 = -20.4 J</p>
+                        <p><strong>Apply W-E theorem:</strong> E₁ + W_f = E₂ → 64 - 20.4 = v₂² + 39.2 → v₂ = 2.2 m/s</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div style="text-align: center; padding: 30px; color: #666; border-top: 2px solid #eee; margin-top: 40px;">
+            <p><strong>PHYS-1315 Physical Science I</strong> | Module 6, Lesson 1</p>
+            <p>Enhanced with CidiLabs Interactive Activities</p>
+            <p><i class="fas fa-battery-full"></i> Next: Continue with Module 7 - Heat and Temperature!</p>
+        </div>
+    </div>
+
+    <!-- CidiLabs JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Flip cards functionality
+            const flipCards = document.querySelectorAll('.dp-flip-card');
+            flipCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    this.classList.toggle('flipped');
+                });
+            });
+            
+            // Order activity setup
+            const orderItems = document.querySelectorAll('.dp-order-item');
+            orderItems.forEach((item, index) => {
+                item.style.order = Math.random() * 10;
+                item.setAttribute('draggable', true);
+            });
+            
+            // Sort activity setup  
+            const sortItems = document.querySelectorAll('.dp-si-sort-item');
+            sortItems.forEach(item => {
+                item.setAttribute('draggable', true);
+            });
+            
+            console.log('CidiLabs activities initialized for M6L1 Work & Energy');
+        });
+    </script>
+
+    <!-- Enhanced CidiLabs Activity Styles -->
+    <style>
+        /* Flip Cards Enhanced Styling for Energy Theme */
+        .dp-flip-card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            margin: 25px 0;
+        }
+        
+        .dp-flip-card {
+            background: linear-gradient(135deg, #fff, #f8f9fa);
+            border: 2px solid #e9ecef;
+            border-radius: 15px;
+            height: 250px;
+            perspective: 1000px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .dp-flip-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 12px 30px rgba(102, 126, 234, 0.2);
+        }
+        
+        .dp-flip-card-front,
+        .dp-flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            padding: 25px;
+            backface-visibility: hidden;
+            transition: transform 0.6s;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .dp-flip-card-back {
+            transform: rotateY(180deg);
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+        
+        .dp-flip-card.flipped .dp-flip-card-front {
+            transform: rotateY(180deg);
+        }
+        
+        .dp-flip-card.flipped .dp-flip-card-back {
+            transform: rotateY(0deg);
+        }
+        
+        .dp-flip-card-back ul {
+            text-align: left;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            font-size: 0.85em;
+        }
+        
+        .dp-flip-card-back li {
+            margin: 3px 0;
+        }
+        
+        /* Order Activity Enhanced for Energy */
+        .dp-order-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin: 25px 0;
+        }
+        
+        .dp-order-item {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 18px;
+            border-radius: 12px;
+            cursor: grab;
+            user-select: none;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            font-weight: 500;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .dp-order-item i {
+            font-size: 1.2em;
+            flex-shrink: 0;
+        }
+        
+        .dp-order-item:hover {
+            transform: translateX(15px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+            border-color: rgba(240, 147, 251, 0.5);
+        }
+        
+        .dp-order-item:active {
+            cursor: grabbing;
+            transform: scale(1.02);
+        }
+        
+        .dp-order-item p {
+            margin: 5px 0 0 0;
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+        
+        .dp-order-feedback {
+            background: linear-gradient(135deg, #d4edda, #c3e6cb);
+            border: 2px solid #28a745;
+            color: #155724;
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 25px;
+            font-weight: 500;
+            box-shadow: 0 4px 15px rgba(40, 167, 69, 0.2);
+        }
+        
+        /* Sort Activity Enhanced for Energy Concepts */
+        .dp-si-sort-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .dp-si-sort-category {
+            background: linear-gradient(135deg, #f8f9fa, #ffffff);
+            border: 3px dashed #dee2e6;
+            border-radius: 15px;
+            padding: 20px;
+            min-height: 200px;
+            transition: all 0.3s ease;
+        }
+        
+        .dp-si-sort-category:hover {
+            border-color: #667eea;
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.2);
+            transform: translateY(-2px);
+        }
+        
+        .dp-si-sort-category h4 {
+            margin-bottom: 12px;
+            text-align: center;
+        }
+        
+        .dp-si-sort-drop-zone {
+            min-height: 140px;
+            border: 2px dashed #adb5bd;
+            border-radius: 10px;
+            margin-top: 12px;
+            padding: 12px;
+            background: white;
+            transition: all 0.3s ease;
+        }
+        
+        .dp-si-sort-drop-zone:hover {
+            border-color: #28a745;
+            background: #f8fff8;
+        }
+        
+        .dp-si-sort-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+            margin: 25px 0;
+            padding: 25px;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border-radius: 15px;
+            border: 2px solid #dee2e6;
+        }
+        
+        .dp-si-sort-item {
+            background: linear-gradient(135deg, #f093fb, #f5576c);
+            color: white;
+            padding: 10px 16px;
+            border-radius: 20px;
+            cursor: grab;
+            user-select: none;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            font-size: 0.9em;
+            box-shadow: 0 2px 8px rgba(240, 147, 251, 0.3);
+        }
+        
+        .dp-si-sort-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(240, 147, 251, 0.4);
+        }
+        
+        .dp-si-sort-item:active {
+            cursor: grabbing;
+        }
+        
+        .dp-si-sort-feedback {
+            background: linear-gradient(135deg, #e8f4fd, #cce7ff);
+            border: 2px solid #007bff;
+            color: #004085;
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 25px;
+            font-weight: 500;
+            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2);
+        }
+    </style>
+</body>
+</html>

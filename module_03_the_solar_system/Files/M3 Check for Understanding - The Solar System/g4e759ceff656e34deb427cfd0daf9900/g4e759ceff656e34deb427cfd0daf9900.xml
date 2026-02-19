@@ -1,0 +1,338 @@
+<?xml version="1.0"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/xsd/ims_qtiasiv1p2p1.xsd">
+  <assessment ident="g4e759ceff656e34deb427cfd0daf9900" title="M3 - Check for Understanding" external_assignment_id="875339">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>cc_maxattempts</fieldlabel>
+        <fieldentry>unlimited</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <section ident="root_section">
+      <item ident="37b798751eecd9378d0eff6793490fe6" title="">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>fill_in_multiple_blanks_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>["e7d18e47-d2ac-4c2f-af5d-d96d2a81c119", "e0522391-b9d1-446f-8f39-f4c9e8c56a4f", "114467d9-96de-4bad-992f-00d5a9ecbf4d", "3fbc6557-00a9-4165-93ab-2be22752d681", "99d37249-7467-40cc-be26-f23e029d34d7", "65b68470-ffb4-434d-aa67-3572146643fa", "21685482-2665-4119-9450-c5b6f21e1dec", "d243c868-3b73-4942-b5fe-cbb7dd620a27", "78ec4a44-9770-485a-8b19-ffbd972c5d0a"]</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>d4ea9c26410ef735bec50d1f913c7c5b</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>calculator_type</fieldlabel>
+              <fieldentry>none</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;Venus is classified as a [66a482c7-5aac-479e-bb5f-1df484bec865].&lt;/p&gt;
+&lt;p&gt;Saturn is classified as a [1718f2f3-a6fe-4de5-919a-9979772eeba7].&lt;/p&gt;
+&lt;p&gt;Eris is classified as a [8f865fe9-53be-4efb-8944-71c89bb47ffb].&lt;/p&gt;</mattext>
+          </material>
+          <response_lid ident="response_66a482c7-5aac-479e-bb5f-1df484bec865">
+            <material>
+              <mattext>terrestrial planet</mattext>
+            </material>
+            <render_choice>
+              <response_label scoring_algorithm="Equivalence" answer_type="dropdown" ident="e7d18e47-d2ac-4c2f-af5d-d96d2a81c119" position="1">
+                <material>
+                  <mattext texttype="text/plain">terrestrial planet</mattext>
+                </material>
+              </response_label>
+              <response_label scoring_algorithm="Equivalence" answer_type="dropdown" ident="e0522391-b9d1-446f-8f39-f4c9e8c56a4f" position="2">
+                <material>
+                  <mattext texttype="text/plain">gas giant planet</mattext>
+                </material>
+              </response_label>
+              <response_label scoring_algorithm="Equivalence" answer_type="dropdown" ident="114467d9-96de-4bad-992f-00d5a9ecbf4d" position="3">
+                <material>
+                  <mattext texttype="text/plain">dwarf planet</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+          <response_lid ident="response_1718f2f3-a6fe-4de5-919a-9979772eeba7">
+            <material>
+              <mattext>gas giant planet</mattext>
+            </material>
+            <render_choice>
+              <response_label scoring_algorithm="Equivalence" answer_type="dropdown" ident="3fbc6557-00a9-4165-93ab-2be22752d681" position="1">
+                <material>
+                  <mattext texttype="text/plain">terrestrial planet</mattext>
+                </material>
+              </response_label>
+              <response_label scoring_algorithm="Equivalence" answer_type="dropdown" ident="99d37249-7467-40cc-be26-f23e029d34d7" position="2">
+                <material>
+                  <mattext texttype="text/plain">gas giant planet</mattext>
+                </material>
+              </response_label>
+              <response_label scoring_algorithm="Equivalence" answer_type="dropdown" ident="65b68470-ffb4-434d-aa67-3572146643fa" position="3">
+                <material>
+                  <mattext texttype="text/plain">dwarf planet</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+          <response_lid ident="response_8f865fe9-53be-4efb-8944-71c89bb47ffb">
+            <material>
+              <mattext>dwarf planet</mattext>
+            </material>
+            <render_choice>
+              <response_label scoring_algorithm="Equivalence" answer_type="dropdown" ident="21685482-2665-4119-9450-c5b6f21e1dec" position="1">
+                <material>
+                  <mattext texttype="text/plain">terrestrial planet</mattext>
+                </material>
+              </response_label>
+              <response_label scoring_algorithm="Equivalence" answer_type="dropdown" ident="d243c868-3b73-4942-b5fe-cbb7dd620a27" position="2">
+                <material>
+                  <mattext texttype="text/plain">gas giant planet</mattext>
+                </material>
+              </response_label>
+              <response_label scoring_algorithm="Equivalence" answer_type="dropdown" ident="78ec4a44-9770-485a-8b19-ffbd972c5d0a" position="3">
+                <material>
+                  <mattext texttype="text/plain">dwarf planet</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="response_66a482c7-5aac-479e-bb5f-1df484bec865">e7d18e47-d2ac-4c2f-af5d-d96d2a81c119</varequal>
+            </conditionvar>
+            <setvar action="Add" varname="SCORE">33.33</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="response_1718f2f3-a6fe-4de5-919a-9979772eeba7">99d37249-7467-40cc-be26-f23e029d34d7</varequal>
+            </conditionvar>
+            <setvar action="Add" varname="SCORE">33.33</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="response_8f865fe9-53be-4efb-8944-71c89bb47ffb">78ec4a44-9770-485a-8b19-ffbd972c5d0a</varequal>
+            </conditionvar>
+            <setvar action="Add" varname="SCORE">33.33</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="29ffca52b2339d4d3dad19b7a8c6201a" title="">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>8b64bad3-2fba-4dc3-a63c-26db8714b134,4d47c800-bc37-4587-8cbf-ecdbe066c44b,b2a0aeef-27f3-4e1f-b4eb-670da6955808,609598d2-ac10-497c-8044-ca2ea304c042</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>99d354f7296d52aae12b65211ba6ec3d</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>calculator_type</fieldlabel>
+              <fieldentry>none</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;Which of these statements about the innermost planets is correct?&lt;/p&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice shuffle="Yes">
+              <response_label ident="8b64bad3-2fba-4dc3-a63c-26db8714b134">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Mercury probably has a solid iron core which produces its magnetic field.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4d47c800-bc37-4587-8cbf-ecdbe066c44b">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;The atmosphere on Venus is mostly made of vaporized sulfuric acid.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="b2a0aeef-27f3-4e1f-b4eb-670da6955808">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;The surface of Mars is made of potassium feldspar rock giving it the planet's red color.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="609598d2-ac10-497c-8044-ca2ea304c042">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Venus is similar to Earth in a lot of ways: mass, size, and density; however, the planet lacks plate tectonic activity.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">609598d2-ac10-497c-8044-ca2ea304c042</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="3f16ddcd96a9a292700d9a5d60992072" title="">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>d15111cf-6be3-41a2-ad30-1ef1fe161a3d,d84efa77-9f57-4fd5-a4f1-a272b467997c,369cb30c-442c-4499-8aea-3d6e1b0804a5,bb394cbd-b8ef-40b4-a6b6-ec5f89e10703,8f801cf5-1361-4928-820d-eb458c86c58c</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>74b32ce45ce67546088e0b6bbecbc189</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>calculator_type</fieldlabel>
+              <fieldentry>none</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;How far apart are asteroids in the Asteroid Belt from each other?&lt;/p&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice>
+              <response_label ident="d15111cf-6be3-41a2-ad30-1ef1fe161a3d">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;a dozen meters&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="d84efa77-9f57-4fd5-a4f1-a272b467997c">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;a few hundred kilometers&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="369cb30c-442c-4499-8aea-3d6e1b0804a5">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;thousands of kilometers&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="bb394cbd-b8ef-40b4-a6b6-ec5f89e10703">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;a million kilometers&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8f801cf5-1361-4928-820d-eb458c86c58c">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;a billion kilometers&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">bb394cbd-b8ef-40b4-a6b6-ec5f89e10703</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="58a2b97df2e9540b094ccb1c8d282ccb" title="">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>6123fe22-0a50-46e8-832f-96a8fc57634c,7641ed3e-2551-4f0d-bc64-cda59d0c4b4f,12bb73a4-de99-4543-9653-1ecef7c3c73e,9ce3d15a-eede-4c4b-92af-2c010c15a3f9</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>b9ea43b27f0ca8ab8bbf7a1b5a64241b</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>calculator_type</fieldlabel>
+              <fieldentry>none</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;Where do meteors come from?&lt;/p&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice shuffle="Yes">
+              <response_label ident="6123fe22-0a50-46e8-832f-96a8fc57634c">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Comet debris that enters the Earth's atmosphere.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="7641ed3e-2551-4f0d-bc64-cda59d0c4b4f">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Debris from the asteroid belt.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="12bb73a4-de99-4543-9653-1ecef7c3c73e">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Asteroids that have entered the Earth's atmosphere.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="9ce3d15a-eede-4c4b-92af-2c010c15a3f9">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Debris leftover from the formation of the solar system.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">6123fe22-0a50-46e8-832f-96a8fc57634c</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+    </section>
+  </assessment>
+</questestinterop>

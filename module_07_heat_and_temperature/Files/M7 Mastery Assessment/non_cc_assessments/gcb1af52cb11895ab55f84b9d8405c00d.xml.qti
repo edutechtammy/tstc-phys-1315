@@ -1,0 +1,590 @@
+<?xml version="1.0"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/xsd/ims_qtiasiv1p2p1.xsd">
+  <objectbank ident="gcb1af52cb11895ab55f84b9d8405c00d" canvas_item_bank="true">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>bank_title</fieldlabel>
+        <fieldentry>Heating statements</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>bank_type</fieldlabel>
+        <fieldentry>Course</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <item ident="dea57f38b56fd3ecf7ac4ea274b8ca8e" title="Heating statements (vi)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>15cae6f8-93af-429f-b669-dd6b9a814921,f92a65de-765f-432c-aa65-6bfb61824355,bfa30f70-ae75-41db-9d09-ae8a1c6bdc4d,4a27866e-fe95-42a9-8a54-16ba808a78c5,ab76ee69-22a2-4163-9d9b-c87924d93743</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>122740a881131568301b4ebb0ceca9df</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;Which of the following statements about heating is &lt;span style="text-decoration: underline;"&gt;incorrect&lt;/span&gt;?&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="15cae6f8-93af-429f-b669-dd6b9a814921">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&lt;span style="font-size: 12.0pt; line-height: 107%; font-family: Symbol;"&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;During a phase change, for example freezing water, the material&#x2019;s temperature continues to change.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="f92a65de-765f-432c-aa65-6bfb61824355">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&lt;span style="font-size: 12.0pt; line-height: 107%; font-family: Symbol;"&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;The amount of heat needed to increase an objects temperature is proportional to its change in temperature.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="bfa30f70-ae75-41db-9d09-ae8a1c6bdc4d">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&lt;span style="font-size: 12.0pt; line-height: 107%; font-family: Symbol;"&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;Conduction is the transfer of heat through physical contact.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="4a27866e-fe95-42a9-8a54-16ba808a78c5">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;Convection is the transfer of heat through the surrounding fluid.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="ab76ee69-22a2-4163-9d9b-c87924d93743">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&lt;span style="font-size: 12.0pt; line-height: 107%; font-family: Symbol;"&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;An object in thermal equilibrium with its surroundings will absorb the same amount of radiation that it emits.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">15cae6f8-93af-429f-b669-dd6b9a814921</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="c83d906e7fa619519c480b69c72dcca9" title="Heating statements (vii)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>15cae6f8-93af-429f-b669-dd6b9a814921,f92a65de-765f-432c-aa65-6bfb61824355,bfa30f70-ae75-41db-9d09-ae8a1c6bdc4d,4a27866e-fe95-42a9-8a54-16ba808a78c5,ab76ee69-22a2-4163-9d9b-c87924d93743</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>091c5506c8e7a0511dca6f94837aedbd</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;Which of the following statements about heating is &lt;span style="text-decoration: underline;"&gt;incorrect&lt;/span&gt;?&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="15cae6f8-93af-429f-b669-dd6b9a814921">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in;  "&gt;&lt;span style="font-size: 12.0pt; line-height: 107%; font-family: Symbol;  "&gt;&lt;span&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;During a phase change, for example freezing water, the material&#x2019;s temperature doesn&#x2019;t change.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="f92a65de-765f-432c-aa65-6bfb61824355">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&lt;span style="font-size: 12.0pt; line-height: 107%; font-family: Symbol;"&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;The amount of heat needed to increase an objects temperature is inversely proportional to its change in temperature.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="bfa30f70-ae75-41db-9d09-ae8a1c6bdc4d">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&lt;span style="font-size: 12.0pt; line-height: 107%; font-family: Symbol;"&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;Conduction is the transfer of heat through physical contact.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="4a27866e-fe95-42a9-8a54-16ba808a78c5">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;Convection is the transfer of heat through the surrounding fluid.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="ab76ee69-22a2-4163-9d9b-c87924d93743">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&lt;span style="font-size: 12.0pt; line-height: 107%; font-family: Symbol;"&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;An object in thermal equilibrium with its surroundings will absorb the same amount of radiation that it emits.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">f92a65de-765f-432c-aa65-6bfb61824355</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="c8462efbef816c4c11317e9e8905fe79" title="Heating statements (v)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>15cae6f8-93af-429f-b669-dd6b9a814921,f92a65de-765f-432c-aa65-6bfb61824355,bfa30f70-ae75-41db-9d09-ae8a1c6bdc4d,4a27866e-fe95-42a9-8a54-16ba808a78c5,ab76ee69-22a2-4163-9d9b-c87924d93743</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>8d345a7c3452056cc1deee71f3870a30</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;Which of the following statements about heating is correct?&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="15cae6f8-93af-429f-b669-dd6b9a814921">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;  "&gt;&lt;span style="font-size: 12.0pt; line-height: 107%; font-family: Symbol;  "&gt;&lt;span&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;During a phase change, for example freezing water, the material&#x2019;s temperature continues to change.&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="f92a65de-765f-432c-aa65-6bfb61824355">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;  "&gt;&lt;span style="font-size: 12.0pt; line-height: 107%; font-family: Symbol;  "&gt;&lt;span&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;The amount of heat needed to increase an objects temperature is inversely proportional to its change in temperature.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="bfa30f70-ae75-41db-9d09-ae8a1c6bdc4d">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;  "&gt;&lt;span style="font-size: 12.0pt; line-height: 107%; font-family: Symbol;  "&gt;&lt;span&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;Conduction is the transfer of heat through the surrounding fluid.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="4a27866e-fe95-42a9-8a54-16ba808a78c5">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;  "&gt;&lt;span style="font-size: 12.0pt; line-height: 107%; font-family: Symbol;  "&gt;&lt;span&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;Convection is the transfer of heat through physical contact.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="ab76ee69-22a2-4163-9d9b-c87924d93743">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;  "&gt;&lt;span style="font-size: 12.0pt; line-height: 107%; font-family: Symbol;  "&gt;&lt;span&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;An object in thermal equilibrium with its surroundings will absorb the same amount of radiation that it emits.&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">ab76ee69-22a2-4163-9d9b-c87924d93743</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="f404c5ba692d5b38b75758376f1b81fc" title="Heating statements (iv)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>15cae6f8-93af-429f-b669-dd6b9a814921,f92a65de-765f-432c-aa65-6bfb61824355,bfa30f70-ae75-41db-9d09-ae8a1c6bdc4d,4a27866e-fe95-42a9-8a54-16ba808a78c5,ab76ee69-22a2-4163-9d9b-c87924d93743</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>eeaf65fcd158d4f53eea303856d329bc</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;Which of the following statements about heating is correct?&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="15cae6f8-93af-429f-b669-dd6b9a814921">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;  "&gt;&lt;span style="font-size: 12.0pt; line-height: 107%; font-family: Symbol;  "&gt;&lt;span&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;During a phase change, for example freezing water, the material&#x2019;s temperature continues to change.&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="f92a65de-765f-432c-aa65-6bfb61824355">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;  "&gt;&lt;span style="font-size: 12.0pt; line-height: 107%; font-family: Symbol;  "&gt;&lt;span&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;The amount of heat needed to increase an objects temperature is inversely proportional to its change in temperature.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="bfa30f70-ae75-41db-9d09-ae8a1c6bdc4d">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&lt;span style="font-size: 12.0pt; line-height: 107%; font-family: Symbol;"&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;Conduction is the transfer of heat through thermal radiation.&lt;br&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="4a27866e-fe95-42a9-8a54-16ba808a78c5">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&lt;span style="font-size: 12.0pt; line-height: 107%; font-family: Symbol;"&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;Convection is the transfer of heat through &lt;/span&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;the surrounding fluid.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="ab76ee69-22a2-4163-9d9b-c87924d93743">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;  "&gt;&lt;span style="font-size: 12.0pt; line-height: 107%; font-family: Symbol;  "&gt;&lt;span&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;An object in thermal equilibrium with its surroundings will absorb more radiation that it emits.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">4a27866e-fe95-42a9-8a54-16ba808a78c5</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="781d0d54fc49f143898760b29773f9c4" title="Heating statements (iii)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>15cae6f8-93af-429f-b669-dd6b9a814921,f92a65de-765f-432c-aa65-6bfb61824355,bfa30f70-ae75-41db-9d09-ae8a1c6bdc4d,4a27866e-fe95-42a9-8a54-16ba808a78c5,ab76ee69-22a2-4163-9d9b-c87924d93743</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>9fc336a98cb78cc64ba3e22f2885d2a5</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;Which of the following statements about heating is correct?&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="15cae6f8-93af-429f-b669-dd6b9a814921">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;  "&gt;&lt;span style="font-size: 12.0pt; line-height: 107%; font-family: Symbol;  "&gt;&lt;span&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;During a phase change, for example freezing water, the material&#x2019;s temperature continues to change.&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="f92a65de-765f-432c-aa65-6bfb61824355">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;  "&gt;&lt;span style="font-size: 12.0pt; line-height: 107%; font-family: Symbol;  "&gt;&lt;span&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;The amount of heat needed to increase an objects temperature is inversely proportional to its change in temperature.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="bfa30f70-ae75-41db-9d09-ae8a1c6bdc4d">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;  "&gt;&lt;span style="font-size: 12.0pt; line-height: 107%; font-family: Symbol;  "&gt;&lt;span&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;Conduction is the transfer of heat through physical contact.&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="4a27866e-fe95-42a9-8a54-16ba808a78c5">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&lt;span style="font-size: 12.0pt; line-height: 107%; font-family: Symbol;"&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;Convection is the transfer of heat through thermal radiation.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="ab76ee69-22a2-4163-9d9b-c87924d93743">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;  "&gt;&lt;span style="font-size: 12.0pt; line-height: 107%; font-family: Symbol;  "&gt;&lt;span&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;An object in thermal equilibrium with its surroundings will absorb more radiation that it emits.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">bfa30f70-ae75-41db-9d09-ae8a1c6bdc4d</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="cfe21dcdb540e80c5345e07a77e106ac" title="Heating statements (ii)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>15cae6f8-93af-429f-b669-dd6b9a814921,f92a65de-765f-432c-aa65-6bfb61824355,bfa30f70-ae75-41db-9d09-ae8a1c6bdc4d,4a27866e-fe95-42a9-8a54-16ba808a78c5,ab76ee69-22a2-4163-9d9b-c87924d93743</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>7bffb485b7ace67319e58ad59d9306b7</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;Which of the following statements about heating is correct?&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="15cae6f8-93af-429f-b669-dd6b9a814921">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;  "&gt;&lt;span style="font-size: 12.0pt; line-height: 107%; font-family: Symbol;  "&gt;&lt;span&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;During a phase change, for example freezing water, the material&#x2019;s temperature continues to change.&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="f92a65de-765f-432c-aa65-6bfb61824355">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;  "&gt;&lt;span style="font-size: 12.0pt; line-height: 107%; font-family: Symbol;  "&gt;&lt;span&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;The amount of heat needed to increase an objects temperature is proportional to its change in temperature.&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="bfa30f70-ae75-41db-9d09-ae8a1c6bdc4d">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;  "&gt;&lt;span style="font-size: 12.0pt; line-height: 107%; font-family: Symbol;  "&gt;&lt;span&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;Conduction is the transfer of heat through the surrounding fluid.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="4a27866e-fe95-42a9-8a54-16ba808a78c5">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;  "&gt;&lt;span style="font-size: 12.0pt; line-height: 107%; font-family: Symbol;  "&gt;&lt;span&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;Convection is the transfer of heat through physical contact.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="ab76ee69-22a2-4163-9d9b-c87924d93743">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;  "&gt;&lt;span style="font-size: 12.0pt; line-height: 107%; font-family: Symbol;  "&gt;&lt;span&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;An object in thermal equilibrium with its surroundings will absorb more radiation that it emits.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">f92a65de-765f-432c-aa65-6bfb61824355</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="e5362edf73150a2852f55124f103c538" title="Heating statements (i)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>15cae6f8-93af-429f-b669-dd6b9a814921,f92a65de-765f-432c-aa65-6bfb61824355,bfa30f70-ae75-41db-9d09-ae8a1c6bdc4d,4a27866e-fe95-42a9-8a54-16ba808a78c5,ab76ee69-22a2-4163-9d9b-c87924d93743</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>0c7bfd79681c233317659fa2234754d3</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;Which of the following statements about heating is correct?&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="15cae6f8-93af-429f-b669-dd6b9a814921">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;  "&gt;&lt;span style="font-size: 12.0pt; line-height: 107%; font-family: Symbol;  "&gt;&lt;span&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;During a phase change, for example freezing water, the material&#x2019;s temperature doesn&#x2019;t change.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="f92a65de-765f-432c-aa65-6bfb61824355">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;  "&gt;&lt;span style="font-size: 12.0pt; line-height: 107%; font-family: Symbol;  "&gt;&lt;span&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;The amount of heat needed to increase an objects temperature is inversely proportional to its change in temperature.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="bfa30f70-ae75-41db-9d09-ae8a1c6bdc4d">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;  "&gt;&lt;span style="font-size: 12.0pt; line-height: 107%; font-family: Symbol;  "&gt;&lt;span&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;Conduction is the transfer of heat through the surrounding fluid.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="4a27866e-fe95-42a9-8a54-16ba808a78c5">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;  "&gt;&lt;span style="font-size: 12.0pt; line-height: 107%; font-family: Symbol;  "&gt;&lt;span&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;Convection is the transfer of heat through physical contact.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="ab76ee69-22a2-4163-9d9b-c87924d93743">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p class="MsoListParagraph" style="text-indent: -.25in;  "&gt;&lt;span style="font-size: 12.0pt; line-height: 107%; font-family: Symbol;  "&gt;&lt;span&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;An object in thermal equilibrium with its surroundings will absorb more radiation that it emits.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">15cae6f8-93af-429f-b669-dd6b9a814921</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+  </objectbank>
+</questestinterop>

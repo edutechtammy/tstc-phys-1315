@@ -1,0 +1,4052 @@
+<?xml version="1.0"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/xsd/ims_qtiasiv1p2p1.xsd">
+  <assessment ident="g68fa0dd52e1c55666ffef24cdfacb54a" title="MA1: Exam B" external_assignment_id="993422">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>cc_maxattempts</fieldlabel>
+        <fieldentry>unlimited</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <section ident="root_section">
+      <item ident="5f3f8a8a625372bfcb1df01c1a876ccf" title="Which of the following units are SI units?">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>categorization_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry/>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>8339c508502d1e40d0cb056860cb3202</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>calculator_type</fieldlabel>
+              <fieldentry>none</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;Which of the following are within the SI system of units?&lt;/p&gt;</mattext>
+          </material>
+          <response_lid ident="b6c48454-4259-4adf-8be5-927da9211a86" rcardinality="Multiple">
+            <material>
+              <mattext texttype="text/plain">SI Units</mattext>
+            </material>
+            <render_choice>
+              <response_label ident="085dd998-5e8c-46b4-ab69-0dc0d5426031">
+                <material>
+                  <mattext texttype="text/plain">dyne</mattext>
+                </material>
+              </response_label>
+              <response_label ident="5870a765-58ba-4237-92d8-796bdf9d808a">
+                <material>
+                  <mattext texttype="text/plain">gallon</mattext>
+                </material>
+              </response_label>
+              <response_label ident="5f314aad-a279-4726-93b9-ac8eb8de941a">
+                <material>
+                  <mattext texttype="text/plain">parsec</mattext>
+                </material>
+              </response_label>
+              <response_label ident="68ee9dda-a4ce-449e-bc63-306c3eb43d73">
+                <material>
+                  <mattext texttype="text/plain">meter</mattext>
+                </material>
+              </response_label>
+              <response_label ident="6dda06db-c425-4483-af5f-193f4bc15299">
+                <material>
+                  <mattext texttype="text/plain">second</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8341dd92-796c-4a73-93b5-465bd82e0eab">
+                <material>
+                  <mattext texttype="text/plain">miles per hour</mattext>
+                </material>
+              </response_label>
+              <response_label ident="864fa37e-08ae-42e5-9376-6d04111c9031">
+                <material>
+                  <mattext texttype="text/plain">volt</mattext>
+                </material>
+              </response_label>
+              <response_label ident="a46820da-4f89-41dd-bc49-f55a6a04ac4e">
+                <material>
+                  <mattext texttype="text/plain">grams per square centimeter</mattext>
+                </material>
+              </response_label>
+              <response_label ident="aae2fa60-7be2-447f-936a-e106e168063f">
+                <material>
+                  <mattext texttype="text/plain">pound</mattext>
+                </material>
+              </response_label>
+              <response_label ident="ccbf72e5-c09f-4d0e-af86-b2e62d37eff5">
+                <material>
+                  <mattext texttype="text/plain">cubic meters per second</mattext>
+                </material>
+              </response_label>
+              <response_label ident="d0c47bfe-d187-47ce-889d-3a64365c434f">
+                <material>
+                  <mattext texttype="text/plain">megafoot</mattext>
+                </material>
+              </response_label>
+              <response_label ident="e70d51d2-dd9e-41ed-9b66-216d402b5083">
+                <material>
+                  <mattext texttype="text/plain">milliampere</mattext>
+                </material>
+              </response_label>
+              <response_label ident="ed440c64-8918-4750-bbe7-12673ee072b2">
+                <material>
+                  <mattext texttype="text/plain">kilogram</mattext>
+                </material>
+              </response_label>
+              <response_label ident="f2a61a9f-ce38-42fa-bec1-7a27ed0c306a">
+                <material>
+                  <mattext texttype="text/plain">yard</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+          <response_lid ident="f4b80110-3791-42c3-b3e1-3d169d5e8154" rcardinality="Multiple">
+            <material>
+              <mattext texttype="text/plain">Not SI Units</mattext>
+            </material>
+            <render_choice>
+              <response_label ident="085dd998-5e8c-46b4-ab69-0dc0d5426031">
+                <material>
+                  <mattext texttype="text/plain">dyne</mattext>
+                </material>
+              </response_label>
+              <response_label ident="5870a765-58ba-4237-92d8-796bdf9d808a">
+                <material>
+                  <mattext texttype="text/plain">gallon</mattext>
+                </material>
+              </response_label>
+              <response_label ident="5f314aad-a279-4726-93b9-ac8eb8de941a">
+                <material>
+                  <mattext texttype="text/plain">parsec</mattext>
+                </material>
+              </response_label>
+              <response_label ident="68ee9dda-a4ce-449e-bc63-306c3eb43d73">
+                <material>
+                  <mattext texttype="text/plain">meter</mattext>
+                </material>
+              </response_label>
+              <response_label ident="6dda06db-c425-4483-af5f-193f4bc15299">
+                <material>
+                  <mattext texttype="text/plain">second</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8341dd92-796c-4a73-93b5-465bd82e0eab">
+                <material>
+                  <mattext texttype="text/plain">miles per hour</mattext>
+                </material>
+              </response_label>
+              <response_label ident="864fa37e-08ae-42e5-9376-6d04111c9031">
+                <material>
+                  <mattext texttype="text/plain">volt</mattext>
+                </material>
+              </response_label>
+              <response_label ident="a46820da-4f89-41dd-bc49-f55a6a04ac4e">
+                <material>
+                  <mattext texttype="text/plain">grams per square centimeter</mattext>
+                </material>
+              </response_label>
+              <response_label ident="aae2fa60-7be2-447f-936a-e106e168063f">
+                <material>
+                  <mattext texttype="text/plain">pound</mattext>
+                </material>
+              </response_label>
+              <response_label ident="ccbf72e5-c09f-4d0e-af86-b2e62d37eff5">
+                <material>
+                  <mattext texttype="text/plain">cubic meters per second</mattext>
+                </material>
+              </response_label>
+              <response_label ident="d0c47bfe-d187-47ce-889d-3a64365c434f">
+                <material>
+                  <mattext texttype="text/plain">megafoot</mattext>
+                </material>
+              </response_label>
+              <response_label ident="e70d51d2-dd9e-41ed-9b66-216d402b5083">
+                <material>
+                  <mattext texttype="text/plain">milliampere</mattext>
+                </material>
+              </response_label>
+              <response_label ident="ed440c64-8918-4750-bbe7-12673ee072b2">
+                <material>
+                  <mattext texttype="text/plain">kilogram</mattext>
+                </material>
+              </response_label>
+              <response_label ident="f2a61a9f-ce38-42fa-bec1-7a27ed0c306a">
+                <material>
+                  <mattext texttype="text/plain">yard</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="b6c48454-4259-4adf-8be5-927da9211a86">68ee9dda-a4ce-449e-bc63-306c3eb43d73</varequal>
+              <varequal respident="b6c48454-4259-4adf-8be5-927da9211a86">6dda06db-c425-4483-af5f-193f4bc15299</varequal>
+              <varequal respident="b6c48454-4259-4adf-8be5-927da9211a86">ed440c64-8918-4750-bbe7-12673ee072b2</varequal>
+              <varequal respident="b6c48454-4259-4adf-8be5-927da9211a86">864fa37e-08ae-42e5-9376-6d04111c9031</varequal>
+              <varequal respident="b6c48454-4259-4adf-8be5-927da9211a86">ccbf72e5-c09f-4d0e-af86-b2e62d37eff5</varequal>
+              <varequal respident="b6c48454-4259-4adf-8be5-927da9211a86">e70d51d2-dd9e-41ed-9b66-216d402b5083</varequal>
+              <varequal respident="b6c48454-4259-4adf-8be5-927da9211a86">a46820da-4f89-41dd-bc49-f55a6a04ac4e</varequal>
+            </conditionvar>
+            <setvar action="Add" varname="SCORE">50.00</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="f4b80110-3791-42c3-b3e1-3d169d5e8154">f2a61a9f-ce38-42fa-bec1-7a27ed0c306a</varequal>
+              <varequal respident="f4b80110-3791-42c3-b3e1-3d169d5e8154">d0c47bfe-d187-47ce-889d-3a64365c434f</varequal>
+              <varequal respident="f4b80110-3791-42c3-b3e1-3d169d5e8154">aae2fa60-7be2-447f-936a-e106e168063f</varequal>
+              <varequal respident="f4b80110-3791-42c3-b3e1-3d169d5e8154">5870a765-58ba-4237-92d8-796bdf9d808a</varequal>
+              <varequal respident="f4b80110-3791-42c3-b3e1-3d169d5e8154">5f314aad-a279-4726-93b9-ac8eb8de941a</varequal>
+              <varequal respident="f4b80110-3791-42c3-b3e1-3d169d5e8154">8341dd92-796c-4a73-93b5-465bd82e0eab</varequal>
+              <varequal respident="f4b80110-3791-42c3-b3e1-3d169d5e8154">085dd998-5e8c-46b4-ab69-0dc0d5426031</varequal>
+            </conditionvar>
+            <setvar action="Add" varname="SCORE">50.00</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="dd8337f423862aad96b8a697e21ee72c" title="Convert [x] gallons per hour to cubic centimeters per second.">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>calculated_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry/>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>2296bbaef3c6bd22c7c3966cfb13289c</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>calculator_type</fieldlabel>
+              <fieldentry>scientific</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;&lt;span id="docs-internal-guid-418a8896-7fff-e00c-91b5-0d79ec0114b3"&gt;&lt;span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"&gt;Convert `x` gallons per hour to cubic centimeters per second.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"&gt;1 gallon = 231 in&lt;sup&gt;3&lt;/sup&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"&gt;1 in = 2.54 cm&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;&lt;span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"&gt;1 hr = 3600 s&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</mattext>
+          </material>
+          <response_str ident="response1" rcardinality="Single">
+            <render_fib fibtype="Decimal">
+              <response_label ident="answer1"/>
+            </render_fib>
+          </response_str>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition title="correct">
+            <conditionvar>
+              <other/>
+            </conditionvar>
+            <setvar varname="SCORE" action="Set">100</setvar>
+          </respcondition>
+          <respcondition title="incorrect">
+            <conditionvar>
+              <not>
+                <other/>
+              </not>
+            </conditionvar>
+            <setvar varname="SCORE" action="Set">0</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemproc_extension>
+          <calculated>
+            <answer_tolerance margin_type="percent">1%</answer_tolerance>
+            <formulas decimal_places="0" scientific_notation="false">
+              <formula>x * 231 * 2.54^3 / 60^2</formula>
+            </formulas>
+            <vars>
+              <var name="x" scale="0">
+                <min>100</min>
+                <max>500</max>
+              </var>
+            </vars>
+            <var_sets>
+              <var_set ident="cacfac727c3c2f7cd19cfef41aeff7b3">
+                <var name="x">215</var>
+                <answer>226</answer>
+              </var_set>
+              <var_set ident="2939f3e1fbfc6f0cb179b1813decefc4">
+                <var name="x">220</var>
+                <answer>231</answer>
+              </var_set>
+              <var_set ident="dd09a87b63db527e853245ee8247ca47">
+                <var name="x">456</var>
+                <answer>479</answer>
+              </var_set>
+              <var_set ident="cbc9897b4ad6ff83ea1c4ab02fbf0225">
+                <var name="x">408</var>
+                <answer>429</answer>
+              </var_set>
+              <var_set ident="da333c4860606266b4c4bbe615a02b07">
+                <var name="x">330</var>
+                <answer>347</answer>
+              </var_set>
+              <var_set ident="56df537bf8efe1ecd05967b69c412e29">
+                <var name="x">290</var>
+                <answer>305</answer>
+              </var_set>
+              <var_set ident="0bcd43a9fd244a6152176a313370f10a">
+                <var name="x">318</var>
+                <answer>334</answer>
+              </var_set>
+              <var_set ident="41499f063917c3981ff4b402005936f4">
+                <var name="x">258</var>
+                <answer>271</answer>
+              </var_set>
+              <var_set ident="0c348fbea22c79386d5bd6a5ff85251e">
+                <var name="x">182</var>
+                <answer>191</answer>
+              </var_set>
+              <var_set ident="ba2f3382664d91010a496741081cb3d0">
+                <var name="x">269</var>
+                <answer>283</answer>
+              </var_set>
+              <var_set ident="4f1e245c5e7915b987df7ca77e4975d0">
+                <var name="x">191</var>
+                <answer>201</answer>
+              </var_set>
+              <var_set ident="255744ddd70cdd56134c444d48092ab9">
+                <var name="x">296</var>
+                <answer>311</answer>
+              </var_set>
+              <var_set ident="91923e5da0904fb76918113570e17273">
+                <var name="x">190</var>
+                <answer>200</answer>
+              </var_set>
+              <var_set ident="e82acbd2f5d045b4a7e4fc7fb1be012f">
+                <var name="x">313</var>
+                <answer>329</answer>
+              </var_set>
+              <var_set ident="28965e1bdbc3f8655fcf84bbbdf035be">
+                <var name="x">327</var>
+                <answer>344</answer>
+              </var_set>
+              <var_set ident="8ad22e03c5c398e4c18189fc842b9dfb">
+                <var name="x">287</var>
+                <answer>302</answer>
+              </var_set>
+              <var_set ident="8aac6d3f50ac7da7d259ed90d43c9e7c">
+                <var name="x">225</var>
+                <answer>237</answer>
+              </var_set>
+              <var_set ident="ed8a53dd017865c9d825ee8ac9dc259c">
+                <var name="x">342</var>
+                <answer>360</answer>
+              </var_set>
+              <var_set ident="416b603f37775d1fa4cd92abd8814f9d">
+                <var name="x">386</var>
+                <answer>406</answer>
+              </var_set>
+              <var_set ident="499c40b250ec4c5bac799606024a1b08">
+                <var name="x">380</var>
+                <answer>400</answer>
+              </var_set>
+              <var_set ident="88b3bebd247b4c7cab3e1585458922bd">
+                <var name="x">447</var>
+                <answer>470</answer>
+              </var_set>
+              <var_set ident="0aeff23f2065183b8d4c2b45b9cdbb01">
+                <var name="x">437</var>
+                <answer>460</answer>
+              </var_set>
+              <var_set ident="d9abe0b9a9947741cd00ba102bd9e2a1">
+                <var name="x">435</var>
+                <answer>457</answer>
+              </var_set>
+              <var_set ident="14a18bf46acd811f3d6b774173d7db64">
+                <var name="x">240</var>
+                <answer>252</answer>
+              </var_set>
+              <var_set ident="ece55d93abb466c1dd702aefdf609d2f">
+                <var name="x">146</var>
+                <answer>154</answer>
+              </var_set>
+              <var_set ident="73bc2ddc6fd10f82d5ad2b5d9589b656">
+                <var name="x">295</var>
+                <answer>310</answer>
+              </var_set>
+              <var_set ident="94a41c23a3b2820f0a1093c5b05e2b19">
+                <var name="x">208</var>
+                <answer>219</answer>
+              </var_set>
+              <var_set ident="a989af89720e2a5f9a7ce06b3db4858c">
+                <var name="x">114</var>
+                <answer>120</answer>
+              </var_set>
+              <var_set ident="84f3889f05b7a74367412478385709eb">
+                <var name="x">335</var>
+                <answer>352</answer>
+              </var_set>
+              <var_set ident="0d14b74cd0de4c9117d49f8633a4c505">
+                <var name="x">458</var>
+                <answer>482</answer>
+              </var_set>
+              <var_set ident="f1c651c684c6869afddbfa44b30f7e38">
+                <var name="x">219</var>
+                <answer>230</answer>
+              </var_set>
+              <var_set ident="b3dba0ded3f1af94ed87df8e199220a8">
+                <var name="x">247</var>
+                <answer>260</answer>
+              </var_set>
+              <var_set ident="53fd8568124512563aaa4ee6ce4b5451">
+                <var name="x">145</var>
+                <answer>152</answer>
+              </var_set>
+              <var_set ident="2a5f3e6edc521212152eba42299bab25">
+                <var name="x">364</var>
+                <answer>383</answer>
+              </var_set>
+              <var_set ident="d0faab49b6698440d95e373510eaea53">
+                <var name="x">498</var>
+                <answer>524</answer>
+              </var_set>
+              <var_set ident="0669b77785b048854437e4fa862b684a">
+                <var name="x">112</var>
+                <answer>118</answer>
+              </var_set>
+              <var_set ident="7881bd98e25fe88318abd7a5ca0bc105">
+                <var name="x">248</var>
+                <answer>261</answer>
+              </var_set>
+              <var_set ident="da28120423d31a77175b29f6718e2aaf">
+                <var name="x">143</var>
+                <answer>150</answer>
+              </var_set>
+              <var_set ident="ec475dce44efd1952e0f37a82606786f">
+                <var name="x">253</var>
+                <answer>266</answer>
+              </var_set>
+              <var_set ident="72196320e4e739e2dd511ce4f19b6663">
+                <var name="x">100</var>
+                <answer>105</answer>
+              </var_set>
+              <var_set ident="cf66c85e0f315511b293e91489c1401c">
+                <var name="x">173</var>
+                <answer>182</answer>
+              </var_set>
+              <var_set ident="4a5002d550e9d1739ff2b6365469c82e">
+                <var name="x">181</var>
+                <answer>190</answer>
+              </var_set>
+              <var_set ident="28b90ea1aadd682f2faa04bb805c7d06">
+                <var name="x">103</var>
+                <answer>108</answer>
+              </var_set>
+              <var_set ident="662bee0dddc2e979ae97e7294324a56b">
+                <var name="x">213</var>
+                <answer>224</answer>
+              </var_set>
+              <var_set ident="2ee590917e7d96e2495c896e14c9b59d">
+                <var name="x">202</var>
+                <answer>212</answer>
+              </var_set>
+              <var_set ident="b4ba9ad119ae3abcfff50276663c5ebf">
+                <var name="x">254</var>
+                <answer>267</answer>
+              </var_set>
+              <var_set ident="1c8ad01e148a71f19cf844e3d88cd8bb">
+                <var name="x">316</var>
+                <answer>332</answer>
+              </var_set>
+              <var_set ident="8d2ed10d84ddb0776c4c62689924cd24">
+                <var name="x">265</var>
+                <answer>279</answer>
+              </var_set>
+              <var_set ident="96fb659cfe34fe2ab4de88f14d0f7b15">
+                <var name="x">246</var>
+                <answer>259</answer>
+              </var_set>
+              <var_set ident="c14bbb0469f53754d0b12ded6eb88fe0">
+                <var name="x">171</var>
+                <answer>180</answer>
+              </var_set>
+              <var_set ident="6e0606e2b79c48e3521c251ab230fd7b">
+                <var name="x">382</var>
+                <answer>402</answer>
+              </var_set>
+              <var_set ident="e028d73279de71fa76613b4eb3bed24a">
+                <var name="x">381</var>
+                <answer>401</answer>
+              </var_set>
+              <var_set ident="e4ab8863b43d6cbef0eb74d435b888ff">
+                <var name="x">434</var>
+                <answer>456</answer>
+              </var_set>
+              <var_set ident="660c5c5269a7ce9668ce1e182bfedc9a">
+                <var name="x">245</var>
+                <answer>258</answer>
+              </var_set>
+              <var_set ident="e19541cfc85a3f5b526413ec2c9fdf6f">
+                <var name="x">102</var>
+                <answer>107</answer>
+              </var_set>
+              <var_set ident="056b1986c67fd4bf7e6260a89421bc6f">
+                <var name="x">362</var>
+                <answer>381</answer>
+              </var_set>
+              <var_set ident="473a6e483bf3054ed9afb16b14cd14a0">
+                <var name="x">419</var>
+                <answer>441</answer>
+              </var_set>
+              <var_set ident="1d278d00c84904bd1505ddc3774313a5">
+                <var name="x">195</var>
+                <answer>205</answer>
+              </var_set>
+              <var_set ident="34ab91d155d49031d68fb410f4d2e568">
+                <var name="x">267</var>
+                <answer>281</answer>
+              </var_set>
+              <var_set ident="4eefb3819bc9b5c1bc657c5c5b009282">
+                <var name="x">261</var>
+                <answer>274</answer>
+              </var_set>
+              <var_set ident="25a642e6f4648cd2f8f0cfc249549194">
+                <var name="x">371</var>
+                <answer>390</answer>
+              </var_set>
+              <var_set ident="8a45541e3723eb34c37eef374fcc6c73">
+                <var name="x">373</var>
+                <answer>392</answer>
+              </var_set>
+              <var_set ident="dd64964f5e74142894a730cc876143a8">
+                <var name="x">187</var>
+                <answer>197</answer>
+              </var_set>
+              <var_set ident="50ab2ac8b0373fa9d01d0769e146dcf1">
+                <var name="x">148</var>
+                <answer>156</answer>
+              </var_set>
+              <var_set ident="b4077ef68d57e147509d6647ff11d595">
+                <var name="x">209</var>
+                <answer>220</answer>
+              </var_set>
+              <var_set ident="21999d13488e59c6d2bc3dee1f9f4d4e">
+                <var name="x">473</var>
+                <answer>497</answer>
+              </var_set>
+              <var_set ident="e99a3dfcbb142592b385939ea3f9d337">
+                <var name="x">288</var>
+                <answer>303</answer>
+              </var_set>
+              <var_set ident="2e35e8f529ffce048435e7b48b3d4adc">
+                <var name="x">186</var>
+                <answer>196</answer>
+              </var_set>
+              <var_set ident="62e3e73d02656e9d57fc545ff7f9b457">
+                <var name="x">472</var>
+                <answer>496</answer>
+              </var_set>
+              <var_set ident="182e27d0be4f58d8c6dd8df07a678acd">
+                <var name="x">131</var>
+                <answer>138</answer>
+              </var_set>
+              <var_set ident="d99d2359443c29a15b3497972475ac3b">
+                <var name="x">230</var>
+                <answer>242</answer>
+              </var_set>
+              <var_set ident="5e2e3444a3feac0029ea53242d5bcea2">
+                <var name="x">354</var>
+                <answer>372</answer>
+              </var_set>
+              <var_set ident="88dd5957518e51186f211b330aaecf78">
+                <var name="x">372</var>
+                <answer>391</answer>
+              </var_set>
+              <var_set ident="cb583e976ab159549c7f08ef7051717f">
+                <var name="x">415</var>
+                <answer>436</answer>
+              </var_set>
+              <var_set ident="f46ec6b86b3006f156dddcc3131fe384">
+                <var name="x">402</var>
+                <answer>423</answer>
+              </var_set>
+              <var_set ident="7493be7e6742844eb36438d94996db9f">
+                <var name="x">476</var>
+                <answer>501</answer>
+              </var_set>
+              <var_set ident="442190c1259ef2f5944fedffd56e2728">
+                <var name="x">116</var>
+                <answer>122</answer>
+              </var_set>
+              <var_set ident="5cac2128a8d8298f261d7a40a0971abe">
+                <var name="x">298</var>
+                <answer>313</answer>
+              </var_set>
+              <var_set ident="487398d0997927dac943aaea5d2b9ee1">
+                <var name="x">353</var>
+                <answer>371</answer>
+              </var_set>
+              <var_set ident="d4799b1daea7e61aef8476daf6172cf9">
+                <var name="x">468</var>
+                <answer>492</answer>
+              </var_set>
+              <var_set ident="fb37885b767677a9f34133b5b0b6cd6a">
+                <var name="x">106</var>
+                <answer>111</answer>
+              </var_set>
+              <var_set ident="6cc2f31caa01abd6b186fb144e42d271">
+                <var name="x">378</var>
+                <answer>397</answer>
+              </var_set>
+              <var_set ident="2d0c569077c83cadd6e65bbc028de159">
+                <var name="x">347</var>
+                <answer>365</answer>
+              </var_set>
+              <var_set ident="def82fcaf532f87e634f4a9362c0aca5">
+                <var name="x">101</var>
+                <answer>106</answer>
+              </var_set>
+              <var_set ident="dd673274c26e048ba6d8428442a5c712">
+                <var name="x">345</var>
+                <answer>363</answer>
+              </var_set>
+              <var_set ident="cfc0ec1a39403089bc0842e72b3c2b16">
+                <var name="x">405</var>
+                <answer>426</answer>
+              </var_set>
+              <var_set ident="679e625358137bbe536c9207ad290ef3">
+                <var name="x">317</var>
+                <answer>333</answer>
+              </var_set>
+              <var_set ident="9bf8a65a79c703b186b42451f2e4947f">
+                <var name="x">259</var>
+                <answer>272</answer>
+              </var_set>
+              <var_set ident="b75fafe775bbfc10593c9eeb76254634">
+                <var name="x">156</var>
+                <answer>164</answer>
+              </var_set>
+              <var_set ident="5f619c74ebf9587c21adc68f1ffbf3c6">
+                <var name="x">151</var>
+                <answer>159</answer>
+              </var_set>
+              <var_set ident="6b4ac8042b6934974132a8014a70a644">
+                <var name="x">475</var>
+                <answer>499</answer>
+              </var_set>
+              <var_set ident="fc1154a2dfe0334507df8c704ceaf21f">
+                <var name="x">138</var>
+                <answer>145</answer>
+              </var_set>
+              <var_set ident="c129286b1003851743baf1f58f0b10a3">
+                <var name="x">198</var>
+                <answer>208</answer>
+              </var_set>
+              <var_set ident="9ecbbf97c59358e8ef899e84bd8c9408">
+                <var name="x">328</var>
+                <answer>345</answer>
+              </var_set>
+              <var_set ident="c0c00c7e1646ebbe3deb79e809a2c969">
+                <var name="x">452</var>
+                <answer>475</answer>
+              </var_set>
+              <var_set ident="6c3b607e7952d065ef53f89e9f8cc86f">
+                <var name="x">315</var>
+                <answer>331</answer>
+              </var_set>
+              <var_set ident="8439c2fec9ab29cd14629661cb3a364d">
+                <var name="x">175</var>
+                <answer>184</answer>
+              </var_set>
+              <var_set ident="ad52a80dabdebd9441bb6198dcf55e3e">
+                <var name="x">157</var>
+                <answer>165</answer>
+              </var_set>
+              <var_set ident="5890e77a8a465aaddbd43c4d0db750b6">
+                <var name="x">484</var>
+                <answer>509</answer>
+              </var_set>
+              <var_set ident="6a8ef855739908738c4218caa19b0ce1">
+                <var name="x">367</var>
+                <answer>386</answer>
+              </var_set>
+              <var_set ident="a914c176987fed4b50bc1f5b8f84ac4c">
+                <var name="x">233</var>
+                <answer>245</answer>
+              </var_set>
+              <var_set ident="5a5aea04d9e3349687abcaba2d627bd4">
+                <var name="x">427</var>
+                <answer>449</answer>
+              </var_set>
+              <var_set ident="e695082af57a89d9fc11b0375025d022">
+                <var name="x">154</var>
+                <answer>162</answer>
+              </var_set>
+              <var_set ident="46c76fcdb2c8ea65f98901f2355b748c">
+                <var name="x">172</var>
+                <answer>181</answer>
+              </var_set>
+              <var_set ident="7731b0ae59af9dc27becea5b1b8a41bb">
+                <var name="x">491</var>
+                <answer>516</answer>
+              </var_set>
+              <var_set ident="05c4d5727bc965ef1ecbe70ccbb89db9">
+                <var name="x">115</var>
+                <answer>121</answer>
+              </var_set>
+              <var_set ident="064e748fae15e84269c499b295b87ab9">
+                <var name="x">194</var>
+                <answer>204</answer>
+              </var_set>
+              <var_set ident="e2c1a69764d7afc503464776625b06e7">
+                <var name="x">262</var>
+                <answer>275</answer>
+              </var_set>
+              <var_set ident="c11cdcb55d5d902055f02c0c68c1e469">
+                <var name="x">117</var>
+                <answer>123</answer>
+              </var_set>
+              <var_set ident="3a122ea0269ef7d00f7f5e3aa6464711">
+                <var name="x">159</var>
+                <answer>167</answer>
+              </var_set>
+              <var_set ident="ce9614919caa3995ca1914e1c0b47e68">
+                <var name="x">264</var>
+                <answer>278</answer>
+              </var_set>
+              <var_set ident="14a59ad045ad37739872031f868f6d83">
+                <var name="x">270</var>
+                <answer>284</answer>
+              </var_set>
+              <var_set ident="e61f508f57642473f7477bf1f9786d3b">
+                <var name="x">487</var>
+                <answer>512</answer>
+              </var_set>
+              <var_set ident="d33d55b2634bc952cfc16f2a26f6c424">
+                <var name="x">440</var>
+                <answer>463</answer>
+              </var_set>
+              <var_set ident="4beb873e151d5edfeaa38e5cac9150a9">
+                <var name="x">177</var>
+                <answer>186</answer>
+              </var_set>
+              <var_set ident="a353bce412f3937a440f6d404354f138">
+                <var name="x">369</var>
+                <answer>388</answer>
+              </var_set>
+              <var_set ident="6caa9b8cf4b5f1fee2cf2a4e97cad7e4">
+                <var name="x">365</var>
+                <answer>384</answer>
+              </var_set>
+              <var_set ident="7b7b8e53f36c410764c0567b51898f67">
+                <var name="x">363</var>
+                <answer>382</answer>
+              </var_set>
+              <var_set ident="3d6faff7ab11e3e5a9447c9a73f8323e">
+                <var name="x">457</var>
+                <answer>481</answer>
+              </var_set>
+              <var_set ident="d42272bbe740dd135533d6b7a65a273b">
+                <var name="x">160</var>
+                <answer>168</answer>
+              </var_set>
+              <var_set ident="2c36fadd5fb152f5f33d57db1cea5745">
+                <var name="x">499</var>
+                <answer>525</answer>
+              </var_set>
+              <var_set ident="f835d6aabd4f3b32fa2cac5085d02c98">
+                <var name="x">221</var>
+                <answer>232</answer>
+              </var_set>
+              <var_set ident="27f1178ffa70cb8c5e435e2491d4fb56">
+                <var name="x">384</var>
+                <answer>404</answer>
+              </var_set>
+              <var_set ident="a210c17423686a39656acbe0ed228beb">
+                <var name="x">352</var>
+                <answer>370</answer>
+              </var_set>
+              <var_set ident="0fc8df9e9dd0cce1b9c89f1ba4767c38">
+                <var name="x">421</var>
+                <answer>443</answer>
+              </var_set>
+              <var_set ident="cbc11c2102114c6772723ecf396f30e9">
+                <var name="x">234</var>
+                <answer>246</answer>
+              </var_set>
+              <var_set ident="eab299a70aa6cf35e18dd461d46a71a8">
+                <var name="x">227</var>
+                <answer>239</answer>
+              </var_set>
+              <var_set ident="f83337772f600f1ae3923a9c58efef3d">
+                <var name="x">361</var>
+                <answer>380</answer>
+              </var_set>
+              <var_set ident="5da196489e1ce6dad3abe3ebecaddd45">
+                <var name="x">494</var>
+                <answer>519</answer>
+              </var_set>
+              <var_set ident="ee3d160d467dd8211d4289b9074e977c">
+                <var name="x">319</var>
+                <answer>335</answer>
+              </var_set>
+              <var_set ident="efa2bfab33133853a03a20e6c7ed1262">
+                <var name="x">355</var>
+                <answer>373</answer>
+              </var_set>
+              <var_set ident="80a8d7ea7e7c40dfdb916a60132b5e92">
+                <var name="x">155</var>
+                <answer>163</answer>
+              </var_set>
+              <var_set ident="6f4fd33c39047d31091e3d66e1d82df0">
+                <var name="x">479</var>
+                <answer>504</answer>
+              </var_set>
+              <var_set ident="910ec9bdda754daefb943d8704fd8f4c">
+                <var name="x">278</var>
+                <answer>292</answer>
+              </var_set>
+              <var_set ident="d08d7b0be19d61acde58df8cc6a3864e">
+                <var name="x">142</var>
+                <answer>149</answer>
+              </var_set>
+              <var_set ident="abe64d85845a57804d40d1b5053c2426">
+                <var name="x">460</var>
+                <answer>484</answer>
+              </var_set>
+              <var_set ident="038f124bcf6c427755a35760e592d305">
+                <var name="x">231</var>
+                <answer>243</answer>
+              </var_set>
+              <var_set ident="8997ec3cf3637ffea8802c677ee60f39">
+                <var name="x">289</var>
+                <answer>304</answer>
+              </var_set>
+              <var_set ident="b64f8c28e927a5669180cae160e5bfd1">
+                <var name="x">126</var>
+                <answer>132</answer>
+              </var_set>
+              <var_set ident="f37c97c19f798f9d559dbe33c6de3ebc">
+                <var name="x">429</var>
+                <answer>451</answer>
+              </var_set>
+              <var_set ident="e94f8b633d2dc2c3eb0ea9b81dcb2a4f">
+                <var name="x">153</var>
+                <answer>161</answer>
+              </var_set>
+              <var_set ident="9af8f433a12b9ff4040c857c560123a9">
+                <var name="x">466</var>
+                <answer>490</answer>
+              </var_set>
+              <var_set ident="d989c44bc34a588232008f047cd7767e">
+                <var name="x">449</var>
+                <answer>472</answer>
+              </var_set>
+              <var_set ident="c3d8626dda4e0a45babca79c8e43a953">
+                <var name="x">350</var>
+                <answer>368</answer>
+              </var_set>
+              <var_set ident="a80fed58f6c163f1b152da0b55e11e50">
+                <var name="x">344</var>
+                <answer>362</answer>
+              </var_set>
+              <var_set ident="095ac73397d4a105c1dce1e42649a0fe">
+                <var name="x">400</var>
+                <answer>421</answer>
+              </var_set>
+              <var_set ident="6cc376cec945378d2c925a3b6efd7973">
+                <var name="x">481</var>
+                <answer>506</answer>
+              </var_set>
+              <var_set ident="7e91d835fef0bf06ee59a2940430791c">
+                <var name="x">474</var>
+                <answer>498</answer>
+              </var_set>
+              <var_set ident="5ab20aab459cc8f6bddd2d20d4b09560">
+                <var name="x">448</var>
+                <answer>471</answer>
+              </var_set>
+              <var_set ident="d00f5598705ea05d57df147e5967d546">
+                <var name="x">263</var>
+                <answer>277</answer>
+              </var_set>
+              <var_set ident="d94c4859c3cca389cb375afaa2b4b7ce">
+                <var name="x">284</var>
+                <answer>299</answer>
+              </var_set>
+              <var_set ident="e6ee9aad99f9a0e26dd2f2dc95b75154">
+                <var name="x">417</var>
+                <answer>438</answer>
+              </var_set>
+              <var_set ident="e8082d352dcbddfbf4e202c30717a41b">
+                <var name="x">121</var>
+                <answer>127</answer>
+              </var_set>
+              <var_set ident="9c7d678e6520e43b70c3a59ab7f0586e">
+                <var name="x">446</var>
+                <answer>469</answer>
+              </var_set>
+              <var_set ident="babba52796c44d4669541e7fecc304ff">
+                <var name="x">274</var>
+                <answer>288</answer>
+              </var_set>
+              <var_set ident="f3045cccfd3ca00aa8a3a94b76a4fc16">
+                <var name="x">454</var>
+                <answer>477</answer>
+              </var_set>
+              <var_set ident="9f6b0330d731838022dfeb911c5dc001">
+                <var name="x">471</var>
+                <answer>495</answer>
+              </var_set>
+              <var_set ident="cd3f615b1dd28a7b42eae41986e6a42e">
+                <var name="x">282</var>
+                <answer>297</answer>
+              </var_set>
+              <var_set ident="5dce9e6349922844fcad43a8bd2a0f45">
+                <var name="x">422</var>
+                <answer>444</answer>
+              </var_set>
+              <var_set ident="86e6df5fa93aa7b3b24b0679b86ce51b">
+                <var name="x">470</var>
+                <answer>494</answer>
+              </var_set>
+              <var_set ident="8075011ff47d093325dfff0731290328">
+                <var name="x">445</var>
+                <answer>468</answer>
+              </var_set>
+              <var_set ident="1931d45c4daba21d0ed17cfd12e91bc1">
+                <var name="x">483</var>
+                <answer>508</answer>
+              </var_set>
+              <var_set ident="6d4b74c51d1769694560bad918ae29d4">
+                <var name="x">497</var>
+                <answer>523</answer>
+              </var_set>
+              <var_set ident="7268fc34c038eb3b501f8767d94f1019">
+                <var name="x">436</var>
+                <answer>458</answer>
+              </var_set>
+              <var_set ident="9d43ef1327e6a0647ae9b56e52285e2a">
+                <var name="x">336</var>
+                <answer>353</answer>
+              </var_set>
+              <var_set ident="73f84d0039e8f241a1a2fd3dccfcd7af">
+                <var name="x">199</var>
+                <answer>209</answer>
+              </var_set>
+              <var_set ident="7273a2c8a6910392bf5f7daab90e6cff">
+                <var name="x">385</var>
+                <answer>405</answer>
+              </var_set>
+              <var_set ident="043c6e7672b0bbe5def87a40a6c11eb2">
+                <var name="x">391</var>
+                <answer>411</answer>
+              </var_set>
+              <var_set ident="766052d4b8230d908190a750eeca18bf">
+                <var name="x">214</var>
+                <answer>225</answer>
+              </var_set>
+              <var_set ident="54a5ef05594d4160dffe407e9a431ac2">
+                <var name="x">224</var>
+                <answer>236</answer>
+              </var_set>
+              <var_set ident="565e7db69067afa177fe00d3bc1a4d15">
+                <var name="x">493</var>
+                <answer>518</answer>
+              </var_set>
+              <var_set ident="60ac81b1676e9a03f2bcc95758ebeab8">
+                <var name="x">291</var>
+                <answer>306</answer>
+              </var_set>
+              <var_set ident="88023b33d3b29d2906c2d7dfe6465d51">
+                <var name="x">238</var>
+                <answer>250</answer>
+              </var_set>
+              <var_set ident="7a7be1776fff522c0e5ba6c59ddea5e1">
+                <var name="x">388</var>
+                <answer>408</answer>
+              </var_set>
+              <var_set ident="0119ad76f3faf1fb8f9c8c37dcb9fdea">
+                <var name="x">141</var>
+                <answer>148</answer>
+              </var_set>
+              <var_set ident="b59269fc98734c63f276134e5358d6bf">
+                <var name="x">358</var>
+                <answer>376</answer>
+              </var_set>
+              <var_set ident="ef046aed8aa9a3a49074f5a3157d4099">
+                <var name="x">403</var>
+                <answer>424</answer>
+              </var_set>
+              <var_set ident="b4be7231283852ad38f34d8bd5a0e6f4">
+                <var name="x">485</var>
+                <answer>510</answer>
+              </var_set>
+              <var_set ident="f1c2acb52d56a3a4422d8e767ec2add8">
+                <var name="x">228</var>
+                <answer>240</answer>
+              </var_set>
+              <var_set ident="491a1e5513a3eb0f53008579f4041d44">
+                <var name="x">482</var>
+                <answer>507</answer>
+              </var_set>
+              <var_set ident="f98495a3508c4807c8de07b16ecdd43e">
+                <var name="x">217</var>
+                <answer>228</answer>
+              </var_set>
+              <var_set ident="52b0bcaa6feab2de32f16d6a57fd0c26">
+                <var name="x">310</var>
+                <answer>326</answer>
+              </var_set>
+              <var_set ident="50f1cf00dbfe4cffd5e3677aa2dd300f">
+                <var name="x">480</var>
+                <answer>505</answer>
+              </var_set>
+              <var_set ident="585a90731af89d9c0f14c09ebdfd21ff">
+                <var name="x">464</var>
+                <answer>488</answer>
+              </var_set>
+              <var_set ident="b3f15d96b14550965f4480462136a5fc">
+                <var name="x">251</var>
+                <answer>264</answer>
+              </var_set>
+              <var_set ident="6c9a333cff525f325aa5163f7515f65b">
+                <var name="x">169</var>
+                <answer>178</answer>
+              </var_set>
+              <var_set ident="0f11e5751769153b2a4c7596b44a4c0d">
+                <var name="x">235</var>
+                <answer>247</answer>
+              </var_set>
+              <var_set ident="0518b6add78b136c5957caf7881333f4">
+                <var name="x">411</var>
+                <answer>432</answer>
+              </var_set>
+              <var_set ident="575639f2e6d42285bce981088debc4bf">
+                <var name="x">478</var>
+                <answer>503</answer>
+              </var_set>
+              <var_set ident="633b49806787b5247191e6ef076da655">
+                <var name="x">337</var>
+                <answer>354</answer>
+              </var_set>
+              <var_set ident="8ceecfa9ea17fa50e95bf9619400e2a9">
+                <var name="x">104</var>
+                <answer>109</answer>
+              </var_set>
+              <var_set ident="e9dc96a66fb66195e002f4d753b47a3d">
+                <var name="x">321</var>
+                <answer>338</answer>
+              </var_set>
+              <var_set ident="3dbecb12e63a746fe75f4d38153d03a4">
+                <var name="x">118</var>
+                <answer>124</answer>
+              </var_set>
+              <var_set ident="059a64668c13d2ebc8c17bfcc06d4e07">
+                <var name="x">492</var>
+                <answer>517</answer>
+              </var_set>
+              <var_set ident="e8afd2a5f4522aff0765966800ce76ea">
+                <var name="x">134</var>
+                <answer>141</answer>
+              </var_set>
+              <var_set ident="e82419cea1a1519302c967fc0e6adf81">
+                <var name="x">279</var>
+                <answer>293</answer>
+              </var_set>
+              <var_set ident="386a04beddd830ee965e03fd7ea37b3b">
+                <var name="x">286</var>
+                <answer>301</answer>
+              </var_set>
+              <var_set ident="b6573f3c73d47cdacbd747ce586f22b2">
+                <var name="x">432</var>
+                <answer>454</answer>
+              </var_set>
+              <var_set ident="f2736919c523b43fe0a652011c663d54">
+                <var name="x">109</var>
+                <answer>115</answer>
+              </var_set>
+              <var_set ident="2c92bb2c45565e978a6f95c8beda4a54">
+                <var name="x">147</var>
+                <answer>155</answer>
+              </var_set>
+            </var_sets>
+          </calculated>
+        </itemproc_extension>
+      </item>
+      <item ident="6b9b7209f877c354fcb6709879824033" title="Units of proportionality constant">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>8cc32c22-993d-41cb-8c1b-415b5af373d9,ef5ef554-35dd-4318-92f8-0bb98b52622f,63aa471f-22c8-438c-83ed-0b6edbaeceeb,1ab77221-3ea4-4c43-838c-07dffe1b71b0,0b5154da-7bdd-45f6-b331-832aea889995,adf3456b-0644-428b-b35e-c979f7e0e2dc,870aa83d-5a4f-4f01-8d61-8fafecad51d2,174c10c0-689e-4446-a99f-8f7fead39411,09388433-88ff-4ef1-bf8c-5204d0d7d0af,9db1d71d-be37-4396-a2d3-4471f5675b39,4b84b649-857c-4efc-8444-2d095d37bf8c,7e4e8a32-ee7a-4876-8a90-dfc81db3cfb4,318738f9-ac76-4f2a-bffa-4d945530ba56</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>b51aa05c0f0e090476cdeaeca61c7d11</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>calculator_type</fieldlabel>
+              <fieldentry>none</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;&lt;span id="docs-internal-guid-73e454be-7fff-b339-2cd9-97117682886e" style="font-size: 11pt; font-family: Arial; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"&gt;If the dependent variable &lt;/span&gt;&lt;span style="font-size: 11pt; font-family: Arial; color: #000000; background-color: transparent; font-weight: 400; font-style: italic; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"&gt;y&lt;/span&gt;&lt;span style="font-size: 11pt; font-family: Arial; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"&gt; is measured in newtons, N, and is proportional to the independent variable &lt;/span&gt;&lt;span style="font-size: 11pt; font-family: Arial; color: #000000; background-color: transparent; font-weight: 400; font-style: italic; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"&gt;x&lt;/span&gt;&lt;span style="font-size: 11pt; font-family: Arial; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"&gt; which is measured in centimeters squared, cm&lt;sup&gt;2&lt;/sup&gt;, what are the units of the proportionality constant?&lt;/span&gt;&lt;/p&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice shuffle="Yes">
+              <response_label ident="8cc32c22-993d-41cb-8c1b-415b5af373d9">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;N/cm&lt;sup&gt;2&lt;/sup&gt;&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="ef5ef554-35dd-4318-92f8-0bb98b52622f">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;N/cm&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="63aa471f-22c8-438c-83ed-0b6edbaeceeb">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;cm&lt;sup&gt;2&lt;/sup&gt;/N&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="1ab77221-3ea4-4c43-838c-07dffe1b71b0">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;cm/N&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="0b5154da-7bdd-45f6-b331-832aea889995">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;(N/cm)&lt;sup&gt;2&lt;/sup&gt;&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="adf3456b-0644-428b-b35e-c979f7e0e2dc">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;(cm/N)&lt;sup&gt;2&lt;/sup&gt;&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="870aa83d-5a4f-4f01-8d61-8fafecad51d2">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;N&#xB7;cm&lt;sup&gt;2&lt;/sup&gt;&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="174c10c0-689e-4446-a99f-8f7fead39411">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;1/(N&#xB7;cm&lt;sup&gt;2&lt;/sup&gt;)&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="09388433-88ff-4ef1-bf8c-5204d0d7d0af">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;N&#xB7;cm&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="9db1d71d-be37-4396-a2d3-4471f5675b39">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;1/N&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4b84b649-857c-4efc-8444-2d095d37bf8c">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;N&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="7e4e8a32-ee7a-4876-8a90-dfc81db3cfb4">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;cm&lt;sup&gt;2&lt;/sup&gt;&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="318738f9-ac76-4f2a-bffa-4d945530ba56">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;(&#x221A;N)/cm&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">8cc32c22-993d-41cb-8c1b-415b5af373d9</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="21bcd295ef077179a89750cec7d20a73" title="">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>ordering_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>030c2511-91fd-4225-bee0-4cdd75eeeb7f,104ed8c1-d57c-440d-abe4-9b34047c2706,6d50641d-b1b2-438e-b40d-87392f48c846,6ddb72d0-df1c-42db-b99b-cca09caaa2b7,7821dcaf-110d-491a-bccc-b4c01981c8a7,7f608b16-89fe-44f1-b681-be1d8cb1c755,d8344c95-f24f-4f8d-9e08-5e78433c8b88,ea287797-5608-4bed-8822-331889acf268</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>963dd935cc0a625bde1654d108679adf</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>calculator_type</fieldlabel>
+              <fieldentry>basic</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"&gt;&lt;span style="font-size: 11pt; font-family: Arial; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"&gt;Given the following:&lt;/span&gt;&lt;/p&gt;
+&lt;p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"&gt;&lt;span style="font-size: 11pt; font-family: Arial; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"&gt;1000 ns = 1 &#x3BC;s&lt;/span&gt;&lt;/p&gt;
+&lt;p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"&gt;&lt;span style="font-size: 11pt; font-family: Arial; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"&gt;1000 &#x3BC;s = 1 ms&lt;/span&gt;&lt;/p&gt;
+&lt;p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"&gt;&lt;span style="font-size: 11pt; font-family: Arial; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"&gt;1000 ms = 1 s&lt;/span&gt;&lt;/p&gt;
+&lt;p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"&gt;&lt;span style="font-size: 11pt; font-family: Arial; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"&gt;60 s = 1 min&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"&gt;&lt;span style="font-size: 11pt; font-family: Arial; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"&gt;Order from shortest to longest the following quantities of time:&lt;/span&gt;&lt;/p&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Ordered">
+            <render_extension>
+              <material position="top">
+                <mattext>Shortest</mattext>
+              </material>
+              <ims_render_object shuffle="No">
+                <flow_label>
+                  <response_label ident="030c2511-91fd-4225-bee0-4cdd75eeeb7f">
+                    <material>
+                      <mattext texttype="text/html">&lt;p&gt;&lt;span id="docs-internal-guid-b86e9684-7fff-07e7-8433-a9fe6dedc684"&gt;&lt;span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"&gt;1.2 s&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</mattext>
+                    </material>
+                  </response_label>
+                  <response_label ident="104ed8c1-d57c-440d-abe4-9b34047c2706">
+                    <material>
+                      <mattext texttype="text/html">&lt;p&gt;&lt;span id="docs-internal-guid-2bd89465-7fff-5c54-dd70-03020e46f635"&gt;&lt;span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"&gt;1.3 min&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</mattext>
+                    </material>
+                  </response_label>
+                  <response_label ident="6d50641d-b1b2-438e-b40d-87392f48c846">
+                    <material>
+                      <mattext texttype="text/html">&lt;p&gt;&lt;span id="docs-internal-guid-d811e280-7fff-3d47-9d38-7b4fe8f4c7e4"&gt;&lt;span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"&gt;0.10 min&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</mattext>
+                    </material>
+                  </response_label>
+                  <response_label ident="6ddb72d0-df1c-42db-b99b-cca09caaa2b7">
+                    <material>
+                      <mattext texttype="text/html">&lt;p&gt;&lt;span id="docs-internal-guid-92b9132a-7fff-226c-4b67-e4bd94ca5777"&gt;&lt;span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"&gt;1700 ms&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</mattext>
+                    </material>
+                  </response_label>
+                  <response_label ident="7821dcaf-110d-491a-bccc-b4c01981c8a7">
+                    <material>
+                      <mattext texttype="text/html">&lt;p&gt;&lt;span id="docs-internal-guid-223ecb50-7fff-493c-9663-7a1da457a225"&gt;&lt;span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"&gt;10. s&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</mattext>
+                    </material>
+                  </response_label>
+                  <response_label ident="7f608b16-89fe-44f1-b681-be1d8cb1c755">
+                    <material>
+                      <mattext texttype="text/html">&lt;p&gt;&lt;span id="docs-internal-guid-a5163577-7fff-d95e-e13e-ac6d6a22146f"&gt;&lt;span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"&gt;3300 ns&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</mattext>
+                    </material>
+                  </response_label>
+                  <response_label ident="d8344c95-f24f-4f8d-9e08-5e78433c8b88">
+                    <material>
+                      <mattext texttype="text/html">&lt;p&gt;&lt;span id="docs-internal-guid-18a86a75-7fff-f75c-ff61-2479561158fe"&gt;&lt;span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"&gt;0.57 ms&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</mattext>
+                    </material>
+                  </response_label>
+                  <response_label ident="ea287797-5608-4bed-8822-331889acf268">
+                    <material>
+                      <mattext texttype="text/html">&lt;p&gt;&lt;span id="docs-internal-guid-7213c367-7fff-eb7d-7b7d-ea1b0026380b"&gt;&lt;span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"&gt;5.1 &lt;/span&gt;&lt;/span&gt;&lt;span id="docs-internal-guid-7213c367-7fff-eb7d-7b7d-ea1b0026380b"&gt;&lt;span style="font-size: 11pt; font-family: Arial; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"&gt;&#x3BC;s&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</mattext>
+                    </material>
+                  </response_label>
+                </flow_label>
+              </ims_render_object>
+              <material position="bottom">
+                <mattext>Longest</mattext>
+              </material>
+            </render_extension>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar defaultval="1" varname="ORDERSCORE" vartype="Integer"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">7f608b16-89fe-44f1-b681-be1d8cb1c755</varequal>
+              <varequal respident="response1">ea287797-5608-4bed-8822-331889acf268</varequal>
+              <varequal respident="response1">d8344c95-f24f-4f8d-9e08-5e78433c8b88</varequal>
+              <varequal respident="response1">030c2511-91fd-4225-bee0-4cdd75eeeb7f</varequal>
+              <varequal respident="response1">6ddb72d0-df1c-42db-b99b-cca09caaa2b7</varequal>
+              <varequal respident="response1">6d50641d-b1b2-438e-b40d-87392f48c846</varequal>
+              <varequal respident="response1">7821dcaf-110d-491a-bccc-b4c01981c8a7</varequal>
+              <varequal respident="response1">104ed8c1-d57c-440d-abe4-9b34047c2706</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="04edb39661f389dee3ea571f0b0af0a0" title="">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>calculated_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry/>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>76256592cc77e04c55b990878c0e6d13</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>calculator_type</fieldlabel>
+              <fieldentry>scientific</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;" dir="ltr"&gt;&lt;span style="font-size: 11pt; font-family: Arial; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"&gt;An object weighs `m` pounds and displaces `V` cubic feet. What is the average density of the object in grams per cubic centimeter?&lt;/span&gt;&lt;/p&gt;
+&lt;p style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;" dir="ltr"&gt;&lt;span style="font-size: 11pt; font-family: Arial; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"&gt;&lt;span style="font-size: 11pt; font-family: Arial; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"&gt;1 pound = 453.59237 g&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;" dir="ltr"&gt;&lt;span style="font-size: 11pt; font-family: Arial; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;"&gt;1 ft = 30.48 cm&lt;/span&gt;&lt;/p&gt;
+&lt;p style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;" dir="ltr"&gt;&amp;nbsp;&lt;/p&gt;</mattext>
+          </material>
+          <response_str ident="response1" rcardinality="Single">
+            <render_fib fibtype="Decimal">
+              <response_label ident="answer1"/>
+            </render_fib>
+          </response_str>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition title="correct">
+            <conditionvar>
+              <other/>
+            </conditionvar>
+            <setvar varname="SCORE" action="Set">100</setvar>
+          </respcondition>
+          <respcondition title="incorrect">
+            <conditionvar>
+              <not>
+                <other/>
+              </not>
+            </conditionvar>
+            <setvar varname="SCORE" action="Set">0</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemproc_extension>
+          <calculated>
+            <answer_tolerance margin_type="percent">2%</answer_tolerance>
+            <formulas decimal_places="2" scientific_notation="false">
+              <formula>m * 453.59237 / ( V * 30.48^3)</formula>
+            </formulas>
+            <vars>
+              <var name="V" scale="2">
+                <min>1.00</min>
+                <max>2.00</max>
+              </var>
+              <var name="m" scale="0">
+                <min>125</min>
+                <max>200</max>
+              </var>
+            </vars>
+            <var_sets>
+              <var_set ident="08d16c8f15a171b6ca944606e21eb96e">
+                <var name="V">1.39</var>
+                <var name="m">183</var>
+                <answer>2.11</answer>
+              </var_set>
+              <var_set ident="ee275e60bf988c5a58ea8207c3223dc1">
+                <var name="V">1.37</var>
+                <var name="m">130</var>
+                <answer>1.52</answer>
+              </var_set>
+              <var_set ident="d4b5c9036e17ef2920e5001b9371c27f">
+                <var name="V">1.58</var>
+                <var name="m">142</var>
+                <answer>1.44</answer>
+              </var_set>
+              <var_set ident="c6c05e6e608602ca693fa47d6b51d437">
+                <var name="V">1.50</var>
+                <var name="m">191</var>
+                <answer>2.04</answer>
+              </var_set>
+              <var_set ident="fbb60ff6a0fc9ae085bdc30570f2e497">
+                <var name="V">1.87</var>
+                <var name="m">142</var>
+                <answer>1.22</answer>
+              </var_set>
+              <var_set ident="2edaee55eaa1d537edc5ec72792ffc14">
+                <var name="V">1.00</var>
+                <var name="m">178</var>
+                <answer>2.85</answer>
+              </var_set>
+              <var_set ident="e49ed382766b4eaf0daebde5579e9f1d">
+                <var name="V">1.08</var>
+                <var name="m">167</var>
+                <answer>2.48</answer>
+              </var_set>
+              <var_set ident="889bcefd82641efd9408927c40756856">
+                <var name="V">1.36</var>
+                <var name="m">143</var>
+                <answer>1.68</answer>
+              </var_set>
+              <var_set ident="8490bdc764d9ba495ac1adbcacd228a5">
+                <var name="V">1.45</var>
+                <var name="m">152</var>
+                <answer>1.68</answer>
+              </var_set>
+              <var_set ident="7357574ca5750a7dbf30a86a6d80692f">
+                <var name="V">1.63</var>
+                <var name="m">198</var>
+                <answer>1.95</answer>
+              </var_set>
+              <var_set ident="1cd155457c60910feaa4f2460174ee21">
+                <var name="V">1.75</var>
+                <var name="m">192</var>
+                <answer>1.76</answer>
+              </var_set>
+              <var_set ident="5570e11ead7d05b1cba4e37fb356d053">
+                <var name="V">1.82</var>
+                <var name="m">131</var>
+                <answer>1.15</answer>
+              </var_set>
+              <var_set ident="f1ed4ebbf587fcac8fc01ab9b6e73bae">
+                <var name="V">1.73</var>
+                <var name="m">145</var>
+                <answer>1.34</answer>
+              </var_set>
+              <var_set ident="f5dfa485e5d928759969f3935d6aea2c">
+                <var name="V">1.58</var>
+                <var name="m">157</var>
+                <answer>1.59</answer>
+              </var_set>
+              <var_set ident="42629a7a8e5889ad2db38ed9710ea9ac">
+                <var name="V">1.22</var>
+                <var name="m">153</var>
+                <answer>2.01</answer>
+              </var_set>
+              <var_set ident="0f70c5428dfa5f3b83798fe7ea36e9d7">
+                <var name="V">1.55</var>
+                <var name="m">177</var>
+                <answer>1.83</answer>
+              </var_set>
+              <var_set ident="f95120d9279a2e0613471faf1e9e2de9">
+                <var name="V">1.58</var>
+                <var name="m">196</var>
+                <answer>1.99</answer>
+              </var_set>
+              <var_set ident="62df16d369849239c8f1b6dbcaf7ce40">
+                <var name="V">1.62</var>
+                <var name="m">137</var>
+                <answer>1.35</answer>
+              </var_set>
+              <var_set ident="36d38c289d8f95732c01b9eb2c2f850f">
+                <var name="V">1.03</var>
+                <var name="m">153</var>
+                <answer>2.38</answer>
+              </var_set>
+              <var_set ident="73363402afb2649cac77f723a42eb8c6">
+                <var name="V">1.13</var>
+                <var name="m">154</var>
+                <answer>2.18</answer>
+              </var_set>
+              <var_set ident="148930793d3c37be78e08828fe65fb34">
+                <var name="V">1.83</var>
+                <var name="m">149</var>
+                <answer>1.30</answer>
+              </var_set>
+              <var_set ident="650ab15499d31c865a333f08a4aa748d">
+                <var name="V">1.47</var>
+                <var name="m">180</var>
+                <answer>1.96</answer>
+              </var_set>
+              <var_set ident="42c900ab0468d31ee6524ef645443fdc">
+                <var name="V">1.31</var>
+                <var name="m">130</var>
+                <answer>1.59</answer>
+              </var_set>
+              <var_set ident="a7785f9227e0c6f0df8007bc662b8904">
+                <var name="V">1.02</var>
+                <var name="m">191</var>
+                <answer>3.00</answer>
+              </var_set>
+              <var_set ident="373d24e53c8bf6f26db18ee7a5ab38a3">
+                <var name="V">1.65</var>
+                <var name="m">184</var>
+                <answer>1.79</answer>
+              </var_set>
+              <var_set ident="2fa6a34ec3898ad45b67782bc89df1bc">
+                <var name="V">1.12</var>
+                <var name="m">128</var>
+                <answer>1.83</answer>
+              </var_set>
+              <var_set ident="33b18f4b2fa491326ae2eadd5d63cbdd">
+                <var name="V">1.16</var>
+                <var name="m">129</var>
+                <answer>1.78</answer>
+              </var_set>
+              <var_set ident="62edb9969660a0ae4eb5af9e50c8d8ad">
+                <var name="V">1.40</var>
+                <var name="m">142</var>
+                <answer>1.62</answer>
+              </var_set>
+              <var_set ident="5a65cf37c76a3567f2f85f64be69b220">
+                <var name="V">1.97</var>
+                <var name="m">170</var>
+                <answer>1.38</answer>
+              </var_set>
+              <var_set ident="653dc8a7579e2e60cfde67c83202081f">
+                <var name="V">1.21</var>
+                <var name="m">196</var>
+                <answer>2.59</answer>
+              </var_set>
+              <var_set ident="81340f1665bcf7af285a3f06cf05c7a7">
+                <var name="V">1.70</var>
+                <var name="m">159</var>
+                <answer>1.50</answer>
+              </var_set>
+              <var_set ident="48e9c238c361e103c724a8ca9b44f821">
+                <var name="V">1.46</var>
+                <var name="m">176</var>
+                <answer>1.93</answer>
+              </var_set>
+              <var_set ident="6227621786d37bb3ce0874f44837493f">
+                <var name="V">1.81</var>
+                <var name="m">159</var>
+                <answer>1.41</answer>
+              </var_set>
+              <var_set ident="64053db3d1c71eba5485e7121e69f1e5">
+                <var name="V">1.48</var>
+                <var name="m">162</var>
+                <answer>1.75</answer>
+              </var_set>
+              <var_set ident="3d328a9c95cd8cf7661c45bae23cf610">
+                <var name="V">1.34</var>
+                <var name="m">196</var>
+                <answer>2.34</answer>
+              </var_set>
+              <var_set ident="b92db119958cdc1ce1139392aad7a66a">
+                <var name="V">1.25</var>
+                <var name="m">169</var>
+                <answer>2.17</answer>
+              </var_set>
+              <var_set ident="2e8a9c7ac60bcc697e6aa4eab7fa567c">
+                <var name="V">1.02</var>
+                <var name="m">140</var>
+                <answer>2.20</answer>
+              </var_set>
+              <var_set ident="d53976aade9733f8e7bfe5faa057ba19">
+                <var name="V">1.44</var>
+                <var name="m">199</var>
+                <answer>2.21</answer>
+              </var_set>
+              <var_set ident="417ac37cd2cf917377f1505b51e6bb89">
+                <var name="V">1.37</var>
+                <var name="m">150</var>
+                <answer>1.75</answer>
+              </var_set>
+              <var_set ident="959b08adeeadcca8fd8003d31cc5ea70">
+                <var name="V">1.24</var>
+                <var name="m">142</var>
+                <answer>1.83</answer>
+              </var_set>
+              <var_set ident="3eadbe6f78279f5f41b6f3fedd3fd15f">
+                <var name="V">1.50</var>
+                <var name="m">194</var>
+                <answer>2.07</answer>
+              </var_set>
+              <var_set ident="0fa05e95e78630722c951439cb80aa3e">
+                <var name="V">1.89</var>
+                <var name="m">160</var>
+                <answer>1.36</answer>
+              </var_set>
+              <var_set ident="33d77195fb32940a5a4c8599a7cda126">
+                <var name="V">1.54</var>
+                <var name="m">170</var>
+                <answer>1.77</answer>
+              </var_set>
+              <var_set ident="fb35bff4fbff622e4907dae1800cde41">
+                <var name="V">1.04</var>
+                <var name="m">185</var>
+                <answer>2.85</answer>
+              </var_set>
+              <var_set ident="53325ddee8872d046de0a842abc11103">
+                <var name="V">1.14</var>
+                <var name="m">145</var>
+                <answer>2.04</answer>
+              </var_set>
+              <var_set ident="e467932c28899ab02d24ef16a7793410">
+                <var name="V">1.08</var>
+                <var name="m">193</var>
+                <answer>2.86</answer>
+              </var_set>
+              <var_set ident="b2dfeb6966fa604ab93c9f44cf83b4d4">
+                <var name="V">1.68</var>
+                <var name="m">134</var>
+                <answer>1.28</answer>
+              </var_set>
+              <var_set ident="09312021feff74f0d201310b3f6c317e">
+                <var name="V">1.19</var>
+                <var name="m">198</var>
+                <answer>2.67</answer>
+              </var_set>
+              <var_set ident="c80f45e532875c7730aeda426b42280c">
+                <var name="V">1.97</var>
+                <var name="m">133</var>
+                <answer>1.08</answer>
+              </var_set>
+              <var_set ident="49e790bf55129097905cc3d51f1e3a13">
+                <var name="V">1.40</var>
+                <var name="m">148</var>
+                <answer>1.69</answer>
+              </var_set>
+              <var_set ident="0f470d187aa4635617534dc0e73c6123">
+                <var name="V">1.74</var>
+                <var name="m">147</var>
+                <answer>1.35</answer>
+              </var_set>
+              <var_set ident="9db185a3c6cee6cabfd0c8bb6a1ccc3a">
+                <var name="V">1.21</var>
+                <var name="m">163</var>
+                <answer>2.16</answer>
+              </var_set>
+              <var_set ident="32738549bda377c95678f44716901345">
+                <var name="V">1.80</var>
+                <var name="m">199</var>
+                <answer>1.77</answer>
+              </var_set>
+              <var_set ident="3f2a2fe5de6a74674987139849a41b13">
+                <var name="V">1.89</var>
+                <var name="m">174</var>
+                <answer>1.47</answer>
+              </var_set>
+              <var_set ident="c66930c8d6436b8277b6e63848cb9a4b">
+                <var name="V">1.86</var>
+                <var name="m">137</var>
+                <answer>1.18</answer>
+              </var_set>
+              <var_set ident="5c90ad3a751c69f1d7643879c4a8134d">
+                <var name="V">1.65</var>
+                <var name="m">136</var>
+                <answer>1.32</answer>
+              </var_set>
+              <var_set ident="db17f2f55d7d6099639d97eabf5d6f9a">
+                <var name="V">2.00</var>
+                <var name="m">196</var>
+                <answer>1.57</answer>
+              </var_set>
+              <var_set ident="034c48950dcc9dfe4683c863e7801e71">
+                <var name="V">1.76</var>
+                <var name="m">165</var>
+                <answer>1.50</answer>
+              </var_set>
+              <var_set ident="aa376e2729ce9b2f9cdced7f683dcf19">
+                <var name="V">1.63</var>
+                <var name="m">155</var>
+                <answer>1.52</answer>
+              </var_set>
+              <var_set ident="bfcdac35ca84d5512a8b40547e3a8021">
+                <var name="V">1.14</var>
+                <var name="m">144</var>
+                <answer>2.02</answer>
+              </var_set>
+              <var_set ident="0851a0cd693ceee7cd426250b4aa07a3">
+                <var name="V">1.09</var>
+                <var name="m">196</var>
+                <answer>2.88</answer>
+              </var_set>
+              <var_set ident="40ca4cbd5713da9f06a54c1791c80f58">
+                <var name="V">1.79</var>
+                <var name="m">135</var>
+                <answer>1.21</answer>
+              </var_set>
+              <var_set ident="fc912e648302571d2c99a1c348144c58">
+                <var name="V">1.55</var>
+                <var name="m">150</var>
+                <answer>1.55</answer>
+              </var_set>
+              <var_set ident="b9fe19976e943fc3cf5b9959ead8ada5">
+                <var name="V">1.99</var>
+                <var name="m">171</var>
+                <answer>1.38</answer>
+              </var_set>
+              <var_set ident="0a8dd6ab15db02f8e3862e63c7f15081">
+                <var name="V">1.08</var>
+                <var name="m">141</var>
+                <answer>2.09</answer>
+              </var_set>
+              <var_set ident="831c363ff0c7bb48e498ad818cdf4691">
+                <var name="V">1.18</var>
+                <var name="m">142</var>
+                <answer>1.93</answer>
+              </var_set>
+              <var_set ident="781184ba8d9731761eb7af7ba8717719">
+                <var name="V">1.06</var>
+                <var name="m">135</var>
+                <answer>2.04</answer>
+              </var_set>
+              <var_set ident="4c4c927e8dfe99465cf3eac720b50f34">
+                <var name="V">1.20</var>
+                <var name="m">188</var>
+                <answer>2.51</answer>
+              </var_set>
+              <var_set ident="25c7966e872d9098d6bb68bb914d8f5e">
+                <var name="V">1.93</var>
+                <var name="m">175</var>
+                <answer>1.45</answer>
+              </var_set>
+              <var_set ident="b10f48fc002702be120df17066836084">
+                <var name="V">1.74</var>
+                <var name="m">142</var>
+                <answer>1.31</answer>
+              </var_set>
+              <var_set ident="31bd389aa77d310eb56be04911d54388">
+                <var name="V">1.79</var>
+                <var name="m">192</var>
+                <answer>1.72</answer>
+              </var_set>
+              <var_set ident="f34bf355faf583b2cb3b02eaba15bad9">
+                <var name="V">1.42</var>
+                <var name="m">162</var>
+                <answer>1.83</answer>
+              </var_set>
+              <var_set ident="3660a0303085b238e1f1b74941b4d4d6">
+                <var name="V">1.73</var>
+                <var name="m">133</var>
+                <answer>1.23</answer>
+              </var_set>
+              <var_set ident="d30375864c5b74ee3f312768c5bdd4b9">
+                <var name="V">1.79</var>
+                <var name="m">146</var>
+                <answer>1.31</answer>
+              </var_set>
+              <var_set ident="93f8aeff20aaa56a7ac1b9f8bdc7d5ff">
+                <var name="V">1.23</var>
+                <var name="m">135</var>
+                <answer>1.76</answer>
+              </var_set>
+              <var_set ident="805b05cc965fe8eacb0cc49989d7a9e1">
+                <var name="V">1.73</var>
+                <var name="m">189</var>
+                <answer>1.75</answer>
+              </var_set>
+              <var_set ident="c7d7cce74261e9983fddb3ebc8ae2224">
+                <var name="V">1.12</var>
+                <var name="m">182</var>
+                <answer>2.60</answer>
+              </var_set>
+              <var_set ident="86e176441a6422ef98f5f3765a4dba7c">
+                <var name="V">1.01</var>
+                <var name="m">149</var>
+                <answer>2.36</answer>
+              </var_set>
+              <var_set ident="02b7156d47180324aa150f5047563cdb">
+                <var name="V">1.59</var>
+                <var name="m">167</var>
+                <answer>1.68</answer>
+              </var_set>
+              <var_set ident="d2b4001bedb3093b9d8a43abbd3e0201">
+                <var name="V">1.75</var>
+                <var name="m">178</var>
+                <answer>1.63</answer>
+              </var_set>
+              <var_set ident="9c6a4d09c1a883cf9929181c7f895d78">
+                <var name="V">1.41</var>
+                <var name="m">135</var>
+                <answer>1.53</answer>
+              </var_set>
+              <var_set ident="f34343b9f190b2c5b2916de3b128af1e">
+                <var name="V">1.68</var>
+                <var name="m">150</var>
+                <answer>1.43</answer>
+              </var_set>
+              <var_set ident="6e704e6baa32bedc910c77af25235c0d">
+                <var name="V">1.52</var>
+                <var name="m">165</var>
+                <answer>1.74</answer>
+              </var_set>
+              <var_set ident="b0e7ca4edb40ced36b178e27493a006f">
+                <var name="V">1.49</var>
+                <var name="m">160</var>
+                <answer>1.72</answer>
+              </var_set>
+              <var_set ident="8435bc9a4a4e0ea94f7d9937d5a7a736">
+                <var name="V">1.66</var>
+                <var name="m">130</var>
+                <answer>1.25</answer>
+              </var_set>
+              <var_set ident="316d289b22918bf0052fad95624d6280">
+                <var name="V">1.66</var>
+                <var name="m">189</var>
+                <answer>1.82</answer>
+              </var_set>
+              <var_set ident="30dd2221dfc2d0af825da7d85d9b57ba">
+                <var name="V">1.11</var>
+                <var name="m">142</var>
+                <answer>2.05</answer>
+              </var_set>
+              <var_set ident="86699bb656ffb5e686c67d30faf11a92">
+                <var name="V">1.54</var>
+                <var name="m">154</var>
+                <answer>1.60</answer>
+              </var_set>
+              <var_set ident="e83b5c6d399e46e13c5e937b43debc60">
+                <var name="V">1.45</var>
+                <var name="m">146</var>
+                <answer>1.61</answer>
+              </var_set>
+              <var_set ident="05899d7f6819ac6bafb04a9bfefaab37">
+                <var name="V">1.35</var>
+                <var name="m">127</var>
+                <answer>1.51</answer>
+              </var_set>
+              <var_set ident="d804f8a54592fa5edc95f1869d14330a">
+                <var name="V">1.51</var>
+                <var name="m">160</var>
+                <answer>1.70</answer>
+              </var_set>
+              <var_set ident="d6a1826d30a09a7d759c2aeb6c328d54">
+                <var name="V">1.99</var>
+                <var name="m">179</var>
+                <answer>1.44</answer>
+              </var_set>
+              <var_set ident="8de0ac72979312b4d458d3bc88146cd4">
+                <var name="V">1.98</var>
+                <var name="m">179</var>
+                <answer>1.45</answer>
+              </var_set>
+              <var_set ident="223c3a26e447c43ebb484de7c5cd2207">
+                <var name="V">1.84</var>
+                <var name="m">126</var>
+                <answer>1.10</answer>
+              </var_set>
+              <var_set ident="3510acc86da292f7ca18a77d4b2f2ec8">
+                <var name="V">1.77</var>
+                <var name="m">140</var>
+                <answer>1.27</answer>
+              </var_set>
+              <var_set ident="db55c64b4aa90e934b92f8a9908da798">
+                <var name="V">1.03</var>
+                <var name="m">192</var>
+                <answer>2.99</answer>
+              </var_set>
+              <var_set ident="abf40271143b17632e0c35cbfe7c9c99">
+                <var name="V">1.23</var>
+                <var name="m">156</var>
+                <answer>2.03</answer>
+              </var_set>
+              <var_set ident="df7088f6d98c2f2020b6b12043fcc86a">
+                <var name="V">1.02</var>
+                <var name="m">190</var>
+                <answer>2.98</answer>
+              </var_set>
+              <var_set ident="28e1e78544ac34f33c27a2b33b30adc5">
+                <var name="V">1.25</var>
+                <var name="m">167</var>
+                <answer>2.14</answer>
+              </var_set>
+              <var_set ident="2f00c6b13dbace2cd27b5ff36d8eba00">
+                <var name="V">1.36</var>
+                <var name="m">130</var>
+                <answer>1.53</answer>
+              </var_set>
+              <var_set ident="d391e27d42b780cc4b8149c88194efb7">
+                <var name="V">1.46</var>
+                <var name="m">188</var>
+                <answer>2.06</answer>
+              </var_set>
+              <var_set ident="60490108e3e214b761c415a890b7b1c4">
+                <var name="V">1.40</var>
+                <var name="m">145</var>
+                <answer>1.66</answer>
+              </var_set>
+              <var_set ident="ba98b6056ed8d6688dd364f20aaadf45">
+                <var name="V">1.33</var>
+                <var name="m">172</var>
+                <answer>2.07</answer>
+              </var_set>
+              <var_set ident="c232576364749cb05c6158bb9b30f107">
+                <var name="V">1.38</var>
+                <var name="m">149</var>
+                <answer>1.73</answer>
+              </var_set>
+              <var_set ident="86b79fca4a5f64c1bd4e42c45ac0ffd7">
+                <var name="V">1.58</var>
+                <var name="m">181</var>
+                <answer>1.84</answer>
+              </var_set>
+              <var_set ident="2d4d5bbf8206e2fa5d99f9fd9e261b8c">
+                <var name="V">1.19</var>
+                <var name="m">141</var>
+                <answer>1.90</answer>
+              </var_set>
+              <var_set ident="3b53cc4ae9922dfbd38f0f32ca316cc1">
+                <var name="V">1.93</var>
+                <var name="m">159</var>
+                <answer>1.32</answer>
+              </var_set>
+              <var_set ident="ee5edf44cedab54bb11f0931f7486536">
+                <var name="V">1.90</var>
+                <var name="m">135</var>
+                <answer>1.14</answer>
+              </var_set>
+              <var_set ident="6f9acb6a2ea11b8c88f7e620648e4670">
+                <var name="V">1.37</var>
+                <var name="m">164</var>
+                <answer>1.92</answer>
+              </var_set>
+              <var_set ident="7c3e161f8ab0321c91ddaf22035b990c">
+                <var name="V">1.60</var>
+                <var name="m">182</var>
+                <answer>1.82</answer>
+              </var_set>
+              <var_set ident="ce1e7e7f4c3fc5ff982dd065330dd092">
+                <var name="V">1.45</var>
+                <var name="m">179</var>
+                <answer>1.98</answer>
+              </var_set>
+              <var_set ident="7f0b371744a739024ca9b954faa4b330">
+                <var name="V">1.59</var>
+                <var name="m">197</var>
+                <answer>1.98</answer>
+              </var_set>
+              <var_set ident="bd03aac0417ea7f4afe58f5db508175b">
+                <var name="V">1.91</var>
+                <var name="m">172</var>
+                <answer>1.44</answer>
+              </var_set>
+              <var_set ident="647fe5b8ad52c4df8a64d0f024df0e8f">
+                <var name="V">1.65</var>
+                <var name="m">127</var>
+                <answer>1.23</answer>
+              </var_set>
+              <var_set ident="837b5294e1d763565def7fb663eec66e">
+                <var name="V">1.19</var>
+                <var name="m">195</var>
+                <answer>2.62</answer>
+              </var_set>
+              <var_set ident="8410411d5135e84248323f692739e505">
+                <var name="V">1.66</var>
+                <var name="m">166</var>
+                <answer>1.60</answer>
+              </var_set>
+              <var_set ident="178b5bb36e11a523e6150a4dc8bddbaf">
+                <var name="V">1.90</var>
+                <var name="m">197</var>
+                <answer>1.66</answer>
+              </var_set>
+              <var_set ident="0657fc9b49f69f7ba05ca95022804f01">
+                <var name="V">1.81</var>
+                <var name="m">172</var>
+                <answer>1.52</answer>
+              </var_set>
+              <var_set ident="c4ad90715e0bcdf41f1f9ce3124e4a33">
+                <var name="V">1.94</var>
+                <var name="m">135</var>
+                <answer>1.11</answer>
+              </var_set>
+              <var_set ident="23c19c3762622da8d59d46d9774719a4">
+                <var name="V">1.21</var>
+                <var name="m">173</var>
+                <answer>2.29</answer>
+              </var_set>
+              <var_set ident="1e97c8d04a263b43a1dbd6f2e9705c71">
+                <var name="V">1.05</var>
+                <var name="m">159</var>
+                <answer>2.43</answer>
+              </var_set>
+              <var_set ident="2fd0e361ef215148ea20209d2208cb5e">
+                <var name="V">1.34</var>
+                <var name="m">176</var>
+                <answer>2.10</answer>
+              </var_set>
+              <var_set ident="929b838efba2c93a47d4582ea8976865">
+                <var name="V">1.85</var>
+                <var name="m">137</var>
+                <answer>1.19</answer>
+              </var_set>
+              <var_set ident="2542d88c83d320ddf021620869104768">
+                <var name="V">1.12</var>
+                <var name="m">179</var>
+                <answer>2.56</answer>
+              </var_set>
+              <var_set ident="7d3dfe3021141fda622fc9a09640b42e">
+                <var name="V">1.76</var>
+                <var name="m">149</var>
+                <answer>1.36</answer>
+              </var_set>
+              <var_set ident="91c06ec0c5a4d0e27a284e45bcb21329">
+                <var name="V">1.82</var>
+                <var name="m">128</var>
+                <answer>1.13</answer>
+              </var_set>
+              <var_set ident="3e84825da7cc9b9ab87deaeecbea7b30">
+                <var name="V">1.27</var>
+                <var name="m">164</var>
+                <answer>2.07</answer>
+              </var_set>
+              <var_set ident="cd80ae32ed4c073fa6525f5c301546f8">
+                <var name="V">1.87</var>
+                <var name="m">153</var>
+                <answer>1.31</answer>
+              </var_set>
+              <var_set ident="6330dcbe286afa7a8446b5bb2e1e7370">
+                <var name="V">1.18</var>
+                <var name="m">143</var>
+                <answer>1.94</answer>
+              </var_set>
+              <var_set ident="a33166904a65e2958579e5550da977e1">
+                <var name="V">1.70</var>
+                <var name="m">200</var>
+                <answer>1.88</answer>
+              </var_set>
+              <var_set ident="c5eb9394eeee7391910bd964cc71f1f2">
+                <var name="V">1.20</var>
+                <var name="m">143</var>
+                <answer>1.91</answer>
+              </var_set>
+              <var_set ident="6e60cdf196775e5252fbba5f2d8e14a9">
+                <var name="V">1.62</var>
+                <var name="m">163</var>
+                <answer>1.61</answer>
+              </var_set>
+              <var_set ident="d17e63a9c828caab52680c9d8c350d82">
+                <var name="V">1.45</var>
+                <var name="m">144</var>
+                <answer>1.59</answer>
+              </var_set>
+              <var_set ident="90dd576a937e936137546a6bf2e434c6">
+                <var name="V">1.93</var>
+                <var name="m">183</var>
+                <answer>1.52</answer>
+              </var_set>
+              <var_set ident="3e30093a1f3ed65437d9772224c48825">
+                <var name="V">1.32</var>
+                <var name="m">167</var>
+                <answer>2.03</answer>
+              </var_set>
+              <var_set ident="31a4e6ab8940b4d80c73603da69be541">
+                <var name="V">1.53</var>
+                <var name="m">178</var>
+                <answer>1.86</answer>
+              </var_set>
+              <var_set ident="2db71e61bf0022459ef79dd11dfff9e4">
+                <var name="V">1.99</var>
+                <var name="m">140</var>
+                <answer>1.13</answer>
+              </var_set>
+              <var_set ident="32b767a52caa939c717f55853f6886d1">
+                <var name="V">1.83</var>
+                <var name="m">147</var>
+                <answer>1.29</answer>
+              </var_set>
+              <var_set ident="c0a87b0c774776827ddfa14f4560d9cd">
+                <var name="V">1.37</var>
+                <var name="m">148</var>
+                <answer>1.73</answer>
+              </var_set>
+              <var_set ident="1e046a67a56d2b31870abaf408e9f9d3">
+                <var name="V">1.00</var>
+                <var name="m">196</var>
+                <answer>3.14</answer>
+              </var_set>
+              <var_set ident="895eb84d7a9125e141c2b0f2a4a051a6">
+                <var name="V">1.49</var>
+                <var name="m">168</var>
+                <answer>1.81</answer>
+              </var_set>
+              <var_set ident="77480875e1eb27b97ad0e89509e80a29">
+                <var name="V">1.37</var>
+                <var name="m">179</var>
+                <answer>2.09</answer>
+              </var_set>
+              <var_set ident="a9f777deaaecfba04eaabb656b8b111b">
+                <var name="V">1.26</var>
+                <var name="m">128</var>
+                <answer>1.63</answer>
+              </var_set>
+              <var_set ident="dfd1d394fc58899d24a5bb57a5eb3b3c">
+                <var name="V">1.83</var>
+                <var name="m">192</var>
+                <answer>1.68</answer>
+              </var_set>
+              <var_set ident="316ec5d819aea043d4c66d9717f75add">
+                <var name="V">1.92</var>
+                <var name="m">189</var>
+                <answer>1.58</answer>
+              </var_set>
+              <var_set ident="d039f38ac025110a703a25ddfda30859">
+                <var name="V">1.11</var>
+                <var name="m">143</var>
+                <answer>2.06</answer>
+              </var_set>
+              <var_set ident="1843855cc9eb627319d7be92657a3c9a">
+                <var name="V">1.39</var>
+                <var name="m">135</var>
+                <answer>1.56</answer>
+              </var_set>
+              <var_set ident="c97e39dd8fb5d8ba0c6155daa47d5bf9">
+                <var name="V">1.31</var>
+                <var name="m">132</var>
+                <answer>1.61</answer>
+              </var_set>
+              <var_set ident="070f070307847a6dc381a8bac415f39e">
+                <var name="V">1.83</var>
+                <var name="m">160</var>
+                <answer>1.40</answer>
+              </var_set>
+              <var_set ident="7cb4bfe76a2e54f8a9c51a9750b3319f">
+                <var name="V">1.63</var>
+                <var name="m">174</var>
+                <answer>1.71</answer>
+              </var_set>
+              <var_set ident="1b854fbcb5c81331a1846a6c1620cdba">
+                <var name="V">1.03</var>
+                <var name="m">144</var>
+                <answer>2.24</answer>
+              </var_set>
+              <var_set ident="78202093fe30f60878aa7085b1635dd9">
+                <var name="V">1.16</var>
+                <var name="m">137</var>
+                <answer>1.89</answer>
+              </var_set>
+              <var_set ident="1411c906a37d18913e10241244dd3c29">
+                <var name="V">1.22</var>
+                <var name="m">152</var>
+                <answer>2.00</answer>
+              </var_set>
+              <var_set ident="f1e3ae734307809c12e4852e89d401de">
+                <var name="V">1.35</var>
+                <var name="m">179</var>
+                <answer>2.12</answer>
+              </var_set>
+              <var_set ident="2612488ca64708b74b38133e759dec92">
+                <var name="V">1.63</var>
+                <var name="m">151</var>
+                <answer>1.48</answer>
+              </var_set>
+              <var_set ident="86e6d63113a69a556e07ccb37dba0cc7">
+                <var name="V">1.92</var>
+                <var name="m">180</var>
+                <answer>1.50</answer>
+              </var_set>
+              <var_set ident="2379abedbc913fbb9ce47943700a91a7">
+                <var name="V">1.33</var>
+                <var name="m">162</var>
+                <answer>1.95</answer>
+              </var_set>
+              <var_set ident="b29215e69bfedbf68e8b0e2330bcdb91">
+                <var name="V">1.47</var>
+                <var name="m">161</var>
+                <answer>1.75</answer>
+              </var_set>
+              <var_set ident="8568c64410093bb1518d3ef84f48e92d">
+                <var name="V">1.50</var>
+                <var name="m">148</var>
+                <answer>1.58</answer>
+              </var_set>
+              <var_set ident="b008813ad87a2b8a8d43b8b258ab3108">
+                <var name="V">1.79</var>
+                <var name="m">153</var>
+                <answer>1.37</answer>
+              </var_set>
+              <var_set ident="0b77884e24514b2ab41b92d783d8d1f1">
+                <var name="V">1.16</var>
+                <var name="m">128</var>
+                <answer>1.77</answer>
+              </var_set>
+              <var_set ident="0b6e2d5181c197ca17cb6c558c96bae8">
+                <var name="V">1.73</var>
+                <var name="m">134</var>
+                <answer>1.24</answer>
+              </var_set>
+              <var_set ident="d51a53f8fe35c3e53d1605ffd42d9422">
+                <var name="V">1.88</var>
+                <var name="m">178</var>
+                <answer>1.52</answer>
+              </var_set>
+              <var_set ident="b5b5949b8fa996b8fe255ff85fc2ca7b">
+                <var name="V">1.44</var>
+                <var name="m">140</var>
+                <answer>1.56</answer>
+              </var_set>
+              <var_set ident="277ee4986f89aeb3bc0a79c08f7455dc">
+                <var name="V">1.90</var>
+                <var name="m">138</var>
+                <answer>1.16</answer>
+              </var_set>
+              <var_set ident="3d55f5c6635fd14b40407c3d172f87b7">
+                <var name="V">1.06</var>
+                <var name="m">188</var>
+                <answer>2.84</answer>
+              </var_set>
+              <var_set ident="14ee9c941767dfefe6a2ff93fe6e9c03">
+                <var name="V">1.74</var>
+                <var name="m">153</var>
+                <answer>1.41</answer>
+              </var_set>
+              <var_set ident="e5847442650b60ba6cfbfe373d8418f2">
+                <var name="V">1.75</var>
+                <var name="m">167</var>
+                <answer>1.53</answer>
+              </var_set>
+              <var_set ident="ac32973ad204c9241fbdea68afc51f7d">
+                <var name="V">1.54</var>
+                <var name="m">149</var>
+                <answer>1.55</answer>
+              </var_set>
+              <var_set ident="46fb0e4f1c1057ac796be97b73d434de">
+                <var name="V">1.94</var>
+                <var name="m">197</var>
+                <answer>1.63</answer>
+              </var_set>
+              <var_set ident="f5065eb52da96eb45e4d4a498a44f6ef">
+                <var name="V">1.86</var>
+                <var name="m">197</var>
+                <answer>1.70</answer>
+              </var_set>
+              <var_set ident="5ede3e68ff337181937c4da2c94e7abc">
+                <var name="V">1.46</var>
+                <var name="m">175</var>
+                <answer>1.92</answer>
+              </var_set>
+              <var_set ident="1ecc9294f7759b929bf3b249a8e089ee">
+                <var name="V">1.80</var>
+                <var name="m">191</var>
+                <answer>1.70</answer>
+              </var_set>
+              <var_set ident="43c42249535091e4e3bb132085c0edc0">
+                <var name="V">1.41</var>
+                <var name="m">169</var>
+                <answer>1.92</answer>
+              </var_set>
+              <var_set ident="875eda5d4a8e2c3085a2eecf8207f656">
+                <var name="V">1.19</var>
+                <var name="m">171</var>
+                <answer>2.30</answer>
+              </var_set>
+              <var_set ident="523e01df63419cbb125bd61a9be655af">
+                <var name="V">1.13</var>
+                <var name="m">190</var>
+                <answer>2.69</answer>
+              </var_set>
+              <var_set ident="5f4c68f28d13f1efa8a10b5f1f3e6851">
+                <var name="V">1.85</var>
+                <var name="m">136</var>
+                <answer>1.18</answer>
+              </var_set>
+              <var_set ident="fd17573524c52dab594db2a03455545f">
+                <var name="V">1.72</var>
+                <var name="m">130</var>
+                <answer>1.21</answer>
+              </var_set>
+              <var_set ident="72d8e27da82ef94477cfeb9bf9a3eb81">
+                <var name="V">1.96</var>
+                <var name="m">127</var>
+                <answer>1.04</answer>
+              </var_set>
+              <var_set ident="179de1f694e4f3527ffd85f69915cc39">
+                <var name="V">1.93</var>
+                <var name="m">144</var>
+                <answer>1.20</answer>
+              </var_set>
+              <var_set ident="6c3f1047f5e76d4183ecbd00bcb4a3d5">
+                <var name="V">1.41</var>
+                <var name="m">193</var>
+                <answer>2.19</answer>
+              </var_set>
+              <var_set ident="e4c88c0e6bf596d8dac9e1cd71acd71b">
+                <var name="V">1.44</var>
+                <var name="m">158</var>
+                <answer>1.76</answer>
+              </var_set>
+              <var_set ident="04df66df58fc9b6c6d5529c351112dde">
+                <var name="V">1.48</var>
+                <var name="m">156</var>
+                <answer>1.69</answer>
+              </var_set>
+              <var_set ident="d19718d73f5b8c9b0cefb63e9659e877">
+                <var name="V">1.93</var>
+                <var name="m">188</var>
+                <answer>1.56</answer>
+              </var_set>
+              <var_set ident="edc36b686128072cd9f6be505b33a635">
+                <var name="V">1.96</var>
+                <var name="m">140</var>
+                <answer>1.14</answer>
+              </var_set>
+              <var_set ident="0093e5b3e457dbad02d8c1e3b7f0c404">
+                <var name="V">1.30</var>
+                <var name="m">176</var>
+                <answer>2.17</answer>
+              </var_set>
+              <var_set ident="54e0a5ad09826245dcb9e796a0960028">
+                <var name="V">1.19</var>
+                <var name="m">169</var>
+                <answer>2.27</answer>
+              </var_set>
+              <var_set ident="0f819d22abb7f8b4f9c5097a1c7eb51b">
+                <var name="V">1.23</var>
+                <var name="m">160</var>
+                <answer>2.08</answer>
+              </var_set>
+              <var_set ident="f814885ee194746c851792c614050cf6">
+                <var name="V">1.27</var>
+                <var name="m">151</var>
+                <answer>1.90</answer>
+              </var_set>
+              <var_set ident="5ef1172785c6756c376d9f4f763dab13">
+                <var name="V">1.18</var>
+                <var name="m">175</var>
+                <answer>2.38</answer>
+              </var_set>
+              <var_set ident="ff50ebea2040b3a94e52315d2e138c98">
+                <var name="V">1.93</var>
+                <var name="m">174</var>
+                <answer>1.44</answer>
+              </var_set>
+              <var_set ident="7bb5523cba936c6495503380795ba8b1">
+                <var name="V">1.51</var>
+                <var name="m">162</var>
+                <answer>1.72</answer>
+              </var_set>
+              <var_set ident="c21ce2cb2bdec4f7f687eae17ecd85cb">
+                <var name="V">1.76</var>
+                <var name="m">141</var>
+                <answer>1.28</answer>
+              </var_set>
+              <var_set ident="189f5b087a90295f7e0da3f6f1f87f57">
+                <var name="V">1.61</var>
+                <var name="m">172</var>
+                <answer>1.71</answer>
+              </var_set>
+              <var_set ident="de6b3acd71e6dff4ea5ef607c06ffe24">
+                <var name="V">1.55</var>
+                <var name="m">156</var>
+                <answer>1.61</answer>
+              </var_set>
+              <var_set ident="b5d241c6ee6341dbc927b4ed8ca1bbf8">
+                <var name="V">1.21</var>
+                <var name="m">198</var>
+                <answer>2.62</answer>
+              </var_set>
+              <var_set ident="7caf21ff47f0cb6e18aa7fa6d3df2abb">
+                <var name="V">1.30</var>
+                <var name="m">179</var>
+                <answer>2.21</answer>
+              </var_set>
+              <var_set ident="df82d23684dc5d2bbc33ff8be6e1c9f3">
+                <var name="V">1.06</var>
+                <var name="m">168</var>
+                <answer>2.54</answer>
+              </var_set>
+              <var_set ident="60a765e050d67cc74af74ad88f8a69de">
+                <var name="V">1.85</var>
+                <var name="m">178</var>
+                <answer>1.54</answer>
+              </var_set>
+              <var_set ident="cabf3df23f5dece3ffef963d56a4b8d6">
+                <var name="V">1.16</var>
+                <var name="m">152</var>
+                <answer>2.10</answer>
+              </var_set>
+            </var_sets>
+          </calculated>
+        </itemproc_extension>
+      </item>
+      <item ident="a20f6fc85e709116e0b2adebb9278c32" title="">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>matching_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>16880,22166,45944,83275,7d47a982-24bc-4b11-90a0-24e3689a9d94,82edaad3-2ea7-4b4e-b125-e348d9dccfe6</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>b12487a2c9beafaf311aa2fe79738565</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>calculator_type</fieldlabel>
+              <fieldentry>none</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>scoring_algorithm</fieldlabel>
+              <fieldentry>PartialDeep</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;Match the following SI unit to what kind of quantity it measures&lt;/p&gt;</mattext>
+          </material>
+          <response_lid ident="response_22166">
+            <material>
+              <mattext texttype="text/plain">length</mattext>
+            </material>
+            <render_choice>
+              <response_label ident="16880">
+                <material>
+                  <mattext>kilogram</mattext>
+                </material>
+              </response_label>
+              <response_label ident="22166">
+                <material>
+                  <mattext>meter</mattext>
+                </material>
+              </response_label>
+              <response_label ident="45944">
+                <material>
+                  <mattext>second</mattext>
+                </material>
+              </response_label>
+              <response_label ident="83275">
+                <material>
+                  <mattext>kelvin</mattext>
+                </material>
+              </response_label>
+              <response_label ident="7d47a982-24bc-4b11-90a0-24e3689a9d94">
+                <material>
+                  <mattext>mole</mattext>
+                </material>
+              </response_label>
+              <response_label ident="82edaad3-2ea7-4b4e-b125-e348d9dccfe6">
+                <material>
+                  <mattext>ampere</mattext>
+                </material>
+              </response_label>
+              <response_label ident="distractor_0">
+                <material>
+                  <mattext>inch</mattext>
+                </material>
+              </response_label>
+              <response_label ident="distractor_1">
+                <material>
+                  <mattext>pound</mattext>
+                </material>
+              </response_label>
+              <response_label ident="distractor_2">
+                <material>
+                  <mattext>minute</mattext>
+                </material>
+              </response_label>
+              <response_label ident="distractor_3">
+                <material>
+                  <mattext>volt</mattext>
+                </material>
+              </response_label>
+              <response_label ident="distractor_4">
+                <material>
+                  <mattext>molar</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+          <response_lid ident="response_16880">
+            <material>
+              <mattext texttype="text/plain">mass</mattext>
+            </material>
+            <render_choice>
+              <response_label ident="16880">
+                <material>
+                  <mattext>kilogram</mattext>
+                </material>
+              </response_label>
+              <response_label ident="22166">
+                <material>
+                  <mattext>meter</mattext>
+                </material>
+              </response_label>
+              <response_label ident="45944">
+                <material>
+                  <mattext>second</mattext>
+                </material>
+              </response_label>
+              <response_label ident="83275">
+                <material>
+                  <mattext>kelvin</mattext>
+                </material>
+              </response_label>
+              <response_label ident="7d47a982-24bc-4b11-90a0-24e3689a9d94">
+                <material>
+                  <mattext>mole</mattext>
+                </material>
+              </response_label>
+              <response_label ident="82edaad3-2ea7-4b4e-b125-e348d9dccfe6">
+                <material>
+                  <mattext>ampere</mattext>
+                </material>
+              </response_label>
+              <response_label ident="distractor_0">
+                <material>
+                  <mattext>inch</mattext>
+                </material>
+              </response_label>
+              <response_label ident="distractor_1">
+                <material>
+                  <mattext>pound</mattext>
+                </material>
+              </response_label>
+              <response_label ident="distractor_2">
+                <material>
+                  <mattext>minute</mattext>
+                </material>
+              </response_label>
+              <response_label ident="distractor_3">
+                <material>
+                  <mattext>volt</mattext>
+                </material>
+              </response_label>
+              <response_label ident="distractor_4">
+                <material>
+                  <mattext>molar</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+          <response_lid ident="response_45944">
+            <material>
+              <mattext texttype="text/plain">time</mattext>
+            </material>
+            <render_choice>
+              <response_label ident="16880">
+                <material>
+                  <mattext>kilogram</mattext>
+                </material>
+              </response_label>
+              <response_label ident="22166">
+                <material>
+                  <mattext>meter</mattext>
+                </material>
+              </response_label>
+              <response_label ident="45944">
+                <material>
+                  <mattext>second</mattext>
+                </material>
+              </response_label>
+              <response_label ident="83275">
+                <material>
+                  <mattext>kelvin</mattext>
+                </material>
+              </response_label>
+              <response_label ident="7d47a982-24bc-4b11-90a0-24e3689a9d94">
+                <material>
+                  <mattext>mole</mattext>
+                </material>
+              </response_label>
+              <response_label ident="82edaad3-2ea7-4b4e-b125-e348d9dccfe6">
+                <material>
+                  <mattext>ampere</mattext>
+                </material>
+              </response_label>
+              <response_label ident="distractor_0">
+                <material>
+                  <mattext>inch</mattext>
+                </material>
+              </response_label>
+              <response_label ident="distractor_1">
+                <material>
+                  <mattext>pound</mattext>
+                </material>
+              </response_label>
+              <response_label ident="distractor_2">
+                <material>
+                  <mattext>minute</mattext>
+                </material>
+              </response_label>
+              <response_label ident="distractor_3">
+                <material>
+                  <mattext>volt</mattext>
+                </material>
+              </response_label>
+              <response_label ident="distractor_4">
+                <material>
+                  <mattext>molar</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+          <response_lid ident="response_83275">
+            <material>
+              <mattext texttype="text/plain">temperature</mattext>
+            </material>
+            <render_choice>
+              <response_label ident="16880">
+                <material>
+                  <mattext>kilogram</mattext>
+                </material>
+              </response_label>
+              <response_label ident="22166">
+                <material>
+                  <mattext>meter</mattext>
+                </material>
+              </response_label>
+              <response_label ident="45944">
+                <material>
+                  <mattext>second</mattext>
+                </material>
+              </response_label>
+              <response_label ident="83275">
+                <material>
+                  <mattext>kelvin</mattext>
+                </material>
+              </response_label>
+              <response_label ident="7d47a982-24bc-4b11-90a0-24e3689a9d94">
+                <material>
+                  <mattext>mole</mattext>
+                </material>
+              </response_label>
+              <response_label ident="82edaad3-2ea7-4b4e-b125-e348d9dccfe6">
+                <material>
+                  <mattext>ampere</mattext>
+                </material>
+              </response_label>
+              <response_label ident="distractor_0">
+                <material>
+                  <mattext>inch</mattext>
+                </material>
+              </response_label>
+              <response_label ident="distractor_1">
+                <material>
+                  <mattext>pound</mattext>
+                </material>
+              </response_label>
+              <response_label ident="distractor_2">
+                <material>
+                  <mattext>minute</mattext>
+                </material>
+              </response_label>
+              <response_label ident="distractor_3">
+                <material>
+                  <mattext>volt</mattext>
+                </material>
+              </response_label>
+              <response_label ident="distractor_4">
+                <material>
+                  <mattext>molar</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+          <response_lid ident="response_82edaad3-2ea7-4b4e-b125-e348d9dccfe6">
+            <material>
+              <mattext texttype="text/plain">electrical current</mattext>
+            </material>
+            <render_choice>
+              <response_label ident="16880">
+                <material>
+                  <mattext>kilogram</mattext>
+                </material>
+              </response_label>
+              <response_label ident="22166">
+                <material>
+                  <mattext>meter</mattext>
+                </material>
+              </response_label>
+              <response_label ident="45944">
+                <material>
+                  <mattext>second</mattext>
+                </material>
+              </response_label>
+              <response_label ident="83275">
+                <material>
+                  <mattext>kelvin</mattext>
+                </material>
+              </response_label>
+              <response_label ident="7d47a982-24bc-4b11-90a0-24e3689a9d94">
+                <material>
+                  <mattext>mole</mattext>
+                </material>
+              </response_label>
+              <response_label ident="82edaad3-2ea7-4b4e-b125-e348d9dccfe6">
+                <material>
+                  <mattext>ampere</mattext>
+                </material>
+              </response_label>
+              <response_label ident="distractor_0">
+                <material>
+                  <mattext>inch</mattext>
+                </material>
+              </response_label>
+              <response_label ident="distractor_1">
+                <material>
+                  <mattext>pound</mattext>
+                </material>
+              </response_label>
+              <response_label ident="distractor_2">
+                <material>
+                  <mattext>minute</mattext>
+                </material>
+              </response_label>
+              <response_label ident="distractor_3">
+                <material>
+                  <mattext>volt</mattext>
+                </material>
+              </response_label>
+              <response_label ident="distractor_4">
+                <material>
+                  <mattext>molar</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+          <response_lid ident="response_7d47a982-24bc-4b11-90a0-24e3689a9d94">
+            <material>
+              <mattext texttype="text/plain">amount of substance</mattext>
+            </material>
+            <render_choice>
+              <response_label ident="16880">
+                <material>
+                  <mattext>kilogram</mattext>
+                </material>
+              </response_label>
+              <response_label ident="22166">
+                <material>
+                  <mattext>meter</mattext>
+                </material>
+              </response_label>
+              <response_label ident="45944">
+                <material>
+                  <mattext>second</mattext>
+                </material>
+              </response_label>
+              <response_label ident="83275">
+                <material>
+                  <mattext>kelvin</mattext>
+                </material>
+              </response_label>
+              <response_label ident="7d47a982-24bc-4b11-90a0-24e3689a9d94">
+                <material>
+                  <mattext>mole</mattext>
+                </material>
+              </response_label>
+              <response_label ident="82edaad3-2ea7-4b4e-b125-e348d9dccfe6">
+                <material>
+                  <mattext>ampere</mattext>
+                </material>
+              </response_label>
+              <response_label ident="distractor_0">
+                <material>
+                  <mattext>inch</mattext>
+                </material>
+              </response_label>
+              <response_label ident="distractor_1">
+                <material>
+                  <mattext>pound</mattext>
+                </material>
+              </response_label>
+              <response_label ident="distractor_2">
+                <material>
+                  <mattext>minute</mattext>
+                </material>
+              </response_label>
+              <response_label ident="distractor_3">
+                <material>
+                  <mattext>volt</mattext>
+                </material>
+              </response_label>
+              <response_label ident="distractor_4">
+                <material>
+                  <mattext>molar</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="response_22166">22166</varequal>
+            </conditionvar>
+            <setvar action="Add" varname="SCORE">16.67</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="response_16880">16880</varequal>
+            </conditionvar>
+            <setvar action="Add" varname="SCORE">16.67</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="response_45944">45944</varequal>
+            </conditionvar>
+            <setvar action="Add" varname="SCORE">16.67</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="response_83275">83275</varequal>
+            </conditionvar>
+            <setvar action="Add" varname="SCORE">16.67</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="response_82edaad3-2ea7-4b4e-b125-e348d9dccfe6">82edaad3-2ea7-4b4e-b125-e348d9dccfe6</varequal>
+            </conditionvar>
+            <setvar action="Add" varname="SCORE">16.67</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="response_7d47a982-24bc-4b11-90a0-24e3689a9d94">7d47a982-24bc-4b11-90a0-24e3689a9d94</varequal>
+            </conditionvar>
+            <setvar action="Add" varname="SCORE">16.67</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="d43b55dcc855aa66e3c4c7b71c5f8aee" title="Water in a box">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>calculated_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry/>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>d819b5859fad509f863c7f647fe9cabf</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>calculator_type</fieldlabel>
+              <fieldentry>scientific</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;A cubic box is filled with `m`. kg of water. What is the length, in meters, of each edge of the box?&lt;/p&gt;
+&lt;p&gt;density of water = 1000 kg/m&lt;sup&gt;3&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;Recall: a cube's volume is equal to its edge length cubed; V = L&lt;sup&gt;3&lt;/sup&gt;&lt;/p&gt;</mattext>
+          </material>
+          <response_str ident="response1" rcardinality="Single">
+            <render_fib fibtype="Decimal">
+              <response_label ident="answer1"/>
+            </render_fib>
+          </response_str>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition title="correct">
+            <conditionvar>
+              <other/>
+            </conditionvar>
+            <setvar varname="SCORE" action="Set">100</setvar>
+          </respcondition>
+          <respcondition title="incorrect">
+            <conditionvar>
+              <not>
+                <other/>
+              </not>
+            </conditionvar>
+            <setvar varname="SCORE" action="Set">0</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemproc_extension>
+          <calculated>
+            <answer_tolerance margin_type="percent">2%</answer_tolerance>
+            <formulas decimal_places="3" scientific_notation="false">
+              <formula>round(cbrt(m/1000),3)</formula>
+            </formulas>
+            <vars>
+              <var name="m" scale="0">
+                <min>1330</min>
+                <max>7500</max>
+              </var>
+            </vars>
+            <var_sets>
+              <var_set ident="3c4ede16a2886342b8e65b793975c528">
+                <var name="m">3163</var>
+                <answer>1.468</answer>
+              </var_set>
+              <var_set ident="e21ddee9f4b57e488d0b2604a261063e">
+                <var name="m">1536</var>
+                <answer>1.154</answer>
+              </var_set>
+              <var_set ident="4c7ec620338404b478643ce963e9b331">
+                <var name="m">2652</var>
+                <answer>1.384</answer>
+              </var_set>
+              <var_set ident="c3cb4b74804da61837c192a749d8ea56">
+                <var name="m">4900</var>
+                <answer>1.698</answer>
+              </var_set>
+              <var_set ident="e8b8249808aef8fc8965256d7c7bc74a">
+                <var name="m">4144</var>
+                <answer>1.606</answer>
+              </var_set>
+              <var_set ident="acf812904912d154c4b659dbd98151a1">
+                <var name="m">2993</var>
+                <answer>1.441</answer>
+              </var_set>
+              <var_set ident="c6a6d2f8af5271bd41c95111b92b2389">
+                <var name="m">4688</var>
+                <answer>1.674</answer>
+              </var_set>
+              <var_set ident="b1fe3eb46f9e74bdc0f58db4d3a98322">
+                <var name="m">3567</var>
+                <answer>1.528</answer>
+              </var_set>
+              <var_set ident="c5043b215225a66e64039eb9d08f3d52">
+                <var name="m">2211</var>
+                <answer>1.303</answer>
+              </var_set>
+              <var_set ident="dbe00b083f92c640dac17ea5e0b0b4de">
+                <var name="m">7092</var>
+                <answer>1.921</answer>
+              </var_set>
+              <var_set ident="a64aacb09c33a269755b23d7851e5fe8">
+                <var name="m">7400</var>
+                <answer>1.949</answer>
+              </var_set>
+              <var_set ident="3549a11932b9558331cd7f0bbe75a5a0">
+                <var name="m">4239</var>
+                <answer>1.618</answer>
+              </var_set>
+              <var_set ident="a9d86aa645773c0c65a85944659ddfe0">
+                <var name="m">3273</var>
+                <answer>1.485</answer>
+              </var_set>
+              <var_set ident="edc23c72538572c672c1d3fe84aed4fa">
+                <var name="m">4573</var>
+                <answer>1.660</answer>
+              </var_set>
+              <var_set ident="682b8011e7e279622c1e49a94fb0b75b">
+                <var name="m">3904</var>
+                <answer>1.575</answer>
+              </var_set>
+              <var_set ident="658aac2a7fe515303d0c1e5433567065">
+                <var name="m">5043</var>
+                <answer>1.715</answer>
+              </var_set>
+              <var_set ident="c2e368453720d0d4c27ead91b70f7068">
+                <var name="m">5611</var>
+                <answer>1.777</answer>
+              </var_set>
+              <var_set ident="808c62cb5bc502b87a6772679f926c84">
+                <var name="m">4141</var>
+                <answer>1.606</answer>
+              </var_set>
+              <var_set ident="e2f44ea9f5490344e39aec1a5fbf3303">
+                <var name="m">4047</var>
+                <answer>1.594</answer>
+              </var_set>
+              <var_set ident="681eadd00648dac005ebb4dc89a14118">
+                <var name="m">5083</var>
+                <answer>1.719</answer>
+              </var_set>
+              <var_set ident="0f2f780c8b3fe3734e5f7a4f23ab8cd1">
+                <var name="m">5472</var>
+                <answer>1.762</answer>
+              </var_set>
+              <var_set ident="a9e54284ece7cd31b5f1dcf055f8447f">
+                <var name="m">3879</var>
+                <answer>1.571</answer>
+              </var_set>
+              <var_set ident="66b02f29b2e42608981cb8f4182fc452">
+                <var name="m">3918</var>
+                <answer>1.576</answer>
+              </var_set>
+              <var_set ident="005861de7678e4a85592f01fbfa6b722">
+                <var name="m">2220</var>
+                <answer>1.305</answer>
+              </var_set>
+              <var_set ident="e4513cb03b5353f39d265cc9c3542af9">
+                <var name="m">2595</var>
+                <answer>1.374</answer>
+              </var_set>
+              <var_set ident="be3140eeff0ce933560092849c74eff4">
+                <var name="m">5700</var>
+                <answer>1.786</answer>
+              </var_set>
+              <var_set ident="d75211901ac712442283b96abb358090">
+                <var name="m">2395</var>
+                <answer>1.338</answer>
+              </var_set>
+              <var_set ident="a5fc66aed6920190630d8b3238984438">
+                <var name="m">4805</var>
+                <answer>1.687</answer>
+              </var_set>
+              <var_set ident="87dac4dadd0757501048a88c9b560197">
+                <var name="m">2511</var>
+                <answer>1.359</answer>
+              </var_set>
+              <var_set ident="d1a25fc3ac743b844f44bb5ff355190a">
+                <var name="m">4118</var>
+                <answer>1.603</answer>
+              </var_set>
+              <var_set ident="b6ae336fc9885e30bfacc109d32bd001">
+                <var name="m">2864</var>
+                <answer>1.420</answer>
+              </var_set>
+              <var_set ident="16fa8d8f9b0b514297cf72745e3e7ea6">
+                <var name="m">1698</var>
+                <answer>1.193</answer>
+              </var_set>
+              <var_set ident="eb05c027cacb7bac2f8024ec3ef74294">
+                <var name="m">5656</var>
+                <answer>1.782</answer>
+              </var_set>
+              <var_set ident="7571df98f92033fd696621b20a79a627">
+                <var name="m">4723</var>
+                <answer>1.678</answer>
+              </var_set>
+              <var_set ident="ca1027dd05de67ab115193cbc42f88c9">
+                <var name="m">1615</var>
+                <answer>1.173</answer>
+              </var_set>
+              <var_set ident="35605858c996d9d86093a6d56c5f0511">
+                <var name="m">2764</var>
+                <answer>1.403</answer>
+              </var_set>
+              <var_set ident="f29dffd4dea2d7b6be40bc2e91b0ff1a">
+                <var name="m">3189</var>
+                <answer>1.472</answer>
+              </var_set>
+              <var_set ident="b4831585e72599538aa538fa7f92cc9d">
+                <var name="m">5998</var>
+                <answer>1.817</answer>
+              </var_set>
+              <var_set ident="e9de20bc4c202362e3dc9d766a56cfa0">
+                <var name="m">3101</var>
+                <answer>1.458</answer>
+              </var_set>
+              <var_set ident="5057a53f71cf15123bc89a19d0d9dc5d">
+                <var name="m">1921</var>
+                <answer>1.243</answer>
+              </var_set>
+              <var_set ident="3d153659b650734d51efe9fbd5b70937">
+                <var name="m">2292</var>
+                <answer>1.318</answer>
+              </var_set>
+              <var_set ident="176b7cd37b59b5ea3f6a90aaebf0a5b4">
+                <var name="m">5779</var>
+                <answer>1.795</answer>
+              </var_set>
+              <var_set ident="6a8a3e0c278db59739a67bab9490339e">
+                <var name="m">7344</var>
+                <answer>1.944</answer>
+              </var_set>
+              <var_set ident="22cff45dbbfdd7bd77d3d5597e43a5b9">
+                <var name="m">3169</var>
+                <answer>1.469</answer>
+              </var_set>
+              <var_set ident="cde78d7dfb7ac5ac103bb003e0b13b5e">
+                <var name="m">1409</var>
+                <answer>1.121</answer>
+              </var_set>
+              <var_set ident="f9c1ad2be5cc38bffc2069e61505bc01">
+                <var name="m">5423</var>
+                <answer>1.757</answer>
+              </var_set>
+              <var_set ident="5d84bacbfa4d610a83114523a0cf3d7a">
+                <var name="m">2011</var>
+                <answer>1.262</answer>
+              </var_set>
+              <var_set ident="75bb7fb54ba85c56d6ab2b88437ce886">
+                <var name="m">3792</var>
+                <answer>1.559</answer>
+              </var_set>
+              <var_set ident="b60474dad527765d4bb9615540c50b69">
+                <var name="m">3426</var>
+                <answer>1.508</answer>
+              </var_set>
+              <var_set ident="ebe2c4afd32189e7ab5770e81daed97b">
+                <var name="m">6132</var>
+                <answer>1.830</answer>
+              </var_set>
+              <var_set ident="fb2909a9328f789c8c8b4a7764f5d4b0">
+                <var name="m">1871</var>
+                <answer>1.232</answer>
+              </var_set>
+              <var_set ident="015e5ef4ccf46cbe529c84c7ed7a71fc">
+                <var name="m">4662</var>
+                <answer>1.671</answer>
+              </var_set>
+              <var_set ident="179572fbc9e3ed0950d57b54ac2bc72f">
+                <var name="m">1712</var>
+                <answer>1.196</answer>
+              </var_set>
+              <var_set ident="919869a4238993b3e856c50dc6c57086">
+                <var name="m">5339</var>
+                <answer>1.748</answer>
+              </var_set>
+              <var_set ident="a52ab6083d87a03d35320f1d51664c3b">
+                <var name="m">2526</var>
+                <answer>1.362</answer>
+              </var_set>
+              <var_set ident="7011b452cf20a710393f58feb525b7d8">
+                <var name="m">1808</var>
+                <answer>1.218</answer>
+              </var_set>
+              <var_set ident="d103bf1b71b6440e6c356056d33dcbba">
+                <var name="m">4922</var>
+                <answer>1.701</answer>
+              </var_set>
+              <var_set ident="4160f5fb5df82ed15b24dfbe2c7b37a5">
+                <var name="m">6812</var>
+                <answer>1.896</answer>
+              </var_set>
+              <var_set ident="6619aa43f61f856a82dc0cd11d27cc2e">
+                <var name="m">6187</var>
+                <answer>1.836</answer>
+              </var_set>
+              <var_set ident="93932baae8c95cd5f1163ecef93c0fca">
+                <var name="m">3078</var>
+                <answer>1.455</answer>
+              </var_set>
+              <var_set ident="6c561b0ea4bf4ae375f495fa433c11e9">
+                <var name="m">4868</var>
+                <answer>1.695</answer>
+              </var_set>
+              <var_set ident="f9096c39d28ef0d837153505aefa3317">
+                <var name="m">7148</var>
+                <answer>1.926</answer>
+              </var_set>
+              <var_set ident="61aa9bee2c9721b34356e086b3277de9">
+                <var name="m">4650</var>
+                <answer>1.669</answer>
+              </var_set>
+              <var_set ident="9716f587ae4c27f3e1542550cb57bdb2">
+                <var name="m">4812</var>
+                <answer>1.688</answer>
+              </var_set>
+              <var_set ident="049d906f03223890219f8589ef81998f">
+                <var name="m">6869</var>
+                <answer>1.901</answer>
+              </var_set>
+              <var_set ident="fe5ee3cfbfa211857aad6d26085aebbf">
+                <var name="m">3579</var>
+                <answer>1.530</answer>
+              </var_set>
+              <var_set ident="77f0190991590c8801fa2c71eb12a733">
+                <var name="m">2053</var>
+                <answer>1.271</answer>
+              </var_set>
+              <var_set ident="709b52757a6b19c52bde0aad7fcd80fe">
+                <var name="m">6110</var>
+                <answer>1.828</answer>
+              </var_set>
+              <var_set ident="fd7657730f9ee1818af04eac3a103dbe">
+                <var name="m">2140</var>
+                <answer>1.289</answer>
+              </var_set>
+              <var_set ident="b326106fd121a51f1771ddedf9a4c93a">
+                <var name="m">3242</var>
+                <answer>1.480</answer>
+              </var_set>
+              <var_set ident="a529b06ad7ab236f6b95c5400aa49cba">
+                <var name="m">2345</var>
+                <answer>1.329</answer>
+              </var_set>
+              <var_set ident="67c2dbeb9f839e9b505a4b31212540ab">
+                <var name="m">2031</var>
+                <answer>1.266</answer>
+              </var_set>
+              <var_set ident="aee9cce9ddfc0144c96f1f1f44498eab">
+                <var name="m">1746</var>
+                <answer>1.204</answer>
+              </var_set>
+              <var_set ident="609a8d777b2722ba8155e55526dc9564">
+                <var name="m">2841</var>
+                <answer>1.416</answer>
+              </var_set>
+              <var_set ident="748068a31656ba6bcc022801c5ffbe72">
+                <var name="m">5853</var>
+                <answer>1.802</answer>
+              </var_set>
+              <var_set ident="e9c8096a76ba1d0195b0fca709d68c97">
+                <var name="m">3806</var>
+                <answer>1.561</answer>
+              </var_set>
+              <var_set ident="e52ecb9db4b3eea794195ff7389c0c21">
+                <var name="m">3616</var>
+                <answer>1.535</answer>
+              </var_set>
+              <var_set ident="eb26e324b148d4a344ad9693c407efc9">
+                <var name="m">5241</var>
+                <answer>1.737</answer>
+              </var_set>
+              <var_set ident="7fb7f43f5ce236e7d3dea55237f42216">
+                <var name="m">7419</var>
+                <answer>1.950</answer>
+              </var_set>
+              <var_set ident="5a1eb0a0cf2fb3f168f08a312a7c3280">
+                <var name="m">2324</var>
+                <answer>1.325</answer>
+              </var_set>
+              <var_set ident="140f9b5e57568f569f380d23833e1364">
+                <var name="m">1598</var>
+                <answer>1.169</answer>
+              </var_set>
+              <var_set ident="5d531961d0d5c7c91b4b4ebd3d9f4608">
+                <var name="m">6877</var>
+                <answer>1.902</answer>
+              </var_set>
+              <var_set ident="b8230b9b9e3aa8c979299c943774f67d">
+                <var name="m">7330</var>
+                <answer>1.943</answer>
+              </var_set>
+              <var_set ident="d06bcd34972bb508abd23c738fa9d9df">
+                <var name="m">1572</var>
+                <answer>1.163</answer>
+              </var_set>
+              <var_set ident="048fa2d3617a047ee22305e91d605b8a">
+                <var name="m">3516</var>
+                <answer>1.521</answer>
+              </var_set>
+              <var_set ident="5a465df02ca38350cff0d63fabe22d30">
+                <var name="m">4171</var>
+                <answer>1.610</answer>
+              </var_set>
+              <var_set ident="eef498e218b48db540765ca702733c7f">
+                <var name="m">1408</var>
+                <answer>1.121</answer>
+              </var_set>
+              <var_set ident="09d66f281c7ee4e20751284c6ce17f2d">
+                <var name="m">6795</var>
+                <answer>1.894</answer>
+              </var_set>
+              <var_set ident="4b5bf7187b95767a50e7f3894bca51a0">
+                <var name="m">6565</var>
+                <answer>1.872</answer>
+              </var_set>
+              <var_set ident="406a91b770c27c6b74ff7d6edaccb49a">
+                <var name="m">5659</var>
+                <answer>1.782</answer>
+              </var_set>
+              <var_set ident="09a572a3f15d206f8c26247a077bcc9e">
+                <var name="m">5621</var>
+                <answer>1.778</answer>
+              </var_set>
+              <var_set ident="3c5acef4cd363d917382a88fa1ce07a2">
+                <var name="m">5731</var>
+                <answer>1.790</answer>
+              </var_set>
+              <var_set ident="af0c0dfc296b5522c04df5e63ff30a42">
+                <var name="m">7220</var>
+                <answer>1.933</answer>
+              </var_set>
+              <var_set ident="18a3d879d0efb0b9ff04eacb766d2765">
+                <var name="m">7458</var>
+                <answer>1.954</answer>
+              </var_set>
+              <var_set ident="4ed7c286b629f76e2c72afba7866b49c">
+                <var name="m">1850</var>
+                <answer>1.228</answer>
+              </var_set>
+              <var_set ident="bc1862885afbe4bd70f309cca3675900">
+                <var name="m">2264</var>
+                <answer>1.313</answer>
+              </var_set>
+              <var_set ident="7396ae7f65009becdb2b772391fa4672">
+                <var name="m">6267</var>
+                <answer>1.844</answer>
+              </var_set>
+              <var_set ident="ba4ffbfd4434c55ed8336e471a868d20">
+                <var name="m">6576</var>
+                <answer>1.874</answer>
+              </var_set>
+              <var_set ident="77825f3877c8ec722212bb052e488a84">
+                <var name="m">4419</var>
+                <answer>1.641</answer>
+              </var_set>
+              <var_set ident="03baba09be60c96a39edaa6f42db0e20">
+                <var name="m">2479</var>
+                <answer>1.353</answer>
+              </var_set>
+              <var_set ident="7e3f82e9d1e62ebee97d5af839e229cd">
+                <var name="m">3026</var>
+                <answer>1.446</answer>
+              </var_set>
+              <var_set ident="654c40072766c00c0581163eb00306d3">
+                <var name="m">6118</var>
+                <answer>1.829</answer>
+              </var_set>
+              <var_set ident="6e3cb9ca9d2197de454f99645fcd5faa">
+                <var name="m">5701</var>
+                <answer>1.786</answer>
+              </var_set>
+              <var_set ident="21e8179ea8e0a83b5d6a949b98ea117e">
+                <var name="m">1964</var>
+                <answer>1.252</answer>
+              </var_set>
+              <var_set ident="b4ee8a5ececcd712d5e1462b746a5bee">
+                <var name="m">4390</var>
+                <answer>1.637</answer>
+              </var_set>
+              <var_set ident="2bf0c3e5af2f1207b140bd1ca4f6f368">
+                <var name="m">6396</var>
+                <answer>1.856</answer>
+              </var_set>
+              <var_set ident="ef8a8537b7a278f20db4f009f22e033c">
+                <var name="m">6387</var>
+                <answer>1.855</answer>
+              </var_set>
+              <var_set ident="afa17e02233f294114eccbeb4cba5638">
+                <var name="m">1977</var>
+                <answer>1.255</answer>
+              </var_set>
+              <var_set ident="bccda5ae399907d4ff48df5460c77644">
+                <var name="m">4698</var>
+                <answer>1.675</answer>
+              </var_set>
+              <var_set ident="44b2fbc494dac3cd6f39a16bfbc40633">
+                <var name="m">5922</var>
+                <answer>1.809</answer>
+              </var_set>
+              <var_set ident="6e69b760ca21e9153dadf6128347964b">
+                <var name="m">3833</var>
+                <answer>1.565</answer>
+              </var_set>
+              <var_set ident="040a61f096b8ef179908384c96619489">
+                <var name="m">7074</var>
+                <answer>1.920</answer>
+              </var_set>
+              <var_set ident="8dc954729257e373dca537466e2c699a">
+                <var name="m">3757</var>
+                <answer>1.555</answer>
+              </var_set>
+              <var_set ident="8699b3fa8943949656605ac13bd3942f">
+                <var name="m">3666</var>
+                <answer>1.542</answer>
+              </var_set>
+              <var_set ident="6b884c68b4f49864183dbb3d593b614a">
+                <var name="m">1512</var>
+                <answer>1.148</answer>
+              </var_set>
+              <var_set ident="ec07fa91f5ab2ca19dc3006d573f2942">
+                <var name="m">2525</var>
+                <answer>1.362</answer>
+              </var_set>
+              <var_set ident="15669aff4e1fbcadb5b5c9fac2c7de72">
+                <var name="m">7106</var>
+                <answer>1.923</answer>
+              </var_set>
+              <var_set ident="dcd885a0ed66874ee39f6bc1c624787d">
+                <var name="m">3339</var>
+                <answer>1.495</answer>
+              </var_set>
+              <var_set ident="346ea9d81fd5628ee174fdccf233b1ef">
+                <var name="m">6282</var>
+                <answer>1.845</answer>
+              </var_set>
+              <var_set ident="511fccd2f0d834ab58d6720c22a0e00a">
+                <var name="m">2671</var>
+                <answer>1.387</answer>
+              </var_set>
+              <var_set ident="66e6b5ad5541bdea768f4b5a1770c3c1">
+                <var name="m">4555</var>
+                <answer>1.658</answer>
+              </var_set>
+              <var_set ident="5fced9380c225479a5041778c3fe6b57">
+                <var name="m">1870</var>
+                <answer>1.232</answer>
+              </var_set>
+              <var_set ident="4350a3f3abd0a1f0b221175dc85fd2d4">
+                <var name="m">3807</var>
+                <answer>1.561</answer>
+              </var_set>
+              <var_set ident="681cf945e57e60698e008fd473b4e13c">
+                <var name="m">6457</var>
+                <answer>1.862</answer>
+              </var_set>
+              <var_set ident="48ae0a6be6d481dd6cb855e46533b016">
+                <var name="m">5225</var>
+                <answer>1.735</answer>
+              </var_set>
+              <var_set ident="6ce2f5107e22246314dfd55a6b67b3dc">
+                <var name="m">7306</var>
+                <answer>1.940</answer>
+              </var_set>
+              <var_set ident="0c1cffd359f22e6c4fb2de1aee15c9e3">
+                <var name="m">2953</var>
+                <answer>1.435</answer>
+              </var_set>
+              <var_set ident="62ff793750f4dd89409701210f190521">
+                <var name="m">4887</var>
+                <answer>1.697</answer>
+              </var_set>
+              <var_set ident="7cd2bd4bd2b0dea7c8718f6c6d7c0473">
+                <var name="m">5907</var>
+                <answer>1.808</answer>
+              </var_set>
+              <var_set ident="a92cba56f66dd0724a6db21d658f52e7">
+                <var name="m">4050</var>
+                <answer>1.594</answer>
+              </var_set>
+              <var_set ident="80e6c48016215f5da9d90d6bfcfd6d1f">
+                <var name="m">3575</var>
+                <answer>1.529</answer>
+              </var_set>
+              <var_set ident="5be82db4287ce8e1ee3a32152d8f4ee7">
+                <var name="m">5304</var>
+                <answer>1.744</answer>
+              </var_set>
+              <var_set ident="0bb1e1694550a1b2f08964431c35755a">
+                <var name="m">3252</var>
+                <answer>1.482</answer>
+              </var_set>
+              <var_set ident="2b6ed9cfc65dbecd3672009342e5de05">
+                <var name="m">4071</var>
+                <answer>1.597</answer>
+              </var_set>
+              <var_set ident="5645c3ff932025bf15bd84854b7e9043">
+                <var name="m">5108</var>
+                <answer>1.722</answer>
+              </var_set>
+              <var_set ident="0f3b015ff690494553981e5935300474">
+                <var name="m">3920</var>
+                <answer>1.577</answer>
+              </var_set>
+              <var_set ident="24279675702bc6bae1c1579775639704">
+                <var name="m">6370</var>
+                <answer>1.854</answer>
+              </var_set>
+              <var_set ident="ac6216ca332b753208ad70350d0f4f56">
+                <var name="m">4969</var>
+                <answer>1.706</answer>
+              </var_set>
+              <var_set ident="518ee3660eb39d945549805f30aa6361">
+                <var name="m">6623</var>
+                <answer>1.878</answer>
+              </var_set>
+              <var_set ident="2d57a5c507660bd2833916bbc83b75b6">
+                <var name="m">1863</var>
+                <answer>1.230</answer>
+              </var_set>
+              <var_set ident="bb736e7ac345f45c4600fbe06a4f4a7e">
+                <var name="m">6600</var>
+                <answer>1.876</answer>
+              </var_set>
+              <var_set ident="4bfe20580ed7329354ea22fec980d44e">
+                <var name="m">6610</var>
+                <answer>1.877</answer>
+              </var_set>
+              <var_set ident="5ded6c9d69d8d24c86f4c344c7e5f318">
+                <var name="m">3817</var>
+                <answer>1.563</answer>
+              </var_set>
+              <var_set ident="c0bd19703e315388c16eda46980c1f7b">
+                <var name="m">6448</var>
+                <answer>1.861</answer>
+              </var_set>
+              <var_set ident="3a9e76ff36380652c28b9e56ad2adee5">
+                <var name="m">4803</var>
+                <answer>1.687</answer>
+              </var_set>
+              <var_set ident="5ce8078b57953e59b2df830ea3645e48">
+                <var name="m">2302</var>
+                <answer>1.320</answer>
+              </var_set>
+              <var_set ident="43f1edae7a0fbdf9b13e070037ad2f59">
+                <var name="m">3497</var>
+                <answer>1.518</answer>
+              </var_set>
+              <var_set ident="f05c913af471df019a1acdad7d308415">
+                <var name="m">2964</var>
+                <answer>1.436</answer>
+              </var_set>
+              <var_set ident="4a6e062078b373e030b0e13d1b294aca">
+                <var name="m">1540</var>
+                <answer>1.155</answer>
+              </var_set>
+              <var_set ident="4f0e3443f6baab49f01d88571997216d">
+                <var name="m">5214</var>
+                <answer>1.734</answer>
+              </var_set>
+              <var_set ident="d52e7a857c6866aa3a59483bb2301091">
+                <var name="m">6390</var>
+                <answer>1.856</answer>
+              </var_set>
+              <var_set ident="b2a65c9d89dc4b48a7f69aa58865c292">
+                <var name="m">2756</var>
+                <answer>1.402</answer>
+              </var_set>
+              <var_set ident="9780d7f6ada6ed804c4e728e7eca47a4">
+                <var name="m">5025</var>
+                <answer>1.713</answer>
+              </var_set>
+              <var_set ident="0e2d8ed4736dcdf4459e4206854ffea9">
+                <var name="m">5678</var>
+                <answer>1.784</answer>
+              </var_set>
+              <var_set ident="18e538be4cc803df1088e3e566a0be09">
+                <var name="m">5147</var>
+                <answer>1.727</answer>
+              </var_set>
+              <var_set ident="ad347a28c004a3a5f0795f926e53e29a">
+                <var name="m">7265</var>
+                <answer>1.937</answer>
+              </var_set>
+              <var_set ident="9ab880952491aabd24533b56fef75f27">
+                <var name="m">3268</var>
+                <answer>1.484</answer>
+              </var_set>
+              <var_set ident="fb032c810d9b3665fdcdbc2842772bc3">
+                <var name="m">6379</var>
+                <answer>1.855</answer>
+              </var_set>
+              <var_set ident="ad2d433a6b9aa46795dcd1f7ff1a97d2">
+                <var name="m">1766</var>
+                <answer>1.209</answer>
+              </var_set>
+              <var_set ident="be1186414c78ecdf32e24594670efec3">
+                <var name="m">5910</var>
+                <answer>1.808</answer>
+              </var_set>
+              <var_set ident="5f65507f7b7712c5fb8b4d514f6338b9">
+                <var name="m">1995</var>
+                <answer>1.259</answer>
+              </var_set>
+              <var_set ident="1002eddd8658bd24fe328f072ad0f9b9">
+                <var name="m">6630</var>
+                <answer>1.879</answer>
+              </var_set>
+              <var_set ident="a9a4210913e6b148dc7dcb13efaca589">
+                <var name="m">3608</var>
+                <answer>1.534</answer>
+              </var_set>
+              <var_set ident="a15f0f3f237f1657544d5b9acc8f4b89">
+                <var name="m">4525</var>
+                <answer>1.654</answer>
+              </var_set>
+              <var_set ident="2d909c8cafcfa9d37e77918bacd7362a">
+                <var name="m">7381</var>
+                <answer>1.947</answer>
+              </var_set>
+              <var_set ident="ca9d51f9c0fafddd1104edb1dec4c2d3">
+                <var name="m">1415</var>
+                <answer>1.123</answer>
+              </var_set>
+              <var_set ident="abc9ac9945ab07643aae3a937ec01187">
+                <var name="m">4057</var>
+                <answer>1.595</answer>
+              </var_set>
+              <var_set ident="52ec94d32b7335405120da948eb2b8b4">
+                <var name="m">2976</var>
+                <answer>1.438</answer>
+              </var_set>
+              <var_set ident="0f8697e510936fc340bdd1a0ad456fb6">
+                <var name="m">3489</var>
+                <answer>1.517</answer>
+              </var_set>
+              <var_set ident="ecf57ec9a9c1307161c8a64595465606">
+                <var name="m">3678</var>
+                <answer>1.544</answer>
+              </var_set>
+              <var_set ident="799c675e2861e22656b96bd5abf832ba">
+                <var name="m">3909</var>
+                <answer>1.575</answer>
+              </var_set>
+              <var_set ident="5f675c11e24e759f4102f65b5c469ece">
+                <var name="m">7165</var>
+                <answer>1.928</answer>
+              </var_set>
+              <var_set ident="933e4accf9ce2c86cdd201a7a9879fce">
+                <var name="m">4647</var>
+                <answer>1.669</answer>
+              </var_set>
+              <var_set ident="dc7350e6003f7079205156d4ef42961f">
+                <var name="m">2799</var>
+                <answer>1.409</answer>
+              </var_set>
+              <var_set ident="0a914a7823eacac1a16506ded0a6555d">
+                <var name="m">2466</var>
+                <answer>1.351</answer>
+              </var_set>
+              <var_set ident="7511e6ecfe38b95e51e9c733fea77d77">
+                <var name="m">6355</var>
+                <answer>1.852</answer>
+              </var_set>
+              <var_set ident="e81f8c7a18e461e76d95873306996195">
+                <var name="m">5011</var>
+                <answer>1.711</answer>
+              </var_set>
+              <var_set ident="0cd622a5eb3f56957f50fb3dda4dcdca">
+                <var name="m">1597</var>
+                <answer>1.169</answer>
+              </var_set>
+              <var_set ident="af5f1749be49e51af7b25073b4b41399">
+                <var name="m">5453</var>
+                <answer>1.760</answer>
+              </var_set>
+              <var_set ident="30ea9c1f179ce6745cb43975b8456722">
+                <var name="m">7140</var>
+                <answer>1.926</answer>
+              </var_set>
+              <var_set ident="c5b26d54b17d75bfc52272f5c0139d29">
+                <var name="m">2809</var>
+                <answer>1.411</answer>
+              </var_set>
+              <var_set ident="3a9169a4ad548a5484239d80b008999a">
+                <var name="m">3747</var>
+                <answer>1.553</answer>
+              </var_set>
+              <var_set ident="034e138428145b8655b41c7d54dd2d03">
+                <var name="m">1418</var>
+                <answer>1.123</answer>
+              </var_set>
+              <var_set ident="5f518dc95d172966c8ec3ca3e4853e03">
+                <var name="m">5287</var>
+                <answer>1.742</answer>
+              </var_set>
+              <var_set ident="f402526b836179e1890d8fe5b1872e1b">
+                <var name="m">2692</var>
+                <answer>1.391</answer>
+              </var_set>
+              <var_set ident="e2a59a18765bd6a6a2eeacaae48c8191">
+                <var name="m">4938</var>
+                <answer>1.703</answer>
+              </var_set>
+              <var_set ident="368aafaca039fcefe5b87e76c2d11885">
+                <var name="m">5136</var>
+                <answer>1.725</answer>
+              </var_set>
+              <var_set ident="17c2bbc2b39dc49fb6f5e2ea419c79ef">
+                <var name="m">2084</var>
+                <answer>1.277</answer>
+              </var_set>
+              <var_set ident="ab937c1d1bafc27c66a6b72710a148a9">
+                <var name="m">2510</var>
+                <answer>1.359</answer>
+              </var_set>
+              <var_set ident="23e065ddc51b7ff3c5b9a5e7c6e66ff2">
+                <var name="m">2260</var>
+                <answer>1.312</answer>
+              </var_set>
+              <var_set ident="0d0e38a8ce7c4e9f31988cdc856b183e">
+                <var name="m">2552</var>
+                <answer>1.367</answer>
+              </var_set>
+              <var_set ident="c6b1f11ef1db5ae85aa7c71d2b0f10d6">
+                <var name="m">5327</var>
+                <answer>1.746</answer>
+              </var_set>
+              <var_set ident="1e6fc380ff11c571b0fdba4137abfff6">
+                <var name="m">5715</var>
+                <answer>1.788</answer>
+              </var_set>
+              <var_set ident="47b681c77436b316f7f80af17cbdd4f3">
+                <var name="m">5904</var>
+                <answer>1.807</answer>
+              </var_set>
+              <var_set ident="1df5cc29b0cbcdb893bd7a7c4a14d247">
+                <var name="m">7066</var>
+                <answer>1.919</answer>
+              </var_set>
+              <var_set ident="4c3e1a3880029573be59f3bec3d0b5f7">
+                <var name="m">7327</var>
+                <answer>1.942</answer>
+              </var_set>
+              <var_set ident="aeda06d46d9ae7c411aa019b75073a8a">
+                <var name="m">2604</var>
+                <answer>1.376</answer>
+              </var_set>
+              <var_set ident="f6083b466ed30ecdc6634ae77097f22b">
+                <var name="m">1643</var>
+                <answer>1.180</answer>
+              </var_set>
+              <var_set ident="88ba1cca9fd1aedb33d41cc218bc8e5d">
+                <var name="m">5068</var>
+                <answer>1.718</answer>
+              </var_set>
+              <var_set ident="8aee088db042fc4c99821404fc171b90">
+                <var name="m">2105</var>
+                <answer>1.282</answer>
+              </var_set>
+            </var_sets>
+          </calculated>
+        </itemproc_extension>
+      </item>
+      <item ident="ba71fe558ebaf36afe6e097d9dcd5a19" title="">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>6877244d-6f2b-46eb-8f33-9dc025de0bf8,7a879247-72d4-4e27-afcf-773f0089df76,a4e60236-4729-4a47-8e62-0c6f971b465f,ddc86355-e33c-4d21-bd81-ffeb744fe31b,8bf3db17-72b3-4dfc-92a9-a88debb99455</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>9ac5846739600d4bd11055c3ef6342ee</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>calculator_type</fieldlabel>
+              <fieldentry>none</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;A tentative scientific explanation that may or may not be rejected upon further experimentation is called&lt;/p&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice shuffle="Yes">
+              <response_label ident="6877244d-6f2b-46eb-8f33-9dc025de0bf8">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;a hypothesis.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="7a879247-72d4-4e27-afcf-773f0089df76">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;a scientific principle.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="a4e60236-4729-4a47-8e62-0c6f971b465f">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;a model.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="ddc86355-e33c-4d21-bd81-ffeb744fe31b">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;a scientific theory.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8bf3db17-72b3-4dfc-92a9-a88debb99455">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;an idea.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">6877244d-6f2b-46eb-8f33-9dc025de0bf8</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="12135e9893650fa074dcf3fffe0125df" title="">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>0706d18e-f40a-4814-adac-e96651808f41,3de7d085-e54f-46be-9fe7-e285dfe12a9b,f7342680-3312-468f-8581-989aafe16ac6,fb524d86-3fd3-4b46-8717-a5425b406b4d</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>f72986b6cb696f3570be7f1c5d8d2a1c</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>calculator_type</fieldlabel>
+              <fieldentry>none</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;An event with two situations with all the influencing factors identical except one is &lt;/p&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice shuffle="Yes">
+              <response_label ident="0706d18e-f40a-4814-adac-e96651808f41">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;a controlled experiment.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="3de7d085-e54f-46be-9fe7-e285dfe12a9b">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;an impossible experiment.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="f7342680-3312-468f-8581-989aafe16ac6">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;a malformed experiment.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="fb524d86-3fd3-4b46-8717-a5425b406b4d">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;a hypothetical experiment.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">0706d18e-f40a-4814-adac-e96651808f41</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="fd3a7c9bec38ce5c088076ea9a362ccb" title="">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>d7fdc7b1-71af-4b45-97e2-3be76b31085c,3c0a3650-f016-493d-9eeb-3d15dbca886d,505a9b6f-f809-4f89-a4f2-bcc5dbaef421,131566ff-a400-4d1c-93d9-7f6c42de60e0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>dc3e7b8a8d99302ce9f8f5881c3a6382</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>calculator_type</fieldlabel>
+              <fieldentry>none</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;A statement describing a relationship that is observed in nature to occur consistently time after time is &lt;/p&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice shuffle="Yes">
+              <response_label ident="d7fdc7b1-71af-4b45-97e2-3be76b31085c">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;a scientific law.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="3c0a3650-f016-493d-9eeb-3d15dbca886d">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;a hypothesis.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="505a9b6f-f809-4f89-a4f2-bcc5dbaef421">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;a scientific theory.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="131566ff-a400-4d1c-93d9-7f6c42de60e0">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;a model.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">d7fdc7b1-71af-4b45-97e2-3be76b31085c</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="aa6ddd29a2d3c7fb8579c0b33b9d5c98" title="">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>4cd39957-fa52-49ef-b9a1-2dc93533952d,fa3ce95b-42f0-4399-9487-4a1503cd2f61,733dd594-da43-4607-a573-5fccc5e11403</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>b269cf836c851bb2da4b2ed1ea8f30ad</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>calculator_type</fieldlabel>
+              <fieldentry>none</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;One of the basic differences between science and a pseudoscience is the lack of&lt;/p&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice shuffle="Yes">
+              <response_label ident="4cd39957-fa52-49ef-b9a1-2dc93533952d">
+                <material>
+                  <mattext texttype="text/html">&lt;div class="flex-fill ml-1"&gt;
+&lt;p&gt;valid and reliable experimental studies.&lt;/p&gt;
+&lt;/div&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="fa3ce95b-42f0-4399-9487-4a1503cd2f61">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;a testable hypotheses.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="733dd594-da43-4607-a573-5fccc5e11403">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;data.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">4cd39957-fa52-49ef-b9a1-2dc93533952d</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="38cba9ea5da38c6d037825178b383821" title="">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>6efa56cd-fbad-465c-b363-8c0c1632fbda,19d35d73-2a22-41a2-bc9d-0a80b697fd26,8492ba68-096f-4ce0-8149-efbb02574445,df5dbdd8-b85c-4f77-afab-27d7531a3695</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>41fb3892dc0403486ba344b727ada50a</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>calculator_type</fieldlabel>
+              <fieldentry>none</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;A tentative thought- or experiment-derived explanation is known as&lt;/p&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice shuffle="Yes">
+              <response_label ident="6efa56cd-fbad-465c-b363-8c0c1632fbda">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;a hypothesis.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="19d35d73-2a22-41a2-bc9d-0a80b697fd26">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;a scientific theory.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8492ba68-096f-4ce0-8149-efbb02574445">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;a scientific law.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="df5dbdd8-b85c-4f77-afab-27d7531a3695">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;a model.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">6efa56cd-fbad-465c-b363-8c0c1632fbda</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+    </section>
+  </assessment>
+</questestinterop>

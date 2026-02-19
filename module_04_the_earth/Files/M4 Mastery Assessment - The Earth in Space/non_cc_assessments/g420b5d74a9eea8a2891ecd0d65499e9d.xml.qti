@@ -1,0 +1,350 @@
+<?xml version="1.0"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/xsd/ims_qtiasiv1p2p1.xsd">
+  <objectbank ident="g420b5d74a9eea8a2891ecd0d65499e9d" canvas_item_bank="true">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>bank_title</fieldlabel>
+        <fieldentry>Identify Moon Phase via Image</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>bank_type</fieldlabel>
+        <fieldentry>Course</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <item ident="a43564b0787e4761e285698865743324" title="">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>c015b9c9-dfdd-4b80-b758-9d7f01b1e760,6c93ed48-060a-47e5-8448-b3051f89f4cf,75e1fe09-df8e-4438-a7fc-04f469fe03a6,6c0bda11-7741-439e-8073-62310c1d2952</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>628cbe11e62edcc76a72115ef460ecb4</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;What phase is the Moon in the image below?&lt;/p&gt;
+&lt;p&gt;&lt;img src="$IMS-CC-FILEBASE$/Uploaded Media/Moon_phase_img4.png" alt="The Moon has moved from being in between the Earth and Sun, and is now facing the Sun with the Earth." data-old-link="/courses/10072/files/9300185/preview?verifier=QGFFB6mICiWQcErjog1sQxBgKxGq8fUOBfwD4L18"&gt;&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="c015b9c9-dfdd-4b80-b758-9d7f01b1e760">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Full&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="6c93ed48-060a-47e5-8448-b3051f89f4cf">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Last quarter&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="75e1fe09-df8e-4438-a7fc-04f469fe03a6">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;New&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="6c0bda11-7741-439e-8073-62310c1d2952">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;First quarter&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">6c0bda11-7741-439e-8073-62310c1d2952</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="4f9b14e8e4bbc1a5d045236d4dd653c2" title="">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>c015b9c9-dfdd-4b80-b758-9d7f01b1e760,6c93ed48-060a-47e5-8448-b3051f89f4cf,75e1fe09-df8e-4438-a7fc-04f469fe03a6,6c0bda11-7741-439e-8073-62310c1d2952</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>c9b7076220e455e575fd1cbff57264b2</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;What phase is the Moon in the image below?&lt;/p&gt;
+&lt;p&gt;&lt;img src="$IMS-CC-FILEBASE$/Uploaded Media/Moon_phase_img1.png" alt="The Earth is between the Sun and Moon." data-old-link="/courses/10072/files/9300181/preview?verifier=pqdUkKoyUChHvjjtk55bZOZ3iIrp6Vh6F62JqIf2"&gt;&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="c015b9c9-dfdd-4b80-b758-9d7f01b1e760">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Full&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="6c93ed48-060a-47e5-8448-b3051f89f4cf">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Last quarter&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="75e1fe09-df8e-4438-a7fc-04f469fe03a6">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;New&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="6c0bda11-7741-439e-8073-62310c1d2952">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;First quarter&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">c015b9c9-dfdd-4b80-b758-9d7f01b1e760</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="3e6be013170a37a8d088dbf8ee23f594" title="">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>c015b9c9-dfdd-4b80-b758-9d7f01b1e760,6c93ed48-060a-47e5-8448-b3051f89f4cf,75e1fe09-df8e-4438-a7fc-04f469fe03a6,6c0bda11-7741-439e-8073-62310c1d2952</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>f2f0ff04412ee6ae67e317c423fa1bf1</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;What phase is the Moon in the image below?&lt;/p&gt;
+&lt;p&gt;&lt;img src="$IMS-CC-FILEBASE$/Uploaded Media/Moon_phase_img3.png" alt="The Moon is between the Earth and the Sun." data-old-link="/courses/10072/files/9300183/preview?verifier=rKjXtt2Oop8jMpZoJ18iNWSSNiSSjr2pattxApV5"&gt;&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="c015b9c9-dfdd-4b80-b758-9d7f01b1e760">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Full&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="6c93ed48-060a-47e5-8448-b3051f89f4cf">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Last quarter&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="75e1fe09-df8e-4438-a7fc-04f469fe03a6">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;New&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="6c0bda11-7741-439e-8073-62310c1d2952">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;First quarter&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">75e1fe09-df8e-4438-a7fc-04f469fe03a6</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="281c7f34d3d4a8cbd40ea5de92625a8d" title="">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>c015b9c9-dfdd-4b80-b758-9d7f01b1e760,6c93ed48-060a-47e5-8448-b3051f89f4cf,75e1fe09-df8e-4438-a7fc-04f469fe03a6,6c0bda11-7741-439e-8073-62310c1d2952</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>31cb23824d219138b7e9071c29ec7c15</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;What phase is the Moon in the image below?&lt;/p&gt;
+&lt;p&gt;&lt;img src="$IMS-CC-FILEBASE$/Uploaded Media/Moon_phase_img2.png" alt="The Moon has moved from behind the Earth and is now facing the Sun with the Earth." data-old-link="/courses/10072/files/9300182/preview?verifier=wLSdnzfPvKaJu9MSgVgLQfVModyq6mCJSOcD2Mqf"&gt;&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="c015b9c9-dfdd-4b80-b758-9d7f01b1e760">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Full&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="6c93ed48-060a-47e5-8448-b3051f89f4cf">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Last quarter&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="75e1fe09-df8e-4438-a7fc-04f469fe03a6">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;New&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="6c0bda11-7741-439e-8073-62310c1d2952">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;First quarter&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">6c93ed48-060a-47e5-8448-b3051f89f4cf</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="2466ebd7581312807a64030f3b161a5f" title="">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>c015b9c9-dfdd-4b80-b758-9d7f01b1e760,6c93ed48-060a-47e5-8448-b3051f89f4cf,75e1fe09-df8e-4438-a7fc-04f469fe03a6,6c0bda11-7741-439e-8073-62310c1d2952</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>90f3e777bba9741093e859e8c8454a72</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;What phase is the Moon in the image below?&lt;/p&gt;
+&lt;p&gt;&lt;img src="$IMS-CC-FILEBASE$/Uploaded Media/Moon_phase_img1.png" alt="The Earth is between the Sun and Moon." data-old-link="/courses/10072/files/9300181/preview?verifier=pqdUkKoyUChHvjjtk55bZOZ3iIrp6Vh6F62JqIf2"&gt;&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice>
+            <response_label ident="c015b9c9-dfdd-4b80-b758-9d7f01b1e760">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Full&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="6c93ed48-060a-47e5-8448-b3051f89f4cf">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Last quarter&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="75e1fe09-df8e-4438-a7fc-04f469fe03a6">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;New&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="6c0bda11-7741-439e-8073-62310c1d2952">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;First quarter&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">c015b9c9-dfdd-4b80-b758-9d7f01b1e760</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+  </objectbank>
+</questestinterop>

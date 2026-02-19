@@ -1,0 +1,727 @@
+<?xml version="1.0"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/xsd/ims_qtiasiv1p2p1.xsd">
+  <objectbank ident="g6c15f4dd5066b71c241e636f3e86bbf7" canvas_item_bank="true">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>bank_title</fieldlabel>
+        <fieldentry>PHYS 1315 Atomic Motion</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>bank_type</fieldlabel>
+        <fieldentry>Course</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <item ident="85119a3716fbd01aef7fdb8cc97bcc0d" title="Atomic Motion (vi)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>3de1ff1e-a2c8-4ac5-8f12-afe74d489e0e,718c9689-bc7d-48b3-810c-5055cf4d37b2,4af4b517-381f-4f39-8b3d-ce471974a1ee,5970390f-294b-4a7f-bd1a-a63d16f2595a,edd4246d-7952-495b-a2e0-ffed2c0fd96c</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>30b6410b26271c5aadf4d6c2532913e0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p class="MsoNormal"&gt;Which of the following statements is &lt;span style="text-decoration: underline;"&gt;correct&lt;/span&gt; about the interaction and motion of atoms?&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="3de1ff1e-a2c8-4ac5-8f12-afe74d489e0e">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;Solids are rigid 3D structures whose atoms only vibrate around their center.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="718c9689-bc7d-48b3-810c-5055cf4d37b2">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;The atoms and molecules in liquids are held together by very strong covalent bonds, and can vibrate, rotate, tumble, and diffuse slowly.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="4af4b517-381f-4f39-8b3d-ce471974a1ee">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;The atoms and molecules in an ideal gas interact through hard elastic collisions.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="5970390f-294b-4a7f-bd1a-a63d16f2595a">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;The atoms and molecules in a gas are free to vibrate and rotate, but cannot diffuse.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="edd4246d-7952-495b-a2e0-ffed2c0fd96c">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;Plasmas are hot-pressurized gas of ions whose interactions are dominated by the strong nuclear force.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">3de1ff1e-a2c8-4ac5-8f12-afe74d489e0e</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="92ac124ddcb52143f9e2fb4709858d8c" title="Atomic Motion (vii)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>3de1ff1e-a2c8-4ac5-8f12-afe74d489e0e,718c9689-bc7d-48b3-810c-5055cf4d37b2,4af4b517-381f-4f39-8b3d-ce471974a1ee,5970390f-294b-4a7f-bd1a-a63d16f2595a,edd4246d-7952-495b-a2e0-ffed2c0fd96c</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>21b2c733f7ae250f27ca8735c66a2cc6</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;Which of the following statements is &lt;span style="text-decoration: underline;"&gt;correct&lt;/span&gt; about the interaction and motion of atoms?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="3de1ff1e-a2c8-4ac5-8f12-afe74d489e0e">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;Solids are non-rigid 2D structures whose atoms only vibrate around their center.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="718c9689-bc7d-48b3-810c-5055cf4d37b2">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;The atoms and molecules in liquids are held together by weak cohesive bonds, and can vibrate, rotate, tumble, and diffuse slowly.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="4af4b517-381f-4f39-8b3d-ce471974a1ee">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;The atoms and molecules in an ideal gas interact through hard elastic collisions.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="5970390f-294b-4a7f-bd1a-a63d16f2595a">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;The atoms and molecules in a gas are free to vibrate and rotate, but cannot diffuse.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="edd4246d-7952-495b-a2e0-ffed2c0fd96c">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;Plasmas are hot-pressurized gas of ions whose interactions are dominated by the gravitational force.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">718c9689-bc7d-48b3-810c-5055cf4d37b2</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="4ab8635c6360982940a2c9a56dd1d11f" title="Atomic Motion (ix)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>3de1ff1e-a2c8-4ac5-8f12-afe74d489e0e,718c9689-bc7d-48b3-810c-5055cf4d37b2,4af4b517-381f-4f39-8b3d-ce471974a1ee,5970390f-294b-4a7f-bd1a-a63d16f2595a,edd4246d-7952-495b-a2e0-ffed2c0fd96c</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>8a19ee914a875216ee14489d5ed91e4a</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;Which of the following statements is &lt;span style="text-decoration: underline;"&gt;correct&lt;/span&gt; about the interaction and motion of atoms?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="3de1ff1e-a2c8-4ac5-8f12-afe74d489e0e">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;Solids are non-rigid 2D structures whose atoms only vibrate around their center.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="718c9689-bc7d-48b3-810c-5055cf4d37b2">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;The atoms and molecules in liquids are held together by very strong covalent bonds, and can vibrate, rotate, tumble, and diffuse slowly.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="4af4b517-381f-4f39-8b3d-ce471974a1ee">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;The atoms and molecules in an ideal gas interact through hard elastic collisions.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="5970390f-294b-4a7f-bd1a-a63d16f2595a">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;The atoms and molecules in a gas diffuse very quickly, and are free to vibrate and rotate.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="edd4246d-7952-495b-a2e0-ffed2c0fd96c">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;Plasmas are hot-pressurized gas of ions whose interactions are dominated by the gravitational force.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">5970390f-294b-4a7f-bd1a-a63d16f2595a</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="8b43a3e6dee9694386402ff00edcca9f" title="Atomic Motion (x)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>3de1ff1e-a2c8-4ac5-8f12-afe74d489e0e,718c9689-bc7d-48b3-810c-5055cf4d37b2,4af4b517-381f-4f39-8b3d-ce471974a1ee,5970390f-294b-4a7f-bd1a-a63d16f2595a,edd4246d-7952-495b-a2e0-ffed2c0fd96c</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>0f7369e7514f72adb7f2cf993d5ccf20</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;Which of the following statements is &lt;span style="text-decoration: underline;"&gt;correct&lt;/span&gt; about the interaction and motion of atoms?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="3de1ff1e-a2c8-4ac5-8f12-afe74d489e0e">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;Solids are flexible 2D structures whose atoms only vibrate around their center.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="718c9689-bc7d-48b3-810c-5055cf4d37b2">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;The atoms and molecules in liquids are held together by very strong covalent bonds, and can vibrate, rotate, tumble, and diffuse slowly.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="4af4b517-381f-4f39-8b3d-ce471974a1ee">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;The atoms and molecules in an ideal gas interact through hard elastic collisions.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="5970390f-294b-4a7f-bd1a-a63d16f2595a">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;The atoms and molecules in a gas are free to vibrate and rotate, but cannot diffuse.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="edd4246d-7952-495b-a2e0-ffed2c0fd96c">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;Plasmas are hot-pressurized gases of ions whose interactions are dominated by the electromagnetic force force.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">edd4246d-7952-495b-a2e0-ffed2c0fd96c</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="2b50c8e2962cfc217063a49e2ca65590" title="Atomic Motion (i)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>6a433792-df6d-4158-b0a8-c0a00f8f8907,22f3abaa-7ba4-455f-8dc0-19d01e3e285d,a0650591-8bdd-4c64-ae7f-81a23a500d85,f1937f49-7775-403d-8918-3907197a47e3,7fdb962f-d7a2-4395-a760-c6a8edc27ad5</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>212bc1a5c7d93743e0187cf099f80639</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;Which of the following statements is &lt;span style="text-decoration: underline;"&gt;incorrect&lt;/span&gt; about the interaction and motion of atoms?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="6a433792-df6d-4158-b0a8-c0a00f8f8907">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;Solids are flexible 2D structures whose atoms only vibrate around their center.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="22f3abaa-7ba4-455f-8dc0-19d01e3e285d">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;The atoms and molecules in liquids are held together by weak cohesive bonds, and can vibrate, rotate, tumble, and diffuse slowly.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="a0650591-8bdd-4c64-ae7f-81a23a500d85">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;The atoms and molecules in a real gas rarely interact, and never interact in an ideal gas.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="f1937f49-7775-403d-8918-3907197a47e3">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;The atoms and molecules in a gas diffuse very quickly, and are free to vibrate and rotate.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="7fdb962f-d7a2-4395-a760-c6a8edc27ad5">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;Plasmas are hot-pressurized gas of ions whose interactions are dominated by the electromagnetic force.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">6a433792-df6d-4158-b0a8-c0a00f8f8907</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="45b343a80320ab45709bbb06c7cf2f0e" title="Atomic Motion (ii)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>6a433792-df6d-4158-b0a8-c0a00f8f8907,22f3abaa-7ba4-455f-8dc0-19d01e3e285d,a0650591-8bdd-4c64-ae7f-81a23a500d85,f1937f49-7775-403d-8918-3907197a47e3,7fdb962f-d7a2-4395-a760-c6a8edc27ad5</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>81c60324f5373a56ca57daa93af975be</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;Which of the following statements is &lt;span style="text-decoration: underline;"&gt;incorrect&lt;/span&gt; about the interaction and motion of atoms?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="6a433792-df6d-4158-b0a8-c0a00f8f8907">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;Solids are rigid 3D structures whose atoms only vibrate around their center.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="22f3abaa-7ba4-455f-8dc0-19d01e3e285d">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;The atoms and molecules in liquids are held together by very strong covalent bonds, and can vibrate, rotate, tumble, and diffuse slowly.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="a0650591-8bdd-4c64-ae7f-81a23a500d85">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;The atoms and molecules in a real gas rarely interact, and never interact in an ideal gas.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="f1937f49-7775-403d-8918-3907197a47e3">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;The atoms and molecules in a gas diffuse very quickly, and are free to vibrate and rotate.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="7fdb962f-d7a2-4395-a760-c6a8edc27ad5">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;Plasmas are hot-pressurized gas of ions whose interactions are dominated by the electromagnetic force.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">22f3abaa-7ba4-455f-8dc0-19d01e3e285d</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="8a7c89cc0267e68271a8583e76d7110d" title="Atomic Motion (iii)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>6a433792-df6d-4158-b0a8-c0a00f8f8907,22f3abaa-7ba4-455f-8dc0-19d01e3e285d,a0650591-8bdd-4c64-ae7f-81a23a500d85,f1937f49-7775-403d-8918-3907197a47e3,7fdb962f-d7a2-4395-a760-c6a8edc27ad5</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>3ae3637bf1cb7195a6a5fe2308384a96</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;Which of the following statements is &lt;span style="text-decoration: underline;"&gt;incorrect&lt;/span&gt; about the interaction and motion of atoms?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="6a433792-df6d-4158-b0a8-c0a00f8f8907">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;Solids are rigid 3D structures whose atoms only vibrate around their center.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="22f3abaa-7ba4-455f-8dc0-19d01e3e285d">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;The atoms and molecules in liquids are held together by weak cohesive bonds, and can vibrate, rotate, tumble, and diffuse slowly.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="a0650591-8bdd-4c64-ae7f-81a23a500d85">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;The atoms and molecules in an ideal gas interact through hard elastic collisions.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="f1937f49-7775-403d-8918-3907197a47e3">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;The atoms and molecules in a gas diffuse very quickly, and are free to vibrate and rotate.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="7fdb962f-d7a2-4395-a760-c6a8edc27ad5">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;Plasmas are hot-pressurized gas of ions whose interactions are dominated by the electromagnetic force.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">a0650591-8bdd-4c64-ae7f-81a23a500d85</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="3ff7d7e59bf168bc40fcaf33b6e8feef" title="Atomic Motion (iv)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>6a433792-df6d-4158-b0a8-c0a00f8f8907,22f3abaa-7ba4-455f-8dc0-19d01e3e285d,a0650591-8bdd-4c64-ae7f-81a23a500d85,f1937f49-7775-403d-8918-3907197a47e3,7fdb962f-d7a2-4395-a760-c6a8edc27ad5</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>5455a8a72903fd2e4ea18d9f00482aca</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;Which of the following statements is &lt;span style="text-decoration: underline;"&gt;incorrect&lt;/span&gt; about the interaction and motion of atoms?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="6a433792-df6d-4158-b0a8-c0a00f8f8907">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;Solids are rigid 3D structures whose atoms only vibrate around their center.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="22f3abaa-7ba4-455f-8dc0-19d01e3e285d">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;The atoms and molecules in liquids are held together by weak cohesive bonds, and can vibrate, rotate, tumble, and diffuse slowly.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="a0650591-8bdd-4c64-ae7f-81a23a500d85">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;The atoms and molecules in a real gas rarely interact, and never interact in an ideal gas.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="f1937f49-7775-403d-8918-3907197a47e3">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;The atoms and molecules in a gas are free to vibrate and rotate, but cannot diffuse.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="7fdb962f-d7a2-4395-a760-c6a8edc27ad5">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;Plasmas are hot-pressurized gas of ions whose interactions are dominated by the electromagnetic force.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">f1937f49-7775-403d-8918-3907197a47e3</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="5df8076aab9b2799fc37ecc9cb6b16db" title="Atomic Motion (v)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>6a433792-df6d-4158-b0a8-c0a00f8f8907,22f3abaa-7ba4-455f-8dc0-19d01e3e285d,a0650591-8bdd-4c64-ae7f-81a23a500d85,f1937f49-7775-403d-8918-3907197a47e3,7fdb962f-d7a2-4395-a760-c6a8edc27ad5</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>f0ba752f09853cf1dc9391b6ef8d865a</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;Which of the following statements is &lt;span style="text-decoration: underline;"&gt;incorrect&lt;/span&gt; about the interaction and motion of atoms?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="6a433792-df6d-4158-b0a8-c0a00f8f8907">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;Solids are rigid 3D structures whose atoms only vibrate around their center.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="22f3abaa-7ba4-455f-8dc0-19d01e3e285d">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;The atoms and molecules in liquids are held together by weak cohesive bonds, and can vibrate, rotate, tumble, and diffuse slowly.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="a0650591-8bdd-4c64-ae7f-81a23a500d85">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;The atoms and molecules in a real gas rarely interact, and never interact in an ideal gas.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="f1937f49-7775-403d-8918-3907197a47e3">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;The atoms and molecules in a gas diffuse very quickly, and are free to vibrate and rotate.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="7fdb962f-d7a2-4395-a760-c6a8edc27ad5">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;Plasmas are hot-pressurized gas of ions whose interactions are dominated by the gravitational force.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">7fdb962f-d7a2-4395-a760-c6a8edc27ad5</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="a61baff8424a4700e72ff797947e9c0f" title="Atomic Motion (viii)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>3de1ff1e-a2c8-4ac5-8f12-afe74d489e0e,718c9689-bc7d-48b3-810c-5055cf4d37b2,4af4b517-381f-4f39-8b3d-ce471974a1ee,5970390f-294b-4a7f-bd1a-a63d16f2595a,edd4246d-7952-495b-a2e0-ffed2c0fd96c</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>9ab04839f7cd9d61f0367bdb0995cb9e</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;Which of the following statements is &lt;span style="text-decoration: underline;"&gt;correct&lt;/span&gt; about the interaction and motion of atoms?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="3de1ff1e-a2c8-4ac5-8f12-afe74d489e0e">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;Solids are non-rigid 2D structures whose atoms only vibrate around their center.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="718c9689-bc7d-48b3-810c-5055cf4d37b2">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;The atoms and molecules in liquids are held together by very strong covalent bonds, and can vibrate, rotate, tumble, and diffuse slowly.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="4af4b517-381f-4f39-8b3d-ce471974a1ee">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;The atoms and molecules in a real gas rarely interact, and never interact in an ideal gas.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="5970390f-294b-4a7f-bd1a-a63d16f2595a">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;The atoms and molecules in a gas are free to vibrate and rotate, but cannot diffuse.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="edd4246d-7952-495b-a2e0-ffed2c0fd96c">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;Plasmas are hot-pressurized gas of ions whose interactions are dominated by the gravitational force.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">4af4b517-381f-4f39-8b3d-ce471974a1ee</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+  </objectbank>
+</questestinterop>

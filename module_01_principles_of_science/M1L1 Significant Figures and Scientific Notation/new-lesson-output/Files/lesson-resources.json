@@ -1,0 +1,21 @@
+{
+    "lesson": "M1L1 Significant Figures and Scientific Notation",
+    "enrichment_links": [],
+    "practice_questions": [],
+    "career_connections": [
+        {
+            "title": "Engineering and Manufacturing",
+            "description": "Engineers use significant figures to ensure design calculations align with real-world material tolerances and safety margins. A misplaced decimal point in stress analysis, for instance, could lead to catastrophic structural failure. Scientific notation is used to manage measurements in electrical engineering, from microvolts to kilovolts, aligning with metric prefixes."
+        },
+        {
+            "title": "Data Analysis",
+            "description": "Techniques for analyzing data use both concepts to interpret data from instruments with varying levels of precision. They must ensure that the output of complex computer models or spreadsheets doesn't imply a higher level of precision than the original, raw input data justifies. "
+        },
+        {
+            "title": "Job Interview Talking Points",
+            "description": "Employers want candidates who understand how to avoid overstating the accuracy of data, which prevents costly errors in design or analysis. Mastery of significant figures and scientific notation demonstrates attention to detail and numerical literacy, essential skills in technical roles."
+        }
+    ],
+    "quote": "One accurate measurement is worth a thousand expert opinions.",
+    "quote_credit": "Grace Hopper"
+}

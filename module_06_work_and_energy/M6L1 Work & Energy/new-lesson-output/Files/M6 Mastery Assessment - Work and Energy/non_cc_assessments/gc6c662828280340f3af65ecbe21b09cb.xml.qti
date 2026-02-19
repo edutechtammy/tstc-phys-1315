@@ -1,0 +1,658 @@
+<?xml version="1.0"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/xsd/ims_qtiasiv1p2p1.xsd">
+  <objectbank ident="gc6c662828280340f3af65ecbe21b09cb" canvas_item_bank="true">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>bank_title</fieldlabel>
+        <fieldentry>Energy (M3)</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>bank_type</fieldlabel>
+        <fieldentry>Course</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <item ident="0661c53267c43b8c557fc0ee9cad212d" title="Energy (ix)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>46d728d3-32b3-414d-9a3c-e5b52d527232,a2dc3ea0-5bf7-4f9d-aaa0-96fe85177de6,6477d497-8610-451b-af12-2251baeaf5f7,0030e98b-54d6-4112-9843-de9d5df9f8c6,24b5576d-d091-43bd-96c3-1be054aa35ac</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>0bac5a8fb4418b752322cc046386ac75</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Which of the following statements about energy &lt;span style="text-decoration: underline;"&gt;is correct&lt;/span&gt;?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="46d728d3-32b3-414d-9a3c-e5b52d527232">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Work is a type of energy similar to kinetic and potential energies.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="a2dc3ea0-5bf7-4f9d-aaa0-96fe85177de6">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Both rotational motion and translational motion contribute to a system's potential energy.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="6477d497-8610-451b-af12-2251baeaf5f7">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Potential energy is the energy due to a system's motion.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="0030e98b-54d6-4112-9843-de9d5df9f8c6">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Keeping everything else constant (e.g. speed, position, acceleration due to gravity, etc), doubling the mass of a system tends to quadruple the total energy of the system.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="24b5576d-d091-43bd-96c3-1be054aa35ac">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&lt;span style="font-family: Symbol;"&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;The total mechanical energy of a system is the total kinetic and potential energies of that system.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">24b5576d-d091-43bd-96c3-1be054aa35ac</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="424720cc66fbc81ccef8e8103a5b7afa" title="Energy (viii)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>46d728d3-32b3-414d-9a3c-e5b52d527232,a2dc3ea0-5bf7-4f9d-aaa0-96fe85177de6,6477d497-8610-451b-af12-2251baeaf5f7,0030e98b-54d6-4112-9843-de9d5df9f8c6,24b5576d-d091-43bd-96c3-1be054aa35ac</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>39b1da8e7349186dc4ab614ee6d6e3bd</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Which of the following statements about energy &lt;span style="text-decoration: underline;"&gt;is correct&lt;/span&gt;?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="46d728d3-32b3-414d-9a3c-e5b52d527232">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Work is a type of energy similar to kinetic and potential energies.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="a2dc3ea0-5bf7-4f9d-aaa0-96fe85177de6">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Both rotational motion and translational motion contribute to a system's potential energy.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="6477d497-8610-451b-af12-2251baeaf5f7">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Potential energy is the energy due to a system's motion.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="0030e98b-54d6-4112-9843-de9d5df9f8c6">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Keeping everything else constant (e.g. speed, position, acceleration due to gravity, etc), doubling the mass of a system tends to also double the total energy of the system.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="24b5576d-d091-43bd-96c3-1be054aa35ac">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in; "&gt;&lt;span style="font-family: Symbol;  "&gt;&lt;span&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;The total mechanical energy of a system is the total work, kinetic, and potential energies of that system.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">0030e98b-54d6-4112-9843-de9d5df9f8c6</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="7cef441750fe242974f62e282504ca67" title="Energy (vii)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>46d728d3-32b3-414d-9a3c-e5b52d527232,a2dc3ea0-5bf7-4f9d-aaa0-96fe85177de6,6477d497-8610-451b-af12-2251baeaf5f7,0030e98b-54d6-4112-9843-de9d5df9f8c6,24b5576d-d091-43bd-96c3-1be054aa35ac</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>427cb92c381f7bb4587f560ba386a6a7</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Which of the following statements about energy &lt;span style="text-decoration: underline;"&gt;is correct&lt;/span&gt;?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="46d728d3-32b3-414d-9a3c-e5b52d527232">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Work is a type of energy similar to kinetic and potential energies.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="a2dc3ea0-5bf7-4f9d-aaa0-96fe85177de6">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Both rotational motion and translational motion contribute to a system's kinetic energy.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="6477d497-8610-451b-af12-2251baeaf5f7">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Potential energy is the energy due to a system's motion.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="0030e98b-54d6-4112-9843-de9d5df9f8c6">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Keeping everything else constant (e.g. speed, position, acceleration due to gravity, etc), doubling the mass of a system tends to quadruple the total energy of the system.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="24b5576d-d091-43bd-96c3-1be054aa35ac">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in; "&gt;&lt;span style="font-family: Symbol;  "&gt;&lt;span&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;The total mechanical energy of a system is the total work, kinetic, and potential energies of that system.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">a2dc3ea0-5bf7-4f9d-aaa0-96fe85177de6</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="72512efa9c0fe1630e19cd375d702d50" title="Energy (vi)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>46d728d3-32b3-414d-9a3c-e5b52d527232,a2dc3ea0-5bf7-4f9d-aaa0-96fe85177de6,6477d497-8610-451b-af12-2251baeaf5f7,0030e98b-54d6-4112-9843-de9d5df9f8c6,24b5576d-d091-43bd-96c3-1be054aa35ac</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>dca44b4972a6ef455bc14572a57368f0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Which of the following statements about energy &lt;span style="text-decoration: underline;"&gt;is correct&lt;/span&gt;?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="46d728d3-32b3-414d-9a3c-e5b52d527232">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Work is the transfer of energy by a force.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="a2dc3ea0-5bf7-4f9d-aaa0-96fe85177de6">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Both rotational motion and translational motion contribute to a system's potential energy.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="6477d497-8610-451b-af12-2251baeaf5f7">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Potential energy is the energy due to a system's motion.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="0030e98b-54d6-4112-9843-de9d5df9f8c6">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Keeping everything else constant (e.g. speed, position, acceleration due to gravity, etc), doubling the mass of a system tends to quadruple the total energy of the system.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="24b5576d-d091-43bd-96c3-1be054aa35ac">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in; "&gt;&lt;span style="font-family: Symbol;  "&gt;&lt;span&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;The total mechanical energy of a system is the total work, kinetic, and potential energies of that system.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">46d728d3-32b3-414d-9a3c-e5b52d527232</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="fc27c32839c4f1a48f07fd6374fc48fe" title="Energy (v)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>46d728d3-32b3-414d-9a3c-e5b52d527232,805926f7-81e2-40c6-bc97-62f4097d76c0,a2dc3ea0-5bf7-4f9d-aaa0-96fe85177de6,6477d497-8610-451b-af12-2251baeaf5f7,0030e98b-54d6-4112-9843-de9d5df9f8c6</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>ab5dfa0527c620130d3623b1036fb9e9</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Which of the following statements about energy &lt;span style="text-decoration: underline;"&gt;is incorrect&lt;/span&gt;?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="46d728d3-32b3-414d-9a3c-e5b52d527232">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Work is the transfer of energy by a force.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="805926f7-81e2-40c6-bc97-62f4097d76c0">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;The total mechanical energy of a system is the total kinetic and potential energies of that system.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="a2dc3ea0-5bf7-4f9d-aaa0-96fe85177de6">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Both rotational motion and translational motion contribute to a system's kinetic energy.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="6477d497-8610-451b-af12-2251baeaf5f7">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Potential energy is the energy due to how a system is configured or organized.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="0030e98b-54d6-4112-9843-de9d5df9f8c6">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Keeping everything else constant (e.g. speed, position, acceleration due to gravity, etc), doubling the mass of a system tends to quadruple the total energy of the system.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">0030e98b-54d6-4112-9843-de9d5df9f8c6</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="e61b9872251fefedc08fcf48a4f21971" title="Energy (iv)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>46d728d3-32b3-414d-9a3c-e5b52d527232,805926f7-81e2-40c6-bc97-62f4097d76c0,a2dc3ea0-5bf7-4f9d-aaa0-96fe85177de6,6477d497-8610-451b-af12-2251baeaf5f7,0030e98b-54d6-4112-9843-de9d5df9f8c6</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>e2b7d362d551bafb3cb3638e93f05840</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Which of the following statements about energy &lt;span style="text-decoration: underline;"&gt;is incorrect&lt;/span&gt;?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="46d728d3-32b3-414d-9a3c-e5b52d527232">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Work is the transfer of energy by a force.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="805926f7-81e2-40c6-bc97-62f4097d76c0">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;The total mechanical energy of a system is the total kinetic and potential energies of that system.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="a2dc3ea0-5bf7-4f9d-aaa0-96fe85177de6">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Both rotational motion and translational motion contribute to a system's kinetic energy.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="6477d497-8610-451b-af12-2251baeaf5f7">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Potential energy is the energy due to a system's motion.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="0030e98b-54d6-4112-9843-de9d5df9f8c6">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Keeping everything else constant (e.g. speed, position, acceleration due to gravity, etc), doubling the mass of a system tends to also double to total energy of the system.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">6477d497-8610-451b-af12-2251baeaf5f7</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="fa86e0e6d74a9e1476a7901092a33400" title="Energy (iii)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>46d728d3-32b3-414d-9a3c-e5b52d527232,805926f7-81e2-40c6-bc97-62f4097d76c0,a2dc3ea0-5bf7-4f9d-aaa0-96fe85177de6,6477d497-8610-451b-af12-2251baeaf5f7,0030e98b-54d6-4112-9843-de9d5df9f8c6</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>1d66e3979240ef6ec2163d1bedf126d8</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Which of the following statements about energy &lt;span style="text-decoration: underline;"&gt;is incorrect&lt;/span&gt;?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="46d728d3-32b3-414d-9a3c-e5b52d527232">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Work is the transfer of energy by a force.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="805926f7-81e2-40c6-bc97-62f4097d76c0">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;The total mechanical energy of a system is the total kinetic and potential energies of that system.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="a2dc3ea0-5bf7-4f9d-aaa0-96fe85177de6">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Both rotational motion and translational motion contribute to a system's potential energy.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="6477d497-8610-451b-af12-2251baeaf5f7">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Potential energy is the energy due to how a system is configured or organized.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="0030e98b-54d6-4112-9843-de9d5df9f8c6">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Keeping everything else constant (e.g. speed, position, acceleration due to gravity, etc), doubling the mass of a system tends to also double to total energy of the system.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">a2dc3ea0-5bf7-4f9d-aaa0-96fe85177de6</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="5a005d841b5fef16453a2075d58ed5db" title="Energy (ii)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>46d728d3-32b3-414d-9a3c-e5b52d527232,805926f7-81e2-40c6-bc97-62f4097d76c0,a2dc3ea0-5bf7-4f9d-aaa0-96fe85177de6,6477d497-8610-451b-af12-2251baeaf5f7,0030e98b-54d6-4112-9843-de9d5df9f8c6</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>abf4d33769b1983625d32b3dc399199b</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Which of the following statements about energy &lt;span style="text-decoration: underline;"&gt;is incorrect&lt;/span&gt;?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="46d728d3-32b3-414d-9a3c-e5b52d527232">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Work is the transfer of energy by a force.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="805926f7-81e2-40c6-bc97-62f4097d76c0">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;The total mechanical energy of a system is the total work, kinetic, and potential energies of that system.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="a2dc3ea0-5bf7-4f9d-aaa0-96fe85177de6">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Both rotational motion and translational motion contribute to a system's kinetic energy.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="6477d497-8610-451b-af12-2251baeaf5f7">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Potential energy is the energy due to how a system is configured or organized.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="0030e98b-54d6-4112-9843-de9d5df9f8c6">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Keeping everything else constant (e.g. speed, position, acceleration due to gravity, etc), doubling the mass of a system tends to also double to total energy of the system.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">805926f7-81e2-40c6-bc97-62f4097d76c0</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="c864d789fe9356f9b848d41dd6f984e4" title="Energy (i)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>46d728d3-32b3-414d-9a3c-e5b52d527232,805926f7-81e2-40c6-bc97-62f4097d76c0,a2dc3ea0-5bf7-4f9d-aaa0-96fe85177de6,6477d497-8610-451b-af12-2251baeaf5f7,0030e98b-54d6-4112-9843-de9d5df9f8c6</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>3491ce4a3bc4bdcbea729169d85961f8</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Which of the following statements about energy &lt;span style="text-decoration: underline;"&gt;is incorrect&lt;/span&gt;?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="46d728d3-32b3-414d-9a3c-e5b52d527232">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Work is a type of energy similar to kinetic and potential energies.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="805926f7-81e2-40c6-bc97-62f4097d76c0">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;The total mechanical energy of a system is the total kinetic and potential energies of that system.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="a2dc3ea0-5bf7-4f9d-aaa0-96fe85177de6">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Both rotational motion and translational motion contribute to a system's kinetic energy.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="6477d497-8610-451b-af12-2251baeaf5f7">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Potential energy is the energy due to how a system is configured or organized.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="0030e98b-54d6-4112-9843-de9d5df9f8c6">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Keeping everything else constant (e.g. speed, position, acceleration due to gravity, etc), doubling the mass of a system tends to also double to total energy of the system.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">46d728d3-32b3-414d-9a3c-e5b52d527232</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+  </objectbank>
+</questestinterop>

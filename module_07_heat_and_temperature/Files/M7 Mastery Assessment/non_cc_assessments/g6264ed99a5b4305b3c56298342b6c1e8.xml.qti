@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/xsd/ims_qtiasiv1p2p1.xsd">
+  <objectbank ident="g6264ed99a5b4305b3c56298342b6c1e8" canvas_item_bank="true">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>bank_title</fieldlabel>
+        <fieldentry>Heat Engine</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>bank_type</fieldlabel>
+        <fieldentry>Course</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <item ident="6e646bd37f81924e7bf329d442890898" title="Heat Engine (iii)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>956e1fc7-b7ca-4caf-bf1b-8f256359b71b,b2da9acd-9286-4168-8dca-974d29b77a4a,3c395750-def0-4e1e-a534-284e91685677</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>feaa8961b077a2d34e8ce982fb09aa07</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;A heat engine, that operates in a cycle, takes in 560 kilojoules of heat from a hot reservoir and does 210 kilojoules of work. Which of the following statements about the heat engine is correct?&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="956e1fc7-b7ca-4caf-bf1b-8f256359b71b">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;This heat engine is 267% efficient.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="b2da9acd-9286-4168-8dca-974d29b77a4a">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;The total output work of this heat engine is 560 kJ.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="3c395750-def0-4e1e-a534-284e91685677">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;There is 350 kJ of waste heat that is dumped into the cold reservoir.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">3c395750-def0-4e1e-a534-284e91685677</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="a16d407a5a5925014ec055ab9a81141c" title="Heat Engine (i)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>956e1fc7-b7ca-4caf-bf1b-8f256359b71b,b2da9acd-9286-4168-8dca-974d29b77a4a,3c395750-def0-4e1e-a534-284e91685677</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>ee4ea29d44bdca2a6a1ebeabee651052</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;A heat engine, that operates in a cycle, takes in 350 kilojoules of heat from a hot reservoir and does 150 kilojoules of work. Which of the following statements about the heat engine is correct?&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="956e1fc7-b7ca-4caf-bf1b-8f256359b71b">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;This heat engine is 233% efficient.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="b2da9acd-9286-4168-8dca-974d29b77a4a">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;The total output energy of this heat engine is 350 kJ.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="3c395750-def0-4e1e-a534-284e91685677">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;There is 150 kJ of waste heat that is dumped into the cold reservoir.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">b2da9acd-9286-4168-8dca-974d29b77a4a</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="1917f32cc937349caa0d045e3a9cfd8d" title="Heat Engine (ii)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>956e1fc7-b7ca-4caf-bf1b-8f256359b71b,b2da9acd-9286-4168-8dca-974d29b77a4a,3c395750-def0-4e1e-a534-284e91685677</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>522fff96a2a4bcc036a8573e224831f6</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p class="MsoNormal"&gt;&lt;span style="font-size: 12.0pt; line-height: 107%;"&gt;A heat engine, that operates in a cycle, takes in 430 kilojoules of heat from a hot reservoir and does 150 kilojoules of work. Which of the following statements about the heat engine is correct?&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="956e1fc7-b7ca-4caf-bf1b-8f256359b71b">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;This heat engine is 35% efficient.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="b2da9acd-9286-4168-8dca-974d29b77a4a">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;The total output energy of this heat engine is 150 kJ.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="3c395750-def0-4e1e-a534-284e91685677">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;There is 150 kJ of waste heat that is dumped into the cold reservoir.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">956e1fc7-b7ca-4caf-bf1b-8f256359b71b</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+  </objectbank>
+</questestinterop>

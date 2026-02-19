@@ -1,0 +1,3240 @@
+<?xml version="1.0"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/xsd/ims_qtiasiv1p2p1.xsd">
+  <objectbank ident="g9c43fca393b1c920a5d61769814c43aa" canvas_item_bank="true">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>bank_title</fieldlabel>
+        <fieldentry>PHYS 1315 M4 Change in a system's energy</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>bank_type</fieldlabel>
+        <fieldentry>Course</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <item ident="e3b474e827e526b6cecdbfa0fb31e77c" title="Change in a system's energy (iii)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>calculated_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>3aa961b991645e2c1356000951b2c91d</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;`Q` joules of heat leaves a system, and a force external to the system does `W` joules of work on the system. What is the change in energy, in joules, of the system?&lt;/p&gt;</mattext>
+        </material>
+        <response_str ident="response1" rcardinality="Single">
+          <render_fib fibtype="Decimal">
+            <response_label ident="answer1"/>
+          </render_fib>
+        </response_str>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition title="correct">
+          <conditionvar>
+            <other/>
+          </conditionvar>
+          <setvar varname="SCORE" action="Set">100</setvar>
+        </respcondition>
+        <respcondition title="incorrect">
+          <conditionvar>
+            <not>
+              <other/>
+            </not>
+          </conditionvar>
+          <setvar varname="SCORE" action="Set">0</setvar>
+        </respcondition>
+      </resprocessing>
+      <itemproc_extension>
+        <calculated>
+          <answer_tolerance margin_type="absolute">0</answer_tolerance>
+          <formulas decimal_places="" scientific_notation="false">
+            <formula>-Q+W</formula>
+          </formulas>
+          <vars>
+            <var name="Q" scale="0">
+              <min>100</min>
+              <max>900</max>
+            </var>
+            <var name="W" scale="0">
+              <min>100</min>
+              <max>900</max>
+            </var>
+          </vars>
+          <var_sets>
+            <var_set ident="9adc0c47060fab6b8436b46d8aebf1d0">
+              <var name="Q">646</var>
+              <var name="W">263</var>
+              <answer>-383</answer>
+            </var_set>
+            <var_set ident="a6d6bc9bd4cd332201acca2217adee16">
+              <var name="Q">728</var>
+              <var name="W">559</var>
+              <answer>-169</answer>
+            </var_set>
+            <var_set ident="2d3f4eee58fc7871fcd27a92ac157406">
+              <var name="Q">316</var>
+              <var name="W">318</var>
+              <answer>2</answer>
+            </var_set>
+            <var_set ident="3987ddf2abc85bea63e38bd188632953">
+              <var name="Q">782</var>
+              <var name="W">744</var>
+              <answer>-38</answer>
+            </var_set>
+            <var_set ident="6d3d6b4bc8d68cdcc69d193ce3710396">
+              <var name="Q">569</var>
+              <var name="W">500</var>
+              <answer>-69</answer>
+            </var_set>
+            <var_set ident="99c685018b905081f1395a8d7d9accd6">
+              <var name="Q">497</var>
+              <var name="W">827</var>
+              <answer>330</answer>
+            </var_set>
+            <var_set ident="0205fe61e40d5831d830d03e51a7edfb">
+              <var name="Q">785</var>
+              <var name="W">575</var>
+              <answer>-210</answer>
+            </var_set>
+            <var_set ident="f9e7a2b5fbc841d2a267c1fa9546c457">
+              <var name="Q">817</var>
+              <var name="W">468</var>
+              <answer>-349</answer>
+            </var_set>
+            <var_set ident="207d759eef0c06a90f04b3e8fd51f601">
+              <var name="Q">335</var>
+              <var name="W">538</var>
+              <answer>203</answer>
+            </var_set>
+            <var_set ident="64f42e060b7beb831f64a2d7a07f1ea8">
+              <var name="Q">503</var>
+              <var name="W">363</var>
+              <answer>-140</answer>
+            </var_set>
+            <var_set ident="5d82c0a1871f5454aa5ac15698cda3c1">
+              <var name="Q">559</var>
+              <var name="W">873</var>
+              <answer>314</answer>
+            </var_set>
+            <var_set ident="c50fec6b8bc18ab0a00f6d61c1305e45">
+              <var name="Q">492</var>
+              <var name="W">881</var>
+              <answer>389</answer>
+            </var_set>
+            <var_set ident="34fec4ececa18944d0add48ea6173b39">
+              <var name="Q">723</var>
+              <var name="W">238</var>
+              <answer>-485</answer>
+            </var_set>
+            <var_set ident="0e4971fa58c83ae7565c979274acb412">
+              <var name="Q">710</var>
+              <var name="W">393</var>
+              <answer>-317</answer>
+            </var_set>
+            <var_set ident="4a4f3bfd21912b9507fedb186a26bb6a">
+              <var name="Q">230</var>
+              <var name="W">562</var>
+              <answer>332</answer>
+            </var_set>
+            <var_set ident="b0ab2669e75567205e9ad4fdb8c76182">
+              <var name="Q">550</var>
+              <var name="W">550</var>
+              <answer>0</answer>
+            </var_set>
+            <var_set ident="512ae934a7bc7845a822047fc99aec12">
+              <var name="Q">467</var>
+              <var name="W">416</var>
+              <answer>-51</answer>
+            </var_set>
+            <var_set ident="531fd4d488418f4a6568a36d33bc8f36">
+              <var name="Q">729</var>
+              <var name="W">696</var>
+              <answer>-33</answer>
+            </var_set>
+            <var_set ident="b50e6a52513ea2cd164e21a5f6ba4eda">
+              <var name="Q">127</var>
+              <var name="W">675</var>
+              <answer>548</answer>
+            </var_set>
+            <var_set ident="7ed1cab76b12331eda6c6183eb49712d">
+              <var name="Q">411</var>
+              <var name="W">516</var>
+              <answer>105</answer>
+            </var_set>
+            <var_set ident="f32799064bd68a88b281c4f8f28165c6">
+              <var name="Q">812</var>
+              <var name="W">180</var>
+              <answer>-632</answer>
+            </var_set>
+            <var_set ident="cdf00c7be21a07cd0177e8de126afefb">
+              <var name="Q">734</var>
+              <var name="W">252</var>
+              <answer>-482</answer>
+            </var_set>
+            <var_set ident="0cdec667663a4caa84aa3dbda1f5846e">
+              <var name="Q">501</var>
+              <var name="W">379</var>
+              <answer>-122</answer>
+            </var_set>
+            <var_set ident="2a010614ab79b0582dc12a4771d97832">
+              <var name="Q">425</var>
+              <var name="W">556</var>
+              <answer>131</answer>
+            </var_set>
+            <var_set ident="dc2f8cfcc4c1ab392b7cbbafb21c1a0b">
+              <var name="Q">665</var>
+              <var name="W">274</var>
+              <answer>-391</answer>
+            </var_set>
+            <var_set ident="5087fbff01421d575ce68ddceb099054">
+              <var name="Q">470</var>
+              <var name="W">577</var>
+              <answer>107</answer>
+            </var_set>
+            <var_set ident="f29333747cfa903c5eec335f2588b565">
+              <var name="Q">694</var>
+              <var name="W">295</var>
+              <answer>-399</answer>
+            </var_set>
+            <var_set ident="45de0944228cd48b9d466f365f204308">
+              <var name="Q">825</var>
+              <var name="W">510</var>
+              <answer>-315</answer>
+            </var_set>
+            <var_set ident="82a25f479d20a3bcc17cc1731a98cdc0">
+              <var name="Q">810</var>
+              <var name="W">757</var>
+              <answer>-53</answer>
+            </var_set>
+            <var_set ident="5a30b67f21dc1810cfc4d8a00857b189">
+              <var name="Q">445</var>
+              <var name="W">262</var>
+              <answer>-183</answer>
+            </var_set>
+            <var_set ident="ad7bd2e686e9bc701f58e96258a8da2c">
+              <var name="Q">312</var>
+              <var name="W">784</var>
+              <answer>472</answer>
+            </var_set>
+            <var_set ident="cc54d8fc7c308cd5b6ea15ff2855aeb2">
+              <var name="Q">528</var>
+              <var name="W">335</var>
+              <answer>-193</answer>
+            </var_set>
+            <var_set ident="547222c27f13ab949f844531911c1565">
+              <var name="Q">288</var>
+              <var name="W">543</var>
+              <answer>255</answer>
+            </var_set>
+            <var_set ident="fce84bdfc0831853d87498381235469a">
+              <var name="Q">147</var>
+              <var name="W">231</var>
+              <answer>84</answer>
+            </var_set>
+            <var_set ident="875cd92b8b0e8394a6f4e17a35884244">
+              <var name="Q">819</var>
+              <var name="W">103</var>
+              <answer>-716</answer>
+            </var_set>
+            <var_set ident="020454be4adeea018d5d82d8a549c8d8">
+              <var name="Q">482</var>
+              <var name="W">876</var>
+              <answer>394</answer>
+            </var_set>
+            <var_set ident="94989c348cffb4ed1302a3e2a6cee2e4">
+              <var name="Q">759</var>
+              <var name="W">879</var>
+              <answer>120</answer>
+            </var_set>
+            <var_set ident="163b678959705a0f246332af3c63d112">
+              <var name="Q">493</var>
+              <var name="W">384</var>
+              <answer>-109</answer>
+            </var_set>
+            <var_set ident="170819dd330bdb63b9f07ad328e24ed2">
+              <var name="Q">216</var>
+              <var name="W">710</var>
+              <answer>494</answer>
+            </var_set>
+            <var_set ident="60f047c2e7088c7c46ee71425649c90e">
+              <var name="Q">840</var>
+              <var name="W">177</var>
+              <answer>-663</answer>
+            </var_set>
+            <var_set ident="b85644fa78fd209977e07b0b662802dd">
+              <var name="Q">149</var>
+              <var name="W">822</var>
+              <answer>673</answer>
+            </var_set>
+            <var_set ident="8522110de6bdc7ef5ab43c13fce7d122">
+              <var name="Q">766</var>
+              <var name="W">455</var>
+              <answer>-311</answer>
+            </var_set>
+            <var_set ident="6328e88f590a70def5175c7e4982639a">
+              <var name="Q">360</var>
+              <var name="W">797</var>
+              <answer>437</answer>
+            </var_set>
+            <var_set ident="b6b52e50ddd84e506f19234d6abf503a">
+              <var name="Q">329</var>
+              <var name="W">493</var>
+              <answer>164</answer>
+            </var_set>
+            <var_set ident="c6fca8af6ccaa2b88bc6e15d373751bd">
+              <var name="Q">185</var>
+              <var name="W">256</var>
+              <answer>71</answer>
+            </var_set>
+            <var_set ident="82ea654659434ff600145fcb8342eb30">
+              <var name="Q">474</var>
+              <var name="W">269</var>
+              <answer>-205</answer>
+            </var_set>
+            <var_set ident="1605528e306c30c67a5c393189173b20">
+              <var name="Q">649</var>
+              <var name="W">215</var>
+              <answer>-434</answer>
+            </var_set>
+            <var_set ident="99b7bc7cfe46abf0055b7a21b4ee8ad0">
+              <var name="Q">242</var>
+              <var name="W">562</var>
+              <answer>320</answer>
+            </var_set>
+            <var_set ident="1500b899a372503f608065e434cec0db">
+              <var name="Q">469</var>
+              <var name="W">725</var>
+              <answer>256</answer>
+            </var_set>
+            <var_set ident="33c0ce36eaa2a86bb4b52e5b004bf96a">
+              <var name="Q">128</var>
+              <var name="W">617</var>
+              <answer>489</answer>
+            </var_set>
+            <var_set ident="d2301780d0ad0c4b4b3a4991023cd829">
+              <var name="Q">292</var>
+              <var name="W">154</var>
+              <answer>-138</answer>
+            </var_set>
+            <var_set ident="ebc18af2fe76abc16c460a8dcb623fe7">
+              <var name="Q">862</var>
+              <var name="W">892</var>
+              <answer>30</answer>
+            </var_set>
+            <var_set ident="28e8f67cbf843f4ecd8d9cb7e34cd0ba">
+              <var name="Q">597</var>
+              <var name="W">118</var>
+              <answer>-479</answer>
+            </var_set>
+            <var_set ident="d0b1de3edd578f1983d36b3029676063">
+              <var name="Q">769</var>
+              <var name="W">725</var>
+              <answer>-44</answer>
+            </var_set>
+            <var_set ident="bf9037deffb2af9b480d32fce0ed0bf4">
+              <var name="Q">516</var>
+              <var name="W">146</var>
+              <answer>-370</answer>
+            </var_set>
+            <var_set ident="5754117268d7fbf654e03ff05c02f4d9">
+              <var name="Q">481</var>
+              <var name="W">214</var>
+              <answer>-267</answer>
+            </var_set>
+            <var_set ident="9e9664ae8948dcd96deab68247a4461d">
+              <var name="Q">327</var>
+              <var name="W">198</var>
+              <answer>-129</answer>
+            </var_set>
+            <var_set ident="7dc5cc034df166be8f22de3efb01b2f2">
+              <var name="Q">765</var>
+              <var name="W">717</var>
+              <answer>-48</answer>
+            </var_set>
+            <var_set ident="836c9d98a20732ea8b862e27fde50e56">
+              <var name="Q">733</var>
+              <var name="W">579</var>
+              <answer>-154</answer>
+            </var_set>
+            <var_set ident="b815af8a5baeb87b7b3974cda3c244ca">
+              <var name="Q">654</var>
+              <var name="W">233</var>
+              <answer>-421</answer>
+            </var_set>
+            <var_set ident="66539a6b08af6512504b6cc9b8d87ad9">
+              <var name="Q">779</var>
+              <var name="W">325</var>
+              <answer>-454</answer>
+            </var_set>
+            <var_set ident="6a1ed6ae091805edd2d5d926d48ff7ef">
+              <var name="Q">518</var>
+              <var name="W">214</var>
+              <answer>-304</answer>
+            </var_set>
+            <var_set ident="d5ed835bcb1d06bc16ed8c53f8dd9e14">
+              <var name="Q">364</var>
+              <var name="W">779</var>
+              <answer>415</answer>
+            </var_set>
+            <var_set ident="e812a0de63d6b6a379b81fc5255c47f0">
+              <var name="Q">415</var>
+              <var name="W">370</var>
+              <answer>-45</answer>
+            </var_set>
+            <var_set ident="66179667a1e07fa1aa9feb8fda79a3e0">
+              <var name="Q">511</var>
+              <var name="W">178</var>
+              <answer>-333</answer>
+            </var_set>
+            <var_set ident="0e9941b2a291eaad9a7468f76883323d">
+              <var name="Q">736</var>
+              <var name="W">558</var>
+              <answer>-178</answer>
+            </var_set>
+            <var_set ident="949e45a1ce80e2ab807a262b6695f4da">
+              <var name="Q">668</var>
+              <var name="W">564</var>
+              <answer>-104</answer>
+            </var_set>
+            <var_set ident="4b7455c01af2b0972f2191852202e891">
+              <var name="Q">812</var>
+              <var name="W">166</var>
+              <answer>-646</answer>
+            </var_set>
+            <var_set ident="17a8cae421d577f65b36c0ce8f200089">
+              <var name="Q">149</var>
+              <var name="W">474</var>
+              <answer>325</answer>
+            </var_set>
+            <var_set ident="2ccdfadf2f8f10ad6b41e009a64a3b86">
+              <var name="Q">699</var>
+              <var name="W">759</var>
+              <answer>60</answer>
+            </var_set>
+            <var_set ident="90ed87de7181fc8b8fba1d04bbf1039d">
+              <var name="Q">530</var>
+              <var name="W">845</var>
+              <answer>315</answer>
+            </var_set>
+            <var_set ident="5ffc0fae849146a47f4ee41add3f316c">
+              <var name="Q">363</var>
+              <var name="W">566</var>
+              <answer>203</answer>
+            </var_set>
+            <var_set ident="5c558939218e1e9a0d5a93e402085914">
+              <var name="Q">616</var>
+              <var name="W">103</var>
+              <answer>-513</answer>
+            </var_set>
+            <var_set ident="b240634c9c5ef6f7a624f5c4b030ab65">
+              <var name="Q">124</var>
+              <var name="W">460</var>
+              <answer>336</answer>
+            </var_set>
+            <var_set ident="00a6d113aecc1800b4e549c43bc14012">
+              <var name="Q">541</var>
+              <var name="W">762</var>
+              <answer>221</answer>
+            </var_set>
+            <var_set ident="d10b566460e7b49b73e4e89f4fd58dcd">
+              <var name="Q">522</var>
+              <var name="W">276</var>
+              <answer>-246</answer>
+            </var_set>
+            <var_set ident="1b77162f41bcb9b1c862982fc850cd48">
+              <var name="Q">274</var>
+              <var name="W">327</var>
+              <answer>53</answer>
+            </var_set>
+            <var_set ident="4ffda09c521bab5ba2327c83bd7dd177">
+              <var name="Q">560</var>
+              <var name="W">761</var>
+              <answer>201</answer>
+            </var_set>
+            <var_set ident="f26242aef9f6da0741c121d4e012220d">
+              <var name="Q">803</var>
+              <var name="W">367</var>
+              <answer>-436</answer>
+            </var_set>
+            <var_set ident="0875983b89dbe80dd6126689fe24ed22">
+              <var name="Q">381</var>
+              <var name="W">351</var>
+              <answer>-30</answer>
+            </var_set>
+            <var_set ident="4987f762a19e936282435f5a3c5a906d">
+              <var name="Q">202</var>
+              <var name="W">572</var>
+              <answer>370</answer>
+            </var_set>
+            <var_set ident="faac22fed1954922ae43b0059edd39db">
+              <var name="Q">730</var>
+              <var name="W">244</var>
+              <answer>-486</answer>
+            </var_set>
+            <var_set ident="8f2bfb23125c2c5d72368d3ef7c97442">
+              <var name="Q">328</var>
+              <var name="W">592</var>
+              <answer>264</answer>
+            </var_set>
+            <var_set ident="a2d464bb5bede0004648fe4ba286f8d5">
+              <var name="Q">832</var>
+              <var name="W">466</var>
+              <answer>-366</answer>
+            </var_set>
+            <var_set ident="882c8c31bbc2044d5c5344992452e033">
+              <var name="Q">437</var>
+              <var name="W">613</var>
+              <answer>176</answer>
+            </var_set>
+            <var_set ident="45dd45d7beb1782259e880ead7ab70ea">
+              <var name="Q">438</var>
+              <var name="W">210</var>
+              <answer>-228</answer>
+            </var_set>
+            <var_set ident="6d0f262c83f342c79afeb1290441be30">
+              <var name="Q">241</var>
+              <var name="W">134</var>
+              <answer>-107</answer>
+            </var_set>
+            <var_set ident="3754f8039f85cd077313858913996a26">
+              <var name="Q">415</var>
+              <var name="W">352</var>
+              <answer>-63</answer>
+            </var_set>
+            <var_set ident="b5315725d63fe5a1b8f20dffde58f61f">
+              <var name="Q">620</var>
+              <var name="W">248</var>
+              <answer>-372</answer>
+            </var_set>
+            <var_set ident="bc1029973828aeac44bfd2a244cb3318">
+              <var name="Q">486</var>
+              <var name="W">178</var>
+              <answer>-308</answer>
+            </var_set>
+            <var_set ident="a2588651d466fd0a2ae99660f3572549">
+              <var name="Q">458</var>
+              <var name="W">130</var>
+              <answer>-328</answer>
+            </var_set>
+            <var_set ident="235ba77caae724110df8abef1a871064">
+              <var name="Q">691</var>
+              <var name="W">603</var>
+              <answer>-88</answer>
+            </var_set>
+            <var_set ident="903e836ec6e8d6f6001d1dea1056caad">
+              <var name="Q">144</var>
+              <var name="W">355</var>
+              <answer>211</answer>
+            </var_set>
+            <var_set ident="70c3e288e7d2a50cd7be2f1dcc77d037">
+              <var name="Q">645</var>
+              <var name="W">502</var>
+              <answer>-143</answer>
+            </var_set>
+            <var_set ident="3359c4067aada4a98942195e46d6c8a1">
+              <var name="Q">423</var>
+              <var name="W">206</var>
+              <answer>-217</answer>
+            </var_set>
+            <var_set ident="6609be8c9a70e17b0d8af58dc92b03f9">
+              <var name="Q">747</var>
+              <var name="W">553</var>
+              <answer>-194</answer>
+            </var_set>
+            <var_set ident="0495f930fd3ab743ab181105820332e3">
+              <var name="Q">209</var>
+              <var name="W">659</var>
+              <answer>450</answer>
+            </var_set>
+            <var_set ident="af18e4aa824311280fcf098f8b7131a7">
+              <var name="Q">331</var>
+              <var name="W">137</var>
+              <answer>-194</answer>
+            </var_set>
+            <var_set ident="4a8621863b24b09c330a41fcd5253a7e">
+              <var name="Q">115</var>
+              <var name="W">328</var>
+              <answer>213</answer>
+            </var_set>
+            <var_set ident="ed874379937fcc0c3af82671e108fa98">
+              <var name="Q">692</var>
+              <var name="W">210</var>
+              <answer>-482</answer>
+            </var_set>
+            <var_set ident="efa00dc3c67896d2a957593c6cb27cc4">
+              <var name="Q">352</var>
+              <var name="W">854</var>
+              <answer>502</answer>
+            </var_set>
+            <var_set ident="a626f9adab84896537027e520ce34925">
+              <var name="Q">220</var>
+              <var name="W">360</var>
+              <answer>140</answer>
+            </var_set>
+            <var_set ident="b5db51619b72a0878751e44a57418247">
+              <var name="Q">418</var>
+              <var name="W">203</var>
+              <answer>-215</answer>
+            </var_set>
+            <var_set ident="dd8c157ab837a830a3bf57283f7529e2">
+              <var name="Q">402</var>
+              <var name="W">410</var>
+              <answer>8</answer>
+            </var_set>
+            <var_set ident="14aa3e4afa2d479c2dfa4716084880d9">
+              <var name="Q">145</var>
+              <var name="W">529</var>
+              <answer>384</answer>
+            </var_set>
+            <var_set ident="2b6a90d222ed2a72ab3f661d970d5994">
+              <var name="Q">683</var>
+              <var name="W">488</var>
+              <answer>-195</answer>
+            </var_set>
+            <var_set ident="dba3b020118c99e58624bbc550f14756">
+              <var name="Q">530</var>
+              <var name="W">651</var>
+              <answer>121</answer>
+            </var_set>
+            <var_set ident="f5a5372982072c06c35fa8f3e0f90859">
+              <var name="Q">528</var>
+              <var name="W">602</var>
+              <answer>74</answer>
+            </var_set>
+            <var_set ident="6368e79f6841f50db29c71d7f3c70e50">
+              <var name="Q">888</var>
+              <var name="W">856</var>
+              <answer>-32</answer>
+            </var_set>
+            <var_set ident="8da4b7a73ba06d2359052c543b06c8a0">
+              <var name="Q">502</var>
+              <var name="W">266</var>
+              <answer>-236</answer>
+            </var_set>
+            <var_set ident="4667c63eb294662003fd032a3649bc0d">
+              <var name="Q">630</var>
+              <var name="W">132</var>
+              <answer>-498</answer>
+            </var_set>
+            <var_set ident="a1110641300c152ea5d9bc1fb592bab7">
+              <var name="Q">382</var>
+              <var name="W">305</var>
+              <answer>-77</answer>
+            </var_set>
+            <var_set ident="35c8dd6a6bd8b78e1ca911163f99c612">
+              <var name="Q">619</var>
+              <var name="W">476</var>
+              <answer>-143</answer>
+            </var_set>
+            <var_set ident="1fac4403d32f31a91f30c7ace560529e">
+              <var name="Q">754</var>
+              <var name="W">886</var>
+              <answer>132</answer>
+            </var_set>
+            <var_set ident="60b644df7585bc40d145e748e10fe731">
+              <var name="Q">432</var>
+              <var name="W">719</var>
+              <answer>287</answer>
+            </var_set>
+            <var_set ident="382ebb72b43a9d9cf9550a7a12b94db5">
+              <var name="Q">628</var>
+              <var name="W">266</var>
+              <answer>-362</answer>
+            </var_set>
+            <var_set ident="098b0176a3d799f6e64715d687ea05f1">
+              <var name="Q">119</var>
+              <var name="W">860</var>
+              <answer>741</answer>
+            </var_set>
+            <var_set ident="0175c759ef5c2a744ef969153d11a803">
+              <var name="Q">883</var>
+              <var name="W">551</var>
+              <answer>-332</answer>
+            </var_set>
+            <var_set ident="11880ec4054589395181af67c49a8be3">
+              <var name="Q">417</var>
+              <var name="W">108</var>
+              <answer>-309</answer>
+            </var_set>
+            <var_set ident="30a0defd83c93d0a2dad60015cc9bd05">
+              <var name="Q">335</var>
+              <var name="W">780</var>
+              <answer>445</answer>
+            </var_set>
+            <var_set ident="098042f85a1d3b225baf4a787caf34d9">
+              <var name="Q">350</var>
+              <var name="W">173</var>
+              <answer>-177</answer>
+            </var_set>
+            <var_set ident="f479e74333189681869c8b9c0661e3f0">
+              <var name="Q">502</var>
+              <var name="W">899</var>
+              <answer>397</answer>
+            </var_set>
+            <var_set ident="1c79890d6755c314ef3bfbb5a80c967b">
+              <var name="Q">335</var>
+              <var name="W">415</var>
+              <answer>80</answer>
+            </var_set>
+            <var_set ident="3acfa0e4172f46030a44d715f3f1062b">
+              <var name="Q">242</var>
+              <var name="W">107</var>
+              <answer>-135</answer>
+            </var_set>
+            <var_set ident="fe3a3e206afc370e6d94cd2e236e1cfc">
+              <var name="Q">863</var>
+              <var name="W">360</var>
+              <answer>-503</answer>
+            </var_set>
+            <var_set ident="c2f4dce960f59096b65274176c814837">
+              <var name="Q">835</var>
+              <var name="W">263</var>
+              <answer>-572</answer>
+            </var_set>
+            <var_set ident="a5cf20d6f1e17ec695d65c1b46255499">
+              <var name="Q">884</var>
+              <var name="W">545</var>
+              <answer>-339</answer>
+            </var_set>
+            <var_set ident="47cd1b6924ab22a1ce1d6e82774bfb91">
+              <var name="Q">232</var>
+              <var name="W">669</var>
+              <answer>437</answer>
+            </var_set>
+            <var_set ident="3c75f511d23cffd731b7c9a4db057482">
+              <var name="Q">125</var>
+              <var name="W">277</var>
+              <answer>152</answer>
+            </var_set>
+            <var_set ident="f6ce710701836274ddae662b90215f54">
+              <var name="Q">448</var>
+              <var name="W">377</var>
+              <answer>-71</answer>
+            </var_set>
+            <var_set ident="c18a1da078bc1c4e229f32b9c4446ed3">
+              <var name="Q">692</var>
+              <var name="W">243</var>
+              <answer>-449</answer>
+            </var_set>
+            <var_set ident="f01a2d27ae5f7579507c15edd7b7bb80">
+              <var name="Q">334</var>
+              <var name="W">871</var>
+              <answer>537</answer>
+            </var_set>
+            <var_set ident="1e0cc3a3f63444f222b2a55281dd7638">
+              <var name="Q">170</var>
+              <var name="W">385</var>
+              <answer>215</answer>
+            </var_set>
+            <var_set ident="2e957e6e8c3c066cdccb40bc402e7d79">
+              <var name="Q">651</var>
+              <var name="W">667</var>
+              <answer>16</answer>
+            </var_set>
+            <var_set ident="5ff27a1af6afc20ae43760e2f5286417">
+              <var name="Q">262</var>
+              <var name="W">222</var>
+              <answer>-40</answer>
+            </var_set>
+            <var_set ident="8dad5b930bae816c4a8a4b8f421da3a5">
+              <var name="Q">835</var>
+              <var name="W">465</var>
+              <answer>-370</answer>
+            </var_set>
+            <var_set ident="4f382085acca1b3dafed04d46b81aaba">
+              <var name="Q">188</var>
+              <var name="W">249</var>
+              <answer>61</answer>
+            </var_set>
+            <var_set ident="962775d8e885cda58e6f3cc8a4a14262">
+              <var name="Q">393</var>
+              <var name="W">756</var>
+              <answer>363</answer>
+            </var_set>
+            <var_set ident="98dea62db6f414b99c5ef725594ae5b9">
+              <var name="Q">246</var>
+              <var name="W">873</var>
+              <answer>627</answer>
+            </var_set>
+            <var_set ident="88dcddd46df1075db2bafce160b71cf9">
+              <var name="Q">203</var>
+              <var name="W">194</var>
+              <answer>-9</answer>
+            </var_set>
+            <var_set ident="93500a06b0f2b29a3c3913ade0481d57">
+              <var name="Q">721</var>
+              <var name="W">753</var>
+              <answer>32</answer>
+            </var_set>
+            <var_set ident="0c9ea932aaf2fe3acab7d70625ef47f0">
+              <var name="Q">169</var>
+              <var name="W">531</var>
+              <answer>362</answer>
+            </var_set>
+            <var_set ident="639e184c18104e56096ebd56fa1d1cc3">
+              <var name="Q">459</var>
+              <var name="W">177</var>
+              <answer>-282</answer>
+            </var_set>
+            <var_set ident="d91df70f43588ef37656c3843cc91919">
+              <var name="Q">177</var>
+              <var name="W">448</var>
+              <answer>271</answer>
+            </var_set>
+            <var_set ident="a5e40fe40049daff31339432bc65f5ef">
+              <var name="Q">353</var>
+              <var name="W">614</var>
+              <answer>261</answer>
+            </var_set>
+            <var_set ident="5f168d19282617ab443c0276d480cb4b">
+              <var name="Q">105</var>
+              <var name="W">105</var>
+              <answer>0</answer>
+            </var_set>
+            <var_set ident="e64126cb5104f10db8ab2407e8fb85c1">
+              <var name="Q">754</var>
+              <var name="W">506</var>
+              <answer>-248</answer>
+            </var_set>
+            <var_set ident="a0d387de6d13e90404d8bacf3c9a05a2">
+              <var name="Q">900</var>
+              <var name="W">328</var>
+              <answer>-572</answer>
+            </var_set>
+            <var_set ident="33bbf20732df80c7076a0f5cce6a4ca8">
+              <var name="Q">467</var>
+              <var name="W">807</var>
+              <answer>340</answer>
+            </var_set>
+            <var_set ident="1c426085108604ed8dca4e46d4795bb7">
+              <var name="Q">891</var>
+              <var name="W">371</var>
+              <answer>-520</answer>
+            </var_set>
+            <var_set ident="3c5f3fadc4c8016b9c980d32664b4f7a">
+              <var name="Q">405</var>
+              <var name="W">497</var>
+              <answer>92</answer>
+            </var_set>
+            <var_set ident="8f730f456cc1728780476eb02e5d7d50">
+              <var name="Q">352</var>
+              <var name="W">867</var>
+              <answer>515</answer>
+            </var_set>
+            <var_set ident="d346604b4d79063958fdc56763e890e6">
+              <var name="Q">168</var>
+              <var name="W">845</var>
+              <answer>677</answer>
+            </var_set>
+            <var_set ident="35598e754f7db0c4b63939f3f16cc1dc">
+              <var name="Q">259</var>
+              <var name="W">766</var>
+              <answer>507</answer>
+            </var_set>
+            <var_set ident="61141ea6732b9083957f050f3bdc49a7">
+              <var name="Q">789</var>
+              <var name="W">374</var>
+              <answer>-415</answer>
+            </var_set>
+            <var_set ident="2aa262a85cea600394a078108e9a7145">
+              <var name="Q">764</var>
+              <var name="W">303</var>
+              <answer>-461</answer>
+            </var_set>
+            <var_set ident="5a5b727b94e8e28d915b4a69c9d546b0">
+              <var name="Q">300</var>
+              <var name="W">355</var>
+              <answer>55</answer>
+            </var_set>
+            <var_set ident="31a2827783770207bc16af25b11e5877">
+              <var name="Q">860</var>
+              <var name="W">451</var>
+              <answer>-409</answer>
+            </var_set>
+            <var_set ident="4c808e530e22e5e74b4c8347e5730e7d">
+              <var name="Q">807</var>
+              <var name="W">643</var>
+              <answer>-164</answer>
+            </var_set>
+            <var_set ident="c2155b92082b0c04ccf14ffe50443e6a">
+              <var name="Q">893</var>
+              <var name="W">659</var>
+              <answer>-234</answer>
+            </var_set>
+            <var_set ident="231a21683858778fe21854b31bd48a28">
+              <var name="Q">127</var>
+              <var name="W">737</var>
+              <answer>610</answer>
+            </var_set>
+            <var_set ident="7dd9149536de2ff80e83887a45a64f42">
+              <var name="Q">286</var>
+              <var name="W">116</var>
+              <answer>-170</answer>
+            </var_set>
+            <var_set ident="24dc788125909d58569f012b449bb89a">
+              <var name="Q">395</var>
+              <var name="W">781</var>
+              <answer>386</answer>
+            </var_set>
+            <var_set ident="9080df6b5059767e942ea2eb7ab0886d">
+              <var name="Q">221</var>
+              <var name="W">545</var>
+              <answer>324</answer>
+            </var_set>
+            <var_set ident="08f6d958f038c2c8f79b1ba09575399c">
+              <var name="Q">106</var>
+              <var name="W">837</var>
+              <answer>731</answer>
+            </var_set>
+            <var_set ident="4556dee8148762c57c841e2ce217c33a">
+              <var name="Q">448</var>
+              <var name="W">470</var>
+              <answer>22</answer>
+            </var_set>
+            <var_set ident="d953179f6de116d2f40ca5df80b7f124">
+              <var name="Q">225</var>
+              <var name="W">300</var>
+              <answer>75</answer>
+            </var_set>
+            <var_set ident="b07af4138e7aa94bf556647ac307547f">
+              <var name="Q">857</var>
+              <var name="W">610</var>
+              <answer>-247</answer>
+            </var_set>
+            <var_set ident="e79f0804d796318b2bddcea68bee8c0e">
+              <var name="Q">582</var>
+              <var name="W">629</var>
+              <answer>47</answer>
+            </var_set>
+            <var_set ident="b7c5dd355f0019ad4166057491d7efbc">
+              <var name="Q">844</var>
+              <var name="W">855</var>
+              <answer>11</answer>
+            </var_set>
+            <var_set ident="916dbf94ebcb715ba6e4782cf10e4235">
+              <var name="Q">557</var>
+              <var name="W">276</var>
+              <answer>-281</answer>
+            </var_set>
+            <var_set ident="46e54622541d6bfd44eda96267d19149">
+              <var name="Q">883</var>
+              <var name="W">342</var>
+              <answer>-541</answer>
+            </var_set>
+            <var_set ident="96e1646f82a63aee0d39e9a952bcf3a9">
+              <var name="Q">616</var>
+              <var name="W">413</var>
+              <answer>-203</answer>
+            </var_set>
+            <var_set ident="801d8245595ae90a2ae83a5a01f8623a">
+              <var name="Q">395</var>
+              <var name="W">540</var>
+              <answer>145</answer>
+            </var_set>
+            <var_set ident="a6a340665e36401f5209c739990ff045">
+              <var name="Q">844</var>
+              <var name="W">503</var>
+              <answer>-341</answer>
+            </var_set>
+            <var_set ident="478d38f4dfab8ea0d5162fc712fe56b0">
+              <var name="Q">456</var>
+              <var name="W">369</var>
+              <answer>-87</answer>
+            </var_set>
+            <var_set ident="84a30bfa9ed0106150b8f6cef0e4e5d1">
+              <var name="Q">681</var>
+              <var name="W">177</var>
+              <answer>-504</answer>
+            </var_set>
+            <var_set ident="ad91840e1cc0f4e7d7d4afd37baa8f5f">
+              <var name="Q">523</var>
+              <var name="W">128</var>
+              <answer>-395</answer>
+            </var_set>
+            <var_set ident="61c9f7e0db2f1ccf199dc9d11220d916">
+              <var name="Q">566</var>
+              <var name="W">769</var>
+              <answer>203</answer>
+            </var_set>
+            <var_set ident="d42c0fe28b83a173ea618369624c8fb7">
+              <var name="Q">613</var>
+              <var name="W">682</var>
+              <answer>69</answer>
+            </var_set>
+            <var_set ident="cc49e44cb514843ba18212160622c9cb">
+              <var name="Q">358</var>
+              <var name="W">851</var>
+              <answer>493</answer>
+            </var_set>
+            <var_set ident="97abcec98e6e17b64d8e7560e512f894">
+              <var name="Q">362</var>
+              <var name="W">402</var>
+              <answer>40</answer>
+            </var_set>
+            <var_set ident="de723bf7a3006f353937294992e1ba8f">
+              <var name="Q">576</var>
+              <var name="W">782</var>
+              <answer>206</answer>
+            </var_set>
+            <var_set ident="8c7f59b024abe4e965d3f7af5246fed5">
+              <var name="Q">491</var>
+              <var name="W">395</var>
+              <answer>-96</answer>
+            </var_set>
+            <var_set ident="5e923979e44b9165dc65889726ac1ffb">
+              <var name="Q">884</var>
+              <var name="W">628</var>
+              <answer>-256</answer>
+            </var_set>
+            <var_set ident="56ad69273048090bbec7cc9a6b486009">
+              <var name="Q">207</var>
+              <var name="W">258</var>
+              <answer>51</answer>
+            </var_set>
+            <var_set ident="60237c1dd6c7c08eb39aaa3540380d73">
+              <var name="Q">668</var>
+              <var name="W">220</var>
+              <answer>-448</answer>
+            </var_set>
+            <var_set ident="d36818b60cbc8e6711f458638539ccda">
+              <var name="Q">454</var>
+              <var name="W">433</var>
+              <answer>-21</answer>
+            </var_set>
+            <var_set ident="ae8726dd9111db975598d9c1538a1d3a">
+              <var name="Q">472</var>
+              <var name="W">703</var>
+              <answer>231</answer>
+            </var_set>
+            <var_set ident="b2c266529c399926025b0fa32167aba9">
+              <var name="Q">734</var>
+              <var name="W">425</var>
+              <answer>-309</answer>
+            </var_set>
+            <var_set ident="852e5efd2b59aad453d3c37f8f287036">
+              <var name="Q">237</var>
+              <var name="W">215</var>
+              <answer>-22</answer>
+            </var_set>
+            <var_set ident="0d7b16ffb439343d0591cd1f7b168ccb">
+              <var name="Q">204</var>
+              <var name="W">245</var>
+              <answer>41</answer>
+            </var_set>
+            <var_set ident="fe7a35d07967eccb4b44f85ced66262e">
+              <var name="Q">447</var>
+              <var name="W">627</var>
+              <answer>180</answer>
+            </var_set>
+            <var_set ident="c3914e10149289f0273e9d41003dc75f">
+              <var name="Q">626</var>
+              <var name="W">268</var>
+              <answer>-358</answer>
+            </var_set>
+            <var_set ident="1855a3ed5202b8ec9e0ef8721278b451">
+              <var name="Q">418</var>
+              <var name="W">293</var>
+              <answer>-125</answer>
+            </var_set>
+            <var_set ident="e123ca180271bbf7a155b3fb59c72e7d">
+              <var name="Q">296</var>
+              <var name="W">593</var>
+              <answer>297</answer>
+            </var_set>
+            <var_set ident="58a4cd0eaa4f02c32d728075e0cd4ae3">
+              <var name="Q">749</var>
+              <var name="W">765</var>
+              <answer>16</answer>
+            </var_set>
+            <var_set ident="b9726fd4a99f2120189a2633127b6c51">
+              <var name="Q">386</var>
+              <var name="W">645</var>
+              <answer>259</answer>
+            </var_set>
+            <var_set ident="46e8447338ca8c1010f199e2fc2130a5">
+              <var name="Q">320</var>
+              <var name="W">475</var>
+              <answer>155</answer>
+            </var_set>
+            <var_set ident="c3170cf45c0cb6a3c2548efc0064b88c">
+              <var name="Q">505</var>
+              <var name="W">251</var>
+              <answer>-254</answer>
+            </var_set>
+          </var_sets>
+        </calculated>
+      </itemproc_extension>
+    </item>
+    <item ident="d9d191764ab3f906f09c8994017faa29" title="Change in a system's energy (ii)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>calculated_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>06ae2f9684336254d66d518986364cb0</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;`Q` joules of heat leaves a system, and a force within the system does `W` joules of work on something outside of the system. What is the change in energy, in joules, of the system?&lt;/p&gt;</mattext>
+        </material>
+        <response_str ident="response1" rcardinality="Single">
+          <render_fib fibtype="Decimal">
+            <response_label ident="answer1"/>
+          </render_fib>
+        </response_str>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition title="correct">
+          <conditionvar>
+            <other/>
+          </conditionvar>
+          <setvar varname="SCORE" action="Set">100</setvar>
+        </respcondition>
+        <respcondition title="incorrect">
+          <conditionvar>
+            <not>
+              <other/>
+            </not>
+          </conditionvar>
+          <setvar varname="SCORE" action="Set">0</setvar>
+        </respcondition>
+      </resprocessing>
+      <itemproc_extension>
+        <calculated>
+          <answer_tolerance margin_type="absolute">0</answer_tolerance>
+          <formulas decimal_places="" scientific_notation="false">
+            <formula>-Q-W</formula>
+          </formulas>
+          <vars>
+            <var name="Q" scale="0">
+              <min>100</min>
+              <max>900</max>
+            </var>
+            <var name="W" scale="0">
+              <min>100</min>
+              <max>900</max>
+            </var>
+          </vars>
+          <var_sets>
+            <var_set ident="21d713d85a95e699dcc5d9eca56637fd">
+              <var name="Q">335</var>
+              <var name="W">389</var>
+              <answer>-724</answer>
+            </var_set>
+            <var_set ident="9c70d9df072be838481e4388ca9326bd">
+              <var name="Q">157</var>
+              <var name="W">786</var>
+              <answer>-943</answer>
+            </var_set>
+            <var_set ident="9112db97f57c60c37a96fa4c84149350">
+              <var name="Q">164</var>
+              <var name="W">309</var>
+              <answer>-473</answer>
+            </var_set>
+            <var_set ident="bc2d4a82f38444b854973511dffd0d9a">
+              <var name="Q">845</var>
+              <var name="W">298</var>
+              <answer>-1143</answer>
+            </var_set>
+            <var_set ident="e3076b0f9e504297a0e68494da3d9a00">
+              <var name="Q">380</var>
+              <var name="W">835</var>
+              <answer>-1215</answer>
+            </var_set>
+            <var_set ident="9943157571065a29112a274e9463bead">
+              <var name="Q">736</var>
+              <var name="W">636</var>
+              <answer>-1372</answer>
+            </var_set>
+            <var_set ident="a84048b1a247d662e019cddad8f3c412">
+              <var name="Q">360</var>
+              <var name="W">815</var>
+              <answer>-1175</answer>
+            </var_set>
+            <var_set ident="06f2ee1ccacc9bab3b7a86a6d923dcd0">
+              <var name="Q">180</var>
+              <var name="W">200</var>
+              <answer>-380</answer>
+            </var_set>
+            <var_set ident="5c6cb41e764b5bac6eb3944678f42a70">
+              <var name="Q">140</var>
+              <var name="W">299</var>
+              <answer>-439</answer>
+            </var_set>
+            <var_set ident="59378833195312e780e8c34984d467b0">
+              <var name="Q">794</var>
+              <var name="W">421</var>
+              <answer>-1215</answer>
+            </var_set>
+            <var_set ident="af409e32e02887e1833667e44ca96227">
+              <var name="Q">651</var>
+              <var name="W">101</var>
+              <answer>-752</answer>
+            </var_set>
+            <var_set ident="aac0648c24271d8b617daf403afeae5e">
+              <var name="Q">613</var>
+              <var name="W">197</var>
+              <answer>-810</answer>
+            </var_set>
+            <var_set ident="b3baef9d1554e44ae41c0fac2f59bd8c">
+              <var name="Q">209</var>
+              <var name="W">503</var>
+              <answer>-712</answer>
+            </var_set>
+            <var_set ident="dcc0fea4d2b7fe042e59225abfbb7398">
+              <var name="Q">120</var>
+              <var name="W">658</var>
+              <answer>-778</answer>
+            </var_set>
+            <var_set ident="0cf38b8c8d946b650f43b56e86f8c975">
+              <var name="Q">301</var>
+              <var name="W">463</var>
+              <answer>-764</answer>
+            </var_set>
+            <var_set ident="d448a2cd2f54deb7fcf10cab5ccd8c36">
+              <var name="Q">220</var>
+              <var name="W">317</var>
+              <answer>-537</answer>
+            </var_set>
+            <var_set ident="5014b5b8f5a04af841d02a89d7d16dcd">
+              <var name="Q">653</var>
+              <var name="W">751</var>
+              <answer>-1404</answer>
+            </var_set>
+            <var_set ident="50d91960215895efeaa00c62e0250d9b">
+              <var name="Q">184</var>
+              <var name="W">537</var>
+              <answer>-721</answer>
+            </var_set>
+            <var_set ident="bd14b8f4c5539e3381ec71752540a2cc">
+              <var name="Q">471</var>
+              <var name="W">126</var>
+              <answer>-597</answer>
+            </var_set>
+            <var_set ident="ef222dc9fd854900d5ea2cc4162c2d6e">
+              <var name="Q">749</var>
+              <var name="W">421</var>
+              <answer>-1170</answer>
+            </var_set>
+            <var_set ident="fc0d7c9572bbdd06030caf91d0a9245a">
+              <var name="Q">842</var>
+              <var name="W">577</var>
+              <answer>-1419</answer>
+            </var_set>
+            <var_set ident="59a9ce5064f39e83a2abe820215cca11">
+              <var name="Q">380</var>
+              <var name="W">900</var>
+              <answer>-1280</answer>
+            </var_set>
+            <var_set ident="d2e7c1398d9c4810f583d9fdc7ad3342">
+              <var name="Q">384</var>
+              <var name="W">814</var>
+              <answer>-1198</answer>
+            </var_set>
+            <var_set ident="55bb58fbb21fc6adf301db7ea0217eb6">
+              <var name="Q">111</var>
+              <var name="W">376</var>
+              <answer>-487</answer>
+            </var_set>
+            <var_set ident="435f02c6ad4b9e1a05e8b972b37b95fa">
+              <var name="Q">379</var>
+              <var name="W">341</var>
+              <answer>-720</answer>
+            </var_set>
+            <var_set ident="5881c17d419107f93120add095baff2d">
+              <var name="Q">290</var>
+              <var name="W">552</var>
+              <answer>-842</answer>
+            </var_set>
+            <var_set ident="9eb95b3b113d6e2781c3eb2f83488617">
+              <var name="Q">454</var>
+              <var name="W">543</var>
+              <answer>-997</answer>
+            </var_set>
+            <var_set ident="aaf8bb2ef6c1ef1bb615c1835865d3fe">
+              <var name="Q">203</var>
+              <var name="W">379</var>
+              <answer>-582</answer>
+            </var_set>
+            <var_set ident="12243421096860ada0e20f2ef457c00e">
+              <var name="Q">892</var>
+              <var name="W">830</var>
+              <answer>-1722</answer>
+            </var_set>
+            <var_set ident="ae65beb924879b445dc86911dfb6eb9f">
+              <var name="Q">631</var>
+              <var name="W">888</var>
+              <answer>-1519</answer>
+            </var_set>
+            <var_set ident="5f24132ed8c14826496a5d6cc8ee7d28">
+              <var name="Q">524</var>
+              <var name="W">720</var>
+              <answer>-1244</answer>
+            </var_set>
+            <var_set ident="d4563e8c5a012eb1554fead7af87c650">
+              <var name="Q">765</var>
+              <var name="W">660</var>
+              <answer>-1425</answer>
+            </var_set>
+            <var_set ident="2fe62efe7b5c43df898ae7cc372abe55">
+              <var name="Q">252</var>
+              <var name="W">696</var>
+              <answer>-948</answer>
+            </var_set>
+            <var_set ident="df321697f6dbe2800b5429bf19104c48">
+              <var name="Q">652</var>
+              <var name="W">293</var>
+              <answer>-945</answer>
+            </var_set>
+            <var_set ident="d2d6404a7591c4a25f184c28132bfaf0">
+              <var name="Q">878</var>
+              <var name="W">145</var>
+              <answer>-1023</answer>
+            </var_set>
+            <var_set ident="2f2428a13ce33b742f0ac917054d3bbc">
+              <var name="Q">475</var>
+              <var name="W">693</var>
+              <answer>-1168</answer>
+            </var_set>
+            <var_set ident="42174164af6e89cebb25b47f43ab6ad7">
+              <var name="Q">707</var>
+              <var name="W">449</var>
+              <answer>-1156</answer>
+            </var_set>
+            <var_set ident="73700c59565f5fe6bc129a5cffd58bf1">
+              <var name="Q">427</var>
+              <var name="W">146</var>
+              <answer>-573</answer>
+            </var_set>
+            <var_set ident="7b9cacc28992f61c886365850200bfca">
+              <var name="Q">171</var>
+              <var name="W">174</var>
+              <answer>-345</answer>
+            </var_set>
+            <var_set ident="07c7f777ef99fba45dbd58c64e32ecaf">
+              <var name="Q">448</var>
+              <var name="W">840</var>
+              <answer>-1288</answer>
+            </var_set>
+            <var_set ident="96cf0badc5e495fa8aa771fcf52006c8">
+              <var name="Q">625</var>
+              <var name="W">360</var>
+              <answer>-985</answer>
+            </var_set>
+            <var_set ident="cc529a3ef8fa273dfb1b57e8ffef3b68">
+              <var name="Q">103</var>
+              <var name="W">659</var>
+              <answer>-762</answer>
+            </var_set>
+            <var_set ident="6096414ff1d97d746ba9df644f5129fe">
+              <var name="Q">532</var>
+              <var name="W">514</var>
+              <answer>-1046</answer>
+            </var_set>
+            <var_set ident="903e7775d0ad987a947ad228c8468a53">
+              <var name="Q">537</var>
+              <var name="W">849</var>
+              <answer>-1386</answer>
+            </var_set>
+            <var_set ident="79c4cf4f8cc476db3158bf19b7d9cf5b">
+              <var name="Q">126</var>
+              <var name="W">808</var>
+              <answer>-934</answer>
+            </var_set>
+            <var_set ident="94152fbeced270d23dd0648d0023e2fc">
+              <var name="Q">553</var>
+              <var name="W">192</var>
+              <answer>-745</answer>
+            </var_set>
+            <var_set ident="4c1f2314a179d52692e4327ed0a6a4c2">
+              <var name="Q">447</var>
+              <var name="W">234</var>
+              <answer>-681</answer>
+            </var_set>
+            <var_set ident="32dd0219d46f8561b1c0f94357366c40">
+              <var name="Q">710</var>
+              <var name="W">278</var>
+              <answer>-988</answer>
+            </var_set>
+            <var_set ident="722ea86b88f0e893e5012b9c8ccf3d0e">
+              <var name="Q">731</var>
+              <var name="W">771</var>
+              <answer>-1502</answer>
+            </var_set>
+            <var_set ident="6b1f71fdbaffacb2b90d76dd2d80469b">
+              <var name="Q">573</var>
+              <var name="W">648</var>
+              <answer>-1221</answer>
+            </var_set>
+            <var_set ident="a219ea89dc40904c86c86242455538be">
+              <var name="Q">635</var>
+              <var name="W">788</var>
+              <answer>-1423</answer>
+            </var_set>
+            <var_set ident="b68829ea261115eced74ec49b2208af0">
+              <var name="Q">709</var>
+              <var name="W">437</var>
+              <answer>-1146</answer>
+            </var_set>
+            <var_set ident="7084d952170f6dafd6a1da56c848dead">
+              <var name="Q">141</var>
+              <var name="W">761</var>
+              <answer>-902</answer>
+            </var_set>
+            <var_set ident="9b0a7d6dd918841e0cd6bbe8e7ee010e">
+              <var name="Q">310</var>
+              <var name="W">245</var>
+              <answer>-555</answer>
+            </var_set>
+            <var_set ident="3d5f6eb1e68c30e9528aa2d55716918e">
+              <var name="Q">144</var>
+              <var name="W">124</var>
+              <answer>-268</answer>
+            </var_set>
+            <var_set ident="9b25e06bee82148a66c1cada691efcde">
+              <var name="Q">435</var>
+              <var name="W">442</var>
+              <answer>-877</answer>
+            </var_set>
+            <var_set ident="ef159c661cd2018391c412c8e8f52dcd">
+              <var name="Q">496</var>
+              <var name="W">494</var>
+              <answer>-990</answer>
+            </var_set>
+            <var_set ident="35782603a969eb262181086d80a6313b">
+              <var name="Q">203</var>
+              <var name="W">843</var>
+              <answer>-1046</answer>
+            </var_set>
+            <var_set ident="ac1c3d405279c57cbf85be7360737e87">
+              <var name="Q">327</var>
+              <var name="W">714</var>
+              <answer>-1041</answer>
+            </var_set>
+            <var_set ident="e2034431304e05304187103021ec4eab">
+              <var name="Q">783</var>
+              <var name="W">852</var>
+              <answer>-1635</answer>
+            </var_set>
+            <var_set ident="2d24babd0077f38703d73295882bd47b">
+              <var name="Q">188</var>
+              <var name="W">362</var>
+              <answer>-550</answer>
+            </var_set>
+            <var_set ident="b2dd945d733a649da62bd8ad26e13253">
+              <var name="Q">879</var>
+              <var name="W">277</var>
+              <answer>-1156</answer>
+            </var_set>
+            <var_set ident="36994b7a38dd07e4ae8a64d522fd92f9">
+              <var name="Q">762</var>
+              <var name="W">209</var>
+              <answer>-971</answer>
+            </var_set>
+            <var_set ident="f82ee27cdaba706bcc20c0c5a871beaf">
+              <var name="Q">814</var>
+              <var name="W">627</var>
+              <answer>-1441</answer>
+            </var_set>
+            <var_set ident="4492015197f3098170c81147e92c0594">
+              <var name="Q">405</var>
+              <var name="W">838</var>
+              <answer>-1243</answer>
+            </var_set>
+            <var_set ident="756948e2a5aed02148ed5a270c180eac">
+              <var name="Q">854</var>
+              <var name="W">762</var>
+              <answer>-1616</answer>
+            </var_set>
+            <var_set ident="a7dcb16bc0a295eb6b714003da6e9a5f">
+              <var name="Q">328</var>
+              <var name="W">866</var>
+              <answer>-1194</answer>
+            </var_set>
+            <var_set ident="f8ab2e109a3f7f03fa96c677249c49fc">
+              <var name="Q">649</var>
+              <var name="W">718</var>
+              <answer>-1367</answer>
+            </var_set>
+            <var_set ident="16fa69a4627e61bea48378d2ef8c81ba">
+              <var name="Q">126</var>
+              <var name="W">392</var>
+              <answer>-518</answer>
+            </var_set>
+            <var_set ident="4bb90615122c96e111edeeeebb5e391d">
+              <var name="Q">542</var>
+              <var name="W">651</var>
+              <answer>-1193</answer>
+            </var_set>
+            <var_set ident="63ba895734f979e6dec2804c5b49fe69">
+              <var name="Q">630</var>
+              <var name="W">497</var>
+              <answer>-1127</answer>
+            </var_set>
+            <var_set ident="36c6b0a9a32507d403486f42baecce30">
+              <var name="Q">493</var>
+              <var name="W">558</var>
+              <answer>-1051</answer>
+            </var_set>
+            <var_set ident="89822652f24d602e48b3986be893944b">
+              <var name="Q">628</var>
+              <var name="W">715</var>
+              <answer>-1343</answer>
+            </var_set>
+            <var_set ident="f691c170c7c36e62414653546a48de27">
+              <var name="Q">748</var>
+              <var name="W">486</var>
+              <answer>-1234</answer>
+            </var_set>
+            <var_set ident="4d7c8b3bc768308cda1d460692f25180">
+              <var name="Q">273</var>
+              <var name="W">697</var>
+              <answer>-970</answer>
+            </var_set>
+            <var_set ident="e7cfb3b557b47164713a8bc4993a4198">
+              <var name="Q">898</var>
+              <var name="W">459</var>
+              <answer>-1357</answer>
+            </var_set>
+            <var_set ident="f79287c98be6abf0bbb316832cdb2fe4">
+              <var name="Q">490</var>
+              <var name="W">608</var>
+              <answer>-1098</answer>
+            </var_set>
+            <var_set ident="1890217772c16407a24136f6e808a0c7">
+              <var name="Q">853</var>
+              <var name="W">800</var>
+              <answer>-1653</answer>
+            </var_set>
+            <var_set ident="1760bddb7da6872deb1825dfe5fb4222">
+              <var name="Q">750</var>
+              <var name="W">182</var>
+              <answer>-932</answer>
+            </var_set>
+            <var_set ident="756689b5ff188e3c865a9746e96a4938">
+              <var name="Q">733</var>
+              <var name="W">527</var>
+              <answer>-1260</answer>
+            </var_set>
+            <var_set ident="9a77ff7ce3e490ef66c4f4d989ff93da">
+              <var name="Q">827</var>
+              <var name="W">816</var>
+              <answer>-1643</answer>
+            </var_set>
+            <var_set ident="2d46cb6c11a85a7bdd9063464d7d0382">
+              <var name="Q">861</var>
+              <var name="W">785</var>
+              <answer>-1646</answer>
+            </var_set>
+            <var_set ident="096b46aaf3acdceb4c84ccd80a36a4e4">
+              <var name="Q">388</var>
+              <var name="W">509</var>
+              <answer>-897</answer>
+            </var_set>
+            <var_set ident="e596efd379df1372a322615dcab732f3">
+              <var name="Q">444</var>
+              <var name="W">417</var>
+              <answer>-861</answer>
+            </var_set>
+            <var_set ident="8a5093a86beccef3365cfc3c13a82f74">
+              <var name="Q">524</var>
+              <var name="W">395</var>
+              <answer>-919</answer>
+            </var_set>
+            <var_set ident="8a0795f7915de012ea3975a5b3bda81a">
+              <var name="Q">109</var>
+              <var name="W">688</var>
+              <answer>-797</answer>
+            </var_set>
+            <var_set ident="ac197ea167eb68423f4e22c18cf0094c">
+              <var name="Q">900</var>
+              <var name="W">841</var>
+              <answer>-1741</answer>
+            </var_set>
+            <var_set ident="33baa4ff201ec60a275dc6422f68e86b">
+              <var name="Q">426</var>
+              <var name="W">598</var>
+              <answer>-1024</answer>
+            </var_set>
+            <var_set ident="a31af65179be630e1d610864dc609834">
+              <var name="Q">179</var>
+              <var name="W">668</var>
+              <answer>-847</answer>
+            </var_set>
+            <var_set ident="cbb76f2cc905d8afd2cd4cbab656b45a">
+              <var name="Q">699</var>
+              <var name="W">708</var>
+              <answer>-1407</answer>
+            </var_set>
+            <var_set ident="c509908ce3f32d1f6e97a4d111366c17">
+              <var name="Q">216</var>
+              <var name="W">123</var>
+              <answer>-339</answer>
+            </var_set>
+            <var_set ident="942a042fc986631211c9e603e3e7d12e">
+              <var name="Q">303</var>
+              <var name="W">138</var>
+              <answer>-441</answer>
+            </var_set>
+            <var_set ident="5ca54f03c55e2fa460df92f635eaf58c">
+              <var name="Q">257</var>
+              <var name="W">505</var>
+              <answer>-762</answer>
+            </var_set>
+            <var_set ident="14a9438a22d6083f1eb34e1201400b3e">
+              <var name="Q">533</var>
+              <var name="W">563</var>
+              <answer>-1096</answer>
+            </var_set>
+            <var_set ident="41c834092f26f2eaa9a8ff76d7d57a7f">
+              <var name="Q">238</var>
+              <var name="W">276</var>
+              <answer>-514</answer>
+            </var_set>
+            <var_set ident="31b1b534af7b91b8f2d5c9c0bd17dbf3">
+              <var name="Q">758</var>
+              <var name="W">686</var>
+              <answer>-1444</answer>
+            </var_set>
+            <var_set ident="13bb19fedb9022f251cd3eff371ae5d8">
+              <var name="Q">584</var>
+              <var name="W">559</var>
+              <answer>-1143</answer>
+            </var_set>
+            <var_set ident="66e61cb99a0b604d39abff5379e8d85e">
+              <var name="Q">188</var>
+              <var name="W">617</var>
+              <answer>-805</answer>
+            </var_set>
+            <var_set ident="fef00c8556c69c31b5e94326df9091fd">
+              <var name="Q">531</var>
+              <var name="W">582</var>
+              <answer>-1113</answer>
+            </var_set>
+            <var_set ident="0e9da4b29bfd7357a0ea9857995d11c9">
+              <var name="Q">141</var>
+              <var name="W">212</var>
+              <answer>-353</answer>
+            </var_set>
+            <var_set ident="8bcedf1574664ea6e1382293d6a51085">
+              <var name="Q">587</var>
+              <var name="W">488</var>
+              <answer>-1075</answer>
+            </var_set>
+            <var_set ident="1f4f5e2c030718b4af2445123bf4a6bc">
+              <var name="Q">878</var>
+              <var name="W">258</var>
+              <answer>-1136</answer>
+            </var_set>
+            <var_set ident="62049e2dbd2160cf174808c1cce91002">
+              <var name="Q">621</var>
+              <var name="W">457</var>
+              <answer>-1078</answer>
+            </var_set>
+            <var_set ident="94e6fee94678c6cf95ce7f1719b75f84">
+              <var name="Q">230</var>
+              <var name="W">819</var>
+              <answer>-1049</answer>
+            </var_set>
+            <var_set ident="190c2596bf74d35d82f89a94210324a0">
+              <var name="Q">876</var>
+              <var name="W">404</var>
+              <answer>-1280</answer>
+            </var_set>
+            <var_set ident="252e463647e938d0a61e3d5e06efd199">
+              <var name="Q">430</var>
+              <var name="W">652</var>
+              <answer>-1082</answer>
+            </var_set>
+            <var_set ident="80cf3756c72c7222d0eaaf5290a5d9cb">
+              <var name="Q">123</var>
+              <var name="W">487</var>
+              <answer>-610</answer>
+            </var_set>
+            <var_set ident="f70be10824926e0020dd5f55a46b8d23">
+              <var name="Q">338</var>
+              <var name="W">333</var>
+              <answer>-671</answer>
+            </var_set>
+            <var_set ident="dd1548366a6af2752397c3cf421a8b5a">
+              <var name="Q">779</var>
+              <var name="W">339</var>
+              <answer>-1118</answer>
+            </var_set>
+            <var_set ident="e56d9d5141b13fa7be0984b197c010d6">
+              <var name="Q">532</var>
+              <var name="W">269</var>
+              <answer>-801</answer>
+            </var_set>
+            <var_set ident="a900604fdef37a1f1c7b2f10562628fd">
+              <var name="Q">505</var>
+              <var name="W">379</var>
+              <answer>-884</answer>
+            </var_set>
+            <var_set ident="dd3922c2919188a3ac6e6d18fdd9a792">
+              <var name="Q">234</var>
+              <var name="W">229</var>
+              <answer>-463</answer>
+            </var_set>
+            <var_set ident="940bc7309c74cf77502c87d0746e7de1">
+              <var name="Q">878</var>
+              <var name="W">615</var>
+              <answer>-1493</answer>
+            </var_set>
+            <var_set ident="f12d72eefad4ebd964625f1fa33d48af">
+              <var name="Q">869</var>
+              <var name="W">581</var>
+              <answer>-1450</answer>
+            </var_set>
+            <var_set ident="e163bebe90d6804d34d13e6d594a32b0">
+              <var name="Q">497</var>
+              <var name="W">579</var>
+              <answer>-1076</answer>
+            </var_set>
+            <var_set ident="09a6e16998d2bf4a38b80ae446b16347">
+              <var name="Q">866</var>
+              <var name="W">257</var>
+              <answer>-1123</answer>
+            </var_set>
+            <var_set ident="55cd4a7d41d386591f8d48cbbfe2b790">
+              <var name="Q">755</var>
+              <var name="W">569</var>
+              <answer>-1324</answer>
+            </var_set>
+            <var_set ident="fb2a48d58bfef6bf95c5afb9ed4f1699">
+              <var name="Q">394</var>
+              <var name="W">809</var>
+              <answer>-1203</answer>
+            </var_set>
+            <var_set ident="d0b7a39c7352574958efe8e2f5ec3b56">
+              <var name="Q">874</var>
+              <var name="W">137</var>
+              <answer>-1011</answer>
+            </var_set>
+            <var_set ident="8ac60ebf5fe242c894490d93ae6ddcb7">
+              <var name="Q">287</var>
+              <var name="W">884</var>
+              <answer>-1171</answer>
+            </var_set>
+            <var_set ident="7bb2219962bf5015dc033d2ea27e3aa7">
+              <var name="Q">628</var>
+              <var name="W">403</var>
+              <answer>-1031</answer>
+            </var_set>
+            <var_set ident="767ac700f73473035a9da7283707da92">
+              <var name="Q">213</var>
+              <var name="W">203</var>
+              <answer>-416</answer>
+            </var_set>
+            <var_set ident="16eb921fb1fcbca09f9f6f78441248a5">
+              <var name="Q">850</var>
+              <var name="W">254</var>
+              <answer>-1104</answer>
+            </var_set>
+            <var_set ident="ad7b3d503e60c585c7240cf4460d1ccf">
+              <var name="Q">254</var>
+              <var name="W">473</var>
+              <answer>-727</answer>
+            </var_set>
+            <var_set ident="d2f60f06a070c11af975867fca305f81">
+              <var name="Q">334</var>
+              <var name="W">193</var>
+              <answer>-527</answer>
+            </var_set>
+            <var_set ident="6b49e646be0fb780d7e05866d50bd60d">
+              <var name="Q">580</var>
+              <var name="W">486</var>
+              <answer>-1066</answer>
+            </var_set>
+            <var_set ident="8c7672888a1b17c1c58fed95a05ab9b3">
+              <var name="Q">142</var>
+              <var name="W">128</var>
+              <answer>-270</answer>
+            </var_set>
+            <var_set ident="9c9df77794b72a2019d8f977aba1fdb1">
+              <var name="Q">493</var>
+              <var name="W">689</var>
+              <answer>-1182</answer>
+            </var_set>
+            <var_set ident="8dd96d9bb3c700ac5a88b58738bf5535">
+              <var name="Q">811</var>
+              <var name="W">440</var>
+              <answer>-1251</answer>
+            </var_set>
+            <var_set ident="b3fe43427ba4763d8dba79a4e23949b3">
+              <var name="Q">156</var>
+              <var name="W">534</var>
+              <answer>-690</answer>
+            </var_set>
+            <var_set ident="8b5b901d93bac85d3f12883f52c8d633">
+              <var name="Q">773</var>
+              <var name="W">493</var>
+              <answer>-1266</answer>
+            </var_set>
+            <var_set ident="02997088ed148ffeefad703ec1ce1cae">
+              <var name="Q">863</var>
+              <var name="W">170</var>
+              <answer>-1033</answer>
+            </var_set>
+            <var_set ident="13b37876aa157e0fe00be02655155a4b">
+              <var name="Q">136</var>
+              <var name="W">287</var>
+              <answer>-423</answer>
+            </var_set>
+            <var_set ident="5ae84125e46099b3f1dbcb8102f653e9">
+              <var name="Q">384</var>
+              <var name="W">837</var>
+              <answer>-1221</answer>
+            </var_set>
+            <var_set ident="cb0aa948c0465f6e19585dbce06a067b">
+              <var name="Q">232</var>
+              <var name="W">835</var>
+              <answer>-1067</answer>
+            </var_set>
+            <var_set ident="11e32ec5112a1c0a31b3f2f7cc76dcab">
+              <var name="Q">144</var>
+              <var name="W">367</var>
+              <answer>-511</answer>
+            </var_set>
+            <var_set ident="e733ae867c055053851e89776fac7575">
+              <var name="Q">681</var>
+              <var name="W">502</var>
+              <answer>-1183</answer>
+            </var_set>
+            <var_set ident="b2e173ba9e50f3cf8f43b2d25cd10ee8">
+              <var name="Q">373</var>
+              <var name="W">822</var>
+              <answer>-1195</answer>
+            </var_set>
+            <var_set ident="1fb4c82f047c08d7f35196d14b75ad19">
+              <var name="Q">129</var>
+              <var name="W">268</var>
+              <answer>-397</answer>
+            </var_set>
+            <var_set ident="b3be75f9a8892a18c31b91b5662c60f4">
+              <var name="Q">388</var>
+              <var name="W">401</var>
+              <answer>-789</answer>
+            </var_set>
+            <var_set ident="313a7d1b83c3143e2c2f9ac8be8b8d53">
+              <var name="Q">203</var>
+              <var name="W">551</var>
+              <answer>-754</answer>
+            </var_set>
+            <var_set ident="bb813d684678f611607b610d36d174d0">
+              <var name="Q">825</var>
+              <var name="W">469</var>
+              <answer>-1294</answer>
+            </var_set>
+            <var_set ident="265803e3c57ab9092f807e2bce5e9818">
+              <var name="Q">435</var>
+              <var name="W">700</var>
+              <answer>-1135</answer>
+            </var_set>
+            <var_set ident="c75c3c7abda2be81fc1ef477ade92f98">
+              <var name="Q">709</var>
+              <var name="W">860</var>
+              <answer>-1569</answer>
+            </var_set>
+            <var_set ident="d9ab6f8a2acde16ab174b178636acdd8">
+              <var name="Q">610</var>
+              <var name="W">165</var>
+              <answer>-775</answer>
+            </var_set>
+            <var_set ident="26e76775bb1c1623509ea15db81de4a8">
+              <var name="Q">570</var>
+              <var name="W">255</var>
+              <answer>-825</answer>
+            </var_set>
+            <var_set ident="9db396cacc98889b3c62cbe9d983c942">
+              <var name="Q">155</var>
+              <var name="W">579</var>
+              <answer>-734</answer>
+            </var_set>
+            <var_set ident="08469a1d6eec5ed7926c39e7811e78b7">
+              <var name="Q">605</var>
+              <var name="W">333</var>
+              <answer>-938</answer>
+            </var_set>
+            <var_set ident="fe81c605d6e1a45af84ef28493038af9">
+              <var name="Q">480</var>
+              <var name="W">711</var>
+              <answer>-1191</answer>
+            </var_set>
+            <var_set ident="4014aba18b47eb10d8c9c47060bd0da9">
+              <var name="Q">329</var>
+              <var name="W">777</var>
+              <answer>-1106</answer>
+            </var_set>
+            <var_set ident="a53d5bb0dc2725025d842377dd4b1e69">
+              <var name="Q">770</var>
+              <var name="W">540</var>
+              <answer>-1310</answer>
+            </var_set>
+            <var_set ident="d0dff093d1f91adadb11b865209b140b">
+              <var name="Q">583</var>
+              <var name="W">856</var>
+              <answer>-1439</answer>
+            </var_set>
+            <var_set ident="310f8607a4721f219fda67613c3c0ea0">
+              <var name="Q">355</var>
+              <var name="W">607</var>
+              <answer>-962</answer>
+            </var_set>
+            <var_set ident="f60ede04a3780812fd9d926f72530657">
+              <var name="Q">497</var>
+              <var name="W">285</var>
+              <answer>-782</answer>
+            </var_set>
+            <var_set ident="5c06ffae6dde1db5be2314d48126d7b9">
+              <var name="Q">857</var>
+              <var name="W">850</var>
+              <answer>-1707</answer>
+            </var_set>
+            <var_set ident="680c9f03edee2a8f116b85aa510f9239">
+              <var name="Q">770</var>
+              <var name="W">160</var>
+              <answer>-930</answer>
+            </var_set>
+            <var_set ident="c76558df28cd763039ce429acc28927d">
+              <var name="Q">428</var>
+              <var name="W">622</var>
+              <answer>-1050</answer>
+            </var_set>
+            <var_set ident="f89bb694b787f48476f024e8c6d8f507">
+              <var name="Q">594</var>
+              <var name="W">887</var>
+              <answer>-1481</answer>
+            </var_set>
+            <var_set ident="2e4741e296fdb80ae68291454965bd94">
+              <var name="Q">602</var>
+              <var name="W">621</var>
+              <answer>-1223</answer>
+            </var_set>
+            <var_set ident="9c1d22c09911acc2347c30a368ae9af7">
+              <var name="Q">230</var>
+              <var name="W">345</var>
+              <answer>-575</answer>
+            </var_set>
+            <var_set ident="70efe01979ac453e7284b27a196e247e">
+              <var name="Q">617</var>
+              <var name="W">352</var>
+              <answer>-969</answer>
+            </var_set>
+            <var_set ident="49e592ae55bb88528dedb690ba594dd2">
+              <var name="Q">768</var>
+              <var name="W">140</var>
+              <answer>-908</answer>
+            </var_set>
+            <var_set ident="ad1df1f8db1f14fcd26a74ee5716f2ef">
+              <var name="Q">172</var>
+              <var name="W">774</var>
+              <answer>-946</answer>
+            </var_set>
+            <var_set ident="59773d52756cfb01a701ae093abcd6e8">
+              <var name="Q">303</var>
+              <var name="W">557</var>
+              <answer>-860</answer>
+            </var_set>
+            <var_set ident="f35a173d204e2effbe2dad5fe5aab232">
+              <var name="Q">324</var>
+              <var name="W">271</var>
+              <answer>-595</answer>
+            </var_set>
+            <var_set ident="2d7f18af74e3c130747646f7a3cc3441">
+              <var name="Q">114</var>
+              <var name="W">888</var>
+              <answer>-1002</answer>
+            </var_set>
+            <var_set ident="079ffff09bd02c6056d69e371dd3f647">
+              <var name="Q">158</var>
+              <var name="W">725</var>
+              <answer>-883</answer>
+            </var_set>
+            <var_set ident="38e7cc0492f5ed612c7365fb26277ab8">
+              <var name="Q">312</var>
+              <var name="W">889</var>
+              <answer>-1201</answer>
+            </var_set>
+            <var_set ident="9fe10f8e58dd225ef474a2fd18e42791">
+              <var name="Q">411</var>
+              <var name="W">751</var>
+              <answer>-1162</answer>
+            </var_set>
+            <var_set ident="bb8875fdd256261b9cf95f843f628a78">
+              <var name="Q">465</var>
+              <var name="W">156</var>
+              <answer>-621</answer>
+            </var_set>
+            <var_set ident="f7cb7398acab80c1e36040873bfe50a1">
+              <var name="Q">237</var>
+              <var name="W">723</var>
+              <answer>-960</answer>
+            </var_set>
+            <var_set ident="664c9d6f6ec873ac0ed8125c24116efe">
+              <var name="Q">760</var>
+              <var name="W">475</var>
+              <answer>-1235</answer>
+            </var_set>
+            <var_set ident="e6ee70221334784eabb7e5b6d03f6575">
+              <var name="Q">698</var>
+              <var name="W">523</var>
+              <answer>-1221</answer>
+            </var_set>
+            <var_set ident="9e96ea3ceefd5b6108f8a914da05c45a">
+              <var name="Q">170</var>
+              <var name="W">352</var>
+              <answer>-522</answer>
+            </var_set>
+            <var_set ident="75212f8c2bd22ab1ecf5cd4338f98c39">
+              <var name="Q">102</var>
+              <var name="W">506</var>
+              <answer>-608</answer>
+            </var_set>
+            <var_set ident="4ce5df92dd48d82b7e122ed3da9b3d9e">
+              <var name="Q">376</var>
+              <var name="W">389</var>
+              <answer>-765</answer>
+            </var_set>
+            <var_set ident="e71adc087ea14a07f1602f2add0978b1">
+              <var name="Q">813</var>
+              <var name="W">280</var>
+              <answer>-1093</answer>
+            </var_set>
+            <var_set ident="bb27bdf33b7b8a024ab2ce5c3e086d9b">
+              <var name="Q">366</var>
+              <var name="W">457</var>
+              <answer>-823</answer>
+            </var_set>
+            <var_set ident="c83241c1534e9ca604e8269e379c8e07">
+              <var name="Q">355</var>
+              <var name="W">223</var>
+              <answer>-578</answer>
+            </var_set>
+            <var_set ident="2368f353f2fdb0f07c359ab76fa6fdb6">
+              <var name="Q">321</var>
+              <var name="W">396</var>
+              <answer>-717</answer>
+            </var_set>
+            <var_set ident="88f319595f16cd604086e4283656d87a">
+              <var name="Q">471</var>
+              <var name="W">332</var>
+              <answer>-803</answer>
+            </var_set>
+            <var_set ident="2e03a5969a6b60ae420749046a234e94">
+              <var name="Q">378</var>
+              <var name="W">485</var>
+              <answer>-863</answer>
+            </var_set>
+            <var_set ident="a0241e07127b8923f4cd90eca439bc84">
+              <var name="Q">742</var>
+              <var name="W">365</var>
+              <answer>-1107</answer>
+            </var_set>
+            <var_set ident="2197f5c16261057eb0b70fc00a0c842a">
+              <var name="Q">433</var>
+              <var name="W">698</var>
+              <answer>-1131</answer>
+            </var_set>
+            <var_set ident="8c107fc9fd75f036ce0b91fd5adc3fd4">
+              <var name="Q">888</var>
+              <var name="W">628</var>
+              <answer>-1516</answer>
+            </var_set>
+            <var_set ident="a39e31930796c214a2f41499309172d4">
+              <var name="Q">377</var>
+              <var name="W">708</var>
+              <answer>-1085</answer>
+            </var_set>
+            <var_set ident="46eff0b5e0923dad555d60800905df18">
+              <var name="Q">526</var>
+              <var name="W">471</var>
+              <answer>-997</answer>
+            </var_set>
+            <var_set ident="9d02e28602c3129da5df3923b28f1862">
+              <var name="Q">659</var>
+              <var name="W">250</var>
+              <answer>-909</answer>
+            </var_set>
+            <var_set ident="b87ec78c23a757b75f487504a9ea3b69">
+              <var name="Q">263</var>
+              <var name="W">641</var>
+              <answer>-904</answer>
+            </var_set>
+            <var_set ident="d691d3d9d98be8fe3086001b9f587117">
+              <var name="Q">425</var>
+              <var name="W">456</var>
+              <answer>-881</answer>
+            </var_set>
+            <var_set ident="6e86fb44626d5783ed08569f96e21a95">
+              <var name="Q">448</var>
+              <var name="W">746</var>
+              <answer>-1194</answer>
+            </var_set>
+            <var_set ident="fbaab0d0c332f2e35b90e8e809bda10f">
+              <var name="Q">553</var>
+              <var name="W">404</var>
+              <answer>-957</answer>
+            </var_set>
+            <var_set ident="b0c4780681f258277b4d1dedbcbfb7b9">
+              <var name="Q">749</var>
+              <var name="W">617</var>
+              <answer>-1366</answer>
+            </var_set>
+            <var_set ident="4b4683b6288bf22d7ca7b6a7c965f75c">
+              <var name="Q">712</var>
+              <var name="W">379</var>
+              <answer>-1091</answer>
+            </var_set>
+            <var_set ident="66d1eb836152d0e7ca641ad5577b4e45">
+              <var name="Q">809</var>
+              <var name="W">139</var>
+              <answer>-948</answer>
+            </var_set>
+            <var_set ident="5995e8c635a037e82a1775fec5a4f62c">
+              <var name="Q">727</var>
+              <var name="W">405</var>
+              <answer>-1132</answer>
+            </var_set>
+            <var_set ident="5a72e1a4d62f79ed85cd80cac64e65e9">
+              <var name="Q">472</var>
+              <var name="W">620</var>
+              <answer>-1092</answer>
+            </var_set>
+            <var_set ident="6c3d990e70c094730af7f395ab1fa4d2">
+              <var name="Q">331</var>
+              <var name="W">254</var>
+              <answer>-585</answer>
+            </var_set>
+            <var_set ident="9bdd16b1571a63d212246aa0f8ecd76a">
+              <var name="Q">510</var>
+              <var name="W">508</var>
+              <answer>-1018</answer>
+            </var_set>
+            <var_set ident="a5d321eb59e97336b1b835340425f1da">
+              <var name="Q">631</var>
+              <var name="W">696</var>
+              <answer>-1327</answer>
+            </var_set>
+          </var_sets>
+        </calculated>
+      </itemproc_extension>
+    </item>
+    <item ident="e22f0e784c0fbfe246743550c5939bfa" title="Change in a system's energy (i)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>calculated_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>06750e2d5415edc316684efed8def327</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;`Q` joules of heat enters a system, and a force within the system does `W` joules of work on something outside of the system. What is the change in energy, in joules, of the system?&lt;/p&gt;</mattext>
+        </material>
+        <response_str ident="response1" rcardinality="Single">
+          <render_fib fibtype="Decimal">
+            <response_label ident="answer1"/>
+          </render_fib>
+        </response_str>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition title="correct">
+          <conditionvar>
+            <other/>
+          </conditionvar>
+          <setvar varname="SCORE" action="Set">100</setvar>
+        </respcondition>
+        <respcondition title="incorrect">
+          <conditionvar>
+            <not>
+              <other/>
+            </not>
+          </conditionvar>
+          <setvar varname="SCORE" action="Set">0</setvar>
+        </respcondition>
+      </resprocessing>
+      <itemproc_extension>
+        <calculated>
+          <answer_tolerance margin_type="absolute">0</answer_tolerance>
+          <formulas decimal_places="" scientific_notation="false">
+            <formula>Q-W</formula>
+          </formulas>
+          <vars>
+            <var name="Q" scale="0">
+              <min>100</min>
+              <max>900</max>
+            </var>
+            <var name="W" scale="0">
+              <min>100</min>
+              <max>900</max>
+            </var>
+          </vars>
+          <var_sets>
+            <var_set ident="5f6c79b4453730e8b24b21e63759e31e">
+              <var name="Q">261</var>
+              <var name="W">721</var>
+              <answer>-460</answer>
+            </var_set>
+            <var_set ident="5454a2c716b7b861e4aadefbe711617a">
+              <var name="Q">215</var>
+              <var name="W">351</var>
+              <answer>-136</answer>
+            </var_set>
+            <var_set ident="a5fa4f727ae5b476935d29ddfa966301">
+              <var name="Q">796</var>
+              <var name="W">106</var>
+              <answer>690</answer>
+            </var_set>
+            <var_set ident="d05e9a2892017f0ec437a266726612e3">
+              <var name="Q">859</var>
+              <var name="W">493</var>
+              <answer>366</answer>
+            </var_set>
+            <var_set ident="e0f5e70cd5c8f82ef360c62f9e0e816d">
+              <var name="Q">118</var>
+              <var name="W">850</var>
+              <answer>-732</answer>
+            </var_set>
+            <var_set ident="7c06b08ea5fd8fba437fcfa9e407f6a3">
+              <var name="Q">521</var>
+              <var name="W">744</var>
+              <answer>-223</answer>
+            </var_set>
+            <var_set ident="03c4f21e602050a176d7b1a8849c7b34">
+              <var name="Q">900</var>
+              <var name="W">565</var>
+              <answer>335</answer>
+            </var_set>
+            <var_set ident="2b4fd4982983d9905b86bed99d19f41b">
+              <var name="Q">407</var>
+              <var name="W">801</var>
+              <answer>-394</answer>
+            </var_set>
+            <var_set ident="9b14df774e0769d51ddb3829c2796faa">
+              <var name="Q">515</var>
+              <var name="W">623</var>
+              <answer>-108</answer>
+            </var_set>
+            <var_set ident="8ddafcf6d28bfd53a5aa7fb7b5b59abc">
+              <var name="Q">474</var>
+              <var name="W">644</var>
+              <answer>-170</answer>
+            </var_set>
+            <var_set ident="bb7aaced0f1c4f80a3c059763029a939">
+              <var name="Q">662</var>
+              <var name="W">573</var>
+              <answer>89</answer>
+            </var_set>
+            <var_set ident="0d52e207ab32709731c60518f3780176">
+              <var name="Q">883</var>
+              <var name="W">486</var>
+              <answer>397</answer>
+            </var_set>
+            <var_set ident="82ffebdc9fbd9dcc896058f4a4404c76">
+              <var name="Q">482</var>
+              <var name="W">715</var>
+              <answer>-233</answer>
+            </var_set>
+            <var_set ident="747210bfc3238bf753c6204c5246771a">
+              <var name="Q">216</var>
+              <var name="W">640</var>
+              <answer>-424</answer>
+            </var_set>
+            <var_set ident="ea06f5ab8e96cf2aeb07b8b095b1a56d">
+              <var name="Q">375</var>
+              <var name="W">454</var>
+              <answer>-79</answer>
+            </var_set>
+            <var_set ident="26825fd710d9885614e443d42e928a9f">
+              <var name="Q">494</var>
+              <var name="W">830</var>
+              <answer>-336</answer>
+            </var_set>
+            <var_set ident="0b6189b92050e569c92dcd70aa2531ef">
+              <var name="Q">551</var>
+              <var name="W">784</var>
+              <answer>-233</answer>
+            </var_set>
+            <var_set ident="d85356715a7d235da3440e41fffeddb6">
+              <var name="Q">629</var>
+              <var name="W">704</var>
+              <answer>-75</answer>
+            </var_set>
+            <var_set ident="25ff59eae68a45d625db013f40d383d7">
+              <var name="Q">229</var>
+              <var name="W">155</var>
+              <answer>74</answer>
+            </var_set>
+            <var_set ident="1a92c4ba80fc4d8b30b4f26c4c3d4725">
+              <var name="Q">281</var>
+              <var name="W">474</var>
+              <answer>-193</answer>
+            </var_set>
+            <var_set ident="b7b0819904e6f12db0fd9997af8ab0b9">
+              <var name="Q">472</var>
+              <var name="W">297</var>
+              <answer>175</answer>
+            </var_set>
+            <var_set ident="d44c300c9ec23811f855a2ff1bb6dcc0">
+              <var name="Q">255</var>
+              <var name="W">760</var>
+              <answer>-505</answer>
+            </var_set>
+            <var_set ident="7f85a56a34a1f12bab05aef60d2c4614">
+              <var name="Q">857</var>
+              <var name="W">206</var>
+              <answer>651</answer>
+            </var_set>
+            <var_set ident="cbd55e2640ebe0defe9d221802918795">
+              <var name="Q">781</var>
+              <var name="W">645</var>
+              <answer>136</answer>
+            </var_set>
+            <var_set ident="7b4d670ab2fdc9f3fe3efe3c59674578">
+              <var name="Q">598</var>
+              <var name="W">164</var>
+              <answer>434</answer>
+            </var_set>
+            <var_set ident="3f47a99f670dfa8d065a4a3f51b87334">
+              <var name="Q">213</var>
+              <var name="W">441</var>
+              <answer>-228</answer>
+            </var_set>
+            <var_set ident="0ad7e30edc6f8d24af1aa0fb0fececd6">
+              <var name="Q">306</var>
+              <var name="W">533</var>
+              <answer>-227</answer>
+            </var_set>
+            <var_set ident="3bec458e9a5d54af2b3ef0c0f437fa0b">
+              <var name="Q">870</var>
+              <var name="W">746</var>
+              <answer>124</answer>
+            </var_set>
+            <var_set ident="4fe79af32660ab0ca5b0bf568ea538f7">
+              <var name="Q">462</var>
+              <var name="W">896</var>
+              <answer>-434</answer>
+            </var_set>
+            <var_set ident="99f69886d932b78ca7a3eed33b263c48">
+              <var name="Q">493</var>
+              <var name="W">143</var>
+              <answer>350</answer>
+            </var_set>
+            <var_set ident="475b5db0cbad00f2f8a69ef8554d3ed4">
+              <var name="Q">304</var>
+              <var name="W">102</var>
+              <answer>202</answer>
+            </var_set>
+            <var_set ident="8e00c601b332d5085ca8bdc74139711a">
+              <var name="Q">501</var>
+              <var name="W">377</var>
+              <answer>124</answer>
+            </var_set>
+            <var_set ident="822e80c346d30fa1bd9723ee5fe8bca3">
+              <var name="Q">897</var>
+              <var name="W">792</var>
+              <answer>105</answer>
+            </var_set>
+            <var_set ident="3b32604901afbe878d14ed4894b23234">
+              <var name="Q">595</var>
+              <var name="W">877</var>
+              <answer>-282</answer>
+            </var_set>
+            <var_set ident="bb7debf7561b046f80fde588668ebeca">
+              <var name="Q">404</var>
+              <var name="W">248</var>
+              <answer>156</answer>
+            </var_set>
+            <var_set ident="15c7987756c4e0008903ddea6a2736a8">
+              <var name="Q">227</var>
+              <var name="W">618</var>
+              <answer>-391</answer>
+            </var_set>
+            <var_set ident="f4710d70837f67a569f04abee13526e0">
+              <var name="Q">888</var>
+              <var name="W">694</var>
+              <answer>194</answer>
+            </var_set>
+            <var_set ident="990c2f25fcfc7fd683d8f44d05c5ecf5">
+              <var name="Q">744</var>
+              <var name="W">494</var>
+              <answer>250</answer>
+            </var_set>
+            <var_set ident="e6f5a976d6425ec7e559af89677e162e">
+              <var name="Q">811</var>
+              <var name="W">283</var>
+              <answer>528</answer>
+            </var_set>
+            <var_set ident="3420fce7e7b1b9c974af72dd1daaf272">
+              <var name="Q">594</var>
+              <var name="W">852</var>
+              <answer>-258</answer>
+            </var_set>
+            <var_set ident="beee92919c6f83c6bff4270a563c3672">
+              <var name="Q">107</var>
+              <var name="W">625</var>
+              <answer>-518</answer>
+            </var_set>
+            <var_set ident="edffc69277bb14bc985ccde365f083ac">
+              <var name="Q">122</var>
+              <var name="W">216</var>
+              <answer>-94</answer>
+            </var_set>
+            <var_set ident="13429fe7ef11c5f90fb95bde0882a464">
+              <var name="Q">606</var>
+              <var name="W">803</var>
+              <answer>-197</answer>
+            </var_set>
+            <var_set ident="0c0c8e5273936c9378e07fd04b548211">
+              <var name="Q">477</var>
+              <var name="W">601</var>
+              <answer>-124</answer>
+            </var_set>
+            <var_set ident="20596cf540e045476ace4545f400b86e">
+              <var name="Q">883</var>
+              <var name="W">470</var>
+              <answer>413</answer>
+            </var_set>
+            <var_set ident="54a8224a3466a79be71f52b8fc4a602a">
+              <var name="Q">334</var>
+              <var name="W">861</var>
+              <answer>-527</answer>
+            </var_set>
+            <var_set ident="e95e93d22e9dfb1e4ee944333d70d49f">
+              <var name="Q">584</var>
+              <var name="W">187</var>
+              <answer>397</answer>
+            </var_set>
+            <var_set ident="a8bc4cbe25480d68a7865e2c78b20528">
+              <var name="Q">674</var>
+              <var name="W">684</var>
+              <answer>-10</answer>
+            </var_set>
+            <var_set ident="57e2c888f64f6633a55a548dcb4e4e05">
+              <var name="Q">157</var>
+              <var name="W">259</var>
+              <answer>-102</answer>
+            </var_set>
+            <var_set ident="e7bd793dc1bda1fdbbe78f91ad921459">
+              <var name="Q">241</var>
+              <var name="W">390</var>
+              <answer>-149</answer>
+            </var_set>
+            <var_set ident="d7ac07b9457dd335c8d63313a5bad44d">
+              <var name="Q">470</var>
+              <var name="W">512</var>
+              <answer>-42</answer>
+            </var_set>
+            <var_set ident="bb8fa98a1466c84bef5152ee2ff81d35">
+              <var name="Q">469</var>
+              <var name="W">143</var>
+              <answer>326</answer>
+            </var_set>
+            <var_set ident="eae541a34dcc1f63e1f132d53de1d176">
+              <var name="Q">413</var>
+              <var name="W">326</var>
+              <answer>87</answer>
+            </var_set>
+            <var_set ident="53aa4a14bb7718bd0bc1afaf305c4c59">
+              <var name="Q">167</var>
+              <var name="W">500</var>
+              <answer>-333</answer>
+            </var_set>
+            <var_set ident="bf367ff71457b58057d51abb79f750f1">
+              <var name="Q">514</var>
+              <var name="W">329</var>
+              <answer>185</answer>
+            </var_set>
+            <var_set ident="1b5b39222e22fde5e0f9e367285b9e1c">
+              <var name="Q">612</var>
+              <var name="W">844</var>
+              <answer>-232</answer>
+            </var_set>
+            <var_set ident="0d51ec5195228d9686cffe1aa8556680">
+              <var name="Q">785</var>
+              <var name="W">690</var>
+              <answer>95</answer>
+            </var_set>
+            <var_set ident="9229451fee974bc1a1a4c8811d2835dc">
+              <var name="Q">398</var>
+              <var name="W">161</var>
+              <answer>237</answer>
+            </var_set>
+            <var_set ident="12e4e0fbd6dea73af0dce301cf0b6689">
+              <var name="Q">437</var>
+              <var name="W">455</var>
+              <answer>-18</answer>
+            </var_set>
+            <var_set ident="6016b3aeb9965ffebd9a4c5e5323e624">
+              <var name="Q">192</var>
+              <var name="W">213</var>
+              <answer>-21</answer>
+            </var_set>
+            <var_set ident="8ecf8c3a42fbad996f5e0e460e1a14ba">
+              <var name="Q">730</var>
+              <var name="W">179</var>
+              <answer>551</answer>
+            </var_set>
+            <var_set ident="8ead04fbd86f73ea76737a5158765610">
+              <var name="Q">756</var>
+              <var name="W">452</var>
+              <answer>304</answer>
+            </var_set>
+            <var_set ident="a9bf0306987afdf5de1f613def8f9e11">
+              <var name="Q">804</var>
+              <var name="W">610</var>
+              <answer>194</answer>
+            </var_set>
+            <var_set ident="7780813898ab867a0428875885eac49e">
+              <var name="Q">395</var>
+              <var name="W">818</var>
+              <answer>-423</answer>
+            </var_set>
+            <var_set ident="3cf8e5b2f01eae3e1187e09a6d692704">
+              <var name="Q">870</var>
+              <var name="W">426</var>
+              <answer>444</answer>
+            </var_set>
+            <var_set ident="ba3277676695d0e1cc4975000cd6de77">
+              <var name="Q">270</var>
+              <var name="W">685</var>
+              <answer>-415</answer>
+            </var_set>
+            <var_set ident="fe74d7ee06b08c1b63490540bb04ffb6">
+              <var name="Q">790</var>
+              <var name="W">703</var>
+              <answer>87</answer>
+            </var_set>
+            <var_set ident="d9ef4247bac9a2ec9d09ef169b484ae8">
+              <var name="Q">749</var>
+              <var name="W">599</var>
+              <answer>150</answer>
+            </var_set>
+            <var_set ident="5144f0f696dec8e58f4518fef1a8cc9c">
+              <var name="Q">605</var>
+              <var name="W">213</var>
+              <answer>392</answer>
+            </var_set>
+            <var_set ident="546fa04ab5248451d1a14e1ff525858a">
+              <var name="Q">125</var>
+              <var name="W">364</var>
+              <answer>-239</answer>
+            </var_set>
+            <var_set ident="087accaa3ccdf71660d01289bde58728">
+              <var name="Q">179</var>
+              <var name="W">665</var>
+              <answer>-486</answer>
+            </var_set>
+            <var_set ident="0358eeff9af9d1d7ecef9f3653ddbcbb">
+              <var name="Q">348</var>
+              <var name="W">882</var>
+              <answer>-534</answer>
+            </var_set>
+            <var_set ident="9b3bba1938e8d906cc5005fe4adf8b92">
+              <var name="Q">132</var>
+              <var name="W">118</var>
+              <answer>14</answer>
+            </var_set>
+            <var_set ident="defc0588ea0ee7a17e4120cd08233548">
+              <var name="Q">326</var>
+              <var name="W">681</var>
+              <answer>-355</answer>
+            </var_set>
+            <var_set ident="a093fa086b7b3cf6fba36a3b68d81852">
+              <var name="Q">158</var>
+              <var name="W">251</var>
+              <answer>-93</answer>
+            </var_set>
+            <var_set ident="26f0916be9da573bada025607c86f7eb">
+              <var name="Q">888</var>
+              <var name="W">893</var>
+              <answer>-5</answer>
+            </var_set>
+            <var_set ident="8a790fee693905ee8e562ae51d6139d6">
+              <var name="Q">384</var>
+              <var name="W">705</var>
+              <answer>-321</answer>
+            </var_set>
+            <var_set ident="d46f80fef6b7716edaff9f2bc50e9cb0">
+              <var name="Q">661</var>
+              <var name="W">777</var>
+              <answer>-116</answer>
+            </var_set>
+            <var_set ident="90042828e6bca1c78e21eb94ad22d9be">
+              <var name="Q">666</var>
+              <var name="W">282</var>
+              <answer>384</answer>
+            </var_set>
+            <var_set ident="32824bed36e71655ce3a9f57b8200171">
+              <var name="Q">515</var>
+              <var name="W">803</var>
+              <answer>-288</answer>
+            </var_set>
+            <var_set ident="89eb81a7308c6fa8b5a4f875016b2685">
+              <var name="Q">589</var>
+              <var name="W">398</var>
+              <answer>191</answer>
+            </var_set>
+            <var_set ident="301457cc9af957e20137ffa57275e1ff">
+              <var name="Q">441</var>
+              <var name="W">763</var>
+              <answer>-322</answer>
+            </var_set>
+            <var_set ident="4a73ad31b4bdb0d50df0b412d8018bc2">
+              <var name="Q">628</var>
+              <var name="W">460</var>
+              <answer>168</answer>
+            </var_set>
+            <var_set ident="70c6809e3e7afc55833d7988259092f8">
+              <var name="Q">316</var>
+              <var name="W">324</var>
+              <answer>-8</answer>
+            </var_set>
+            <var_set ident="9483e973be3f16614ac72750a44cde64">
+              <var name="Q">506</var>
+              <var name="W">581</var>
+              <answer>-75</answer>
+            </var_set>
+            <var_set ident="e5ca80e747acd3c86daab24f42c77b9d">
+              <var name="Q">345</var>
+              <var name="W">866</var>
+              <answer>-521</answer>
+            </var_set>
+            <var_set ident="9205bd26f2deae3d9cdf77eafdaa5016">
+              <var name="Q">821</var>
+              <var name="W">408</var>
+              <answer>413</answer>
+            </var_set>
+            <var_set ident="da63aef8bd48aed83cde10d3213e899f">
+              <var name="Q">278</var>
+              <var name="W">299</var>
+              <answer>-21</answer>
+            </var_set>
+            <var_set ident="a862fc58618f0e936ab1f005102db575">
+              <var name="Q">328</var>
+              <var name="W">732</var>
+              <answer>-404</answer>
+            </var_set>
+            <var_set ident="749208999d701446cebb99a1d21b554f">
+              <var name="Q">744</var>
+              <var name="W">292</var>
+              <answer>452</answer>
+            </var_set>
+            <var_set ident="d3d513185963ff988168f88113c4d899">
+              <var name="Q">636</var>
+              <var name="W">820</var>
+              <answer>-184</answer>
+            </var_set>
+            <var_set ident="5728fc02e94d65eac8f8c5579ea8dcc9">
+              <var name="Q">731</var>
+              <var name="W">840</var>
+              <answer>-109</answer>
+            </var_set>
+            <var_set ident="33b4c781e81cdb44151065e9f9b9e5bb">
+              <var name="Q">604</var>
+              <var name="W">744</var>
+              <answer>-140</answer>
+            </var_set>
+            <var_set ident="5ad8908d2f25c924d04ac31038356b40">
+              <var name="Q">737</var>
+              <var name="W">727</var>
+              <answer>10</answer>
+            </var_set>
+            <var_set ident="2cbc40b7384cd4e9410725d7daf9736f">
+              <var name="Q">511</var>
+              <var name="W">873</var>
+              <answer>-362</answer>
+            </var_set>
+            <var_set ident="9543cd651cbe0d9629952bffbd99eb5d">
+              <var name="Q">492</var>
+              <var name="W">652</var>
+              <answer>-160</answer>
+            </var_set>
+            <var_set ident="3a239b34367e9014ad13a4532e95bae9">
+              <var name="Q">300</var>
+              <var name="W">888</var>
+              <answer>-588</answer>
+            </var_set>
+            <var_set ident="ebafc44957603b7a3ab35cb9616f0a87">
+              <var name="Q">209</var>
+              <var name="W">800</var>
+              <answer>-591</answer>
+            </var_set>
+            <var_set ident="47be743ed862d8afc411d10d484c4766">
+              <var name="Q">452</var>
+              <var name="W">295</var>
+              <answer>157</answer>
+            </var_set>
+            <var_set ident="e2ab1a52aa7e23436e4a87ee32e5ecb6">
+              <var name="Q">504</var>
+              <var name="W">878</var>
+              <answer>-374</answer>
+            </var_set>
+            <var_set ident="0422cf0171334eda7c4d6b95d35bd158">
+              <var name="Q">884</var>
+              <var name="W">473</var>
+              <answer>411</answer>
+            </var_set>
+            <var_set ident="5fe3593b3ece30e44da7d91d80479b76">
+              <var name="Q">172</var>
+              <var name="W">520</var>
+              <answer>-348</answer>
+            </var_set>
+            <var_set ident="0c9afef9ede487028f7da038d36575a5">
+              <var name="Q">770</var>
+              <var name="W">111</var>
+              <answer>659</answer>
+            </var_set>
+            <var_set ident="1b3640e2f3a8394d36eb316dad5f4197">
+              <var name="Q">698</var>
+              <var name="W">155</var>
+              <answer>543</answer>
+            </var_set>
+            <var_set ident="9769bb8a3da097c19cf9471f4bc478ce">
+              <var name="Q">233</var>
+              <var name="W">609</var>
+              <answer>-376</answer>
+            </var_set>
+            <var_set ident="bbc5e5e877f8403153009ade4aa61483">
+              <var name="Q">584</var>
+              <var name="W">436</var>
+              <answer>148</answer>
+            </var_set>
+            <var_set ident="05e35e6fd096a3c867a9bc22caf5c928">
+              <var name="Q">811</var>
+              <var name="W">116</var>
+              <answer>695</answer>
+            </var_set>
+            <var_set ident="9975cbfa80d4e5398ded907cd7e205c1">
+              <var name="Q">312</var>
+              <var name="W">405</var>
+              <answer>-93</answer>
+            </var_set>
+            <var_set ident="1d1c78f583ba699af1f034264f5883a2">
+              <var name="Q">464</var>
+              <var name="W">462</var>
+              <answer>2</answer>
+            </var_set>
+            <var_set ident="3cab35bfffc7a3c50ba4e302ac4dd9df">
+              <var name="Q">424</var>
+              <var name="W">417</var>
+              <answer>7</answer>
+            </var_set>
+            <var_set ident="28b5bbe0510d39784f032912cd7f8fec">
+              <var name="Q">277</var>
+              <var name="W">595</var>
+              <answer>-318</answer>
+            </var_set>
+            <var_set ident="657e09315cc8992d36a08ecec2d1b73d">
+              <var name="Q">700</var>
+              <var name="W">372</var>
+              <answer>328</answer>
+            </var_set>
+            <var_set ident="3f4df67570cf3655bae6536fcd5ed93b">
+              <var name="Q">801</var>
+              <var name="W">729</var>
+              <answer>72</answer>
+            </var_set>
+            <var_set ident="defe052561be52bfd05792080efada4a">
+              <var name="Q">525</var>
+              <var name="W">124</var>
+              <answer>401</answer>
+            </var_set>
+            <var_set ident="e9d89dabb4395ac0946c54f8299d0fdc">
+              <var name="Q">459</var>
+              <var name="W">306</var>
+              <answer>153</answer>
+            </var_set>
+            <var_set ident="669af2f6d8e68dc727c2ad5ffe5cc4b0">
+              <var name="Q">425</var>
+              <var name="W">507</var>
+              <answer>-82</answer>
+            </var_set>
+            <var_set ident="6b118d31e733140a8ee55610497f68b1">
+              <var name="Q">798</var>
+              <var name="W">359</var>
+              <answer>439</answer>
+            </var_set>
+            <var_set ident="53273e72b8ca059aa87206cdb453e669">
+              <var name="Q">168</var>
+              <var name="W">516</var>
+              <answer>-348</answer>
+            </var_set>
+            <var_set ident="285a7275f4d75add97f4fc7797131897">
+              <var name="Q">641</var>
+              <var name="W">707</var>
+              <answer>-66</answer>
+            </var_set>
+            <var_set ident="1f9bf75d2a382af48e22e3b4884e1835">
+              <var name="Q">662</var>
+              <var name="W">650</var>
+              <answer>12</answer>
+            </var_set>
+            <var_set ident="2dec616fc5eb5e65ad4dce6460e48f11">
+              <var name="Q">260</var>
+              <var name="W">787</var>
+              <answer>-527</answer>
+            </var_set>
+            <var_set ident="5039d316f57b1da6c41dd4c49fc3c443">
+              <var name="Q">252</var>
+              <var name="W">730</var>
+              <answer>-478</answer>
+            </var_set>
+            <var_set ident="d35c95d902a184d2987d2964a6a3dba7">
+              <var name="Q">712</var>
+              <var name="W">887</var>
+              <answer>-175</answer>
+            </var_set>
+            <var_set ident="e5da1fe1cf9bdb0d26864f4740eea8ee">
+              <var name="Q">626</var>
+              <var name="W">476</var>
+              <answer>150</answer>
+            </var_set>
+            <var_set ident="d040fb39412800a70ae8df911507060e">
+              <var name="Q">178</var>
+              <var name="W">286</var>
+              <answer>-108</answer>
+            </var_set>
+            <var_set ident="36f4a3451db45c8c58015dad8d65df62">
+              <var name="Q">466</var>
+              <var name="W">627</var>
+              <answer>-161</answer>
+            </var_set>
+            <var_set ident="122fd538b24191d419a9f7330b9f1bda">
+              <var name="Q">242</var>
+              <var name="W">660</var>
+              <answer>-418</answer>
+            </var_set>
+            <var_set ident="a4edfb2730a2fb62e8da01c24c5c179f">
+              <var name="Q">486</var>
+              <var name="W">704</var>
+              <answer>-218</answer>
+            </var_set>
+            <var_set ident="6e01922c75a423f521419d0d50bdaf29">
+              <var name="Q">421</var>
+              <var name="W">104</var>
+              <answer>317</answer>
+            </var_set>
+            <var_set ident="cf5b26c7c2c2490741fcf8682fbcaae4">
+              <var name="Q">683</var>
+              <var name="W">645</var>
+              <answer>38</answer>
+            </var_set>
+            <var_set ident="74926288e0ea276d678429002a43943a">
+              <var name="Q">874</var>
+              <var name="W">725</var>
+              <answer>149</answer>
+            </var_set>
+            <var_set ident="228105933362359138ec049a8d59ec04">
+              <var name="Q">516</var>
+              <var name="W">579</var>
+              <answer>-63</answer>
+            </var_set>
+            <var_set ident="a9da8f36a9e92e64cd7de21c6c557902">
+              <var name="Q">780</var>
+              <var name="W">213</var>
+              <answer>567</answer>
+            </var_set>
+            <var_set ident="d8cc576e29a1020d7e1ce00cf0084aa4">
+              <var name="Q">673</var>
+              <var name="W">576</var>
+              <answer>97</answer>
+            </var_set>
+            <var_set ident="4e2ff5b1f8d9a5c638fefdebc16b1f4c">
+              <var name="Q">398</var>
+              <var name="W">792</var>
+              <answer>-394</answer>
+            </var_set>
+            <var_set ident="d100b086343e78f2ace308d012a45ffa">
+              <var name="Q">547</var>
+              <var name="W">456</var>
+              <answer>91</answer>
+            </var_set>
+            <var_set ident="8aa206111a77b0ef95915cf3a7b4a0fd">
+              <var name="Q">101</var>
+              <var name="W">778</var>
+              <answer>-677</answer>
+            </var_set>
+            <var_set ident="785bc8c49ad2ae1c352178b42e72c0d0">
+              <var name="Q">766</var>
+              <var name="W">824</var>
+              <answer>-58</answer>
+            </var_set>
+            <var_set ident="2d1a1700ce92254dc16e2250f922da60">
+              <var name="Q">400</var>
+              <var name="W">277</var>
+              <answer>123</answer>
+            </var_set>
+            <var_set ident="1b59ea6356b54f0bc5b50e909bff2bd7">
+              <var name="Q">581</var>
+              <var name="W">829</var>
+              <answer>-248</answer>
+            </var_set>
+            <var_set ident="a2fe72137042bf142e0234456721bef0">
+              <var name="Q">797</var>
+              <var name="W">899</var>
+              <answer>-102</answer>
+            </var_set>
+            <var_set ident="54ec2317cfeb0b77f4eb0df0b0ba1e93">
+              <var name="Q">658</var>
+              <var name="W">157</var>
+              <answer>501</answer>
+            </var_set>
+            <var_set ident="6899bfb9ea63539615167b6f06441cc6">
+              <var name="Q">108</var>
+              <var name="W">383</var>
+              <answer>-275</answer>
+            </var_set>
+            <var_set ident="4059b31f9083062e7753f447a57743e7">
+              <var name="Q">129</var>
+              <var name="W">443</var>
+              <answer>-314</answer>
+            </var_set>
+            <var_set ident="6335c654cefca5b61b5b8c1c4308afb8">
+              <var name="Q">576</var>
+              <var name="W">738</var>
+              <answer>-162</answer>
+            </var_set>
+            <var_set ident="19ef66f76b205d1cde9ee6cb017d68ba">
+              <var name="Q">247</var>
+              <var name="W">312</var>
+              <answer>-65</answer>
+            </var_set>
+            <var_set ident="9f0bf5fab577882cbf3b2e1267521275">
+              <var name="Q">535</var>
+              <var name="W">314</var>
+              <answer>221</answer>
+            </var_set>
+            <var_set ident="22d68f02e2e76231c201da09998f2cca">
+              <var name="Q">607</var>
+              <var name="W">214</var>
+              <answer>393</answer>
+            </var_set>
+            <var_set ident="98721982f590854b120a38f702beb52c">
+              <var name="Q">556</var>
+              <var name="W">479</var>
+              <answer>77</answer>
+            </var_set>
+            <var_set ident="2b64ffb4979e0e2745864574ae2a0d84">
+              <var name="Q">763</var>
+              <var name="W">772</var>
+              <answer>-9</answer>
+            </var_set>
+            <var_set ident="7cecf65ce01fbb37ac99d1cc4d7d6e9c">
+              <var name="Q">784</var>
+              <var name="W">671</var>
+              <answer>113</answer>
+            </var_set>
+            <var_set ident="9a4033bd9ebe46f4b66c9d20a18c2faf">
+              <var name="Q">556</var>
+              <var name="W">125</var>
+              <answer>431</answer>
+            </var_set>
+            <var_set ident="eb861098bd67f23fb866ae74fd4d52e9">
+              <var name="Q">461</var>
+              <var name="W">583</var>
+              <answer>-122</answer>
+            </var_set>
+            <var_set ident="59090a71eaf7a8478086d15810add0da">
+              <var name="Q">507</var>
+              <var name="W">598</var>
+              <answer>-91</answer>
+            </var_set>
+            <var_set ident="1bfbb9f619da437e0fbd4953778c5432">
+              <var name="Q">828</var>
+              <var name="W">845</var>
+              <answer>-17</answer>
+            </var_set>
+            <var_set ident="8a126e020d07303d1890d9f63118f612">
+              <var name="Q">800</var>
+              <var name="W">386</var>
+              <answer>414</answer>
+            </var_set>
+            <var_set ident="5f4c510103289c3aaae60d6a5f516c38">
+              <var name="Q">333</var>
+              <var name="W">812</var>
+              <answer>-479</answer>
+            </var_set>
+            <var_set ident="e28e7cd141a13fb6b1375612275363c1">
+              <var name="Q">735</var>
+              <var name="W">769</var>
+              <answer>-34</answer>
+            </var_set>
+            <var_set ident="06610adad3287bccdb9df9393fe2f98f">
+              <var name="Q">371</var>
+              <var name="W">278</var>
+              <answer>93</answer>
+            </var_set>
+            <var_set ident="292818085f96a491635e34c08e32dccc">
+              <var name="Q">522</var>
+              <var name="W">331</var>
+              <answer>191</answer>
+            </var_set>
+            <var_set ident="e3862021f6fd82bbc44f5c3ef5a0d04a">
+              <var name="Q">680</var>
+              <var name="W">578</var>
+              <answer>102</answer>
+            </var_set>
+            <var_set ident="301b5b7e85f6b3baebc6f63f30192f84">
+              <var name="Q">287</var>
+              <var name="W">109</var>
+              <answer>178</answer>
+            </var_set>
+            <var_set ident="27ff2d1e17e45462bd0d19e73cb461ff">
+              <var name="Q">607</var>
+              <var name="W">690</var>
+              <answer>-83</answer>
+            </var_set>
+            <var_set ident="3972267c0509b248fd87c339992277b0">
+              <var name="Q">449</var>
+              <var name="W">728</var>
+              <answer>-279</answer>
+            </var_set>
+            <var_set ident="1715c94a248497bf344fb0e2263424da">
+              <var name="Q">548</var>
+              <var name="W">582</var>
+              <answer>-34</answer>
+            </var_set>
+            <var_set ident="30020ad92dd343ee4767fb96c32aab36">
+              <var name="Q">205</var>
+              <var name="W">746</var>
+              <answer>-541</answer>
+            </var_set>
+            <var_set ident="38019de72cab6d10bcb789c62b914bbb">
+              <var name="Q">335</var>
+              <var name="W">207</var>
+              <answer>128</answer>
+            </var_set>
+            <var_set ident="1df6b4cde1eb2c23de2e949547a816bf">
+              <var name="Q">494</var>
+              <var name="W">436</var>
+              <answer>58</answer>
+            </var_set>
+            <var_set ident="10b3cabd394407e59629514262848d3e">
+              <var name="Q">384</var>
+              <var name="W">365</var>
+              <answer>19</answer>
+            </var_set>
+            <var_set ident="d274dc69acac8ba4e5eb84d5c1a64260">
+              <var name="Q">484</var>
+              <var name="W">424</var>
+              <answer>60</answer>
+            </var_set>
+            <var_set ident="df006c3b11275b6bdab6a535689e3d89">
+              <var name="Q">591</var>
+              <var name="W">765</var>
+              <answer>-174</answer>
+            </var_set>
+            <var_set ident="9e50a33174347ac79f09b94ffd5db43b">
+              <var name="Q">555</var>
+              <var name="W">463</var>
+              <answer>92</answer>
+            </var_set>
+            <var_set ident="672d987c564df5a29b4349c130ce29ab">
+              <var name="Q">745</var>
+              <var name="W">507</var>
+              <answer>238</answer>
+            </var_set>
+            <var_set ident="7e63fdca4d0fc4a21216164a0f26e605">
+              <var name="Q">662</var>
+              <var name="W">287</var>
+              <answer>375</answer>
+            </var_set>
+            <var_set ident="2666661ac4b4c92719acfca306c39dd8">
+              <var name="Q">835</var>
+              <var name="W">336</var>
+              <answer>499</answer>
+            </var_set>
+            <var_set ident="dda16d92a0f3ed3821c09ec44696827b">
+              <var name="Q">764</var>
+              <var name="W">415</var>
+              <answer>349</answer>
+            </var_set>
+            <var_set ident="2fe66a97f36942a9e5cf1dc548765ada">
+              <var name="Q">817</var>
+              <var name="W">177</var>
+              <answer>640</answer>
+            </var_set>
+            <var_set ident="017b0b5ab4bdd47867d7935855416801">
+              <var name="Q">839</var>
+              <var name="W">299</var>
+              <answer>540</answer>
+            </var_set>
+            <var_set ident="c7007604e5bfb87a5ff290a44a60927a">
+              <var name="Q">842</var>
+              <var name="W">675</var>
+              <answer>167</answer>
+            </var_set>
+            <var_set ident="8d934953c2329ca38e6b7e1c1850c2e2">
+              <var name="Q">475</var>
+              <var name="W">710</var>
+              <answer>-235</answer>
+            </var_set>
+            <var_set ident="c45c824098f7ab5d222a972716908429">
+              <var name="Q">715</var>
+              <var name="W">619</var>
+              <answer>96</answer>
+            </var_set>
+            <var_set ident="ec701a95f6df57d00f1f04c4334f30ff">
+              <var name="Q">588</var>
+              <var name="W">358</var>
+              <answer>230</answer>
+            </var_set>
+            <var_set ident="6b6653e611cf6f661eafa1f458e12fa2">
+              <var name="Q">791</var>
+              <var name="W">422</var>
+              <answer>369</answer>
+            </var_set>
+            <var_set ident="2ba88e2513ff722beaf12cc6024931f6">
+              <var name="Q">883</var>
+              <var name="W">432</var>
+              <answer>451</answer>
+            </var_set>
+            <var_set ident="13b0bd7321f581d7ef0373beee84f2f1">
+              <var name="Q">190</var>
+              <var name="W">883</var>
+              <answer>-693</answer>
+            </var_set>
+            <var_set ident="293bb87d26450ed05f38496da2fdbb52">
+              <var name="Q">670</var>
+              <var name="W">886</var>
+              <answer>-216</answer>
+            </var_set>
+            <var_set ident="7d0b2b348b908122bc4671e177980b5e">
+              <var name="Q">523</var>
+              <var name="W">396</var>
+              <answer>127</answer>
+            </var_set>
+            <var_set ident="2abc1078063ade5214762f229aa6278c">
+              <var name="Q">476</var>
+              <var name="W">676</var>
+              <answer>-200</answer>
+            </var_set>
+            <var_set ident="b023eb3f74e3d89aeb48b5147ad88d21">
+              <var name="Q">790</var>
+              <var name="W">157</var>
+              <answer>633</answer>
+            </var_set>
+            <var_set ident="0baa7938066d99ba3b2336add049f0b4">
+              <var name="Q">302</var>
+              <var name="W">753</var>
+              <answer>-451</answer>
+            </var_set>
+            <var_set ident="06dcf31944a89106cbe199ce6fb950c6">
+              <var name="Q">831</var>
+              <var name="W">549</var>
+              <answer>282</answer>
+            </var_set>
+            <var_set ident="e145ebd7f36d46f59739b45da9901352">
+              <var name="Q">552</var>
+              <var name="W">454</var>
+              <answer>98</answer>
+            </var_set>
+            <var_set ident="b6ecf11a9104d78775a5928d005b84ef">
+              <var name="Q">669</var>
+              <var name="W">788</var>
+              <answer>-119</answer>
+            </var_set>
+            <var_set ident="80a4ae0a6511f23bc94650a1daffd51a">
+              <var name="Q">247</var>
+              <var name="W">326</var>
+              <answer>-79</answer>
+            </var_set>
+            <var_set ident="cc61ddaf5de0d1d52a149800bacf05d0">
+              <var name="Q">283</var>
+              <var name="W">509</var>
+              <answer>-226</answer>
+            </var_set>
+            <var_set ident="6aff769fe867e4a54c169a2e25c3d3e2">
+              <var name="Q">162</var>
+              <var name="W">360</var>
+              <answer>-198</answer>
+            </var_set>
+            <var_set ident="5633d0e6e9c0558b0979c704037727a6">
+              <var name="Q">228</var>
+              <var name="W">364</var>
+              <answer>-136</answer>
+            </var_set>
+            <var_set ident="23f9fa055238cafe7dc2bcf990b9f5cc">
+              <var name="Q">764</var>
+              <var name="W">134</var>
+              <answer>630</answer>
+            </var_set>
+            <var_set ident="30645324543655addb3b21b54dc7f078">
+              <var name="Q">135</var>
+              <var name="W">409</var>
+              <answer>-274</answer>
+            </var_set>
+            <var_set ident="bff0c2d767f4f4afcf08ee66949c4b32">
+              <var name="Q">583</var>
+              <var name="W">116</var>
+              <answer>467</answer>
+            </var_set>
+          </var_sets>
+        </calculated>
+      </itemproc_extension>
+    </item>
+  </objectbank>
+</questestinterop>

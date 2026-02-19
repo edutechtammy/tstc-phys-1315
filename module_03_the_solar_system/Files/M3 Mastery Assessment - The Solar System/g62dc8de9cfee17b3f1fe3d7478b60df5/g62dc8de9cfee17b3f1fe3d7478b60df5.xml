@@ -1,0 +1,822 @@
+<?xml version="1.0"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/xsd/ims_qtiasiv1p2p1.xsd">
+  <assessment ident="g62dc8de9cfee17b3f1fe3d7478b60df5" title="MA3: Exam" external_assignment_id="875351">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>cc_maxattempts</fieldlabel>
+        <fieldentry>2</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <section ident="root_section">
+      <item ident="0c4e073c51354a080fd89dabbaf88bd3" title="">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>categorization_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry/>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>629e0247f807454bd4f6d950ae7f4558</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>calculator_type</fieldlabel>
+              <fieldentry>none</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;Classify each of the following as either a terrestrial planet, gas giant planet, or a dwarf planet of our solar system.&lt;/p&gt;</mattext>
+          </material>
+          <response_lid ident="4ef8721a-6140-4820-a8b6-baa23c3a26e8" rcardinality="Multiple">
+            <material>
+              <mattext texttype="text/plain">Dwarf Planet</mattext>
+            </material>
+            <render_choice>
+              <response_label ident="0b7c98fe-adaf-473b-96a0-ab99737e91f0">
+                <material>
+                  <mattext texttype="text/plain">Mars</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2ae954fb-d139-4aa5-a0ad-68ef08a1a8e2">
+                <material>
+                  <mattext texttype="text/plain">Jupiter</mattext>
+                </material>
+              </response_label>
+              <response_label ident="33c26c95-e8c1-4111-9384-b83dd744bc70">
+                <material>
+                  <mattext texttype="text/plain">Saturn</mattext>
+                </material>
+              </response_label>
+              <response_label ident="941c3bdb-1263-4ad5-9a4c-a2b6bc926511">
+                <material>
+                  <mattext texttype="text/plain">Uranus</mattext>
+                </material>
+              </response_label>
+              <response_label ident="da997733-f930-4d7a-adb2-3be3f3c14319">
+                <material>
+                  <mattext texttype="text/plain">Mercury</mattext>
+                </material>
+              </response_label>
+              <response_label ident="e1f91167-644a-49b7-be5e-ac81ba6bd610">
+                <material>
+                  <mattext texttype="text/plain">Pluto</mattext>
+                </material>
+              </response_label>
+              <response_label ident="e56e6c79-bb42-4f8d-bb26-ad02396ac7ae">
+                <material>
+                  <mattext texttype="text/plain">Eris</mattext>
+                </material>
+              </response_label>
+              <response_label ident="e804bb31-9881-4730-b9ac-c5046c9b8ae5">
+                <material>
+                  <mattext texttype="text/plain">Venus</mattext>
+                </material>
+              </response_label>
+              <response_label ident="e9154aec-c06e-423e-8f32-2651fc4d939f">
+                <material>
+                  <mattext texttype="text/plain">Earth</mattext>
+                </material>
+              </response_label>
+              <response_label ident="fd1db7b8-dfd2-4691-b9d1-e2c0abf8d545">
+                <material>
+                  <mattext texttype="text/plain">Neptune</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+          <response_lid ident="56713234-6736-4346-994d-31cf9803331f" rcardinality="Multiple">
+            <material>
+              <mattext texttype="text/plain">Gas Giant</mattext>
+            </material>
+            <render_choice>
+              <response_label ident="0b7c98fe-adaf-473b-96a0-ab99737e91f0">
+                <material>
+                  <mattext texttype="text/plain">Mars</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2ae954fb-d139-4aa5-a0ad-68ef08a1a8e2">
+                <material>
+                  <mattext texttype="text/plain">Jupiter</mattext>
+                </material>
+              </response_label>
+              <response_label ident="33c26c95-e8c1-4111-9384-b83dd744bc70">
+                <material>
+                  <mattext texttype="text/plain">Saturn</mattext>
+                </material>
+              </response_label>
+              <response_label ident="941c3bdb-1263-4ad5-9a4c-a2b6bc926511">
+                <material>
+                  <mattext texttype="text/plain">Uranus</mattext>
+                </material>
+              </response_label>
+              <response_label ident="da997733-f930-4d7a-adb2-3be3f3c14319">
+                <material>
+                  <mattext texttype="text/plain">Mercury</mattext>
+                </material>
+              </response_label>
+              <response_label ident="e1f91167-644a-49b7-be5e-ac81ba6bd610">
+                <material>
+                  <mattext texttype="text/plain">Pluto</mattext>
+                </material>
+              </response_label>
+              <response_label ident="e56e6c79-bb42-4f8d-bb26-ad02396ac7ae">
+                <material>
+                  <mattext texttype="text/plain">Eris</mattext>
+                </material>
+              </response_label>
+              <response_label ident="e804bb31-9881-4730-b9ac-c5046c9b8ae5">
+                <material>
+                  <mattext texttype="text/plain">Venus</mattext>
+                </material>
+              </response_label>
+              <response_label ident="e9154aec-c06e-423e-8f32-2651fc4d939f">
+                <material>
+                  <mattext texttype="text/plain">Earth</mattext>
+                </material>
+              </response_label>
+              <response_label ident="fd1db7b8-dfd2-4691-b9d1-e2c0abf8d545">
+                <material>
+                  <mattext texttype="text/plain">Neptune</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+          <response_lid ident="8a6cc242-b95b-41da-bad0-318cadaeffc2" rcardinality="Multiple">
+            <material>
+              <mattext texttype="text/plain">Terrestrial Planet</mattext>
+            </material>
+            <render_choice>
+              <response_label ident="0b7c98fe-adaf-473b-96a0-ab99737e91f0">
+                <material>
+                  <mattext texttype="text/plain">Mars</mattext>
+                </material>
+              </response_label>
+              <response_label ident="2ae954fb-d139-4aa5-a0ad-68ef08a1a8e2">
+                <material>
+                  <mattext texttype="text/plain">Jupiter</mattext>
+                </material>
+              </response_label>
+              <response_label ident="33c26c95-e8c1-4111-9384-b83dd744bc70">
+                <material>
+                  <mattext texttype="text/plain">Saturn</mattext>
+                </material>
+              </response_label>
+              <response_label ident="941c3bdb-1263-4ad5-9a4c-a2b6bc926511">
+                <material>
+                  <mattext texttype="text/plain">Uranus</mattext>
+                </material>
+              </response_label>
+              <response_label ident="da997733-f930-4d7a-adb2-3be3f3c14319">
+                <material>
+                  <mattext texttype="text/plain">Mercury</mattext>
+                </material>
+              </response_label>
+              <response_label ident="e1f91167-644a-49b7-be5e-ac81ba6bd610">
+                <material>
+                  <mattext texttype="text/plain">Pluto</mattext>
+                </material>
+              </response_label>
+              <response_label ident="e56e6c79-bb42-4f8d-bb26-ad02396ac7ae">
+                <material>
+                  <mattext texttype="text/plain">Eris</mattext>
+                </material>
+              </response_label>
+              <response_label ident="e804bb31-9881-4730-b9ac-c5046c9b8ae5">
+                <material>
+                  <mattext texttype="text/plain">Venus</mattext>
+                </material>
+              </response_label>
+              <response_label ident="e9154aec-c06e-423e-8f32-2651fc4d939f">
+                <material>
+                  <mattext texttype="text/plain">Earth</mattext>
+                </material>
+              </response_label>
+              <response_label ident="fd1db7b8-dfd2-4691-b9d1-e2c0abf8d545">
+                <material>
+                  <mattext texttype="text/plain">Neptune</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="8a6cc242-b95b-41da-bad0-318cadaeffc2">da997733-f930-4d7a-adb2-3be3f3c14319</varequal>
+              <varequal respident="8a6cc242-b95b-41da-bad0-318cadaeffc2">e804bb31-9881-4730-b9ac-c5046c9b8ae5</varequal>
+              <varequal respident="8a6cc242-b95b-41da-bad0-318cadaeffc2">e9154aec-c06e-423e-8f32-2651fc4d939f</varequal>
+              <varequal respident="8a6cc242-b95b-41da-bad0-318cadaeffc2">0b7c98fe-adaf-473b-96a0-ab99737e91f0</varequal>
+            </conditionvar>
+            <setvar action="Add" varname="SCORE">33.33</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="56713234-6736-4346-994d-31cf9803331f">2ae954fb-d139-4aa5-a0ad-68ef08a1a8e2</varequal>
+              <varequal respident="56713234-6736-4346-994d-31cf9803331f">33c26c95-e8c1-4111-9384-b83dd744bc70</varequal>
+              <varequal respident="56713234-6736-4346-994d-31cf9803331f">941c3bdb-1263-4ad5-9a4c-a2b6bc926511</varequal>
+              <varequal respident="56713234-6736-4346-994d-31cf9803331f">fd1db7b8-dfd2-4691-b9d1-e2c0abf8d545</varequal>
+            </conditionvar>
+            <setvar action="Add" varname="SCORE">33.33</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="4ef8721a-6140-4820-a8b6-baa23c3a26e8">e1f91167-644a-49b7-be5e-ac81ba6bd610</varequal>
+              <varequal respident="4ef8721a-6140-4820-a8b6-baa23c3a26e8">e56e6c79-bb42-4f8d-bb26-ad02396ac7ae</varequal>
+            </conditionvar>
+            <setvar action="Add" varname="SCORE">33.33</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="ee95808bac488f2c0270524f880433ea" title="">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>ordering_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>2b8a5cca-94f8-40ba-9998-4faf93f427cb,888de471-81f8-4a4f-a023-37a14114100e,939fd71e-6ded-4be1-ba79-5ff8dfa3fc6f,a67a82d7-5906-455b-b9ec-4699187485c6</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>4c2976f3560d1b77667e9701fc95f71a</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>calculator_type</fieldlabel>
+              <fieldentry>none</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;Order the objects in our solar system starting with the Sun&amp;nbsp;&lt;/p&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Ordered">
+            <render_extension>
+              <material position="top">
+                <mattext>Sun</mattext>
+              </material>
+              <ims_render_object shuffle="No">
+                <flow_label>
+                  <response_label ident="2b8a5cca-94f8-40ba-9998-4faf93f427cb">
+                    <material>
+                      <mattext texttype="text/html">&lt;p&gt;Four gas giant planets&lt;/p&gt;</mattext>
+                    </material>
+                  </response_label>
+                  <response_label ident="888de471-81f8-4a4f-a023-37a14114100e">
+                    <material>
+                      <mattext texttype="text/html">&lt;p&gt;Asteroid Belt&lt;/p&gt;</mattext>
+                    </material>
+                  </response_label>
+                  <response_label ident="939fd71e-6ded-4be1-ba79-5ff8dfa3fc6f">
+                    <material>
+                      <mattext texttype="text/html">&lt;p&gt;Pluto and the Kuiper Belt&lt;/p&gt;</mattext>
+                    </material>
+                  </response_label>
+                  <response_label ident="a67a82d7-5906-455b-b9ec-4699187485c6">
+                    <material>
+                      <mattext texttype="text/html">&lt;p&gt;Four terrestrial planets&lt;/p&gt;</mattext>
+                    </material>
+                  </response_label>
+                </flow_label>
+              </ims_render_object>
+              <material position="bottom">
+                <mattext>Outer solar system</mattext>
+              </material>
+            </render_extension>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar defaultval="1" varname="ORDERSCORE" vartype="Integer"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">a67a82d7-5906-455b-b9ec-4699187485c6</varequal>
+              <varequal respident="response1">888de471-81f8-4a4f-a023-37a14114100e</varequal>
+              <varequal respident="response1">2b8a5cca-94f8-40ba-9998-4faf93f427cb</varequal>
+              <varequal respident="response1">939fd71e-6ded-4be1-ba79-5ff8dfa3fc6f</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="61f82f65fecc638438d0588d7d831221" title="">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>60f2ddbe-2b88-4a8e-bbfb-1cbe9cd12dba,03141e60-44f1-45b1-9088-0678bbec6307,d7680c56-d8d6-4bbc-aa08-5466cb96bc6c,beb5b5b8-9c82-4fca-9082-c62c24ad4f45</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>66d22d5134e5fb9b9654d644d1e4e4a2</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>calculator_type</fieldlabel>
+              <fieldentry>none</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;Which of these descriptions of the planet Mercury is &lt;span style="text-decoration: underline;"&gt;incorrect&lt;/span&gt;?&lt;/p&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice shuffle="Yes">
+              <response_label ident="60f2ddbe-2b88-4a8e-bbfb-1cbe9cd12dba">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Three of the planet's years take two of its own days.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="03141e60-44f1-45b1-9088-0678bbec6307">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;The side of the planet that faces the Sun is hot enough to melt lead, but the opposite side is cool enough to liquify oxygen.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="d7680c56-d8d6-4bbc-aa08-5466cb96bc6c">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;The planet has no moon.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="beb5b5b8-9c82-4fca-9082-c62c24ad4f45">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;The presence of a weak magnetic field and its high density suggest that it has a large core that is at least partially molten.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">60f2ddbe-2b88-4a8e-bbfb-1cbe9cd12dba</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="26980217ee059c9b7f20da791213d04e" title="">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>7a0ea244-dca0-4325-9247-ce9427573001,007d6104-5b14-4e23-974d-93b66018370f,55659a8f-a098-4c63-8f38-9b1f47fb35fb,18e7de35-5403-4427-b89c-045fa8106c78</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>dee6e3bd4f3bbfb0f1b0f8cce34aaf6b</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>calculator_type</fieldlabel>
+              <fieldentry>none</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;Which of these descriptions of the planet Venus is &lt;span style="text-decoration: underline;"&gt;incorrect&lt;/span&gt;?&lt;/p&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice shuffle="Yes">
+              <response_label ident="7a0ea244-dca0-4325-9247-ce9427573001">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Venus is very bright in the sky because its surface is covered in brilliant and reflective minerals.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="007d6104-5b14-4e23-974d-93b66018370f">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;The planet is also known as the "Morning and Evening Star", and can often be seen with the naked eye.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="55659a8f-a098-4c63-8f38-9b1f47fb35fb">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Because its mass, size, and density are similar to that of Earth's it is sometimes called our &lt;em&gt;sister&lt;/em&gt; planet.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="18e7de35-5403-4427-b89c-045fa8106c78">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;The atmosphere on Venus is almost entirely made of carbon dioxide which traps heat creating a very strong greenhouse effect.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">7a0ea244-dca0-4325-9247-ce9427573001</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="4df63c446badee76d2ace2593b56521f" title="">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>6903b37e-2213-4b5f-be49-e3eb7e4298b0,0b4fe063-45a4-4016-a3ca-6449ba473ffa,82c14d89-be7f-44a8-b2d5-964146335ac2,37d79a0f-d3f0-4692-afca-89e5fa9de755</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>b47c8d3a15ddead734596d2692da8872</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>calculator_type</fieldlabel>
+              <fieldentry>none</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;Which of these descriptions of the planet Mars is &lt;span style="text-decoration: underline;"&gt;incorrect&lt;/span&gt;?&lt;/p&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice shuffle="Yes">
+              <response_label ident="6903b37e-2213-4b5f-be49-e3eb7e4298b0">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;The entire surface of the planet is very rugged; it is completely covered craters, has the greatest volcanoes, the deepest canyons in the solar system, but no large flat areas.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="0b4fe063-45a4-4016-a3ca-6449ba473ffa">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Like Earth, the surface of Mars is covered in basalt. This rock contains a lot of iron which oxidizes and produces a red color.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="82c14d89-be7f-44a8-b2d5-964146335ac2">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Like Venus, the atmosphere of Mars is almost entirely carbon dioxide; however, because the planet have a weak gravitational field the atmosphere is very thin, and thus doesn't trap heat like Venus's atmosphere does.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="37d79a0f-d3f0-4692-afca-89e5fa9de755">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Mars probably had liquid water long ago, but it has now either evaporated or is now frozen in the planet's polar ice caps.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">6903b37e-2213-4b5f-be49-e3eb7e4298b0</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="47415adc3f6202312e3f98ce73ae0df4" title="">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>dc5e5c25-4df8-4db8-8132-05fd9b1cd095,1c60976d-78d8-437b-a049-97f9d215a801,98ff1e05-240a-4549-9c2b-35ae47af08bd,e6410000-0a1d-4907-b61d-7e7edaddfd9b</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>952d74973ff3b9818f929078b7f1959d</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>calculator_type</fieldlabel>
+              <fieldentry>none</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;Which of the following descriptions about Jupiter is &lt;span style="text-decoration: underline;"&gt;incorrect&lt;/span&gt;?&lt;/p&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice shuffle="Yes">
+              <response_label ident="dc5e5c25-4df8-4db8-8132-05fd9b1cd095">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Jupiter has four moons, and they are named: Io, Europa, Ganymede, and Calisto.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="1c60976d-78d8-437b-a049-97f9d215a801">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Jupiter is the largest planet in the solar system and is twice as massive as all the other planets in the solar system.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="98ff1e05-240a-4549-9c2b-35ae47af08bd">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Hydrogen near on the core's surface of Jupiter is compressed so highly that it is metallic.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="e6410000-0a1d-4907-b61d-7e7edaddfd9b">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;The internal energy that heats the planet comes from gravitational compression of the planet's gas.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">dc5e5c25-4df8-4db8-8132-05fd9b1cd095</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="a0ff9e8fe8176cc01780efe59a833c0c" title="">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>b27ad4b1-c8fb-4173-8162-fe53ccd92c3b,4409d244-e053-418d-92cd-00c8b02d7d6b,7399722f-e52a-417f-8a59-2a7c29da8206,9dd715aa-0194-4eeb-9d6f-939db9e3030a</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>782b0931adecadb9ab8149f684b3f56f</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>calculator_type</fieldlabel>
+              <fieldentry>none</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;Which of these descriptions of the gas giant planets is &lt;span style="text-decoration: underline;"&gt;incorrect&lt;/span&gt;?&lt;/p&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice shuffle="Yes">
+              <response_label ident="b27ad4b1-c8fb-4173-8162-fe53ccd92c3b">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Neptune has an average density that is about 0.7 that of water, which means it could float in a large enough container of water.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4409d244-e053-418d-92cd-00c8b02d7d6b">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Like Jupiter, Saturn has a large spot known as the &lt;em&gt;Great White Spot&lt;/em&gt;, but it is less visible.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="7399722f-e52a-417f-8a59-2a7c29da8206">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Uranus, like Saturn has rings, but they are less visible.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="9dd715aa-0194-4eeb-9d6f-939db9e3030a">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;The outer gas giants, Uranus and Neptune, are made of a rocky core, an icy surface, and an atmosphere of hydrogen and helium.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">b27ad4b1-c8fb-4173-8162-fe53ccd92c3b</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="18fbf4c8209151e9501d41b452ed0c3e" title="">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>a0afd810-9b11-4cb5-81f0-a0cf6a7342b6,a4592750-63cb-4948-9c89-43493282022e,c25a4a9c-0c9a-4c8c-bcdc-f7515dff37c6,a90ef177-7ea0-4c6e-8927-b095f999ce51,6928cffa-fd10-440b-af44-0781062f429c</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>e729b60b3903d5413f05470eb907da71</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>calculator_type</fieldlabel>
+              <fieldentry>none</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;Which of the following descriptions about asteroids is &lt;span style="text-decoration: underline;"&gt;incorrect&lt;/span&gt;?&lt;/p&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice shuffle="Yes">
+              <response_label ident="a0afd810-9b11-4cb5-81f0-a0cf6a7342b6">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;The Asteroid Belt between Mars and Jupiter is a densely packed strip of asteroids.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="a4592750-63cb-4948-9c89-43493282022e">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Asteroids in the Asteroid Belt that are on the near side of the Sun are made of stony materials such as silicates.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="c25a4a9c-0c9a-4c8c-bcdc-f7515dff37c6">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Asteroids in the Asteroid Belt that are on the far side, and away from the Sun, are dark and made of carbon materials.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="a90ef177-7ea0-4c6e-8927-b095f999ce51">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Asteroids are the remnants of the solar nebula that formed our solar system.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="6928cffa-fd10-440b-af44-0781062f429c">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Asteroids vary in size from under a kilometer to about 1000 km in diameter.&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">a0afd810-9b11-4cb5-81f0-a0cf6a7342b6</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="826a25e5e6a1de5dc355291ab0132a7a" title="">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>ordering_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>4.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>0199e9b7-554c-47b6-9b42-c734df707522,0d2b1db8-69ba-4c95-88e4-196eadce687d,1ffd4ef1-35ff-4a93-b45f-940193833b7b,319fbad1-3672-45e3-8625-fb51d66f3e07,53821d30-5e4e-4784-a8b4-07f3f66ba98d,597b97c6-9c41-47e2-8426-72d694dab7b2,996fff03-792b-4ef5-b089-6f1808f054b0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>c61f3bb8f17d6ea1bf9aa0b7e5862bc0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>calculator_type</fieldlabel>
+              <fieldentry>none</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;Below are statements that describe the formation of the solar system, your task is to order them.&lt;/p&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Ordered">
+            <render_extension>
+              <material position="top">
+                <mattext>Beginning</mattext>
+              </material>
+              <ims_render_object shuffle="No">
+                <flow_label>
+                  <response_label ident="0199e9b7-554c-47b6-9b42-c734df707522">
+                    <material>
+                      <mattext texttype="text/html">&lt;p&gt;An accretion disk is formed from the material not pulled into the protostar.&lt;/p&gt;</mattext>
+                    </material>
+                  </response_label>
+                  <response_label ident="0d2b1db8-69ba-4c95-88e4-196eadce687d">
+                    <material>
+                      <mattext texttype="text/html">&lt;p&gt;Hydrogen and star dust begin to rotate.&lt;/p&gt;</mattext>
+                    </material>
+                  </response_label>
+                  <response_label ident="1ffd4ef1-35ff-4a93-b45f-940193833b7b">
+                    <material>
+                      <mattext texttype="text/html">&lt;p&gt;Ancient stars fuse hydrogen to form heavy elements up to iron, and supernova explode fusing heavy elements. These events happen many times over billions of years.&lt;/p&gt;</mattext>
+                    </material>
+                  </response_label>
+                  <response_label ident="319fbad1-3672-45e3-8625-fb51d66f3e07">
+                    <material>
+                      <mattext texttype="text/html">&lt;p&gt;Materials from the accretion disk were pulled together by gravity creating protoplanets.&lt;/p&gt;</mattext>
+                    </material>
+                  </response_label>
+                  <response_label ident="53821d30-5e4e-4784-a8b4-07f3f66ba98d">
+                    <material>
+                      <mattext texttype="text/html">&lt;p&gt;A large amount of mass from a rotating nebula begins to concentrate in the center creating a protostar.&lt;/p&gt;</mattext>
+                    </material>
+                  </response_label>
+                  <response_label ident="597b97c6-9c41-47e2-8426-72d694dab7b2">
+                    <material>
+                      <mattext texttype="text/html">&lt;p&gt;Protoplanets accumulate the material from their orbit and become planets. The protostar has a flare-up event where it produces radiation.&lt;/p&gt;</mattext>
+                    </material>
+                  </response_label>
+                  <response_label ident="996fff03-792b-4ef5-b089-6f1808f054b0">
+                    <material>
+                      <mattext texttype="text/html">&lt;p&gt;Hydrogen and star dust accumulate in one large region of space.&lt;/p&gt;</mattext>
+                    </material>
+                  </response_label>
+                </flow_label>
+              </ims_render_object>
+              <material position="bottom">
+                <mattext>End</mattext>
+              </material>
+            </render_extension>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar defaultval="1" varname="ORDERSCORE" vartype="Integer"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">1ffd4ef1-35ff-4a93-b45f-940193833b7b</varequal>
+              <varequal respident="response1">996fff03-792b-4ef5-b089-6f1808f054b0</varequal>
+              <varequal respident="response1">0d2b1db8-69ba-4c95-88e4-196eadce687d</varequal>
+              <varequal respident="response1">53821d30-5e4e-4784-a8b4-07f3f66ba98d</varequal>
+              <varequal respident="response1">0199e9b7-554c-47b6-9b42-c734df707522</varequal>
+              <varequal respident="response1">319fbad1-3672-45e3-8625-fb51d66f3e07</varequal>
+              <varequal respident="response1">597b97c6-9c41-47e2-8426-72d694dab7b2</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+    </section>
+  </assessment>
+</questestinterop>

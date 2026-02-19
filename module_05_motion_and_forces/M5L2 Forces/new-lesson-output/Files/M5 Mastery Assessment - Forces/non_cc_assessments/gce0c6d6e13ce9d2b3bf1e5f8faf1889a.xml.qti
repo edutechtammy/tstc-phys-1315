@@ -1,0 +1,345 @@
+<?xml version="1.0"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/xsd/ims_qtiasiv1p2p1.xsd">
+  <objectbank ident="gce0c6d6e13ce9d2b3bf1e5f8faf1889a" canvas_item_bank="true">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>bank_title</fieldlabel>
+        <fieldentry>PHYS 1315 M2 Action/Reaction Force Pair</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>bank_type</fieldlabel>
+        <fieldentry>Course</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <item ident="2a56a624ecccf4dd31605146c548ba66" title="Action/Reaction Force Pair (iii)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>cfc543b8-eff0-4dc2-9c55-df5bf6548c62,7d853b45-ff5d-4c81-9d6f-551a310c4313,6b7f480e-1e94-44be-9604-11bdd2bfe4c6,7877fb13-f3e2-472b-bbda-866d3062cceb</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>d3c2d1acd2abb9b4915a00d40728d0ed</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Which of the following is an example of an action/reaction force pair according to Newton's 3&lt;sup&gt;rd&lt;/sup&gt; Law?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="cfc543b8-eff0-4dc2-9c55-df5bf6548c62">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;A crate is held up by a rope. Tension is a force that pulls the crate up, and the crate's weight pulls down on the rope.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="7d853b45-ff5d-4c81-9d6f-551a310c4313">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;An object can float in water because of the buoyant force. The reaction force is the object pushing down on the water.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="6b7f480e-1e94-44be-9604-11bdd2bfe4c6">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;A box resting on a table top is pulled down by gravity and the reaction force is that it is held up by the normal force.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="7877fb13-f3e2-472b-bbda-866d3062cceb">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;A skydiver falls due to the force of gravity, and is pushed upward by the drag force.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">7d853b45-ff5d-4c81-9d6f-551a310c4313</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="59c89c7bb1d4eefc3eea2968e9e81bf0" title="Action/Reaction Force Pair (iv)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>cfc543b8-eff0-4dc2-9c55-df5bf6548c62,7d853b45-ff5d-4c81-9d6f-551a310c4313,6b7f480e-1e94-44be-9604-11bdd2bfe4c6,7877fb13-f3e2-472b-bbda-866d3062cceb</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>520d515e4a63123e248a28e008e37620</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Which of the following is an example of an action/reaction force pair according to Newton's 3&lt;sup&gt;rd&lt;/sup&gt; Law?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="cfc543b8-eff0-4dc2-9c55-df5bf6548c62">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;A crate is held up by a rope. Tension is a force that pulls the crate up, and the crate's weight pulls down on the rope.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="7d853b45-ff5d-4c81-9d6f-551a310c4313">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;An object can float in water because of the buoyant force. The reaction force is the object pushing down on the water.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="6b7f480e-1e94-44be-9604-11bdd2bfe4c6">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;A box resting on a table top is pulled down by gravity and the reaction force is that it is held up by the normal force.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="7877fb13-f3e2-472b-bbda-866d3062cceb">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;A skydiver falls due to the force of gravity, and is pushed upward by the drag force.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">7d853b45-ff5d-4c81-9d6f-551a310c4313</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="ec8768bea732aa630b372e1ed7daad2c" title="Action/Reaction Force Pair (v)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>cfc543b8-eff0-4dc2-9c55-df5bf6548c62,7d853b45-ff5d-4c81-9d6f-551a310c4313,6b7f480e-1e94-44be-9604-11bdd2bfe4c6,7877fb13-f3e2-472b-bbda-866d3062cceb</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>b1322a839194035e871e08cb3c15a6d2</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Which of the following is an example of an action/reaction force pair according to Newton's 3&lt;sup&gt;rd&lt;/sup&gt; Law?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="cfc543b8-eff0-4dc2-9c55-df5bf6548c62">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;A crate is held up by a rope. Tension is a force that pulls the crate up, and the crate's weight pulls down on the rope.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="7d853b45-ff5d-4c81-9d6f-551a310c4313">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;An object can float in water because of the buoyant force. The reaction force is the object pulling the water up.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="6b7f480e-1e94-44be-9604-11bdd2bfe4c6">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;A box resting on a table top is pulled down by gravity and the reaction force is that it is held up by the normal force.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="7877fb13-f3e2-472b-bbda-866d3062cceb">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;A skydiver falls due to the earth's gravity. There is a drag force opposite the direction the skydiver is falling, and the reaction force is the skydiver pushing against the air.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">7877fb13-f3e2-472b-bbda-866d3062cceb</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="190797e8a5ecd414df546029a4ed411d" title="Action/Reaction Force Pair (ii)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>cfc543b8-eff0-4dc2-9c55-df5bf6548c62,7d853b45-ff5d-4c81-9d6f-551a310c4313,6b7f480e-1e94-44be-9604-11bdd2bfe4c6,7877fb13-f3e2-472b-bbda-866d3062cceb</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>bb355edec58bf9d2c5a67ddd00d50c1a</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Which of the following is an example of an action/reaction force pair according to Newton's 3&lt;sup&gt;rd&lt;/sup&gt; Law?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="cfc543b8-eff0-4dc2-9c55-df5bf6548c62">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;A crate is held up by a rope. Tension is a force that pulls the crate up, and the earth's gravity pulls it down.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="7d853b45-ff5d-4c81-9d6f-551a310c4313">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;An object floating in water is pulled down by gravity, and the buoyant force is the reaction force.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="6b7f480e-1e94-44be-9604-11bdd2bfe4c6">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;The normal force will prevent a box from passing through a table that it is resting on top of, and the reaction force to this normal force is the box pushing down on the table top.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="7877fb13-f3e2-472b-bbda-866d3062cceb">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;A skydiver falls due to the force of gravity, and is pushed upward by the drag force.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">6b7f480e-1e94-44be-9604-11bdd2bfe4c6</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="3e05ce7390bde704269a25ebc160e1ce" title="Action/Reaction Force Pair (i)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>cfc543b8-eff0-4dc2-9c55-df5bf6548c62,7d853b45-ff5d-4c81-9d6f-551a310c4313,6b7f480e-1e94-44be-9604-11bdd2bfe4c6,7877fb13-f3e2-472b-bbda-866d3062cceb</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>e79276276866b17f397dce1952a743b7</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Which of the following is an example of an action/reaction force pair according to Newton's 3&lt;sup&gt;rd&lt;/sup&gt; Law?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="cfc543b8-eff0-4dc2-9c55-df5bf6548c62">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;A crate is held up by a rope. Tension is a force that pulls the crate up, and tension pulls down on the rope.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="7d853b45-ff5d-4c81-9d6f-551a310c4313">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;An object floating in water is pulled down by gravity, and pushed up by the buoyant force.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="6b7f480e-1e94-44be-9604-11bdd2bfe4c6">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;A box resting on a table top is pulled down by gravity and held up by the normal force.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="7877fb13-f3e2-472b-bbda-866d3062cceb">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;A skydiver falls due to the force of gravity, and is pushed upward by the drag force.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">cfc543b8-eff0-4dc2-9c55-df5bf6548c62</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+  </objectbank>
+</questestinterop>

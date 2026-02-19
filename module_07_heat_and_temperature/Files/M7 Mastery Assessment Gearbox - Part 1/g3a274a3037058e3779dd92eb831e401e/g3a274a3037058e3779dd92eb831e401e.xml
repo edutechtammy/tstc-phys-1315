@@ -1,0 +1,1713 @@
+<?xml version="1.0"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/xsd/ims_qtiasiv1p2p1.xsd">
+  <assessment ident="g3a274a3037058e3779dd92eb831e401e" title="MA7: Gearbox, Part 1" external_assignment_id="875357">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>cc_maxattempts</fieldlabel>
+        <fieldentry>2</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <section ident="root_section">
+      <item ident="795202b3a99a20d98440bb1d85537073" title="">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>calculated_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry/>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>6d70c7a92f99a8726cf5cb8bdd5bf066</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>calculator_type</fieldlabel>
+              <fieldentry>scientific</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;div class="css-i1v80r"&gt;
+&lt;div class="asciimath2jax_ignore" role="textbox"&gt;
+&lt;div class="css-b66sbk"&gt;
+&lt;div class="user_content css-390zlg enhanced"&gt;
+&lt;p&gt;A gearbox can be modeled as a machine that takes an input of work from a rotating shaft and produces an output of work to a rotating shaft. The primary purpose of a gearbox is to either increase the rotating speed of the output shaft at the expense of reducing the torque or increase the output torque with a reduction in rotating speed. Gearboxes are often enclosed in a case filled with lubricating oil that will help reduce friction between the gears, and evenly distribute thermal energy throughout the device. In the process of working, the gearbox will get hot and radiate heat. An example of what a gearbox's internals look like is shown in the image below.&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;img src="$IMS-CC-FILEBASE$/Uploaded Media/2f8ae253-b6f7-419c-9c04-654575f0a08f" alt="An example image of a gearbox from Eriks showing its internal gears." width="596" height="458"&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;A particular gearbox has been warmed up, and is operating at steady-state. This means that the rate at which energy enters the device equals the rate at which it leaves the device. The rate at which heat is radiated, Q&#x2044;&#x2206;t, from this particular type of gearbox can be modeled as Q&#x2044;&#x2206;t=h&#x2219;A&#x2219;(T-T&lt;sub&gt;0&lt;/sub&gt; ), where h is a constant that is dependent on the device&#x2019;s size and material properties, A is the surface area of the device, T is the temperature of the gearbox&#x2019;s surface, and T&lt;sub&gt;0&lt;/sub&gt; is the temperature of the surrounding air.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;span&gt;If a gearbox is operating at steady-state with&amp;nbsp;&lt;em&gt;h&lt;/em&gt;&amp;nbsp;=&amp;nbsp;&lt;/span&gt;&lt;span&gt;`h`&lt;/span&gt;&lt;span&gt;&amp;nbsp;W/(m&lt;/span&gt;&lt;sup&gt;&lt;span&gt;2&lt;/span&gt;&lt;/sup&gt;&lt;span&gt;&#xB7;K),&amp;nbsp;&amp;nbsp;&lt;em&gt;A&lt;/em&gt;&amp;nbsp;= `A` m&lt;/span&gt;&lt;sup&gt;&lt;span&gt;2&lt;/span&gt;&lt;/sup&gt;&lt;span&gt;,&amp;nbsp;&lt;/span&gt;&amp;nbsp;&lt;span&gt;&lt;em&gt;T&lt;/em&gt;&amp;nbsp;=&lt;/span&gt;&amp;nbsp;&lt;span&gt;`T`&#xB0;F, &lt;em&gt;T&lt;sub&gt;0&lt;/sub&gt;&amp;nbsp;=&lt;/em&gt;&lt;/span&gt;&lt;span&gt; `T0`&#xB0;F, and is supplied with an input power of `Pin` kilowatts, what is the efficiency, as a percentage, of this gearbox? Hint: start by drawing a machine diagram similar to what you see in the lecture videos.&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</mattext>
+          </material>
+          <response_str ident="response1" rcardinality="Single">
+            <render_fib fibtype="Decimal">
+              <response_label ident="answer1"/>
+            </render_fib>
+          </response_str>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition title="correct">
+            <conditionvar>
+              <other/>
+            </conditionvar>
+            <setvar varname="SCORE" action="Set">100</setvar>
+          </respcondition>
+          <respcondition title="incorrect">
+            <conditionvar>
+              <not>
+                <other/>
+              </not>
+            </conditionvar>
+            <setvar varname="SCORE" action="Set">0</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemproc_extension>
+          <calculated>
+            <answer_tolerance margin_type="absolute">0.4</answer_tolerance>
+            <formulas decimal_places="1" scientific_notation="false">
+              <formula>round(100.0*(1.0-h*A*(T-T0)*5/(9*1000*Pin)),1)</formula>
+            </formulas>
+            <vars>
+              <var name="A" scale="3">
+                <min>0.750</min>
+                <max>1.000</max>
+              </var>
+              <var name="Pin" scale="1">
+                <min>28.0</min>
+                <max>70.0</max>
+              </var>
+              <var name="T" scale="1">
+                <min>120.0</min>
+                <max>150.0</max>
+              </var>
+              <var name="T0" scale="1">
+                <min>65.0</min>
+                <max>80.0</max>
+              </var>
+              <var name="h" scale="0">
+                <min>160</min>
+                <max>220</max>
+              </var>
+            </vars>
+            <var_sets>
+              <var_set ident="264d62b458047b9bd2e8b1c218cc5c68">
+                <var name="A">0.986</var>
+                <var name="Pin">28.6</var>
+                <var name="T">139.8</var>
+                <var name="T0">67.4</var>
+                <var name="h">176</var>
+                <answer>75.6</answer>
+              </var_set>
+              <var_set ident="d384579a330ddd946b529d1eea615121">
+                <var name="A">0.917</var>
+                <var name="Pin">30.2</var>
+                <var name="T">140.0</var>
+                <var name="T0">78.8</var>
+                <var name="h">165</var>
+                <answer>83.0</answer>
+              </var_set>
+              <var_set ident="6aed0af16a3545ee4401093d73505038">
+                <var name="A">0.897</var>
+                <var name="Pin">67.6</var>
+                <var name="T">124.6</var>
+                <var name="T0">66.8</var>
+                <var name="h">187</var>
+                <answer>92.0</answer>
+              </var_set>
+              <var_set ident="1f04dc5435e73644781f4ab68f59a471">
+                <var name="A">0.917</var>
+                <var name="Pin">41.4</var>
+                <var name="T">125.8</var>
+                <var name="T0">70.1</var>
+                <var name="h">201</var>
+                <answer>86.2</answer>
+              </var_set>
+              <var_set ident="b097bc434ff5731b6a8e62b39f6b1b68">
+                <var name="A">0.958</var>
+                <var name="Pin">69.7</var>
+                <var name="T">147.7</var>
+                <var name="T0">70.9</var>
+                <var name="h">191</var>
+                <answer>88.8</answer>
+              </var_set>
+              <var_set ident="612e1258bbac64f229213073f7972262">
+                <var name="A">0.857</var>
+                <var name="Pin">32.1</var>
+                <var name="T">149.0</var>
+                <var name="T0">70.9</var>
+                <var name="h">207</var>
+                <answer>76.0</answer>
+              </var_set>
+              <var_set ident="a1585f5fe44219fa20d3afc59bb8383a">
+                <var name="A">0.826</var>
+                <var name="Pin">64.3</var>
+                <var name="T">122.0</var>
+                <var name="T0">69.9</var>
+                <var name="h">202</var>
+                <answer>92.5</answer>
+              </var_set>
+              <var_set ident="de76b35551a19907e54f3eea6cef76a4">
+                <var name="A">0.921</var>
+                <var name="Pin">62.4</var>
+                <var name="T">122.4</var>
+                <var name="T0">65.7</var>
+                <var name="h">186</var>
+                <answer>91.4</answer>
+              </var_set>
+              <var_set ident="b12e0213c85ceeb172f02d4e35f729e3">
+                <var name="A">0.822</var>
+                <var name="Pin">45.4</var>
+                <var name="T">137.8</var>
+                <var name="T0">75.8</var>
+                <var name="h">197</var>
+                <answer>87.7</answer>
+              </var_set>
+              <var_set ident="eb03f1dedbe8ea2ac1a080ce7931bc01">
+                <var name="A">0.822</var>
+                <var name="Pin">45.7</var>
+                <var name="T">135.9</var>
+                <var name="T0">66.4</var>
+                <var name="h">198</var>
+                <answer>86.2</answer>
+              </var_set>
+              <var_set ident="8d06eaba2524706c7392a06589ba1110">
+                <var name="A">0.978</var>
+                <var name="Pin">42.9</var>
+                <var name="T">125.8</var>
+                <var name="T0">79.9</var>
+                <var name="h">202</var>
+                <answer>88.3</answer>
+              </var_set>
+              <var_set ident="175fecaafe3eec444fb56775ede9ee75">
+                <var name="A">0.954</var>
+                <var name="Pin">59.8</var>
+                <var name="T">127.6</var>
+                <var name="T0">78.9</var>
+                <var name="h">196</var>
+                <answer>91.5</answer>
+              </var_set>
+              <var_set ident="b64dde98a9bb2c473985361a41ae7f75">
+                <var name="A">0.812</var>
+                <var name="Pin">28.1</var>
+                <var name="T">139.8</var>
+                <var name="T0">68.6</var>
+                <var name="h">195</var>
+                <answer>77.7</answer>
+              </var_set>
+              <var_set ident="7d1d8f5ef9a164fe6c0087a5a9b6a0e0">
+                <var name="A">0.962</var>
+                <var name="Pin">56.9</var>
+                <var name="T">128.1</var>
+                <var name="T0">72.3</var>
+                <var name="h">166</var>
+                <answer>91.3</answer>
+              </var_set>
+              <var_set ident="813bb0e0cfd94d080746c3cf64c03944">
+                <var name="A">0.868</var>
+                <var name="Pin">54.1</var>
+                <var name="T">147.1</var>
+                <var name="T0">66.1</var>
+                <var name="h">167</var>
+                <answer>87.9</answer>
+              </var_set>
+              <var_set ident="324b1de4bc298c1c088a3ac96c3b300b">
+                <var name="A">0.977</var>
+                <var name="Pin">65.8</var>
+                <var name="T">125.5</var>
+                <var name="T0">76.0</var>
+                <var name="h">183</var>
+                <answer>92.5</answer>
+              </var_set>
+              <var_set ident="9604ae6cfef19b9d582ee476bea53f2f">
+                <var name="A">0.853</var>
+                <var name="Pin">41.5</var>
+                <var name="T">143.0</var>
+                <var name="T0">65.6</var>
+                <var name="h">167</var>
+                <answer>85.2</answer>
+              </var_set>
+              <var_set ident="260dfb48fab0eaf4dd5dffa7695f692f">
+                <var name="A">0.811</var>
+                <var name="Pin">49.3</var>
+                <var name="T">142.0</var>
+                <var name="T0">78.1</var>
+                <var name="h">202</var>
+                <answer>88.2</answer>
+              </var_set>
+              <var_set ident="477c51a0674664cdeff98f1fcf204cef">
+                <var name="A">0.806</var>
+                <var name="Pin">55.9</var>
+                <var name="T">132.7</var>
+                <var name="T0">67.8</var>
+                <var name="h">168</var>
+                <answer>91.3</answer>
+              </var_set>
+              <var_set ident="32dc865359078cb613d4d33305ff3c3f">
+                <var name="A">0.883</var>
+                <var name="Pin">31.1</var>
+                <var name="T">120.1</var>
+                <var name="T0">73.5</var>
+                <var name="h">177</var>
+                <answer>87.0</answer>
+              </var_set>
+              <var_set ident="cea890c7d0e8554ac05fa7ddf9cb2564">
+                <var name="A">0.878</var>
+                <var name="Pin">69.5</var>
+                <var name="T">139.6</var>
+                <var name="T0">65.6</var>
+                <var name="h">174</var>
+                <answer>91.0</answer>
+              </var_set>
+              <var_set ident="fa65614903a9918c2fd51383c7c3f211">
+                <var name="A">0.825</var>
+                <var name="Pin">31.0</var>
+                <var name="T">124.1</var>
+                <var name="T0">71.5</var>
+                <var name="h">201</var>
+                <answer>84.4</answer>
+              </var_set>
+              <var_set ident="cd14e92a174c814b165d7ddca5c1fbd4">
+                <var name="A">0.937</var>
+                <var name="Pin">39.5</var>
+                <var name="T">135.5</var>
+                <var name="T0">69.8</var>
+                <var name="h">178</var>
+                <answer>84.6</answer>
+              </var_set>
+              <var_set ident="80f33e83b6fb67b07061171d3dc55199">
+                <var name="A">0.772</var>
+                <var name="Pin">38.5</var>
+                <var name="T">129.4</var>
+                <var name="T0">67.4</var>
+                <var name="h">197</var>
+                <answer>86.4</answer>
+              </var_set>
+              <var_set ident="943cc599a020fabde59eb7aaac790606">
+                <var name="A">0.985</var>
+                <var name="Pin">51.2</var>
+                <var name="T">121.2</var>
+                <var name="T0">65.6</var>
+                <var name="h">161</var>
+                <answer>90.4</answer>
+              </var_set>
+              <var_set ident="d2d0301e782e13ebb58fe6e5ee12eacd">
+                <var name="A">0.873</var>
+                <var name="Pin">67.5</var>
+                <var name="T">129.1</var>
+                <var name="T0">79.2</var>
+                <var name="h">175</var>
+                <answer>93.7</answer>
+              </var_set>
+              <var_set ident="a3cbbc91dbc3de041a260db9eec771b3">
+                <var name="A">0.871</var>
+                <var name="Pin">28.8</var>
+                <var name="T">139.7</var>
+                <var name="T0">66.0</var>
+                <var name="h">203</var>
+                <answer>74.9</answer>
+              </var_set>
+              <var_set ident="02315c22b8dea426a1291f52df3a1aea">
+                <var name="A">0.978</var>
+                <var name="Pin">48.8</var>
+                <var name="T">121.3</var>
+                <var name="T0">75.7</var>
+                <var name="h">203</var>
+                <answer>89.7</answer>
+              </var_set>
+              <var_set ident="94de499641f2af6f996aeb9f4a50f4b4">
+                <var name="A">0.767</var>
+                <var name="Pin">55.8</var>
+                <var name="T">148.8</var>
+                <var name="T0">67.8</var>
+                <var name="h">204</var>
+                <answer>87.4</answer>
+              </var_set>
+              <var_set ident="1b47aa3cebb24284a01b68d618094415">
+                <var name="A">0.892</var>
+                <var name="Pin">56.3</var>
+                <var name="T">130.0</var>
+                <var name="T0">73.4</var>
+                <var name="h">206</var>
+                <answer>89.7</answer>
+              </var_set>
+              <var_set ident="001f2338274a40f48ab6b88a5ee4d6c7">
+                <var name="A">0.839</var>
+                <var name="Pin">64.1</var>
+                <var name="T">128.7</var>
+                <var name="T0">73.2</var>
+                <var name="h">215</var>
+                <answer>91.3</answer>
+              </var_set>
+              <var_set ident="d260a03eec8c6ed8370ed08005dccdd1">
+                <var name="A">0.780</var>
+                <var name="Pin">44.9</var>
+                <var name="T">145.3</var>
+                <var name="T0">77.6</var>
+                <var name="h">211</var>
+                <answer>86.2</answer>
+              </var_set>
+              <var_set ident="9a5521afe5d98770fa24c7eca9108e4d">
+                <var name="A">0.969</var>
+                <var name="Pin">43.2</var>
+                <var name="T">125.1</var>
+                <var name="T0">65.9</var>
+                <var name="h">170</var>
+                <answer>87.5</answer>
+              </var_set>
+              <var_set ident="75ad74adaea815b9f684deda9461792a">
+                <var name="A">0.928</var>
+                <var name="Pin">28.7</var>
+                <var name="T">124.3</var>
+                <var name="T0">73.1</var>
+                <var name="h">200</var>
+                <answer>81.6</answer>
+              </var_set>
+              <var_set ident="b09075305fb3dfd68b8fd198ac6b2b44">
+                <var name="A">0.826</var>
+                <var name="Pin">67.2</var>
+                <var name="T">139.6</var>
+                <var name="T0">74.0</var>
+                <var name="h">193</var>
+                <answer>91.4</answer>
+              </var_set>
+              <var_set ident="d58f40238f956da715a36cbeb6e93025">
+                <var name="A">0.893</var>
+                <var name="Pin">47.6</var>
+                <var name="T">133.9</var>
+                <var name="T0">67.7</var>
+                <var name="h">213</var>
+                <answer>85.3</answer>
+              </var_set>
+              <var_set ident="2b9aa28b6de770b7084a8ad4d82d90bc">
+                <var name="A">0.853</var>
+                <var name="Pin">29.7</var>
+                <var name="T">140.8</var>
+                <var name="T0">69.8</var>
+                <var name="h">169</var>
+                <answer>80.9</answer>
+              </var_set>
+              <var_set ident="69f364b0642502813974245d5b41aea3">
+                <var name="A">0.787</var>
+                <var name="Pin">50.5</var>
+                <var name="T">139.3</var>
+                <var name="T0">75.9</var>
+                <var name="h">206</var>
+                <answer>88.7</answer>
+              </var_set>
+              <var_set ident="8cef4ec4f4c2760bc5157db70f15ae5f">
+                <var name="A">0.882</var>
+                <var name="Pin">37.4</var>
+                <var name="T">133.1</var>
+                <var name="T0">78.1</var>
+                <var name="h">199</var>
+                <answer>85.7</answer>
+              </var_set>
+              <var_set ident="ab6a8e45a829796525ba3162350c914c">
+                <var name="A">0.791</var>
+                <var name="Pin">55.3</var>
+                <var name="T">131.7</var>
+                <var name="T0">67.9</var>
+                <var name="h">186</var>
+                <answer>90.6</answer>
+              </var_set>
+              <var_set ident="aac443a293b2eae30f3d114e9d67b009">
+                <var name="A">0.935</var>
+                <var name="Pin">53.1</var>
+                <var name="T">145.8</var>
+                <var name="T0">68.9</var>
+                <var name="h">181</var>
+                <answer>86.4</answer>
+              </var_set>
+              <var_set ident="cd4eb04c524fbc689c96a18275265887">
+                <var name="A">0.857</var>
+                <var name="Pin">69.4</var>
+                <var name="T">133.8</var>
+                <var name="T0">78.9</var>
+                <var name="h">174</var>
+                <answer>93.4</answer>
+              </var_set>
+              <var_set ident="01861a4edd2ac7a290e8b5fb62960130">
+                <var name="A">0.829</var>
+                <var name="Pin">68.4</var>
+                <var name="T">143.3</var>
+                <var name="T0">70.1</var>
+                <var name="h">167</var>
+                <answer>91.8</answer>
+              </var_set>
+              <var_set ident="2b6dbf9482f00d1198c0d70af356a3e0">
+                <var name="A">0.884</var>
+                <var name="Pin">49.7</var>
+                <var name="T">135.7</var>
+                <var name="T0">69.0</var>
+                <var name="h">177</var>
+                <answer>88.3</answer>
+              </var_set>
+              <var_set ident="80db582c9599f7aba5325d46b6aa8821">
+                <var name="A">0.890</var>
+                <var name="Pin">36.0</var>
+                <var name="T">123.9</var>
+                <var name="T0">78.0</var>
+                <var name="h">218</var>
+                <answer>86.3</answer>
+              </var_set>
+              <var_set ident="a6939e13905effb9a9d883a1f02ca1da">
+                <var name="A">0.947</var>
+                <var name="Pin">50.4</var>
+                <var name="T">134.1</var>
+                <var name="T0">76.5</var>
+                <var name="h">218</var>
+                <answer>86.9</answer>
+              </var_set>
+              <var_set ident="3530e0baf5813090d287262f443ee532">
+                <var name="A">0.846</var>
+                <var name="Pin">44.1</var>
+                <var name="T">120.1</var>
+                <var name="T0">73.2</var>
+                <var name="h">173</var>
+                <answer>91.4</answer>
+              </var_set>
+              <var_set ident="0ac7044537c8f6622098c4cde894475f">
+                <var name="A">0.760</var>
+                <var name="Pin">28.5</var>
+                <var name="T">126.5</var>
+                <var name="T0">75.0</var>
+                <var name="h">183</var>
+                <answer>86.0</answer>
+              </var_set>
+              <var_set ident="0c44e6bf6f04f986d1b8ea63a484954e">
+                <var name="A">0.830</var>
+                <var name="Pin">66.9</var>
+                <var name="T">123.6</var>
+                <var name="T0">74.1</var>
+                <var name="h">209</var>
+                <answer>92.9</answer>
+              </var_set>
+              <var_set ident="7eb3e995b9d0e65da787c2104eb05cd1">
+                <var name="A">0.855</var>
+                <var name="Pin">39.8</var>
+                <var name="T">133.5</var>
+                <var name="T0">71.8</var>
+                <var name="h">161</var>
+                <answer>88.1</answer>
+              </var_set>
+              <var_set ident="d33d2441f540a32444c0872939d4f1bd">
+                <var name="A">0.836</var>
+                <var name="Pin">46.1</var>
+                <var name="T">138.6</var>
+                <var name="T0">79.6</var>
+                <var name="h">179</var>
+                <answer>89.4</answer>
+              </var_set>
+              <var_set ident="d6865ec00f937c1fa16c618fb25bd991">
+                <var name="A">0.792</var>
+                <var name="Pin">31.6</var>
+                <var name="T">142.2</var>
+                <var name="T0">77.9</var>
+                <var name="h">178</var>
+                <answer>84.1</answer>
+              </var_set>
+              <var_set ident="345181d2980ab1ad7d8ea7d9ad7e58a4">
+                <var name="A">0.946</var>
+                <var name="Pin">44.2</var>
+                <var name="T">141.6</var>
+                <var name="T0">74.4</var>
+                <var name="h">191</var>
+                <answer>84.7</answer>
+              </var_set>
+              <var_set ident="6315a558a3c51cf248e2d3416e4fc3d2">
+                <var name="A">0.765</var>
+                <var name="Pin">31.5</var>
+                <var name="T">140.5</var>
+                <var name="T0">71.9</var>
+                <var name="h">209</var>
+                <answer>80.7</answer>
+              </var_set>
+              <var_set ident="1fac901d0c7728c81551a34226c1b741">
+                <var name="A">0.932</var>
+                <var name="Pin">67.3</var>
+                <var name="T">138.2</var>
+                <var name="T0">68.9</var>
+                <var name="h">164</var>
+                <answer>91.3</answer>
+              </var_set>
+              <var_set ident="9a279d80b429a927f41961d46ceed321">
+                <var name="A">0.754</var>
+                <var name="Pin">39.1</var>
+                <var name="T">130.6</var>
+                <var name="T0">76.2</var>
+                <var name="h">200</var>
+                <answer>88.3</answer>
+              </var_set>
+              <var_set ident="dd5b9afc22800e373f91d23c3e7f758e">
+                <var name="A">0.932</var>
+                <var name="Pin">61.6</var>
+                <var name="T">128.1</var>
+                <var name="T0">74.7</var>
+                <var name="h">169</var>
+                <answer>92.4</answer>
+              </var_set>
+              <var_set ident="4ed4c794d7e745ffe2f8be943205284d">
+                <var name="A">0.782</var>
+                <var name="Pin">38.3</var>
+                <var name="T">138.3</var>
+                <var name="T0">77.7</var>
+                <var name="h">201</var>
+                <answer>86.2</answer>
+              </var_set>
+              <var_set ident="475564b6e77f003fdd2f546aaf1c9e9f">
+                <var name="A">0.935</var>
+                <var name="Pin">29.1</var>
+                <var name="T">140.3</var>
+                <var name="T0">65.4</var>
+                <var name="h">178</var>
+                <answer>76.2</answer>
+              </var_set>
+              <var_set ident="4c9093a15ced8cd7e6b17b8e7e88d7c1">
+                <var name="A">0.931</var>
+                <var name="Pin">62.6</var>
+                <var name="T">143.6</var>
+                <var name="T0">66.3</var>
+                <var name="h">176</var>
+                <answer>88.8</answer>
+              </var_set>
+              <var_set ident="151383c8f410eeefbc5fbfbac6d49b62">
+                <var name="A">0.753</var>
+                <var name="Pin">58.5</var>
+                <var name="T">137.3</var>
+                <var name="T0">77.8</var>
+                <var name="h">180</var>
+                <answer>92.3</answer>
+              </var_set>
+              <var_set ident="6fdc49f6183b23e14d2ac9508f4aa1e6">
+                <var name="A">0.916</var>
+                <var name="Pin">32.3</var>
+                <var name="T">147.8</var>
+                <var name="T0">74.3</var>
+                <var name="h">210</var>
+                <answer>75.7</answer>
+              </var_set>
+              <var_set ident="76a748de476221442f6432209ca360ab">
+                <var name="A">0.808</var>
+                <var name="Pin">65.0</var>
+                <var name="T">123.3</var>
+                <var name="T0">69.0</var>
+                <var name="h">183</var>
+                <answer>93.1</answer>
+              </var_set>
+              <var_set ident="ff0c858cb9f1804cb98905f109c34117">
+                <var name="A">0.778</var>
+                <var name="Pin">31.1</var>
+                <var name="T">142.2</var>
+                <var name="T0">69.6</var>
+                <var name="h">207</var>
+                <answer>79.1</answer>
+              </var_set>
+              <var_set ident="2543ce5e6334364d27f443a164e3251b">
+                <var name="A">0.958</var>
+                <var name="Pin">52.2</var>
+                <var name="T">132.9</var>
+                <var name="T0">76.9</var>
+                <var name="h">182</var>
+                <answer>89.6</answer>
+              </var_set>
+              <var_set ident="3186c30cfa496169adb3a0f5197f3497">
+                <var name="A">0.856</var>
+                <var name="Pin">56.6</var>
+                <var name="T">130.1</var>
+                <var name="T0">79.0</var>
+                <var name="h">168</var>
+                <answer>92.8</answer>
+              </var_set>
+              <var_set ident="fff637aae4d4dec002fbd5b2509f1352">
+                <var name="A">0.941</var>
+                <var name="Pin">58.1</var>
+                <var name="T">126.6</var>
+                <var name="T0">73.0</var>
+                <var name="h">161</var>
+                <answer>92.2</answer>
+              </var_set>
+              <var_set ident="a1d97afe3a1977a9d2b0d77c5d3e2134">
+                <var name="A">0.901</var>
+                <var name="Pin">55.3</var>
+                <var name="T">146.5</var>
+                <var name="T0">77.9</var>
+                <var name="h">199</var>
+                <answer>87.6</answer>
+              </var_set>
+              <var_set ident="147f3b6e57e73efbdaa5b247858ea880">
+                <var name="A">0.995</var>
+                <var name="Pin">45.7</var>
+                <var name="T">136.6</var>
+                <var name="T0">68.0</var>
+                <var name="h">179</var>
+                <answer>85.1</answer>
+              </var_set>
+              <var_set ident="1ebf762bd0243a6b024fb6924b561661">
+                <var name="A">0.839</var>
+                <var name="Pin">30.6</var>
+                <var name="T">147.6</var>
+                <var name="T0">67.4</var>
+                <var name="h">210</var>
+                <answer>74.3</answer>
+              </var_set>
+              <var_set ident="97d0061d28eafe78b1a009f05d7d0691">
+                <var name="A">0.891</var>
+                <var name="Pin">37.3</var>
+                <var name="T">138.8</var>
+                <var name="T0">74.2</var>
+                <var name="h">160</var>
+                <answer>86.3</answer>
+              </var_set>
+              <var_set ident="0a803bcff78a05f7e317b10a64c7347d">
+                <var name="A">0.946</var>
+                <var name="Pin">61.5</var>
+                <var name="T">124.3</var>
+                <var name="T0">75.8</var>
+                <var name="h">168</var>
+                <answer>93.0</answer>
+              </var_set>
+              <var_set ident="e8ae88e095e31d53bdcf03467ab3db5d">
+                <var name="A">0.837</var>
+                <var name="Pin">45.3</var>
+                <var name="T">132.2</var>
+                <var name="T0">73.4</var>
+                <var name="h">183</var>
+                <answer>89.0</answer>
+              </var_set>
+              <var_set ident="26f04824def3838e1c3099239dde0fd7">
+                <var name="A">0.778</var>
+                <var name="Pin">59.9</var>
+                <var name="T">124.3</var>
+                <var name="T0">73.9</var>
+                <var name="h">213</var>
+                <answer>92.3</answer>
+              </var_set>
+              <var_set ident="36596e46853498700fc27df45f74a115">
+                <var name="A">0.837</var>
+                <var name="Pin">65.6</var>
+                <var name="T">143.3</var>
+                <var name="T0">76.7</var>
+                <var name="h">217</var>
+                <answer>89.8</answer>
+              </var_set>
+              <var_set ident="9a043e31ffed6d0ddb415bc262bfdaf4">
+                <var name="A">0.844</var>
+                <var name="Pin">58.1</var>
+                <var name="T">129.0</var>
+                <var name="T0">75.5</var>
+                <var name="h">188</var>
+                <answer>91.9</answer>
+              </var_set>
+              <var_set ident="8979993ce911907323fef22e8de47945">
+                <var name="A">0.905</var>
+                <var name="Pin">64.6</var>
+                <var name="T">133.2</var>
+                <var name="T0">79.3</var>
+                <var name="h">191</var>
+                <answer>92.0</answer>
+              </var_set>
+              <var_set ident="bb259a56f9925c4afcd75e8db48befa0">
+                <var name="A">0.768</var>
+                <var name="Pin">33.4</var>
+                <var name="T">135.7</var>
+                <var name="T0">68.2</var>
+                <var name="h">166</var>
+                <answer>85.7</answer>
+              </var_set>
+              <var_set ident="fc6445b9b82bff2ca317e543c6761e65">
+                <var name="A">0.842</var>
+                <var name="Pin">48.1</var>
+                <var name="T">122.5</var>
+                <var name="T0">71.0</var>
+                <var name="h">172</var>
+                <answer>91.4</answer>
+              </var_set>
+              <var_set ident="fc277fb3f0c0b9dae9da20133b276f93">
+                <var name="A">0.790</var>
+                <var name="Pin">49.8</var>
+                <var name="T">143.6</var>
+                <var name="T0">78.7</var>
+                <var name="h">163</var>
+                <answer>90.7</answer>
+              </var_set>
+              <var_set ident="232b803ecc67f26b667128ccf32ec031">
+                <var name="A">0.963</var>
+                <var name="Pin">63.6</var>
+                <var name="T">131.4</var>
+                <var name="T0">77.0</var>
+                <var name="h">175</var>
+                <answer>92.0</answer>
+              </var_set>
+              <var_set ident="7732e41a47945ab63413125cfbc75915">
+                <var name="A">0.811</var>
+                <var name="Pin">47.0</var>
+                <var name="T">135.3</var>
+                <var name="T0">79.0</var>
+                <var name="h">173</var>
+                <answer>90.7</answer>
+              </var_set>
+              <var_set ident="96baafa93bd4f938badcc269fc20c6f5">
+                <var name="A">0.986</var>
+                <var name="Pin">54.2</var>
+                <var name="T">134.8</var>
+                <var name="T0">71.8</var>
+                <var name="h">173</var>
+                <answer>89.0</answer>
+              </var_set>
+              <var_set ident="6f0122714f304455eb34f264dd1f44ad">
+                <var name="A">0.927</var>
+                <var name="Pin">33.6</var>
+                <var name="T">136.7</var>
+                <var name="T0">67.5</var>
+                <var name="h">195</var>
+                <answer>79.3</answer>
+              </var_set>
+              <var_set ident="3acd4fdbcf355934955661fcd1839503">
+                <var name="A">0.841</var>
+                <var name="Pin">28.3</var>
+                <var name="T">123.4</var>
+                <var name="T0">65.3</var>
+                <var name="h">172</var>
+                <answer>83.5</answer>
+              </var_set>
+              <var_set ident="4a510dcc4347ec621919d912cb81a98a">
+                <var name="A">0.830</var>
+                <var name="Pin">49.2</var>
+                <var name="T">145.9</var>
+                <var name="T0">74.5</var>
+                <var name="h">214</var>
+                <answer>85.7</answer>
+              </var_set>
+              <var_set ident="4bccd22dd1c0ab854bce3ee8d47d88a2">
+                <var name="A">0.866</var>
+                <var name="Pin">31.1</var>
+                <var name="T">149.8</var>
+                <var name="T0">69.1</var>
+                <var name="h">171</var>
+                <answer>78.7</answer>
+              </var_set>
+              <var_set ident="a9b3bd21a5bf9012fa17764267e4be21">
+                <var name="A">0.962</var>
+                <var name="Pin">31.5</var>
+                <var name="T">126.7</var>
+                <var name="T0">67.8</var>
+                <var name="h">176</var>
+                <answer>82.4</answer>
+              </var_set>
+              <var_set ident="2914a48541bd9e8d467ca3bb07fa78d9">
+                <var name="A">0.773</var>
+                <var name="Pin">41.6</var>
+                <var name="T">145.8</var>
+                <var name="T0">73.4</var>
+                <var name="h">171</var>
+                <answer>87.2</answer>
+              </var_set>
+              <var_set ident="f80f0a97515c3e982ae0534824a57220">
+                <var name="A">0.955</var>
+                <var name="Pin">49.2</var>
+                <var name="T">133.6</var>
+                <var name="T0">68.8</var>
+                <var name="h">161</var>
+                <answer>88.7</answer>
+              </var_set>
+              <var_set ident="ade60e1d4ed8fd60d4db1f97b319c65f">
+                <var name="A">0.755</var>
+                <var name="Pin">30.4</var>
+                <var name="T">123.7</var>
+                <var name="T0">71.5</var>
+                <var name="h">210</var>
+                <answer>84.9</answer>
+              </var_set>
+              <var_set ident="b30d31c7918be6afc7839f11e7091fde">
+                <var name="A">0.826</var>
+                <var name="Pin">32.2</var>
+                <var name="T">125.7</var>
+                <var name="T0">75.7</var>
+                <var name="h">169</var>
+                <answer>88.0</answer>
+              </var_set>
+              <var_set ident="8097829e2e22c4ff3e1418176fe3144b">
+                <var name="A">0.880</var>
+                <var name="Pin">67.4</var>
+                <var name="T">134.4</var>
+                <var name="T0">78.3</var>
+                <var name="h">197</var>
+                <answer>92.0</answer>
+              </var_set>
+              <var_set ident="5d08c439ed6bb6f0b8cc445287857b9e">
+                <var name="A">0.929</var>
+                <var name="Pin">57.8</var>
+                <var name="T">127.1</var>
+                <var name="T0">65.7</var>
+                <var name="h">187</var>
+                <answer>89.7</answer>
+              </var_set>
+              <var_set ident="2c14f9c6cbaef5064ba0b6d6e8420477">
+                <var name="A">0.994</var>
+                <var name="Pin">51.6</var>
+                <var name="T">145.2</var>
+                <var name="T0">79.4</var>
+                <var name="h">206</var>
+                <answer>85.5</answer>
+              </var_set>
+              <var_set ident="e115aea99133585289c85e9eb71b5ed8">
+                <var name="A">0.860</var>
+                <var name="Pin">50.0</var>
+                <var name="T">139.7</var>
+                <var name="T0">77.7</var>
+                <var name="h">219</var>
+                <answer>87.0</answer>
+              </var_set>
+              <var_set ident="78600eece3a0113c17e7c37b853667c1">
+                <var name="A">0.807</var>
+                <var name="Pin">63.0</var>
+                <var name="T">144.3</var>
+                <var name="T0">77.5</var>
+                <var name="h">196</var>
+                <answer>90.7</answer>
+              </var_set>
+              <var_set ident="7f7755838a05ccdf821954187602499b">
+                <var name="A">0.914</var>
+                <var name="Pin">30.9</var>
+                <var name="T">141.5</var>
+                <var name="T0">78.6</var>
+                <var name="h">176</var>
+                <answer>81.8</answer>
+              </var_set>
+              <var_set ident="fc29316c60a5c9ba03c90c6ea118a2a7">
+                <var name="A">0.990</var>
+                <var name="Pin">59.7</var>
+                <var name="T">120.2</var>
+                <var name="T0">74.5</var>
+                <var name="h">205</var>
+                <answer>91.4</answer>
+              </var_set>
+              <var_set ident="a6e647dd7745b0aef12abb5037fc4292">
+                <var name="A">0.905</var>
+                <var name="Pin">37.7</var>
+                <var name="T">145.9</var>
+                <var name="T0">68.4</var>
+                <var name="h">206</var>
+                <answer>78.7</answer>
+              </var_set>
+              <var_set ident="c62024249c580926c73ed98729fd52fb">
+                <var name="A">0.866</var>
+                <var name="Pin">46.3</var>
+                <var name="T">133.4</var>
+                <var name="T0">75.4</var>
+                <var name="h">172</var>
+                <answer>89.6</answer>
+              </var_set>
+              <var_set ident="49f98e47f82af3bd2e071873bb35cadb">
+                <var name="A">0.918</var>
+                <var name="Pin">48.4</var>
+                <var name="T">140.6</var>
+                <var name="T0">65.8</var>
+                <var name="h">209</var>
+                <answer>83.5</answer>
+              </var_set>
+              <var_set ident="53c17e33b6b82ce6180ef8982a68df9e">
+                <var name="A">0.920</var>
+                <var name="Pin">46.4</var>
+                <var name="T">124.4</var>
+                <var name="T0">68.2</var>
+                <var name="h">164</var>
+                <answer>89.8</answer>
+              </var_set>
+              <var_set ident="4ed24b6c3aeca171f5817a74605b0d64">
+                <var name="A">0.974</var>
+                <var name="Pin">43.3</var>
+                <var name="T">120.1</var>
+                <var name="T0">72.8</var>
+                <var name="h">213</var>
+                <answer>87.4</answer>
+              </var_set>
+              <var_set ident="6af75a0d36f35e6021dbe1b13dd47eb9">
+                <var name="A">0.824</var>
+                <var name="Pin">62.9</var>
+                <var name="T">145.7</var>
+                <var name="T0">72.0</var>
+                <var name="h">177</var>
+                <answer>90.5</answer>
+              </var_set>
+              <var_set ident="32ad65e0e077df79a6599f0304e7a118">
+                <var name="A">0.963</var>
+                <var name="Pin">54.8</var>
+                <var name="T">130.2</var>
+                <var name="T0">78.6</var>
+                <var name="h">215</var>
+                <answer>89.2</answer>
+              </var_set>
+              <var_set ident="42ea98f6d1005fb07095decf9906652d">
+                <var name="A">0.934</var>
+                <var name="Pin">29.9</var>
+                <var name="T">147.3</var>
+                <var name="T0">79.7</var>
+                <var name="h">206</var>
+                <answer>75.8</answer>
+              </var_set>
+              <var_set ident="ce8b9e1fb0037d73fb65ed29763c84ca">
+                <var name="A">0.805</var>
+                <var name="Pin">50.2</var>
+                <var name="T">135.0</var>
+                <var name="T0">73.5</var>
+                <var name="h">170</var>
+                <answer>90.7</answer>
+              </var_set>
+              <var_set ident="f2447dee1e9d50922ee5e90cf5a67ca7">
+                <var name="A">0.908</var>
+                <var name="Pin">32.8</var>
+                <var name="T">122.8</var>
+                <var name="T0">74.4</var>
+                <var name="h">198</var>
+                <answer>85.3</answer>
+              </var_set>
+              <var_set ident="7b437b650afa804d314a58222176516d">
+                <var name="A">0.881</var>
+                <var name="Pin">33.8</var>
+                <var name="T">136.2</var>
+                <var name="T0">73.8</var>
+                <var name="h">167</var>
+                <answer>84.9</answer>
+              </var_set>
+              <var_set ident="23907119f0eae4196e807deadbe4181f">
+                <var name="A">0.772</var>
+                <var name="Pin">40.7</var>
+                <var name="T">128.9</var>
+                <var name="T0">75.4</var>
+                <var name="h">173</var>
+                <answer>90.2</answer>
+              </var_set>
+              <var_set ident="e448fd382a7c5f367588919acfbcf1e2">
+                <var name="A">0.940</var>
+                <var name="Pin">40.3</var>
+                <var name="T">146.6</var>
+                <var name="T0">76.7</var>
+                <var name="h">201</var>
+                <answer>81.8</answer>
+              </var_set>
+              <var_set ident="c6a873abaa8c424ff84c49063f59537b">
+                <var name="A">0.888</var>
+                <var name="Pin">56.0</var>
+                <var name="T">146.9</var>
+                <var name="T0">67.1</var>
+                <var name="h">166</var>
+                <answer>88.3</answer>
+              </var_set>
+              <var_set ident="716da519fc2026216a79fa941eb13fad">
+                <var name="A">0.774</var>
+                <var name="Pin">66.5</var>
+                <var name="T">138.6</var>
+                <var name="T0">76.7</var>
+                <var name="h">192</var>
+                <answer>92.3</answer>
+              </var_set>
+              <var_set ident="7936ac6b6c5f61171ba42a5ec1d92568">
+                <var name="A">0.759</var>
+                <var name="Pin">68.5</var>
+                <var name="T">130.5</var>
+                <var name="T0">79.5</var>
+                <var name="h">180</var>
+                <answer>94.3</answer>
+              </var_set>
+              <var_set ident="590f67a54d44c2b5971c3da1884ef602">
+                <var name="A">0.857</var>
+                <var name="Pin">62.9</var>
+                <var name="T">144.8</var>
+                <var name="T0">76.2</var>
+                <var name="h">190</var>
+                <answer>90.1</answer>
+              </var_set>
+              <var_set ident="9f96332d1f4ad9f18bfbc474a58bc0ac">
+                <var name="A">0.765</var>
+                <var name="Pin">52.0</var>
+                <var name="T">140.1</var>
+                <var name="T0">65.1</var>
+                <var name="h">213</var>
+                <answer>86.9</answer>
+              </var_set>
+              <var_set ident="7632139bd96be50fe77f399698029298">
+                <var name="A">0.976</var>
+                <var name="Pin">43.4</var>
+                <var name="T">125.1</var>
+                <var name="T0">71.8</var>
+                <var name="h">184</var>
+                <answer>87.7</answer>
+              </var_set>
+              <var_set ident="674e1acd1943a866f671b968502e54b6">
+                <var name="A">0.840</var>
+                <var name="Pin">55.2</var>
+                <var name="T">140.8</var>
+                <var name="T0">73.6</var>
+                <var name="h">207</var>
+                <answer>88.2</answer>
+              </var_set>
+              <var_set ident="bd1a604d6c3d15f00f9b2f16e29530c2">
+                <var name="A">0.751</var>
+                <var name="Pin">44.3</var>
+                <var name="T">122.0</var>
+                <var name="T0">69.5</var>
+                <var name="h">207</var>
+                <answer>89.8</answer>
+              </var_set>
+              <var_set ident="108bbef37d434a988dea425a1ccb7ba2">
+                <var name="A">0.897</var>
+                <var name="Pin">32.1</var>
+                <var name="T">138.1</var>
+                <var name="T0">66.2</var>
+                <var name="h">194</var>
+                <answer>78.3</answer>
+              </var_set>
+              <var_set ident="3f747bb8a0d8e661d6e959358a99c8b2">
+                <var name="A">0.765</var>
+                <var name="Pin">68.6</var>
+                <var name="T">135.8</var>
+                <var name="T0">78.1</var>
+                <var name="h">170</var>
+                <answer>93.9</answer>
+              </var_set>
+              <var_set ident="89f3cb7b73b2333dcf68f9a1b16e5e01">
+                <var name="A">0.817</var>
+                <var name="Pin">50.5</var>
+                <var name="T">124.7</var>
+                <var name="T0">69.9</var>
+                <var name="h">175</var>
+                <answer>91.4</answer>
+              </var_set>
+              <var_set ident="4aee900c52a10a5fa1ef40fe1f2fabfd">
+                <var name="A">0.777</var>
+                <var name="Pin">34.6</var>
+                <var name="T">145.1</var>
+                <var name="T0">75.5</var>
+                <var name="h">208</var>
+                <answer>81.9</answer>
+              </var_set>
+              <var_set ident="7a38e0fe876448557972a3fb39564a71">
+                <var name="A">0.964</var>
+                <var name="Pin">34.4</var>
+                <var name="T">134.0</var>
+                <var name="T0">77.2</var>
+                <var name="h">218</var>
+                <answer>80.7</answer>
+              </var_set>
+              <var_set ident="7558928e80b97a1fb643992ede515a45">
+                <var name="A">0.890</var>
+                <var name="Pin">33.8</var>
+                <var name="T">141.3</var>
+                <var name="T0">69.7</var>
+                <var name="h">172</var>
+                <answer>82.0</answer>
+              </var_set>
+              <var_set ident="4ff52fe680f5593321cdb06a9b7fef74">
+                <var name="A">0.958</var>
+                <var name="Pin">28.4</var>
+                <var name="T">120.7</var>
+                <var name="T0">76.5</var>
+                <var name="h">195</var>
+                <answer>83.8</answer>
+              </var_set>
+              <var_set ident="8c41e6bce11a9db71e47825d0f7bec0f">
+                <var name="A">0.934</var>
+                <var name="Pin">45.5</var>
+                <var name="T">140.3</var>
+                <var name="T0">75.3</var>
+                <var name="h">213</var>
+                <answer>84.2</answer>
+              </var_set>
+              <var_set ident="7f8590b39f9b36be1c610871bfef514d">
+                <var name="A">0.770</var>
+                <var name="Pin">29.3</var>
+                <var name="T">129.8</var>
+                <var name="T0">79.5</var>
+                <var name="h">207</var>
+                <answer>84.8</answer>
+              </var_set>
+              <var_set ident="d1e126bb0d4e2f1d4a094e90824b2344">
+                <var name="A">0.904</var>
+                <var name="Pin">68.5</var>
+                <var name="T">135.4</var>
+                <var name="T0">70.1</var>
+                <var name="h">198</var>
+                <answer>90.5</answer>
+              </var_set>
+              <var_set ident="8af81e1c55431c16e109a65b85ec72c9">
+                <var name="A">0.847</var>
+                <var name="Pin">44.8</var>
+                <var name="T">140.4</var>
+                <var name="T0">75.8</var>
+                <var name="h">206</var>
+                <answer>86.0</answer>
+              </var_set>
+              <var_set ident="06617e694716303faf13b5afa83e698b">
+                <var name="A">0.972</var>
+                <var name="Pin">37.2</var>
+                <var name="T">123.8</var>
+                <var name="T0">74.7</var>
+                <var name="h">196</var>
+                <answer>86.0</answer>
+              </var_set>
+              <var_set ident="44ee1efe5e4f60955fe8f65ee9514a06">
+                <var name="A">0.990</var>
+                <var name="Pin">47.4</var>
+                <var name="T">133.3</var>
+                <var name="T0">70.7</var>
+                <var name="h">186</var>
+                <answer>86.5</answer>
+              </var_set>
+              <var_set ident="6a2cd8084af3cce4426bda60886bdd8e">
+                <var name="A">0.884</var>
+                <var name="Pin">39.5</var>
+                <var name="T">137.0</var>
+                <var name="T0">72.8</var>
+                <var name="h">171</var>
+                <answer>86.4</answer>
+              </var_set>
+              <var_set ident="6525ba649a7dfc05cb2fe79e045eb148">
+                <var name="A">0.979</var>
+                <var name="Pin">50.6</var>
+                <var name="T">136.3</var>
+                <var name="T0">69.8</var>
+                <var name="h">169</var>
+                <answer>87.9</answer>
+              </var_set>
+              <var_set ident="ab17b41ffa6c11eeb316a74114efd441">
+                <var name="A">0.769</var>
+                <var name="Pin">30.1</var>
+                <var name="T">131.1</var>
+                <var name="T0">75.8</var>
+                <var name="h">219</var>
+                <answer>82.8</answer>
+              </var_set>
+              <var_set ident="0aba958f9ab077049b4916f61f0b7606">
+                <var name="A">0.966</var>
+                <var name="Pin">39.2</var>
+                <var name="T">126.2</var>
+                <var name="T0">66.7</var>
+                <var name="h">169</var>
+                <answer>86.2</answer>
+              </var_set>
+              <var_set ident="fc42c6395df6912bd38632144211d4d5">
+                <var name="A">0.797</var>
+                <var name="Pin">31.9</var>
+                <var name="T">123.3</var>
+                <var name="T0">75.4</var>
+                <var name="h">177</var>
+                <answer>88.2</answer>
+              </var_set>
+              <var_set ident="bd27a14df252dd34b5f505af5d4211f8">
+                <var name="A">0.926</var>
+                <var name="Pin">43.4</var>
+                <var name="T">141.1</var>
+                <var name="T0">65.8</var>
+                <var name="h">163</var>
+                <answer>85.5</answer>
+              </var_set>
+              <var_set ident="ba935e68a9b53f5b0fce1af05b429ed2">
+                <var name="A">0.866</var>
+                <var name="Pin">31.7</var>
+                <var name="T">149.4</var>
+                <var name="T0">69.5</var>
+                <var name="h">178</var>
+                <answer>78.4</answer>
+              </var_set>
+              <var_set ident="16fe896b6b3c8e7384abccf38c7f1d0b">
+                <var name="A">0.897</var>
+                <var name="Pin">47.2</var>
+                <var name="T">124.4</var>
+                <var name="T0">79.9</var>
+                <var name="h">208</var>
+                <answer>90.2</answer>
+              </var_set>
+              <var_set ident="6a6fd62fb2cc23e2fd8625ad25f10ffd">
+                <var name="A">0.907</var>
+                <var name="Pin">35.7</var>
+                <var name="T">135.2</var>
+                <var name="T0">68.0</var>
+                <var name="h">170</var>
+                <answer>83.9</answer>
+              </var_set>
+              <var_set ident="a3662cac788f0b81e645950e37e695d6">
+                <var name="A">0.915</var>
+                <var name="Pin">29.9</var>
+                <var name="T">128.0</var>
+                <var name="T0">69.7</var>
+                <var name="h">183</var>
+                <answer>81.9</answer>
+              </var_set>
+              <var_set ident="76583393151f28904472b76348622264">
+                <var name="A">0.884</var>
+                <var name="Pin">60.0</var>
+                <var name="T">148.9</var>
+                <var name="T0">72.0</var>
+                <var name="h">177</var>
+                <answer>88.9</answer>
+              </var_set>
+              <var_set ident="1909db93962bf822a2db96fe06486578">
+                <var name="A">0.969</var>
+                <var name="Pin">55.5</var>
+                <var name="T">140.4</var>
+                <var name="T0">68.2</var>
+                <var name="h">209</var>
+                <answer>85.4</answer>
+              </var_set>
+              <var_set ident="a3765302026ac51bc0d073da1a25d29d">
+                <var name="A">0.786</var>
+                <var name="Pin">51.5</var>
+                <var name="T">140.3</var>
+                <var name="T0">79.2</var>
+                <var name="h">205</var>
+                <answer>89.4</answer>
+              </var_set>
+              <var_set ident="0d9e6ed20c40fd516f291c2c4ca12c07">
+                <var name="A">0.956</var>
+                <var name="Pin">49.2</var>
+                <var name="T">133.9</var>
+                <var name="T0">65.1</var>
+                <var name="h">207</var>
+                <answer>84.6</answer>
+              </var_set>
+              <var_set ident="0eb70f4aca477a7dcdf72d067459a69d">
+                <var name="A">0.823</var>
+                <var name="Pin">48.3</var>
+                <var name="T">140.4</var>
+                <var name="T0">79.2</var>
+                <var name="h">204</var>
+                <answer>88.2</answer>
+              </var_set>
+              <var_set ident="26198cadc7b425fd5e1b9f3a2ff1d4cb">
+                <var name="A">0.920</var>
+                <var name="Pin">38.0</var>
+                <var name="T">139.4</var>
+                <var name="T0">73.4</var>
+                <var name="h">193</var>
+                <answer>82.9</answer>
+              </var_set>
+              <var_set ident="533eed175cb0d1ebfe785134cb433b43">
+                <var name="A">0.842</var>
+                <var name="Pin">40.9</var>
+                <var name="T">134.1</var>
+                <var name="T0">65.6</var>
+                <var name="h">213</var>
+                <answer>83.3</answer>
+              </var_set>
+              <var_set ident="e4973e04e203cd0ac6f3f093461f116d">
+                <var name="A">0.872</var>
+                <var name="Pin">48.6</var>
+                <var name="T">137.7</var>
+                <var name="T0">68.4</var>
+                <var name="h">171</var>
+                <answer>88.2</answer>
+              </var_set>
+              <var_set ident="37be6a95c9f8be67b00f28e907eab5d9">
+                <var name="A">0.969</var>
+                <var name="Pin">61.9</var>
+                <var name="T">138.1</var>
+                <var name="T0">79.9</var>
+                <var name="h">198</var>
+                <answer>90.0</answer>
+              </var_set>
+              <var_set ident="c5684798ad9685cf9c86213263e7b57c">
+                <var name="A">0.849</var>
+                <var name="Pin">66.0</var>
+                <var name="T">129.5</var>
+                <var name="T0">72.9</var>
+                <var name="h">217</var>
+                <answer>91.2</answer>
+              </var_set>
+              <var_set ident="e065f2b616bcb01fabd3ecef1d79ada9">
+                <var name="A">0.971</var>
+                <var name="Pin">31.2</var>
+                <var name="T">127.5</var>
+                <var name="T0">67.5</var>
+                <var name="h">196</var>
+                <answer>79.7</answer>
+              </var_set>
+              <var_set ident="b897a1687d3bbbdd3168f35cac9fa48c">
+                <var name="A">0.917</var>
+                <var name="Pin">51.8</var>
+                <var name="T">123.5</var>
+                <var name="T0">71.6</var>
+                <var name="h">210</var>
+                <answer>89.3</answer>
+              </var_set>
+              <var_set ident="a13bb323db087f8a0dd9ff6b26227439">
+                <var name="A">0.950</var>
+                <var name="Pin">53.4</var>
+                <var name="T">142.2</var>
+                <var name="T0">71.9</var>
+                <var name="h">217</var>
+                <answer>84.9</answer>
+              </var_set>
+              <var_set ident="5bbca4779387882fbac034642ebb1d8d">
+                <var name="A">0.888</var>
+                <var name="Pin">63.4</var>
+                <var name="T">122.9</var>
+                <var name="T0">76.2</var>
+                <var name="h">182</var>
+                <answer>93.4</answer>
+              </var_set>
+              <var_set ident="18fa3eda876c7d7805c67d6d4b3cf801">
+                <var name="A">0.771</var>
+                <var name="Pin">46.4</var>
+                <var name="T">134.7</var>
+                <var name="T0">71.4</var>
+                <var name="h">173</var>
+                <answer>89.9</answer>
+              </var_set>
+              <var_set ident="fa084f010170cfb1d2383cf9a79ae034">
+                <var name="A">0.934</var>
+                <var name="Pin">34.9</var>
+                <var name="T">125.3</var>
+                <var name="T0">68.9</var>
+                <var name="h">211</var>
+                <answer>82.3</answer>
+              </var_set>
+              <var_set ident="c6765fc6215b8064797bb93f368d5994">
+                <var name="A">0.772</var>
+                <var name="Pin">61.9</var>
+                <var name="T">149.4</var>
+                <var name="T0">73.0</var>
+                <var name="h">199</var>
+                <answer>89.5</answer>
+              </var_set>
+              <var_set ident="2de075d24b26d3b92a99db306cc42772">
+                <var name="A">0.879</var>
+                <var name="Pin">41.1</var>
+                <var name="T">138.9</var>
+                <var name="T0">71.9</var>
+                <var name="h">216</var>
+                <answer>82.8</answer>
+              </var_set>
+              <var_set ident="da6bf8eeba46222f40a3cd7dd46d10dc">
+                <var name="A">0.938</var>
+                <var name="Pin">39.3</var>
+                <var name="T">134.2</var>
+                <var name="T0">67.5</var>
+                <var name="h">178</var>
+                <answer>84.3</answer>
+              </var_set>
+              <var_set ident="8996d34f76d6ebe12f4ceccea3dfb731">
+                <var name="A">0.926</var>
+                <var name="Pin">30.2</var>
+                <var name="T">124.0</var>
+                <var name="T0">67.6</var>
+                <var name="h">190</var>
+                <answer>81.7</answer>
+              </var_set>
+              <var_set ident="0e0d6a7b7eee47e26973714b1f9a8024">
+                <var name="A">0.826</var>
+                <var name="Pin">52.8</var>
+                <var name="T">144.8</var>
+                <var name="T0">66.4</var>
+                <var name="h">198</var>
+                <answer>86.5</answer>
+              </var_set>
+              <var_set ident="4f87806e844872b0237d02c4ee5530ff">
+                <var name="A">0.937</var>
+                <var name="Pin">45.5</var>
+                <var name="T">149.5</var>
+                <var name="T0">75.1</var>
+                <var name="h">201</var>
+                <answer>82.9</answer>
+              </var_set>
+              <var_set ident="cbc360d2336a17e6034a59ce95831e97">
+                <var name="A">0.846</var>
+                <var name="Pin">46.9</var>
+                <var name="T">134.4</var>
+                <var name="T0">68.5</var>
+                <var name="h">170</var>
+                <answer>88.8</answer>
+              </var_set>
+              <var_set ident="c7f6a0f85c1b79900f0742d21b4185a5">
+                <var name="A">0.965</var>
+                <var name="Pin">62.8</var>
+                <var name="T">126.0</var>
+                <var name="T0">75.3</var>
+                <var name="h">218</var>
+                <answer>90.6</answer>
+              </var_set>
+              <var_set ident="1756064bf27e041b630f1bc83ac9fe26">
+                <var name="A">0.863</var>
+                <var name="Pin">38.9</var>
+                <var name="T">144.9</var>
+                <var name="T0">74.7</var>
+                <var name="h">167</var>
+                <answer>85.6</answer>
+              </var_set>
+              <var_set ident="927a63712ee9f1c2c9738c3ac14c1036">
+                <var name="A">0.863</var>
+                <var name="Pin">32.9</var>
+                <var name="T">138.5</var>
+                <var name="T0">75.8</var>
+                <var name="h">160</var>
+                <answer>85.4</answer>
+              </var_set>
+              <var_set ident="8b8ccda20beed7f5f0b6cde4c87369f0">
+                <var name="A">0.812</var>
+                <var name="Pin">40.3</var>
+                <var name="T">140.8</var>
+                <var name="T0">73.2</var>
+                <var name="h">169</var>
+                <answer>87.2</answer>
+              </var_set>
+              <var_set ident="67c99215cddfb0d2751cdcc6cebd0a1d">
+                <var name="A">0.915</var>
+                <var name="Pin">48.8</var>
+                <var name="T">121.9</var>
+                <var name="T0">67.4</var>
+                <var name="h">204</var>
+                <answer>88.4</answer>
+              </var_set>
+              <var_set ident="40ce9ca89dd6ef12a276adfad6955175">
+                <var name="A">0.813</var>
+                <var name="Pin">67.0</var>
+                <var name="T">126.6</var>
+                <var name="T0">66.8</var>
+                <var name="h">160</var>
+                <answer>93.5</answer>
+              </var_set>
+              <var_set ident="19a0a4c090876c638114987d907c06d2">
+                <var name="A">0.857</var>
+                <var name="Pin">39.2</var>
+                <var name="T">127.9</var>
+                <var name="T0">75.6</var>
+                <var name="h">211</var>
+                <answer>86.6</answer>
+              </var_set>
+              <var_set ident="3484e0762271b7084ed9a810644790b1">
+                <var name="A">0.850</var>
+                <var name="Pin">42.8</var>
+                <var name="T">138.7</var>
+                <var name="T0">72.0</var>
+                <var name="h">187</var>
+                <answer>86.2</answer>
+              </var_set>
+              <var_set ident="c19016ea4897ee1b3b27bf132fd7baad">
+                <var name="A">0.924</var>
+                <var name="Pin">44.3</var>
+                <var name="T">144.4</var>
+                <var name="T0">69.4</var>
+                <var name="h">161</var>
+                <answer>86.0</answer>
+              </var_set>
+              <var_set ident="15222733d663871a494dae17332e1ce1">
+                <var name="A">0.878</var>
+                <var name="Pin">69.0</var>
+                <var name="T">130.8</var>
+                <var name="T0">75.5</var>
+                <var name="h">167</var>
+                <answer>93.5</answer>
+              </var_set>
+              <var_set ident="0cc621058d073fd61c7eb65ce32ec24c">
+                <var name="A">0.969</var>
+                <var name="Pin">55.5</var>
+                <var name="T">120.2</var>
+                <var name="T0">74.1</var>
+                <var name="h">213</var>
+                <answer>90.5</answer>
+              </var_set>
+              <var_set ident="a542725edd7f4eee441f179013afd75e">
+                <var name="A">0.916</var>
+                <var name="Pin">49.7</var>
+                <var name="T">149.4</var>
+                <var name="T0">79.3</var>
+                <var name="h">196</var>
+                <answer>85.9</answer>
+              </var_set>
+              <var_set ident="909b396cafba03f8f4c97f69154c724f">
+                <var name="A">0.918</var>
+                <var name="Pin">48.4</var>
+                <var name="T">148.8</var>
+                <var name="T0">78.0</var>
+                <var name="h">212</var>
+                <answer>84.2</answer>
+              </var_set>
+              <var_set ident="490ca3fc69a967c2e12a28e0e6f111b3">
+                <var name="A">0.881</var>
+                <var name="Pin">52.7</var>
+                <var name="T">125.8</var>
+                <var name="T0">77.7</var>
+                <var name="h">184</var>
+                <answer>91.8</answer>
+              </var_set>
+              <var_set ident="35c3e1694e04e640d911b913b67870ae">
+                <var name="A">0.995</var>
+                <var name="Pin">33.5</var>
+                <var name="T">143.4</var>
+                <var name="T0">71.4</var>
+                <var name="h">165</var>
+                <answer>80.4</answer>
+              </var_set>
+              <var_set ident="de86f0d6dc1ba89500a79ecaec4b3091">
+                <var name="A">0.857</var>
+                <var name="Pin">39.2</var>
+                <var name="T">127.6</var>
+                <var name="T0">68.9</var>
+                <var name="h">179</var>
+                <answer>87.2</answer>
+              </var_set>
+              <var_set ident="d7cc84fa1f90d0f9d811f1cc013efc7e">
+                <var name="A">0.785</var>
+                <var name="Pin">46.6</var>
+                <var name="T">140.4</var>
+                <var name="T0">69.4</var>
+                <var name="h">161</var>
+                <answer>89.3</answer>
+              </var_set>
+              <var_set ident="ee5afd5dfc3c3d936732e9ef0ae3f3a4">
+                <var name="A">0.798</var>
+                <var name="Pin">62.0</var>
+                <var name="T">150.0</var>
+                <var name="T0">68.0</var>
+                <var name="h">193</var>
+                <answer>88.7</answer>
+              </var_set>
+              <var_set ident="90a49fdf94737722f6b52cb6c9fd60b6">
+                <var name="A">0.954</var>
+                <var name="Pin">61.5</var>
+                <var name="T">147.3</var>
+                <var name="T0">66.3</var>
+                <var name="h">209</var>
+                <answer>85.4</answer>
+              </var_set>
+              <var_set ident="ece06c2ba5491335591e365c0363e4b6">
+                <var name="A">0.902</var>
+                <var name="Pin">51.2</var>
+                <var name="T">145.0</var>
+                <var name="T0">65.2</var>
+                <var name="h">177</var>
+                <answer>86.2</answer>
+              </var_set>
+              <var_set ident="e1e1f65d3d2d1fe31b60dac3f85a5482">
+                <var name="A">0.833</var>
+                <var name="Pin">42.7</var>
+                <var name="T">149.9</var>
+                <var name="T0">79.6</var>
+                <var name="h">189</var>
+                <answer>85.6</answer>
+              </var_set>
+              <var_set ident="6bfd860fa77a2cc131b73df9f165c518">
+                <var name="A">0.928</var>
+                <var name="Pin">42.0</var>
+                <var name="T">121.2</var>
+                <var name="T0">76.1</var>
+                <var name="h">175</var>
+                <answer>90.3</answer>
+              </var_set>
+              <var_set ident="7b88f211eb8c9469ee798c0e629af65f">
+                <var name="A">0.909</var>
+                <var name="Pin">29.3</var>
+                <var name="T">124.2</var>
+                <var name="T0">77.8</var>
+                <var name="h">207</var>
+                <answer>83.4</answer>
+              </var_set>
+              <var_set ident="6c2dc62c593d7efb0435405378677ca6">
+                <var name="A">0.951</var>
+                <var name="Pin">49.1</var>
+                <var name="T">140.6</var>
+                <var name="T0">69.1</var>
+                <var name="h">186</var>
+                <answer>85.7</answer>
+              </var_set>
+              <var_set ident="651b8696d3474654f92349490194ed3b">
+                <var name="A">0.806</var>
+                <var name="Pin">35.6</var>
+                <var name="T">138.7</var>
+                <var name="T0">79.9</var>
+                <var name="h">192</var>
+                <answer>85.8</answer>
+              </var_set>
+              <var_set ident="b17c3bad6afd9056a6345fa060cb2f2a">
+                <var name="A">0.916</var>
+                <var name="Pin">36.8</var>
+                <var name="T">147.3</var>
+                <var name="T0">67.0</var>
+                <var name="h">185</var>
+                <answer>79.5</answer>
+              </var_set>
+              <var_set ident="caaf240fcd415939204b0ec07d59508a">
+                <var name="A">0.872</var>
+                <var name="Pin">55.0</var>
+                <var name="T">143.0</var>
+                <var name="T0">66.8</var>
+                <var name="h">219</var>
+                <answer>85.3</answer>
+              </var_set>
+              <var_set ident="c0a2b6694e790278b72a8b874daeee8a">
+                <var name="A">0.995</var>
+                <var name="Pin">51.7</var>
+                <var name="T">124.3</var>
+                <var name="T0">75.2</var>
+                <var name="h">195</var>
+                <answer>89.8</answer>
+              </var_set>
+              <var_set ident="2820c35039e5f7f9cc10af8f765a46c3">
+                <var name="A">0.818</var>
+                <var name="Pin">54.9</var>
+                <var name="T">133.0</var>
+                <var name="T0">79.9</var>
+                <var name="h">220</var>
+                <answer>90.3</answer>
+              </var_set>
+              <var_set ident="e7deaeacbfc4958678b3cdf61a7fb36c">
+                <var name="A">0.801</var>
+                <var name="Pin">35.3</var>
+                <var name="T">129.2</var>
+                <var name="T0">67.4</var>
+                <var name="h">169</var>
+                <answer>86.8</answer>
+              </var_set>
+              <var_set ident="988dccd72b4f233ad82e1fb96499db02">
+                <var name="A">0.978</var>
+                <var name="Pin">62.6</var>
+                <var name="T">142.6</var>
+                <var name="T0">73.4</var>
+                <var name="h">161</var>
+                <answer>90.3</answer>
+              </var_set>
+              <var_set ident="747b0f110edd55ede92aef470d4b228f">
+                <var name="A">0.895</var>
+                <var name="Pin">56.1</var>
+                <var name="T">127.1</var>
+                <var name="T0">67.6</var>
+                <var name="h">179</var>
+                <answer>90.6</answer>
+              </var_set>
+              <var_set ident="d1098adb463347b018c9bd14d1e650a3">
+                <var name="A">0.806</var>
+                <var name="Pin">46.6</var>
+                <var name="T">136.1</var>
+                <var name="T0">71.5</var>
+                <var name="h">195</var>
+                <answer>87.9</answer>
+              </var_set>
+              <var_set ident="fa5555601ad3c24d068be1c1786e572f">
+                <var name="A">0.984</var>
+                <var name="Pin">28.8</var>
+                <var name="T">144.7</var>
+                <var name="T0">67.7</var>
+                <var name="h">219</var>
+                <answer>68.0</answer>
+              </var_set>
+            </var_sets>
+          </calculated>
+        </itemproc_extension>
+      </item>
+    </section>
+  </assessment>
+</questestinterop>

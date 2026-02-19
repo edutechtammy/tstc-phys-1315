@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHYS-1315 Physical Science I - Lesson Navigator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        
+        .subtitle {
+            color: #7f8c8d;
+            margin-bottom: 40px;
+            font-size: 1.1em;
+        }
+        
+        .module {
+            margin-bottom: 40px;
+            border-left: 4px solid #3498db;
+            padding-left: 20px;
+        }
+        
+        .module h2 {
+            color: #2980b9;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+        
+        .lesson {
+            background-color: #f8f9fa;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #e9ecef;
+        }
+        
+        .lesson h3 {
+            color: #34495e;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .lesson-links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .lesson-link {
+            display: inline-block;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .original {
+            background-color: #e8f4f8;
+            color: #2980b9;
+            border: 1px solid #2980b9;
+        }
+        
+        .original:hover {
+            background-color: #2980b9;
+            color: white;
+        }
+        
+        .updated {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #28a745;
+        }
+        
+        .updated:hover {
+            background-color: #28a745;
+            color: white;
+        }
+        
+        .current {
+            background-color: #fff3cd;
+            color: #856404;
+            border: 1px solid #ffc107;
+        }
+        
+        .current:hover {
+            background-color: #ffc107;
+            color: #000;
+        }
+        
+        .deprecated {
+            opacity: 0.6;
+            background-color: #f8d7da;
+        }
+        
+        .deprecated h3::before {
+            content: "⚠️ DEPRECATED: ";
+        }
+        
+        .note {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .note strong {
+            color: #856404;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .lesson-links {
+                flex-direction: column;
+            }
+            
+            .lesson-link {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>PHYS-1315 Physical Science I</h1>
+        <p class="subtitle">Lecture Course Lesson Navigator</p>
+        
+        <div class="note">
+            <strong>Legend:</strong>
+            <ul style="margin-left: 20px; margin-top: 10px;">
+                <li><strong>Original Version:</strong> The original lesson content from the CME</li>
+                <li><strong>Updated Version:</strong> Enhanced lesson with accessibility improvements and style updates</li>
+                <li><strong>Current Version:</strong> Working version of the lesson</li>
+            </ul>
+        </div>
+
+        <!-- Module 01 -->
+        <div class="module">
+            <h2>Module 01: Principles of Science</h2>
+            
+            <div class="lesson">
+                <h3>M1L1: Significant Figures and Scientific Notation</h3>
+                <div class="lesson-links">
+                    <a href="module_01_principles_of_science/M1L1 Significant Figures and Scientific Notation/original-lesson/ M1L1 Significant Figures and Scientific Notation.html" class="lesson-link original">Original Version</a>
+                    <a href="module_01_principles_of_science/M1L1 Significant Figures and Scientific Notation/new-lesson-output/M1L1 Significant Figures and Scientific Notation.html" class="lesson-link updated">Updated Version</a>
+                </div>
+            </div>
+            
+            <div class="lesson">
+                <h3>M1L2: Scientific Language</h3>
+                <div class="lesson-links">
+                    <a href="module_01_principles_of_science/M1L2 Scientific Language/m1l2_scientific_language.html" class="lesson-link current">Current Version</a>
+                </div>
+            </div>
+            
+            <div class="lesson">
+                <h3>M1L3: Unit Conversions and Density</h3>
+                <div class="lesson-links">
+                    <a href="module_01_principles_of_science/M1L3 Unit Conversions and Density/original-lesson/index.html" class="lesson-link original">Original Version</a>
+                </div>
+            </div>
+            
+            <div class="lesson deprecated">
+                <h3>M1L2: SI and Imperial Units</h3>
+                <div class="lesson-links">
+                    <a href="module_01_principles_of_science/Deprecated - M1L2 SI and Imperial Units/original-lesson/index.html" class="lesson-link original">Original Version</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Module 02 -->
+        <div class="module">
+            <h2>Module 02: The Universe</h2>
+            
+            <div class="lesson">
+                <h3>M2L1: Stars</h3>
+                <div class="lesson-links">
+                    <a href="module_02_the_universe/M2L1 Stars/original-lesson/index.html" class="lesson-link original">Original Version</a>
+                    <a href="module_02_the_universe/M2L1 Stars/new-lesson-output/index.html" class="lesson-link updated">Updated Version</a>
+                </div>
+            </div>
+            
+            <div class="lesson">
+                <h3>M2L2: Galaxies</h3>
+                <div class="lesson-links">
+                    <a href="module_02_the_universe/M2L2 Galaxies/original-lesson/index.html" class="lesson-link original">Original Version</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Module 03 -->
+        <div class="module">
+            <h2>Module 03: The Solar System</h2>
+            
+            <div class="lesson">
+                <h3>M3L1: Planets in Our Solar System</h3>
+                <div class="lesson-links">
+                    <a href="module_03_the_solar_system/M3L1 Planets in Our Solar System/original-lesson/index.html" class="lesson-link original">Original Version</a>
+                    <a href="module_03_the_solar_system/M3L1 Planets in Our Solar System/new-lesson-output/index.html" class="lesson-link updated">Updated Version</a>
+                </div>
+            </div>
+            
+            <div class="lesson">
+                <h3>M3L2: Comets, Asteroids, and Meteors</h3>
+                <div class="lesson-links">
+                    <a href="module_03_the_solar_system/M3L2 Comets, Asteroids, and Meteors/original-lesson/index.html" class="lesson-link original">Original Version</a>
+                    <a href="module_03_the_solar_system/M3L2 Comets, Asteroids, and Meteors/new-lesson-output/index.html" class="lesson-link updated">Updated Version</a>
+                </div>
+            </div>
+            
+            <div class="lesson">
+                <h3>M3L3: Origins of Our Solar System</h3>
+                <div class="lesson-links">
+                    <a href="module_03_the_solar_system/M3L3 Origins of Our Solar System/original-lesson/index.html" class="lesson-link original">Original Version</a>
+                    <a href="module_03_the_solar_system/M3L3 Origins of Our Solar System/new-lesson-output/index_canvas.html" class="lesson-link updated">Updated Version</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Module 04 -->
+        <div class="module">
+            <h2>Module 04: The Earth</h2>
+            
+            <div class="lesson">
+                <h3>M4L1: The Motion of Earth</h3>
+                <div class="lesson-links">
+                    <a href="module_04_the_earth/M4L1 The Motion of Earth/original-lesson/index.html" class="lesson-link original">Original Version</a>
+                    <a href="module_04_the_earth/M4L1 The Motion of Earth/new-lesson-output/index.html" class="lesson-link updated">Updated Version (Standalone)</a>
+                    <a href="module_04_the_earth/M4L1 The Motion of Earth/new-lesson-output/index_canvas.html" class="lesson-link updated">Updated Version (Canvas)</a>
+                </div>
+            </div>
+            
+            <div class="lesson">
+                <h3>M4L2: The Earth and Moon</h3>
+                <div class="lesson-links">
+                    <a href="module_04_the_earth/M4L2 The Earth and Moon/original-lesson/index.html" class="lesson-link original">Original Version</a>
+                    <a href="module_04_the_earth/M4L2 The Earth and Moon/new-lesson-output/index.html" class="lesson-link updated">Updated Version (Standalone)</a>
+                    <a href="module_04_the_earth/M4L2 The Earth and Moon/new-lesson-output/index_canvas.html" class="lesson-link updated">Updated Version (Canvas)</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Module 05 -->
+        <div class="module">
+            <h2>Module 05: Motion and Forces</h2>
+            
+            <div class="lesson">
+                <h3>M5L1: Motion</h3>
+                <div class="lesson-links">
+                    <a href="module_05_motion_and_forces/M5L1 Motion/original-lesson/index.html" class="lesson-link original">Original Version</a>
+                    <a href="module_05_motion_and_forces/M5L1 Motion/new-lesson-output/index.html" class="lesson-link updated">Updated Version</a>
+                </div>
+            </div>
+            
+            <div class="lesson">
+                <h3>M5L2: Forces</h3>
+                <div class="lesson-links">
+                    <a href="module_05_motion_and_forces/M5L2 Forces/original-lesson/index.html" class="lesson-link original">Original Version</a>
+                    <a href="module_05_motion_and_forces/M5L2 Forces/new-lesson-output/index.html" class="lesson-link updated">Updated Version</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Module 06 -->
+        <div class="module">
+            <h2>Module 06: Work and Energy</h2>
+            
+            <div class="lesson">
+                <h3>M6L1: Work & Energy</h3>
+                <div class="lesson-links">
+                    <a href="module_06_work_and_energy/M6L1 Work & Energy/original-lesson/index.html" class="lesson-link original">Original Version</a>
+                    <a href="module_06_work_and_energy/M6L1 Work & Energy/new-lesson-output/index.html" class="lesson-link updated">Updated Version</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Module 07 -->
+        <div class="module">
+            <h2>Module 07: Heat and Temperature</h2>
+            
+            <div class="lesson">
+                <h3>M7L1: Temperature and Thermal Energy</h3>
+                <div class="lesson-links">
+                    <a href="module_07_heat_and_temperature/M7L1 Temperature and Thermal Energy/original-lesson/index.html" class="lesson-link original">Original Version</a>
+                    <a href="module_07_heat_and_temperature/M7L1 Temperature and Thermal Energy/new-lesson-output/index.html" class="lesson-link updated">Updated Version</a>
+                </div>
+            </div>
+            
+            <div class="lesson">
+                <h3>M7L2: States of Matter and Ideal-Gas Law</h3>
+                <div class="lesson-links">
+                    <a href="module_07_heat_and_temperature/M7L2 States of Matter and Ideal-Gas Law/original-lesson/index.html" class="lesson-link original">Original Version</a>
+                    <a href="module_07_heat_and_temperature/M7L2 States of Matter and Ideal-Gas Law/new-lesson-output/index.html" class="lesson-link updated">Updated Version</a>
+                </div>
+            </div>
+            
+            <div class="lesson">
+                <h3>M7L3: Heat</h3>
+                <div class="lesson-links">
+                    <a href="module_07_heat_and_temperature/M7L3 Heat/original-lesson/index.html" class="lesson-link original">Original Version</a>
+                    <a href="module_07_heat_and_temperature/M7L3 Heat/new-lesson-output/index.html" class="lesson-link updated">Updated Version</a>
+                </div>
+            </div>
+            
+            <div class="lesson">
+                <h3>M7L4: Machines</h3>
+                <div class="lesson-links">
+                    <a href="module_07_heat_and_temperature/M7L4 Machines/original-lesson/index.html" class="lesson-link original">Original Version</a>
+                    <a href="module_07_heat_and_temperature/M7L4 Machines/new-lesson-output/index.html" class="lesson-link updated">Updated Version</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Module 08 -->
+        <div class="module">
+            <h2>Module 08: The Atmosphere</h2>
+            
+            <div class="lesson">
+                <h3>M8L1: The Atmosphere</h3>
+                <div class="lesson-links">
+                    <a href="module_08_the_atmosphere/M8L1 The Atmosphere/original-lesson/index.html" class="lesson-link original">Original Version</a>
+                    <a href="module_08_the_atmosphere/M8L1 The Atmosphere/new-lesson-output/index.html" class="lesson-link updated">Updated Version</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Module 09 -->
+        <div class="module">
+            <h2>Module 09: Weather and Climate</h2>
+            
+            <div class="lesson">
+                <h3>M9L1: Clouds, Precipitation, and Storms</h3>
+                <div class="lesson-links">
+                    <a href="module_09_weather_and_climate/M9L1 Clouds, Precipitation, and Storms/original-lesson/index.html" class="lesson-link original">Original Version</a>
+                    <a href="module_09_weather_and_climate/M9L1 Clouds, Precipitation, and Storms/new-lesson-output/index.html" class="lesson-link updated">Updated Version</a>
+                </div>
+            </div>
+            
+            <div class="lesson">
+                <h3>M9L2: Climate Change</h3>
+                <div class="lesson-links">
+                    <a href="module_09_weather_and_climate/M9L2 Climate Change/original-lesson/index.html" class="lesson-link original">Original Version</a>
+                    <a href="module_09_weather_and_climate/M9L2 Climate Change/new-lesson-output/index.html" class="lesson-link updated">Updated Version</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

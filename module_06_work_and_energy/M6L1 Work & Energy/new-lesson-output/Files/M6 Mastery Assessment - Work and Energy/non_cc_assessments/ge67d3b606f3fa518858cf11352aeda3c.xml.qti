@@ -1,0 +1,805 @@
+<?xml version="1.0"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/xsd/ims_qtiasiv1p2p1.xsd">
+  <objectbank ident="ge67d3b606f3fa518858cf11352aeda3c" canvas_item_bank="true">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>bank_title</fieldlabel>
+        <fieldentry>Potential Energy Due to Gravity (M3)</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>bank_type</fieldlabel>
+        <fieldentry>Course</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <item ident="6cc8d748a2c21d97c6d0d46c6643f25b" title="Potential energy due to gravity (vi)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>c1fce993-b679-48ba-a15c-54e4d23d5ba1,675d2b05-47f9-497a-8cdf-c0544b286496,587784c3-2d4e-40dd-89e5-413ec4ebabb1,cb5054e7-c415-43e4-8fcd-f2d000857c48,c562ca05-cfe1-4245-a511-dd257161c374</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>52506b977c327b639d83672dfe0b3203</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Which of the following statements about potential energy due to gravity is &lt;span style="text-decoration: underline;"&gt;incorrect&lt;/span&gt;?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="c1fce993-b679-48ba-a15c-54e4d23d5ba1">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&lt;span style="font-family: Symbol;"&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;Potential energy due to gravity depends on the object&#x2019;s weight.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="675d2b05-47f9-497a-8cdf-c0544b286496">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in; "&gt;&lt;span style="font-family: Symbol;  "&gt;&lt;span&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;Object&#x2019;s that are higher up will have more potential energy relative to the earth&#x2019;s surface.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="587784c3-2d4e-40dd-89e5-413ec4ebabb1">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in; "&gt;&lt;span style="font-family: Symbol;  "&gt;&lt;span&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;Changes in potential energy are independent of the path taken.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="cb5054e7-c415-43e4-8fcd-f2d000857c48">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span style="text-indent: -24px;"&gt;An 80 kg object 4 m above the surface of the earth will have more potential energy than if that same object were 4 m above the surface of the earth&#x2019;s moon.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="c562ca05-cfe1-4245-a511-dd257161c374">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span style="text-indent: -24px;"&gt;The force of gravity is a non-conservative force.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">c562ca05-cfe1-4245-a511-dd257161c374</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="78d55318d55298d4ff48bca6cb120d7a" title="Potential energy due to gravity (v)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>c1fce993-b679-48ba-a15c-54e4d23d5ba1,675d2b05-47f9-497a-8cdf-c0544b286496,587784c3-2d4e-40dd-89e5-413ec4ebabb1,cb5054e7-c415-43e4-8fcd-f2d000857c48,c562ca05-cfe1-4245-a511-dd257161c374</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>d0c374a0f53a0927d3a73ea4241a9c31</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Which of the following statements about potential energy due to gravity is &lt;span style="text-decoration: underline;"&gt;incorrect&lt;/span&gt;?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="c1fce993-b679-48ba-a15c-54e4d23d5ba1">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&lt;span style="font-family: Symbol;"&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;Potential energy due to gravity depends on the object&#x2019;s weight.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="675d2b05-47f9-497a-8cdf-c0544b286496">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in; "&gt;&lt;span style="font-family: Symbol;  "&gt;&lt;span&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;Object&#x2019;s that are higher up will have more potential energy relative to the earth&#x2019;s surface.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="587784c3-2d4e-40dd-89e5-413ec4ebabb1">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in; "&gt;&lt;span style="font-family: Symbol;  "&gt;&lt;span&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;Changes in potential energy are independent of the path taken.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="cb5054e7-c415-43e4-8fcd-f2d000857c48">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span style="text-indent: -24px;"&gt;An 80 kg object 4 m above the surface of the earth will have an equal amount of potential energy if that same object were 4 m above the surface of the earth&#x2019;s moon.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="c562ca05-cfe1-4245-a511-dd257161c374">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span style="text-indent: -24px;"&gt;The force of gravity is a non-conservative force.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">cb5054e7-c415-43e4-8fcd-f2d000857c48</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="80f50f44013c3f0f7b57b4d8d5d622bd" title="Potential energy due to gravity (vii)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>c1fce993-b679-48ba-a15c-54e4d23d5ba1,675d2b05-47f9-497a-8cdf-c0544b286496,587784c3-2d4e-40dd-89e5-413ec4ebabb1,cb5054e7-c415-43e4-8fcd-f2d000857c48,c562ca05-cfe1-4245-a511-dd257161c374</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>0115d99bd01bcbafc9408e1e22cb74ba</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Which of the following statements about potential energy due to gravity is &lt;span style="text-decoration: underline;"&gt;correct&lt;/span&gt;?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="c1fce993-b679-48ba-a15c-54e4d23d5ba1">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&lt;span style="font-family: Symbol;"&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;Potential energy due to gravity depends on the object&#x2019;s weight.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="675d2b05-47f9-497a-8cdf-c0544b286496">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in; "&gt;&lt;span style="font-family: Symbol;  "&gt;&lt;span&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;Increasing an object&#x2019;s height above the surface of the earth will not change its potential energy relative to the surface.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="587784c3-2d4e-40dd-89e5-413ec4ebabb1">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in; "&gt;&lt;span style="font-family: Symbol;  "&gt;&lt;span&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;Changes in potential energy depend on the path taken.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="cb5054e7-c415-43e4-8fcd-f2d000857c48">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span style="text-indent: -24px;"&gt;An 80 kg object 4 m above the surface of the earth will have less potential energy than if that same object were 4 m above the surface of the earth&#x2019;s moon.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="c562ca05-cfe1-4245-a511-dd257161c374">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span style="font-family: Symbol;"&gt;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;span style="text-indent: -24px;"&gt;The force of gravity is a non-conservative force.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">c1fce993-b679-48ba-a15c-54e4d23d5ba1</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="96d62b16a5e1d5ecd62fe15861ff32e5" title="Potential energy due to gravity (xi)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>c1fce993-b679-48ba-a15c-54e4d23d5ba1,675d2b05-47f9-497a-8cdf-c0544b286496,587784c3-2d4e-40dd-89e5-413ec4ebabb1,cb5054e7-c415-43e4-8fcd-f2d000857c48,c562ca05-cfe1-4245-a511-dd257161c374</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>35d5b2a47f5069bf44bd2a630f2aa4c7</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Which of the following statements about potential energy due to gravity is &lt;span style="text-decoration: underline;"&gt;correct&lt;/span&gt;?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="c1fce993-b679-48ba-a15c-54e4d23d5ba1">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&lt;span style="font-family: Symbol;"&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;Potential energy due to gravity does not depend on the object&#x2019;s weight.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="675d2b05-47f9-497a-8cdf-c0544b286496">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&lt;span style="font-family: Symbol;"&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;Increasing an object&#x2019;s height above the surface of the earth will decrease its potential energy relative to the earth's surface.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="587784c3-2d4e-40dd-89e5-413ec4ebabb1">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&lt;span style="font-family: Symbol;"&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;Changes in potential energy are dependent of the path taken.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="cb5054e7-c415-43e4-8fcd-f2d000857c48">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span style="text-indent: -24px;"&gt;A 90 kg object 4 m above the surface of the earth will have less potential energy than if that same object were 4 m above the surface of the earth&#x2019;s moon.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="c562ca05-cfe1-4245-a511-dd257161c374">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span style="text-indent: -24px;"&gt;The force of gravity is a conservative force.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">c562ca05-cfe1-4245-a511-dd257161c374</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="0ea011ba4866a6a4e50ab2b9e35b8fab" title="Potential energy due to gravity (x)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>c1fce993-b679-48ba-a15c-54e4d23d5ba1,675d2b05-47f9-497a-8cdf-c0544b286496,587784c3-2d4e-40dd-89e5-413ec4ebabb1,cb5054e7-c415-43e4-8fcd-f2d000857c48,c562ca05-cfe1-4245-a511-dd257161c374</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>525d6382eb7c6053bef904fd59d9f290</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Which of the following statements about potential energy due to gravity is &lt;span style="text-decoration: underline;"&gt;correct&lt;/span&gt;?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="c1fce993-b679-48ba-a15c-54e4d23d5ba1">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&lt;span style="font-family: Symbol;"&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;Potential energy due to gravity does not depend on the object&#x2019;s weight.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="675d2b05-47f9-497a-8cdf-c0544b286496">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&lt;span style="font-family: Symbol;"&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;Increasing an object&#x2019;s height above the surface of the earth will decrease its potential energy relative to the earth's surface.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="587784c3-2d4e-40dd-89e5-413ec4ebabb1">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&lt;span style="font-family: Symbol;"&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;Changes in potential energy are dependent of the path taken.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="cb5054e7-c415-43e4-8fcd-f2d000857c48">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span style="text-indent: -24px;"&gt;A 90 kg object 4 m above the surface of the earth will have more potential energy than if that same object were 4 m above the surface of the earth&#x2019;s moon.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="c562ca05-cfe1-4245-a511-dd257161c374">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span style="text-indent: -24px;"&gt;The force of gravity is a non-conservative force.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">cb5054e7-c415-43e4-8fcd-f2d000857c48</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="7cc0e37425b6ba52bc20a75723fe5c16" title="Potential energy due to gravity (ix)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>c1fce993-b679-48ba-a15c-54e4d23d5ba1,675d2b05-47f9-497a-8cdf-c0544b286496,587784c3-2d4e-40dd-89e5-413ec4ebabb1,cb5054e7-c415-43e4-8fcd-f2d000857c48,c562ca05-cfe1-4245-a511-dd257161c374</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>052713e8605a0ffc3f2f006d3378fe1c</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Which of the following statements about potential energy due to gravity is &lt;span style="text-decoration: underline;"&gt;correct&lt;/span&gt;?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="c1fce993-b679-48ba-a15c-54e4d23d5ba1">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&lt;span style="font-family: Symbol;"&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;Potential energy due to gravity does not depend on the object&#x2019;s weight.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="675d2b05-47f9-497a-8cdf-c0544b286496">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&lt;span style="font-family: Symbol;"&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;Increasing an object&#x2019;s height above the surface of the earth will decrease its potential energy relative to the earth's surface.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="587784c3-2d4e-40dd-89e5-413ec4ebabb1">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&lt;span style="font-family: Symbol;"&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;Changes in potential energy are independent of the path taken.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="cb5054e7-c415-43e4-8fcd-f2d000857c48">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span style="text-indent: -24px;"&gt;An 80 kg object 4 m above the surface of the earth will have less potential energy than if that same object were 4 m above the surface of the earth&#x2019;s moon.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="c562ca05-cfe1-4245-a511-dd257161c374">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span style="text-indent: -24px;"&gt;The force of gravity is a non-conservative force.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">587784c3-2d4e-40dd-89e5-413ec4ebabb1</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="cf5deca44e340975439ca91ede385c59" title="Potential energy due to gravity (i)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>c1fce993-b679-48ba-a15c-54e4d23d5ba1,675d2b05-47f9-497a-8cdf-c0544b286496,587784c3-2d4e-40dd-89e5-413ec4ebabb1,cb5054e7-c415-43e4-8fcd-f2d000857c48,c562ca05-cfe1-4245-a511-dd257161c374</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>f2f6b4b7042664fe70380e781e04cbf1</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Which of the following statements about potential energy due to gravity is &lt;span style="text-decoration: underline;"&gt;incorrect&lt;/span&gt;?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="c1fce993-b679-48ba-a15c-54e4d23d5ba1">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&lt;span style="font-family: Symbol;"&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;Potential energy due to gravity does not depend on the object&#x2019;s weight.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="675d2b05-47f9-497a-8cdf-c0544b286496">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&lt;span style="font-family: Symbol;"&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;Object&#x2019;s that are higher up will have more potential energy relative to the earth&#x2019;s surface.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="587784c3-2d4e-40dd-89e5-413ec4ebabb1">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&lt;span style="font-family: Symbol;"&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;Changes in potential energy are independent of the path taken.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="cb5054e7-c415-43e4-8fcd-f2d000857c48">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span style="text-indent: -24px;"&gt;An 80 kg object 4 m above the surface of the earth will have more potential energy than if that same object were 4 m above the surface of the earth&#x2019;s moon.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="c562ca05-cfe1-4245-a511-dd257161c374">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span style="font-family: Symbol;"&gt;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;span style="text-indent: -24px;"&gt;The force of gravity is a conservative force.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">c1fce993-b679-48ba-a15c-54e4d23d5ba1</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="f7fd5f48d6116b244d6bca6227f4c6c5" title="Potential energy due to gravity (viii)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>c1fce993-b679-48ba-a15c-54e4d23d5ba1,675d2b05-47f9-497a-8cdf-c0544b286496,587784c3-2d4e-40dd-89e5-413ec4ebabb1,cb5054e7-c415-43e4-8fcd-f2d000857c48,c562ca05-cfe1-4245-a511-dd257161c374</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>ef28fc50a78a492642b4da27393b2b66</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Which of the following statements about potential energy due to gravity is &lt;span style="text-decoration: underline;"&gt;correct&lt;/span&gt;?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="c1fce993-b679-48ba-a15c-54e4d23d5ba1">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&lt;span style="font-family: Symbol;"&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;Potential energy due to gravity does not depend on the object&#x2019;s weight.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="675d2b05-47f9-497a-8cdf-c0544b286496">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&lt;span style="font-family: Symbol;"&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;Increasing an object&#x2019;s height above the surface of the earth will also increase its potential energy relative to the earth's surface.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="587784c3-2d4e-40dd-89e5-413ec4ebabb1">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in; "&gt;&lt;span style="font-family: Symbol;  "&gt;&lt;span&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;Changes in potential energy depend on the path taken.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="cb5054e7-c415-43e4-8fcd-f2d000857c48">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span style="text-indent: -24px;"&gt;An 80 kg object 4 m above the surface of the earth will have less potential energy than if that same object were 4 m above the surface of the earth&#x2019;s moon.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="c562ca05-cfe1-4245-a511-dd257161c374">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span style="font-family: Symbol;"&gt;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;span style="text-indent: -24px;"&gt;The force of gravity is a non-conservative force.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">675d2b05-47f9-497a-8cdf-c0544b286496</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="4a592fbd435a6ace64f1e4714f23aeaa" title="Potential energy due to gravity (iii)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>c1fce993-b679-48ba-a15c-54e4d23d5ba1,675d2b05-47f9-497a-8cdf-c0544b286496,587784c3-2d4e-40dd-89e5-413ec4ebabb1,cb5054e7-c415-43e4-8fcd-f2d000857c48,c562ca05-cfe1-4245-a511-dd257161c374</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>2ac55bdac6eaf872e9e0791d304923c3</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Which of the following statements about potential energy due to gravity is &lt;span style="text-decoration: underline;"&gt;incorrect&lt;/span&gt;?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="c1fce993-b679-48ba-a15c-54e4d23d5ba1">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&lt;span style="font-family: Symbol;"&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;Potential energy due to gravity depends on the object&#x2019;s weight.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="675d2b05-47f9-497a-8cdf-c0544b286496">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&lt;span style="font-family: Symbol;"&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;Object&#x2019;s that are higher up will have more potential energy relative to the earth&#x2019;s surface.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="587784c3-2d4e-40dd-89e5-413ec4ebabb1">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&lt;span style="font-family: Symbol;"&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;Changes in potential energy are dependent on the path taken.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="cb5054e7-c415-43e4-8fcd-f2d000857c48">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span style="text-indent: -24px;"&gt;An 80 kg object 4 m above the surface of the earth will have more potential energy than if that same object were 4 m above the surface of the earth&#x2019;s moon.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="c562ca05-cfe1-4245-a511-dd257161c374">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span style="text-indent: -24px;"&gt;The force of gravity is a conservative force.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">587784c3-2d4e-40dd-89e5-413ec4ebabb1</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="a92344ca07e387d42413d01214b8d029" title="Potential energy due to gravity (ii)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>c1fce993-b679-48ba-a15c-54e4d23d5ba1,675d2b05-47f9-497a-8cdf-c0544b286496,587784c3-2d4e-40dd-89e5-413ec4ebabb1,cb5054e7-c415-43e4-8fcd-f2d000857c48,c562ca05-cfe1-4245-a511-dd257161c374</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>16de47edd445db111f153e4a2dd6cb4b</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Which of the following statements about potential energy due to gravity is &lt;span style="text-decoration: underline;"&gt;incorrect&lt;/span&gt;?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="c1fce993-b679-48ba-a15c-54e4d23d5ba1">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in; "&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Potential energy due to gravity depends on the object&#x2019;s weight.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="675d2b05-47f9-497a-8cdf-c0544b286496">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in; "&gt;&lt;span style="font-family: Symbol;  "&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; I&lt;/span&gt;ncreasing an object&#x2019;s height above the surface of the earth will not change its potential energy relative to the surface.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="587784c3-2d4e-40dd-89e5-413ec4ebabb1">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&lt;span style="font-family: Symbol;"&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;Changes in potential energy are independent of the path taken.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="cb5054e7-c415-43e4-8fcd-f2d000857c48">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&lt;span style="font-family: Symbol;"&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;An 80 kg object 4 m above the surface of the earth will have more potential energy than if that same object were 4 m above the surface of the earth&#x2019;s moon.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="c562ca05-cfe1-4245-a511-dd257161c374">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&lt;span style="font-family: Symbol;"&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;The force of gravity is a conservative force.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">675d2b05-47f9-497a-8cdf-c0544b286496</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="1c69399ef338465260d88fa92cd80a07" title="Potential energy due to gravity (iv)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>c1fce993-b679-48ba-a15c-54e4d23d5ba1,675d2b05-47f9-497a-8cdf-c0544b286496,587784c3-2d4e-40dd-89e5-413ec4ebabb1,cb5054e7-c415-43e4-8fcd-f2d000857c48,c562ca05-cfe1-4245-a511-dd257161c374</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>ba14bc7d902034492d3e4cf5ffa1bb9a</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Which of the following statements about potential energy due to gravity is &lt;span style="text-decoration: underline;"&gt;incorrect&lt;/span&gt;?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="c1fce993-b679-48ba-a15c-54e4d23d5ba1">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in;"&gt;&lt;span style="font-family: Symbol;"&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;Potential energy due to gravity depends on the object&#x2019;s weight.&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="675d2b05-47f9-497a-8cdf-c0544b286496">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in; "&gt;&lt;span style="font-family: Symbol;  "&gt;&lt;span&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;Object&#x2019;s that are higher up will have more potential energy relative to the earth&#x2019;s surface.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="587784c3-2d4e-40dd-89e5-413ec4ebabb1">
+              <material>
+                <mattext texttype="text/html">&lt;p class="MsoListParagraph" style="text-indent: -.25in; "&gt;&lt;span style="font-family: Symbol;  "&gt;&lt;span&gt;&#xB7;&lt;span style="font: 7.0pt 'Times New Roman';"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;Changes in potential energy are independent of the path taken.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="cb5054e7-c415-43e4-8fcd-f2d000857c48">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span style="text-indent: -24px;"&gt;An 80 kg object 4 m above the surface of the earth will have an equal amount of potential energy if that same object were 4 m above the surface of the earth&#x2019;s moon.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="c562ca05-cfe1-4245-a511-dd257161c374">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span style="text-indent: -24px;"&gt;The force of gravity is a conservative force.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">cb5054e7-c415-43e4-8fcd-f2d000857c48</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+  </objectbank>
+</questestinterop>

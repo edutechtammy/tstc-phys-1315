@@ -1,0 +1,370 @@
+<?xml version="1.0"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/xsd/ims_qtiasiv1p2p1.xsd">
+  <objectbank ident="g6f708943c489bf3f4ce6055d78ebb569" canvas_item_bank="true">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>bank_title</fieldlabel>
+        <fieldentry>PHYS 1315 M2 Acceleration</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>bank_type</fieldlabel>
+        <fieldentry>Course</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <item ident="3dfcda63a691c9dfbf32866983d1e508" title="Acceleration (v)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>e46186d6-7891-40a4-842e-790596b86aec,32709591-7319-4070-96cd-629ec737f83d,6f7fe6f0-fc70-4e6e-a7ae-36b492b994ad,b3db52ea-c57e-4aad-bbe9-e08b3e5731a6,d03f162f-50bc-42f8-9099-8a4ebec880eb</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>b45fc5ade0f7e3707c84ebb3836e41c1</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Which of the following statements about motion &lt;span style="text-decoration: underline;"&gt;is incorrect&lt;/span&gt;?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="e46186d6-7891-40a4-842e-790596b86aec">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span class="mctfyn__choice-txt font-txt"&gt;Object's moving on a line with constant speed have zero acceleration.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="32709591-7319-4070-96cd-629ec737f83d">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span class="mctfyn__choice-txt font-txt"&gt;Object's undergoing uniform motion have constant speed.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="6f7fe6f0-fc70-4e6e-a7ae-36b492b994ad">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span class="mctfyn__choice-txt font-txt"&gt;Acceleration is defined as the rate of change of velocity.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="b3db52ea-c57e-4aad-bbe9-e08b3e5731a6">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span class="mctfyn__choice-txt font-txt"&gt;Centripetal acceleration is &lt;em&gt;center seeking&lt;/em&gt;, meaning the acceleration vector points to the center of orbit.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="d03f162f-50bc-42f8-9099-8a4ebec880eb">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;An object's acceleration is the product between the net force acting on that object and its mass.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">d03f162f-50bc-42f8-9099-8a4ebec880eb</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="a76676b94e820bcc5d6c0054a600595a" title="Acceleration (iv)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>e46186d6-7891-40a4-842e-790596b86aec,32709591-7319-4070-96cd-629ec737f83d,6f7fe6f0-fc70-4e6e-a7ae-36b492b994ad,b3db52ea-c57e-4aad-bbe9-e08b3e5731a6,d03f162f-50bc-42f8-9099-8a4ebec880eb</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>b0c5042852bd773dc2da93fc1a1d6efd</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Which of the following statements about motion &lt;span style="text-decoration: underline;"&gt;is incorrect&lt;/span&gt;?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="e46186d6-7891-40a4-842e-790596b86aec">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span class="mctfyn__choice-txt font-txt"&gt;Object's moving on a line with constant speed have zero acceleration.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="32709591-7319-4070-96cd-629ec737f83d">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span class="mctfyn__choice-txt font-txt"&gt;Object's undergoing uniform motion have constant speed.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="6f7fe6f0-fc70-4e6e-a7ae-36b492b994ad">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span class="mctfyn__choice-txt font-txt"&gt;Acceleration is defined as the rate of change of velocity.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="b3db52ea-c57e-4aad-bbe9-e08b3e5731a6">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span class="mctfyn__choice-txt font-txt"&gt;Centripetal acceleration is &lt;em&gt;center seeking&lt;/em&gt;, meaning the acceleration vector points away from the center of orbit.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="d03f162f-50bc-42f8-9099-8a4ebec880eb">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;An object's acceleration is the ratio between the net force acting on that object and its mass.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">b3db52ea-c57e-4aad-bbe9-e08b3e5731a6</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="0a6d15794500f1448ba6ebe0cd990ec0" title="Acceleration (iii)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>e46186d6-7891-40a4-842e-790596b86aec,32709591-7319-4070-96cd-629ec737f83d,6f7fe6f0-fc70-4e6e-a7ae-36b492b994ad,b3db52ea-c57e-4aad-bbe9-e08b3e5731a6,d03f162f-50bc-42f8-9099-8a4ebec880eb</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>3244700d1f2be1884a72fcbc38aa2ab3</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Which of the following statements about motion &lt;span style="text-decoration: underline;"&gt;is incorrect&lt;/span&gt;?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="e46186d6-7891-40a4-842e-790596b86aec">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span class="mctfyn__choice-txt font-txt"&gt;Object's moving on a line with constant speed have zero acceleration.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="32709591-7319-4070-96cd-629ec737f83d">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span class="mctfyn__choice-txt font-txt"&gt;Object's undergoing uniform motion have constant speed.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="6f7fe6f0-fc70-4e6e-a7ae-36b492b994ad">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span class="mctfyn__choice-txt font-txt"&gt;Acceleration is defined as the rate of change of displacement.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="b3db52ea-c57e-4aad-bbe9-e08b3e5731a6">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span class="mctfyn__choice-txt font-txt"&gt;Centripetal acceleration is &lt;em&gt;center seeking&lt;/em&gt;, meaning the acceleration vector points to the center of orbit.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="d03f162f-50bc-42f8-9099-8a4ebec880eb">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;An object's acceleration is the ratio between the net force acting on that object and its mass.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">6f7fe6f0-fc70-4e6e-a7ae-36b492b994ad</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="a5b09f3b9f3b1ff4f3dc9c007268f0e0" title="Acceleration (ii)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>e46186d6-7891-40a4-842e-790596b86aec,32709591-7319-4070-96cd-629ec737f83d,6f7fe6f0-fc70-4e6e-a7ae-36b492b994ad,b3db52ea-c57e-4aad-bbe9-e08b3e5731a6,d03f162f-50bc-42f8-9099-8a4ebec880eb</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>09af12bf7cc430cea95bf7b98129e672</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Which of the following statements about motion &lt;span style="text-decoration: underline;"&gt;is incorrect&lt;/span&gt;?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="e46186d6-7891-40a4-842e-790596b86aec">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span class="mctfyn__choice-txt font-txt"&gt;Object's moving on a line with constant speed have zero acceleration.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="32709591-7319-4070-96cd-629ec737f83d">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span class="mctfyn__choice-txt font-txt"&gt;Object's undergoing uniform motion have constant acceleration.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="6f7fe6f0-fc70-4e6e-a7ae-36b492b994ad">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span class="mctfyn__choice-txt font-txt"&gt;Acceleration is defined as the rate of change of velocity.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="b3db52ea-c57e-4aad-bbe9-e08b3e5731a6">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span class="mctfyn__choice-txt font-txt"&gt;Centripetal acceleration is &lt;em&gt;center seeking&lt;/em&gt;, meaning the acceleration vector points to the center of orbit.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="d03f162f-50bc-42f8-9099-8a4ebec880eb">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;An object's acceleration is the ratio between the net force acting on that object and its mass.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">32709591-7319-4070-96cd-629ec737f83d</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="f57a81a31872b1863362429b03b88ddd" title="Acceleration (i)">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>e46186d6-7891-40a4-842e-790596b86aec,32709591-7319-4070-96cd-629ec737f83d,6f7fe6f0-fc70-4e6e-a7ae-36b492b994ad,b3db52ea-c57e-4aad-bbe9-e08b3e5731a6,d03f162f-50bc-42f8-9099-8a4ebec880eb</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>8a20ecf1e8091ada1d33c2afa28f6e86</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Which of the following statements about motion &lt;span style="text-decoration: underline;"&gt;is incorrect&lt;/span&gt;?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="e46186d6-7891-40a4-842e-790596b86aec">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span class="mctfyn__choice-txt font-txt"&gt;Object's with constant speed always have zero acceleration.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="32709591-7319-4070-96cd-629ec737f83d">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span class="mctfyn__choice-txt font-txt"&gt;Object's undergoing uniform motion have constant speed.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="6f7fe6f0-fc70-4e6e-a7ae-36b492b994ad">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span class="mctfyn__choice-txt font-txt"&gt;Acceleration is defined as the rate of change of velocity.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="b3db52ea-c57e-4aad-bbe9-e08b3e5731a6">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;&lt;span class="mctfyn__choice-txt font-txt"&gt;Centripetal acceleration is &lt;em&gt;center seeking&lt;/em&gt;, meaning the acceleration vector points to the center of orbit.&lt;/span&gt;&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="d03f162f-50bc-42f8-9099-8a4ebec880eb">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;An object's acceleration is the ratio between the net force acting on that object and its mass.&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">e46186d6-7891-40a4-842e-790596b86aec</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+  </objectbank>
+</questestinterop>

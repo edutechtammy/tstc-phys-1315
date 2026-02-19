@@ -1,0 +1,4313 @@
+<?xml version="1.0"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/xsd/ims_qtiasiv1p2p1.xsd">
+  <assessment ident="g3806f776b851908879ee02b3c6711532" title="M1: Check for Understanding (Significant Figures)" external_assignment_id="875337">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>cc_maxattempts</fieldlabel>
+        <fieldentry>unlimited</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <section ident="root_section">
+      <item ident="62cb24a3bef8c2e97d44458a113f7aaa" title="">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>calculated_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry/>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>c98e664a4e22aa6aa2e5f63e44887b35</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>calculator_type</fieldlabel>
+              <fieldentry>basic</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;Compute the following quantity keeping in mind the rules of significant figures: `a`&#xB7;`b`&lt;/p&gt;</mattext>
+          </material>
+          <response_str ident="response1" rcardinality="Single">
+            <render_fib fibtype="Decimal">
+              <response_label ident="answer1"/>
+            </render_fib>
+          </response_str>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition title="correct">
+            <conditionvar>
+              <other/>
+            </conditionvar>
+            <setvar varname="SCORE" action="Set">100</setvar>
+          </respcondition>
+          <respcondition title="incorrect">
+            <conditionvar>
+              <not>
+                <other/>
+              </not>
+            </conditionvar>
+            <setvar varname="SCORE" action="Set">0</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemproc_extension>
+          <calculated>
+            <answer_tolerance margin_type="absolute">0</answer_tolerance>
+            <formulas decimal_places="2" scientific_notation="false">
+              <formula>floor(1000*a*b+0.5)/1000.</formula>
+            </formulas>
+            <vars>
+              <var name="a" scale="4">
+                <min>1.0000</min>
+                <max>5.0000</max>
+              </var>
+              <var name="b" scale="2">
+                <min>1.00</min>
+                <max>2.00</max>
+              </var>
+            </vars>
+            <var_sets>
+              <var_set ident="68cc9bbf2d1f7e8b7eb8ba0e07bb94d7">
+                <var name="a">4.0572</var>
+                <var name="b">1.09</var>
+                <answer>4.42</answer>
+              </var_set>
+              <var_set ident="a586b70087f57a491b1fa25f90ca364e">
+                <var name="a">1.8049</var>
+                <var name="b">1.91</var>
+                <answer>3.45</answer>
+              </var_set>
+              <var_set ident="9b61ea874b4aaac04f9263ed30566452">
+                <var name="a">2.7274</var>
+                <var name="b">1.37</var>
+                <answer>3.74</answer>
+              </var_set>
+              <var_set ident="5890f2bfec7fa6330034889f58c92f85">
+                <var name="a">3.1509</var>
+                <var name="b">1.97</var>
+                <answer>6.21</answer>
+              </var_set>
+              <var_set ident="da24ef79018881e063dffeedac108e5a">
+                <var name="a">2.4244</var>
+                <var name="b">1.38</var>
+                <answer>3.35</answer>
+              </var_set>
+              <var_set ident="7760ad9f88a960ef6a0eca0854c18d8d">
+                <var name="a">2.1731</var>
+                <var name="b">1.52</var>
+                <answer>3.30</answer>
+              </var_set>
+              <var_set ident="c6bb9f4336e3fd93056cf78041cf4391">
+                <var name="a">2.5958</var>
+                <var name="b">1.08</var>
+                <answer>2.80</answer>
+              </var_set>
+              <var_set ident="72179f06a504232968dab7b9c31b7437">
+                <var name="a">1.9844</var>
+                <var name="b">1.34</var>
+                <answer>2.66</answer>
+              </var_set>
+              <var_set ident="cdfb5d4a98a4362806f11943bb239bae">
+                <var name="a">1.4645</var>
+                <var name="b">1.29</var>
+                <answer>1.89</answer>
+              </var_set>
+              <var_set ident="5106a2f72753e4ab84f040cc84abda2b">
+                <var name="a">2.3000</var>
+                <var name="b">1.93</var>
+                <answer>4.44</answer>
+              </var_set>
+              <var_set ident="ff688e59414f9da7d04e3229ccb2fc75">
+                <var name="a">4.1817</var>
+                <var name="b">1.71</var>
+                <answer>7.15</answer>
+              </var_set>
+              <var_set ident="2c0c02b31dfdcb757b18ad985898c704">
+                <var name="a">1.7407</var>
+                <var name="b">1.74</var>
+                <answer>3.03</answer>
+              </var_set>
+              <var_set ident="506ade8f473937d96a4588e04e48b4e8">
+                <var name="a">3.9634</var>
+                <var name="b">1.13</var>
+                <answer>4.48</answer>
+              </var_set>
+              <var_set ident="859eb2ec9611e7b7eb9f2724038881ee">
+                <var name="a">3.5953</var>
+                <var name="b">1.89</var>
+                <answer>6.80</answer>
+              </var_set>
+              <var_set ident="548efc7985ea1d8672b27a68c90e0f7c">
+                <var name="a">1.5876</var>
+                <var name="b">1.91</var>
+                <answer>3.03</answer>
+              </var_set>
+              <var_set ident="800a8f52549c02e45824fa6da52b3373">
+                <var name="a">4.8602</var>
+                <var name="b">1.11</var>
+                <answer>5.40</answer>
+              </var_set>
+              <var_set ident="891fd17fdde27ee1a593f57b3b4c3422">
+                <var name="a">2.7393</var>
+                <var name="b">1.20</var>
+                <answer>3.29</answer>
+              </var_set>
+              <var_set ident="cda7beb6771a46fbbb495241291bb83a">
+                <var name="a">4.0307</var>
+                <var name="b">1.40</var>
+                <answer>5.64</answer>
+              </var_set>
+              <var_set ident="e02ef97684da0f8f65df802de0d3b9cb">
+                <var name="a">4.0585</var>
+                <var name="b">1.09</var>
+                <answer>4.42</answer>
+              </var_set>
+              <var_set ident="e3d758c3a211eb0dc9f2c11488764284">
+                <var name="a">4.3023</var>
+                <var name="b">1.86</var>
+                <answer>8.00</answer>
+              </var_set>
+              <var_set ident="9e9687a524fa6ef4bf663c60cf8c1ff3">
+                <var name="a">2.5496</var>
+                <var name="b">1.80</var>
+                <answer>4.59</answer>
+              </var_set>
+              <var_set ident="ea15a417a3e690dec4233c459bf02ca8">
+                <var name="a">2.4949</var>
+                <var name="b">1.65</var>
+                <answer>4.12</answer>
+              </var_set>
+              <var_set ident="8871de2897c6038f36aaf89d5a40f180">
+                <var name="a">4.6623</var>
+                <var name="b">1.18</var>
+                <answer>5.50</answer>
+              </var_set>
+              <var_set ident="4c02159f6e3f55ebc639454dc8319ea0">
+                <var name="a">4.4611</var>
+                <var name="b">1.44</var>
+                <answer>6.42</answer>
+              </var_set>
+              <var_set ident="8a8613a9f83c36e91ab2513a69c9d435">
+                <var name="a">4.9730</var>
+                <var name="b">1.33</var>
+                <answer>6.61</answer>
+              </var_set>
+              <var_set ident="e8661457fb75b21a7ec07909bcb20870">
+                <var name="a">4.9820</var>
+                <var name="b">1.73</var>
+                <answer>8.62</answer>
+              </var_set>
+              <var_set ident="2023017492b89a68fcef1028c48f14bb">
+                <var name="a">3.3415</var>
+                <var name="b">1.34</var>
+                <answer>4.48</answer>
+              </var_set>
+              <var_set ident="9125bcb1d5d42c5afb6cac875b86830b">
+                <var name="a">4.3683</var>
+                <var name="b">1.03</var>
+                <answer>4.50</answer>
+              </var_set>
+              <var_set ident="c414f163109705f2afe022e7590984fc">
+                <var name="a">3.2467</var>
+                <var name="b">1.53</var>
+                <answer>4.97</answer>
+              </var_set>
+              <var_set ident="602efa660c6b8195013e4d4ecddc520a">
+                <var name="a">2.4904</var>
+                <var name="b">1.11</var>
+                <answer>2.76</answer>
+              </var_set>
+              <var_set ident="155864d06a750d93b3ab2695dc5f499d">
+                <var name="a">4.9717</var>
+                <var name="b">1.69</var>
+                <answer>8.40</answer>
+              </var_set>
+              <var_set ident="3eb0e26327150909a68348da97792f61">
+                <var name="a">3.4336</var>
+                <var name="b">1.63</var>
+                <answer>5.60</answer>
+              </var_set>
+              <var_set ident="1fe64403dd2b068dda557c09af81d3a2">
+                <var name="a">4.1138</var>
+                <var name="b">1.62</var>
+                <answer>6.66</answer>
+              </var_set>
+              <var_set ident="73420345eac430eac0fc33d850b3ab60">
+                <var name="a">2.3733</var>
+                <var name="b">1.88</var>
+                <answer>4.46</answer>
+              </var_set>
+              <var_set ident="0843816f9e0ac08b0d03d20abcc0a813">
+                <var name="a">3.3096</var>
+                <var name="b">1.80</var>
+                <answer>5.96</answer>
+              </var_set>
+              <var_set ident="707e4dcefb1135f1f306c1a22913551f">
+                <var name="a">4.0043</var>
+                <var name="b">1.67</var>
+                <answer>6.69</answer>
+              </var_set>
+              <var_set ident="1a22d51ecbe35d5488bb2072cca727c1">
+                <var name="a">4.9616</var>
+                <var name="b">1.91</var>
+                <answer>9.48</answer>
+              </var_set>
+              <var_set ident="470e4ae542bed7c690581c2c96f0d8e6">
+                <var name="a">1.4451</var>
+                <var name="b">1.61</var>
+                <answer>2.33</answer>
+              </var_set>
+              <var_set ident="434fb07865b6624d196d6a21a29e8188">
+                <var name="a">1.7643</var>
+                <var name="b">1.74</var>
+                <answer>3.07</answer>
+              </var_set>
+              <var_set ident="84c04f246c2ddc06386921b34c650050">
+                <var name="a">4.7799</var>
+                <var name="b">1.10</var>
+                <answer>5.26</answer>
+              </var_set>
+              <var_set ident="dfefc40f786009647278e3f12189aebc">
+                <var name="a">1.9226</var>
+                <var name="b">1.64</var>
+                <answer>3.15</answer>
+              </var_set>
+              <var_set ident="1afc0e66a81116a6b3874fe0d2967d0a">
+                <var name="a">3.1747</var>
+                <var name="b">1.14</var>
+                <answer>3.62</answer>
+              </var_set>
+              <var_set ident="7d00301a0bca06cf51d448a90096a46f">
+                <var name="a">4.6107</var>
+                <var name="b">1.13</var>
+                <answer>5.21</answer>
+              </var_set>
+              <var_set ident="fcedb40a1307d67d1693ff814192860d">
+                <var name="a">4.0296</var>
+                <var name="b">1.35</var>
+                <answer>5.44</answer>
+              </var_set>
+              <var_set ident="6a7b3fd15a6e32491b6ac2f7ff2996ee">
+                <var name="a">4.4070</var>
+                <var name="b">1.73</var>
+                <answer>7.62</answer>
+              </var_set>
+              <var_set ident="d21f3a73113b0be04b155fda85dd74fa">
+                <var name="a">2.4271</var>
+                <var name="b">1.60</var>
+                <answer>3.88</answer>
+              </var_set>
+              <var_set ident="9782291c57010a42b6fad1dc6ee6393f">
+                <var name="a">4.5415</var>
+                <var name="b">1.60</var>
+                <answer>7.27</answer>
+              </var_set>
+              <var_set ident="f7289bcf12e1439a098a6ced7a90cfc8">
+                <var name="a">4.5883</var>
+                <var name="b">1.30</var>
+                <answer>5.97</answer>
+              </var_set>
+              <var_set ident="7a6922e448454d32ea0601b5f5006fe2">
+                <var name="a">2.0140</var>
+                <var name="b">1.17</var>
+                <answer>2.36</answer>
+              </var_set>
+              <var_set ident="6bec608d40cc37423dd3b65ad1cacd89">
+                <var name="a">4.5543</var>
+                <var name="b">1.27</var>
+                <answer>5.78</answer>
+              </var_set>
+              <var_set ident="2a19869e8bd14367ae8fd58f386d2523">
+                <var name="a">2.2907</var>
+                <var name="b">1.35</var>
+                <answer>3.09</answer>
+              </var_set>
+              <var_set ident="b390c88afaac6327a52acb1313e0874a">
+                <var name="a">4.5047</var>
+                <var name="b">1.04</var>
+                <answer>4.69</answer>
+              </var_set>
+              <var_set ident="4bfb06c8f74e6e557a04a704903a72e7">
+                <var name="a">4.5638</var>
+                <var name="b">1.45</var>
+                <answer>6.62</answer>
+              </var_set>
+              <var_set ident="332ed28782cf318f766e0019ed032983">
+                <var name="a">1.4659</var>
+                <var name="b">1.87</var>
+                <answer>2.74</answer>
+              </var_set>
+              <var_set ident="6d18824706d5c805bb553da2b91dcfdc">
+                <var name="a">2.4765</var>
+                <var name="b">1.80</var>
+                <answer>4.46</answer>
+              </var_set>
+              <var_set ident="a4037cb72870f20bf0315c9f1213089d">
+                <var name="a">4.5220</var>
+                <var name="b">1.81</var>
+                <answer>8.19</answer>
+              </var_set>
+              <var_set ident="152ec3d24902ecca459c795736218dae">
+                <var name="a">3.9780</var>
+                <var name="b">1.68</var>
+                <answer>6.68</answer>
+              </var_set>
+              <var_set ident="63d8950c45de70c379932c779aa7872f">
+                <var name="a">1.5262</var>
+                <var name="b">1.77</var>
+                <answer>2.70</answer>
+              </var_set>
+              <var_set ident="fd0aab17b4faab42ef88dfe6eb8d5e1f">
+                <var name="a">4.8742</var>
+                <var name="b">1.71</var>
+                <answer>8.34</answer>
+              </var_set>
+              <var_set ident="50153aaa9b41be1fbb62655e2bcce372">
+                <var name="a">2.8638</var>
+                <var name="b">1.42</var>
+                <answer>4.07</answer>
+              </var_set>
+              <var_set ident="27f6b5e3e41eb9123c9edbd9900bf506">
+                <var name="a">2.8405</var>
+                <var name="b">1.95</var>
+                <answer>5.54</answer>
+              </var_set>
+              <var_set ident="94a46a5f244d6ab332fbf1feeee90293">
+                <var name="a">4.1406</var>
+                <var name="b">1.19</var>
+                <answer>4.93</answer>
+              </var_set>
+              <var_set ident="35bc5dc8ae0ad5c57c195817c2757f25">
+                <var name="a">4.0935</var>
+                <var name="b">1.25</var>
+                <answer>5.12</answer>
+              </var_set>
+              <var_set ident="4a755628d30b05c06c5f6c449d85cc8e">
+                <var name="a">3.7518</var>
+                <var name="b">1.06</var>
+                <answer>3.98</answer>
+              </var_set>
+              <var_set ident="51d851b7ddcd137b0b9172cc2002b36f">
+                <var name="a">4.0535</var>
+                <var name="b">1.57</var>
+                <answer>6.36</answer>
+              </var_set>
+              <var_set ident="976ad706349f7139c0c727921aef2612">
+                <var name="a">3.6187</var>
+                <var name="b">1.42</var>
+                <answer>5.14</answer>
+              </var_set>
+              <var_set ident="f4ac6f663a490e41115c31c7e3d965a4">
+                <var name="a">1.1292</var>
+                <var name="b">1.51</var>
+                <answer>1.71</answer>
+              </var_set>
+              <var_set ident="97f68866f754cd7da60d7c9604700547">
+                <var name="a">1.0610</var>
+                <var name="b">1.48</var>
+                <answer>1.57</answer>
+              </var_set>
+              <var_set ident="81b66d7f1a0a23bdf84d9bdce853c1e5">
+                <var name="a">3.8577</var>
+                <var name="b">1.51</var>
+                <answer>5.83</answer>
+              </var_set>
+              <var_set ident="16eccf5e18201ee256de3e5e4d532dc6">
+                <var name="a">4.8386</var>
+                <var name="b">1.68</var>
+                <answer>8.13</answer>
+              </var_set>
+              <var_set ident="df7158413f9036d67ca4460ccced5ec0">
+                <var name="a">4.0638</var>
+                <var name="b">1.60</var>
+                <answer>6.50</answer>
+              </var_set>
+              <var_set ident="15d2de322836861931a00c0dad4758e1">
+                <var name="a">3.4791</var>
+                <var name="b">1.54</var>
+                <answer>5.36</answer>
+              </var_set>
+              <var_set ident="075015aa5b54d1e00e17d4a5137a94e3">
+                <var name="a">4.3886</var>
+                <var name="b">1.51</var>
+                <answer>6.63</answer>
+              </var_set>
+              <var_set ident="041edb51ca34960a6551eca0d9147c88">
+                <var name="a">4.8493</var>
+                <var name="b">1.04</var>
+                <answer>5.04</answer>
+              </var_set>
+              <var_set ident="81d4155589b349aa7bbb356b629910b5">
+                <var name="a">3.0246</var>
+                <var name="b">1.85</var>
+                <answer>5.60</answer>
+              </var_set>
+              <var_set ident="7c8c41fe1eaa34516f44eeb50b0ce6da">
+                <var name="a">4.5035</var>
+                <var name="b">1.13</var>
+                <answer>5.09</answer>
+              </var_set>
+              <var_set ident="c81e7941f6894ef80afe1572b4b62b92">
+                <var name="a">4.9630</var>
+                <var name="b">1.74</var>
+                <answer>8.64</answer>
+              </var_set>
+              <var_set ident="9ff754c70f6e57201dabef276ae2d787">
+                <var name="a">2.1349</var>
+                <var name="b">1.75</var>
+                <answer>3.74</answer>
+              </var_set>
+              <var_set ident="6edca72f2e63b3431f7a65038eef9c7b">
+                <var name="a">2.1845</var>
+                <var name="b">1.33</var>
+                <answer>2.91</answer>
+              </var_set>
+              <var_set ident="6e3bf93b16564d56a2bd16db2fcb4a5d">
+                <var name="a">4.3492</var>
+                <var name="b">1.63</var>
+                <answer>7.09</answer>
+              </var_set>
+              <var_set ident="b97c5e28e081e5e684d9c8365d592363">
+                <var name="a">2.6419</var>
+                <var name="b">1.70</var>
+                <answer>4.49</answer>
+              </var_set>
+              <var_set ident="524953fe65560b456550dac05dc17e17">
+                <var name="a">3.1735</var>
+                <var name="b">1.05</var>
+                <answer>3.33</answer>
+              </var_set>
+              <var_set ident="3a66b9d12bf976fd7eca23b1371180b3">
+                <var name="a">1.7574</var>
+                <var name="b">1.79</var>
+                <answer>3.15</answer>
+              </var_set>
+              <var_set ident="ccab85ae2e49d339ae2ee433926cc46c">
+                <var name="a">4.6530</var>
+                <var name="b">1.30</var>
+                <answer>6.05</answer>
+              </var_set>
+              <var_set ident="cc924eb515eae5ab4a74f253772b7c1e">
+                <var name="a">2.6833</var>
+                <var name="b">1.51</var>
+                <answer>4.05</answer>
+              </var_set>
+              <var_set ident="211def1aa73df295446544c40e3659cb">
+                <var name="a">3.1616</var>
+                <var name="b">1.94</var>
+                <answer>6.13</answer>
+              </var_set>
+              <var_set ident="74f0a67a42cc741c88f2fe5367a2b1d2">
+                <var name="a">2.4471</var>
+                <var name="b">1.89</var>
+                <answer>4.63</answer>
+              </var_set>
+              <var_set ident="40eddf24813937bf994dbc237ee28c9b">
+                <var name="a">2.2194</var>
+                <var name="b">1.13</var>
+                <answer>2.51</answer>
+              </var_set>
+              <var_set ident="b5c8c7fb3d9993a9b3b380f07b91cbc2">
+                <var name="a">3.4360</var>
+                <var name="b">1.23</var>
+                <answer>4.23</answer>
+              </var_set>
+              <var_set ident="2012c5ec940a0b2dd2ffa714c7cac51a">
+                <var name="a">4.6696</var>
+                <var name="b">1.46</var>
+                <answer>6.82</answer>
+              </var_set>
+              <var_set ident="b154f85309f7e5004acf3c4e3ba79586">
+                <var name="a">2.7675</var>
+                <var name="b">1.22</var>
+                <answer>3.38</answer>
+              </var_set>
+              <var_set ident="207a0629d5bbdd1b43d9be5e8c7f77a8">
+                <var name="a">3.0581</var>
+                <var name="b">1.48</var>
+                <answer>4.53</answer>
+              </var_set>
+              <var_set ident="3456a3efe706fe07e1f364e3e4e44769">
+                <var name="a">3.2861</var>
+                <var name="b">1.72</var>
+                <answer>5.65</answer>
+              </var_set>
+              <var_set ident="d8af60fba31b15ec5e7c491e99b6e215">
+                <var name="a">4.3328</var>
+                <var name="b">1.89</var>
+                <answer>8.19</answer>
+              </var_set>
+              <var_set ident="c048ff9b4b6f2835f1b7a644965c2a15">
+                <var name="a">2.4581</var>
+                <var name="b">1.34</var>
+                <answer>3.29</answer>
+              </var_set>
+              <var_set ident="ee891ba239a606d0741e513c9e4ef66b">
+                <var name="a">4.5179</var>
+                <var name="b">1.13</var>
+                <answer>5.11</answer>
+              </var_set>
+              <var_set ident="f575aaeddec53ebb99a3b955c19ae2cd">
+                <var name="a">3.6365</var>
+                <var name="b">1.46</var>
+                <answer>5.31</answer>
+              </var_set>
+              <var_set ident="a3dfbea602624f8c5839dfa2e0b0a453">
+                <var name="a">2.9973</var>
+                <var name="b">1.23</var>
+                <answer>3.69</answer>
+              </var_set>
+              <var_set ident="a2b1de43d353911b250868d644e5f0bb">
+                <var name="a">2.0059</var>
+                <var name="b">1.92</var>
+                <answer>3.85</answer>
+              </var_set>
+              <var_set ident="07af27f2c6b1bee2905feca2bd6e5ef9">
+                <var name="a">2.5261</var>
+                <var name="b">1.18</var>
+                <answer>2.98</answer>
+              </var_set>
+              <var_set ident="e6f54845f9e47eaa1b987f0802835318">
+                <var name="a">1.6174</var>
+                <var name="b">1.46</var>
+                <answer>2.36</answer>
+              </var_set>
+              <var_set ident="93d734b8f602d578f8e0ad4507257f35">
+                <var name="a">1.4334</var>
+                <var name="b">1.88</var>
+                <answer>2.70</answer>
+              </var_set>
+              <var_set ident="51d9c9cd32e933389c36bf270bcda038">
+                <var name="a">2.6209</var>
+                <var name="b">1.45</var>
+                <answer>3.80</answer>
+              </var_set>
+              <var_set ident="6ad3166f422f432ba146828f376f678d">
+                <var name="a">4.5166</var>
+                <var name="b">1.70</var>
+                <answer>7.68</answer>
+              </var_set>
+              <var_set ident="aa23fb94ca11cf1f0a70c9f2173cd2e5">
+                <var name="a">1.2891</var>
+                <var name="b">1.43</var>
+                <answer>1.84</answer>
+              </var_set>
+              <var_set ident="eb3f792589104e50481cc3c22037528f">
+                <var name="a">4.4112</var>
+                <var name="b">1.04</var>
+                <answer>4.59</answer>
+              </var_set>
+              <var_set ident="75c333bc2de7b2b15d1fcd6239198ae1">
+                <var name="a">4.1511</var>
+                <var name="b">1.73</var>
+                <answer>7.18</answer>
+              </var_set>
+              <var_set ident="f30ec8afa78ea3ed8c6c3e15a68d3b89">
+                <var name="a">2.6274</var>
+                <var name="b">1.49</var>
+                <answer>3.92</answer>
+              </var_set>
+              <var_set ident="393a5c40d373a96bd5cdbc463e8f3516">
+                <var name="a">2.9037</var>
+                <var name="b">1.27</var>
+                <answer>3.69</answer>
+              </var_set>
+              <var_set ident="8178e5f3fd10fb3af847181e72867be2">
+                <var name="a">1.5209</var>
+                <var name="b">1.58</var>
+                <answer>2.40</answer>
+              </var_set>
+              <var_set ident="2921cf708038b9af45e6f03d5b1cfcf6">
+                <var name="a">2.5127</var>
+                <var name="b">1.70</var>
+                <answer>4.27</answer>
+              </var_set>
+              <var_set ident="69390dd5a7f2de17a469b67d5eeb2b86">
+                <var name="a">2.6166</var>
+                <var name="b">1.94</var>
+                <answer>5.08</answer>
+              </var_set>
+              <var_set ident="f65aa935b71d41507d7f7e8518a7cb89">
+                <var name="a">1.7339</var>
+                <var name="b">1.87</var>
+                <answer>3.24</answer>
+              </var_set>
+              <var_set ident="0d28d248a144abf5aeae58a898ea9afc">
+                <var name="a">4.2362</var>
+                <var name="b">1.19</var>
+                <answer>5.04</answer>
+              </var_set>
+              <var_set ident="7b67badeaa48a28bb47fdf77ac43089c">
+                <var name="a">4.1865</var>
+                <var name="b">1.06</var>
+                <answer>4.44</answer>
+              </var_set>
+              <var_set ident="249d0c228bef74c455f820ec0c76c9c2">
+                <var name="a">4.4443</var>
+                <var name="b">1.08</var>
+                <answer>4.80</answer>
+              </var_set>
+              <var_set ident="ac305d98a35dadc6f033dc651a8441c5">
+                <var name="a">2.4766</var>
+                <var name="b">1.05</var>
+                <answer>2.60</answer>
+              </var_set>
+              <var_set ident="1263635acfcb9d48a3274dda26be62fa">
+                <var name="a">1.9637</var>
+                <var name="b">1.09</var>
+                <answer>2.14</answer>
+              </var_set>
+              <var_set ident="46cd50c58a5e618d2f16ca533c9c65d3">
+                <var name="a">3.0316</var>
+                <var name="b">1.78</var>
+                <answer>5.40</answer>
+              </var_set>
+              <var_set ident="29e73b5e0d61f0fc520827bdfe54946b">
+                <var name="a">4.9792</var>
+                <var name="b">1.52</var>
+                <answer>7.57</answer>
+              </var_set>
+              <var_set ident="61ea570176cfdacd7f8e42a5f68ce5f1">
+                <var name="a">2.1579</var>
+                <var name="b">1.32</var>
+                <answer>2.85</answer>
+              </var_set>
+              <var_set ident="ea2320d1e89c7fd7a792cc92f9a807f6">
+                <var name="a">4.4126</var>
+                <var name="b">1.41</var>
+                <answer>6.22</answer>
+              </var_set>
+              <var_set ident="0c943051ef0dba9875acdbc43655c515">
+                <var name="a">1.2268</var>
+                <var name="b">1.66</var>
+                <answer>2.04</answer>
+              </var_set>
+              <var_set ident="5ae60bb0b86c06aab7b15b99e50d4f4e">
+                <var name="a">2.5010</var>
+                <var name="b">1.09</var>
+                <answer>2.73</answer>
+              </var_set>
+              <var_set ident="5ddf3e6785860d4bfbf024afaa765ab8">
+                <var name="a">2.9644</var>
+                <var name="b">1.00</var>
+                <answer>2.96</answer>
+              </var_set>
+              <var_set ident="8fb5cabb449cea622e959538fedfba91">
+                <var name="a">4.0037</var>
+                <var name="b">1.92</var>
+                <answer>7.69</answer>
+              </var_set>
+              <var_set ident="aa6434f0e1dbf4274255d8199e50eade">
+                <var name="a">3.9065</var>
+                <var name="b">1.59</var>
+                <answer>6.21</answer>
+              </var_set>
+              <var_set ident="3a8d1d158cad79e16770d622a5a2c00c">
+                <var name="a">2.4525</var>
+                <var name="b">1.64</var>
+                <answer>4.02</answer>
+              </var_set>
+              <var_set ident="e605cd32f6de72a133975653d206f301">
+                <var name="a">1.5632</var>
+                <var name="b">1.50</var>
+                <answer>2.35</answer>
+              </var_set>
+              <var_set ident="ec78d130ea25049df657c813b5fe93e5">
+                <var name="a">3.7903</var>
+                <var name="b">1.26</var>
+                <answer>4.78</answer>
+              </var_set>
+              <var_set ident="606198a32e969351705fb3fd2b9e4807">
+                <var name="a">3.6748</var>
+                <var name="b">1.60</var>
+                <answer>5.88</answer>
+              </var_set>
+              <var_set ident="38fabd985fa800281cd7a06c8901faca">
+                <var name="a">1.7086</var>
+                <var name="b">1.78</var>
+                <answer>3.04</answer>
+              </var_set>
+              <var_set ident="cb6311637c704d4c06c1ae5bc147c60e">
+                <var name="a">1.3306</var>
+                <var name="b">1.98</var>
+                <answer>2.64</answer>
+              </var_set>
+              <var_set ident="276e36122069b09bf4427807c1dd6404">
+                <var name="a">1.9135</var>
+                <var name="b">1.61</var>
+                <answer>3.08</answer>
+              </var_set>
+              <var_set ident="f4e9b0bc640844e1821d0b5565b9bc25">
+                <var name="a">1.5068</var>
+                <var name="b">1.24</var>
+                <answer>1.87</answer>
+              </var_set>
+              <var_set ident="9ca5d66beebd6e2ce76d1240cddb3292">
+                <var name="a">1.1733</var>
+                <var name="b">1.52</var>
+                <answer>1.78</answer>
+              </var_set>
+              <var_set ident="23f0fd5acb22a8ed1ef3cfa8c81077ea">
+                <var name="a">3.4779</var>
+                <var name="b">1.07</var>
+                <answer>3.72</answer>
+              </var_set>
+              <var_set ident="4412818968e0669872f77da03ef81247">
+                <var name="a">4.0338</var>
+                <var name="b">1.71</var>
+                <answer>6.90</answer>
+              </var_set>
+              <var_set ident="bb7f09a1c191f3b48c3111569aaf8801">
+                <var name="a">3.3742</var>
+                <var name="b">1.33</var>
+                <answer>4.49</answer>
+              </var_set>
+              <var_set ident="213bb7da15196d205594ee5e88c293ad">
+                <var name="a">4.3431</var>
+                <var name="b">1.86</var>
+                <answer>8.08</answer>
+              </var_set>
+              <var_set ident="29b353bceb2ed87666e8b5baae22606e">
+                <var name="a">3.7290</var>
+                <var name="b">1.65</var>
+                <answer>6.15</answer>
+              </var_set>
+              <var_set ident="205bd5c24c1a70226598056634a54c31">
+                <var name="a">1.9291</var>
+                <var name="b">1.34</var>
+                <answer>2.59</answer>
+              </var_set>
+              <var_set ident="dc778b8ee77397644b8a0368425aa21f">
+                <var name="a">3.5251</var>
+                <var name="b">1.95</var>
+                <answer>6.87</answer>
+              </var_set>
+              <var_set ident="017cd22c294eee74a23642c8962a0712">
+                <var name="a">4.9428</var>
+                <var name="b">1.58</var>
+                <answer>7.81</answer>
+              </var_set>
+              <var_set ident="47310359a1c1fd3fb41e7dc65fef0f57">
+                <var name="a">2.4344</var>
+                <var name="b">1.65</var>
+                <answer>4.02</answer>
+              </var_set>
+              <var_set ident="bebd4ea439946a735bee747b14a9f44a">
+                <var name="a">2.0086</var>
+                <var name="b">1.52</var>
+                <answer>3.05</answer>
+              </var_set>
+              <var_set ident="673056e06ee8cb079e3ae9d61318834c">
+                <var name="a">2.5509</var>
+                <var name="b">1.37</var>
+                <answer>3.50</answer>
+              </var_set>
+              <var_set ident="fff0e99950566990e933e86350559471">
+                <var name="a">3.6247</var>
+                <var name="b">1.66</var>
+                <answer>6.02</answer>
+              </var_set>
+              <var_set ident="8c00953cc815162618f41ad1c8cc1c54">
+                <var name="a">3.1558</var>
+                <var name="b">1.80</var>
+                <answer>5.68</answer>
+              </var_set>
+              <var_set ident="9a07aac9b34c47826eb806314470a297">
+                <var name="a">4.3542</var>
+                <var name="b">1.97</var>
+                <answer>8.58</answer>
+              </var_set>
+              <var_set ident="205a74195c928d9323ab8cc12854f595">
+                <var name="a">3.9122</var>
+                <var name="b">1.84</var>
+                <answer>7.20</answer>
+              </var_set>
+              <var_set ident="c9caf1a5be55ca8d776f1a9993eab8d0">
+                <var name="a">2.1102</var>
+                <var name="b">1.37</var>
+                <answer>2.89</answer>
+              </var_set>
+              <var_set ident="40e5a869b46bcebcbb823e3c52ac7f20">
+                <var name="a">2.3798</var>
+                <var name="b">1.97</var>
+                <answer>4.69</answer>
+              </var_set>
+              <var_set ident="b182967d00076b0d9b4fc8abea053276">
+                <var name="a">1.2622</var>
+                <var name="b">1.21</var>
+                <answer>1.53</answer>
+              </var_set>
+              <var_set ident="741d4ea5f3309591f23fa3d37f57ce3e">
+                <var name="a">3.7792</var>
+                <var name="b">1.18</var>
+                <answer>4.46</answer>
+              </var_set>
+              <var_set ident="8bd93a482bdd410f0d931211fc2f1b88">
+                <var name="a">4.2205</var>
+                <var name="b">1.77</var>
+                <answer>7.47</answer>
+              </var_set>
+              <var_set ident="ca031c7a66f6e6bb4cdbccd5a4040f7c">
+                <var name="a">1.0439</var>
+                <var name="b">1.69</var>
+                <answer>1.76</answer>
+              </var_set>
+              <var_set ident="fcb5367fc718e670fefb2e1a48084c8c">
+                <var name="a">2.6546</var>
+                <var name="b">1.44</var>
+                <answer>3.82</answer>
+              </var_set>
+              <var_set ident="2c19f41994ade215d0031154c08206c6">
+                <var name="a">1.4599</var>
+                <var name="b">1.12</var>
+                <answer>1.64</answer>
+              </var_set>
+              <var_set ident="bfdb37eb5dd3c296f1f68ec126e7558a">
+                <var name="a">1.5322</var>
+                <var name="b">1.47</var>
+                <answer>2.25</answer>
+              </var_set>
+              <var_set ident="388a6a6f50f582225eb1b03f05a7f089">
+                <var name="a">2.6493</var>
+                <var name="b">1.57</var>
+                <answer>4.16</answer>
+              </var_set>
+              <var_set ident="c4ea809b274a1987ba75fac4ae892b62">
+                <var name="a">2.4124</var>
+                <var name="b">1.51</var>
+                <answer>3.64</answer>
+              </var_set>
+              <var_set ident="d68041e83cdde0a0d0026edf5a27416f">
+                <var name="a">4.4184</var>
+                <var name="b">1.28</var>
+                <answer>5.66</answer>
+              </var_set>
+              <var_set ident="b49a806c8416185fcf3bbc1517eb7905">
+                <var name="a">3.1114</var>
+                <var name="b">1.24</var>
+                <answer>3.86</answer>
+              </var_set>
+              <var_set ident="8682b0a36ed710be486d07183eb91557">
+                <var name="a">4.2620</var>
+                <var name="b">1.10</var>
+                <answer>4.69</answer>
+              </var_set>
+              <var_set ident="3f7f5939094fd46a136fe5288cb19bab">
+                <var name="a">3.1975</var>
+                <var name="b">1.54</var>
+                <answer>4.92</answer>
+              </var_set>
+              <var_set ident="64e60be1f09c4ef24d582c8dc9b4d8fd">
+                <var name="a">4.1164</var>
+                <var name="b">1.70</var>
+                <answer>7.00</answer>
+              </var_set>
+              <var_set ident="1ed161441ea5f0eea288864cb3cca0b1">
+                <var name="a">2.9271</var>
+                <var name="b">1.14</var>
+                <answer>3.34</answer>
+              </var_set>
+              <var_set ident="ab2de218e7330eea9dfd20f306072c0f">
+                <var name="a">1.0519</var>
+                <var name="b">1.04</var>
+                <answer>1.09</answer>
+              </var_set>
+              <var_set ident="e7b66eb689741296429d688d59da0f58">
+                <var name="a">3.4942</var>
+                <var name="b">1.47</var>
+                <answer>5.14</answer>
+              </var_set>
+              <var_set ident="ce40f24cacf51932c5e40784f960ebfd">
+                <var name="a">3.5174</var>
+                <var name="b">1.05</var>
+                <answer>3.69</answer>
+              </var_set>
+              <var_set ident="5d4b5090ece4a1c821d6176064c97192">
+                <var name="a">4.2317</var>
+                <var name="b">1.37</var>
+                <answer>5.80</answer>
+              </var_set>
+              <var_set ident="59b80faff64609c6d6e78762b34677c2">
+                <var name="a">1.1972</var>
+                <var name="b">1.45</var>
+                <answer>1.74</answer>
+              </var_set>
+              <var_set ident="7c1052ae237c2e7d2330881d71c142c5">
+                <var name="a">3.6941</var>
+                <var name="b">1.02</var>
+                <answer>3.77</answer>
+              </var_set>
+              <var_set ident="2efe326ca9acf3ff900c23d5783abc25">
+                <var name="a">4.5023</var>
+                <var name="b">1.14</var>
+                <answer>5.13</answer>
+              </var_set>
+              <var_set ident="c427c2832f3e8afb8377022f96df97bb">
+                <var name="a">1.8047</var>
+                <var name="b">1.38</var>
+                <answer>2.49</answer>
+              </var_set>
+              <var_set ident="7c5d759b73637ca7824988b8b99d14e7">
+                <var name="a">4.8670</var>
+                <var name="b">1.78</var>
+                <answer>8.66</answer>
+              </var_set>
+              <var_set ident="b92fee0370f8e5b51d3676b26747b413">
+                <var name="a">4.7337</var>
+                <var name="b">1.27</var>
+                <answer>6.01</answer>
+              </var_set>
+              <var_set ident="d4c2ec1a543d5cf57dd1210beaf28f34">
+                <var name="a">3.8933</var>
+                <var name="b">1.27</var>
+                <answer>4.94</answer>
+              </var_set>
+              <var_set ident="dae99d5d2394f6ce010a65729e13b0c9">
+                <var name="a">4.6921</var>
+                <var name="b">1.59</var>
+                <answer>7.46</answer>
+              </var_set>
+              <var_set ident="593befd289d24489b9fded869e3df7f0">
+                <var name="a">2.9392</var>
+                <var name="b">1.17</var>
+                <answer>3.44</answer>
+              </var_set>
+              <var_set ident="2e740e286b7af4f0fffbb3fc308f54ef">
+                <var name="a">1.5608</var>
+                <var name="b">1.07</var>
+                <answer>1.67</answer>
+              </var_set>
+              <var_set ident="627212ed9dfea5096a993e421664d9b7">
+                <var name="a">3.7179</var>
+                <var name="b">1.04</var>
+                <answer>3.87</answer>
+              </var_set>
+              <var_set ident="bb8e1447407da6a2523b5e7231062335">
+                <var name="a">1.9335</var>
+                <var name="b">1.14</var>
+                <answer>2.20</answer>
+              </var_set>
+              <var_set ident="cf20a671ad574144b082875c08ae4147">
+                <var name="a">1.2031</var>
+                <var name="b">1.20</var>
+                <answer>1.44</answer>
+              </var_set>
+              <var_set ident="d5100c6441d2a14be8a1ca6714ec82e7">
+                <var name="a">4.3223</var>
+                <var name="b">1.32</var>
+                <answer>5.71</answer>
+              </var_set>
+              <var_set ident="d406f9d3e735b166a3bc3c1eaa173350">
+                <var name="a">4.4970</var>
+                <var name="b">1.83</var>
+                <answer>8.23</answer>
+              </var_set>
+              <var_set ident="dee4774afd98700664cae7a29e86a492">
+                <var name="a">1.1346</var>
+                <var name="b">1.64</var>
+                <answer>1.86</answer>
+              </var_set>
+              <var_set ident="8f05274a88aea4a4ef26ad7e02287d59">
+                <var name="a">1.8212</var>
+                <var name="b">1.80</var>
+                <answer>3.28</answer>
+              </var_set>
+              <var_set ident="1f3efa0b7939347ac16f8b5b42a3e6e4">
+                <var name="a">1.0717</var>
+                <var name="b">1.38</var>
+                <answer>1.48</answer>
+              </var_set>
+              <var_set ident="974022b1e142e89e8265e0f30a1befad">
+                <var name="a">3.2878</var>
+                <var name="b">1.12</var>
+                <answer>3.68</answer>
+              </var_set>
+              <var_set ident="0a19dbd7238d32de971f3c3bb2f51dbc">
+                <var name="a">1.1892</var>
+                <var name="b">1.05</var>
+                <answer>1.25</answer>
+              </var_set>
+              <var_set ident="0913f4d5ff0bee364c3e27391d0c778b">
+                <var name="a">1.8267</var>
+                <var name="b">1.50</var>
+                <answer>2.74</answer>
+              </var_set>
+              <var_set ident="f2c89b94b500c0b9167f12314fa95a4f">
+                <var name="a">4.8096</var>
+                <var name="b">2.00</var>
+                <answer>9.62</answer>
+              </var_set>
+              <var_set ident="f1f0bb587a585e46ca5be0c558fe7163">
+                <var name="a">4.4896</var>
+                <var name="b">1.44</var>
+                <answer>6.47</answer>
+              </var_set>
+              <var_set ident="221351eada3cd1df3cfbb8bca601e339">
+                <var name="a">1.2372</var>
+                <var name="b">1.77</var>
+                <answer>2.19</answer>
+              </var_set>
+              <var_set ident="905238514edfd644191de8f6fdd398a5">
+                <var name="a">3.2765</var>
+                <var name="b">1.04</var>
+                <answer>3.41</answer>
+              </var_set>
+              <var_set ident="f1194937828e9f4e7c1729f60694961d">
+                <var name="a">4.9144</var>
+                <var name="b">1.80</var>
+                <answer>8.85</answer>
+              </var_set>
+              <var_set ident="650369c81cb5024bad022999a11d76d3">
+                <var name="a">2.7020</var>
+                <var name="b">1.46</var>
+                <answer>3.95</answer>
+              </var_set>
+              <var_set ident="25f4c08ffbe47af6fa7697b2c3c55a8e">
+                <var name="a">4.5932</var>
+                <var name="b">1.99</var>
+                <answer>9.14</answer>
+              </var_set>
+            </var_sets>
+          </calculated>
+        </itemproc_extension>
+      </item>
+      <item ident="7148a07cbbfb3526172f4f654e13a6a4" title="">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>calculated_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry/>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>9345db4d86b769f4d82a0216a46366c7</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>calculator_type</fieldlabel>
+              <fieldentry>basic</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;Compute the following quantity keeping in mind the rules of significant figures: `a`/`b`&lt;/p&gt;</mattext>
+          </material>
+          <response_str ident="response1" rcardinality="Single">
+            <render_fib fibtype="Decimal">
+              <response_label ident="answer1"/>
+            </render_fib>
+          </response_str>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition title="correct">
+            <conditionvar>
+              <other/>
+            </conditionvar>
+            <setvar varname="SCORE" action="Set">100</setvar>
+          </respcondition>
+          <respcondition title="incorrect">
+            <conditionvar>
+              <not>
+                <other/>
+              </not>
+            </conditionvar>
+            <setvar varname="SCORE" action="Set">0</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemproc_extension>
+          <calculated>
+            <answer_tolerance margin_type="absolute">0</answer_tolerance>
+            <formulas decimal_places="" scientific_notation="false">
+              <formula>floor(a/b+0.5)</formula>
+            </formulas>
+            <vars>
+              <var name="a" scale="2">
+                <min>20.00</min>
+                <max>30.00</max>
+              </var>
+              <var name="b" scale="1">
+                <min>1.0</min>
+                <max>2.0</max>
+              </var>
+            </vars>
+            <var_sets>
+              <var_set ident="4c371cf2b83f08be4370cdb42803833f">
+                <var name="a">23.08</var>
+                <var name="b">1.9</var>
+                <answer>12</answer>
+              </var_set>
+              <var_set ident="7ac078aa760aef344ee84e739722c0d6">
+                <var name="a">29.21</var>
+                <var name="b">1.4</var>
+                <answer>21</answer>
+              </var_set>
+              <var_set ident="585a21354ffb3f004b080d6569aa3f75">
+                <var name="a">20.94</var>
+                <var name="b">1.4</var>
+                <answer>15</answer>
+              </var_set>
+              <var_set ident="9a9d0bc58599a05b59021313063ea05e">
+                <var name="a">28.57</var>
+                <var name="b">1.6</var>
+                <answer>18</answer>
+              </var_set>
+              <var_set ident="35dbff6f81fb48dbe59a2ce873d2e7bc">
+                <var name="a">22.51</var>
+                <var name="b">1.3</var>
+                <answer>17</answer>
+              </var_set>
+              <var_set ident="9bd1b2d56bdc576f51871f91615bd37b">
+                <var name="a">29.31</var>
+                <var name="b">2.0</var>
+                <answer>15</answer>
+              </var_set>
+              <var_set ident="465e5b0fc952717819c45231dbbe311e">
+                <var name="a">24.33</var>
+                <var name="b">1.2</var>
+                <answer>20</answer>
+              </var_set>
+              <var_set ident="f552d91d22ce95b3eed79d69ac21ea18">
+                <var name="a">26.91</var>
+                <var name="b">1.2</var>
+                <answer>22</answer>
+              </var_set>
+              <var_set ident="7c7c7497af8847c50367e25e93d4e82a">
+                <var name="a">26.62</var>
+                <var name="b">1.7</var>
+                <answer>16</answer>
+              </var_set>
+              <var_set ident="7d2d20370367c45aaf1c0d574cd2a57d">
+                <var name="a">27.58</var>
+                <var name="b">1.0</var>
+                <answer>28</answer>
+              </var_set>
+              <var_set ident="db3980c24aaf234537af5c57c7627e46">
+                <var name="a">23.81</var>
+                <var name="b">1.5</var>
+                <answer>16</answer>
+              </var_set>
+              <var_set ident="43abcb2fc592e399a0b0bdbd4d035b02">
+                <var name="a">24.73</var>
+                <var name="b">1.8</var>
+                <answer>14</answer>
+              </var_set>
+              <var_set ident="8ca541e2214e2ea3cb19f47b19587675">
+                <var name="a">22.24</var>
+                <var name="b">1.7</var>
+                <answer>13</answer>
+              </var_set>
+              <var_set ident="e62ccf7d0d846d49bbf2774a281b5e67">
+                <var name="a">27.03</var>
+                <var name="b">1.1</var>
+                <answer>25</answer>
+              </var_set>
+              <var_set ident="96d8400a28f5a4b0c6c7d9f8265d7b59">
+                <var name="a">23.54</var>
+                <var name="b">1.2</var>
+                <answer>20</answer>
+              </var_set>
+              <var_set ident="7e1697a105d065b0eabffa739c7ac148">
+                <var name="a">25.91</var>
+                <var name="b">1.1</var>
+                <answer>24</answer>
+              </var_set>
+              <var_set ident="e7c64300d461ea2945009c3f88220b3d">
+                <var name="a">29.86</var>
+                <var name="b">1.5</var>
+                <answer>20</answer>
+              </var_set>
+              <var_set ident="e7e0a4ac7f50027c89928b319dec0b36">
+                <var name="a">21.35</var>
+                <var name="b">1.0</var>
+                <answer>21</answer>
+              </var_set>
+              <var_set ident="44dd3b8ee328f5bc85202f746e3632e8">
+                <var name="a">22.94</var>
+                <var name="b">1.9</var>
+                <answer>12</answer>
+              </var_set>
+              <var_set ident="f577d25ef7f6283b7de94f62274aa37c">
+                <var name="a">20.20</var>
+                <var name="b">1.2</var>
+                <answer>17</answer>
+              </var_set>
+              <var_set ident="75b24e3cc2b9b0a9b7e073368d469718">
+                <var name="a">29.90</var>
+                <var name="b">1.4</var>
+                <answer>21</answer>
+              </var_set>
+              <var_set ident="e806ece6f0712ebcaaec23f2eb883788">
+                <var name="a">27.00</var>
+                <var name="b">1.9</var>
+                <answer>14</answer>
+              </var_set>
+              <var_set ident="73c2302571266655d11dc1f801b28afd">
+                <var name="a">22.15</var>
+                <var name="b">1.1</var>
+                <answer>20</answer>
+              </var_set>
+              <var_set ident="aff8f48d2856fa0d30e3c8dfba887d34">
+                <var name="a">20.93</var>
+                <var name="b">1.8</var>
+                <answer>12</answer>
+              </var_set>
+              <var_set ident="a72fac2f934d1bc03a9f02e8632dc82e">
+                <var name="a">27.83</var>
+                <var name="b">1.8</var>
+                <answer>15</answer>
+              </var_set>
+              <var_set ident="8e15e394b9f44b8fbd444dc39ee95679">
+                <var name="a">27.49</var>
+                <var name="b">1.6</var>
+                <answer>17</answer>
+              </var_set>
+              <var_set ident="1a8553c983db44eb9f9fffa6e97d86e9">
+                <var name="a">23.86</var>
+                <var name="b">1.2</var>
+                <answer>20</answer>
+              </var_set>
+              <var_set ident="78b6615641e620a724c5b8d76952cd78">
+                <var name="a">29.44</var>
+                <var name="b">1.3</var>
+                <answer>23</answer>
+              </var_set>
+              <var_set ident="02a1c8d32be5a0cefc689c6c74c0927c">
+                <var name="a">23.49</var>
+                <var name="b">1.1</var>
+                <answer>21</answer>
+              </var_set>
+              <var_set ident="97d7f370f7f07cb3ff33cbdceaa2d2ca">
+                <var name="a">28.40</var>
+                <var name="b">1.4</var>
+                <answer>20</answer>
+              </var_set>
+              <var_set ident="4bcb1db7cc0167c96ea9d56a0ef588b6">
+                <var name="a">24.67</var>
+                <var name="b">1.8</var>
+                <answer>14</answer>
+              </var_set>
+              <var_set ident="12a5df84b3e62abee9bb5d5055ecd884">
+                <var name="a">23.30</var>
+                <var name="b">1.7</var>
+                <answer>14</answer>
+              </var_set>
+              <var_set ident="3be5ed9ff796f6ca2f2b1fcb3fc90429">
+                <var name="a">29.84</var>
+                <var name="b">1.9</var>
+                <answer>16</answer>
+              </var_set>
+              <var_set ident="c71c7820b6bf11e570bb7a263b95aee4">
+                <var name="a">24.76</var>
+                <var name="b">1.5</var>
+                <answer>17</answer>
+              </var_set>
+              <var_set ident="896704c6d21a037901c48b7e8648106d">
+                <var name="a">23.90</var>
+                <var name="b">1.2</var>
+                <answer>20</answer>
+              </var_set>
+              <var_set ident="d79d275f729315f222cdd0bb1ec406f7">
+                <var name="a">25.79</var>
+                <var name="b">1.2</var>
+                <answer>21</answer>
+              </var_set>
+              <var_set ident="15f7901631731ea727a23b82fe68016d">
+                <var name="a">27.65</var>
+                <var name="b">1.4</var>
+                <answer>20</answer>
+              </var_set>
+              <var_set ident="cb8d23b439a28afdc55753631fb43b14">
+                <var name="a">28.81</var>
+                <var name="b">1.7</var>
+                <answer>17</answer>
+              </var_set>
+              <var_set ident="ef8ab38b4d1790c31a92807311dc0bd2">
+                <var name="a">27.15</var>
+                <var name="b">1.9</var>
+                <answer>14</answer>
+              </var_set>
+              <var_set ident="cf8f421081290dfae6be5791b5073403">
+                <var name="a">22.18</var>
+                <var name="b">1.4</var>
+                <answer>16</answer>
+              </var_set>
+              <var_set ident="874b235edea796529da666d2e69f2bfe">
+                <var name="a">24.32</var>
+                <var name="b">1.2</var>
+                <answer>20</answer>
+              </var_set>
+              <var_set ident="3abbe0eb27f8e9e2a625f6ae647682f3">
+                <var name="a">25.14</var>
+                <var name="b">1.9</var>
+                <answer>13</answer>
+              </var_set>
+              <var_set ident="99745cbc233f9ebce86e6d75d47bce65">
+                <var name="a">23.94</var>
+                <var name="b">1.2</var>
+                <answer>20</answer>
+              </var_set>
+              <var_set ident="1b6833894fb7961dcafab3f334c3cd5c">
+                <var name="a">29.88</var>
+                <var name="b">1.6</var>
+                <answer>19</answer>
+              </var_set>
+              <var_set ident="7c98878db6bdfe8afbd89133d8b65632">
+                <var name="a">28.82</var>
+                <var name="b">1.7</var>
+                <answer>17</answer>
+              </var_set>
+              <var_set ident="00dda93983bf514c8c75207b2e38b4a2">
+                <var name="a">22.95</var>
+                <var name="b">1.9</var>
+                <answer>12</answer>
+              </var_set>
+              <var_set ident="9ff2afd7298d92dadc1a2fc8ad6372d6">
+                <var name="a">28.21</var>
+                <var name="b">1.2</var>
+                <answer>24</answer>
+              </var_set>
+              <var_set ident="07a0d4e234c7fa064d90f77ad31f1092">
+                <var name="a">27.13</var>
+                <var name="b">1.7</var>
+                <answer>16</answer>
+              </var_set>
+              <var_set ident="a7d05ac4ab04891a23d4f43d5d597e0b">
+                <var name="a">28.40</var>
+                <var name="b">1.5</var>
+                <answer>19</answer>
+              </var_set>
+              <var_set ident="dc62c6e43bc9ea769bcb0078b925bc1f">
+                <var name="a">24.52</var>
+                <var name="b">1.6</var>
+                <answer>15</answer>
+              </var_set>
+              <var_set ident="450705b24cd2b2f39d04b8833fb411af">
+                <var name="a">22.49</var>
+                <var name="b">1.7</var>
+                <answer>13</answer>
+              </var_set>
+              <var_set ident="7fbe01f5ba5077d50292765325f0785d">
+                <var name="a">21.62</var>
+                <var name="b">1.2</var>
+                <answer>18</answer>
+              </var_set>
+              <var_set ident="94ec3fd9af2df1032dac16b1a71181fe">
+                <var name="a">20.69</var>
+                <var name="b">1.8</var>
+                <answer>11</answer>
+              </var_set>
+              <var_set ident="a441bd8b66616ec2a3c4d9a25f47a9ce">
+                <var name="a">25.90</var>
+                <var name="b">1.3</var>
+                <answer>20</answer>
+              </var_set>
+              <var_set ident="6b75a13f5b0a62b1434682d8ece0d1bf">
+                <var name="a">22.36</var>
+                <var name="b">1.3</var>
+                <answer>17</answer>
+              </var_set>
+              <var_set ident="14d865c8427d1efaa360e0d69a27e22a">
+                <var name="a">25.35</var>
+                <var name="b">1.2</var>
+                <answer>21</answer>
+              </var_set>
+              <var_set ident="262f2b2569046590fd3cc5d8ecdfa0af">
+                <var name="a">25.59</var>
+                <var name="b">2.0</var>
+                <answer>13</answer>
+              </var_set>
+              <var_set ident="2d93c2c0693b885ce6273c48b3071e9f">
+                <var name="a">27.58</var>
+                <var name="b">1.1</var>
+                <answer>25</answer>
+              </var_set>
+              <var_set ident="c346f40bb5651e523c940e32faac3105">
+                <var name="a">27.22</var>
+                <var name="b">1.0</var>
+                <answer>27</answer>
+              </var_set>
+              <var_set ident="9f6ab1f9b167753ff4977454dfccc2fe">
+                <var name="a">25.45</var>
+                <var name="b">1.3</var>
+                <answer>20</answer>
+              </var_set>
+              <var_set ident="93afa36c3a14886420ad50fedf26d4ae">
+                <var name="a">25.51</var>
+                <var name="b">1.7</var>
+                <answer>15</answer>
+              </var_set>
+              <var_set ident="be9c9bc0053d7fe8b6ea329d0cd81890">
+                <var name="a">23.64</var>
+                <var name="b">1.8</var>
+                <answer>13</answer>
+              </var_set>
+              <var_set ident="4c2e05c6b7d1927b378a30dcfd46cef0">
+                <var name="a">23.97</var>
+                <var name="b">1.5</var>
+                <answer>16</answer>
+              </var_set>
+              <var_set ident="38273f06439869caf263618bf49d1c14">
+                <var name="a">28.72</var>
+                <var name="b">1.8</var>
+                <answer>16</answer>
+              </var_set>
+              <var_set ident="29590c9525a0ca760540842cec4903b8">
+                <var name="a">21.93</var>
+                <var name="b">1.8</var>
+                <answer>12</answer>
+              </var_set>
+              <var_set ident="bef01c39476cd0ccf8c1f3e6ae4178f6">
+                <var name="a">22.29</var>
+                <var name="b">1.6</var>
+                <answer>14</answer>
+              </var_set>
+              <var_set ident="c13f322453cf68bb311c8a84c59cf80b">
+                <var name="a">27.15</var>
+                <var name="b">1.2</var>
+                <answer>23</answer>
+              </var_set>
+              <var_set ident="85d0c90812ca543fa820ac10e82035a8">
+                <var name="a">28.76</var>
+                <var name="b">1.1</var>
+                <answer>26</answer>
+              </var_set>
+              <var_set ident="b424eaacd3a2382edb192428ee6c5e83">
+                <var name="a">24.28</var>
+                <var name="b">2.0</var>
+                <answer>12</answer>
+              </var_set>
+              <var_set ident="b063c6fbd65ebdda00a1f9a7ebc56744">
+                <var name="a">22.65</var>
+                <var name="b">1.3</var>
+                <answer>17</answer>
+              </var_set>
+              <var_set ident="d570bb35aaecb78e5eb7e48f0bdad132">
+                <var name="a">28.59</var>
+                <var name="b">2.0</var>
+                <answer>14</answer>
+              </var_set>
+              <var_set ident="68eae0f438c08c47c01e989fe471fda6">
+                <var name="a">22.38</var>
+                <var name="b">1.5</var>
+                <answer>15</answer>
+              </var_set>
+              <var_set ident="ea515a9193a5a800d61ecf0062d36f88">
+                <var name="a">26.87</var>
+                <var name="b">1.6</var>
+                <answer>17</answer>
+              </var_set>
+              <var_set ident="a9270c73fbeb1c147aa9fecd38745ea3">
+                <var name="a">23.00</var>
+                <var name="b">1.4</var>
+                <answer>16</answer>
+              </var_set>
+              <var_set ident="2622923acf86d17fa351fa30505b017b">
+                <var name="a">26.72</var>
+                <var name="b">1.7</var>
+                <answer>16</answer>
+              </var_set>
+              <var_set ident="256a6d0ef4c5f8b0fc9ef00e4eceb04b">
+                <var name="a">26.84</var>
+                <var name="b">1.2</var>
+                <answer>22</answer>
+              </var_set>
+              <var_set ident="80e80218b718e04897fac9240f7427e6">
+                <var name="a">24.75</var>
+                <var name="b">1.4</var>
+                <answer>18</answer>
+              </var_set>
+              <var_set ident="0c78b253da4256280344be2e6f69d05d">
+                <var name="a">26.63</var>
+                <var name="b">1.4</var>
+                <answer>19</answer>
+              </var_set>
+              <var_set ident="7234b7f49292bfdb955d559f2a9d60e6">
+                <var name="a">22.24</var>
+                <var name="b">1.3</var>
+                <answer>17</answer>
+              </var_set>
+              <var_set ident="6b87735c23f1ef09a505fa147a067044">
+                <var name="a">26.53</var>
+                <var name="b">1.3</var>
+                <answer>20</answer>
+              </var_set>
+              <var_set ident="0770999517d8f3848f2357d0d962af4c">
+                <var name="a">23.45</var>
+                <var name="b">1.2</var>
+                <answer>20</answer>
+              </var_set>
+              <var_set ident="ffd2f5d0c590ba0ec0c178efcfcd52db">
+                <var name="a">25.83</var>
+                <var name="b">1.2</var>
+                <answer>22</answer>
+              </var_set>
+              <var_set ident="932ec34fd52e71d5a011a67845bb2752">
+                <var name="a">22.83</var>
+                <var name="b">1.0</var>
+                <answer>23</answer>
+              </var_set>
+              <var_set ident="f2652cb143ddf60c4cbb0e17162689c4">
+                <var name="a">25.46</var>
+                <var name="b">1.9</var>
+                <answer>13</answer>
+              </var_set>
+              <var_set ident="71b6cd8503639fa35457a6ca931db92d">
+                <var name="a">20.35</var>
+                <var name="b">1.3</var>
+                <answer>16</answer>
+              </var_set>
+              <var_set ident="ba8e4cbbbfafaf6da8c7ebca2a52907f">
+                <var name="a">25.56</var>
+                <var name="b">1.9</var>
+                <answer>13</answer>
+              </var_set>
+              <var_set ident="32abfa947113aade932e9be943a81446">
+                <var name="a">23.83</var>
+                <var name="b">1.0</var>
+                <answer>24</answer>
+              </var_set>
+              <var_set ident="3b31377b1908190fd77320b84857e014">
+                <var name="a">21.48</var>
+                <var name="b">1.1</var>
+                <answer>20</answer>
+              </var_set>
+              <var_set ident="bfabfb0be445a6cb27555965f5c8b2c0">
+                <var name="a">26.71</var>
+                <var name="b">1.2</var>
+                <answer>22</answer>
+              </var_set>
+              <var_set ident="db0a7c7deb77f10c0e9ca78c47501a49">
+                <var name="a">27.80</var>
+                <var name="b">1.7</var>
+                <answer>16</answer>
+              </var_set>
+              <var_set ident="a9be92c19338742475908661fb90f173">
+                <var name="a">28.46</var>
+                <var name="b">1.6</var>
+                <answer>18</answer>
+              </var_set>
+              <var_set ident="9a6fcf53cbd90025a4136c2ced9a6324">
+                <var name="a">29.17</var>
+                <var name="b">1.0</var>
+                <answer>29</answer>
+              </var_set>
+              <var_set ident="cd445f166708188576baac9853073ed4">
+                <var name="a">28.36</var>
+                <var name="b">2.0</var>
+                <answer>14</answer>
+              </var_set>
+              <var_set ident="21a0306fa4a90f64e05a4ea58267ae9d">
+                <var name="a">21.29</var>
+                <var name="b">1.2</var>
+                <answer>18</answer>
+              </var_set>
+              <var_set ident="8068da4f0a2f17bc9dbfbd751a5789d3">
+                <var name="a">26.71</var>
+                <var name="b">1.8</var>
+                <answer>15</answer>
+              </var_set>
+              <var_set ident="a95b2c4847553c1b8430c5b1c57e7798">
+                <var name="a">20.76</var>
+                <var name="b">1.7</var>
+                <answer>12</answer>
+              </var_set>
+              <var_set ident="f299d2e16ec63c564915e66b3e720998">
+                <var name="a">23.91</var>
+                <var name="b">1.5</var>
+                <answer>16</answer>
+              </var_set>
+              <var_set ident="342a219337e605022bd9d2baf8bccc8c">
+                <var name="a">24.60</var>
+                <var name="b">1.3</var>
+                <answer>19</answer>
+              </var_set>
+              <var_set ident="7336e9cea7252b31f658699898cf4533">
+                <var name="a">27.59</var>
+                <var name="b">1.8</var>
+                <answer>15</answer>
+              </var_set>
+              <var_set ident="b8337e2aa51803919059569181625c46">
+                <var name="a">29.87</var>
+                <var name="b">1.5</var>
+                <answer>20</answer>
+              </var_set>
+              <var_set ident="7bb08731a66be7c4bce3df3722f6463a">
+                <var name="a">26.29</var>
+                <var name="b">1.8</var>
+                <answer>15</answer>
+              </var_set>
+              <var_set ident="3094ff8894178672231877ec9e266785">
+                <var name="a">27.75</var>
+                <var name="b">1.2</var>
+                <answer>23</answer>
+              </var_set>
+              <var_set ident="eda9d93568436aff68bdc9a3bca11642">
+                <var name="a">21.18</var>
+                <var name="b">1.3</var>
+                <answer>16</answer>
+              </var_set>
+              <var_set ident="5e366295b202d13e39961b61302219b1">
+                <var name="a">20.80</var>
+                <var name="b">2.0</var>
+                <answer>10</answer>
+              </var_set>
+              <var_set ident="0cc25fc7653f058255eb73e5e43435d5">
+                <var name="a">23.58</var>
+                <var name="b">1.7</var>
+                <answer>14</answer>
+              </var_set>
+              <var_set ident="e663a8e2d7932a2188d657296603f23c">
+                <var name="a">26.71</var>
+                <var name="b">2.0</var>
+                <answer>13</answer>
+              </var_set>
+              <var_set ident="c6d2aeb1b708291c8515c0f93c5eb903">
+                <var name="a">26.79</var>
+                <var name="b">1.9</var>
+                <answer>14</answer>
+              </var_set>
+              <var_set ident="11aa42f371c952613e8152f130b35c9b">
+                <var name="a">20.55</var>
+                <var name="b">1.1</var>
+                <answer>19</answer>
+              </var_set>
+              <var_set ident="f70279c717794d99383dbc94f30a5a81">
+                <var name="a">24.19</var>
+                <var name="b">1.1</var>
+                <answer>22</answer>
+              </var_set>
+              <var_set ident="2775bb46d7592eb2758039511272b950">
+                <var name="a">29.41</var>
+                <var name="b">1.1</var>
+                <answer>27</answer>
+              </var_set>
+              <var_set ident="5ff0b7d6e28ab7ae1c809e728a0837b0">
+                <var name="a">20.51</var>
+                <var name="b">1.4</var>
+                <answer>15</answer>
+              </var_set>
+              <var_set ident="481f6fe1184a7407d81bb63da1a6ea52">
+                <var name="a">26.79</var>
+                <var name="b">1.4</var>
+                <answer>19</answer>
+              </var_set>
+              <var_set ident="d892e8f0dec826439f81ee2f534475ca">
+                <var name="a">21.24</var>
+                <var name="b">1.4</var>
+                <answer>15</answer>
+              </var_set>
+              <var_set ident="71c5f49caa0138764cdb921cdb9cf0c6">
+                <var name="a">26.85</var>
+                <var name="b">1.0</var>
+                <answer>27</answer>
+              </var_set>
+              <var_set ident="82e2a354afe68e6adaabd5092f85af51">
+                <var name="a">29.86</var>
+                <var name="b">1.7</var>
+                <answer>18</answer>
+              </var_set>
+              <var_set ident="6a30103a6eae64d4472f0e9bf9a78a74">
+                <var name="a">20.42</var>
+                <var name="b">1.9</var>
+                <answer>11</answer>
+              </var_set>
+              <var_set ident="e4d4899e2455c31e883834e78805c589">
+                <var name="a">26.00</var>
+                <var name="b">1.3</var>
+                <answer>20</answer>
+              </var_set>
+              <var_set ident="f3a2b075f839ef7a7bb176c7632b1530">
+                <var name="a">28.98</var>
+                <var name="b">1.7</var>
+                <answer>17</answer>
+              </var_set>
+              <var_set ident="f575a9dc2f70213b1219a4500cf65a27">
+                <var name="a">29.42</var>
+                <var name="b">1.2</var>
+                <answer>25</answer>
+              </var_set>
+              <var_set ident="4891eea159dd7947ce25dcf293707299">
+                <var name="a">29.93</var>
+                <var name="b">1.1</var>
+                <answer>27</answer>
+              </var_set>
+              <var_set ident="b592dbd0f37c2ae2957048f968c1f25a">
+                <var name="a">28.63</var>
+                <var name="b">1.6</var>
+                <answer>18</answer>
+              </var_set>
+              <var_set ident="34606f178264d7dfbb0eab25fd0b6c8e">
+                <var name="a">25.66</var>
+                <var name="b">1.5</var>
+                <answer>17</answer>
+              </var_set>
+              <var_set ident="d95a4dee316d167339bdb7a7beeb8ade">
+                <var name="a">25.33</var>
+                <var name="b">1.1</var>
+                <answer>23</answer>
+              </var_set>
+              <var_set ident="bc9e235dce8bcb32115a6882bc0ce96d">
+                <var name="a">23.78</var>
+                <var name="b">1.4</var>
+                <answer>17</answer>
+              </var_set>
+              <var_set ident="56f50f9001923841e106b9d6aa90c454">
+                <var name="a">20.59</var>
+                <var name="b">1.0</var>
+                <answer>21</answer>
+              </var_set>
+              <var_set ident="259bd227bfd2e941ed8057e3f52dfd43">
+                <var name="a">25.78</var>
+                <var name="b">1.6</var>
+                <answer>16</answer>
+              </var_set>
+              <var_set ident="0e81c556c17c9956914ccf30e583b198">
+                <var name="a">20.71</var>
+                <var name="b">1.5</var>
+                <answer>14</answer>
+              </var_set>
+              <var_set ident="ea67fd98fdc79acfecca909e57873881">
+                <var name="a">29.10</var>
+                <var name="b">1.6</var>
+                <answer>18</answer>
+              </var_set>
+              <var_set ident="d958b312b5dd41849c2a812ddde9ae51">
+                <var name="a">20.81</var>
+                <var name="b">1.4</var>
+                <answer>15</answer>
+              </var_set>
+              <var_set ident="38e9857412266bf53895ffe82d06c99b">
+                <var name="a">22.67</var>
+                <var name="b">1.7</var>
+                <answer>13</answer>
+              </var_set>
+              <var_set ident="d31e85afa36e47a82abcf487f8a70879">
+                <var name="a">25.08</var>
+                <var name="b">1.1</var>
+                <answer>23</answer>
+              </var_set>
+              <var_set ident="88a98cde2f02d65575dc454ded6d07c9">
+                <var name="a">22.27</var>
+                <var name="b">1.7</var>
+                <answer>13</answer>
+              </var_set>
+              <var_set ident="d0639cb9f495108e77cf7d9602aa7328">
+                <var name="a">27.57</var>
+                <var name="b">1.3</var>
+                <answer>21</answer>
+              </var_set>
+              <var_set ident="5b178eec96cc3a71438801efa7beb6f0">
+                <var name="a">26.89</var>
+                <var name="b">1.6</var>
+                <answer>17</answer>
+              </var_set>
+              <var_set ident="3e595b976bb25991504ad0c399373dd2">
+                <var name="a">29.22</var>
+                <var name="b">1.3</var>
+                <answer>22</answer>
+              </var_set>
+              <var_set ident="78b63147cfdcff9d03f4d8d20684154b">
+                <var name="a">22.05</var>
+                <var name="b">1.7</var>
+                <answer>13</answer>
+              </var_set>
+              <var_set ident="9bc56c69d677b128a5473efd2aea1cf9">
+                <var name="a">24.00</var>
+                <var name="b">1.9</var>
+                <answer>13</answer>
+              </var_set>
+              <var_set ident="755760dc230badfc2b897539b893e148">
+                <var name="a">22.90</var>
+                <var name="b">1.3</var>
+                <answer>18</answer>
+              </var_set>
+              <var_set ident="65e4c4f8be6b130e9d0803ff2e2da7ef">
+                <var name="a">25.64</var>
+                <var name="b">1.4</var>
+                <answer>18</answer>
+              </var_set>
+              <var_set ident="df5ba49fe37fe5f3f78bf69dc90b7113">
+                <var name="a">22.77</var>
+                <var name="b">1.6</var>
+                <answer>14</answer>
+              </var_set>
+              <var_set ident="391eb60a214e1fbb63d5a2198f8e016e">
+                <var name="a">23.91</var>
+                <var name="b">1.3</var>
+                <answer>18</answer>
+              </var_set>
+              <var_set ident="f837afda3a9d4b689ae512fca0b993d5">
+                <var name="a">29.64</var>
+                <var name="b">1.8</var>
+                <answer>16</answer>
+              </var_set>
+              <var_set ident="c181ef66da7acfccfbbe4c9e792f122e">
+                <var name="a">25.36</var>
+                <var name="b">1.7</var>
+                <answer>15</answer>
+              </var_set>
+              <var_set ident="14dcdf8ca6d1e50376ec18ad28ba3bec">
+                <var name="a">25.74</var>
+                <var name="b">1.2</var>
+                <answer>21</answer>
+              </var_set>
+              <var_set ident="f3e2da0ef96ed02ae9fbb52377a0114d">
+                <var name="a">22.33</var>
+                <var name="b">1.2</var>
+                <answer>19</answer>
+              </var_set>
+              <var_set ident="840e8161220c8cb3702eee9191ad85d3">
+                <var name="a">29.68</var>
+                <var name="b">1.9</var>
+                <answer>16</answer>
+              </var_set>
+              <var_set ident="6d821de9dccfed8e3e232f88d97cd3df">
+                <var name="a">25.43</var>
+                <var name="b">1.8</var>
+                <answer>14</answer>
+              </var_set>
+              <var_set ident="6664d471cebd6a79f55e7fd140c93d7b">
+                <var name="a">27.34</var>
+                <var name="b">1.7</var>
+                <answer>16</answer>
+              </var_set>
+              <var_set ident="e26529cf9c139d706a99932820c980fa">
+                <var name="a">25.56</var>
+                <var name="b">1.7</var>
+                <answer>15</answer>
+              </var_set>
+              <var_set ident="a45ebc77e9317619e0f1dbbd14bbc87e">
+                <var name="a">23.21</var>
+                <var name="b">1.4</var>
+                <answer>17</answer>
+              </var_set>
+              <var_set ident="5988caad60feaeb916e3f4382d3edbf1">
+                <var name="a">28.55</var>
+                <var name="b">1.3</var>
+                <answer>22</answer>
+              </var_set>
+              <var_set ident="59872c02d58598b91ae18cb9925bb963">
+                <var name="a">27.01</var>
+                <var name="b">1.8</var>
+                <answer>15</answer>
+              </var_set>
+              <var_set ident="f4b038a6da22d9400797162ba3ee0fa0">
+                <var name="a">24.96</var>
+                <var name="b">1.1</var>
+                <answer>23</answer>
+              </var_set>
+              <var_set ident="96e6ddc61db86a1aa388129a5ef4bfae">
+                <var name="a">26.11</var>
+                <var name="b">1.1</var>
+                <answer>24</answer>
+              </var_set>
+              <var_set ident="129c94f6a4ffa2054f69556713b79a24">
+                <var name="a">24.76</var>
+                <var name="b">1.7</var>
+                <answer>15</answer>
+              </var_set>
+              <var_set ident="a8dd593d6fe7e22ba9c4258e6881e4ef">
+                <var name="a">28.67</var>
+                <var name="b">1.3</var>
+                <answer>22</answer>
+              </var_set>
+              <var_set ident="62c7585487bd070e88701822f07abaf8">
+                <var name="a">24.62</var>
+                <var name="b">1.7</var>
+                <answer>14</answer>
+              </var_set>
+              <var_set ident="44f97382bbaf48f026247e252caa9249">
+                <var name="a">28.88</var>
+                <var name="b">1.8</var>
+                <answer>16</answer>
+              </var_set>
+              <var_set ident="f41c22935c06bcc8d0bf8d1f1f83c001">
+                <var name="a">21.96</var>
+                <var name="b">1.0</var>
+                <answer>22</answer>
+              </var_set>
+              <var_set ident="150ba9fbc13d17dbc622974ad45b23cf">
+                <var name="a">28.36</var>
+                <var name="b">1.9</var>
+                <answer>15</answer>
+              </var_set>
+              <var_set ident="08004c229bb492387e00058118ddf5a2">
+                <var name="a">23.01</var>
+                <var name="b">1.8</var>
+                <answer>13</answer>
+              </var_set>
+              <var_set ident="9936f8250074bf58612538ee09d1d809">
+                <var name="a">27.25</var>
+                <var name="b">1.8</var>
+                <answer>15</answer>
+              </var_set>
+              <var_set ident="b4b6880aebc0072316d42a52d150b01b">
+                <var name="a">24.49</var>
+                <var name="b">1.8</var>
+                <answer>14</answer>
+              </var_set>
+              <var_set ident="ab2d00475d190da341fda0f996569de2">
+                <var name="a">23.44</var>
+                <var name="b">1.9</var>
+                <answer>12</answer>
+              </var_set>
+              <var_set ident="78117b891008b006abcb53d0fc220eca">
+                <var name="a">27.13</var>
+                <var name="b">1.9</var>
+                <answer>14</answer>
+              </var_set>
+              <var_set ident="305f40fe368c8ca288955503815e61cc">
+                <var name="a">29.98</var>
+                <var name="b">1.3</var>
+                <answer>23</answer>
+              </var_set>
+              <var_set ident="c3aad5d3e627c9d01c74b3f4f27154bb">
+                <var name="a">22.13</var>
+                <var name="b">1.7</var>
+                <answer>13</answer>
+              </var_set>
+              <var_set ident="8cf32aaa6af95ffb782855793bb8de0a">
+                <var name="a">28.04</var>
+                <var name="b">1.7</var>
+                <answer>16</answer>
+              </var_set>
+              <var_set ident="f0793342d235bf89c29dfe3d06164efb">
+                <var name="a">20.61</var>
+                <var name="b">1.9</var>
+                <answer>11</answer>
+              </var_set>
+              <var_set ident="10e6da643f3dcf7f3f11533bf2030086">
+                <var name="a">20.63</var>
+                <var name="b">1.1</var>
+                <answer>19</answer>
+              </var_set>
+              <var_set ident="520aa8ef608f906d1632ebd94308edd0">
+                <var name="a">27.54</var>
+                <var name="b">1.2</var>
+                <answer>23</answer>
+              </var_set>
+              <var_set ident="019750a8358a6cc3b4ecc76f63879857">
+                <var name="a">28.37</var>
+                <var name="b">1.3</var>
+                <answer>22</answer>
+              </var_set>
+              <var_set ident="ea88338f948fa5f3490331b2a12317dd">
+                <var name="a">23.65</var>
+                <var name="b">1.1</var>
+                <answer>22</answer>
+              </var_set>
+              <var_set ident="fe9c0d571ab1cbd2fb8ad5da40821f2c">
+                <var name="a">23.85</var>
+                <var name="b">1.7</var>
+                <answer>14</answer>
+              </var_set>
+              <var_set ident="9541e287178976d944fadb18d7a96314">
+                <var name="a">28.88</var>
+                <var name="b">1.1</var>
+                <answer>26</answer>
+              </var_set>
+              <var_set ident="aff0179b61c024da474a267397718745">
+                <var name="a">29.89</var>
+                <var name="b">1.6</var>
+                <answer>19</answer>
+              </var_set>
+              <var_set ident="f8c9755ab342a3bdb7691ec235c1d89a">
+                <var name="a">28.20</var>
+                <var name="b">1.3</var>
+                <answer>22</answer>
+              </var_set>
+              <var_set ident="74a3bcaf83bbe483c96e946c8776f80d">
+                <var name="a">27.95</var>
+                <var name="b">1.7</var>
+                <answer>16</answer>
+              </var_set>
+              <var_set ident="b0c1cc0935eba9789916b9c28cb2361b">
+                <var name="a">22.22</var>
+                <var name="b">1.9</var>
+                <answer>12</answer>
+              </var_set>
+              <var_set ident="ff435ddf3b1e1d35fa884dcd0896a232">
+                <var name="a">29.38</var>
+                <var name="b">1.2</var>
+                <answer>24</answer>
+              </var_set>
+              <var_set ident="0a4a3a6606bf2babc94d0ac73bff9189">
+                <var name="a">29.97</var>
+                <var name="b">1.6</var>
+                <answer>19</answer>
+              </var_set>
+              <var_set ident="244b2c10492201f21df2a4d625534ddc">
+                <var name="a">24.26</var>
+                <var name="b">1.9</var>
+                <answer>13</answer>
+              </var_set>
+              <var_set ident="f22d255d75915b515dd373c4e400ef70">
+                <var name="a">24.67</var>
+                <var name="b">1.5</var>
+                <answer>16</answer>
+              </var_set>
+              <var_set ident="d635ac8714cf3ff08c2f25f527b1d782">
+                <var name="a">28.97</var>
+                <var name="b">1.8</var>
+                <answer>16</answer>
+              </var_set>
+              <var_set ident="c0b4b3482451534ccd05fc04876e0a21">
+                <var name="a">28.93</var>
+                <var name="b">1.2</var>
+                <answer>24</answer>
+              </var_set>
+              <var_set ident="4a671666689bd6bef554618b602b019f">
+                <var name="a">20.67</var>
+                <var name="b">1.3</var>
+                <answer>16</answer>
+              </var_set>
+              <var_set ident="ce37aa16b5351c5c6548299163bee7c6">
+                <var name="a">25.00</var>
+                <var name="b">1.5</var>
+                <answer>17</answer>
+              </var_set>
+              <var_set ident="f2f9a36ee1a3fd58a94e06794921dd68">
+                <var name="a">24.43</var>
+                <var name="b">2.0</var>
+                <answer>12</answer>
+              </var_set>
+              <var_set ident="be03349d87ce0880f4e649350d6b05db">
+                <var name="a">23.73</var>
+                <var name="b">1.1</var>
+                <answer>22</answer>
+              </var_set>
+              <var_set ident="88ea0dab6271747fbfbf3ac2f15f89fb">
+                <var name="a">23.34</var>
+                <var name="b">1.2</var>
+                <answer>19</answer>
+              </var_set>
+              <var_set ident="bba4ef1f4de7b75c329aaa8e8f71dde4">
+                <var name="a">20.62</var>
+                <var name="b">1.5</var>
+                <answer>14</answer>
+              </var_set>
+              <var_set ident="6fe68004c0fb87f1e3e555c1d94e492f">
+                <var name="a">23.28</var>
+                <var name="b">1.9</var>
+                <answer>12</answer>
+              </var_set>
+              <var_set ident="4d7933e5faff5ebe8554d80ad3105258">
+                <var name="a">26.32</var>
+                <var name="b">1.2</var>
+                <answer>22</answer>
+              </var_set>
+              <var_set ident="8c0b472d99e43b3e4e19ade72497311e">
+                <var name="a">24.97</var>
+                <var name="b">1.6</var>
+                <answer>16</answer>
+              </var_set>
+              <var_set ident="d36dd4f7d5be93f5782cc48536e5454d">
+                <var name="a">20.04</var>
+                <var name="b">1.1</var>
+                <answer>18</answer>
+              </var_set>
+              <var_set ident="55f460fe6af8b9f99d2dae9a87fc4175">
+                <var name="a">25.25</var>
+                <var name="b">1.8</var>
+                <answer>14</answer>
+              </var_set>
+              <var_set ident="0a6a507bf5e94846b1e010085d262f79">
+                <var name="a">22.39</var>
+                <var name="b">1.1</var>
+                <answer>20</answer>
+              </var_set>
+              <var_set ident="50aa451bd71f7df8a186da49e4dcc009">
+                <var name="a">22.38</var>
+                <var name="b">1.3</var>
+                <answer>17</answer>
+              </var_set>
+              <var_set ident="2ab2fc0e09d1a722a517561d17297c62">
+                <var name="a">22.80</var>
+                <var name="b">1.9</var>
+                <answer>12</answer>
+              </var_set>
+              <var_set ident="6c445f9325889f83df9f351d2bd2d1e6">
+                <var name="a">21.02</var>
+                <var name="b">1.1</var>
+                <answer>19</answer>
+              </var_set>
+            </var_sets>
+          </calculated>
+        </itemproc_extension>
+      </item>
+      <item ident="1c0c62bc8f97d590f15ab6ff18684f4e" title="">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>calculated_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry/>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>cd70a99a8cbdc97358b0a97e938274a7</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>calculator_type</fieldlabel>
+              <fieldentry>basic</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;Compute the following quantity keeping in mind the rules of significant figures: `a`+`b`&lt;/p&gt;</mattext>
+          </material>
+          <response_str ident="response1" rcardinality="Single">
+            <render_fib fibtype="Decimal">
+              <response_label ident="answer1"/>
+            </render_fib>
+          </response_str>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition title="correct">
+            <conditionvar>
+              <other/>
+            </conditionvar>
+            <setvar varname="SCORE" action="Set">100</setvar>
+          </respcondition>
+          <respcondition title="incorrect">
+            <conditionvar>
+              <not>
+                <other/>
+              </not>
+            </conditionvar>
+            <setvar varname="SCORE" action="Set">0</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemproc_extension>
+          <calculated>
+            <answer_tolerance margin_type="absolute">0</answer_tolerance>
+            <formulas decimal_places="2" scientific_notation="false">
+              <formula>a+b</formula>
+            </formulas>
+            <vars>
+              <var name="a" scale="2">
+                <min>0.00</min>
+                <max>10.00</max>
+              </var>
+              <var name="b" scale="2">
+                <min>10.00</min>
+                <max>20.00</max>
+              </var>
+            </vars>
+            <var_sets>
+              <var_set ident="72d9ce4e6445e425de2c6b50508584b7">
+                <var name="a">4.75</var>
+                <var name="b">18.66</var>
+                <answer>23.41</answer>
+              </var_set>
+              <var_set ident="67544486171f1e87e39f1d3de6f93786">
+                <var name="a">4.19</var>
+                <var name="b">10.83</var>
+                <answer>15.02</answer>
+              </var_set>
+              <var_set ident="9a05b121d00b90bbdc21c386a4acae6f">
+                <var name="a">9.99</var>
+                <var name="b">16.58</var>
+                <answer>26.57</answer>
+              </var_set>
+              <var_set ident="81d19d185b430de53903556b86c9676b">
+                <var name="a">1.47</var>
+                <var name="b">15.74</var>
+                <answer>17.21</answer>
+              </var_set>
+              <var_set ident="f568876e3cd800ed23498e5df90ed449">
+                <var name="a">6.97</var>
+                <var name="b">15.90</var>
+                <answer>22.87</answer>
+              </var_set>
+              <var_set ident="392d4af032eafdc56123bc79e0d55680">
+                <var name="a">5.01</var>
+                <var name="b">11.85</var>
+                <answer>16.86</answer>
+              </var_set>
+              <var_set ident="0ae3dab257776b4ee0b673d023fb2f53">
+                <var name="a">5.63</var>
+                <var name="b">11.18</var>
+                <answer>16.81</answer>
+              </var_set>
+              <var_set ident="97d846ef38527650f2471c6f00679e70">
+                <var name="a">1.45</var>
+                <var name="b">12.46</var>
+                <answer>13.91</answer>
+              </var_set>
+              <var_set ident="fcfa7b9f375c7c80fe96999e8e02df62">
+                <var name="a">1.23</var>
+                <var name="b">17.21</var>
+                <answer>18.44</answer>
+              </var_set>
+              <var_set ident="283e5672b63d81b5ef027014ae219bac">
+                <var name="a">8.91</var>
+                <var name="b">12.69</var>
+                <answer>21.60</answer>
+              </var_set>
+              <var_set ident="07a8b53a0108110791983d8639be71a1">
+                <var name="a">7.62</var>
+                <var name="b">16.32</var>
+                <answer>23.94</answer>
+              </var_set>
+              <var_set ident="b963ca9cb91569b27566da894da55b0c">
+                <var name="a">6.56</var>
+                <var name="b">19.53</var>
+                <answer>26.09</answer>
+              </var_set>
+              <var_set ident="c5409fc6ce61bfa4d702c29e98f7cea2">
+                <var name="a">5.79</var>
+                <var name="b">12.54</var>
+                <answer>18.33</answer>
+              </var_set>
+              <var_set ident="7139ccdc61e582f4052ea5114257467e">
+                <var name="a">1.36</var>
+                <var name="b">19.36</var>
+                <answer>20.72</answer>
+              </var_set>
+              <var_set ident="9a6dd8e3759709a4974333a6c8bd8529">
+                <var name="a">9.55</var>
+                <var name="b">19.80</var>
+                <answer>29.35</answer>
+              </var_set>
+              <var_set ident="2b1195a5087bc06d2819457ece1b81c3">
+                <var name="a">1.00</var>
+                <var name="b">14.57</var>
+                <answer>15.57</answer>
+              </var_set>
+              <var_set ident="3eb751c7ef5124905f687976ba640abc">
+                <var name="a">5.46</var>
+                <var name="b">19.82</var>
+                <answer>25.28</answer>
+              </var_set>
+              <var_set ident="bc90ca2d468a4205883473279d7b23c2">
+                <var name="a">4.10</var>
+                <var name="b">19.54</var>
+                <answer>23.64</answer>
+              </var_set>
+              <var_set ident="4409a52191240048f32b4735fc9b2f45">
+                <var name="a">6.55</var>
+                <var name="b">13.72</var>
+                <answer>20.27</answer>
+              </var_set>
+              <var_set ident="11c64ae67baf9ec7ac540cf4fb2a301f">
+                <var name="a">0.63</var>
+                <var name="b">17.87</var>
+                <answer>18.50</answer>
+              </var_set>
+              <var_set ident="9c7d078fc8d317f1ab6dffcb3b0d2c37">
+                <var name="a">8.11</var>
+                <var name="b">18.50</var>
+                <answer>26.61</answer>
+              </var_set>
+              <var_set ident="325774f3c4764b7bda720e15fe775b3f">
+                <var name="a">5.38</var>
+                <var name="b">14.75</var>
+                <answer>20.13</answer>
+              </var_set>
+              <var_set ident="7f40f50f1480d5c31b9432f884f9460d">
+                <var name="a">2.30</var>
+                <var name="b">13.54</var>
+                <answer>15.84</answer>
+              </var_set>
+              <var_set ident="c572bb099485534ac8bd4b9f877aa3a8">
+                <var name="a">0.75</var>
+                <var name="b">18.17</var>
+                <answer>18.92</answer>
+              </var_set>
+              <var_set ident="a1e77a37729a7e6fd2b460e0f226d4df">
+                <var name="a">3.34</var>
+                <var name="b">14.10</var>
+                <answer>17.44</answer>
+              </var_set>
+              <var_set ident="ff4b672d842818aa576501f3f928a8d5">
+                <var name="a">2.40</var>
+                <var name="b">14.31</var>
+                <answer>16.71</answer>
+              </var_set>
+              <var_set ident="d1da254dbabdde188b2749781981e21d">
+                <var name="a">8.08</var>
+                <var name="b">13.23</var>
+                <answer>21.31</answer>
+              </var_set>
+              <var_set ident="b89f18bca085f90cedc34e309badc008">
+                <var name="a">5.60</var>
+                <var name="b">10.23</var>
+                <answer>15.83</answer>
+              </var_set>
+              <var_set ident="736fe0d9810219694103dcb59e5290e8">
+                <var name="a">3.06</var>
+                <var name="b">15.10</var>
+                <answer>18.16</answer>
+              </var_set>
+              <var_set ident="9f5ad42480aab52e868887da0395e114">
+                <var name="a">0.40</var>
+                <var name="b">17.30</var>
+                <answer>17.70</answer>
+              </var_set>
+              <var_set ident="06812017d1a7d823acf7df5e02e30b30">
+                <var name="a">0.00</var>
+                <var name="b">10.10</var>
+                <answer>10.10</answer>
+              </var_set>
+              <var_set ident="124b6008ec788b75c4f4bcbf9b8e8cc9">
+                <var name="a">0.47</var>
+                <var name="b">13.86</var>
+                <answer>14.33</answer>
+              </var_set>
+              <var_set ident="d563da0acc80cd48724eb4b5d9b10683">
+                <var name="a">2.63</var>
+                <var name="b">17.84</var>
+                <answer>20.47</answer>
+              </var_set>
+              <var_set ident="98d60514a4298cb24edf1e66f7c652e4">
+                <var name="a">1.40</var>
+                <var name="b">13.74</var>
+                <answer>15.14</answer>
+              </var_set>
+              <var_set ident="d260277f73e6344058e69c9373bbf0bd">
+                <var name="a">7.90</var>
+                <var name="b">12.87</var>
+                <answer>20.77</answer>
+              </var_set>
+              <var_set ident="65040aaf35d7d6ec5945dcbe95790856">
+                <var name="a">9.68</var>
+                <var name="b">19.67</var>
+                <answer>29.35</answer>
+              </var_set>
+              <var_set ident="bdbfb9735d55d535f02a1704a729194c">
+                <var name="a">4.95</var>
+                <var name="b">19.78</var>
+                <answer>24.73</answer>
+              </var_set>
+              <var_set ident="cad4e5f04f7819b3c98e411d9e4a40d5">
+                <var name="a">8.41</var>
+                <var name="b">13.56</var>
+                <answer>21.97</answer>
+              </var_set>
+              <var_set ident="70751ce5d59a091dc68eb63b6b19ac44">
+                <var name="a">2.16</var>
+                <var name="b">19.46</var>
+                <answer>21.62</answer>
+              </var_set>
+              <var_set ident="d4223271fb1d62e882f97263d7f9e9e1">
+                <var name="a">8.40</var>
+                <var name="b">13.54</var>
+                <answer>21.94</answer>
+              </var_set>
+              <var_set ident="20eaf5403a7c6b886d57f8d54b9c36e7">
+                <var name="a">7.13</var>
+                <var name="b">15.09</var>
+                <answer>22.22</answer>
+              </var_set>
+              <var_set ident="a7bde6f987af7e2a83f39955547a9ebb">
+                <var name="a">2.79</var>
+                <var name="b">11.83</var>
+                <answer>14.62</answer>
+              </var_set>
+              <var_set ident="b11567da6de3fe8f79244cd794ae86d4">
+                <var name="a">7.61</var>
+                <var name="b">11.41</var>
+                <answer>19.02</answer>
+              </var_set>
+              <var_set ident="b3de93c5a0cb9f09d580334c8453e491">
+                <var name="a">6.33</var>
+                <var name="b">19.38</var>
+                <answer>25.71</answer>
+              </var_set>
+              <var_set ident="cf9f694004fa9c9c17df69c4c5067e96">
+                <var name="a">0.63</var>
+                <var name="b">19.21</var>
+                <answer>19.84</answer>
+              </var_set>
+              <var_set ident="397616a3dc43021783b74ef626eeb661">
+                <var name="a">9.63</var>
+                <var name="b">17.84</var>
+                <answer>27.47</answer>
+              </var_set>
+              <var_set ident="b7c3df3fb12e41991ef35e8d2fc5fd40">
+                <var name="a">6.38</var>
+                <var name="b">14.60</var>
+                <answer>20.98</answer>
+              </var_set>
+              <var_set ident="b01ab415bb91e647c6e5a906f7c4d2fb">
+                <var name="a">4.07</var>
+                <var name="b">10.05</var>
+                <answer>14.12</answer>
+              </var_set>
+              <var_set ident="589254151dee3c6eb88a257a559cbfe0">
+                <var name="a">5.14</var>
+                <var name="b">11.98</var>
+                <answer>17.12</answer>
+              </var_set>
+              <var_set ident="2a6486d0a6911a917208e83869629096">
+                <var name="a">5.05</var>
+                <var name="b">15.18</var>
+                <answer>20.23</answer>
+              </var_set>
+              <var_set ident="d5cef3b8eee18f90e82060026399f5bb">
+                <var name="a">2.03</var>
+                <var name="b">19.87</var>
+                <answer>21.90</answer>
+              </var_set>
+              <var_set ident="a63597e8788c23f5956c0ed93f6d6aa8">
+                <var name="a">5.36</var>
+                <var name="b">13.98</var>
+                <answer>19.34</answer>
+              </var_set>
+              <var_set ident="334ff6c065dd81e6c1fd8cc98233081a">
+                <var name="a">6.06</var>
+                <var name="b">12.36</var>
+                <answer>18.42</answer>
+              </var_set>
+              <var_set ident="a687a3449d611f7e09f7e81c8fbf875f">
+                <var name="a">8.84</var>
+                <var name="b">11.29</var>
+                <answer>20.13</answer>
+              </var_set>
+              <var_set ident="2f8260d54e9716d9f2d74ed4b01596fe">
+                <var name="a">2.10</var>
+                <var name="b">18.14</var>
+                <answer>20.24</answer>
+              </var_set>
+              <var_set ident="08258d4d97c12e39f963b0b20a0428f8">
+                <var name="a">4.37</var>
+                <var name="b">16.38</var>
+                <answer>20.75</answer>
+              </var_set>
+              <var_set ident="4706df85e439f00d441c85a950f4c3a2">
+                <var name="a">6.65</var>
+                <var name="b">15.26</var>
+                <answer>21.91</answer>
+              </var_set>
+              <var_set ident="98e0fa821f1ea4e3025f05e0c39bc9fc">
+                <var name="a">3.21</var>
+                <var name="b">14.75</var>
+                <answer>17.96</answer>
+              </var_set>
+              <var_set ident="79b5bd8797a1706aeb9128dd940ace33">
+                <var name="a">5.45</var>
+                <var name="b">19.26</var>
+                <answer>24.71</answer>
+              </var_set>
+              <var_set ident="904b36a0bac0fe388524edf996ffa75d">
+                <var name="a">9.38</var>
+                <var name="b">17.69</var>
+                <answer>27.07</answer>
+              </var_set>
+              <var_set ident="61a46e67f4686cb0a1ff47fe47d4906d">
+                <var name="a">9.59</var>
+                <var name="b">17.01</var>
+                <answer>26.60</answer>
+              </var_set>
+              <var_set ident="f35993f8e3c39a1bbb2ff80abac235b2">
+                <var name="a">0.38</var>
+                <var name="b">19.88</var>
+                <answer>20.26</answer>
+              </var_set>
+              <var_set ident="3f8602a42782c68c630f05353bc2ebe4">
+                <var name="a">8.57</var>
+                <var name="b">15.34</var>
+                <answer>23.91</answer>
+              </var_set>
+              <var_set ident="cba98ac48b7f428168b3d8fbc7e348db">
+                <var name="a">0.76</var>
+                <var name="b">14.63</var>
+                <answer>15.39</answer>
+              </var_set>
+              <var_set ident="7a206ef7ee61418fc015e4c094826afa">
+                <var name="a">5.79</var>
+                <var name="b">15.95</var>
+                <answer>21.74</answer>
+              </var_set>
+              <var_set ident="474a32a42b60482f86e76e1bcd64f2d2">
+                <var name="a">7.23</var>
+                <var name="b">14.50</var>
+                <answer>21.73</answer>
+              </var_set>
+              <var_set ident="16221c043a33a07ff73893cbbf57499f">
+                <var name="a">5.92</var>
+                <var name="b">13.51</var>
+                <answer>19.43</answer>
+              </var_set>
+              <var_set ident="2cb60501daebad4360338facca8d420b">
+                <var name="a">9.11</var>
+                <var name="b">19.75</var>
+                <answer>28.86</answer>
+              </var_set>
+              <var_set ident="91ce107afd7f55a67bf7ff59bfcbfcfd">
+                <var name="a">8.81</var>
+                <var name="b">18.72</var>
+                <answer>27.53</answer>
+              </var_set>
+              <var_set ident="8dc3ac8e5cef9597f5d5e3abfe4553a3">
+                <var name="a">6.98</var>
+                <var name="b">15.87</var>
+                <answer>22.85</answer>
+              </var_set>
+              <var_set ident="4117bd62158f21116e5d5f09adce2555">
+                <var name="a">6.63</var>
+                <var name="b">11.02</var>
+                <answer>17.65</answer>
+              </var_set>
+              <var_set ident="fc9d070c43112efcb6e6e6de6d43c05c">
+                <var name="a">1.19</var>
+                <var name="b">18.25</var>
+                <answer>19.44</answer>
+              </var_set>
+              <var_set ident="0db0b2c67a895b3937787b5410a4a0cb">
+                <var name="a">3.07</var>
+                <var name="b">13.03</var>
+                <answer>16.10</answer>
+              </var_set>
+              <var_set ident="bfd3202592f46c8daa9edde33ae52d14">
+                <var name="a">3.26</var>
+                <var name="b">12.39</var>
+                <answer>15.65</answer>
+              </var_set>
+              <var_set ident="92a44d15b497e13541d39c1228581e7f">
+                <var name="a">7.01</var>
+                <var name="b">10.87</var>
+                <answer>17.88</answer>
+              </var_set>
+              <var_set ident="a55323d29a2c1e54e937a031b6da3092">
+                <var name="a">8.02</var>
+                <var name="b">12.69</var>
+                <answer>20.71</answer>
+              </var_set>
+              <var_set ident="5084f8c5b70de0502d2910fa630f09ad">
+                <var name="a">6.73</var>
+                <var name="b">15.51</var>
+                <answer>22.24</answer>
+              </var_set>
+              <var_set ident="2852ae85f4ce8bbccbac6778ddb24c21">
+                <var name="a">7.99</var>
+                <var name="b">12.02</var>
+                <answer>20.01</answer>
+              </var_set>
+              <var_set ident="65dfa2201e27f8bd616385227ef96ca9">
+                <var name="a">9.64</var>
+                <var name="b">17.56</var>
+                <answer>27.20</answer>
+              </var_set>
+              <var_set ident="15eff713efc5b92b0d389bcfb0a568ee">
+                <var name="a">7.20</var>
+                <var name="b">19.24</var>
+                <answer>26.44</answer>
+              </var_set>
+              <var_set ident="ee2a504f5d8917da7511b14a44358079">
+                <var name="a">0.19</var>
+                <var name="b">15.55</var>
+                <answer>15.74</answer>
+              </var_set>
+              <var_set ident="710312afabe02f50282a3eb716f85ab5">
+                <var name="a">8.40</var>
+                <var name="b">11.66</var>
+                <answer>20.06</answer>
+              </var_set>
+              <var_set ident="372518315f48a3adc045c7492aaaa7f6">
+                <var name="a">3.37</var>
+                <var name="b">18.50</var>
+                <answer>21.87</answer>
+              </var_set>
+              <var_set ident="eaed4727f35aa6c3bebc02261e76ada6">
+                <var name="a">3.69</var>
+                <var name="b">12.68</var>
+                <answer>16.37</answer>
+              </var_set>
+              <var_set ident="d4571af63db41976db85c6ea56254cd6">
+                <var name="a">4.54</var>
+                <var name="b">10.07</var>
+                <answer>14.61</answer>
+              </var_set>
+              <var_set ident="1120fa00f5923061822a6aa780ee4c37">
+                <var name="a">4.53</var>
+                <var name="b">12.61</var>
+                <answer>17.14</answer>
+              </var_set>
+              <var_set ident="45408c806c0111239fbe9876d1e0323e">
+                <var name="a">6.52</var>
+                <var name="b">14.06</var>
+                <answer>20.58</answer>
+              </var_set>
+              <var_set ident="ddf784890b06f3d01f1ababa34a82ca8">
+                <var name="a">0.89</var>
+                <var name="b">18.69</var>
+                <answer>19.58</answer>
+              </var_set>
+              <var_set ident="e5c53f06611e61c6d0ad5a6beacce03f">
+                <var name="a">0.02</var>
+                <var name="b">14.87</var>
+                <answer>14.89</answer>
+              </var_set>
+              <var_set ident="fc9910586c2828f465801fd039339f2f">
+                <var name="a">4.54</var>
+                <var name="b">15.44</var>
+                <answer>19.98</answer>
+              </var_set>
+              <var_set ident="09375f9e7fd08b91b0dc0226bcc70650">
+                <var name="a">8.98</var>
+                <var name="b">17.06</var>
+                <answer>26.04</answer>
+              </var_set>
+              <var_set ident="564d8f811492ba3ebaaf030cad1686bd">
+                <var name="a">3.27</var>
+                <var name="b">14.19</var>
+                <answer>17.46</answer>
+              </var_set>
+              <var_set ident="edade068aa84899fcf1eda39909d4dd0">
+                <var name="a">3.59</var>
+                <var name="b">10.24</var>
+                <answer>13.83</answer>
+              </var_set>
+              <var_set ident="60ccf7d3b2991fa802ba304cd216e110">
+                <var name="a">6.68</var>
+                <var name="b">18.50</var>
+                <answer>25.18</answer>
+              </var_set>
+              <var_set ident="c467c94e858b568228a5909cd27c23e8">
+                <var name="a">7.35</var>
+                <var name="b">14.12</var>
+                <answer>21.47</answer>
+              </var_set>
+              <var_set ident="00c429517c9fcbb3b38f5be418fc3486">
+                <var name="a">8.98</var>
+                <var name="b">12.21</var>
+                <answer>21.19</answer>
+              </var_set>
+              <var_set ident="81d4e09cc2f49feb9f59763a13655bf3">
+                <var name="a">2.25</var>
+                <var name="b">16.88</var>
+                <answer>19.13</answer>
+              </var_set>
+              <var_set ident="4872868f5540fb35b5fdbae2b97a7746">
+                <var name="a">9.83</var>
+                <var name="b">11.50</var>
+                <answer>21.33</answer>
+              </var_set>
+              <var_set ident="2ea01b552dd0cb7a44d08b9c0b1e1994">
+                <var name="a">0.60</var>
+                <var name="b">14.26</var>
+                <answer>14.86</answer>
+              </var_set>
+              <var_set ident="71640a750f8749780ea67ee6659adf9e">
+                <var name="a">0.82</var>
+                <var name="b">16.41</var>
+                <answer>17.23</answer>
+              </var_set>
+              <var_set ident="83043d8eef1544a4e8af62f2bd3dc5dd">
+                <var name="a">7.32</var>
+                <var name="b">14.45</var>
+                <answer>21.77</answer>
+              </var_set>
+              <var_set ident="1c0dc63927e54cb842aa6d951c5fbb64">
+                <var name="a">8.98</var>
+                <var name="b">12.07</var>
+                <answer>21.05</answer>
+              </var_set>
+              <var_set ident="f4b305e1bb5083d6e45bc4f14b03ba30">
+                <var name="a">2.65</var>
+                <var name="b">19.70</var>
+                <answer>22.35</answer>
+              </var_set>
+              <var_set ident="ba4aaef150ea53d9f0dbd3bb810d9495">
+                <var name="a">6.05</var>
+                <var name="b">12.59</var>
+                <answer>18.64</answer>
+              </var_set>
+              <var_set ident="18a65d437258ecde76f0f55f8587af34">
+                <var name="a">8.22</var>
+                <var name="b">17.57</var>
+                <answer>25.79</answer>
+              </var_set>
+              <var_set ident="083e771cf7072e73e69838c2745f514d">
+                <var name="a">0.16</var>
+                <var name="b">10.55</var>
+                <answer>10.71</answer>
+              </var_set>
+              <var_set ident="92c4b18657baf09c4c5df681258abec5">
+                <var name="a">4.92</var>
+                <var name="b">13.12</var>
+                <answer>18.04</answer>
+              </var_set>
+              <var_set ident="c36db8c4866502dec56e1974002827a4">
+                <var name="a">4.85</var>
+                <var name="b">10.49</var>
+                <answer>15.34</answer>
+              </var_set>
+              <var_set ident="9ba8c20b14f4539ebc5515dc5ea30bcf">
+                <var name="a">5.41</var>
+                <var name="b">14.46</var>
+                <answer>19.87</answer>
+              </var_set>
+              <var_set ident="fc543e2cc0790dfe3a321733b9d0df9c">
+                <var name="a">2.96</var>
+                <var name="b">15.41</var>
+                <answer>18.37</answer>
+              </var_set>
+              <var_set ident="2bfeb823935b260a51fbd681681a7c05">
+                <var name="a">9.84</var>
+                <var name="b">12.02</var>
+                <answer>21.86</answer>
+              </var_set>
+              <var_set ident="00bced522ddc2e8be3eac21ee4aed929">
+                <var name="a">6.80</var>
+                <var name="b">13.40</var>
+                <answer>20.20</answer>
+              </var_set>
+              <var_set ident="ce4bb70df1be6d96abfe6e534f370fcc">
+                <var name="a">0.63</var>
+                <var name="b">11.95</var>
+                <answer>12.58</answer>
+              </var_set>
+              <var_set ident="a68ea2181d2aea8f727bc21d77de2011">
+                <var name="a">9.64</var>
+                <var name="b">14.76</var>
+                <answer>24.40</answer>
+              </var_set>
+              <var_set ident="8b9289ca346f87646d596d1e9a80f491">
+                <var name="a">5.86</var>
+                <var name="b">14.77</var>
+                <answer>20.63</answer>
+              </var_set>
+              <var_set ident="e0e8133506c7998d30484e1018507a27">
+                <var name="a">1.37</var>
+                <var name="b">19.74</var>
+                <answer>21.11</answer>
+              </var_set>
+              <var_set ident="36d687ccf056c6b8afca577fb039774f">
+                <var name="a">8.69</var>
+                <var name="b">19.94</var>
+                <answer>28.63</answer>
+              </var_set>
+              <var_set ident="6ee5483cd710ae9248ac632276a0617c">
+                <var name="a">7.62</var>
+                <var name="b">16.53</var>
+                <answer>24.15</answer>
+              </var_set>
+              <var_set ident="4c036996e4d2eab1343e6cf89e131f72">
+                <var name="a">7.63</var>
+                <var name="b">16.34</var>
+                <answer>23.97</answer>
+              </var_set>
+              <var_set ident="a77c9e0bd27d3a880e94cce7c0fd1e5e">
+                <var name="a">4.14</var>
+                <var name="b">15.81</var>
+                <answer>19.95</answer>
+              </var_set>
+              <var_set ident="cd164e0ec1779893c8167ef4d500b725">
+                <var name="a">8.95</var>
+                <var name="b">15.75</var>
+                <answer>24.70</answer>
+              </var_set>
+              <var_set ident="91b250cb2b0fc3ddd2b761d0c101e62f">
+                <var name="a">5.18</var>
+                <var name="b">12.68</var>
+                <answer>17.86</answer>
+              </var_set>
+              <var_set ident="2728824094d730ed017eb6937ddd7444">
+                <var name="a">9.81</var>
+                <var name="b">13.99</var>
+                <answer>23.80</answer>
+              </var_set>
+              <var_set ident="6cb3de4cb2808d5439491932d9ecd0e0">
+                <var name="a">9.14</var>
+                <var name="b">10.11</var>
+                <answer>19.25</answer>
+              </var_set>
+              <var_set ident="097ed092804da16113b6eba64c424324">
+                <var name="a">8.26</var>
+                <var name="b">14.77</var>
+                <answer>23.03</answer>
+              </var_set>
+              <var_set ident="1490bd41aa0e1e88578949642fb8f179">
+                <var name="a">2.33</var>
+                <var name="b">16.39</var>
+                <answer>18.72</answer>
+              </var_set>
+              <var_set ident="7ea56bba68db04509efffed73d865a18">
+                <var name="a">4.63</var>
+                <var name="b">12.43</var>
+                <answer>17.06</answer>
+              </var_set>
+              <var_set ident="b3461bdb9e5a3e633706c7d6e1719620">
+                <var name="a">3.93</var>
+                <var name="b">19.67</var>
+                <answer>23.60</answer>
+              </var_set>
+              <var_set ident="259d79c86d0567ec0fe2f5fcb4e03505">
+                <var name="a">2.80</var>
+                <var name="b">12.95</var>
+                <answer>15.75</answer>
+              </var_set>
+              <var_set ident="53235cf9efd5d8fd3dd743489fe0b188">
+                <var name="a">3.56</var>
+                <var name="b">18.50</var>
+                <answer>22.06</answer>
+              </var_set>
+              <var_set ident="f6676dbcbc8ccf80bbd0a9e193647286">
+                <var name="a">0.98</var>
+                <var name="b">15.40</var>
+                <answer>16.38</answer>
+              </var_set>
+              <var_set ident="6d73e73382bac3ff914b5703eb5543e2">
+                <var name="a">0.80</var>
+                <var name="b">19.53</var>
+                <answer>20.33</answer>
+              </var_set>
+              <var_set ident="580f941112e2d93be121e2120b95acc0">
+                <var name="a">1.07</var>
+                <var name="b">14.82</var>
+                <answer>15.89</answer>
+              </var_set>
+              <var_set ident="94e0215ef1a6366bd68e961f1ffa954c">
+                <var name="a">3.98</var>
+                <var name="b">15.12</var>
+                <answer>19.10</answer>
+              </var_set>
+              <var_set ident="46ee95946addd6778f999cb30fc55613">
+                <var name="a">5.53</var>
+                <var name="b">16.78</var>
+                <answer>22.31</answer>
+              </var_set>
+              <var_set ident="1ea7115f756a087b1e51152aaacdc599">
+                <var name="a">8.45</var>
+                <var name="b">18.22</var>
+                <answer>26.67</answer>
+              </var_set>
+              <var_set ident="a4cb265efb907f3debac41df346bebc3">
+                <var name="a">5.81</var>
+                <var name="b">12.14</var>
+                <answer>17.95</answer>
+              </var_set>
+              <var_set ident="9db139838689adc0556901ae1f2a764a">
+                <var name="a">4.64</var>
+                <var name="b">10.95</var>
+                <answer>15.59</answer>
+              </var_set>
+              <var_set ident="02631c2fa39eed24a67e6acf39243a91">
+                <var name="a">5.76</var>
+                <var name="b">13.70</var>
+                <answer>19.46</answer>
+              </var_set>
+              <var_set ident="71aa3d4f36d4a4080d36f43235e564ac">
+                <var name="a">6.04</var>
+                <var name="b">14.97</var>
+                <answer>21.01</answer>
+              </var_set>
+              <var_set ident="c5f5763637c5a24891324c2baca97649">
+                <var name="a">4.72</var>
+                <var name="b">15.13</var>
+                <answer>19.85</answer>
+              </var_set>
+              <var_set ident="5be5cf450531c663497aad94c48c6d17">
+                <var name="a">9.29</var>
+                <var name="b">16.01</var>
+                <answer>25.30</answer>
+              </var_set>
+              <var_set ident="1afe0c645185eb5189b0edc301953437">
+                <var name="a">3.31</var>
+                <var name="b">14.18</var>
+                <answer>17.49</answer>
+              </var_set>
+              <var_set ident="e24814dbc27777c6d21d082ba0747ea9">
+                <var name="a">4.45</var>
+                <var name="b">17.92</var>
+                <answer>22.37</answer>
+              </var_set>
+              <var_set ident="fe903578ca02bdae1ba394e52da60feb">
+                <var name="a">6.03</var>
+                <var name="b">17.12</var>
+                <answer>23.15</answer>
+              </var_set>
+              <var_set ident="3fbcc523379d1a1a1b1883c54a8d69ee">
+                <var name="a">9.38</var>
+                <var name="b">10.70</var>
+                <answer>20.08</answer>
+              </var_set>
+              <var_set ident="1a2b1a840f4884112bdbb5f1cdda9d2d">
+                <var name="a">8.16</var>
+                <var name="b">16.15</var>
+                <answer>24.31</answer>
+              </var_set>
+              <var_set ident="c7394c7f5c53bd03c32e824be26701c6">
+                <var name="a">4.63</var>
+                <var name="b">14.93</var>
+                <answer>19.56</answer>
+              </var_set>
+              <var_set ident="49e5b1cf40c371e35c2a9a4cb661d206">
+                <var name="a">2.36</var>
+                <var name="b">18.79</var>
+                <answer>21.15</answer>
+              </var_set>
+              <var_set ident="321f3531855aa5e21f23205bcc104068">
+                <var name="a">6.46</var>
+                <var name="b">15.36</var>
+                <answer>21.82</answer>
+              </var_set>
+              <var_set ident="63b79b9880340016c0408ff741b8c246">
+                <var name="a">8.40</var>
+                <var name="b">12.77</var>
+                <answer>21.17</answer>
+              </var_set>
+              <var_set ident="cc54fe3652f51ec518685caee47adc12">
+                <var name="a">6.39</var>
+                <var name="b">16.71</var>
+                <answer>23.10</answer>
+              </var_set>
+              <var_set ident="4c9ca1b98d75f5a95960280b5d0d4bd1">
+                <var name="a">8.86</var>
+                <var name="b">11.56</var>
+                <answer>20.42</answer>
+              </var_set>
+              <var_set ident="45dc58c58807b92dc32ffa6f0893c8a7">
+                <var name="a">4.05</var>
+                <var name="b">16.67</var>
+                <answer>20.72</answer>
+              </var_set>
+              <var_set ident="182aede93b448adb1780cc945a60c7ec">
+                <var name="a">7.71</var>
+                <var name="b">11.69</var>
+                <answer>19.40</answer>
+              </var_set>
+              <var_set ident="33f36796e16748d83b4af8e58bb94c2b">
+                <var name="a">1.66</var>
+                <var name="b">10.40</var>
+                <answer>12.06</answer>
+              </var_set>
+              <var_set ident="bca4554006caf9f7ba045c9064d0dc26">
+                <var name="a">7.62</var>
+                <var name="b">17.64</var>
+                <answer>25.26</answer>
+              </var_set>
+              <var_set ident="8598a32243b84cac7cc8f2bdd9931782">
+                <var name="a">8.27</var>
+                <var name="b">18.31</var>
+                <answer>26.58</answer>
+              </var_set>
+              <var_set ident="0dc29c93ca3a847adce009581c76adf5">
+                <var name="a">4.35</var>
+                <var name="b">18.98</var>
+                <answer>23.33</answer>
+              </var_set>
+              <var_set ident="4002bae1bc8432e6d0b6b60fe364ae5a">
+                <var name="a">7.83</var>
+                <var name="b">13.31</var>
+                <answer>21.14</answer>
+              </var_set>
+              <var_set ident="d8d77684cfceec9dcc1f2319e1f80f09">
+                <var name="a">1.12</var>
+                <var name="b">19.32</var>
+                <answer>20.44</answer>
+              </var_set>
+              <var_set ident="a7db0a5ce4c7af822c17c52275f7ad67">
+                <var name="a">6.09</var>
+                <var name="b">15.35</var>
+                <answer>21.44</answer>
+              </var_set>
+              <var_set ident="8af6353b297439b4f170738b8753c1ec">
+                <var name="a">6.57</var>
+                <var name="b">15.58</var>
+                <answer>22.15</answer>
+              </var_set>
+              <var_set ident="dc2cc7a305bda39510f5be06fb8c2141">
+                <var name="a">9.42</var>
+                <var name="b">17.55</var>
+                <answer>26.97</answer>
+              </var_set>
+              <var_set ident="e08dcb9a11160ea5a68da19c52ed9d6b">
+                <var name="a">3.27</var>
+                <var name="b">19.82</var>
+                <answer>23.09</answer>
+              </var_set>
+              <var_set ident="aecb7c2fce1613dbb08033e068b7598e">
+                <var name="a">8.88</var>
+                <var name="b">14.46</var>
+                <answer>23.34</answer>
+              </var_set>
+              <var_set ident="22b35829163d66f6d910b77d71ef8a0f">
+                <var name="a">2.79</var>
+                <var name="b">18.55</var>
+                <answer>21.34</answer>
+              </var_set>
+              <var_set ident="adf8fefc400a5048e89ff4d4ff8c5cea">
+                <var name="a">1.52</var>
+                <var name="b">13.17</var>
+                <answer>14.69</answer>
+              </var_set>
+              <var_set ident="3fbeb5d420c1b19aee4a4cec078337a2">
+                <var name="a">2.79</var>
+                <var name="b">14.62</var>
+                <answer>17.41</answer>
+              </var_set>
+              <var_set ident="f17e8e6bbcb670dfd98e55e0e810500c">
+                <var name="a">0.77</var>
+                <var name="b">17.05</var>
+                <answer>17.82</answer>
+              </var_set>
+              <var_set ident="acfa3e23ddc4b342a058ff6bbd333b0e">
+                <var name="a">7.11</var>
+                <var name="b">12.79</var>
+                <answer>19.90</answer>
+              </var_set>
+              <var_set ident="f94ceaebbf16cd8cf4b475defbe20ebf">
+                <var name="a">5.15</var>
+                <var name="b">15.63</var>
+                <answer>20.78</answer>
+              </var_set>
+              <var_set ident="9b494b03e622e2de6d89988a29797c2a">
+                <var name="a">8.81</var>
+                <var name="b">17.52</var>
+                <answer>26.33</answer>
+              </var_set>
+              <var_set ident="71da1ed6564c9295694f34f3651c6485">
+                <var name="a">1.48</var>
+                <var name="b">16.32</var>
+                <answer>17.80</answer>
+              </var_set>
+              <var_set ident="547a1941a970adf73049151b6f4a0992">
+                <var name="a">4.54</var>
+                <var name="b">18.89</var>
+                <answer>23.43</answer>
+              </var_set>
+              <var_set ident="5535fa5e50e1a5cfe7a2f23dd46bc181">
+                <var name="a">2.73</var>
+                <var name="b">19.52</var>
+                <answer>22.25</answer>
+              </var_set>
+              <var_set ident="bada264c24e6e185345379d2f87f6156">
+                <var name="a">6.45</var>
+                <var name="b">16.31</var>
+                <answer>22.76</answer>
+              </var_set>
+              <var_set ident="b714f1642067c41d09cbf63214bae757">
+                <var name="a">4.43</var>
+                <var name="b">15.89</var>
+                <answer>20.32</answer>
+              </var_set>
+              <var_set ident="9fa3f063b643bcbcb8b791d1d1926439">
+                <var name="a">8.52</var>
+                <var name="b">16.03</var>
+                <answer>24.55</answer>
+              </var_set>
+              <var_set ident="cf22969cf268a2ff96e49b0d3ba6a79e">
+                <var name="a">6.27</var>
+                <var name="b">19.56</var>
+                <answer>25.83</answer>
+              </var_set>
+              <var_set ident="9f134e4bd2df3c80ffc1c5349738a096">
+                <var name="a">0.97</var>
+                <var name="b">19.69</var>
+                <answer>20.66</answer>
+              </var_set>
+              <var_set ident="7e54759c8da41597e6b9892468f8da21">
+                <var name="a">6.42</var>
+                <var name="b">18.15</var>
+                <answer>24.57</answer>
+              </var_set>
+              <var_set ident="e13a78de604cce9905fc5da934d98f27">
+                <var name="a">9.25</var>
+                <var name="b">12.92</var>
+                <answer>22.17</answer>
+              </var_set>
+              <var_set ident="84c29d43d3487b718d7e1a66a0edf6be">
+                <var name="a">1.55</var>
+                <var name="b">12.60</var>
+                <answer>14.15</answer>
+              </var_set>
+              <var_set ident="f452675baae69cd3dfad4c3849f67af8">
+                <var name="a">1.78</var>
+                <var name="b">19.01</var>
+                <answer>20.79</answer>
+              </var_set>
+              <var_set ident="a97508e3ef817fa5bdbc87e2c6332e4f">
+                <var name="a">3.40</var>
+                <var name="b">16.11</var>
+                <answer>19.51</answer>
+              </var_set>
+              <var_set ident="90d1826bd3f3ce032727e366a7523941">
+                <var name="a">4.52</var>
+                <var name="b">10.10</var>
+                <answer>14.62</answer>
+              </var_set>
+              <var_set ident="636bd37e2f56c3e8ba80f7fd78b5349d">
+                <var name="a">9.66</var>
+                <var name="b">13.94</var>
+                <answer>23.60</answer>
+              </var_set>
+              <var_set ident="b699a182776fc481e808276e7987535e">
+                <var name="a">2.65</var>
+                <var name="b">13.81</var>
+                <answer>16.46</answer>
+              </var_set>
+              <var_set ident="269fe761569303298dbe9ef5d3e5cfb5">
+                <var name="a">0.18</var>
+                <var name="b">19.46</var>
+                <answer>19.64</answer>
+              </var_set>
+              <var_set ident="e9c5b8f565ee6c3c0892916d7138f749">
+                <var name="a">4.45</var>
+                <var name="b">14.70</var>
+                <answer>19.15</answer>
+              </var_set>
+              <var_set ident="2993f2c7fb620f402b3fb6f9e2b3937b">
+                <var name="a">1.93</var>
+                <var name="b">10.22</var>
+                <answer>12.15</answer>
+              </var_set>
+              <var_set ident="1b97f0d8027c301eb7f9a72a46785fc7">
+                <var name="a">6.57</var>
+                <var name="b">14.64</var>
+                <answer>21.21</answer>
+              </var_set>
+              <var_set ident="bf6616691810362b6a33a72560b8dc5b">
+                <var name="a">1.31</var>
+                <var name="b">11.95</var>
+                <answer>13.26</answer>
+              </var_set>
+              <var_set ident="cd6c6b0d8848c5fa0e687abd3d0a3463">
+                <var name="a">3.94</var>
+                <var name="b">13.23</var>
+                <answer>17.17</answer>
+              </var_set>
+              <var_set ident="cbb6fa9cf8f9f959a990b49a76640e49">
+                <var name="a">1.68</var>
+                <var name="b">13.42</var>
+                <answer>15.10</answer>
+              </var_set>
+              <var_set ident="52fc21b46c5fbc79fad809a1e7a50027">
+                <var name="a">4.35</var>
+                <var name="b">14.02</var>
+                <answer>18.37</answer>
+              </var_set>
+              <var_set ident="09fea505db6a6cd6ac6f84d31ac8ce6c">
+                <var name="a">6.92</var>
+                <var name="b">10.61</var>
+                <answer>17.53</answer>
+              </var_set>
+              <var_set ident="f8cbd386a22f0501d53c3e25f18706dc">
+                <var name="a">2.06</var>
+                <var name="b">10.76</var>
+                <answer>12.82</answer>
+              </var_set>
+              <var_set ident="ac39db949f5bfef99e381a6de21a866e">
+                <var name="a">7.22</var>
+                <var name="b">12.56</var>
+                <answer>19.78</answer>
+              </var_set>
+            </var_sets>
+          </calculated>
+        </itemproc_extension>
+      </item>
+      <item ident="55fc7c3640e762f8bd2da817c8c9a8d1" title="">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>calculated_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry/>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>080d128d93197055b9b72db7b09530f0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>calculator_type</fieldlabel>
+              <fieldentry>basic</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;Compute the following quantity keeping in mind the rules of significant figures: `a`+`b`&lt;/p&gt;</mattext>
+          </material>
+          <response_str ident="response1" rcardinality="Single">
+            <render_fib fibtype="Decimal">
+              <response_label ident="answer1"/>
+            </render_fib>
+          </response_str>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition title="correct">
+            <conditionvar>
+              <other/>
+            </conditionvar>
+            <setvar varname="SCORE" action="Set">100</setvar>
+          </respcondition>
+          <respcondition title="incorrect">
+            <conditionvar>
+              <not>
+                <other/>
+              </not>
+            </conditionvar>
+            <setvar varname="SCORE" action="Set">0</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemproc_extension>
+          <calculated>
+            <answer_tolerance margin_type="absolute">0</answer_tolerance>
+            <formulas decimal_places="1" scientific_notation="false">
+              <formula>floor(10*(a+b)+0.5)/10</formula>
+            </formulas>
+            <vars>
+              <var name="a" scale="4">
+                <min>0.0000</min>
+                <max>10.0000</max>
+              </var>
+              <var name="b" scale="1">
+                <min>10.0</min>
+                <max>40.0</max>
+              </var>
+            </vars>
+            <var_sets>
+              <var_set ident="9d0dcfd1936336022168782a1f66b4e2">
+                <var name="a">1.7062</var>
+                <var name="b">10.9</var>
+                <answer>12.6</answer>
+              </var_set>
+              <var_set ident="3afc8e5ea40b90a268954c9dd8adccbe">
+                <var name="a">9.1504</var>
+                <var name="b">18.2</var>
+                <answer>27.4</answer>
+              </var_set>
+              <var_set ident="587c5192080304c7082d91fd8410c25e">
+                <var name="a">6.0135</var>
+                <var name="b">21.2</var>
+                <answer>27.2</answer>
+              </var_set>
+              <var_set ident="7a2313efaaca9c90a933af9152ec3b12">
+                <var name="a">9.3035</var>
+                <var name="b">12.7</var>
+                <answer>22.0</answer>
+              </var_set>
+              <var_set ident="7012ce2122d0355c60c1ae952dcd12a2">
+                <var name="a">4.9604</var>
+                <var name="b">14.7</var>
+                <answer>19.7</answer>
+              </var_set>
+              <var_set ident="c52b7c7480b714470d061734b45cedc2">
+                <var name="a">0.7671</var>
+                <var name="b">22.7</var>
+                <answer>23.5</answer>
+              </var_set>
+              <var_set ident="6425544682015748b79b164e344a3204">
+                <var name="a">2.3574</var>
+                <var name="b">39.1</var>
+                <answer>41.5</answer>
+              </var_set>
+              <var_set ident="6a39bda0f5f9247c1df07b4e543e063e">
+                <var name="a">4.9631</var>
+                <var name="b">10.4</var>
+                <answer>15.4</answer>
+              </var_set>
+              <var_set ident="60c5ccfdc84652680d66e4f182255d90">
+                <var name="a">1.7713</var>
+                <var name="b">17.2</var>
+                <answer>19.0</answer>
+              </var_set>
+              <var_set ident="9471593f68cc8655be34c02c1baa7e6a">
+                <var name="a">9.0943</var>
+                <var name="b">35.6</var>
+                <answer>44.7</answer>
+              </var_set>
+              <var_set ident="058e771bc13622c08a97f6c9a4e2709c">
+                <var name="a">3.2517</var>
+                <var name="b">27.3</var>
+                <answer>30.6</answer>
+              </var_set>
+              <var_set ident="babde54b6b7c28c48b3d0851a05e46f5">
+                <var name="a">1.6207</var>
+                <var name="b">27.9</var>
+                <answer>29.5</answer>
+              </var_set>
+              <var_set ident="4ae40166cd58dabcb4b0e2e752658a05">
+                <var name="a">3.4863</var>
+                <var name="b">24.8</var>
+                <answer>28.3</answer>
+              </var_set>
+              <var_set ident="b40908ee428d061e2eceabd9aa6c06e8">
+                <var name="a">7.1362</var>
+                <var name="b">22.0</var>
+                <answer>29.1</answer>
+              </var_set>
+              <var_set ident="9049504007fc619a1f04687ac125aba0">
+                <var name="a">5.8729</var>
+                <var name="b">22.7</var>
+                <answer>28.6</answer>
+              </var_set>
+              <var_set ident="936238006bdadf7d8b2167b1f2343dcc">
+                <var name="a">4.5547</var>
+                <var name="b">15.3</var>
+                <answer>19.9</answer>
+              </var_set>
+              <var_set ident="3daa35d2b36de1a0f1ce2e602620d90e">
+                <var name="a">0.4343</var>
+                <var name="b">36.0</var>
+                <answer>36.4</answer>
+              </var_set>
+              <var_set ident="0aeeabd20e599dcf3b9936633424cf41">
+                <var name="a">0.5017</var>
+                <var name="b">23.8</var>
+                <answer>24.3</answer>
+              </var_set>
+              <var_set ident="4a858f4994fb9cddf655c72640d83c7b">
+                <var name="a">8.4830</var>
+                <var name="b">28.9</var>
+                <answer>37.4</answer>
+              </var_set>
+              <var_set ident="ad62963f4d939c99c375951f383b99e3">
+                <var name="a">4.9606</var>
+                <var name="b">35.5</var>
+                <answer>40.5</answer>
+              </var_set>
+              <var_set ident="2db7853779df48d5d79e69ec561d31e8">
+                <var name="a">4.0612</var>
+                <var name="b">26.1</var>
+                <answer>30.2</answer>
+              </var_set>
+              <var_set ident="b63a3d458a666789813e283908bae532">
+                <var name="a">2.7256</var>
+                <var name="b">19.0</var>
+                <answer>21.7</answer>
+              </var_set>
+              <var_set ident="cc474aa7621d6ccc1f23c227057ff35a">
+                <var name="a">6.4337</var>
+                <var name="b">15.1</var>
+                <answer>21.5</answer>
+              </var_set>
+              <var_set ident="bae05a53276cd9bc65e237ba56f15f0c">
+                <var name="a">1.7363</var>
+                <var name="b">15.2</var>
+                <answer>16.9</answer>
+              </var_set>
+              <var_set ident="ad447778fb38427b6728ce293dab37a5">
+                <var name="a">2.3402</var>
+                <var name="b">23.2</var>
+                <answer>25.5</answer>
+              </var_set>
+              <var_set ident="ecd4c25ae3086661d0a1701307521f03">
+                <var name="a">9.1167</var>
+                <var name="b">21.2</var>
+                <answer>30.3</answer>
+              </var_set>
+              <var_set ident="6caff3c2b2143090d15632f9bc30d5f6">
+                <var name="a">9.0957</var>
+                <var name="b">33.4</var>
+                <answer>42.5</answer>
+              </var_set>
+              <var_set ident="533290cd12d6c31884b8cdac89ea7a42">
+                <var name="a">2.6654</var>
+                <var name="b">32.2</var>
+                <answer>34.9</answer>
+              </var_set>
+              <var_set ident="fa71c3201bbfa62eb96e66d77148612e">
+                <var name="a">5.8553</var>
+                <var name="b">33.0</var>
+                <answer>38.9</answer>
+              </var_set>
+              <var_set ident="ce64815446b1ec04fc96e2f836b527be">
+                <var name="a">3.0741</var>
+                <var name="b">30.2</var>
+                <answer>33.3</answer>
+              </var_set>
+              <var_set ident="b10b3429624883146816e1bffee18c73">
+                <var name="a">4.6380</var>
+                <var name="b">28.3</var>
+                <answer>32.9</answer>
+              </var_set>
+              <var_set ident="90c4cad94ae483bf8aa14fdf67bd1458">
+                <var name="a">5.1387</var>
+                <var name="b">27.3</var>
+                <answer>32.4</answer>
+              </var_set>
+              <var_set ident="0e3e35565f9956bef00433e9d6481e53">
+                <var name="a">8.7647</var>
+                <var name="b">37.0</var>
+                <answer>45.8</answer>
+              </var_set>
+              <var_set ident="2a1f487817d9c8dccf935ac3d058db7c">
+                <var name="a">5.7502</var>
+                <var name="b">15.1</var>
+                <answer>20.9</answer>
+              </var_set>
+              <var_set ident="2917875ad24cd10b2b921f38112be263">
+                <var name="a">7.7030</var>
+                <var name="b">33.8</var>
+                <answer>41.5</answer>
+              </var_set>
+              <var_set ident="b278010576fa78b0918e2d1099c97941">
+                <var name="a">5.3454</var>
+                <var name="b">39.5</var>
+                <answer>44.8</answer>
+              </var_set>
+              <var_set ident="ff71540a45d1cf10145b841b56d521c0">
+                <var name="a">1.3668</var>
+                <var name="b">38.2</var>
+                <answer>39.6</answer>
+              </var_set>
+              <var_set ident="e2a593a6d50f0798b29d2be96d033f1c">
+                <var name="a">2.4162</var>
+                <var name="b">27.3</var>
+                <answer>29.7</answer>
+              </var_set>
+              <var_set ident="141220443e4be1fcd986b7905b214c2c">
+                <var name="a">5.5548</var>
+                <var name="b">14.9</var>
+                <answer>20.5</answer>
+              </var_set>
+              <var_set ident="7e9281f541405eaefa34aa198bd35d6f">
+                <var name="a">7.4925</var>
+                <var name="b">15.1</var>
+                <answer>22.6</answer>
+              </var_set>
+              <var_set ident="5d6a815eee1aa2bee97ba25f5d3c7d42">
+                <var name="a">8.4334</var>
+                <var name="b">20.0</var>
+                <answer>28.4</answer>
+              </var_set>
+              <var_set ident="98dc629768a5e569292f0ca51a3ffea5">
+                <var name="a">9.9559</var>
+                <var name="b">27.9</var>
+                <answer>37.9</answer>
+              </var_set>
+              <var_set ident="361b47a46806a50ec1d075c79f0425de">
+                <var name="a">3.5281</var>
+                <var name="b">27.7</var>
+                <answer>31.2</answer>
+              </var_set>
+              <var_set ident="2b9718deda504848c8e2e04c9a35ccc7">
+                <var name="a">0.1581</var>
+                <var name="b">15.5</var>
+                <answer>15.7</answer>
+              </var_set>
+              <var_set ident="7907c17ec6513a92265cc39464d49869">
+                <var name="a">5.8326</var>
+                <var name="b">38.7</var>
+                <answer>44.5</answer>
+              </var_set>
+              <var_set ident="3f6096d2bd6f798a524d21a9a500dae5">
+                <var name="a">0.8662</var>
+                <var name="b">29.4</var>
+                <answer>30.3</answer>
+              </var_set>
+              <var_set ident="30e593bbe797ec885be1c8a8384163af">
+                <var name="a">7.4652</var>
+                <var name="b">27.7</var>
+                <answer>35.2</answer>
+              </var_set>
+              <var_set ident="3421eb74493725ea614baaebe3cf2953">
+                <var name="a">0.7150</var>
+                <var name="b">10.6</var>
+                <answer>11.3</answer>
+              </var_set>
+              <var_set ident="59bfa52a5a6972623e390df698fbf62b">
+                <var name="a">6.9499</var>
+                <var name="b">18.7</var>
+                <answer>25.6</answer>
+              </var_set>
+              <var_set ident="3dd2328f320fc8a6be3b405411d8efca">
+                <var name="a">6.8335</var>
+                <var name="b">32.2</var>
+                <answer>39.0</answer>
+              </var_set>
+              <var_set ident="ea5d5238e4f98f68ced7b2a731f93b43">
+                <var name="a">2.2537</var>
+                <var name="b">25.2</var>
+                <answer>27.5</answer>
+              </var_set>
+              <var_set ident="c5e15f9133f7cef5ef257dbe2e3f18ac">
+                <var name="a">8.1263</var>
+                <var name="b">23.2</var>
+                <answer>31.3</answer>
+              </var_set>
+              <var_set ident="84f527e232cd83b19164e4516f4c8862">
+                <var name="a">8.4955</var>
+                <var name="b">17.4</var>
+                <answer>25.9</answer>
+              </var_set>
+              <var_set ident="9dc19a8d6bf0515716c1849e5f8fb655">
+                <var name="a">5.7369</var>
+                <var name="b">22.1</var>
+                <answer>27.8</answer>
+              </var_set>
+              <var_set ident="ee104ae683885553ad13b9f4c21ab2ac">
+                <var name="a">8.1315</var>
+                <var name="b">23.1</var>
+                <answer>31.2</answer>
+              </var_set>
+              <var_set ident="4928d8963762c78b2824a0af9e4c25d9">
+                <var name="a">3.0708</var>
+                <var name="b">20.3</var>
+                <answer>23.4</answer>
+              </var_set>
+              <var_set ident="26551cd6060080b99437dbc9fa6fbe91">
+                <var name="a">2.3485</var>
+                <var name="b">34.7</var>
+                <answer>37.0</answer>
+              </var_set>
+              <var_set ident="2c62065662c08ee8f7e0583caf31e0bf">
+                <var name="a">8.0680</var>
+                <var name="b">23.3</var>
+                <answer>31.4</answer>
+              </var_set>
+              <var_set ident="cedb78d769150340e3d2fd1ec44523d2">
+                <var name="a">2.9996</var>
+                <var name="b">11.4</var>
+                <answer>14.4</answer>
+              </var_set>
+              <var_set ident="a9d0d36802318803b175cefd45b5e677">
+                <var name="a">1.3571</var>
+                <var name="b">23.9</var>
+                <answer>25.3</answer>
+              </var_set>
+              <var_set ident="d70d8a771142900e2bde54574a0d8a06">
+                <var name="a">8.6357</var>
+                <var name="b">12.0</var>
+                <answer>20.6</answer>
+              </var_set>
+              <var_set ident="17b8bfa06fa57baa852eb4a6e8b881f0">
+                <var name="a">0.9738</var>
+                <var name="b">31.0</var>
+                <answer>32.0</answer>
+              </var_set>
+              <var_set ident="dcf2511e927192788bb4fe6c0a33e662">
+                <var name="a">5.0073</var>
+                <var name="b">33.4</var>
+                <answer>38.4</answer>
+              </var_set>
+              <var_set ident="61d8bb748e598b549a032206a6901145">
+                <var name="a">3.7250</var>
+                <var name="b">19.2</var>
+                <answer>22.9</answer>
+              </var_set>
+              <var_set ident="bb966182d1af402a778d8abb61a505c1">
+                <var name="a">0.8875</var>
+                <var name="b">12.8</var>
+                <answer>13.7</answer>
+              </var_set>
+              <var_set ident="24762ba95867826f095411a7d867416b">
+                <var name="a">2.2128</var>
+                <var name="b">36.8</var>
+                <answer>39.0</answer>
+              </var_set>
+              <var_set ident="4448c7776c513447b4631384ed212695">
+                <var name="a">3.1445</var>
+                <var name="b">18.9</var>
+                <answer>22.0</answer>
+              </var_set>
+              <var_set ident="5716f2f950124b4765d01a58bc840304">
+                <var name="a">1.8594</var>
+                <var name="b">18.8</var>
+                <answer>20.7</answer>
+              </var_set>
+              <var_set ident="5f51ec1e520cd4fa6f0c1702251beccb">
+                <var name="a">4.7507</var>
+                <var name="b">22.5</var>
+                <answer>27.3</answer>
+              </var_set>
+              <var_set ident="d5428c36b235c7cd16d13675b251190a">
+                <var name="a">9.6836</var>
+                <var name="b">32.9</var>
+                <answer>42.6</answer>
+              </var_set>
+              <var_set ident="acfe658c22a32a8b1ccf5a09610e0861">
+                <var name="a">9.9636</var>
+                <var name="b">24.8</var>
+                <answer>34.8</answer>
+              </var_set>
+              <var_set ident="ba4aea9ba6f4bee7391a311b8a0fe9a3">
+                <var name="a">9.7350</var>
+                <var name="b">37.3</var>
+                <answer>47.0</answer>
+              </var_set>
+              <var_set ident="5251815535f81a467ce2ac3cb08cee95">
+                <var name="a">0.0202</var>
+                <var name="b">25.9</var>
+                <answer>25.9</answer>
+              </var_set>
+              <var_set ident="1db162a55c79b94d6339935228546a6e">
+                <var name="a">5.7733</var>
+                <var name="b">11.9</var>
+                <answer>17.7</answer>
+              </var_set>
+              <var_set ident="d9072f8c155d980d3fea075964b1b5a0">
+                <var name="a">7.4389</var>
+                <var name="b">34.0</var>
+                <answer>41.4</answer>
+              </var_set>
+              <var_set ident="752c013521df7861e589a5a013aff2bc">
+                <var name="a">0.8617</var>
+                <var name="b">39.2</var>
+                <answer>40.1</answer>
+              </var_set>
+              <var_set ident="a18a6d079bcc87785760948ad3b92929">
+                <var name="a">9.3947</var>
+                <var name="b">33.2</var>
+                <answer>42.6</answer>
+              </var_set>
+              <var_set ident="54b01ccd2d3634332a81b447608ebede">
+                <var name="a">0.6082</var>
+                <var name="b">35.8</var>
+                <answer>36.4</answer>
+              </var_set>
+              <var_set ident="42c25f3348778737030bd10aa4f0c092">
+                <var name="a">6.9482</var>
+                <var name="b">33.3</var>
+                <answer>40.2</answer>
+              </var_set>
+              <var_set ident="1c135b784bbb4574f821126fe494716b">
+                <var name="a">0.9047</var>
+                <var name="b">38.7</var>
+                <answer>39.6</answer>
+              </var_set>
+              <var_set ident="171f4f1721ea5664702fea7bd7e01f0e">
+                <var name="a">4.1946</var>
+                <var name="b">28.6</var>
+                <answer>32.8</answer>
+              </var_set>
+              <var_set ident="ffb74381b0bc64895852edac96880da8">
+                <var name="a">9.1180</var>
+                <var name="b">18.7</var>
+                <answer>27.8</answer>
+              </var_set>
+              <var_set ident="0328e02e6ba76ec72ee3730b4f186cd4">
+                <var name="a">8.3952</var>
+                <var name="b">11.2</var>
+                <answer>19.6</answer>
+              </var_set>
+              <var_set ident="97a79ca0b610e0a4ea4fb1cfee174110">
+                <var name="a">3.4309</var>
+                <var name="b">37.2</var>
+                <answer>40.6</answer>
+              </var_set>
+              <var_set ident="21202c0b58551883f93023f210440a98">
+                <var name="a">5.3471</var>
+                <var name="b">28.3</var>
+                <answer>33.6</answer>
+              </var_set>
+              <var_set ident="de68e8988f05e2fa7909bba40ff3fea8">
+                <var name="a">8.6284</var>
+                <var name="b">33.9</var>
+                <answer>42.5</answer>
+              </var_set>
+              <var_set ident="5d6bd29bf31c39b7964e225fa5f49de7">
+                <var name="a">4.8813</var>
+                <var name="b">17.8</var>
+                <answer>22.7</answer>
+              </var_set>
+              <var_set ident="7b4e147788f87935e6c4a719b2c60c2f">
+                <var name="a">8.5548</var>
+                <var name="b">31.6</var>
+                <answer>40.2</answer>
+              </var_set>
+              <var_set ident="784f7367f88f7110c158161188071659">
+                <var name="a">6.8101</var>
+                <var name="b">31.3</var>
+                <answer>38.1</answer>
+              </var_set>
+              <var_set ident="c5728f948e309a2dfd2c2d64f82e52d5">
+                <var name="a">1.6918</var>
+                <var name="b">22.8</var>
+                <answer>24.5</answer>
+              </var_set>
+              <var_set ident="e6f5c7575b679e7f84dee3d7775a1243">
+                <var name="a">2.9403</var>
+                <var name="b">36.0</var>
+                <answer>38.9</answer>
+              </var_set>
+              <var_set ident="fd6adb288598734fc8af1948ed7ebf8b">
+                <var name="a">1.8261</var>
+                <var name="b">22.0</var>
+                <answer>23.8</answer>
+              </var_set>
+              <var_set ident="b9ba3f85b333f16b5cf1b95d7ea1b5d4">
+                <var name="a">5.8001</var>
+                <var name="b">25.4</var>
+                <answer>31.2</answer>
+              </var_set>
+              <var_set ident="f554b4228f7dc6f53f90f25f9a875927">
+                <var name="a">8.2516</var>
+                <var name="b">25.4</var>
+                <answer>33.7</answer>
+              </var_set>
+              <var_set ident="bd5443421579575c988dfbe2b4dd0f0d">
+                <var name="a">1.9485</var>
+                <var name="b">12.5</var>
+                <answer>14.4</answer>
+              </var_set>
+              <var_set ident="a327db0cdfe7bd1c2f7318436c23ab1b">
+                <var name="a">2.5745</var>
+                <var name="b">37.1</var>
+                <answer>39.7</answer>
+              </var_set>
+              <var_set ident="587cba3a749aaaa585c412bcfd6ee51d">
+                <var name="a">9.3010</var>
+                <var name="b">19.7</var>
+                <answer>29.0</answer>
+              </var_set>
+              <var_set ident="2b6e82a03dfd9a4dc350efa5329b472e">
+                <var name="a">0.0881</var>
+                <var name="b">19.6</var>
+                <answer>19.7</answer>
+              </var_set>
+              <var_set ident="bc099f69ff882467d5dbf99cdc461ef6">
+                <var name="a">3.1222</var>
+                <var name="b">11.0</var>
+                <answer>14.1</answer>
+              </var_set>
+              <var_set ident="25503cd9d615c5b99e2ff35338293394">
+                <var name="a">4.4587</var>
+                <var name="b">20.5</var>
+                <answer>25.0</answer>
+              </var_set>
+              <var_set ident="258e774f41ea05ae63391f27695d53c7">
+                <var name="a">0.0227</var>
+                <var name="b">14.5</var>
+                <answer>14.5</answer>
+              </var_set>
+              <var_set ident="7ecaf850030aa5ce6b236ba39c40bb04">
+                <var name="a">8.9367</var>
+                <var name="b">36.9</var>
+                <answer>45.8</answer>
+              </var_set>
+              <var_set ident="8d6feb260155e8b566ff2194abac09ab">
+                <var name="a">2.3324</var>
+                <var name="b">18.1</var>
+                <answer>20.4</answer>
+              </var_set>
+              <var_set ident="f57a77a649cd3c633e76b4fdbe7e1793">
+                <var name="a">9.2535</var>
+                <var name="b">27.4</var>
+                <answer>36.7</answer>
+              </var_set>
+              <var_set ident="1491475873cdd69f5ebb4399d59af6ab">
+                <var name="a">4.7397</var>
+                <var name="b">18.8</var>
+                <answer>23.5</answer>
+              </var_set>
+              <var_set ident="1437f84e3173ed1bb4f81fd255035f78">
+                <var name="a">1.8833</var>
+                <var name="b">36.1</var>
+                <answer>38.0</answer>
+              </var_set>
+              <var_set ident="2a849bebf4f5376b8c906556b03bd5aa">
+                <var name="a">0.8355</var>
+                <var name="b">17.4</var>
+                <answer>18.2</answer>
+              </var_set>
+              <var_set ident="09684cecedfee990bcff33249dcf7724">
+                <var name="a">8.7286</var>
+                <var name="b">19.5</var>
+                <answer>28.2</answer>
+              </var_set>
+              <var_set ident="5d2bfa3dbbd930ea4f79fa33a6d11f5d">
+                <var name="a">8.9797</var>
+                <var name="b">12.7</var>
+                <answer>21.7</answer>
+              </var_set>
+              <var_set ident="7152b2caa66648dc8498693d05bc5652">
+                <var name="a">1.1553</var>
+                <var name="b">21.2</var>
+                <answer>22.4</answer>
+              </var_set>
+              <var_set ident="c87568cf6902cec18d404519ae82d303">
+                <var name="a">4.2290</var>
+                <var name="b">37.3</var>
+                <answer>41.5</answer>
+              </var_set>
+              <var_set ident="0a7d486e06793a1e9d9b57ac12837d39">
+                <var name="a">5.8706</var>
+                <var name="b">33.1</var>
+                <answer>39.0</answer>
+              </var_set>
+              <var_set ident="2ea8fb463a3db35303b683ef037aae9e">
+                <var name="a">4.9214</var>
+                <var name="b">39.7</var>
+                <answer>44.6</answer>
+              </var_set>
+              <var_set ident="7d0828ac286d600e4e646d4c2f5d0869">
+                <var name="a">7.5144</var>
+                <var name="b">24.6</var>
+                <answer>32.1</answer>
+              </var_set>
+              <var_set ident="a4f7799f27b39e26c8a16d9fe6e31bc0">
+                <var name="a">7.9807</var>
+                <var name="b">11.6</var>
+                <answer>19.6</answer>
+              </var_set>
+              <var_set ident="d2f5ba2e547922ef6c6b8c1485a7118f">
+                <var name="a">8.9616</var>
+                <var name="b">23.0</var>
+                <answer>32.0</answer>
+              </var_set>
+              <var_set ident="c3d59fc38e8c48b4139edb18b932bd82">
+                <var name="a">4.1325</var>
+                <var name="b">36.1</var>
+                <answer>40.2</answer>
+              </var_set>
+              <var_set ident="290f681c8ed0be93a28356b7456b31b8">
+                <var name="a">9.8945</var>
+                <var name="b">18.9</var>
+                <answer>28.8</answer>
+              </var_set>
+              <var_set ident="4e192a77f808dd19409692dea05b71b8">
+                <var name="a">6.6914</var>
+                <var name="b">36.0</var>
+                <answer>42.7</answer>
+              </var_set>
+              <var_set ident="9d1efffc01e0b3dcc4cfe32ac14496a7">
+                <var name="a">3.2045</var>
+                <var name="b">11.1</var>
+                <answer>14.3</answer>
+              </var_set>
+              <var_set ident="37d86980ffddb4e02622ddb147df3700">
+                <var name="a">1.8055</var>
+                <var name="b">27.6</var>
+                <answer>29.4</answer>
+              </var_set>
+              <var_set ident="3538e1785f3c9d9e3a0b5a79ac76d96a">
+                <var name="a">0.1288</var>
+                <var name="b">26.4</var>
+                <answer>26.5</answer>
+              </var_set>
+              <var_set ident="d237dbeb50e8362dec230a77a140be41">
+                <var name="a">1.7354</var>
+                <var name="b">26.2</var>
+                <answer>27.9</answer>
+              </var_set>
+              <var_set ident="3d51b78c2cb256620014f555fc8817a3">
+                <var name="a">1.9083</var>
+                <var name="b">32.9</var>
+                <answer>34.8</answer>
+              </var_set>
+              <var_set ident="3822e3a8a581a3ab0c2c56aba5e974b6">
+                <var name="a">3.2679</var>
+                <var name="b">24.8</var>
+                <answer>28.1</answer>
+              </var_set>
+              <var_set ident="0127927e6c3451520d96b948d9998244">
+                <var name="a">7.1030</var>
+                <var name="b">31.9</var>
+                <answer>39.0</answer>
+              </var_set>
+              <var_set ident="af0d6f024047e7c47693c980bcc8557a">
+                <var name="a">9.6846</var>
+                <var name="b">39.2</var>
+                <answer>48.9</answer>
+              </var_set>
+              <var_set ident="5889be64cb8eda08f1d6d87ede6f0946">
+                <var name="a">5.1660</var>
+                <var name="b">31.7</var>
+                <answer>36.9</answer>
+              </var_set>
+              <var_set ident="23f232c4111d4b8fd14afb4f042f8293">
+                <var name="a">7.8301</var>
+                <var name="b">17.6</var>
+                <answer>25.4</answer>
+              </var_set>
+              <var_set ident="60e1c3ed668409651491af9b90ea0a55">
+                <var name="a">1.0888</var>
+                <var name="b">13.0</var>
+                <answer>14.1</answer>
+              </var_set>
+              <var_set ident="2f02062c7aed8032ac0bc4d9c0ab5b7e">
+                <var name="a">1.2751</var>
+                <var name="b">35.8</var>
+                <answer>37.1</answer>
+              </var_set>
+              <var_set ident="835d86b52ab48c871cfbf37bb8375a0c">
+                <var name="a">6.6831</var>
+                <var name="b">38.5</var>
+                <answer>45.2</answer>
+              </var_set>
+              <var_set ident="012562c82b3bbb4aac0ebd40a75a859e">
+                <var name="a">9.0860</var>
+                <var name="b">36.6</var>
+                <answer>45.7</answer>
+              </var_set>
+              <var_set ident="4a0b67ed01da723a275b554978dfef88">
+                <var name="a">8.9321</var>
+                <var name="b">31.5</var>
+                <answer>40.4</answer>
+              </var_set>
+              <var_set ident="240cb5bcf3ef0e4f8d3d28c2e246d21b">
+                <var name="a">9.1105</var>
+                <var name="b">35.1</var>
+                <answer>44.2</answer>
+              </var_set>
+              <var_set ident="c67a24b092fd850d63538821ab58b900">
+                <var name="a">1.8110</var>
+                <var name="b">14.3</var>
+                <answer>16.1</answer>
+              </var_set>
+              <var_set ident="c4e86e2d013d3d35487e13ba24d3201e">
+                <var name="a">8.7148</var>
+                <var name="b">36.0</var>
+                <answer>44.7</answer>
+              </var_set>
+              <var_set ident="8133beb0c0d06a33c89fb98ed246f67d">
+                <var name="a">9.7325</var>
+                <var name="b">20.6</var>
+                <answer>30.3</answer>
+              </var_set>
+              <var_set ident="25ec61369bd4b0d6300216b61113cb76">
+                <var name="a">7.2700</var>
+                <var name="b">19.1</var>
+                <answer>26.4</answer>
+              </var_set>
+              <var_set ident="5b1e69e9f91d6f07956dcc6f34d2dcb7">
+                <var name="a">1.9802</var>
+                <var name="b">14.5</var>
+                <answer>16.5</answer>
+              </var_set>
+              <var_set ident="055978676371fbe85219b886909c303f">
+                <var name="a">4.8773</var>
+                <var name="b">37.5</var>
+                <answer>42.4</answer>
+              </var_set>
+              <var_set ident="e66dff55de0ddc09581891f66f21c9bf">
+                <var name="a">8.1376</var>
+                <var name="b">27.7</var>
+                <answer>35.8</answer>
+              </var_set>
+              <var_set ident="e66515c9bb0fc878a6ccddb3199789a6">
+                <var name="a">0.8960</var>
+                <var name="b">31.0</var>
+                <answer>31.9</answer>
+              </var_set>
+              <var_set ident="c75ca8cae27574d0c4d8f127a796e930">
+                <var name="a">4.2275</var>
+                <var name="b">37.7</var>
+                <answer>41.9</answer>
+              </var_set>
+              <var_set ident="e55ee9a0f5a291c156eeef009da6c81b">
+                <var name="a">4.6503</var>
+                <var name="b">32.0</var>
+                <answer>36.7</answer>
+              </var_set>
+              <var_set ident="e0627dd3e854d6d365a161e0eb39fe12">
+                <var name="a">1.0020</var>
+                <var name="b">40.0</var>
+                <answer>41.0</answer>
+              </var_set>
+              <var_set ident="4d1b4500e1b26722d9d9cadfc8ea3500">
+                <var name="a">8.4926</var>
+                <var name="b">15.0</var>
+                <answer>23.5</answer>
+              </var_set>
+              <var_set ident="403a32e0c0a45a38c2a71da0a656987a">
+                <var name="a">2.7696</var>
+                <var name="b">32.0</var>
+                <answer>34.8</answer>
+              </var_set>
+              <var_set ident="a3e6d3608aa1bcfc6b2040363960cdd7">
+                <var name="a">4.6629</var>
+                <var name="b">11.8</var>
+                <answer>16.5</answer>
+              </var_set>
+              <var_set ident="5da9fe7037d47be3f553b13659e253d6">
+                <var name="a">3.8187</var>
+                <var name="b">32.9</var>
+                <answer>36.7</answer>
+              </var_set>
+              <var_set ident="74f9c260b500d10c076d732d03de542c">
+                <var name="a">4.9053</var>
+                <var name="b">17.4</var>
+                <answer>22.3</answer>
+              </var_set>
+              <var_set ident="c59ea0202dd7d5a30a01da73b30d09df">
+                <var name="a">3.3662</var>
+                <var name="b">14.0</var>
+                <answer>17.4</answer>
+              </var_set>
+              <var_set ident="4a38a7438e7f495598672057ef1fa8e8">
+                <var name="a">4.8113</var>
+                <var name="b">36.4</var>
+                <answer>41.2</answer>
+              </var_set>
+              <var_set ident="5971e8d308ff20960245ef58a0388c13">
+                <var name="a">3.4188</var>
+                <var name="b">29.9</var>
+                <answer>33.3</answer>
+              </var_set>
+              <var_set ident="09af598ad84bd8e91ca351b1ffb70c6c">
+                <var name="a">1.1528</var>
+                <var name="b">12.2</var>
+                <answer>13.4</answer>
+              </var_set>
+              <var_set ident="17210944455296b85ec8d5ff60cc1484">
+                <var name="a">4.4601</var>
+                <var name="b">13.8</var>
+                <answer>18.3</answer>
+              </var_set>
+              <var_set ident="2a8ee910b26f71fc50651dadbd5c159a">
+                <var name="a">8.3845</var>
+                <var name="b">26.4</var>
+                <answer>34.8</answer>
+              </var_set>
+              <var_set ident="cb4012a101aaee12016159425cff1c24">
+                <var name="a">5.5636</var>
+                <var name="b">24.3</var>
+                <answer>29.9</answer>
+              </var_set>
+              <var_set ident="994ee544af64e6d9c6f25208effa1eed">
+                <var name="a">6.9830</var>
+                <var name="b">15.1</var>
+                <answer>22.1</answer>
+              </var_set>
+              <var_set ident="50fc70f149ed324a3066e77c15aa732d">
+                <var name="a">4.4553</var>
+                <var name="b">34.1</var>
+                <answer>38.6</answer>
+              </var_set>
+              <var_set ident="fca566a06467ccae189a7a2746758831">
+                <var name="a">3.4215</var>
+                <var name="b">22.4</var>
+                <answer>25.8</answer>
+              </var_set>
+              <var_set ident="01c84ffd9cf8c31f3dc5316269327967">
+                <var name="a">9.3503</var>
+                <var name="b">19.3</var>
+                <answer>28.7</answer>
+              </var_set>
+              <var_set ident="c70355be2bf949aca250b158070c9932">
+                <var name="a">3.3348</var>
+                <var name="b">24.5</var>
+                <answer>27.8</answer>
+              </var_set>
+              <var_set ident="7851db40201bd989269ad742b4e2e7ec">
+                <var name="a">0.6589</var>
+                <var name="b">30.5</var>
+                <answer>31.2</answer>
+              </var_set>
+              <var_set ident="405b5673b692d49fc881f62c913b8eb0">
+                <var name="a">8.3657</var>
+                <var name="b">17.8</var>
+                <answer>26.2</answer>
+              </var_set>
+              <var_set ident="2491fe5f093612b8c1841add056630a5">
+                <var name="a">9.6587</var>
+                <var name="b">39.0</var>
+                <answer>48.7</answer>
+              </var_set>
+              <var_set ident="bf3f08e52699492c2172747c6f7dd9d0">
+                <var name="a">1.8081</var>
+                <var name="b">22.0</var>
+                <answer>23.8</answer>
+              </var_set>
+              <var_set ident="46d5a2fc1133212b867067d5545cd69f">
+                <var name="a">6.0473</var>
+                <var name="b">12.2</var>
+                <answer>18.2</answer>
+              </var_set>
+              <var_set ident="6a53cc5e65f15a5d3bad43845d48ca07">
+                <var name="a">6.8016</var>
+                <var name="b">16.9</var>
+                <answer>23.7</answer>
+              </var_set>
+              <var_set ident="e67a53c5f830d25540a090a3b373daf1">
+                <var name="a">6.7062</var>
+                <var name="b">16.8</var>
+                <answer>23.5</answer>
+              </var_set>
+              <var_set ident="083ebda3975e4a8ac16c69295640355d">
+                <var name="a">3.6579</var>
+                <var name="b">32.3</var>
+                <answer>36.0</answer>
+              </var_set>
+              <var_set ident="4792cf6c4efcb3c1131831e4c55d8662">
+                <var name="a">2.8976</var>
+                <var name="b">17.5</var>
+                <answer>20.4</answer>
+              </var_set>
+              <var_set ident="8e09a9b71afcbb6e902ba2b7034586f2">
+                <var name="a">9.8590</var>
+                <var name="b">31.9</var>
+                <answer>41.8</answer>
+              </var_set>
+              <var_set ident="e78381d6b10e2f4e92d2b5bf64e90bd5">
+                <var name="a">4.9903</var>
+                <var name="b">27.9</var>
+                <answer>32.9</answer>
+              </var_set>
+              <var_set ident="8209af0550a5c870daf08245d7d29a28">
+                <var name="a">3.0309</var>
+                <var name="b">27.7</var>
+                <answer>30.7</answer>
+              </var_set>
+              <var_set ident="64d5fef36d98d7f4f4bf6890232d46c6">
+                <var name="a">4.1477</var>
+                <var name="b">19.8</var>
+                <answer>23.9</answer>
+              </var_set>
+              <var_set ident="b8879b0eab8ba4548a94232f99772670">
+                <var name="a">6.8254</var>
+                <var name="b">37.0</var>
+                <answer>43.8</answer>
+              </var_set>
+              <var_set ident="fd230fe6ca69fb249cbdf76673065c79">
+                <var name="a">2.0105</var>
+                <var name="b">28.4</var>
+                <answer>30.4</answer>
+              </var_set>
+              <var_set ident="e0491536cc3f416453a6523d71914aba">
+                <var name="a">5.2050</var>
+                <var name="b">19.2</var>
+                <answer>24.4</answer>
+              </var_set>
+              <var_set ident="05e4147c6a6f6d685e9aeefe852f243f">
+                <var name="a">8.6660</var>
+                <var name="b">13.5</var>
+                <answer>22.2</answer>
+              </var_set>
+              <var_set ident="001a45bfec6da06603dbe86a1b16a9f9">
+                <var name="a">8.8178</var>
+                <var name="b">18.1</var>
+                <answer>26.9</answer>
+              </var_set>
+              <var_set ident="fb28c4b6bf1f3a11b33d1540eaf112d8">
+                <var name="a">0.5740</var>
+                <var name="b">13.8</var>
+                <answer>14.4</answer>
+              </var_set>
+              <var_set ident="41a015b9ab4335ab8adffd037c141be9">
+                <var name="a">0.5284</var>
+                <var name="b">30.9</var>
+                <answer>31.4</answer>
+              </var_set>
+              <var_set ident="ddd2aced5de0071f1e289d2edb8ab858">
+                <var name="a">5.9298</var>
+                <var name="b">11.5</var>
+                <answer>17.4</answer>
+              </var_set>
+              <var_set ident="f4ed121f4dedb33ded3909aac8e7855e">
+                <var name="a">6.9782</var>
+                <var name="b">33.5</var>
+                <answer>40.5</answer>
+              </var_set>
+              <var_set ident="a01cd2c0d5468f3f9e36757f6adfec4a">
+                <var name="a">4.4598</var>
+                <var name="b">28.5</var>
+                <answer>33.0</answer>
+              </var_set>
+              <var_set ident="4d61d3bb194c9951d52e9aab88e1834b">
+                <var name="a">0.2435</var>
+                <var name="b">20.5</var>
+                <answer>20.7</answer>
+              </var_set>
+              <var_set ident="8d176d97cfad2f79267402b306a6d851">
+                <var name="a">1.0127</var>
+                <var name="b">38.6</var>
+                <answer>39.6</answer>
+              </var_set>
+              <var_set ident="80db55289182d447962a7f9df872d5e5">
+                <var name="a">1.5044</var>
+                <var name="b">26.0</var>
+                <answer>27.5</answer>
+              </var_set>
+              <var_set ident="abdda97c38b238762c44f689dbe413a1">
+                <var name="a">0.1078</var>
+                <var name="b">33.1</var>
+                <answer>33.2</answer>
+              </var_set>
+              <var_set ident="50375c852e17d2cba5844d503517e313">
+                <var name="a">3.7813</var>
+                <var name="b">37.6</var>
+                <answer>41.4</answer>
+              </var_set>
+              <var_set ident="3ab8b9e1f9bbda5a82b5d3641c148476">
+                <var name="a">6.3333</var>
+                <var name="b">36.6</var>
+                <answer>42.9</answer>
+              </var_set>
+              <var_set ident="a9151e2b5a080b036721ab8bc026a33a">
+                <var name="a">0.2702</var>
+                <var name="b">36.7</var>
+                <answer>37.0</answer>
+              </var_set>
+              <var_set ident="facef1017ec17827aa3910aca6fbbdcb">
+                <var name="a">0.3835</var>
+                <var name="b">37.2</var>
+                <answer>37.6</answer>
+              </var_set>
+              <var_set ident="e9275a8f0066be2bb30d475190b7ceb5">
+                <var name="a">0.2943</var>
+                <var name="b">33.3</var>
+                <answer>33.6</answer>
+              </var_set>
+              <var_set ident="6a3995f367604d7e7468ebd5bb4094e4">
+                <var name="a">2.6457</var>
+                <var name="b">33.6</var>
+                <answer>36.2</answer>
+              </var_set>
+              <var_set ident="e8df63774ca80e731511e861c7623e50">
+                <var name="a">2.1920</var>
+                <var name="b">28.5</var>
+                <answer>30.7</answer>
+              </var_set>
+              <var_set ident="a39b7f7ccf6811e38c38b2627a3de127">
+                <var name="a">4.9570</var>
+                <var name="b">20.0</var>
+                <answer>25.0</answer>
+              </var_set>
+              <var_set ident="36c0312b56ddcc07980bae0984186b11">
+                <var name="a">5.4937</var>
+                <var name="b">31.7</var>
+                <answer>37.2</answer>
+              </var_set>
+              <var_set ident="3437b47bea1e7e14f8c155144a4bd3cc">
+                <var name="a">9.2470</var>
+                <var name="b">29.4</var>
+                <answer>38.6</answer>
+              </var_set>
+            </var_sets>
+          </calculated>
+        </itemproc_extension>
+      </item>
+    </section>
+  </assessment>
+</questestinterop>

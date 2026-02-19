@@ -1,0 +1,199 @@
+<?xml version="1.0"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/xsd/ims_qtiasiv1p2p1.xsd">
+  <assessment ident="gee1c42187f9d2fe5a42bbf4e1836dd76" title="MA7: Gearbox, Part 2" external_assignment_id="993499">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>cc_maxattempts</fieldlabel>
+        <fieldentry>unlimited</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <section ident="root_section">
+      <item ident="abeb91e8ba2179a9b606cba00a91ae22" title="Machine diagram">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>file_upload_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>20.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry/>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>7fbaeb015c6c43d92a74d9414fc87a6b</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>calculator_type</fieldlabel>
+              <fieldentry>none</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation allowed_types="png, bmp, jpg, jpeg" files_count="1">
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;Create a machine diagram that represents your gearbox. You should make it similar to how they are made in the lecture video: a circle that represents the machine with arrows going into or out of the machine to represent work and heat. Draw the arrows to scale, and specify the scale on the diagram (for example 1 inch long arrow = 100 kW). You can create the image with pen and paper and take a picture of it, or create an image in Paint, Microsoft Word, PowerPoint, or something else. Put your name in the lower left hand corner of the image, and upload it here.&lt;/p&gt;</mattext>
+          </material>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+        </resprocessing>
+      </item>
+      <item ident="de38ef5dd54123a8f2222ce72d43c9f9" title="">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>essay_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>20.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry/>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>8ebfed6b002b2c35be0e25cd227085f1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>calculator_type</fieldlabel>
+              <fieldentry>none</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>grading_notes</fieldlabel>
+              <fieldentry>Because it is a machine that operates in a cycle, the state of the machine must always restart once a full cycle is complete. Because energy is a function of state, and the state at the start and end of a cycle are the same, there can be no change in energy. Or, the student could say that it is operating at steady-state which means that the energy that comes in is balanced by what goes out.</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;One of the steps to completing this problem is to recognize that the total rate of input energy must equal to the total rate at which energy leaves the machine. Why? Which Law of Thermodynamics requires this?&lt;/p&gt;</mattext>
+          </material>
+          <response_str ident="response1" rcardinality="Single" rce="Yes" word_count="Yes" spell_check="Yes" word_limit_max="200" word_limit_enabled="Yes">
+            <render_fib>
+              <response_label ident="answer1" rshuffle="No"/>
+            </render_fib>
+          </response_str>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <other/>
+            </conditionvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="4689d39585d1723bb42baacfb36e3285" title="">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>essay_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>20.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry/>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>16fc2273dd764b648fe49313c5dc9e46</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>calculator_type</fieldlabel>
+              <fieldentry>none</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>grading_notes</fieldlabel>
+              <fieldentry>The metric of goodness is the ratio of what you want divided by what you pay for. In this case, what you want is the output power, and what you pay for is the input power.</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;For this machine the &lt;em&gt;metric of goodness&lt;/em&gt; is the efficiency and was computed by taking the ratio of the output power and by the input power. Why should the metric of goodness for this machine be computed in that way, and not some other way? For example, why would you not compute it by taking the ratio of the output power and the rate of heat radiation, or the ratio of the rate of heat radiation and the input power?&lt;/p&gt;</mattext>
+          </material>
+          <response_str ident="response1" rcardinality="Single" rce="Yes" word_count="Yes" spell_check="Yes" word_limit_max="200" word_limit_enabled="Yes">
+            <render_fib>
+              <response_label ident="answer1" rshuffle="No"/>
+            </render_fib>
+          </response_str>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <other/>
+            </conditionvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="7717c01af6263a8aa3acdbe846dda60c" title="">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>essay_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>20.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry/>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>4814f069b26ee1985549eb239b111c23</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>calculator_type</fieldlabel>
+              <fieldentry>none</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>grading_notes</fieldlabel>
+              <fieldentry>Some of the energy input goes into warming up the device and bringing it up to its operating state. The 2nd Law forbids 100% efficient machines.</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;When the gearbox is initially started we know that even if the device is in thermal equilibrium with the environment, T=T&lt;sub&gt;0&lt;/sub&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;, that not all of the input power is delivered to the output, why is that? Which law of thermodynamics is relevant here and why? If not all of the input energy is delivered to the output, where does it go?&lt;/p&gt;</mattext>
+          </material>
+          <response_str ident="response1" rcardinality="Single" rce="Yes" word_count="Yes" spell_check="Yes" word_limit_max="200" word_limit_enabled="Yes">
+            <render_fib>
+              <response_label ident="answer1" rshuffle="No"/>
+            </render_fib>
+          </response_str>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <other/>
+            </conditionvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+    </section>
+  </assessment>
+</questestinterop>

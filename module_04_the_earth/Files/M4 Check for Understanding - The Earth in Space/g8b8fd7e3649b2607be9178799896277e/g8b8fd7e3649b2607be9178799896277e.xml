@@ -1,0 +1,948 @@
+<?xml version="1.0"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/xsd/ims_qtiasiv1p2p1.xsd">
+  <assessment ident="g8b8fd7e3649b2607be9178799896277e" title="M4: Check for Understanding" external_assignment_id="875340">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>cc_maxattempts</fieldlabel>
+        <fieldentry>unlimited</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <section ident="root_section">
+      <item ident="514c2568b67a835a590eb56feebfec8f" title="">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>numerical_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>1</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>5a8263b6d8700cf7c9d6fb80a1547e45</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>calculator_type</fieldlabel>
+              <fieldentry>none</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;Approximately how much time, in years, does it take for the Earth to undergo one full precession?&lt;/p&gt;</mattext>
+          </material>
+          <response_str ident="response1" rcardinality="Single">
+            <render_fib fibtype="Decimal">
+              <response_label ident="answer1"/>
+            </render_fib>
+          </response_str>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <or>
+                <varequal respident="response1">26000.0</varequal>
+                <and>
+                  <vargte respident="response1">26000.0</vargte>
+                  <varlte respident="response1">26000.0</varlte>
+                </and>
+              </or>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="bcc78effb301f3cd7baff2eea7e93bda" title="">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>calculated_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry/>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>e69281a21fc803d3b70b5cc3676534fb</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>calculator_type</fieldlabel>
+              <fieldentry>basic</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;What is the latitude, in degrees South, of an observer who measures the Sun's altitude of `d`&#xB0; above the northern horizon at noon on the summer solstice?&lt;/p&gt;</mattext>
+          </material>
+          <response_str ident="response1" rcardinality="Single">
+            <render_fib fibtype="Decimal">
+              <response_label ident="answer1"/>
+            </render_fib>
+          </response_str>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition title="correct">
+            <conditionvar>
+              <other/>
+            </conditionvar>
+            <setvar varname="SCORE" action="Set">100</setvar>
+          </respcondition>
+          <respcondition title="incorrect">
+            <conditionvar>
+              <not>
+                <other/>
+              </not>
+            </conditionvar>
+            <setvar varname="SCORE" action="Set">0</setvar>
+          </respcondition>
+        </resprocessing>
+        <itemproc_extension>
+          <calculated>
+            <answer_tolerance margin_type="absolute">0</answer_tolerance>
+            <formulas decimal_places="1" scientific_notation="false">
+              <formula>90.0-d-23.5</formula>
+            </formulas>
+            <vars>
+              <var name="d" scale="1">
+                <min>0.0</min>
+                <max>45.0</max>
+              </var>
+            </vars>
+            <var_sets>
+              <var_set ident="9ea7c64aaea5c1af62f1a2dc5b98733b">
+                <var name="d">18.2</var>
+                <answer>48.3</answer>
+              </var_set>
+              <var_set ident="e60d8347fe427625c8b20914a3ce8982">
+                <var name="d">31.6</var>
+                <answer>34.9</answer>
+              </var_set>
+              <var_set ident="4ebc253d70000010c5947b10a1dc4508">
+                <var name="d">30.6</var>
+                <answer>35.9</answer>
+              </var_set>
+              <var_set ident="0180cc3cfca2d4767eee94bf773bf43b">
+                <var name="d">33.9</var>
+                <answer>32.6</answer>
+              </var_set>
+              <var_set ident="13ecdfdb4ef0776120a7af7e4509f3bc">
+                <var name="d">10.1</var>
+                <answer>56.4</answer>
+              </var_set>
+              <var_set ident="fa53fd68005b26b6c946ca6b529851ea">
+                <var name="d">23.0</var>
+                <answer>43.5</answer>
+              </var_set>
+              <var_set ident="b7e75ce414a2e528cddd80ed896ad7b3">
+                <var name="d">22.6</var>
+                <answer>43.9</answer>
+              </var_set>
+              <var_set ident="408428f846896144b874d298a7e93d85">
+                <var name="d">17.0</var>
+                <answer>49.5</answer>
+              </var_set>
+              <var_set ident="d4920076c9c79b7b1abab59c4f7f8e78">
+                <var name="d">36.0</var>
+                <answer>30.5</answer>
+              </var_set>
+              <var_set ident="1c6252ade30dbadae8a8191f394fc940">
+                <var name="d">6.2</var>
+                <answer>60.3</answer>
+              </var_set>
+              <var_set ident="767ea044c266469f950e1d34c81106fe">
+                <var name="d">43.9</var>
+                <answer>22.6</answer>
+              </var_set>
+              <var_set ident="e99b5a0f9b09b0d32c35a9df9a55b570">
+                <var name="d">33.6</var>
+                <answer>32.9</answer>
+              </var_set>
+              <var_set ident="0abf1c7908563bbeff1adf892d6e1625">
+                <var name="d">11.4</var>
+                <answer>55.1</answer>
+              </var_set>
+              <var_set ident="a1d1e12ff2e0c830b52ee37c768dce2e">
+                <var name="d">20.0</var>
+                <answer>46.5</answer>
+              </var_set>
+              <var_set ident="150796fc72dd59bd803738f9d59396ca">
+                <var name="d">12.4</var>
+                <answer>54.1</answer>
+              </var_set>
+              <var_set ident="7f87ea61d03760300b11a57ccb658aea">
+                <var name="d">8.1</var>
+                <answer>58.4</answer>
+              </var_set>
+              <var_set ident="ea41c3c94298ec3740cd9b21f8d49a3f">
+                <var name="d">30.3</var>
+                <answer>36.2</answer>
+              </var_set>
+              <var_set ident="fe08926c631468981ae0961d4b24637b">
+                <var name="d">8.7</var>
+                <answer>57.8</answer>
+              </var_set>
+              <var_set ident="7b421c35370c380bf24451c4e9bd399a">
+                <var name="d">0.1</var>
+                <answer>66.4</answer>
+              </var_set>
+              <var_set ident="d43901486d9b32906c07262e0b07b39c">
+                <var name="d">2.5</var>
+                <answer>64.0</answer>
+              </var_set>
+              <var_set ident="c068ef35678f0e58583d91679b4960fe">
+                <var name="d">13.8</var>
+                <answer>52.7</answer>
+              </var_set>
+              <var_set ident="ed8f94bb2a8b420d2fe3f33e69353b55">
+                <var name="d">35.6</var>
+                <answer>30.9</answer>
+              </var_set>
+              <var_set ident="6446930f7c0a3facb9104b1c401e0aa3">
+                <var name="d">37.6</var>
+                <answer>28.9</answer>
+              </var_set>
+              <var_set ident="687940f1d15bc08f63ee263145c82946">
+                <var name="d">9.8</var>
+                <answer>56.7</answer>
+              </var_set>
+              <var_set ident="bc73a0b596bcd6d65eaf85acb89171d2">
+                <var name="d">14.0</var>
+                <answer>52.5</answer>
+              </var_set>
+              <var_set ident="69c1c793088bb5df2649325ab3a74288">
+                <var name="d">6.4</var>
+                <answer>60.1</answer>
+              </var_set>
+              <var_set ident="a050484b6a86dd5ec00c0547044f70a0">
+                <var name="d">31.4</var>
+                <answer>35.1</answer>
+              </var_set>
+              <var_set ident="5e83c377df26cbbcd39cf87247b71517">
+                <var name="d">13.2</var>
+                <answer>53.3</answer>
+              </var_set>
+              <var_set ident="6258a1bd65d4f771aeddc43f32792d81">
+                <var name="d">37.0</var>
+                <answer>29.5</answer>
+              </var_set>
+              <var_set ident="f1eec6f8e7c5878e6c5f05c3801b8a4d">
+                <var name="d">29.1</var>
+                <answer>37.4</answer>
+              </var_set>
+              <var_set ident="9ea5ec30f9051aa43bfbe4dc406d338c">
+                <var name="d">8.0</var>
+                <answer>58.5</answer>
+              </var_set>
+              <var_set ident="7dda0c4029a09fb1b329013908f9ba88">
+                <var name="d">2.9</var>
+                <answer>63.6</answer>
+              </var_set>
+              <var_set ident="dbe1dc1bcd3d4b8e6e5874609965c171">
+                <var name="d">29.2</var>
+                <answer>37.3</answer>
+              </var_set>
+              <var_set ident="ca392b1980f3838e9d05689b787a65ab">
+                <var name="d">43.7</var>
+                <answer>22.8</answer>
+              </var_set>
+              <var_set ident="8857f4d4e35eb731a4775b170d9d66ad">
+                <var name="d">41.4</var>
+                <answer>25.1</answer>
+              </var_set>
+              <var_set ident="de9fb85635ce1b34e9c47773b356e9c4">
+                <var name="d">38.6</var>
+                <answer>27.9</answer>
+              </var_set>
+              <var_set ident="7d2a44ded086089853e641631f7d6a31">
+                <var name="d">25.1</var>
+                <answer>41.4</answer>
+              </var_set>
+              <var_set ident="e74bc453a07d7deacdb46a2689368ea7">
+                <var name="d">24.7</var>
+                <answer>41.8</answer>
+              </var_set>
+              <var_set ident="646f10aeeaa9e3df3dfe3dc31f8afa46">
+                <var name="d">2.6</var>
+                <answer>63.9</answer>
+              </var_set>
+              <var_set ident="0860b6653738770b1f48ff9659e341b6">
+                <var name="d">8.6</var>
+                <answer>57.9</answer>
+              </var_set>
+              <var_set ident="9111e517b0dff9850e2f955c1e8b0054">
+                <var name="d">7.5</var>
+                <answer>59.0</answer>
+              </var_set>
+              <var_set ident="583968f6cf34042cf48471c54c52f3ff">
+                <var name="d">19.5</var>
+                <answer>47.0</answer>
+              </var_set>
+              <var_set ident="b88420ba04ab816f857c06190ec99987">
+                <var name="d">19.0</var>
+                <answer>47.5</answer>
+              </var_set>
+              <var_set ident="a87e028b86da96f4774fb085534d7dcc">
+                <var name="d">35.0</var>
+                <answer>31.5</answer>
+              </var_set>
+              <var_set ident="6f559eb2afa97194e8b019687e8db231">
+                <var name="d">36.5</var>
+                <answer>30.0</answer>
+              </var_set>
+              <var_set ident="425728b00f261642b306d82c15be15bd">
+                <var name="d">19.2</var>
+                <answer>47.3</answer>
+              </var_set>
+              <var_set ident="a2aeaa548536ee96721105644bcce44e">
+                <var name="d">44.8</var>
+                <answer>21.7</answer>
+              </var_set>
+              <var_set ident="8648c72a9539302102d076188ea81357">
+                <var name="d">36.6</var>
+                <answer>29.9</answer>
+              </var_set>
+              <var_set ident="e6f12d065024f9ba8aad92c75220b398">
+                <var name="d">35.9</var>
+                <answer>30.6</answer>
+              </var_set>
+              <var_set ident="c1ddf1e446393ee71ea2fa2e6962fd75">
+                <var name="d">1.3</var>
+                <answer>65.2</answer>
+              </var_set>
+              <var_set ident="30ae0c681c2e231e09428fd1ab9a1d2e">
+                <var name="d">24.2</var>
+                <answer>42.3</answer>
+              </var_set>
+              <var_set ident="f7a363af5db1e76bc20af46930cc2a57">
+                <var name="d">41.0</var>
+                <answer>25.5</answer>
+              </var_set>
+              <var_set ident="ec46a5e8b44f7e4d5f8dd0f3d80652ee">
+                <var name="d">30.8</var>
+                <answer>35.7</answer>
+              </var_set>
+              <var_set ident="f05bf7434a40bcbfb5a5009c01607e89">
+                <var name="d">21.1</var>
+                <answer>45.4</answer>
+              </var_set>
+              <var_set ident="513cde4b5f146efbf190f50b80a77c50">
+                <var name="d">25.2</var>
+                <answer>41.3</answer>
+              </var_set>
+              <var_set ident="c2ff12c14f8ded1316d1cb3b85d36328">
+                <var name="d">15.6</var>
+                <answer>50.9</answer>
+              </var_set>
+              <var_set ident="b1a5df96778d756911baf1835ac9cd9a">
+                <var name="d">43.0</var>
+                <answer>23.5</answer>
+              </var_set>
+              <var_set ident="22d79a37aa8ae6f8f3a9ff5d066b0450">
+                <var name="d">7.3</var>
+                <answer>59.2</answer>
+              </var_set>
+              <var_set ident="c2d291588ea36418a90e7e31ace34030">
+                <var name="d">42.2</var>
+                <answer>24.3</answer>
+              </var_set>
+              <var_set ident="f909930c9a600910fa6b83ca8cf4c5bc">
+                <var name="d">20.9</var>
+                <answer>45.6</answer>
+              </var_set>
+              <var_set ident="76be0c4b4d2c94175a0f148e6767f5c8">
+                <var name="d">36.7</var>
+                <answer>29.8</answer>
+              </var_set>
+              <var_set ident="6afda4745b29682d6167d9a93d62279a">
+                <var name="d">1.2</var>
+                <answer>65.3</answer>
+              </var_set>
+              <var_set ident="674d58e8c4c3470881342387843086e8">
+                <var name="d">37.7</var>
+                <answer>28.8</answer>
+              </var_set>
+              <var_set ident="cd94244afc4cde12f5da2b727f159529">
+                <var name="d">32.9</var>
+                <answer>33.6</answer>
+              </var_set>
+              <var_set ident="6fbb20c961dbfbdacee67b3904f6e1f7">
+                <var name="d">26.9</var>
+                <answer>39.6</answer>
+              </var_set>
+              <var_set ident="8528fc27b0b47b3b871cf79b87fd6c29">
+                <var name="d">9.1</var>
+                <answer>57.4</answer>
+              </var_set>
+              <var_set ident="368c09bcb26c50d1bc4d949969c0f113">
+                <var name="d">7.7</var>
+                <answer>58.8</answer>
+              </var_set>
+              <var_set ident="e800c0a6e204ad32fdc3127d8b12ca17">
+                <var name="d">34.4</var>
+                <answer>32.1</answer>
+              </var_set>
+              <var_set ident="f166d187cf474f326d5f7f4a68fab70a">
+                <var name="d">10.7</var>
+                <answer>55.8</answer>
+              </var_set>
+              <var_set ident="55309441cb151b97069bf7e0ad4c8b56">
+                <var name="d">12.8</var>
+                <answer>53.7</answer>
+              </var_set>
+              <var_set ident="f059a306872703eb2394a8bb82bf31f3">
+                <var name="d">9.9</var>
+                <answer>56.6</answer>
+              </var_set>
+              <var_set ident="b7c667fee8d4e9dcc7fb021e553c966a">
+                <var name="d">17.3</var>
+                <answer>49.2</answer>
+              </var_set>
+              <var_set ident="16dbd4184607d303ac486b1bc52647da">
+                <var name="d">32.8</var>
+                <answer>33.7</answer>
+              </var_set>
+              <var_set ident="6fa8baf17d0529be43483e30f3dce754">
+                <var name="d">30.5</var>
+                <answer>36.0</answer>
+              </var_set>
+              <var_set ident="7f5bbb80a2436f2a925c6c8424625c32">
+                <var name="d">19.3</var>
+                <answer>47.2</answer>
+              </var_set>
+              <var_set ident="49d6cabd5156b0c9d32a1415d6db4001">
+                <var name="d">18.3</var>
+                <answer>48.2</answer>
+              </var_set>
+              <var_set ident="b5f3ab3001c5d5df6b9f253e75f37729">
+                <var name="d">12.5</var>
+                <answer>54.0</answer>
+              </var_set>
+              <var_set ident="9dae607b2a3e09a17e39300a7fbd2f5d">
+                <var name="d">6.1</var>
+                <answer>60.4</answer>
+              </var_set>
+              <var_set ident="498e36d75f2e5cd82942a67c2cdfed13">
+                <var name="d">28.9</var>
+                <answer>37.6</answer>
+              </var_set>
+              <var_set ident="61a32752167212966785d0b387e965b0">
+                <var name="d">44.3</var>
+                <answer>22.2</answer>
+              </var_set>
+              <var_set ident="b0e420b960d5c28142fbf1193da03cb3">
+                <var name="d">43.2</var>
+                <answer>23.3</answer>
+              </var_set>
+              <var_set ident="35e31c5f5f723d0f96589870307c2dc5">
+                <var name="d">14.3</var>
+                <answer>52.2</answer>
+              </var_set>
+              <var_set ident="cb4942a60cc8b1b68ffe46b4a2c1d117">
+                <var name="d">32.7</var>
+                <answer>33.8</answer>
+              </var_set>
+              <var_set ident="029dd45d19b3aa711d9f0840d0f1ec18">
+                <var name="d">34.0</var>
+                <answer>32.5</answer>
+              </var_set>
+              <var_set ident="dea126ee34bbeb798a4297343d4cb211">
+                <var name="d">21.6</var>
+                <answer>44.9</answer>
+              </var_set>
+              <var_set ident="d41ca6bb1bee75bf7e0c9fba3be83113">
+                <var name="d">14.2</var>
+                <answer>52.3</answer>
+              </var_set>
+              <var_set ident="c0447bbd616281f4383236c5ffa1a4ae">
+                <var name="d">10.4</var>
+                <answer>56.1</answer>
+              </var_set>
+              <var_set ident="b23c35e1314a1374941068bbc7539cdb">
+                <var name="d">8.5</var>
+                <answer>58.0</answer>
+              </var_set>
+              <var_set ident="2c428197c2099093f35b59e1419ffddd">
+                <var name="d">27.6</var>
+                <answer>38.9</answer>
+              </var_set>
+              <var_set ident="fbf421a19a2ce393bb981f9834ca01a8">
+                <var name="d">32.1</var>
+                <answer>34.4</answer>
+              </var_set>
+              <var_set ident="737a926ea8dda5fbc372dbefc5a8288a">
+                <var name="d">16.9</var>
+                <answer>49.6</answer>
+              </var_set>
+              <var_set ident="af7a9df24bce5b8b82dade983b8a0fbf">
+                <var name="d">18.8</var>
+                <answer>47.7</answer>
+              </var_set>
+              <var_set ident="ce81f0820a09fc5de7b4acd87ac1f2da">
+                <var name="d">31.9</var>
+                <answer>34.6</answer>
+              </var_set>
+              <var_set ident="e5b1ada6f55068edcb19fc0c0f418721">
+                <var name="d">37.2</var>
+                <answer>29.3</answer>
+              </var_set>
+              <var_set ident="375def492d8effec3005a114fb84a7e4">
+                <var name="d">37.9</var>
+                <answer>28.6</answer>
+              </var_set>
+              <var_set ident="b256f758f58481a62fe59b09f82d9c45">
+                <var name="d">29.8</var>
+                <answer>36.7</answer>
+              </var_set>
+              <var_set ident="82c10a47f11aec9512aa3560fcad24e7">
+                <var name="d">30.2</var>
+                <answer>36.3</answer>
+              </var_set>
+              <var_set ident="a33f81fd6fe757314fb78dc08fda7758">
+                <var name="d">15.3</var>
+                <answer>51.2</answer>
+              </var_set>
+              <var_set ident="b3c4d869f9d4ceb011bd4062df59ed49">
+                <var name="d">41.1</var>
+                <answer>25.4</answer>
+              </var_set>
+              <var_set ident="2f2b4058e07edb332c94f02086206529">
+                <var name="d">14.8</var>
+                <answer>51.7</answer>
+              </var_set>
+              <var_set ident="21c0b9483afc7f71743e9875f8dfcd92">
+                <var name="d">2.7</var>
+                <answer>63.8</answer>
+              </var_set>
+              <var_set ident="9d1ac73d882f8d17259ea23c0b9d1055">
+                <var name="d">4.0</var>
+                <answer>62.5</answer>
+              </var_set>
+              <var_set ident="1f933d4b85beae434d0af160f71f58fe">
+                <var name="d">13.5</var>
+                <answer>53.0</answer>
+              </var_set>
+              <var_set ident="9d973bed1bd8d5c578bb21aa4a1ed634">
+                <var name="d">24.6</var>
+                <answer>41.9</answer>
+              </var_set>
+              <var_set ident="0ef82532aefa01ef112dbcac58cad980">
+                <var name="d">29.9</var>
+                <answer>36.6</answer>
+              </var_set>
+              <var_set ident="ab6cd3374c5677ae6d2138f4b185ef17">
+                <var name="d">38.5</var>
+                <answer>28.0</answer>
+              </var_set>
+              <var_set ident="45108dc21e9a7697fb8e0a0735258214">
+                <var name="d">18.5</var>
+                <answer>48.0</answer>
+              </var_set>
+              <var_set ident="050dba2ba92be219a8c923baf3ee4b8d">
+                <var name="d">10.6</var>
+                <answer>55.9</answer>
+              </var_set>
+              <var_set ident="9964a4731c546636f29d12e838fcd6e5">
+                <var name="d">15.4</var>
+                <answer>51.1</answer>
+              </var_set>
+              <var_set ident="fb456c36ff44f9482e1109efa802ebb5">
+                <var name="d">7.2</var>
+                <answer>59.3</answer>
+              </var_set>
+              <var_set ident="f8db80221617de8f3ee387aa1e7b14ca">
+                <var name="d">4.6</var>
+                <answer>61.9</answer>
+              </var_set>
+              <var_set ident="fa5cd1160ced3635aeb08196a5455da8">
+                <var name="d">11.7</var>
+                <answer>54.8</answer>
+              </var_set>
+              <var_set ident="402865b2deb80ea63b839db8fe208c05">
+                <var name="d">25.8</var>
+                <answer>40.7</answer>
+              </var_set>
+              <var_set ident="0ab5b641a12f644a386ee3ed3ac16f0f">
+                <var name="d">16.0</var>
+                <answer>50.5</answer>
+              </var_set>
+              <var_set ident="9d122722d5961d3a4f6535f52637d87d">
+                <var name="d">34.1</var>
+                <answer>32.4</answer>
+              </var_set>
+              <var_set ident="48a7e6a7de79164439b51f4a6f3f668f">
+                <var name="d">28.1</var>
+                <answer>38.4</answer>
+              </var_set>
+              <var_set ident="68cdcaf2986780585d2ade2bd6cefb27">
+                <var name="d">41.7</var>
+                <answer>24.8</answer>
+              </var_set>
+              <var_set ident="ca5a2938a9982f8713753357f8baf7b2">
+                <var name="d">38.0</var>
+                <answer>28.5</answer>
+              </var_set>
+              <var_set ident="fb54dc1e9bf683749ff667a753f63280">
+                <var name="d">11.8</var>
+                <answer>54.7</answer>
+              </var_set>
+              <var_set ident="7b934e8db247c42886622f9326f468e8">
+                <var name="d">5.0</var>
+                <answer>61.5</answer>
+              </var_set>
+              <var_set ident="74f61e41de3661ff5fc86e5529a9c7c8">
+                <var name="d">5.6</var>
+                <answer>60.9</answer>
+              </var_set>
+              <var_set ident="a2c2acaaea9bc89d1b1c95963543d90e">
+                <var name="d">42.0</var>
+                <answer>24.5</answer>
+              </var_set>
+              <var_set ident="1266d5c60f878f5c784a8f6fea643061">
+                <var name="d">31.0</var>
+                <answer>35.5</answer>
+              </var_set>
+              <var_set ident="9fa3916279dad0dd8e1d2f53c3acbcc1">
+                <var name="d">40.5</var>
+                <answer>26.0</answer>
+              </var_set>
+              <var_set ident="bb77c4bf8454489d7c49191344272d49">
+                <var name="d">35.5</var>
+                <answer>31.0</answer>
+              </var_set>
+              <var_set ident="dcb247a3991d4361519763cf08c6f9a2">
+                <var name="d">7.4</var>
+                <answer>59.1</answer>
+              </var_set>
+              <var_set ident="eb88de7e9973205d076bd4a482d4f319">
+                <var name="d">12.1</var>
+                <answer>54.4</answer>
+              </var_set>
+              <var_set ident="bafdf17d577818946a1a781484bf1156">
+                <var name="d">39.0</var>
+                <answer>27.5</answer>
+              </var_set>
+              <var_set ident="44327c8d05cbb2ae9c4a7f6c3038a201">
+                <var name="d">23.5</var>
+                <answer>43.0</answer>
+              </var_set>
+              <var_set ident="bc28877aedf815f0702103a4aa109e9d">
+                <var name="d">8.8</var>
+                <answer>57.7</answer>
+              </var_set>
+              <var_set ident="8d7e6dcc9b511fcca24262b229edb742">
+                <var name="d">17.8</var>
+                <answer>48.7</answer>
+              </var_set>
+              <var_set ident="a62927514ea8be41125083407706d67c">
+                <var name="d">44.9</var>
+                <answer>21.6</answer>
+              </var_set>
+              <var_set ident="c5e99080e4f7c42d11b487f0e1a5c32e">
+                <var name="d">0.2</var>
+                <answer>66.3</answer>
+              </var_set>
+              <var_set ident="4d0a69b524a4aeb7e68cd49789396f83">
+                <var name="d">17.6</var>
+                <answer>48.9</answer>
+              </var_set>
+              <var_set ident="936e5bba8968d2dd1a7e1a5b1bb19d38">
+                <var name="d">40.1</var>
+                <answer>26.4</answer>
+              </var_set>
+              <var_set ident="2ecc8285c9389679d775a3b1f6f89770">
+                <var name="d">13.6</var>
+                <answer>52.9</answer>
+              </var_set>
+              <var_set ident="8bf2625a7c387783b0195dc4867f056a">
+                <var name="d">19.7</var>
+                <answer>46.8</answer>
+              </var_set>
+              <var_set ident="c2479ac0056190f44ddc99f7ed57baf6">
+                <var name="d">6.0</var>
+                <answer>60.5</answer>
+              </var_set>
+              <var_set ident="ce36eaa76cc8084ca0f8d083f2b8ca63">
+                <var name="d">14.6</var>
+                <answer>51.9</answer>
+              </var_set>
+              <var_set ident="97983a1aa2f45d7b3a489af51d550070">
+                <var name="d">15.7</var>
+                <answer>50.8</answer>
+              </var_set>
+              <var_set ident="aaff03ab7f1b3b5a747da8bd269d8377">
+                <var name="d">27.1</var>
+                <answer>39.4</answer>
+              </var_set>
+              <var_set ident="f88f3325b2c3f05efec9aef5842d2843">
+                <var name="d">8.3</var>
+                <answer>58.2</answer>
+              </var_set>
+              <var_set ident="75f754983e7b0dea67b2124cd48f2109">
+                <var name="d">38.8</var>
+                <answer>27.7</answer>
+              </var_set>
+              <var_set ident="f9504112561ee5da8745a9db7aad4316">
+                <var name="d">41.5</var>
+                <answer>25.0</answer>
+              </var_set>
+              <var_set ident="5cf9b2b58a19e0ba01d138ec3c447ebc">
+                <var name="d">7.8</var>
+                <answer>58.7</answer>
+              </var_set>
+              <var_set ident="5836739fc658f53d7d0e756a93190bc0">
+                <var name="d">19.4</var>
+                <answer>47.1</answer>
+              </var_set>
+              <var_set ident="e4ad7bd1e1328dce6b5ac999181a32bb">
+                <var name="d">35.7</var>
+                <answer>30.8</answer>
+              </var_set>
+              <var_set ident="77a19fdc92e536878d29909d8a843e93">
+                <var name="d">13.3</var>
+                <answer>53.2</answer>
+              </var_set>
+              <var_set ident="674410e1ab771eeaa192bd3b687ed45d">
+                <var name="d">36.9</var>
+                <answer>29.6</answer>
+              </var_set>
+              <var_set ident="0fecc0d970b61703c2eb6fe68b221a19">
+                <var name="d">20.5</var>
+                <answer>46.0</answer>
+              </var_set>
+              <var_set ident="2914114081c7abab61553567743481f2">
+                <var name="d">39.5</var>
+                <answer>27.0</answer>
+              </var_set>
+              <var_set ident="20a05c68333ab5ef1aed17769cbf8395">
+                <var name="d">33.4</var>
+                <answer>33.1</answer>
+              </var_set>
+              <var_set ident="4a864e4d4b90998f987fe674c110f131">
+                <var name="d">13.0</var>
+                <answer>53.5</answer>
+              </var_set>
+              <var_set ident="e7fd585f1ef2978ec9819adcc4b712be">
+                <var name="d">33.8</var>
+                <answer>32.7</answer>
+              </var_set>
+              <var_set ident="225b0819d7f5b6e3ea5e3da7642ed968">
+                <var name="d">43.1</var>
+                <answer>23.4</answer>
+              </var_set>
+              <var_set ident="a659a6bec6660a475af38d962a661e4c">
+                <var name="d">6.6</var>
+                <answer>59.9</answer>
+              </var_set>
+              <var_set ident="27d992962fb83eec551b901e28b9e118">
+                <var name="d">17.2</var>
+                <answer>49.3</answer>
+              </var_set>
+              <var_set ident="840c54ef789fc65bb70eb71d5bccb662">
+                <var name="d">22.4</var>
+                <answer>44.1</answer>
+              </var_set>
+              <var_set ident="f11e615c45c4adc172d083854ef76300">
+                <var name="d">19.6</var>
+                <answer>46.9</answer>
+              </var_set>
+              <var_set ident="e8c979eb4dcd10130bdda252db4a3148">
+                <var name="d">24.4</var>
+                <answer>42.1</answer>
+              </var_set>
+              <var_set ident="6b35dd7a9b295b77985fe048e423e08d">
+                <var name="d">18.4</var>
+                <answer>48.1</answer>
+              </var_set>
+              <var_set ident="0209e3a4ea8579dcc5ef842707e4d9ae">
+                <var name="d">35.8</var>
+                <answer>30.7</answer>
+              </var_set>
+              <var_set ident="241142442707fff600647894f99d02cd">
+                <var name="d">3.9</var>
+                <answer>62.6</answer>
+              </var_set>
+              <var_set ident="0c760ff332888a3790b52be45f5fc6a8">
+                <var name="d">34.3</var>
+                <answer>32.2</answer>
+              </var_set>
+              <var_set ident="f70fe0ef7170d71996c188696568e66b">
+                <var name="d">29.4</var>
+                <answer>37.1</answer>
+              </var_set>
+              <var_set ident="7b643131c96351969584955e839fe66e">
+                <var name="d">42.1</var>
+                <answer>24.4</answer>
+              </var_set>
+              <var_set ident="eaa60713230799a8cf8527cb9eda8c23">
+                <var name="d">8.2</var>
+                <answer>58.3</answer>
+              </var_set>
+              <var_set ident="f90437d4f1c7a0ba1f47c849d7b7a482">
+                <var name="d">21.8</var>
+                <answer>44.7</answer>
+              </var_set>
+              <var_set ident="f5ae673877df0545c2d59f8c06c22a04">
+                <var name="d">20.1</var>
+                <answer>46.4</answer>
+              </var_set>
+              <var_set ident="26cb2a79a62c8c3e92de6ec85fbf3276">
+                <var name="d">5.5</var>
+                <answer>61.0</answer>
+              </var_set>
+              <var_set ident="0488956ce9ebaca9e5c053cc608616d8">
+                <var name="d">9.5</var>
+                <answer>57.0</answer>
+              </var_set>
+              <var_set ident="c1e022c8c8afbac113dd9b658fbd1375">
+                <var name="d">6.9</var>
+                <answer>59.6</answer>
+              </var_set>
+              <var_set ident="acc28a0b16ebcbc04afdf01722aa1de1">
+                <var name="d">21.3</var>
+                <answer>45.2</answer>
+              </var_set>
+              <var_set ident="4e2ad5400b718e4f543be3104146e183">
+                <var name="d">42.3</var>
+                <answer>24.2</answer>
+              </var_set>
+              <var_set ident="05d630842447c998722b173e6463cdd5">
+                <var name="d">20.7</var>
+                <answer>45.8</answer>
+              </var_set>
+              <var_set ident="fcb60483179eca74eab493db36253c97">
+                <var name="d">0.6</var>
+                <answer>65.9</answer>
+              </var_set>
+              <var_set ident="f910811d0f990567ba35a23ece66d7b6">
+                <var name="d">35.3</var>
+                <answer>31.2</answer>
+              </var_set>
+              <var_set ident="b6205ad28d21cdb551a251a226004ddb">
+                <var name="d">25.5</var>
+                <answer>41.0</answer>
+              </var_set>
+              <var_set ident="4288d9093a138875e6817882967a1cd7">
+                <var name="d">2.3</var>
+                <answer>64.2</answer>
+              </var_set>
+              <var_set ident="f37c318da6823fdd32af235d8c6c3c93">
+                <var name="d">24.1</var>
+                <answer>42.4</answer>
+              </var_set>
+              <var_set ident="1c1b4fd1da03f400b26193266425c3bf">
+                <var name="d">16.5</var>
+                <answer>50.0</answer>
+              </var_set>
+              <var_set ident="bb2f5d5060f0bd7c518b561f38eb6cfd">
+                <var name="d">37.4</var>
+                <answer>29.1</answer>
+              </var_set>
+              <var_set ident="8105686907cb35260583a866c70e477a">
+                <var name="d">19.9</var>
+                <answer>46.6</answer>
+              </var_set>
+              <var_set ident="e6ec3e6758ed2eb648a1872b4b44dcb0">
+                <var name="d">3.7</var>
+                <answer>62.8</answer>
+              </var_set>
+              <var_set ident="5039d34ea8268f6050185196ea95b677">
+                <var name="d">26.7</var>
+                <answer>39.8</answer>
+              </var_set>
+              <var_set ident="be3c36633ab7473ec76598add273df4b">
+                <var name="d">30.1</var>
+                <answer>36.4</answer>
+              </var_set>
+              <var_set ident="55fac5d68a82cd706d455b950b9d2bff">
+                <var name="d">7.1</var>
+                <answer>59.4</answer>
+              </var_set>
+              <var_set ident="5c7f14917be3da42bc5496a316f5e451">
+                <var name="d">16.3</var>
+                <answer>50.2</answer>
+              </var_set>
+              <var_set ident="b563876a67a1aa9fa39164953d47dc8c">
+                <var name="d">5.7</var>
+                <answer>60.8</answer>
+              </var_set>
+              <var_set ident="dccdfd6b06da6c9958c2ded1c38a0f23">
+                <var name="d">43.5</var>
+                <answer>23.0</answer>
+              </var_set>
+              <var_set ident="b39998f034a35d94ace297587eac417a">
+                <var name="d">13.4</var>
+                <answer>53.1</answer>
+              </var_set>
+              <var_set ident="8a015659816619e57909945a52088488">
+                <var name="d">42.7</var>
+                <answer>23.8</answer>
+              </var_set>
+              <var_set ident="b6542e47b2a8b0dba736649ddc087a2c">
+                <var name="d">43.3</var>
+                <answer>23.2</answer>
+              </var_set>
+              <var_set ident="2bfdce5efeab19dee9dd16aca14da44e">
+                <var name="d">5.9</var>
+                <answer>60.6</answer>
+              </var_set>
+              <var_set ident="234d5da9ce8289aeb6d39781448ca4fe">
+                <var name="d">40.0</var>
+                <answer>26.5</answer>
+              </var_set>
+              <var_set ident="f47b2184f756cd3ef9e0662b4fd53511">
+                <var name="d">11.5</var>
+                <answer>55.0</answer>
+              </var_set>
+              <var_set ident="e4984e3cc8ef09d7649b159aca130fbb">
+                <var name="d">28.3</var>
+                <answer>38.2</answer>
+              </var_set>
+              <var_set ident="478f08194f1c2d9eb671e040d98cc68d">
+                <var name="d">0.0</var>
+                <answer>66.5</answer>
+              </var_set>
+              <var_set ident="d79605891a718cc89193ef57024e63eb">
+                <var name="d">23.1</var>
+                <answer>43.4</answer>
+              </var_set>
+              <var_set ident="0edd720012715afad77c45fbfa53d514">
+                <var name="d">4.7</var>
+                <answer>61.8</answer>
+              </var_set>
+            </var_sets>
+          </calculated>
+        </itemproc_extension>
+      </item>
+      <section ident="g16adadee0daf89086963abd54db21397" title="Identify Moon Phase via Image">
+        <selection_ordering>
+          <selection>
+            <sourcebank_ref>g420b5d74a9eea8a2891ecd0d65499e9d</sourcebank_ref>
+            <selection_number>1</selection_number>
+            <selection_extension>
+              <points_per_item>1.0</points_per_item>
+            </selection_extension>
+          </selection>
+        </selection_ordering>
+      </section>
+    </section>
+  </assessment>
+</questestinterop>

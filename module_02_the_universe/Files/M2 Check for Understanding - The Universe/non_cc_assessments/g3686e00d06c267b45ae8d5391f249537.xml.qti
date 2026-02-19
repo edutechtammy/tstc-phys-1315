@@ -1,0 +1,1731 @@
+<?xml version="1.0"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/xsd/ims_qtiasiv1p2p1.xsd">
+  <objectbank ident="g3686e00d06c267b45ae8d5391f249537" canvas_item_bank="true">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>bank_title</fieldlabel>
+        <fieldentry>H-R Diagram Analysis</fieldentry>
+      </qtimetadatafield>
+      <qtimetadatafield>
+        <fieldlabel>bank_type</fieldlabel>
+        <fieldentry>Course</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <item ident="e3e404efacbde28af2b1b92decd12bdb" title="">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>a1774b07-4da1-41c9-97b5-055591e071cb,d6d78ac3-799a-42ee-a4c8-04e2e685c956,db1c1582-10b7-40cd-b91d-207ce9e4622b,99b22a2f-da74-4f71-badc-e417eb669e8c</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>6c5ebedf5d2e0f5f70bf0e2f785491d9</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Use the H-R diagram to determine the band of star that is an F2 spectral type with an absolute magnitude of -5?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="a1774b07-4da1-41c9-97b5-055591e071cb">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Super giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="d6d78ac3-799a-42ee-a4c8-04e2e685c956">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="db1c1582-10b7-40cd-b91d-207ce9e4622b">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Main sequence&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="99b22a2f-da74-4f71-badc-e417eb669e8c">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;White dwarf&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">a1774b07-4da1-41c9-97b5-055591e071cb</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="f9a19e9d0ae2a6de1c2ff795c5e442b8" title="">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>a1774b07-4da1-41c9-97b5-055591e071cb,d6d78ac3-799a-42ee-a4c8-04e2e685c956,db1c1582-10b7-40cd-b91d-207ce9e4622b,99b22a2f-da74-4f71-badc-e417eb669e8c</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>3898276533627e807c2aa54f66707afa</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Use the H-R diagram to determine the band of star that is an F2 spectral type with an absolute magnitude of +1?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="a1774b07-4da1-41c9-97b5-055591e071cb">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Super giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="d6d78ac3-799a-42ee-a4c8-04e2e685c956">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="db1c1582-10b7-40cd-b91d-207ce9e4622b">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Main sequence&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="99b22a2f-da74-4f71-badc-e417eb669e8c">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;White dwarf&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">d6d78ac3-799a-42ee-a4c8-04e2e685c956</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="45262d0fbe34dd716e5283000c8a0f81" title="">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>a1774b07-4da1-41c9-97b5-055591e071cb,d6d78ac3-799a-42ee-a4c8-04e2e685c956,db1c1582-10b7-40cd-b91d-207ce9e4622b,99b22a2f-da74-4f71-badc-e417eb669e8c</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>8f471b2ba6cc6e0b1911dfdeb9ee8e6d</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Use the H-R diagram to determine the band of star that is an F2 spectral type with an absolute magnitude of +4?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="a1774b07-4da1-41c9-97b5-055591e071cb">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Super giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="d6d78ac3-799a-42ee-a4c8-04e2e685c956">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="db1c1582-10b7-40cd-b91d-207ce9e4622b">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Main sequence&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="99b22a2f-da74-4f71-badc-e417eb669e8c">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;White dwarf&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">db1c1582-10b7-40cd-b91d-207ce9e4622b</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="9c35bd3399e5a5def44120dbb71467c0" title="">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>a1774b07-4da1-41c9-97b5-055591e071cb,d6d78ac3-799a-42ee-a4c8-04e2e685c956,db1c1582-10b7-40cd-b91d-207ce9e4622b,99b22a2f-da74-4f71-badc-e417eb669e8c</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>3fb57263a10ffda12b283cb982415a71</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Use the H-R diagram to determine the band of star that is an F2 spectral type with an absolute magnitude of +14?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="a1774b07-4da1-41c9-97b5-055591e071cb">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Super giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="d6d78ac3-799a-42ee-a4c8-04e2e685c956">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="db1c1582-10b7-40cd-b91d-207ce9e4622b">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Main sequence&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="99b22a2f-da74-4f71-badc-e417eb669e8c">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;White dwarf&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">99b22a2f-da74-4f71-badc-e417eb669e8c</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="eb99e304e51fa5de2d8954966a1cec84" title="">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>a1774b07-4da1-41c9-97b5-055591e071cb,d6d78ac3-799a-42ee-a4c8-04e2e685c956,db1c1582-10b7-40cd-b91d-207ce9e4622b,99b22a2f-da74-4f71-badc-e417eb669e8c</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>b163252ba9f5c9e523fd7835a119228d</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Use the H-R diagram to determine the band of star that is an G3 spectral type with an absolute magnitude of -4?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="a1774b07-4da1-41c9-97b5-055591e071cb">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Super giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="d6d78ac3-799a-42ee-a4c8-04e2e685c956">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="db1c1582-10b7-40cd-b91d-207ce9e4622b">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Main sequence&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="99b22a2f-da74-4f71-badc-e417eb669e8c">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;White dwarf&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">a1774b07-4da1-41c9-97b5-055591e071cb</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="79f31005a023b09084e3c1826ec224c7" title="">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>a1774b07-4da1-41c9-97b5-055591e071cb,d6d78ac3-799a-42ee-a4c8-04e2e685c956,db1c1582-10b7-40cd-b91d-207ce9e4622b,99b22a2f-da74-4f71-badc-e417eb669e8c</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>27b363ae8e34e665857fe77ca9e660ac</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Use the H-R diagram to determine the band of star that is an M1 spectral type with an absolute magnitude of 0?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="a1774b07-4da1-41c9-97b5-055591e071cb">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Super giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="d6d78ac3-799a-42ee-a4c8-04e2e685c956">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="db1c1582-10b7-40cd-b91d-207ce9e4622b">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Main sequence&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="99b22a2f-da74-4f71-badc-e417eb669e8c">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;White dwarf&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">d6d78ac3-799a-42ee-a4c8-04e2e685c956</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="62063284bd5b8f64c0f808a0cbafb6e2" title="">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>a1774b07-4da1-41c9-97b5-055591e071cb,d6d78ac3-799a-42ee-a4c8-04e2e685c956,db1c1582-10b7-40cd-b91d-207ce9e4622b,99b22a2f-da74-4f71-badc-e417eb669e8c</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>b5808acfcb41b7203511d30f5e5b6302</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Use the H-R diagram to determine the band of star that is an O5 spectral type with an absolute magnitude of -7?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="a1774b07-4da1-41c9-97b5-055591e071cb">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Super giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="d6d78ac3-799a-42ee-a4c8-04e2e685c956">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="db1c1582-10b7-40cd-b91d-207ce9e4622b">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Main sequence&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="99b22a2f-da74-4f71-badc-e417eb669e8c">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;White dwarf&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">a1774b07-4da1-41c9-97b5-055591e071cb</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="bd4429193637e6a54aae25bd2e39e7ab" title="">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>a1774b07-4da1-41c9-97b5-055591e071cb,d6d78ac3-799a-42ee-a4c8-04e2e685c956,db1c1582-10b7-40cd-b91d-207ce9e4622b,99b22a2f-da74-4f71-badc-e417eb669e8c</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>4e2a942cd528174ea6fda0351feb7357</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Use the H-R diagram to determine the band of star that is an O5 spectral type with an absolute magnitude of -5?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="a1774b07-4da1-41c9-97b5-055591e071cb">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Super giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="d6d78ac3-799a-42ee-a4c8-04e2e685c956">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="db1c1582-10b7-40cd-b91d-207ce9e4622b">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Main sequence&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="99b22a2f-da74-4f71-badc-e417eb669e8c">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;White dwarf&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">db1c1582-10b7-40cd-b91d-207ce9e4622b</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="de08a6d8cf7f68c617ec92ff704d666d" title="">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>a1774b07-4da1-41c9-97b5-055591e071cb,d6d78ac3-799a-42ee-a4c8-04e2e685c956,db1c1582-10b7-40cd-b91d-207ce9e4622b,99b22a2f-da74-4f71-badc-e417eb669e8c</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>23fa43f2fbc371be0ac2ad06b16f81b9</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Use the H-R diagram to determine the band of star that is an O5 spectral type with an absolute magnitude of +12?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="a1774b07-4da1-41c9-97b5-055591e071cb">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Super giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="d6d78ac3-799a-42ee-a4c8-04e2e685c956">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="db1c1582-10b7-40cd-b91d-207ce9e4622b">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Main sequence&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="99b22a2f-da74-4f71-badc-e417eb669e8c">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;White dwarf&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">99b22a2f-da74-4f71-badc-e417eb669e8c</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="4c54b08dbc62e78d437bc0da059c2da8" title="">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>a1774b07-4da1-41c9-97b5-055591e071cb,d6d78ac3-799a-42ee-a4c8-04e2e685c956,db1c1582-10b7-40cd-b91d-207ce9e4622b,99b22a2f-da74-4f71-badc-e417eb669e8c</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>4bfbe2a3db52b3e3fabaa53d5d7d48e7</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Use the H-R diagram to determine the band of star that is an M1 spectral type with an absolute magnitude of +8?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="a1774b07-4da1-41c9-97b5-055591e071cb">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Super giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="d6d78ac3-799a-42ee-a4c8-04e2e685c956">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="db1c1582-10b7-40cd-b91d-207ce9e4622b">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Main sequence&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="99b22a2f-da74-4f71-badc-e417eb669e8c">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;White dwarf&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">db1c1582-10b7-40cd-b91d-207ce9e4622b</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="acb197d3d4b43e727ca010697d06bb98" title="">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>a1774b07-4da1-41c9-97b5-055591e071cb,d6d78ac3-799a-42ee-a4c8-04e2e685c956,db1c1582-10b7-40cd-b91d-207ce9e4622b,99b22a2f-da74-4f71-badc-e417eb669e8c</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>c822496d994a3d153cc887921cc685e3</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Use the H-R diagram to determine the band of star that is an M1 spectral type with an absolute magnitude of -4?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="a1774b07-4da1-41c9-97b5-055591e071cb">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Super giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="d6d78ac3-799a-42ee-a4c8-04e2e685c956">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="db1c1582-10b7-40cd-b91d-207ce9e4622b">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Main sequence&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="99b22a2f-da74-4f71-badc-e417eb669e8c">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;White dwarf&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">a1774b07-4da1-41c9-97b5-055591e071cb</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="f6ba67137701485b6a8c621b53f1343c" title="">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>a1774b07-4da1-41c9-97b5-055591e071cb,d6d78ac3-799a-42ee-a4c8-04e2e685c956,db1c1582-10b7-40cd-b91d-207ce9e4622b,99b22a2f-da74-4f71-badc-e417eb669e8c</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>78a03add4a781b9089454f194bcc6726</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Use the H-R diagram to determine the band of star that is an G3 spectral type with an absolute magnitude of -10?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="a1774b07-4da1-41c9-97b5-055591e071cb">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Super giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="d6d78ac3-799a-42ee-a4c8-04e2e685c956">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="db1c1582-10b7-40cd-b91d-207ce9e4622b">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Main sequence&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="99b22a2f-da74-4f71-badc-e417eb669e8c">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;White dwarf&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">a1774b07-4da1-41c9-97b5-055591e071cb</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="3b809130168249621285cac862a24344" title="">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>a1774b07-4da1-41c9-97b5-055591e071cb,d6d78ac3-799a-42ee-a4c8-04e2e685c956,db1c1582-10b7-40cd-b91d-207ce9e4622b,99b22a2f-da74-4f71-badc-e417eb669e8c</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>b517a28ffd881253d49b4f51e26701df</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Use the H-R diagram to determine the band of star that is an G3 spectral type with an absolute magnitude of +2?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="a1774b07-4da1-41c9-97b5-055591e071cb">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Super giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="d6d78ac3-799a-42ee-a4c8-04e2e685c956">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="db1c1582-10b7-40cd-b91d-207ce9e4622b">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Main sequence&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="99b22a2f-da74-4f71-badc-e417eb669e8c">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;White dwarf&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">d6d78ac3-799a-42ee-a4c8-04e2e685c956</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="22be004f8cf5301e0d7e0c7772fc2df7" title="">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>a1774b07-4da1-41c9-97b5-055591e071cb,d6d78ac3-799a-42ee-a4c8-04e2e685c956,db1c1582-10b7-40cd-b91d-207ce9e4622b,99b22a2f-da74-4f71-badc-e417eb669e8c</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>09ecf59294914d9e5b5dc2ca7ab578be</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Use the H-R diagram to determine the band of star that is an G3 spectral type with an absolute magnitude of +5?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="a1774b07-4da1-41c9-97b5-055591e071cb">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Super giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="d6d78ac3-799a-42ee-a4c8-04e2e685c956">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="db1c1582-10b7-40cd-b91d-207ce9e4622b">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Main sequence&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="99b22a2f-da74-4f71-badc-e417eb669e8c">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;White dwarf&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">db1c1582-10b7-40cd-b91d-207ce9e4622b</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="0f5ec6f5a69b2e0253d9ef33ca995493" title="">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>a1774b07-4da1-41c9-97b5-055591e071cb,d6d78ac3-799a-42ee-a4c8-04e2e685c956,db1c1582-10b7-40cd-b91d-207ce9e4622b,99b22a2f-da74-4f71-badc-e417eb669e8c</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>24dfa79a8af767dd42e2521f99f413cd</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Use the H-R diagram to determine the band of star that is an G3 spectral type with an absolute magnitude of +2?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="a1774b07-4da1-41c9-97b5-055591e071cb">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Super giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="d6d78ac3-799a-42ee-a4c8-04e2e685c956">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="db1c1582-10b7-40cd-b91d-207ce9e4622b">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Main sequence&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="99b22a2f-da74-4f71-badc-e417eb669e8c">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;White dwarf&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">d6d78ac3-799a-42ee-a4c8-04e2e685c956</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="9c65929ec67fef1670332b6f1ee05c8f" title="">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>a1774b07-4da1-41c9-97b5-055591e071cb,d6d78ac3-799a-42ee-a4c8-04e2e685c956,db1c1582-10b7-40cd-b91d-207ce9e4622b,99b22a2f-da74-4f71-badc-e417eb669e8c</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>7ee7b098948ff7d3f4466c8e630b4098</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Use the H-R diagram to determine the band of star that is an G3 spectral type with an absolute magnitude of +15?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="a1774b07-4da1-41c9-97b5-055591e071cb">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Super giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="d6d78ac3-799a-42ee-a4c8-04e2e685c956">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="db1c1582-10b7-40cd-b91d-207ce9e4622b">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Main sequence&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="99b22a2f-da74-4f71-badc-e417eb669e8c">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;White dwarf&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">99b22a2f-da74-4f71-badc-e417eb669e8c</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="7d642123171ee810a5c4b8b5321cc2f3" title="">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>a1774b07-4da1-41c9-97b5-055591e071cb,d6d78ac3-799a-42ee-a4c8-04e2e685c956,db1c1582-10b7-40cd-b91d-207ce9e4622b,99b22a2f-da74-4f71-badc-e417eb669e8c</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>6508d60ad5c4930e0c3e609ed44ab0c8</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Use the H-R diagram to determine the band of star that is an B5 spectral type with an absolute magnitude of +12?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="a1774b07-4da1-41c9-97b5-055591e071cb">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Super giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="d6d78ac3-799a-42ee-a4c8-04e2e685c956">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="db1c1582-10b7-40cd-b91d-207ce9e4622b">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Main sequence&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="99b22a2f-da74-4f71-badc-e417eb669e8c">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;White dwarf&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">99b22a2f-da74-4f71-badc-e417eb669e8c</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="35e382cfc639424f6160aeba928a8f53" title="">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>a1774b07-4da1-41c9-97b5-055591e071cb,d6d78ac3-799a-42ee-a4c8-04e2e685c956,db1c1582-10b7-40cd-b91d-207ce9e4622b,99b22a2f-da74-4f71-badc-e417eb669e8c</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>4dec885ac0ed763d0c7d64799a0a8212</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Use the H-R diagram to determine the band of star that is an B5 spectral type with an absolute magnitude of 0?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="a1774b07-4da1-41c9-97b5-055591e071cb">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Super giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="d6d78ac3-799a-42ee-a4c8-04e2e685c956">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="db1c1582-10b7-40cd-b91d-207ce9e4622b">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Main sequence&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="99b22a2f-da74-4f71-badc-e417eb669e8c">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;White dwarf&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">db1c1582-10b7-40cd-b91d-207ce9e4622b</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="a63f184084e0f567d5addb11d1b9b6c5" title="">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>a1774b07-4da1-41c9-97b5-055591e071cb,d6d78ac3-799a-42ee-a4c8-04e2e685c956,db1c1582-10b7-40cd-b91d-207ce9e4622b,99b22a2f-da74-4f71-badc-e417eb669e8c</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>3a12c55b727fba25ac993247b1aa2890</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Use the H-R diagram to determine the band of star that is an B5 spectral type with an absolute magnitude of -8?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="a1774b07-4da1-41c9-97b5-055591e071cb">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Super giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="d6d78ac3-799a-42ee-a4c8-04e2e685c956">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="db1c1582-10b7-40cd-b91d-207ce9e4622b">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Main sequence&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="99b22a2f-da74-4f71-badc-e417eb669e8c">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;White dwarf&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">a1774b07-4da1-41c9-97b5-055591e071cb</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="de946e4d96a80c82d48c45996d648233" title="">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>a1774b07-4da1-41c9-97b5-055591e071cb,d6d78ac3-799a-42ee-a4c8-04e2e685c956,db1c1582-10b7-40cd-b91d-207ce9e4622b,99b22a2f-da74-4f71-badc-e417eb669e8c</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>789fd29f6683d2de67933f4592037b9b</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Use the H-R diagram to determine the band of star that is an K0 spectral type with an absolute magnitude of -6?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="a1774b07-4da1-41c9-97b5-055591e071cb">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Super giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="d6d78ac3-799a-42ee-a4c8-04e2e685c956">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="db1c1582-10b7-40cd-b91d-207ce9e4622b">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Main sequence&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="99b22a2f-da74-4f71-badc-e417eb669e8c">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;White dwarf&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">a1774b07-4da1-41c9-97b5-055591e071cb</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="b51e1ee66336313679b04ed5f42471ce" title="">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>a1774b07-4da1-41c9-97b5-055591e071cb,d6d78ac3-799a-42ee-a4c8-04e2e685c956,db1c1582-10b7-40cd-b91d-207ce9e4622b,99b22a2f-da74-4f71-badc-e417eb669e8c</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>b7c83d967439b4c5d4cd9188bef0d39f</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Use the H-R diagram to determine the band of star that is an K0 spectral type with an absolute magnitude of +1?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="a1774b07-4da1-41c9-97b5-055591e071cb">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Super giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="d6d78ac3-799a-42ee-a4c8-04e2e685c956">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="db1c1582-10b7-40cd-b91d-207ce9e4622b">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Main sequence&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="99b22a2f-da74-4f71-badc-e417eb669e8c">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;White dwarf&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">d6d78ac3-799a-42ee-a4c8-04e2e685c956</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="a2992022808973fa5cbefae658fc0454" title="">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>a1774b07-4da1-41c9-97b5-055591e071cb,d6d78ac3-799a-42ee-a4c8-04e2e685c956,db1c1582-10b7-40cd-b91d-207ce9e4622b,99b22a2f-da74-4f71-badc-e417eb669e8c</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>e788be991728f567b1aa4f115ead9767</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Use the H-R diagram to determine the band of star that is an K0 spectral type with an absolute magnitude of +7?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="a1774b07-4da1-41c9-97b5-055591e071cb">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Super giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="d6d78ac3-799a-42ee-a4c8-04e2e685c956">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="db1c1582-10b7-40cd-b91d-207ce9e4622b">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Main sequence&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="99b22a2f-da74-4f71-badc-e417eb669e8c">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;White dwarf&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">db1c1582-10b7-40cd-b91d-207ce9e4622b</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="9d01be12c526b719d2de2e619ee9ddaf" title="">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>a1774b07-4da1-41c9-97b5-055591e071cb,d6d78ac3-799a-42ee-a4c8-04e2e685c956,db1c1582-10b7-40cd-b91d-207ce9e4622b,99b22a2f-da74-4f71-badc-e417eb669e8c</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>3f44150c9fd0ab857075c5c8ddb74a52</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Use the H-R diagram to determine the band of star that is an K0 spectral type with an absolute magnitude of +15?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="a1774b07-4da1-41c9-97b5-055591e071cb">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Super giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="d6d78ac3-799a-42ee-a4c8-04e2e685c956">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="db1c1582-10b7-40cd-b91d-207ce9e4622b">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Main sequence&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="99b22a2f-da74-4f71-badc-e417eb669e8c">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;White dwarf&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">99b22a2f-da74-4f71-badc-e417eb669e8c</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="1682bc906ab2634e96c8c12212d47ecc" title="">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>a1774b07-4da1-41c9-97b5-055591e071cb,d6d78ac3-799a-42ee-a4c8-04e2e685c956,db1c1582-10b7-40cd-b91d-207ce9e4622b,99b22a2f-da74-4f71-badc-e417eb669e8c</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>7bc6b3bb3f75155f6c21f4b40083c3c6</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Use the H-R diagram to determine the band of star that is an M8 spectral type with an absolute magnitude of +16?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="a1774b07-4da1-41c9-97b5-055591e071cb">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Super giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="d6d78ac3-799a-42ee-a4c8-04e2e685c956">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="db1c1582-10b7-40cd-b91d-207ce9e4622b">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Main sequence&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="99b22a2f-da74-4f71-badc-e417eb669e8c">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;White dwarf&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">db1c1582-10b7-40cd-b91d-207ce9e4622b</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="7418349ce0577154f906adcc800ea1ad" title="">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>a1774b07-4da1-41c9-97b5-055591e071cb,d6d78ac3-799a-42ee-a4c8-04e2e685c956,db1c1582-10b7-40cd-b91d-207ce9e4622b,99b22a2f-da74-4f71-badc-e417eb669e8c</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>91d12a5e16ab13aa40a24f433ef3aae1</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Use the H-R diagram to determine the band of star that is an M8 spectral type with an absolute magnitude of -8?&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="a1774b07-4da1-41c9-97b5-055591e071cb">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Super giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="d6d78ac3-799a-42ee-a4c8-04e2e685c956">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="db1c1582-10b7-40cd-b91d-207ce9e4622b">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Main sequence&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="99b22a2f-da74-4f71-badc-e417eb669e8c">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;White dwarf&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">a1774b07-4da1-41c9-97b5-055591e071cb</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+    <item ident="263c0ceb078acf7176cfd704a7c36cfc" title="">
+      <itemmetadata>
+        <qtimetadata>
+          <qtimetadatafield>
+            <fieldlabel>question_type</fieldlabel>
+            <fieldentry>multiple_choice_question</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>points_possible</fieldlabel>
+            <fieldentry/>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>original_answer_ids</fieldlabel>
+            <fieldentry>a1774b07-4da1-41c9-97b5-055591e071cb,d6d78ac3-799a-42ee-a4c8-04e2e685c956,db1c1582-10b7-40cd-b91d-207ce9e4622b,99b22a2f-da74-4f71-badc-e417eb669e8c</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>assessment_question_identifierref</fieldlabel>
+            <fieldentry>1a2ee9b8bedee404e6b5ed0f6dce827d</fieldentry>
+          </qtimetadatafield>
+          <qtimetadatafield>
+            <fieldlabel>calculator_type</fieldlabel>
+            <fieldentry>none</fieldentry>
+          </qtimetadatafield>
+        </qtimetadata>
+      </itemmetadata>
+      <presentation>
+        <material>
+          <mattext texttype="text/html">&lt;p&gt;Use the H-R diagram to determine the band of star that is an M8 spectral type with an absolute magnitude of 0?&amp;nbsp;&lt;/p&gt;</mattext>
+        </material>
+        <response_lid ident="response1" rcardinality="Single">
+          <render_choice shuffle="Yes">
+            <response_label ident="a1774b07-4da1-41c9-97b5-055591e071cb">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Super giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="d6d78ac3-799a-42ee-a4c8-04e2e685c956">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Giant&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="db1c1582-10b7-40cd-b91d-207ce9e4622b">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;Main sequence&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+            <response_label ident="99b22a2f-da74-4f71-badc-e417eb669e8c">
+              <material>
+                <mattext texttype="text/html">&lt;p&gt;White dwarf&lt;/p&gt;</mattext>
+              </material>
+            </response_label>
+          </render_choice>
+        </response_lid>
+      </presentation>
+      <resprocessing>
+        <outcomes>
+          <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+        </outcomes>
+        <respcondition continue="No">
+          <conditionvar>
+            <varequal respident="response1">d6d78ac3-799a-42ee-a4c8-04e2e685c956</varequal>
+          </conditionvar>
+          <setvar action="Set" varname="SCORE">100</setvar>
+        </respcondition>
+      </resprocessing>
+    </item>
+  </objectbank>
+</questestinterop>

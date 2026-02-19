@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M5L1 Motion - PHYS-1315</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea, #764ba2, #f093fb);
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><g opacity="0.3"><path d="M100,200 Q300,100 500,200 T900,200" stroke="rgba(255,255,255,0.4)" stroke-width="3" fill="none"><animate attributeName="d" values="M100,200 Q300,100 500,200 T900,200;M100,250 Q300,150 500,250 T900,250;M100,200 Q300,100 500,200 T900,200" dur="8s" repeatCount="indefinite"/></path><path d="M100,400 Q300,300 500,400 T900,400" stroke="rgba(255,255,255,0.3)" stroke-width="2" fill="none"><animate attributeName="d" values="M100,400 Q300,300 500,400 T900,400;M100,450 Q300,350 500,450 T900,450;M100,400 Q300,300 500,400 T900,400" dur="12s" repeatCount="indefinite"/></path><path d="M100,600 Q300,500 500,600 T900,600" stroke="rgba(255,255,255,0.2)" stroke-width="2" fill="none"><animate attributeName="d" values="M100,600 Q300,500 500,600 T900,600;M100,650 Q300,550 500,650 T900,650;M100,600 Q300,500 500,600 T900,600" dur="10s" repeatCount="indefinite"/></path></g><circle cx="200" cy="300" r="8" fill="rgba(255,255,255,0.8)"><animateMotion dur="6s" repeatCount="indefinite"><mpath href="#motionPath"/></animateMotion></circle><circle cx="400" cy="500" r="6" fill="rgba(255,255,255,0.6)"><animateMotion dur="8s" repeatCount="indefinite"><mpath href="#motionPath2"/></animateMotion></circle><circle cx="600" cy="200" r="10" fill="rgba(255,255,255,0.5)"><animateMotion dur="10s" repeatCount="indefinite"><mpath href="#motionPath3"/></animateMotion></circle><path id="motionPath" d="M200,300 Q500,100 800,300 Q500,500 200,300" fill="none"/><path id="motionPath2" d="M400,500 Q700,200 900,500 Q700,800 400,500" fill="none"/><path id="motionPath3" d="M600,200 Q300,400 600,600 Q900,400 600,200" fill="none"/></svg>') center/cover;
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.95);
+            min-height: 100vh;
+            box-shadow: 0 0 30px rgba(0,0,0,0.3);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><g opacity="0.4"><circle cx="200" cy="200" r="4" fill="white"><animateTransform attributeName="transform" type="translate" values="0,0; 100,50; 200,0; 100,-50; 0,0" dur="4s" repeatCount="indefinite"/></circle><circle cx="800" cy="300" r="6" fill="white"><animateTransform attributeName="transform" type="translate" values="0,0; -80,40; -160,0; -80,-40; 0,0" dur="6s" repeatCount="indefinite"/></circle><circle cx="500" cy="150" r="5" fill="white"><animateTransform attributeName="transform" type="translate" values="0,0; 60,-30; 120,0; 60,30; 0,0" dur="5s" repeatCount="indefinite"/></circle></g><g stroke="rgba(255,255,255,0.3)" stroke-width="2" fill="none"><line x1="100" y1="400" x2="900" y2="400"><animate attributeName="x1" values="100;150;100" dur="3s" repeatCount="indefinite"/><animate attributeName="x2" values="900;950;900" dur="3s" repeatCount="indefinite"/></line><line x1="100" y1="500" x2="900" y2="500"><animate attributeName="x1" values="100;120;100" dur="4s" repeatCount="indefinite"/><animate attributeName="x2" values="900;920;900" dur="4s" repeatCount="indefinite"/></line></g></svg>');
+            pointer-events: none;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .header .subtitle {
+            font-size: 1.2em;
+            font-weight: 300;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .quote-section {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border-left: 5px solid #667eea;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 0 15px 15px 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .quote-section blockquote {
+            font-style: italic;
+            font-size: 1.1em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .quote-section .author {
+            text-align: right;
+            font-weight: bold;
+            color: #667eea;
+        }
+        
+        .section {
+            margin: 40px 0;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-top: 4px solid #667eea;
+        }
+        
+        .section h2 {
+            color: #667eea;
+            border-bottom: 3px solid #f093fb;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+            font-size: 1.8em;
+        }
+        
+        .section h3 {
+            color: #2c3e50;
+            margin: 25px 0 15px 0;
+            font-size: 1.4em;
+        }
+        
+        .objectives-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .objective-card {
+            background: linear-gradient(135deg, #f093fb, #f5576c);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .objective-card h4 {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        
+        .media-container {
+            margin: 25px 0;
+            text-align: center;
+        }
+        
+        .media-container iframe {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        .reading-list {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #28a745;
+        }
+        
+        .reading-list ul {
+            list-style-type: none;
+        }
+        
+        .reading-list li {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 5px;
+            border-left: 3px solid #28a745;
+        }
+        
+        .reading-list a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .reading-list a:hover {
+            text-decoration: underline;
+            color: #f093fb;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #fff3cd, #ffeaa7);
+            border: 1px solid #ffc107;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .highlight-box h4 {
+            color: #856404;
+            margin-bottom: 10px;
+        }
+        
+        .motion-concept-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .concept-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+            border-top: 4px solid #f093fb;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .concept-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        .concept-card h4 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .motion-type {
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: bold;
+            margin: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .uniform-motion {
+            background: linear-gradient(135deg, #2ecc71, #27ae60);
+            color: white;
+        }
+        
+        .accelerated-motion {
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            color: white;
+        }
+        
+        .circular-motion {
+            background: linear-gradient(135deg, #f39c12, #e67e22);
+            color: white;
+        }
+        
+        .projectile-motion {
+            background: linear-gradient(135deg, #9b59b6, #8e44ad);
+            color: white;
+        }
+        
+        .kinematic-variable {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+        }
+        
+        /* Problem solving styles */
+        .problem-card {
+            background: linear-gradient(135deg, #e8f4fd, #cce7ff);
+            border: 2px solid #3498db;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 20px 0;
+        }
+        
+        .problem-card h4 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+        
+        .problem-prompt {
+            background: #fff9c4;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #f1c40f;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+        
+        /* CidiLabs Activity Styles */
+        .cidilabs-activity {
+            margin: 30px 0;
+            padding: 25px;
+            background: linear-gradient(135deg, #f8f9fa, #ffffff);
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+            border: 2px solid #e9ecef;
+        }
+        
+        .cidilabs-activity h3 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            text-align: center;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f093fb;
+        }
+        
+        .activity-instruction {
+            background: #e8f4fd;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid #3498db;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .section {
+                padding: 20px;
+            }
+            
+            .objectives-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .motion-concept-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <h1><i class="fas fa-running"></i> Motion</h1>
+            <div class="subtitle">Module 5, Lesson 1 | PHYS-1315 Physical Science I</div>
+        </div>
+
+        <!-- Motivational Quote Section -->
+        <div class="quote-section">
+            <blockquote>
+                "Nothing happens until something moves."
+            </blockquote>
+            <div class="author">— Albert Einstein</div>
+        </div>
+
+        <!-- Introduction Section -->
+        <div class="section">
+            <h2><i class="fas fa-arrows-alt"></i> Understanding Motion</h2>
+            <p>Motion is everywhere around us - from the smallest atomic vibrations to the grandest movements of planets and galaxies. Understanding motion is fundamental to physics because it allows us to describe how objects change position, predict where they will be, and analyze the forces that cause these changes.</p>
+            
+            <p>Whether it's a car accelerating down a highway, a baseball following a curved path through the air, or the Earth orbiting the Sun, all motion can be described using the same mathematical principles and physical concepts that form the foundation of kinematics.</p>
+            
+            <div class="highlight-box">
+                <h4><i class="fas fa-compass"></i> Reference Frames</h4>
+                <p>Motion is always relative - an object's motion depends on the reference frame from which it's observed. A passenger on a moving train appears stationary to other passengers but is moving to someone standing on the platform.</p>
+            </div>
+        </div>
+
+        <!-- Learning Objectives Section -->
+        <div class="section">
+            <h2><i class="fas fa-target"></i> Learning Objectives</h2>
+            <div class="highlight-box">
+                <h4><i class="fas fa-star"></i> Course Competency CC5.1</h4>
+                <p><strong>Solve problems related to motion and kinematics</strong></p>
+            </div>
+            
+            <div class="objectives-grid">
+                <div class="objective-card">
+                    <h4><i class="fas fa-exchange-alt"></i> LO5.1.1</h4>
+                    <p>Compare and contrast the different types of motion, including uniform, accelerated, circular, and projectile motion.</p>
+                </div>
+                <div class="objective-card">
+                    <h4><i class="fas fa-vector-square"></i> LO5.1.2</h4>
+                    <p>Draw displacement, velocity, and acceleration vectors of moving objects to represent motion graphically.</p>
+                </div>
+                <div class="objective-card">
+                    <h4><i class="fas fa-calculator"></i> LO5.1.3</h4>
+                    <p>Solve problems involving kinematic equations for various types of motion scenarios.</p>
+                </div>
+                <div class="objective-card">
+                    <h4><i class="fas fa-sync-alt"></i> LO5.1.4</h4>
+                    <p>Draw and compute centripetal acceleration of an object undergoing uniform circular motion.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Required Readings Section -->
+        <div class="section">
+            <h2><i class="fas fa-book-open"></i> Required Readings</h2>
+            <div class="reading-list">
+                <h3>Primary Reading</h3>
+                <ul>
+                    <li><i class="fas fa-book"></i> <a href="https://bookshelf.vitalsource.com/reader/books/9781264450817/epubcfi/6/22%5B%3Bvnd.vst.idref%3Dchapter02%5D!/4/4/4%5Bch02%5D/1:0%5B%2C2%5D" target="_blank">Physical Science, 13th Edition</a> - Chapter 2, Sections 2.1-2.5 by Bill Tillery</li>
+                </ul>
+                
+                <h3>Supplementary Resources</h3>
+                <ul>
+                    <li><i class="fas fa-external-link-alt"></i> <a href="https://www.khanacademy.org/science/physics/one-dimensional-motion" target="_blank">Khan Academy: One-dimensional motion</a></li>
+                    <li><i class="fas fa-external-link-alt"></i> <a href="https://phet.colorado.edu/en/simulation/motion-2d" target="_blank">PhET Simulation: Motion in 2D</a></li>
+                    <li><i class="fas fa-file-pdf"></i> <a href="#" target="_blank">Equation Sheet - Module 2</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- CidiLabs Interactive Activity 1: Order/Sequence -->
+        <div class="cidilabs-activity">
+            <h3><i class="fas fa-sort-numeric-down"></i> Interactive Activity 1: Motion Analysis Sequence</h3>
+            <div class="activity-instruction">
+                <p><strong>Instructions:</strong> Arrange the following steps in the correct order for analyzing any motion problem. This systematic approach helps ensure you consider all important aspects when studying motion.</p>
+            </div>
+            
+            <div class="dp-order-wrapper">
+                <div class="dp-order-container">
+                    <div class="dp-order-item" data-value="1">
+                        <i class="fas fa-compass"></i>
+                        <strong>Define the reference frame and coordinate system</strong>
+                        <p>Establish what you consider stationary and choose positive directions</p>
+                    </div>
+                    <div class="dp-order-item" data-value="2">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <strong>Identify initial and final positions</strong>
+                        <p>Determine starting point and where the object ends up</p>
+                    </div>
+                    <div class="dp-order-item" data-value="3">
+                        <i class="fas fa-clock"></i>
+                        <strong>Identify the time interval</strong>
+                        <p>Determine how long the motion takes or specific time points</p>
+                    </div>
+                    <div class="dp-order-item" data-value="4">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <strong>Determine initial and final velocities</strong>
+                        <p>Find the speed and direction at the beginning and end</p>
+                    </div>
+                    <div class="dp-order-item" data-value="5">
+                        <i class="fas fa-chart-line"></i>
+                        <strong>Identify acceleration (if any)</strong>
+                        <p>Determine if velocity is changing and at what rate</p>
+                    </div>
+                    <div class="dp-order-item" data-value="6">
+                        <i class="fas fa-calculator"></i>
+                        <strong>Choose appropriate kinematic equation</strong>
+                        <p>Select the equation that relates your known and unknown variables</p>
+                    </div>
+                    <div class="dp-order-item" data-value="7">
+                        <i class="fas fa-check"></i>
+                        <strong>Solve and verify the solution</strong>
+                        <p>Calculate the answer and check if it makes physical sense</p>
+                    </div>
+                </div>
+                <div class="dp-order-feedback">
+                    <p><strong>Problem-Solving Key:</strong> Following this systematic approach helps avoid common mistakes and ensures you consider all relevant information. Remember that motion problems often have multiple valid approaches, but this sequence provides a reliable framework.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CidiLabs Interactive Activity 2: Sort Items -->
+        <div class="cidilabs-activity">
+            <h3><i class="fas fa-layer-group"></i> Interactive Activity 2: Motion Concepts Classification</h3>
+            <div class="activity-instruction">
+                <p><strong>Instructions:</strong> Sort the following motion-related concepts into their correct categories. Understanding these classifications helps in choosing the right approach for different types of motion problems.</p>
+            </div>
+            
+            <div class="dp-si-sort-pool">
+                <div class="dp-si-sort-categories">
+                    <div class="dp-si-sort-category" data-category="motion-types">
+                        <h4><span class="motion-type uniform-motion">Motion Types</span></h4>
+                        <p>Different categories of motion</p>
+                        <div class="dp-si-sort-drop-zone" data-accept="motion-types"></div>
+                    </div>
+                    <div class="dp-si-sort-category" data-category="kinematic-variables">
+                        <h4><span class="motion-type kinematic-variable">Kinematic Variables</span></h4>
+                        <p>Quantities that describe motion</p>
+                        <div class="dp-si-sort-drop-zone" data-accept="kinematic-variables"></div>
+                    </div>
+                    <div class="dp-si-sort-category" data-category="equations">
+                        <h4><span class="motion-type accelerated-motion">Key Equations</span></h4>
+                        <p>Mathematical relationships in kinematics</p>
+                        <div class="dp-si-sort-drop-zone" data-accept="equations"></div>
+                    </div>
+                    <div class="dp-si-sort-category" data-category="examples">
+                        <h4><span class="motion-type circular-motion">Real-World Examples</span></h4>
+                        <p>Common motion scenarios</p>
+                        <div class="dp-si-sort-drop-zone" data-accept="examples"></div>
+                    </div>
+                </div>
+                
+                <div class="dp-si-sort-items">
+                    <div class="dp-si-sort-item" data-category="motion-types">Uniform motion (constant velocity)</div>
+                    <div class="dp-si-sort-item" data-category="motion-types">Uniformly accelerated motion</div>
+                    <div class="dp-si-sort-item" data-category="motion-types">Uniform circular motion</div>
+                    <div class="dp-si-sort-item" data-category="motion-types">Projectile motion</div>
+                    <div class="dp-si-sort-item" data-category="motion-types">Free fall motion</div>
+                    <div class="dp-si-sort-item" data-category="kinematic-variables">Displacement (Δx)</div>
+                    <div class="dp-si-sort-item" data-category="kinematic-variables">Velocity (v)</div>
+                    <div class="dp-si-sort-item" data-category="kinematic-variables">Acceleration (a)</div>
+                    <div class="dp-si-sort-item" data-category="kinematic-variables">Time (t)</div>
+                    <div class="dp-si-sort-item" data-category="kinematic-variables">Initial velocity (v₀)</div>
+                    <div class="dp-si-sort-item" data-category="equations">v = v₀ + at</div>
+                    <div class="dp-si-sort-item" data-category="equations">x = x₀ + v₀t + ½at²</div>
+                    <div class="dp-si-sort-item" data-category="equations">v² = v₀² + 2a(x - x₀)</div>
+                    <div class="dp-si-sort-item" data-category="equations">acentripetal = v²/r</div>
+                    <div class="dp-si-sort-item" data-category="examples">Car accelerating from stop sign</div>
+                    <div class="dp-si-sort-item" data-category="examples">Ball dropped from building</div>
+                    <div class="dp-si-sort-item" data-category="examples">Satellite orbiting Earth</div>
+                    <div class="dp-si-sort-item" data-category="examples">Baseball thrown horizontally</div>
+                </div>
+                
+                <div class="dp-si-sort-feedback">
+                    <p><strong>Motion Analysis:</strong> Each type of motion requires specific approaches and equations. Uniform motion uses simple distance = speed × time relationships, while accelerated motion requires kinematic equations. Circular motion introduces centripetal acceleration even when speed is constant.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CidiLabs Interactive Activity 3: Flip Cards -->
+        <div class="cidilabs-activity">
+            <h3><i class="fas fa-clone"></i> Interactive Activity 3: Motion Principles and Equations</h3>
+            <div class="activity-instruction">
+                <p><strong>Instructions:</strong> Click each card to reveal detailed information about fundamental motion concepts, equations, and problem-solving strategies. These principles form the foundation of kinematics.</p>
+            </div>
+            
+            <div class="dp-flip-card-container">
+                <div class="dp-flip-card">
+                    <div class="dp-flip-card-front">
+                        <h4>Displacement vs Distance</h4>
+                        <p class="motion-type kinematic-variable">Vector vs Scalar</p>
+                    </div>
+                    <div class="dp-flip-card-back">
+                        <h4>Understanding Position Changes</h4>
+                        <ul>
+                            <li>• <strong>Distance:</strong> Total path length traveled (scalar)</li>
+                            <li>• <strong>Displacement:</strong> Straight-line change in position (vector)</li>
+                            <li>• Displacement has magnitude and direction</li>
+                            <li>• Distance is always positive; displacement can be negative</li>
+                            <li>• For straight-line motion: |displacement| ≤ distance</li>
+                            <li>• Symbol: Δx = x_final - x_initial</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="dp-flip-card">
+                    <div class="dp-flip-card-front">
+                        <h4>Velocity vs Speed</h4>
+                        <p class="motion-type uniform-motion">Rate of Motion</p>
+                    </div>
+                    <div class="dp-flip-card-back">
+                        <h4>Describing How Fast</h4>
+                        <ul>
+                            <li>• <strong>Speed:</strong> Distance traveled per unit time</li>
+                            <li>• <strong>Velocity:</strong> Displacement per unit time (has direction)</li>
+                            <li>• Average velocity = Δx/Δt</li>
+                            <li>• Instantaneous velocity = dx/dt</li>
+                            <li>• Velocity can be negative (indicates direction)</li>
+                            <li>• Speed is always non-negative</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="dp-flip-card">
+                    <div class="dp-flip-card-front">
+                        <h4>Acceleration</h4>
+                        <p class="motion-type accelerated-motion">Change in Velocity</p>
+                    </div>
+                    <div class="dp-flip-card-back">
+                        <h4>Rate of Velocity Change</h4>
+                        <ul>
+                            <li>• Acceleration = change in velocity / time</li>
+                            <li>• a = (v - v₀)/t or a = Δv/Δt</li>
+                            <li>• Positive acceleration can mean speeding up or slowing down</li>
+                            <li>• Direction matters: acceleration opposite to velocity means slowing</li>
+                            <li>• Units: m/s² or "meters per second squared"</li>
+                            <li>• Zero acceleration = constant velocity</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="dp-flip-card">
+                    <div class="dp-flip-card-front">
+                        <h4>Kinematic Equation 1</h4>
+                        <p class="motion-type accelerated-motion">v = v₀ + at</p>
+                    </div>
+                    <div class="dp-flip-card-back">
+                        <h4>Velocity-Time Relationship</h4>
+                        <ul>
+                            <li>• Relates final velocity to initial velocity</li>
+                            <li>• <strong>v:</strong> final velocity</li>
+                            <li>• <strong>v₀:</strong> initial velocity</li>
+                            <li>• <strong>a:</strong> acceleration</li>
+                            <li>• <strong>t:</strong> time</li>
+                            <li>• Use when you know acceleration and time</li>
+                            <li>• Linear relationship between velocity and time</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="dp-flip-card">
+                    <div class="dp-flip-card-front">
+                        <h4>Kinematic Equation 2</h4>
+                        <p class="motion-type accelerated-motion">x = x₀ + v₀t + ½at²</p>
+                    </div>
+                    <div class="dp-flip-card-back">
+                        <h4>Position-Time Relationship</h4>
+                        <ul>
+                            <li>• Relates position to initial conditions and time</li>
+                            <li>• <strong>x:</strong> final position</li>
+                            <li>• <strong>x₀:</strong> initial position</li>
+                            <li>• <strong>v₀t:</strong> displacement from initial velocity</li>
+                            <li>• <strong>½at²:</strong> displacement from acceleration</li>
+                            <li>• Parabolic relationship for constant acceleration</li>
+                            <li>• Most useful for finding position or time</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="dp-flip-card">
+                    <div class="dp-flip-card-front">
+                        <h4>Kinematic Equation 3</h4>
+                        <p class="motion-type accelerated-motion">v² = v₀² + 2a(x - x₀)</p>
+                    </div>
+                    <div class="dp-flip-card-back">
+                        <h4>Velocity-Position Relationship</h4>
+                        <ul>
+                            <li>• Independent of time (no t variable)</li>
+                            <li>• Relates velocities to displacement</li>
+                            <li>• Useful when time is unknown</li>
+                            <li>• <strong>(x - x₀):</strong> displacement</li>
+                            <li>• Often used for finding final velocity</li>
+                            <li>• Can solve for any variable except time</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="dp-flip-card">
+                    <div class="dp-flip-card-front">
+                        <h4>Free Fall</h4>
+                        <p class="motion-type projectile-motion">g = 9.8 m/s²</p>
+                    </div>
+                    <div class="dp-flip-card-back">
+                        <h4>Motion Under Gravity</h4>
+                        <ul>
+                            <li>• Special case of uniformly accelerated motion</li>
+                            <li>• Acceleration = g = 9.8 m/s² downward</li>
+                            <li>• Use kinematic equations with a = g</li>
+                            <li>• Air resistance usually neglected</li>
+                            <li>• Time up = time down for projectiles</li>
+                            <li>• All objects fall at same rate (in vacuum)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="dp-flip-card">
+                    <div class="dp-flip-card-front">
+                        <h4>Uniform Circular Motion</h4>
+                        <p class="motion-type circular-motion">Centripetal Acceleration</p>
+                    </div>
+                    <div class="dp-flip-card-back">
+                        <h4>Motion in a Circle</h4>
+                        <ul>
+                            <li>• Constant speed, changing velocity direction</li>
+                            <li>• Centripetal acceleration = v²/r</li>
+                            <li>• Acceleration points toward center</li>
+                            <li>• <strong>v:</strong> tangential speed</li>
+                            <li>• <strong>r:</strong> radius of circular path</li>
+                            <li>• Period T = 2πr/v</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content: Motion Types -->
+        <div class="section">
+            <h2><i class="fas fa-exchange-alt"></i> Types of Motion</h2>
+            
+            <div class="motion-concept-grid">
+                <div class="concept-card">
+                    <h4><span class="motion-type uniform-motion">Uniform Motion</span></h4>
+                    <p><strong>Definition:</strong> Motion at constant velocity (constant speed in a straight line).</p>
+                    <p><strong>Characteristics:</strong></p>
+                    <ul>
+                        <li>No acceleration (a = 0)</li>
+                        <li>Equal distances in equal time intervals</li>
+                        <li>Velocity vs. time graph is horizontal line</li>
+                        <li>Position vs. time graph is straight line</li>
+                    </ul>
+                    <p><strong>Equation:</strong> x = x₀ + vt</p>
+                </div>
+                
+                <div class="concept-card">
+                    <h4><span class="motion-type accelerated-motion">Accelerated Motion</span></h4>
+                    <p><strong>Definition:</strong> Motion with changing velocity (constant acceleration).</p>
+                    <p><strong>Characteristics:</strong></p>
+                    <ul>
+                        <li>Constant acceleration (a ≠ 0)</li>
+                        <li>Velocity changes at constant rate</li>
+                        <li>Velocity vs. time graph is straight line</li>
+                        <li>Position vs. time graph is parabola</li>
+                    </ul>
+                    <p><strong>Key Equations:</strong> Kinematic equations 1-3</p>
+                </div>
+                
+                <div class="concept-card">
+                    <h4><span class="motion-type circular-motion">Circular Motion</span></h4>
+                    <p><strong>Definition:</strong> Motion in a circular path at constant speed.</p>
+                    <p><strong>Characteristics:</strong></p>
+                    <ul>
+                        <li>Constant speed, changing direction</li>
+                        <li>Acceleration toward center of circle</li>
+                        <li>Acceleration magnitude = v²/r</li>
+                        <li>Period T = 2πr/v</li>
+                    </ul>
+                    <p><strong>Examples:</strong> Satellites, car on curve, carousel</p>
+                </div>
+                
+                <div class="concept-card">
+                    <h4><span class="motion-type projectile-motion">Projectile Motion</span></h4>
+                    <p><strong>Definition:</strong> Motion of object under influence of gravity only.</p>
+                    <p><strong>Characteristics:</strong></p>
+                    <ul>
+                        <li>Horizontal velocity constant</li>
+                        <li>Vertical acceleration = -g</li>
+                        <li>Parabolic trajectory</li>
+                        <li>Time up = time down</li>
+                    </ul>
+                    <p><strong>Examples:</strong> Thrown ball, fired cannonball</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lecture Videos Section -->
+        <div class="section">
+            <h2><i class="fas fa-play-circle"></i> Video Lectures</h2>
+            
+            <div class="media-container">
+                <h3>Motion & Kinematics Introduction</h3>
+                <iframe src="https://tstc.yuja.com/V/Video?v=5091429&node=17702693&a=817997324&preload=false" width="560" height="315" loading="lazy" allowfullscreen></iframe>
+                <p><em>Duration: 8 minutes | Topic: Motion types, coordinates, position</em></p>
+                <p><a href="https://tstc.yuja.com/V/Video?v=13017561&node=56359816&a=115255820" target="_blank">ASL Version available</a></p>
+            </div>
+            
+            <div class="media-container">
+                <h3>Displacement, Velocity, and Speed</h3>
+                <iframe src="https://tstc.yuja.com/V/Video?v=5091430&node=17702694&a=2097594721&preload=false" width="560" height="315" loading="lazy" allowfullscreen></iframe>
+                <p><em>Duration: 5:40 | Topic: Vector arithmetic, velocity, acceleration</em></p>
+                <p><a href="https://tstc.yuja.com/V/Video?v=13017991&node=56362022&a=148664777" target="_blank">ASL Version available</a></p>
+            </div>
+            
+            <div class="media-container">
+                <h3>Average vs Instantaneous Velocity</h3>
+                <iframe src="https://tstc.yuja.com/V/Video?v=5091432&node=17702696&a=1866195974&preload=false" width="560" height="315" loading="lazy" allowfullscreen></iframe>
+                <p><em>Duration: 17:59 | Topic: Kinematic equations, free fall, projectiles</em></p>
+                <p><a href="https://tstc.yuja.com/V/Video?v=13053156&node=56521835&a=133217891" target="_blank">ASL Version available</a></p>
+            </div>
+            
+            <div class="media-container">
+                <h3>Uniform Circular Motion</h3>
+                <iframe src="https://tstc.yuja.com/V/Video?v=5091433&node=17702698&a=615704874&preload=false" width="560" height="315" loading="lazy" allowfullscreen></iframe>
+                <p><em>Duration: 8:11 | Topic: Circular motion, Kepler's Laws</em></p>
+                <p><a href="https://tstc.yuja.com/V/Video?v=13026292&node=56406445&a=115774759" target="_blank">ASL Version available</a></p>
+            </div>
+        </div>
+
+        <!-- Problem Solving Section -->
+        <div class="section">
+            <h2><i class="fas fa-clipboard-check"></i> Practice Problems</h2>
+            
+            <div class="problem-card">
+                <h4><i class="fas fa-car"></i> Problem 1: Uniform Motion</h4>
+                <div class="problem-prompt">
+                    The driver of a car moving at 72.0 km/h drops a road map on the floor. It takes him 3.00 s to locate and pick up the map. How far did he travel during this time?
+                </div>
+                
+                <details>
+                    <summary style="cursor: pointer; font-weight: bold; color: #667eea;">Click to reveal solution</summary>
+                    <div style="padding: 15px; background: #f8f9fa; border-radius: 8px; margin-top: 10px;">
+                        <p><strong>Given:</strong> v = 72.0 km/h, t = 3.00 s</p>
+                        <p><strong>Convert units:</strong> 72.0 km/h × (1000 m/km) × (1 h/3600 s) = 20.0 m/s</p>
+                        <p><strong>For uniform motion:</strong> distance = velocity × time</p>
+                        <p><strong>Solution:</strong> d = 20.0 m/s × 3.00 s = 60.0 m</p>
+                        <p><a href="https://tstc.yuja.com/V/Video?v=5138478&node=20489250&a=488383220" target="_blank">Video solution (18:36)</a></p>
+                    </div>
+                </details>
+            </div>
+            
+            <div class="problem-card">
+                <h4><i class="fas fa-bicycle"></i> Problem 2: Acceleration</h4>
+                <div class="problem-prompt">
+                    A bicycle moves from rest to 5 m/s in 5 s. What was the acceleration?
+                </div>
+                
+                <details>
+                    <summary style="cursor: pointer; font-weight: bold; color: #667eea;">Click to reveal solution</summary>
+                    <div style="padding: 15px; background: #f8f9fa; border-radius: 8px; margin-top: 10px;">
+                        <p><strong>Given:</strong> v₀ = 0 m/s, v = 5 m/s, t = 5 s</p>
+                        <p><strong>Use:</strong> a = (v - v₀)/t</p>
+                        <p><strong>Solution:</strong> a = (5 - 0)/5 = 1 m/s²</p>
+                        <p><a href="https://tstc.yuja.com/V/Video?v=5138474&node=20489246&a=65926752" target="_blank">Video solution (9:54)</a></p>
+                    </div>
+                </details>
+            </div>
+            
+            <div class="problem-card">
+                <h4><i class="fas fa-tint"></i> Problem 3: Free Fall</h4>
+                <div class="problem-prompt">
+                    A rock that is dropped into a well hits the water in 3.0 s. Ignoring air resistance, how far is it to the water?
+                </div>
+                
+                <details>
+                    <summary style="cursor: pointer; font-weight: bold; color: #667eea;">Click to reveal solution</summary>
+                    <div style="padding: 15px; background: #f8f9fa; border-radius: 8px; margin-top: 10px;">
+                        <p><strong>Given:</strong> v₀ = 0 m/s, t = 3.0 s, a = g = 9.8 m/s²</p>
+                        <p><strong>Use:</strong> x = x₀ + v₀t + ½at²</p>
+                        <p><strong>Solution:</strong> x = 0 + 0 + ½(9.8)(3.0)² = ½(9.8)(9) = 44 m</p>
+                        <p><a href="https://tstc.yuja.com/V/Video?v=5138477&node=20489249&a=440497296" target="_blank">Video solution (7:42)</a></p>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div style="text-align: center; padding: 30px; color: #666; border-top: 2px solid #eee; margin-top: 40px;">
+            <p><strong>PHYS-1315 Physical Science I</strong> | Module 5, Lesson 1</p>
+            <p>Enhanced with CidiLabs Interactive Activities</p>
+            <p><i class="fas fa-force"></i> Next: Explore forces and Newton's Laws in M5L2!</p>
+        </div>
+    </div>
+
+    <!-- CidiLabs JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Flip cards functionality
+            const flipCards = document.querySelectorAll('.dp-flip-card');
+            flipCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    this.classList.toggle('flipped');
+                });
+            });
+            
+            // Order activity setup
+            const orderItems = document.querySelectorAll('.dp-order-item');
+            orderItems.forEach((item, index) => {
+                item.style.order = Math.random() * 10;
+                item.setAttribute('draggable', true);
+            });
+            
+            // Sort activity setup  
+            const sortItems = document.querySelectorAll('.dp-si-sort-item');
+            sortItems.forEach(item => {
+                item.setAttribute('draggable', true);
+            });
+            
+            console.log('CidiLabs activities initialized for M5L1 Motion');
+        });
+    </script>
+
+    <!-- Enhanced CidiLabs Activity Styles -->
+    <style>
+        /* Flip Cards Enhanced Styling for Motion Theme */
+        .dp-flip-card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            margin: 25px 0;
+        }
+        
+        .dp-flip-card {
+            background: linear-gradient(135deg, #fff, #f8f9fa);
+            border: 2px solid #e9ecef;
+            border-radius: 15px;
+            height: 250px;
+            perspective: 1000px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .dp-flip-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 12px 30px rgba(102, 126, 234, 0.2);
+        }
+        
+        .dp-flip-card-front,
+        .dp-flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            padding: 25px;
+            backface-visibility: hidden;
+            transition: transform 0.6s;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .dp-flip-card-back {
+            transform: rotateY(180deg);
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+        
+        .dp-flip-card.flipped .dp-flip-card-front {
+            transform: rotateY(180deg);
+        }
+        
+        .dp-flip-card.flipped .dp-flip-card-back {
+            transform: rotateY(0deg);
+        }
+        
+        .dp-flip-card-back ul {
+            text-align: left;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            font-size: 0.85em;
+        }
+        
+        .dp-flip-card-back li {
+            margin: 3px 0;
+        }
+        
+        /* Order Activity Enhanced for Motion Analysis */
+        .dp-order-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin: 25px 0;
+        }
+        
+        .dp-order-item {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 18px;
+            border-radius: 12px;
+            cursor: grab;
+            user-select: none;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            font-weight: 500;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .dp-order-item i {
+            font-size: 1.2em;
+            flex-shrink: 0;
+        }
+        
+        .dp-order-item:hover {
+            transform: translateX(15px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+            border-color: rgba(240, 147, 251, 0.5);
+        }
+        
+        .dp-order-item:active {
+            cursor: grabbing;
+            transform: scale(1.02);
+        }
+        
+        .dp-order-item p {
+            margin: 5px 0 0 0;
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+        
+        .dp-order-feedback {
+            background: linear-gradient(135deg, #d4edda, #c3e6cb);
+            border: 2px solid #28a745;
+            color: #155724;
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 25px;
+            font-weight: 500;
+            box-shadow: 0 4px 15px rgba(40, 167, 69, 0.2);
+        }
+        
+        /* Sort Activity Enhanced for Motion Concepts */
+        .dp-si-sort-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .dp-si-sort-category {
+            background: linear-gradient(135deg, #f8f9fa, #ffffff);
+            border: 3px dashed #dee2e6;
+            border-radius: 15px;
+            padding: 20px;
+            min-height: 200px;
+            transition: all 0.3s ease;
+        }
+        
+        .dp-si-sort-category:hover {
+            border-color: #667eea;
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.2);
+            transform: translateY(-2px);
+        }
+        
+        .dp-si-sort-category h4 {
+            margin-bottom: 12px;
+            text-align: center;
+        }
+        
+        .dp-si-sort-drop-zone {
+            min-height: 140px;
+            border: 2px dashed #adb5bd;
+            border-radius: 10px;
+            margin-top: 12px;
+            padding: 12px;
+            background: white;
+            transition: all 0.3s ease;
+        }
+        
+        .dp-si-sort-drop-zone:hover {
+            border-color: #28a745;
+            background: #f8fff8;
+        }
+        
+        .dp-si-sort-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+            margin: 25px 0;
+            padding: 25px;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border-radius: 15px;
+            border: 2px solid #dee2e6;
+        }
+        
+        .dp-si-sort-item {
+            background: linear-gradient(135deg, #f093fb, #f5576c);
+            color: white;
+            padding: 10px 16px;
+            border-radius: 20px;
+            cursor: grab;
+            user-select: none;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            font-size: 0.9em;
+            box-shadow: 0 2px 8px rgba(240, 147, 251, 0.3);
+        }
+        
+        .dp-si-sort-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(240, 147, 251, 0.4);
+        }
+        
+        .dp-si-sort-item:active {
+            cursor: grabbing;
+        }
+        
+        .dp-si-sort-feedback {
+            background: linear-gradient(135deg, #e8f4fd, #cce7ff);
+            border: 2px solid #007bff;
+            color: #004085;
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 25px;
+            font-weight: 500;
+            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2);
+        }
+    </style>
+</body>
+</html>

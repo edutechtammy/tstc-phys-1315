@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M9L1 Clouds, Precipitation, and Storms - PHYS-1315</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #2F4F4F, #708090, #4682B4, #87CEEB, #B0C4DE, #E0E6FF);
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><g opacity="0.3"><g stroke="rgba(255,255,255,0.7)" stroke-width="3" fill="none"><path d="M100,200 Q200,150 300,200 T500,200" opacity="0.6"><animate attributeName="d" values="M100,200 Q200,150 300,200 T500,200;M100,220 Q200,170 300,220 T500,220;M100,200 Q200,150 300,200 T500,200" dur="8s" repeatCount="indefinite"/></path><path d="M200,400 Q300,350 400,400 T600,400" opacity="0.5"><animate attributeName="d" values="M200,400 Q300,350 400,400 T600,400;M200,420 Q300,370 400,420 T600,420;M200,400 Q300,350 400,400 T600,400" dur="10s" repeatCount="indefinite"/></path></g><g opacity="0.4"><circle cx="150" cy="100" r="3" fill="white"><animate attributeName="cy" values="100;500;100" dur="15s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.4;0.8;0.4" dur="15s" repeatCount="indefinite"/></circle><circle cx="300" cy="200" r="2" fill="white"><animate attributeName="cy" values="200;600;200" dur="20s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.3;0.7;0.3" dur="20s" repeatCount="indefinite"/></circle><circle cx="500" cy="150" r="4" fill="white"><animate attributeName="cy" values="150;550;150" dur="18s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.5;0.9;0.5" dur="18s" repeatCount="indefinite"/></circle><circle cx="700" cy="250" r="3" fill="white"><animate attributeName="cy" values="250;650;250" dur="25s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.4;0.8;0.4" dur="25s" repeatCount="indefinite"/></circle></g><g opacity="0.2"><ellipse cx="400" cy="300" rx="120" ry="40" fill="white"><animate attributeName="rx" values="120;180;120" dur="12s" repeatCount="indefinite"/><animate attributeName="ry" values="40;60;40" dur="12s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.2;0.4;0.2" dur="12s" repeatCount="indefinite"/></ellipse></g></g></svg>') center/cover;
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.95);
+            min-height: 100vh;
+            box-shadow: 0 0 30px rgba(0,0,0,0.3);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #2F4F4F, #4682B4);
+            color: white;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><g opacity="0.4"><circle cx="200" cy="100" r="8" fill="white"><animate attributeName="r" values="8;15;8" dur="3s" repeatCount="indefinite"/></circle><circle cx="800" cy="150" r="12" fill="white"><animate attributeName="r" values="12;20;12" dur="4s" repeatCount="indefinite"/></circle></g><g stroke="rgba(255,255,255,0.3)" stroke-width="2" fill="none"><path d="M300,80 Q400,60 500,80" opacity="0.6"><animate attributeName="d" values="M300,80 Q400,60 500,80;M300,100 Q400,80 500,100;M300,80 Q400,60 500,80" dur="6s" repeatCount="indefinite"/></path></g></svg>');
+            pointer-events: none;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .header .subtitle {
+            font-size: 1.2em;
+            font-weight: 300;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .quote-section {
+            background: linear-gradient(135deg, #E0F6FF, #B0E0E6);
+            border-left: 5px solid #2F4F4F;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 0 15px 15px 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .quote-section blockquote {
+            font-style: italic;
+            font-size: 1.1em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .quote-section .author {
+            text-align: right;
+            font-weight: bold;
+            color: #2F4F4F;
+        }
+        
+        .section {
+            margin: 40px 0;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-top: 4px solid #2F4F4F;
+        }
+        
+        .section h2 {
+            color: #2F4F4F;
+            border-bottom: 3px solid #87CEEB;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+            font-size: 1.8em;
+        }
+        
+        .section h3 {
+            color: #2c3e50;
+            margin: 25px 0 15px 0;
+            font-size: 1.4em;
+        }
+        
+        .objectives-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .objective-card {
+            background: linear-gradient(135deg, #2F4F4F, #4682B4);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .objective-card h4 {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        
+        .media-container {
+            margin: 25px 0;
+            text-align: center;
+        }
+        
+        .media-container iframe {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        .reading-list {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #28a745;
+        }
+        
+        .reading-list ul {
+            list-style-type: none;
+        }
+        
+        .reading-list li {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 5px;
+            border-left: 3px solid #28a745;
+        }
+        
+        .reading-list a {
+            color: #2F4F4F;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .reading-list a:hover {
+            text-decoration: underline;
+            color: #4682B4;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #E0F6FF, #B0E0E6);
+            border: 1px solid #2F4F4F;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .highlight-box h4 {
+            color: #2F4F4F;
+            margin-bottom: 10px;
+        }
+        
+        /* Weather Theme styling */
+        .weather-concept-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .concept-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+            border-top: 4px solid #87CEEB;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .concept-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        .concept-card h4 {
+            color: #2F4F4F;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .weather-type {
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: bold;
+            margin: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .precipitation {
+            background: linear-gradient(135deg, #4169E1, #0000FF);
+            color: white;
+        }
+        
+        .clouds {
+            background: linear-gradient(135deg, #B0C4DE, #87CEEB);
+            color: #2c3e50;
+        }
+        
+        .storms {
+            background: linear-gradient(135deg, #8B0000, #DC143C);
+            color: white;
+        }
+        
+        .hurricanes {
+            background: linear-gradient(135deg, #FF6347, #FF4500);
+            color: white;
+        }
+        
+        .tornadoes {
+            background: linear-gradient(135deg, #4B0082, #8A2BE2);
+            color: white;
+        }
+        
+        .fronts {
+            background: linear-gradient(135deg, #2E8B57, #228B22);
+            color: white;
+        }
+        
+        /* Storm Grid */
+        .storm-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        
+        .storm-card {
+            background: linear-gradient(135deg, #2F4F4F, #4682B4);
+            color: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 8px 25px rgba(47, 79, 79, 0.3);
+            transition: transform 0.3s ease;
+        }
+        
+        .storm-card:hover {
+            transform: translateY(-8px);
+        }
+        
+        .storm-card h4 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .storm-properties {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            font-size: 0.9em;
+        }
+        
+        /* CidiLabs Activity Styles */
+        .cidilabs-activity {
+            margin: 30px 0;
+            padding: 25px;
+            background: linear-gradient(135deg, #f8f9fa, #ffffff);
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+            border: 2px solid #e9ecef;
+        }
+        
+        .cidilabs-activity h3 {
+            color: #2F4F4F;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            text-align: center;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #87CEEB;
+        }
+        
+        .activity-instruction {
+            background: #E0F6FF;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid #2F4F4F;
+        }
+        
+        /* Video Gallery */
+        .video-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        
+        .video-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+            border-top: 4px solid #2F4F4F;
+        }
+        
+        .video-card h4 {
+            color: #2F4F4F;
+            padding: 20px;
+            margin: 0;
+            background: #f8f9fa;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .video-card .media-container {
+            padding: 20px;
+        }
+        
+        .video-meta {
+            padding: 15px 20px 20px;
+            background: #f8f9fa;
+            font-size: 0.9em;
+            color: #666;
+        }
+        
+        /* NOAA highlight */
+        .noaa-highlight {
+            background: linear-gradient(135deg, #E6F3FF, #CCE7FF);
+            border: 3px solid #0066CC;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 30px 0;
+            color: #003366;
+        }
+        
+        .noaa-highlight h4 {
+            color: #0066CC;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+        
+        /* Practice Questions */
+        .practice-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .practice-question {
+            background: #fff8dc;
+            border: 2px solid #ffd700;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 15px 0;
+        }
+        
+        .practice-question .prompt {
+            background: #ffd700;
+            color: #000;
+            padding: 10px 15px;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+        
+        .practice-answer {
+            background: #2F4F4F;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .section {
+                padding: 20px;
+            }
+            
+            .objectives-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .weather-concept-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .storm-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .video-gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <h1><i class="fas fa-cloud-rain"></i> Clouds, Precipitation, and Storms</h1>
+            <div class="subtitle">Module 9, Lesson 1 | PHYS-1315 Physical Science I</div>
+        </div>
+
+        <!-- Motivational Quote Section -->
+        <div class="quote-section">
+            <blockquote>
+                "Our daily lives are impacted by weather, so this lesson should feel a little more familiar than some have been. Yet, you might not yet know the processes involved."
+            </blockquote>
+            <div class="author">— Weather and Climate Science</div>
+        </div>
+
+        <!-- Introduction Section -->
+        <div class="section">
+            <h2><i class="fas fa-cloud-sun-rain"></i> Understanding Weather Systems</h2>
+            <p>Weather affects our daily lives in countless ways - from the clothes we wear to the activities we plan. While we experience weather phenomena regularly, the complex processes that create clouds, precipitation, and storms involve fascinating interactions between temperature, pressure, humidity, and air masses.</p>
+            
+            <p>In this lesson, we'll explore the fundamental processes that drive Earth's weather systems. From the formation of tiny water droplets in clouds to the development of massive storm systems like hurricanes and tornadoes, we'll investigate the physical principles that govern these atmospheric phenomena.</p>
+            
+            <div class="highlight-box">
+                <h4><i class="fas fa-water"></i> The Water Cycle Connection</h4>
+                <p>Weather systems are driven by the continuous movement of water through evaporation, condensation, and precipitation. Understanding these phase changes and energy transfers is key to comprehending all weather phenomena.</p>
+            </div>
+        </div>
+
+        <!-- Learning Objectives Section -->
+        <div class="section">
+            <h2><i class="fas fa-target"></i> Learning Objectives</h2>
+            <div class="highlight-box">
+                <h4><i class="fas fa-star"></i> Course Competency CC9.1</h4>
+                <p><strong>Differentiate components of the Earth's weather and climate</strong></p>
+            </div>
+            
+            <div class="objectives-grid">
+                <div class="objective-card">
+                    <h4><i class="fas fa-cloud"></i> LO9.1.1</h4>
+                    <p>★ Analyze the types cloud-forming processes and the origin of precipitation</p>
+                </div>
+                <div class="objective-card">
+                    <h4><i class="fas fa-bolt"></i> LO9.1.2</h4>
+                    <p>★ Describe the major storms formed on Earth</p>
+                </div>
+                <div class="objective-card">
+                    <h4><i class="fas fa-globe-americas"></i> LO9.1.3</h4>
+                    <p>Describe climate change and its causes</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Required Readings Section -->
+        <div class="section">
+            <h2><i class="fas fa-book-open"></i> Required Readings</h2>
+            <div class="reading-list">
+                <h3>Primary Reading</h3>
+                <ul>
+                    <li><i class="fas fa-book"></i> <a href="https://bookshelf.vitalsource.com/reader/books/9781264450817/epubcfi/6/64%5B%3Bvnd.vst.idref%3Dchapter23%5D!/4/4" target="_blank">Physical Science, 13th Edition - Chapter 23</a> by Bill Tillery</li>
+                </ul>
+                
+                <h3>Interactive Resources</h3>
+                <ul>
+                    <li><i class="fas fa-external-link-alt"></i> <a href="https://www.virtualhomeschoolgroup.org/vhsgfiles/03_Science/02_Middle_School_Courses/Physical_Science/M08_Precipitation//Published/SWF_and_HTML5/index.html" target="_blank">Precipitation Lesson with Interactive Activities</a></li>
+                    <li><i class="fas fa-external-link-alt"></i> <a href="https://coast.noaa.gov/hurricanes/#map=4/32/-80" target="_blank">NOAA Historical Hurricane Tracks</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- CidiLabs Interactive Activity 1: Order/Sequence -->
+        <div class="cidilabs-activity">
+            <h3><i class="fas fa-sort-numeric-down"></i> Interactive Activity 1: Cloud Formation Process</h3>
+            <div class="activity-instruction">
+                <p><strong>Instructions:</strong> Arrange the steps of cloud formation and precipitation in the correct order. Understanding this sequence reveals how water moves through the atmosphere and creates weather patterns.</p>
+            </div>
+            
+            <div class="dp-order-wrapper">
+                <div class="dp-order-container">
+                    <div class="dp-order-item" data-value="1">
+                        <i class="fas fa-sun"></i>
+                        <strong>Solar Heating and Evaporation</strong>
+                        <p>Solar energy heats surface water, causing evaporation and adding water vapor to the atmosphere</p>
+                    </div>
+                    <div class="dp-order-item" data-value="2">
+                        <i class="fas fa-arrow-up"></i>
+                        <strong>Air Mass Rises (Convection)</strong>
+                        <p>Warm, humid air rises due to convection, carrying water vapor to higher altitudes</p>
+                    </div>
+                    <div class="dp-order-item" data-value="3">
+                        <i class="fas fa-thermometer-half"></i>
+                        <strong>Cooling and Condensation</strong>
+                        <p>Rising air cools due to decreasing pressure, reaching the dew point where condensation begins</p>
+                    </div>
+                    <div class="dp-order-item" data-value="4">
+                        <i class="fas fa-cloud"></i>
+                        <strong>Cloud Formation</strong>
+                        <p>Water vapor condenses on condensation nuclei (dust, pollen) forming tiny water droplets or ice crystals</p>
+                    </div>
+                    <div class="dp-order-item" data-value="5">
+                        <i class="fas fa-tint"></i>
+                        <strong>Precipitation</strong>
+                        <p>Droplets grow through collision-coalescence or ice crystal processes, becoming heavy enough to fall</p>
+                    </div>
+                </div>
+                <div class="dp-order-feedback">
+                    <p><strong>Cloud Physics Key:</strong> This process requires energy input (solar heating), atmospheric dynamics (convection), thermodynamics (cooling), phase changes (condensation), and particle physics (nucleation). Temperature, pressure, and humidity must all align for precipitation to occur.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CidiLabs Interactive Activity 2: Sort Items -->
+        <div class="cidilabs-activity">
+            <h3><i class="fas fa-cloud-bolt"></i> Interactive Activity 2: Weather Phenomena Classification</h3>
+            <div class="activity-instruction">
+                <p><strong>Instructions:</strong> Sort the following weather-related terms and phenomena into their correct categories. Understanding these classifications helps in analyzing different types of weather systems and storm formation.</p>
+            </div>
+            
+            <div class="dp-si-sort-pool">
+                <div class="dp-si-sort-categories">
+                    <div class="dp-si-sort-category" data-category="precipitation-types">
+                        <h4><span class="weather-type precipitation">Precipitation Types</span></h4>
+                        <p>Forms of water returning to Earth</p>
+                        <div class="dp-si-sort-drop-zone" data-accept="precipitation-types"></div>
+                    </div>
+                    <div class="dp-si-sort-category" data-category="cloud-processes">
+                        <h4><span class="weather-type clouds">Cloud Processes</span></h4>
+                        <p>Formation and development mechanisms</p>
+                        <div class="dp-si-sort-drop-zone" data-accept="cloud-processes"></div>
+                    </div>
+                    <div class="dp-si-sort-category" data-category="air-mass-dynamics">
+                        <h4><span class="weather-type fronts">Air Mass Dynamics</span></h4>
+                        <p>Movement and interaction of air masses</p>
+                        <div class="dp-si-sort-drop-zone" data-accept="air-mass-dynamics"></div>
+                    </div>
+                    <div class="dp-si-sort-category" data-category="severe-storms">
+                        <h4><span class="weather-type storms">Severe Storms</span></h4>
+                        <p>Intense weather systems and phenomena</p>
+                        <div class="dp-si-sort-drop-zone" data-accept="severe-storms"></div>
+                    </div>
+                </div>
+                
+                <div class="dp-si-sort-items">
+                    <div class="dp-si-sort-item" data-category="precipitation-types">Rain (liquid water droplets)</div>
+                    <div class="dp-si-sort-item" data-category="precipitation-types">Snow (ice crystals)</div>
+                    <div class="dp-si-sort-item" data-category="precipitation-types">Sleet (frozen raindrops)</div>
+                    <div class="dp-si-sort-item" data-category="precipitation-types">Hail (layered ice balls)</div>
+                    <div class="dp-si-sort-item" data-category="cloud-processes">Condensation nuclei requirement</div>
+                    <div class="dp-si-sort-item" data-category="cloud-processes">Collision-coalescence growth</div>
+                    <div class="dp-si-sort-item" data-category="cloud-processes">Ice crystal process (Bergeron)</div>
+                    <div class="dp-si-sort-item" data-category="cloud-processes">Adiabatic cooling with altitude</div>
+                    <div class="dp-si-sort-item" data-category="air-mass-dynamics">Convection (warm air rises)</div>
+                    <div class="dp-si-sort-item" data-category="air-mass-dynamics">Cold front (dense cold air)</div>
+                    <div class="dp-si-sort-item" data-category="air-mass-dynamics">Warm front (less dense air)</div>
+                    <div class="dp-si-sort-item" data-category="air-mass-dynamics">Front boundary (temperature difference)</div>
+                    <div class="dp-si-sort-item" data-category="severe-storms">Hurricanes (tropical cyclones)</div>
+                    <div class="dp-si-sort-item" data-category="severe-storms">Tornadoes (rotating vortex)</div>
+                    <div class="dp-si-sort-item" data-category="severe-storms">Thunderstorms (cumulonimbus)</div>
+                    <div class="dp-si-sort-item" data-category="severe-storms">Supercells (rotating updraft)</div>
+                </div>
+                
+                <div class="dp-si-sort-feedback">
+                    <p><strong>Weather System Analysis:</strong> Precipitation forms through specific processes in clouds. Air mass dynamics create fronts and convection patterns. Severe storms require specific atmospheric conditions including temperature gradients, moisture, and wind shear. Each category represents different scales of atmospheric phenomena from microscopic droplets to continental-scale storm systems.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CidiLabs Interactive Activity 3: Flip Cards -->
+        <div class="cidilabs-activity">
+            <h3><i class="fas fa-clone"></i> Interactive Activity 3: Weather Phenomena Deep Dive</h3>
+            <div class="activity-instruction">
+                <p><strong>Instructions:</strong> Click each card to reveal detailed information about weather processes, storm formation, and atmospheric dynamics. These concepts explain how weather systems develop and affect our daily lives.</p>
+            </div>
+            
+            <div class="dp-flip-card-container">
+                <div class="dp-flip-card">
+                    <div class="dp-flip-card-front">
+                        <h4>Precipitation</h4>
+                        <p class="weather-type precipitation">Water Returns to Earth</p>
+                    </div>
+                    <div class="dp-flip-card-back">
+                        <h4>Precipitation Mechanisms</h4>
+                        <ul>
+                            <li>• <strong>Definition:</strong> Water returning to Earth in liquid or solid form</li>
+                            <li>• <strong>Rain:</strong> Liquid droplets > 0.5mm diameter</li>
+                            <li>• <strong>Snow:</strong> Ice crystals formed in freezing clouds</li>
+                            <li>• <strong>Sleet:</strong> Raindrops frozen during descent</li>
+                            <li>• <strong>Hail:</strong> Ice balls from thunderstorm updrafts</li>
+                            <li>• Requires cloud droplets/crystals to grow large enough to overcome air resistance</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="dp-flip-card">
+                    <div class="dp-flip-card-front">
+                        <h4>Convection</h4>
+                        <p class="weather-type fronts">Air Movement</p>
+                    </div>
+                    <div class="dp-flip-card-back">
+                        <h4>Convective Air Movement</h4>
+                        <ul>
+                            <li>• <strong>Definition:</strong> Air movement from density differences</li>
+                            <li>• Warm air is less dense than cold air</li>
+                            <li>• Heated air rises, creating vertical circulation</li>
+                            <li>• Drives cloud formation and precipitation</li>
+                            <li>• Creates convective cells and thunderstorms</li>
+                            <li>• Essential for heat transfer in atmosphere</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="dp-flip-card">
+                    <div class="dp-flip-card-front">
+                        <h4>Weather Fronts</h4>
+                        <p class="weather-type fronts">Air Mass Boundaries</p>
+                    </div>
+                    <div class="dp-flip-card-back">
+                        <h4>Front Formation and Types</h4>
+                        <ul>
+                            <li>• <strong>Definition:</strong> Boundary between different air masses</li>
+                            <li>• <strong>Cold Front:</strong> Cold air displacing warm air</li>
+                            <li>• <strong>Warm Front:</strong> Warm air overriding cold air</li>
+                            <li>• Temperature differences create density contrasts</li>
+                            <li>• Width: typically 3-20 miles</li>
+                            <li>• Cause lifting, cooling, cloud formation</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="dp-flip-card">
+                    <div class="dp-flip-card-front">
+                        <h4>Hurricane Formation</h4>
+                        <p class="weather-type hurricanes">Tropical Cyclones</p>
+                    </div>
+                    <div class="dp-flip-card-back">
+                        <h4>Hurricane Development Process</h4>
+                        <ul>
+                            <li>• <strong>Requirements:</strong> Warm ocean water (>26.5°C)</li>
+                            <li>• Low wind shear for vertical development</li>
+                            <li>• Pre-existing low pressure disturbance</li>
+                            <li>• Coriolis effect for rotation (>5° latitude)</li>
+                            <li>• <strong>Energy source:</strong> Latent heat from condensation</li>
+                            <li>• Eye formation creates self-reinforcing system</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="dp-flip-card">
+                    <div class="dp-flip-card-front">
+                        <h4>Tornado Formation</h4>
+                        <p class="weather-type tornadoes">Rotating Vortex</p>
+                    </div>
+                    <div class="dp-flip-card-back">
+                        <h4>Tornado Development Steps</h4>
+                        <ul>
+                            <li>• <strong>1. Supercell:</strong> Warm humid air creates rotating updraft</li>
+                            <li>• <strong>2. Mesocyclone:</strong> Horizontal rotation becomes vertical</li>
+                            <li>• <strong>3. Downdraft:</strong> Cold air creates rear flank downdraft</li>
+                            <li>• <strong>4. Vortex:</strong> Rotation tightens, forms funnel</li>
+                            <li>• <strong>5. Tornado:</strong> Funnel touches ground surface</li>
+                            <li>• Requires wind shear and atmospheric instability</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="dp-flip-card">
+                    <div class="dp-flip-card-front">
+                        <h4>Cloud Types</h4>
+                        <p class="weather-type clouds">Sky Formations</p>
+                    </div>
+                    <div class="dp-flip-card-back">
+                        <h4>Cloud Classification System</h4>
+                        <ul>
+                            <li>• <strong>Cumulus:</strong> Puffy, fair weather clouds</li>
+                            <li>• <strong>Stratus:</strong> Layered, overcast clouds</li>
+                            <li>• <strong>Cirrus:</strong> High, wispy ice crystal clouds</li>
+                            <li>• <strong>Cumulonimbus:</strong> Towering thunderstorm clouds</li>
+                            <li>• Height determines temperature and phase</li>
+                            <li>• Shape indicates formation mechanism</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="dp-flip-card">
+                    <div class="dp-flip-card-front">
+                        <h4>Thunderstorms</h4>
+                        <p class="weather-type storms">Electrical Storms</p>
+                    </div>
+                    <div class="dp-flip-card-back">
+                        <h4>Thunderstorm Physics</h4>
+                        <ul>
+                            <li>• <strong>Requirements:</strong> Atmospheric instability, moisture, lifting</li>
+                            <li>• <strong>Stages:</strong> Cumulus, mature, dissipating</li>
+                            <li>• Strong updrafts and downdrafts</li>
+                            <li>• Electrical charge separation creates lightning</li>
+                            <li>• Can produce hail, tornadoes, flash floods</li>
+                            <li>• Release enormous amounts of energy</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="dp-flip-card">
+                    <div class="dp-flip-card-front">
+                        <h4>Extreme Weather</h4>
+                        <p class="weather-type storms">Record Conditions</p>
+                    </div>
+                    <div class="dp-flip-card-back">
+                        <h4>Weather Extremes on Earth</h4>
+                        <ul>
+                            <li>• <strong>Hottest:</strong> Death Valley, CA (134°F/56.7°C)</li>
+                            <li>• <strong>Coldest:</strong> Antarctica (-128.6°F/-89.2°C)</li>
+                            <li>• <strong>Windiest:</strong> Mount Washington (231 mph)</li>
+                            <li>• <strong>Rainiest:</strong> Mount Waialeale, HI (460 in/year)</li>
+                            <li>• <strong>Driest:</strong> Atacama Desert, Chile</li>
+                            <li>• These extremes test the limits of weather physics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content: Storm Types Video Gallery -->
+        <div class="section">
+            <h2><i class="fas fa-bolt"></i> Types of Storms</h2>
+            
+            <div class="video-gallery">
+                <div class="video-card">
+                    <h4><i class="fas fa-hurricane"></i> How Do Hurricanes Form?</h4>
+                    <div class="media-container">
+                        <iframe title="YouTube video player" src="https://www.youtube.com/embed/wPDoIrGUrEc?si=j4-Kz76p2iJscpZm" width="560" height="315" loading="lazy" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                    </div>
+                    <div class="video-meta">
+                        <p><strong>Duration:</strong> 2:22 | <strong>Channel:</strong> NOAA SciJinks</p>
+                        <p><a href="https://tstc.yuja.com/V/Video?v=13093033&node=56803606&a=63573244" target="_blank">ASL Version Available</a></p>
+                        <p>This NOAA video explains the basic physics behind hurricane formation, including the role of warm ocean water and atmospheric rotation.</p>
+                    </div>
+                </div>
+                
+                <div class="video-card">
+                    <h4><i class="fas fa-tornado"></i> How Do Tornadoes Form?</h4>
+                    <div class="media-container">
+                        <iframe title="YouTube video player" src="https://www.youtube.com/embed/lmWh9jV_1ac?si=9HH8-G9QaPqoU2IF" width="560" height="315" loading="lazy" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                    </div>
+                    <div class="video-meta">
+                        <p><strong>Duration:</strong> 2:22 | <strong>Channel:</strong> TED-Ed</p>
+                        <p>James Spann explains the fundamental physics of tornado formation, from supercell development to vortex creation.</p>
+                    </div>
+                </div>
+                
+                <div class="video-card">
+                    <h4><i class="fas fa-thermometer-full"></i> Extreme Weather on Earth</h4>
+                    <div class="media-container">
+                        <iframe title="YouTube video player" src="https://www.youtube.com/embed/3hXSgRSIHMU?si=mxOanbz55sHo_RUj" width="560" height="315" loading="lazy" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                    </div>
+                    <div class="video-meta">
+                        <p><strong>Duration:</strong> 12:53 | <strong>Channel:</strong> PBS Terra</p>
+                        <p><a href="https://tstc.yuja.com/V/Video?v=13086023&node=56757230&a=125824927" target="_blank">ASL Version Available</a></p>
+                        <p>Explores the most extreme weather conditions found on Earth and the physics behind these phenomena.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- NOAA Hurricane Tracking Tool -->
+        <div class="noaa-highlight">
+            <h4><i class="fas fa-map"></i> NOAA Historical Hurricane Tracks</h4>
+            <p>The NOAA Hurricane Database provides detailed tracking information for all hurricanes that have impacted the United States. This interactive tool allows you to:</p>
+            <ul>
+                <li>• Enter your zip code or location of interest</li>
+                <li>• View historical hurricane paths and intensities</li>
+                <li>• Analyze patterns and frequency of storms in your area</li>
+                <li>• Understand regional hurricane risk and preparedness</li>
+            </ul>
+            <p><a href="https://coast.noaa.gov/hurricanes/#map=4/32/-80" target="_blank" style="color: #0066CC; font-weight: bold;">Access NOAA Hurricane Tracks Tool →</a></p>
+        </div>
+
+        <!-- Practice Questions Section -->
+        <div class="section">
+            <h2><i class="fas fa-question-circle"></i> Practice and Apply</h2>
+            
+            <div class="practice-grid">
+                <div class="practice-question">
+                    <div class="prompt">PROMPT: Define precipitation.</div>
+                    <p><strong>Question:</strong> What is precipitation and how does it form?</p>
+                    
+                    <details>
+                        <summary style="cursor: pointer; font-weight: bold; color: #2F4F4F;">Click to reveal answer</summary>
+                        <div class="practice-answer">
+                            <p><strong>Answer:</strong> Water that returns to the earth, in either solid or liquid form.</p>
+                            <p><strong>Formation process:</strong> Water vapor condenses in clouds around condensation nuclei, droplets grow through collision-coalescence or ice crystal processes until they become heavy enough to overcome air resistance and fall to the surface.</p>
+                        </div>
+                    </details>
+                </div>
+                
+                <div class="practice-question">
+                    <div class="prompt">PROMPT: Define convection.</div>
+                    <p><strong>Question:</strong> What is convection and why is it important in weather?</p>
+                    
+                    <details>
+                        <summary style="cursor: pointer; font-weight: bold; color: #2F4F4F;">Click to reveal answer</summary>
+                        <div class="practice-answer">
+                            <p><strong>Answer:</strong> Air movement that results from the rise of warm air masses which are less dense than cold air masses.</p>
+                            <p><strong>Weather importance:</strong> Convection drives cloud formation, precipitation, and storm development by creating vertical air circulation patterns.</p>
+                        </div>
+                    </details>
+                </div>
+                
+                <div class="practice-question">
+                    <div class="prompt">PROMPT: What is a front?</div>
+                    <p><strong>Question:</strong> Explain weather fronts and their effects.</p>
+                    
+                    <details>
+                        <summary style="cursor: pointer; font-weight: bold; color: #2F4F4F;">Click to reveal answer</summary>
+                        <div class="practice-answer">
+                            <p><strong>Answer:</strong> It is the boundary between air masses of different temperature.</p>
+                            <p><strong>Details:</strong> The colder of the two fronts is called a cold front. It generally ranges from 3 to 20 miles wide. The differences in densities between the air at differing temperatures cause the warmer mass to move upward quickly and the cold to end up underneath the other one. If the warm front carries with it a lot of moisture, the dropping temperatures of the collision with the cold front cause the humidity to condense forming clouds and eventually precipitation.</p>
+                        </div>
+                    </details>
+                </div>
+                
+                <div class="practice-question">
+                    <div class="prompt">PROMPT: What is the process that forms tornadoes?</div>
+                    <p><strong>Question:</strong> Describe the step-by-step tornado formation process.</p>
+                    
+                    <details>
+                        <summary style="cursor: pointer; font-weight: bold; color: #2F4F4F;">Click to reveal answer</summary>
+                        <div class="practice-answer">
+                            <p><strong>Answer:</strong> Warm and humid air rises creating a supercell. The rising air starts to move rapidly, a huge cloud base forms, and a vortex develops creating a spinning tube called a mesocyclone. Cold air from the outside is pulled in rear flank downdraft. This creates a temperature difference between the inside and outside of the tornado. The funnel of the mesocyclone gets tighter near the bottom, and when it touches the Earth's surface it becomes a tornado.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </div>
+
+        <!-- Interactive Resource Section -->
+        <div class="section">
+            <h2><i class="fas fa-flask"></i> Interactive Learning Resource</h2>
+            
+            <div class="highlight-box">
+                <h4><i class="fas fa-mouse-pointer"></i> Precipitation Interactive Lesson</h4>
+                <p>Access the comprehensive <a href="https://www.virtualhomeschoolgroup.org/vhsgfiles/03_Science/02_Middle_School_Courses/Physical_Science/M08_Precipitation//Published/SWF_and_HTML5/index.html" target="_blank" style="color: #2F4F4F; font-weight: bold;">Precipitation Interactive Lesson</a> for hands-on activities and simulations.</p>
+                
+                <p><strong>Features:</strong></p>
+                <ul>
+                    <li>• Interactive cloud formation simulations</li>
+                    <li>• Precipitation type identification exercises</li>
+                    <li>• Virtual weather lab experiments</li>
+                    <li>• Self-paced learning modules</li>
+                </ul>
+                
+                <p><strong>Quick Access:</strong> Use the shortcut on the first page to jump directly to the "Interactive and Labs" section, or use the table of contents to navigate to "Try It".</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div style="text-align: center; padding: 30px; color: #666; border-top: 2px solid #eee; margin-top: 40px;">
+            <p><strong>PHYS-1315 Physical Science I</strong> | Module 9, Lesson 1</p>
+            <p>Enhanced with CidiLabs Interactive Activities</p>
+            <p><i class="fas fa-globe-americas"></i> Next: M9L2 - Climate Change and Environmental Science!</p>
+        </div>
+    </div>
+
+    <!-- CidiLabs JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Flip cards functionality
+            const flipCards = document.querySelectorAll('.dp-flip-card');
+            flipCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    this.classList.toggle('flipped');
+                });
+            });
+            
+            // Order activity setup
+            const orderItems = document.querySelectorAll('.dp-order-item');
+            orderItems.forEach((item, index) => {
+                item.style.order = Math.random() * 10;
+                item.setAttribute('draggable', true);
+            });
+            
+            // Sort activity setup  
+            const sortItems = document.querySelectorAll('.dp-si-sort-item');
+            sortItems.forEach(item => {
+                item.setAttribute('draggable', true);
+            });
+            
+            console.log('CidiLabs activities initialized for M9L1 Clouds, Precipitation, and Storms');
+        });
+    </script>
+
+    <!-- Enhanced CidiLabs Activity Styles -->
+    <style>
+        /* Flip Cards Enhanced Styling for Weather Theme */
+        .dp-flip-card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            margin: 25px 0;
+        }
+        
+        .dp-flip-card {
+            background: linear-gradient(135deg, #fff, #f8f9fa);
+            border: 2px solid #e9ecef;
+            border-radius: 15px;
+            height: 250px;
+            perspective: 1000px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .dp-flip-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 12px 30px rgba(47, 79, 79, 0.2);
+        }
+        
+        .dp-flip-card-front,
+        .dp-flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            padding: 25px;
+            backface-visibility: hidden;
+            transition: transform 0.6s;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .dp-flip-card-back {
+            transform: rotateY(180deg);
+            background: linear-gradient(135deg, #2F4F4F, #4682B4);
+            color: white;
+        }
+        
+        .dp-flip-card.flipped .dp-flip-card-front {
+            transform: rotateY(180deg);
+        }
+        
+        .dp-flip-card.flipped .dp-flip-card-back {
+            transform: rotateY(0deg);
+        }
+        
+        .dp-flip-card-back ul {
+            text-align: left;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            font-size: 0.85em;
+        }
+        
+        .dp-flip-card-back li {
+            margin: 3px 0;
+        }
+        
+        /* Order Activity Enhanced for Weather Processes */
+        .dp-order-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin: 25px 0;
+        }
+        
+        .dp-order-item {
+            background: linear-gradient(135deg, #2F4F4F, #4682B4);
+            color: white;
+            padding: 18px;
+            border-radius: 12px;
+            cursor: grab;
+            user-select: none;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            font-weight: 500;
+            box-shadow: 0 4px 15px rgba(47, 79, 79, 0.3);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .dp-order-item i {
+            font-size: 1.2em;
+            flex-shrink: 0;
+        }
+        
+        .dp-order-item:hover {
+            transform: translateX(15px);
+            box-shadow: 0 6px 20px rgba(47, 79, 79, 0.4);
+            border-color: rgba(135, 206, 235, 0.5);
+        }
+        
+        .dp-order-item:active {
+            cursor: grabbing;
+            transform: scale(1.02);
+        }
+        
+        .dp-order-item p {
+            margin: 5px 0 0 0;
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+        
+        .dp-order-feedback {
+            background: linear-gradient(135deg, #d4edda, #c3e6cb);
+            border: 2px solid #28a745;
+            color: #155724;
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 25px;
+            font-weight: 500;
+            box-shadow: 0 4px 15px rgba(40, 167, 69, 0.2);
+        }
+        
+        /* Sort Activity Enhanced for Weather Classification */
+        .dp-si-sort-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .dp-si-sort-category {
+            background: linear-gradient(135deg, #f8f9fa, #ffffff);
+            border: 3px dashed #dee2e6;
+            border-radius: 15px;
+            padding: 20px;
+            min-height: 200px;
+            transition: all 0.3s ease;
+        }
+        
+        .dp-si-sort-category:hover {
+            border-color: #2F4F4F;
+            box-shadow: 0 6px 20px rgba(47, 79, 79, 0.2);
+            transform: translateY(-2px);
+        }
+        
+        .dp-si-sort-category h4 {
+            margin-bottom: 12px;
+            text-align: center;
+        }
+        
+        .dp-si-sort-drop-zone {
+            min-height: 140px;
+            border: 2px dashed #adb5bd;
+            border-radius: 10px;
+            margin-top: 12px;
+            padding: 12px;
+            background: white;
+            transition: all 0.3s ease;
+        }
+        
+        .dp-si-sort-drop-zone:hover {
+            border-color: #28a745;
+            background: #f8fff8;
+        }
+        
+        .dp-si-sort-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+            margin: 25px 0;
+            padding: 25px;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border-radius: 15px;
+            border: 2px solid #dee2e6;
+        }
+        
+        .dp-si-sort-item {
+            background: linear-gradient(135deg, #708090, #4682B4);
+            color: white;
+            padding: 10px 16px;
+            border-radius: 20px;
+            cursor: grab;
+            user-select: none;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            font-size: 0.9em;
+            box-shadow: 0 2px 8px rgba(112, 128, 144, 0.3);
+        }
+        
+        .dp-si-sort-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(112, 128, 144, 0.4);
+        }
+        
+        .dp-si-sort-item:active {
+            cursor: grabbing;
+        }
+        
+        .dp-si-sort-feedback {
+            background: linear-gradient(135deg, #e8f4fd, #cce7ff);
+            border: 2px solid #007bff;
+            color: #004085;
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 25px;
+            font-weight: 500;
+            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2);
+        }
+    </style>
+</body>
+</html>

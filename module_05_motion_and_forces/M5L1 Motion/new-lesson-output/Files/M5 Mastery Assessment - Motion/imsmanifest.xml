@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<manifest xmlns="http://www.imsglobal.org/xsd/imsccv1p1/imscp_v1p1" xmlns:lom="http://ltsc.ieee.org/xsd/imsccv1p1/LOM/resource" xmlns:imsmd="http://www.imsglobal.org/xsd/imsmd_v1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" identifier="33dea88c766efd6e27d37e56311c41cc" xsi:schemaLocation="http://www.imsglobal.org/xsd/imsccv1p1/imscp_v1p1 http://www.imsglobal.org/xsd/imscp_v1p1.xsd http://ltsc.ieee.org/xsd/imsccv1p1/LOM/resource http://www.imsglobal.org/profile/cc/ccv1p1/LOM/ccv1p1_lomresource_v1p0.xsd http://www.imsglobal.org/xsd/imsmd_v1p2 http://www.imsglobal.org/xsd/imsmd_v1p2p2.xsd">
+  <metadata>
+    <schema>IMS Content</schema>
+    <schemaversion>1.1.3</schemaversion>
+    <imsmd:lom>
+      <imsmd:general>
+        <imsmd:title>
+          <imsmd:string>QTI Quiz Export for </imsmd:string>
+        </imsmd:title>
+      </imsmd:general>
+      <imsmd:lifeCycle>
+        <imsmd:contribute>
+          <imsmd:date>
+            <imsmd:dateTime>2026-01-12</imsmd:dateTime>
+          </imsmd:date>
+        </imsmd:contribute>
+      </imsmd:lifeCycle>
+      <imsmd:rights>
+        <imsmd:copyrightAndOtherRestrictions>
+          <imsmd:value>yes</imsmd:value>
+        </imsmd:copyrightAndOtherRestrictions>
+        <imsmd:description>
+          <imsmd:string>Private (Copyrighted) - http://en.wikipedia.org/wiki/Copyright</imsmd:string>
+        </imsmd:description>
+      </imsmd:rights>
+    </imsmd:lom>
+  </metadata>
+  <organizations/>
+  <resources>
+    <resource identifier="g6fd5a97d1f37aa5688f58d01067f9b50" type="imsqti_xmlv1p2">
+      <file href="g6fd5a97d1f37aa5688f58d01067f9b50/g6fd5a97d1f37aa5688f58d01067f9b50.xml"/>
+      <dependency identifierref="908ffb18d6a7d9368d8e62bd6a4f9736"/>
+    </resource>
+    <resource identifier="908ffb18d6a7d9368d8e62bd6a4f9736" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="g6fd5a97d1f37aa5688f58d01067f9b50/assessment_meta.xml">
+      <file href="g6fd5a97d1f37aa5688f58d01067f9b50/assessment_meta.xml"/>
+    </resource>
+    <resource identifier="32eda96aeba52dcbfc4219a40ed722c1" type="webcontent" href="Uploaded Media/4e3fe44a-9ad8-4a86-900b-65665d6e5aa0">
+      <file href="Uploaded Media/4e3fe44a-9ad8-4a86-900b-65665d6e5aa0"/>
+    </resource>
+    <resource identifier="g6f708943c489bf3f4ce6055d78ebb569" type="associatedcontent/imscc_xmlv1p1/learning-application-resource" href="non_cc_assessments/g6f708943c489bf3f4ce6055d78ebb569.xml.qti">
+      <file href="non_cc_assessments/g6f708943c489bf3f4ce6055d78ebb569.xml.qti"/>
+    </resource>
+  </resources>
+</manifest>

@@ -1,0 +1,677 @@
+<?xml version="1.0"?>
+<questestinterop xmlns="http://www.imsglobal.org/xsd/ims_qtiasiv1p2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.imsglobal.org/xsd/ims_qtiasiv1p2 http://www.imsglobal.org/xsd/ims_qtiasiv1p2p1.xsd">
+  <assessment ident="g96778d69e22454f9a86e2650c1223d16" title="M9 Check for Understanding: Weather and Climate" external_assignment_id="1194202">
+    <qtimetadata>
+      <qtimetadatafield>
+        <fieldlabel>cc_maxattempts</fieldlabel>
+        <fieldentry>unlimited</fieldentry>
+      </qtimetadatafield>
+    </qtimetadata>
+    <section ident="root_section">
+      <item ident="08d82de6970696c33c7705e20a7e66ac" title="">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_choice_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>5a7ab3ca-7910-4f1a-bda5-58981db74195,febd99c6-f367-4a20-934c-e5f0c74b7ee7,39e1a65a-06ac-465c-94a1-a74696eb6fcc</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>ef5f8232eae69239d961187cce641d64</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>calculator_type</fieldlabel>
+              <fieldentry>none</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;What major climate group is most of North America within?&lt;/p&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Single">
+            <render_choice shuffle="Yes">
+              <response_label ident="5a7ab3ca-7910-4f1a-bda5-58981db74195">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Temperate&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="febd99c6-f367-4a20-934c-e5f0c74b7ee7">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Tropical&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="39e1a65a-06ac-465c-94a1-a74696eb6fcc">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Polar&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">5a7ab3ca-7910-4f1a-bda5-58981db74195</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="b9dfd8fe558a4258b4d48135dd8d3376" title="">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>d61708a9-d423-46eb-b5bc-8ebe0763a4c9,e94f45e9-ce93-4770-9a3a-f964063eb69b,a0f44f0c-c2bf-4f16-9fb4-4c50a7773648,96216a8c-4c32-4c66-9782-d165d5e00b49,dbca90af-a4e1-49ce-a594-7920dc1f7e95,8c58087c-b4f6-4b6c-bef9-a8e5f665c406,fe016a3c-ccef-44b1-aef9-1ce08b3c6500,5de52042-1c34-40a9-8e96-188eb81e9ee2</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>b6f14d5e5c7741ff6b07a24ba9cb076e</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>calculator_type</fieldlabel>
+              <fieldentry>none</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>scoring_algorithm</fieldlabel>
+              <fieldentry>PartialScore</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;What are the four major regional climate factors?&lt;/p&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice shuffle="Yes">
+              <response_label ident="d61708a9-d423-46eb-b5bc-8ebe0763a4c9">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;altitude&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="e94f45e9-ce93-4770-9a3a-f964063eb69b">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;mountains&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="a0f44f0c-c2bf-4f16-9fb4-4c50a7773648">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;large bodies of water&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="96216a8c-4c32-4c66-9782-d165d5e00b49">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;ocean currents&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="dbca90af-a4e1-49ce-a594-7920dc1f7e95">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;planetary tilt&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="8c58087c-b4f6-4b6c-bef9-a8e5f665c406">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;regional CO&lt;sub&gt;2&lt;/sub&gt; levels&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="fe016a3c-ccef-44b1-aef9-1ce08b3c6500">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;ozone layer&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="5de52042-1c34-40a9-8e96-188eb81e9ee2">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;rivers and streams&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <varequal respident="response1">d61708a9-d423-46eb-b5bc-8ebe0763a4c9</varequal>
+                <varequal respident="response1">e94f45e9-ce93-4770-9a3a-f964063eb69b</varequal>
+                <varequal respident="response1">a0f44f0c-c2bf-4f16-9fb4-4c50a7773648</varequal>
+                <varequal respident="response1">96216a8c-4c32-4c66-9782-d165d5e00b49</varequal>
+                <not>
+                  <varequal respident="response1">dbca90af-a4e1-49ce-a594-7920dc1f7e95</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">8c58087c-b4f6-4b6c-bef9-a8e5f665c406</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">fe016a3c-ccef-44b1-aef9-1ce08b3c6500</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">5de52042-1c34-40a9-8e96-188eb81e9ee2</varequal>
+                </not>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="4aebc1e385630572e9f22e9ea7e70335" title="">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>multiple_answers_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>c495dd5b-81a4-44c1-b3e0-01b04e9278a2,1137b590-55d8-4e24-9082-732257207056,4b13be4c-f357-4b4c-8979-bd34c42ff1f3,0d4bdf09-3697-4f53-9eaf-6af7451b20a1,d6a83318-1d61-4e19-b126-03ad297ed4ae,6323e899-7922-4e64-8c24-6f6612ce9fe7,47e98d48-30eb-4189-bdef-acc984230384,e4ad9586-aa13-4443-a881-fb12dd6e3095,1f15aeb1-8ef3-4526-8580-75fa1b2b000b,fd6d33f9-73c0-4d22-8961-cde8e2e69492</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>674bc19c1e5850a08ab51d2cfa9cdf79</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>calculator_type</fieldlabel>
+              <fieldentry>none</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>scoring_algorithm</fieldlabel>
+              <fieldentry>PartialScore</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;Which of the following are major climate types you will find in the continental United States?&lt;/p&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Multiple">
+            <render_choice shuffle="Yes">
+              <response_label ident="c495dd5b-81a4-44c1-b3e0-01b04e9278a2">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;humid subtropical&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="1137b590-55d8-4e24-9082-732257207056">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;humid continental&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="4b13be4c-f357-4b4c-8979-bd34c42ff1f3">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;tropical wet&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="0d4bdf09-3697-4f53-9eaf-6af7451b20a1">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;semiarid&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="d6a83318-1d61-4e19-b126-03ad297ed4ae">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;polar&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="6323e899-7922-4e64-8c24-6f6612ce9fe7">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;marine&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="47e98d48-30eb-4189-bdef-acc984230384">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;desert&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="e4ad9586-aa13-4443-a881-fb12dd6e3095">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;Mediterranean&amp;nbsp;&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="1f15aeb1-8ef3-4526-8580-75fa1b2b000b">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;tropical&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+              <response_label ident="fd6d33f9-73c0-4d22-8961-cde8e2e69492">
+                <material>
+                  <mattext texttype="text/html">&lt;p&gt;jungle&lt;/p&gt;</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <and>
+                <varequal respident="response1">c495dd5b-81a4-44c1-b3e0-01b04e9278a2</varequal>
+                <varequal respident="response1">1137b590-55d8-4e24-9082-732257207056</varequal>
+                <varequal respident="response1">0d4bdf09-3697-4f53-9eaf-6af7451b20a1</varequal>
+                <varequal respident="response1">6323e899-7922-4e64-8c24-6f6612ce9fe7</varequal>
+                <varequal respident="response1">47e98d48-30eb-4189-bdef-acc984230384</varequal>
+                <varequal respident="response1">e4ad9586-aa13-4443-a881-fb12dd6e3095</varequal>
+                <not>
+                  <varequal respident="response1">4b13be4c-f357-4b4c-8979-bd34c42ff1f3</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">d6a83318-1d61-4e19-b126-03ad297ed4ae</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">1f15aeb1-8ef3-4526-8580-75fa1b2b000b</varequal>
+                </not>
+                <not>
+                  <varequal respident="response1">fd6d33f9-73c0-4d22-8961-cde8e2e69492</varequal>
+                </not>
+              </and>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="49e401845caf3e118b96f459a870c27f" title="">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>matching_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>6415,78545,99994</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>77e8db26f8410ec51491eafeabbfd18f</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>calculator_type</fieldlabel>
+              <fieldentry>none</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>scoring_algorithm</fieldlabel>
+              <fieldentry>PartialDeep</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;Match the three stages of a thunderstorm&lt;/p&gt;</mattext>
+          </material>
+          <response_lid ident="response_99994">
+            <material>
+              <mattext texttype="text/plain">The cumulus stage is where</mattext>
+            </material>
+            <render_choice>
+              <response_label ident="6415">
+                <material>
+                  <mattext>there are no more updrafts, and the rains decreases and the storm dissipates</mattext>
+                </material>
+              </response_label>
+              <response_label ident="78545">
+                <material>
+                  <mattext>precipitation reaches the ground and updrafts and down drafts cause violent turbulence</mattext>
+                </material>
+              </response_label>
+              <response_label ident="99994">
+                <material>
+                  <mattext>warm and moist air raises in an unstable atmosphere</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+          <response_lid ident="response_78545">
+            <material>
+              <mattext texttype="text/plain">The mature stage is where</mattext>
+            </material>
+            <render_choice>
+              <response_label ident="6415">
+                <material>
+                  <mattext>there are no more updrafts, and the rains decreases and the storm dissipates</mattext>
+                </material>
+              </response_label>
+              <response_label ident="78545">
+                <material>
+                  <mattext>precipitation reaches the ground and updrafts and down drafts cause violent turbulence</mattext>
+                </material>
+              </response_label>
+              <response_label ident="99994">
+                <material>
+                  <mattext>warm and moist air raises in an unstable atmosphere</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+          <response_lid ident="response_6415">
+            <material>
+              <mattext texttype="text/plain">The final stage is where</mattext>
+            </material>
+            <render_choice>
+              <response_label ident="6415">
+                <material>
+                  <mattext>there are no more updrafts, and the rains decreases and the storm dissipates</mattext>
+                </material>
+              </response_label>
+              <response_label ident="78545">
+                <material>
+                  <mattext>precipitation reaches the ground and updrafts and down drafts cause violent turbulence</mattext>
+                </material>
+              </response_label>
+              <response_label ident="99994">
+                <material>
+                  <mattext>warm and moist air raises in an unstable atmosphere</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="response_99994">99994</varequal>
+            </conditionvar>
+            <setvar action="Add" varname="SCORE">33.33</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="response_78545">78545</varequal>
+            </conditionvar>
+            <setvar action="Add" varname="SCORE">33.33</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="response_6415">6415</varequal>
+            </conditionvar>
+            <setvar action="Add" varname="SCORE">33.33</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="c46c51830a72d1ad1244a0e409bb3d1a" title="">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>ordering_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>2.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>2f917e91-fd2d-46aa-95f2-0e1664dcbed0,8084ef58-b729-4898-bdb6-8a846ff6c501,900ffa1a-c1b2-4df1-aec5-bc3461ecc796,a110c325-928b-4250-8611-b3ef4fc4805f,b308f53f-a328-4d79-89bd-9b13e1b255e3,e12b80ca-4e8a-4415-afe6-385d657fd2e7,e82ce04b-5222-4e98-ac70-2079a48a61e3</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>d4cb4e66dc0136cf53a95d0f3742ca62</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>calculator_type</fieldlabel>
+              <fieldentry>none</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;Sort the steps of the formation of a tornado&lt;/p&gt;</mattext>
+          </material>
+          <response_lid ident="response1" rcardinality="Ordered">
+            <render_extension>
+              <material position="top">
+                <mattext>Begining</mattext>
+              </material>
+              <ims_render_object shuffle="No">
+                <flow_label>
+                  <response_label ident="2f917e91-fd2d-46aa-95f2-0e1664dcbed0">
+                    <material>
+                      <mattext texttype="text/html">&lt;p&gt;Once the spinning tube of air touches the ground it becomes a tornado&lt;/p&gt;</mattext>
+                    </material>
+                  </response_label>
+                  <response_label ident="8084ef58-b729-4898-bdb6-8a846ff6c501">
+                    <material>
+                      <mattext texttype="text/html">&lt;p&gt;Supercell thunderstorms form high in the sky&lt;/p&gt;</mattext>
+                    </material>
+                  </response_label>
+                  <response_label ident="900ffa1a-c1b2-4df1-aec5-bc3461ecc796">
+                    <material>
+                      <mattext texttype="text/html">&lt;p&gt;A very large cloud base forms&amp;nbsp;&lt;/p&gt;</mattext>
+                    </material>
+                  </response_label>
+                  <response_label ident="a110c325-928b-4250-8611-b3ef4fc4805f">
+                    <material>
+                      <mattext texttype="text/html">&lt;p&gt;Cool dry air begins to wrap around the mesocyclone creating a downdraft&lt;/p&gt;</mattext>
+                    </material>
+                  </response_label>
+                  <response_label ident="b308f53f-a328-4d79-89bd-9b13e1b255e3">
+                    <material>
+                      <mattext texttype="text/html">&lt;p&gt;The mesocyclone becomes tighter, increases in speed, and may connect to the parent storm&lt;/p&gt;</mattext>
+                    </material>
+                  </response_label>
+                  <response_label ident="e12b80ca-4e8a-4415-afe6-385d657fd2e7">
+                    <material>
+                      <mattext texttype="text/html">&lt;p&gt;Warm moist air rises creating huge upward drafts of air&lt;/p&gt;</mattext>
+                    </material>
+                  </response_label>
+                  <response_label ident="e82ce04b-5222-4e98-ac70-2079a48a61e3">
+                    <material>
+                      <mattext texttype="text/html">&lt;p&gt;A vortex forms a wide tall tube of spinning air creating a mesocyclone&lt;/p&gt;</mattext>
+                    </material>
+                  </response_label>
+                </flow_label>
+              </ims_render_object>
+              <material position="bottom">
+                <mattext>End</mattext>
+              </material>
+            </render_extension>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar defaultval="1" varname="ORDERSCORE" vartype="Integer"/>
+          </outcomes>
+          <respcondition continue="No">
+            <conditionvar>
+              <varequal respident="response1">8084ef58-b729-4898-bdb6-8a846ff6c501</varequal>
+              <varequal respident="response1">e12b80ca-4e8a-4415-afe6-385d657fd2e7</varequal>
+              <varequal respident="response1">900ffa1a-c1b2-4df1-aec5-bc3461ecc796</varequal>
+              <varequal respident="response1">e82ce04b-5222-4e98-ac70-2079a48a61e3</varequal>
+              <varequal respident="response1">a110c325-928b-4250-8611-b3ef4fc4805f</varequal>
+              <varequal respident="response1">b308f53f-a328-4d79-89bd-9b13e1b255e3</varequal>
+              <varequal respident="response1">2f917e91-fd2d-46aa-95f2-0e1664dcbed0</varequal>
+            </conditionvar>
+            <setvar action="Set" varname="SCORE">100</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+      <item ident="ce9d671ddfe7cfc28c2b9796e6f609e2" title="">
+        <itemmetadata>
+          <qtimetadata>
+            <qtimetadatafield>
+              <fieldlabel>question_type</fieldlabel>
+              <fieldentry>fill_in_multiple_blanks_question</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>points_possible</fieldlabel>
+              <fieldentry>1.0</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>original_answer_ids</fieldlabel>
+              <fieldentry>["cec9ddff-ef10-4c07-8aec-1cbf118ba03f", "a9f69c2c-b0d0-48c7-a3b4-72cd613ed15d", "c32be72a-3c85-48cf-97d9-513ccf3b807d", "679d22d6-5a7d-49be-ac0b-786a07837034", "3b6854be-338d-4832-9592-d07a1f09d13c", "4e9bcf80-7fa9-4137-95ae-946ce0b55c94", "f24221e6-989e-4ef5-a096-c5ecb680b264", "929286fe-32bf-4716-9290-f92c6ad70ca9", "64d03dd4-0cbb-490c-906e-aa3c8ed832fd", "dd33f5f0-b035-4fe5-bcd9-26f9716cdc2c", "bdcea6f9-a591-4baf-8a01-325720a64964-0"]</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>assessment_question_identifierref</fieldlabel>
+              <fieldentry>67ed7032c31e2a7510e8de4e1b95c6bb</fieldentry>
+            </qtimetadatafield>
+            <qtimetadatafield>
+              <fieldlabel>calculator_type</fieldlabel>
+              <fieldentry>none</fieldentry>
+            </qtimetadatafield>
+          </qtimetadata>
+        </itemmetadata>
+        <presentation>
+          <material>
+            <mattext texttype="text/html">&lt;p&gt;[1efaf7d2-f04f-4005-816e-9ba77d9f5755] tropical ocean water near the equator evaporate and create [63ca252c-179a-44d3-8f67-232a0784b5f4] air. Winds that blow off the cost of [d4ce44fa-c7de-40ea-968b-d3ddb79b3afe] causes more water to evaporate. As this moist air rises, it cools, condenses, and forms large [ce0811cd-e734-46ac-bcad-a591ff7c340c] clouds. As the air continue to rise it begins to spin and continues to accumulate clouds. Once the speed reaches [bdcea6f9-a591-4baf-8a01-325720a64964] mph it is classified as a hurricane.&lt;/p&gt;</mattext>
+          </material>
+          <response_lid ident="response_1efaf7d2-f04f-4005-816e-9ba77d9f5755">
+            <material>
+              <mattext>Warm</mattext>
+            </material>
+            <render_choice>
+              <response_label scoring_algorithm="Equivalence" answer_type="dropdown" ident="cec9ddff-ef10-4c07-8aec-1cbf118ba03f" position="1">
+                <material>
+                  <mattext texttype="text/plain">Warm</mattext>
+                </material>
+              </response_label>
+              <response_label scoring_algorithm="Equivalence" answer_type="dropdown" ident="a9f69c2c-b0d0-48c7-a3b4-72cd613ed15d" position="2">
+                <material>
+                  <mattext texttype="text/plain">Cold</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+          <response_lid ident="response_63ca252c-179a-44d3-8f67-232a0784b5f4">
+            <material>
+              <mattext>moist</mattext>
+            </material>
+            <render_choice>
+              <response_label scoring_algorithm="Equivalence" answer_type="dropdown" ident="c32be72a-3c85-48cf-97d9-513ccf3b807d" position="1">
+                <material>
+                  <mattext texttype="text/plain">moist</mattext>
+                </material>
+              </response_label>
+              <response_label scoring_algorithm="Equivalence" answer_type="dropdown" ident="679d22d6-5a7d-49be-ac0b-786a07837034" position="2">
+                <material>
+                  <mattext texttype="text/plain">dry</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+          <response_lid ident="response_d4ce44fa-c7de-40ea-968b-d3ddb79b3afe">
+            <material>
+              <mattext>Africa</mattext>
+            </material>
+            <render_choice>
+              <response_label scoring_algorithm="Equivalence" answer_type="dropdown" ident="3b6854be-338d-4832-9592-d07a1f09d13c" position="1">
+                <material>
+                  <mattext texttype="text/plain">Africa</mattext>
+                </material>
+              </response_label>
+              <response_label scoring_algorithm="Equivalence" answer_type="dropdown" ident="4e9bcf80-7fa9-4137-95ae-946ce0b55c94" position="2">
+                <material>
+                  <mattext texttype="text/plain">South America</mattext>
+                </material>
+              </response_label>
+              <response_label scoring_algorithm="Equivalence" answer_type="dropdown" ident="f24221e6-989e-4ef5-a096-c5ecb680b264" position="3">
+                <material>
+                  <mattext texttype="text/plain">Europe</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+          <response_lid ident="response_ce0811cd-e734-46ac-bcad-a591ff7c340c">
+            <material>
+              <mattext>cumulonimbus</mattext>
+            </material>
+            <render_choice>
+              <response_label scoring_algorithm="Equivalence" answer_type="dropdown" ident="929286fe-32bf-4716-9290-f92c6ad70ca9" position="1">
+                <material>
+                  <mattext texttype="text/plain">cumulonimbus</mattext>
+                </material>
+              </response_label>
+              <response_label scoring_algorithm="Equivalence" answer_type="dropdown" ident="64d03dd4-0cbb-490c-906e-aa3c8ed832fd" position="2">
+                <material>
+                  <mattext texttype="text/plain">cirrocumulus</mattext>
+                </material>
+              </response_label>
+              <response_label scoring_algorithm="Equivalence" answer_type="dropdown" ident="dd33f5f0-b035-4fe5-bcd9-26f9716cdc2c" position="3">
+                <material>
+                  <mattext texttype="text/plain">altocumulus</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+          <response_lid ident="response_bdcea6f9-a591-4baf-8a01-325720a64964">
+            <material>
+              <mattext>74</mattext>
+            </material>
+            <render_choice>
+              <response_label scoring_algorithm="TextContainsAnswer" answer_type="openEntry" ident="bdcea6f9-a591-4baf-8a01-325720a64964-0">
+                <material>
+                  <mattext texttype="text/plain">74</mattext>
+                </material>
+              </response_label>
+            </render_choice>
+          </response_lid>
+        </presentation>
+        <resprocessing>
+          <outcomes>
+            <decvar maxvalue="100" minvalue="0" varname="SCORE" vartype="Decimal"/>
+          </outcomes>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="response_1efaf7d2-f04f-4005-816e-9ba77d9f5755">cec9ddff-ef10-4c07-8aec-1cbf118ba03f</varequal>
+            </conditionvar>
+            <setvar action="Add" varname="SCORE">20.00</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="response_63ca252c-179a-44d3-8f67-232a0784b5f4">c32be72a-3c85-48cf-97d9-513ccf3b807d</varequal>
+            </conditionvar>
+            <setvar action="Add" varname="SCORE">20.00</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="response_d4ce44fa-c7de-40ea-968b-d3ddb79b3afe">3b6854be-338d-4832-9592-d07a1f09d13c</varequal>
+            </conditionvar>
+            <setvar action="Add" varname="SCORE">20.00</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="response_ce0811cd-e734-46ac-bcad-a591ff7c340c">929286fe-32bf-4716-9290-f92c6ad70ca9</varequal>
+            </conditionvar>
+            <setvar action="Add" varname="SCORE">20.00</setvar>
+          </respcondition>
+          <respcondition>
+            <conditionvar>
+              <varequal respident="response_bdcea6f9-a591-4baf-8a01-325720a64964">bdcea6f9-a591-4baf-8a01-325720a64964-0</varequal>
+            </conditionvar>
+            <setvar action="Add" varname="SCORE">20.00</setvar>
+          </respcondition>
+        </resprocessing>
+      </item>
+    </section>
+  </assessment>
+</questestinterop>
